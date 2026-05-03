@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <style>
+       
+       @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+            50% {
+                transform: scale(1.1);
+                filter: brightness(120%);
+            }
+            100% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+
+        .dica-curiango {
+        bottom: 10px;
+        left: 20px; /* Alinha o card à esquerda */
+        background-color: #ffffff;
+        color: #878787 !important;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+        z-index: 9999;
+        }
+
+        .imagem-curiango {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        border-radius: 50%;
+        animation: pulsar 2.9s infinite;
+       }
+
+        .texto-dica {
+            flex-grow: 1;
+        }
+
+    
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+    
+       
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+    
+        a {
+            color: inherit;
+        }
+    
+        /* End basic CSS override */
+    
+        * {
+            scrollbar-width: 0;
+        }
+    
+        *::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+    
+        *::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background-color: #ddd;
+            border: 4px solid #fff;
+        }
+    
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#000, 0.25);
+        }
+    
+        .modal-container {
+            max-height: 90vh;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+    
+            @media (max-width: 600px) {
+                width: 90%;
+            }
+        }
+    
+        .modal-container-header {
+            padding: 16px 32px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .modal-container-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 1.125;
+    
+            svg {
+                width: 32px;
+                height: 32px;
+                color: #750550;
+            }
+        }
+    
+        .modal-container-body {
+            padding: 24px 32px 51px;
+            overflow-y: auto;
+        }
+    
+        .rtf {
+    
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+    
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.125;
+            }
+    
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+    
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+    
+            &>*+* {
+                margin-top: 1em;
+            }
+    
+            &>*+ :is(h1, h2, h3) {
+                margin-top: 2em;
+            }
+    
+            &> :is(h1, h2, h3)+* {
+                margin-top: 0.75em;
+            }
+    
+            ul,
+            ol {
+                margin-left: 20px;
+                list-style-position: inside;
+            }
+    
+            ol {
+                list-style: numeric;
+            }
+    
+            ul {
+                list-style: disc;
+            }
+        }
+    
+        .modal-container-footer {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top: 1px solid #ddd;
+            gap: 12px;
+            position: relative;
+    
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -51px;
+                left: 24px;
+                right: 24px;
+                height: 50px;
+                flex-shrink: 0;
+                background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+                pointer-events: none;
+            }
+        }
+    
+        .button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s ease;
+    
+            &.is-ghost {
+    
+                &:hover,
+                &:focus {
+                    background-color: #dfdad7;
+                }
+            }
+    
+            &.is-primary {
+                background-color: #750550;
+                color: #fff;
+    
+                &:hover,
+                &:focus {
+                    background-color: #4a0433;
+                }
+            }
+        }
+    
+        .icon-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.15s ease;
+    
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+    
+            &:hover,
+            &:focus {
+                background-color: #dfdad7;
+            }
+        }
+    </style>
+
+  
+  
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 class="heading">ARACAJU | SE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+
+                                                    <p>
+                                                        <b>A pequena notável do litoral sergipano</b>
+                                                    </p>
+                                                    <p>
+                                                    
+                                                        Não é à toa que Aracaju está na rota dos principais destinos turísticos do
+                                                        nordeste do Brasil. Além de belas praias de mar azul, a cidade também respira
+                                                        
+                                                        história por todos os lados com seus prédios antigos, igrejas,
+                                                        
+                                                        palácios, museus e mercados municipais.  
+                                                        Dona de paisagens deslumbrantes, a simpática Aracaju
+                                                        
+                                                        está de portas abertas para receber os turistas, e ainda pode ser o ponto de
+                                                        partida para outros destinos de Sergipe, pois a cidade tem uma localização
+                                                        estratégica, e por meio de passeios contratados no próprio hotel, você pode
+                                                        
+                                                        explorar e conhecer mais este Estado tão bonito.
+                                                    
+                                                    </p>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                        <div class="col-md-6 col-sm-12 mb-5">
+                            <div class="custom-card__background"
+                                style="background:url('./img/edicaoDezembro/CARD 4 - Foto 1.jpeg');    
+                                                                                                                    background-repeat: no-repeat !important;
+                                                                                                                    background-position: center !important;              
+                                                                                                                    width: 100%;
+                                                                                                                    height: 400px;
+                                                                                                                    position: relative;
+                                                                                                                    display: flex;
+                                                                                                                    margin: auto;            
+                                                                                                                    background-size: cover;
+                                                                                                                    border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 mb-5">
+                            <div class="custom-card__background"
+                                style="background:url('./img/edicaoDezembro/CARD 4 - Foto 2.jpg');    
+                                                                                                                    background-repeat: no-repeat !important;
+                                                                                                                    background-position: center !important;              
+                                                                                                                    width: 100%;
+                                                                                                                    height: 400px;
+                                                                                                                    position: relative;
+                                                                                                                    display: flex;
+                                                                                                                    margin: auto;            
+                                                                                                                    background-size: cover;
+                                                                                                                    border-radius: 10px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <!-- <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            História: fazendas e belezas naturais intocadas
+                                        </p>
+                                      
+                                    </div> -->
+                                    <!-- <br> -->
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        As praias de Aracaju são o grande atrativo da cidade, que reúne as conveniências de uma
+                                                        capital com o ar relaxante do litoral. As mais próximas do centro são as praias de <b>Atalaia Sarney e Aruana</b>,
+                                                        , que ficam na mesma extensão do litoral e têm acesso pela Avenida
+                                                        Santos Dumont. É possível degustar um bom caranguejo na orla de Atalaia ou curtir uma ilha
+                                                        que só aparece quando a maré está baixa: a Crôa do Goré.
+                                                        Um dos destaques da orla da região são as faixas de areia largas e compridas, perfeitas
+                                                        para caminhadas e para a prática de esportes. Embora a água possa ser um pouco mais
+                                                        agitada, no geral, é boa para banhos. Todas as três praias contam com a infraestrutura de
+                                                        banheiros, barracas e restaurantes para você petiscar e tomar uma gelada.
+                                                    </p>
+                                                </div>
+
+                                                <!-- <div class="col-md-4 col-sm-12 mb-5">
+                                                    <p>
+                                                     
+                                                    </p>
+                                                </div> -->
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        style="background:url('./img/edicaoDezembro/CARD 4 - Foto 3.jpg');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 300px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            Passarela do Caranguejo
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <!-- <div class="col-md-4 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        style="background:url('');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 500px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div> -->
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        Área onde se concentra a vida noturna de Aracaju, a <b>Passarela do Caranguejo</b> é o trecho
+                                                        da orla de Atalaia onde você encontra dezenas de restaurantes, bares e shows. É também o
+                                                        endereço certo para se divertir muito na capital de Sergipe.
+                                                        A passarela começa no monumento do caranguejo gigante, onde os visitantes se divertem e
+                                                        tiram fotos de recordação. Nos restaurantes, o crustáceo é a estrela de vários pratos típicos,
+                                                        mas se você prefere outros tipos de culinária, não se preocupe, o que não faltam são
+                                                        
+                                                        opções. O restaurante Cariri tem uma simpática decoração nordestina e forró ao vivo para
+                                                        você arriscar uns passos na pista de dança.
+                                                       
+                                                       
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                       
+                                                        Outra coisa que vale ressaltar, são as <b>próprias estradas</b> que levam aos atrativos. Com curvas,
+                                                        descidas e subidas que serpenteiam os vales e montanhas, o cenário bucólico está garantido.
+                                                        Em um destes trechos, vale fazer uma parada na <b>Estátua do Juquinha</b>, uma homenagem a José
+                                                        Patrício, personagem quase mítico da região que, antes de falecer, vivia nas montanhas e
+                                                        oferecia flores aos viajantes.
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-sm-12 mb-5">
+                            <div class="custom-card__background" style="background:url('./img/edicaoDezembro/CARD 4 - foto 4.jpg');    
+                                                                                        background-repeat: no-repeat !important;
+                                                                                        background-position: center !important;              
+                                                                                        width: 100%;
+                                                                                        height: 400px;
+                                                                                        position: relative;
+                                                                                        display: flex;
+                                                                                        margin: auto;            
+                                                                                        background-size: cover;
+                                                                                        border-radius: 10px;">
+                            </div>
+                           
+                        </div>                     
+                        <div class="col-md-6 col-sm-12 mb-5">
+                            <div class="custom-card__background" style="background:url('./img/edicaoDezembro/CARD 4 - Foto 1.jpeg');    
+                                                                                        background-repeat: no-repeat !important;
+                                                                                        background-position: center !important;              
+                                                                                        width: 100%;
+                                                                                        height: 400px;
+                                                                                        position: relative;
+                                                                                        display: flex;
+                                                                                        margin: auto;            
+                                                                                        background-size: cover;
+                                                                                        border-radius: 10px;">
+                            </div>
+                           
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            O belo Parque da Sementeira
+                                        </p>
+    
+                                    </div>
+                                    <br>
+                                   
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>Com quase 400 mil m² de área verde, grande diversidade de fauna e flora, canteiros floridos
+                                                        e um lago repousante, o <b> Parque da Sementeira</b> é a garantia de muita paz e tranquilidade, e
+                                                        um dos destinos favoritos de quem mora em Aracaju e quer usufruir de ar puro em contato
+                                                        direto com a natureza. Você pode fazer sua caminhada, pedalar, passear com o pet e, claro,
+                                                        tirar belas fotos. O parque oferece diversão para todas as idades, de equipamentos para
+                                                        exercício a quadras poliesportivas, passando pelas pistas, pedalinhos no lago, quiosques e
+                                                        um gramado que convida a um piquenique.</p>
+                                                   
+                                                </div>
+                                               
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" style="background:url('./img/edicaoDezembro/CARD 4 - Foto 2.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            Conheça ainda...
+                                        </p>
+    
+                                    </div>
+                                    <br>
+                                   
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>Os <b>Arcos da Orla de Atalaia</b> foram construídos para marcar a criação do complexo da orla,
+                                                        que esbanja o título de melhor do Brasil graças à beleza, organização e atrações. Lá você
+                                                        também encontra o letreiro de Aracaju, o Monumento aos Formadores da Nacionalidade,
+                                                        com figuras importantes da história do país, além da famosa estátua do caranguejo gigante.</p>
+                                                   
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>O <b>Calçadão</b> também é perfeito para uma caminhada, e os lagos da orla convidam você a
+                                                        curtir um momento Mindful. Para fechar o passeio com chave de ouro, você pode sentar-se
+                                                        em um quiosque, pedir um açaí ou uma água de coco e relaxar vendo o sol se pôr.Quer
+                                                        melhor?</p>
+                                                   
+                                                </div>
+                                               
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            O entardecer mais bonito
+                                        </p>
+    
+                                    </div>
+                                    <br>
+                                   
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p><b>A Orla do Pôr do Sol</b> é outro recanto muito especial. A cerca de 18 km da Praia de Atalaia,
+                                                        atrai pessoas que querem uma vista privilegiada do entardecer. Ali, você também pode curtir
+                                                        um programa bem praiano, com opções de passeios, banho e momentos de tranquilidade.
+                                                        Ao contrário das outras praias, que são banhadas pelo oceano Atlântico, a Orla do Pôr do
+                                                        Sol fica na margem oeste do rio Vaza Barris.
+                                                        Você pode andar de bicicleta nas ciclovias, pescar, andar pelo calçadão de madeira e fazer
+                                                        passeios de lancha. Para finalizar o dia, peça uma bebida em um dos quiosques locais e, é
+                                                        claro, admire o entardecer mais bonito da cidade.</p>
+                                                   
+                                                </div>
+                                               
+                                               
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" style="background:url('./img/edicaoDezembro/CARD 4 - Foto 3.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            Esportes fluviais e diversão para a criançada
+                                        </p>
+    
+                                    </div>
+                                    <br>
+                                   
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>Se você quer passar uma manhã ou tarde gostosa em Aracaju, e com muita diversão para
+                                                        as crianças, o <b>Parque dos Cajueiros</b> é o lugar perfeito. Localizado no encontro dos rios
+                                                        Poxim e Sergipe, o lugar foi planejado para oferecer contato com a natureza e várias opções
+                                                        de lazer ao ar livre - pistas de corrida, ciclovias, quadras de esporte, brinquedos, entre
+                                                        outras – além de boa infraestrutura de lanchonetes e restaurante. O parque também é
+                                                        referência para a prática de esportes fluviais na cidade. Mas se você não sabe remar, não se
+                                                        preocupe: tome um sorvete no píer e relaxe admirando a vista do rio.</p>
+                                                   
+                                                </div>
+                                               
+                                               
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" style="background:url('./img/edicaoDezembro/CARD 4 - foto 4.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            Onde o rio encontra o mar...
+                                        </p>
+    
+                                    </div>
+                                    <br>
+                                   
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>Inaugurado em 2016, o <b> Calçadão da Praia Formosa</b> é uma área extensa e bem estruturada
+                                                        para lazer e conveniência na Avenida Beira Mar, no encontro do rio Sergipe com o oceano.
+                                                        O calçadão tem dois níveis, sendo o primeiro coberto e à altura da praia.
+                                                        
+                                                        O espaço é bem cuidado e conta com um lindo projeto paisagístico, além de mesas e
+                                                        assentos cobertos, canteiros de areia com brinquedos e parede de escalada, tudo, é claro,
+                                                        com uma vista privilegiada. É um lugar super agradável também para caminhar e tomar uma
+                                                        água de coco geladinha.</p>
+                                                   
+                                                </div>
+                                               
+                                               
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" style="background:url('./img/edicaoDezembro/CARD 4 - Foto 1.jpeg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            Croa do Goré: a misteriosa prainha que só aparece na maré baixa
+                                        </p>
+    
+                                    </div>
+                                    <br>
+                                   
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>A Croa do Goré é uma daquelas atrações que jamais podem ficar de fora do seu roteiro pela
+                                                        capital sergipana, já que o lugar é dono de uma das mais belas paisagens da região. Trata-se de
+                                                        um banco de areia no meio do rio Vaza Barris que se transforma em uma prainha durante o
+                                                        dia. Vale a pena conferir essa atração se você gosta de conhecer pontos mais remotos e
+                                                        ficar em contato bem próximo à natureza.
+                                                        Para chegar lá, é preciso pegar uma lancha ou catamarã saindo da Orla do Pôr do Sol. O
+                                                        trajeto leva de 30 a 40 minutos e passa por paisagens tão lindas que por si só, já valem o
+                                                        passeio. A croa é pequena, mas tem alguns guarda-sóis para você se sentar e curtir uma
+                                                        bebida gelada.</p>
+                                                   
+                                                </div>
+                                               
+                                               
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" style="background:url('./img/edicaoDezembro/CARD 4 - Foto 2.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </article>
+                        </div>
+                      
+                    </div>            
+                </div>
+            </div>
+            <div id="dica-curiango" class="dica-curiango">
+                <a href="#" onclick="abrirModal()"> <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg"
+                        alt="Imagem do Curiango" class="imagem-curiango">
+                    <span class="texto-dica">Dica do Curiango</span></a>
+            
+            </div>
+            <div id="footer-home"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+
+    <div id="dica-do-curiango" class="modal" style="display: none;">
+        <article class="modal-container">
+            <header class="modal-container-header">
+                <h3 class="modal-container-title"  style="color: #878787; font-family: 'Oswald', sans-serif;">
+                    <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg"
+                    alt="Imagem do Curiango" class="imagem-curiango">
+                    Dica do Curiango
+                </h3>
+                <button onclick="fecharModal()" class="icon-button">
+                    <svg    style="color: #878787; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </header>
+            <section class="modal-container-body rtf">
+                <!-- <h2  style="color: #878787;     font-family: 'Oswald', sans-serif;">  </h2> -->
+    
+                <p  style="color: #878787;     font-family: 'Oswald', sans-serif;">           Não deixe de conhecer a <b>Praça Fausto Cardoso</b>, centro do poder político do Estado e onde
+                    ficam o Judiciário e a Assembléia Estadual. <br> A praça, no centro da cidade, é cercada por
+                    palmeiras frondosas e edifícios históricos, entre eles o <b>Palácio Olímpio Campos</b>, antiga
+                    sede do governo estadual, hoje um museu.
+                    
+                   </p>
+    
+                </ol>
+                    <!-- <h3  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </h3> -->
+    
+                <!-- <p  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </p> -->
+               
+              
+               
+            </section>
+           
+        </article>
+    </div>
+
+    <script>
+
+        var modal = new bootstrap.Modal(document.getElementById('dica-do-curiango'));
+
+        function abrirModal() {
+
+            modal.show();
+        }
+
+        function fecharModal() {
+
+            modal.hide();
+        }
+    </script>
+</body>
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:24 GMT -->
+
+</html>

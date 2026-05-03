@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/italia-espanha-franca.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:45:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <style>
+         @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+            50% {
+                transform: scale(1.1);
+                filter: brightness(120%);
+            }
+            100% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+          .dica-curiango {
+        bottom: 10px;
+        left: 20px; /* Alinha o card à esquerda */
+        background-color: #ffffff;
+        color: #878787 !important;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+        z-index: 9999;
+        }
+
+        .imagem-curiango {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+            animation: pulsar 2.9s infinite;
+
+        }
+
+        .texto-dica {
+            flex-grow: 1;
+        }
+
+    
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+    
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+    
+       
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+    
+        a {
+            color: inherit;
+        }
+    
+        /* End basic CSS override */
+    
+        * {
+            scrollbar-width: 0;
+        }
+    
+        *::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+    
+        *::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background-color: #ddd;
+            border: 4px solid #fff;
+        }
+    
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#000, 0.25);
+        }
+    
+        .modal-container {
+            max-height: 90vh;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+    
+            @media (max-width: 600px) {
+                width: 90%;
+            }
+        }
+    
+        .modal-container-header {
+            padding: 16px 32px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .modal-container-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 1.125;
+    
+            svg {
+                width: 32px;
+                height: 32px;
+                color: #750550;
+            }
+        }
+    
+        .modal-container-body {
+            padding: 24px 32px 51px;
+            overflow-y: auto;
+        }
+    
+        .rtf {
+    
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+    
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.125;
+            }
+    
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+    
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+    
+            &>*+* {
+                margin-top: 1em;
+            }
+    
+            &>*+ :is(h1, h2, h3) {
+                margin-top: 2em;
+            }
+    
+            &> :is(h1, h2, h3)+* {
+                margin-top: 0.75em;
+            }
+    
+            ul,
+            ol {
+                margin-left: 20px;
+                list-style-position: inside;
+            }
+    
+            ol {
+                list-style: numeric;
+            }
+    
+            ul {
+                list-style: disc;
+            }
+        }
+    
+        .modal-container-footer {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top: 1px solid #ddd;
+            gap: 12px;
+            position: relative;
+    
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -51px;
+                left: 24px;
+                right: 24px;
+                height: 50px;
+                flex-shrink: 0;
+                background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+                pointer-events: none;
+            }
+        }
+    
+        .button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s ease;
+    
+            &.is-ghost {
+    
+                &:hover,
+                &:focus {
+                    background-color: #dfdad7;
+                }
+            }
+    
+            &.is-primary {
+                background-color: #750550;
+                color: #fff;
+    
+                &:hover,
+                &:focus {
+                    background-color: #4a0433;
+                }
+            }
+        }
+    
+        .icon-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.15s ease;
+    
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+    
+            &:hover,
+            &:focus {
+                background-color: #dfdad7;
+            }
+        }
+    </style>
+
+   
+  
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled%20image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 class="heading">ITÁLIA, ESPANHA E FRANÇA</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <!-- <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+
+                                                    <p>
+                                                        <b></b>
+                                                    </p>
+                                                     <p>
+                                                
+                                                    </p> 
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div> -->
+                   
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            Trieste, Itália
+                                        </p>
+                                      
+                                    </div> 
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        Antigamente um dos portos mais importantes do mundo, a cidade de Trieste, no nordeste da
+                                                        Itália, oferece aos visitantes 46 km de costa, com uma mistura de paisagens rochosas, pastagens
+                                                        e florestas. Situada em uma estreita faixa de terra entre o Mar Adriático e a Eslovênia, a cidade
+                                                        mostra uma combinação de influências italianas, eslovenas e austríacas – refletidas na
+                                                        arquitetura e nas atrações históricas. Uma boa pedida é uma visita à Piazza Unità d&#39;Italia, à
+                                                        Grotta Gigante e ao Castelo Miramare para conhecer os arredores e a cultura da cidade. Outra
+                                                        opção é fazer um passeio em torno do único castelo em caverna preservado na Europa, a
+                                                        Caverna Postojna e Castelo Predjama. Há também opções de trilhas que oferecem vistas da
+                                                        extensa costa. Val Rosanda, um vale localizado na fronteira italiana e eslovena, proporciona uma
+                                                        caminhada repleta de desafios, enquanto a Baía Sistiana, a cerca de 20 minutos de carro, a oeste
+                                                        de Trieste, é um lugar para desfrutar de um passeio noturno.
+                                                    
+                                                    
+                                                    </p>
+                                                </div>
+
+                                                <!-- <div class="col-md-4 col-sm-12 mb-5">
+                                                    <p>
+                                                     
+                                                    </p>
+                                                </div> -->
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Trieste, Itália"
+                                                        style="background:url('img/edicaoFevereiro/CARD 3 TRieste.jpeg');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 400px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Piazza Unità d'Italia"
+                                                        style="background:url('img/edicaoFevereiro/157064-Piazza-Dellunita.avif');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 400px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Piazza Unità d'Italia"
+                                                        style="background:url('img/edicaoFevereiro/157066-Piazza-Dellunita.jpg');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 400px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Villajoyosa, Espanha
+                                        
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                      
+                                                        Localizada em Alicante, sudeste da Espanha, Villajoyosa é um cantinho sossegado da Costa
+                                                        Blanca que manteve a essência de sua herança pesqueira. As ruas repletas de palmeiras
+                                                        oferecem vista para as praias tranquilas, emolduradas pelas casas coloridas - características da
+                                                        cidade - que historicamente foram pintadas para combinar com os barcos, ajudando os
+                                                        pescadores no mar a encontrar suas casas. Alguns dos locais famosos são a igreja gótica de
+                                                        Nuestra Señora de Asunción, e os pontos turísticos arqueológicos da Torre da Cruz e da Torre de
+                                                        São José. <br>
+                                                        <br>
+                                                        
+                                                        Para quem busca saber mais sobre a cultura regional e sua culinária, uma boa pedida é fazer
+                                                        uma curta viagem de carro até Alicante e participar de um passeio histórico guiado com
+                                                        degustação de tapas, que inclui uma visita a um restaurante de tapas para experimentar os pratos
+                                                        da região, como arroz con costra (arroz de forno com crosta), olleta (ensopado preparado com
+                                                        uma variedade de legumes e carnes) e atum mojama (filé de atum curado com sal).
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Villajoyosa, Espanha" style="background:url('img/edicaoFevereiro/istockphoto-1308123688-612x612.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 400px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>      
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Villajoyosa, Espanha" style="background:url('img/edicaoFevereiro/villajoyosa-s692966386.avif');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 500px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>     
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                           
+                                            Tignes, França
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Tignes, Alpes franceses" style="background:url('img/edicaoFevereiro/CARD 3 - Tignes.webp');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 400px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>       
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                      
+                                                        Tignes, um dos principais destinos de férias nos Alpes franceses, verdadeiro parque de diversões
+                                                        aberto o ano todo para aventureiros. Durante o inverno, o esqui e o snowboard prevalecem em
+                                                        todos os 300 km de pistas da região. Já nos meses mais quentes, os visitantes também não vão
+                                                        se decepcionar: fora da temporada, eles podem ir ao lago para uma tarde de vôlei de praia,
+                                                        relaxar no Festival de Vinhos de Tignes, em agosto, ou conhecer as aldeias vizinhas de Le
+                                                        Lavachet, Le Lac e Val Claret. Não importa a estação, o cenário animado après-ski de Tignes
+                                                        oferece uma grande variedade de iguarias alpinas tradicionais, terraços ensolarados, além de
+                                                        bares e casas noturnas. Embora não faltem atividades na região, a localização remota de Tignes
+                                                        requer um bom planejamento da viagem, com aluguel de carros disponíveis partindo do aeroporto
+                                                        de Genebra, de Chambery ou de Grenoble.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Tignes, França" style="background:url('img/edicaoFevereiro/CARD 3 Tignes.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 500px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>      
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Tignes, França" style="background:url('img/edicaoFevereiro/CARD 3 - Tignes.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 500px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                   
+                                                </div>          
+                                           
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div id="dica-curiango" class="dica-curiango">
+                <a href="#" onclick="abrirModal()"> <img src=""
+                        alt="Imagem do Curiango" class="imagem-curiango">
+                    <span class="texto-dica">Dica do Curiango</span></a>
+            
+            </div> -->
+            <div id="footer-home"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+
+    <div id="dica-do-curiango" class="modal" style="display: none;">
+        <article class="modal-container">
+            <header class="modal-container-header">
+                <h3 class="modal-container-title"  style="color: #878787; font-family: 'Oswald', sans-serif;">
+                    <img src="images/WhatsApp%20Image%202024-02-14%20at%2021.04.28.jpg"
+                    alt="Imagem do Curiango" class="imagem-curiango">
+                    Dicas do Curiango
+                </h3>
+                <button onclick="fecharModal()" class="icon-button">
+                    <svg    style="color: #878787; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </header>
+            <section class="modal-container-body rtf">
+                <h2  style="color: #878787;     font-family: 'Oswald', sans-serif;">Datas:  </h2>
+    
+                <p  style="color: #878787;     font-family: 'Oswald', sans-serif;"> Caso o vagão escolhido não tenha datas disponíveis, aproveite para conhecer as outras opções.
+                    Qualquer dúvida, é só entrar em contato pelo WhatsApp: (41) 3888-3472.</p>
+    
+                </ol>
+                    <!-- <h3  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </h3> -->
+    
+                <!-- <p  style="color: #878787;     font-family: 'Oswald', sans-serif;">   </p> -->
+            </section>
+           
+        </article>
+    </div>
+
+    <script>
+
+        var modal = new bootstrap.Modal(document.getElementById('dica-do-curiango'));
+
+        function abrirModal() {
+
+            modal.show();
+        }
+
+        function fecharModal() {
+
+            modal.hide();
+        }
+    </script>
+</body>
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:24 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/italia-espanha-franca.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:45:48 GMT -->
+</html>

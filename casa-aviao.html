@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon"
+        type="image/png">
+
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+    <style>
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+
+            50% {
+                transform: scale(1.1);
+                filter: brightness(120%);
+            }
+
+            100% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+        .dica-curiango {
+            bottom: 10px;
+            left: 20px;
+            /* Alinha o card à esquerda */
+            background-color: #ffffff;
+            color: #878787 !important;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            z-index: 9999;
+        }
+
+        .imagem-curiango {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+            animation: pulsar 2.9s infinite;
+
+        }
+
+        .texto-dica {
+            flex-grow: 1;
+        }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* End basic CSS override */
+
+        * {
+            scrollbar-width: 0;
+        }
+
+        *::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background-color: #ddd;
+            border: 4px solid #fff;
+        }
+
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#000, 0.25);
+        }
+
+        .modal-container {
+            max-height: 90vh;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+
+            @media (max-width: 600px) {
+                width: 90%;
+            }
+        }
+
+        .modal-container-header {
+            padding: 16px 32px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-container-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 1.125;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                color: #750550;
+            }
+        }
+
+        .modal-container-body {
+            padding: 24px 32px 51px;
+            overflow-y: auto;
+        }
+
+        .rtf {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.125;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            &>*+* {
+                margin-top: 1em;
+            }
+
+            &>*+ :is(h1, h2, h3) {
+                margin-top: 2em;
+            }
+
+            &> :is(h1, h2, h3)+* {
+                margin-top: 0.75em;
+            }
+
+            ul,
+            ol {
+                margin-left: 20px;
+                list-style-position: inside;
+            }
+
+            ol {
+                list-style: numeric;
+            }
+
+            ul {
+                list-style: disc;
+            }
+        }
+
+        .modal-container-footer {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top: 1px solid #ddd;
+            gap: 12px;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -51px;
+                left: 24px;
+                right: 24px;
+                height: 50px;
+                flex-shrink: 0;
+                background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+                pointer-events: none;
+            }
+        }
+
+        .button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s ease;
+
+            &.is-ghost {
+
+                &:hover,
+                &:focus {
+                    background-color: #dfdad7;
+                }
+            }
+
+            &.is-primary {
+                background-color: #750550;
+                color: #fff;
+
+                &:hover,
+                &:focus {
+                    background-color: #4a0433;
+                }
+            }
+        }
+
+        .icon-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.15s ease;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: #dfdad7;
+            }
+        }
+    </style>
+
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 class="heading">‘CASA AVIÃO’ ATRAI TURISTAS QUE BUSCAM CONHECER DE PERTO RÉPLICAS DE AERONAVES</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p style="color: #FD7D01; font-size: 20px !important; line-height: 30px;">
+                                                    
+                                                    
+                                                        O sonho de morar em um avião foi o pontapé inicial para que Gerardo Araújo, 71, construísse, com as próprias mãos,
+                                                        diferentes aeronaves em Porto Velho.
+                                                        Hoje, o espaço criado por ele, passou a atrair turistas curiosos com sua história.
+                                                    
+                                                    
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="CASA AVIÃO"
+                                                        style="background:url('./img/edicaoAgosto/CARD\ 4\ -\ FOTO\ 1\ \(CASA\ AVIÃO\).jpg');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 600px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+
+                                                    <p>
+                                                        Apaixonado por aviação desde a década de 1960, Gerardo lembra que tudo começou com um fascínio pela missão Apollo
+                                                        11. "Meu pai comprou uma revista da [missão espacial] Apollo 11. Fiquei apaixonado ao ver os astronautas e as
+                                                        aeronaves", conta; “daí em diante, passei a ter sonhos de aviões pousando no quintal de minha casa, e isso nunca
+                                                        saiu da minha mente”, diz Geraldo. <br>
+                                                    
+                                                        A paixão o acompanhou ao longo da vida e, aos 60 anos, Gerardo começou a construir a atual Casa Avião, na zona rural
+                                                        da cidade. Localizada no quilômetro 13 da Estrada da Areia Branca, a réplica da cabine de um Airbus A320 marcou o
+                                                        início do projeto do músico.
+                                                    
+                                                    
+                                                    
+                                                    </p>
+
+
+
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+
+                                                    <p>
+
+
+                                                       "Não podendo comprar um avião, resolvi construir um", relata. Ele foi responsável por
+                                                        metade da mão de obra — o restante ficou por conta do cunhado. Na época, a construção da cabine custou cerca de R$
+                                                        20 mil. <br>
+                                                    
+                                                        Após a construção da base, feita de alvenaria, ele se dedicou em fazer os acabamentos e decorar a cabine para que o
+                                                        ambiente ficasse o mais próximo possível da realidade. Para isso, usou diferentes materiais, como acrílico, fibra,
+                                                        ferro e madeira, por exemplo. <br>
+                                                        Para alimentar ainda mais a paixão pelas aeronaves, Gerardo tem o costume de jogar simuladores de voo, como o
+                                                        Microsoft Flight Simulator X e o Prepar3D.
+
+
+                                                    </p>
+
+
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Airbus e Phenom 100"
+                                                        style="background:url('./img/edicaoAgosto/CARD\ 4\ -\ FOTO\ 4.jpg');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 400px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Airbus e Phenom 100"
+                                                        style="background:url('./img/edicaoAgosto/CARD\ 4\ -\ FOTO\ 2.webp');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 400px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+
+                                        <div class="post_header">
+                                            <div class="six" style=" position: relative;
+                                                                                            max-width: 90%; /* Torna o tamanho flexível */
+                                                                                            padding: 2em;
+                                                                                            margin: 1.5em auto;
+                                                                                            text-align: center;">
+                                                <h1>  Repercussão nas redes sociais chegou à Embraer
+
+
+                                                    <span></span>
+                                                </h1>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        Montar a cabine do Airbus não foi o suficiente. Durante a pandemia, Gerardo construiu também uma réplica do Phenom
+                                                        100. O sucesso da nova aeronave na internet chamou a atenção da Embraer (Empresa Brasileira de Aeronáutica),
+                                                        fabricante do jato executivo, que decidiu visitar a Casa Avião. <br>
+                                                    
+                                                        Em 2022, a convite da empresa, Gerardo e a esposa, Isabel, viajaram a diferentes cidades paulistas para conhecer de
+                                                        perto as aeronaves. <br>
+                                                         Durante a visita, ele recebeu um Certificado de Proprietário do Phenom 100, a documentação com
+                                                        prefixo, um diário de bordo e carteirinhas de visitação.
+                                                    
+                                                    </p>
+                                                </div>
+                                                 <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        
+                                                    
+                                                        O ponto alto da experiência foi sentar na poltrona de
+                                                        piloto e fazer um voo como passageiro de um Phenom 100 real. <br>
+                                                    
+                                                        A visita à Embraer ampliou os conhecimentos técnicos que o músico já tinha sobre aviação. "Aprendi os nomes e termos
+                                                        [utilizados no setor] estudando, vendo vídeos na internet e na fábrica da Embraer, com os livros que me deram",
+                                                        contou.
+                                                    
+                                                    
+                                                    </p>
+                                                </div>
+                                                 <div class="col-md-12 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Certificado de Proprietário do Phenom 100"
+                                                        style="background:url('./img/edicaoAgosto/CARD\ 4\ -\ FOTO\ 3.jpg');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 500px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                           <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+
+                                        <div class="post_header">
+                                            <div class="six" style=" position: relative;
+                                                                                            max-width: 90%; /* Torna o tamanho flexível */
+                                                                                            padding: 2em;
+                                                                                            margin: 1.5em auto;
+                                                                                            text-align: center;">
+                                                <h1>   Novas aeronaves e hospedagem
+
+
+                                                    <span></span>
+                                                </h1>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                    
+                                                    
+                                                        Hoje, Gerardo coleciona viagens em aviões de verdade. A Casa Avião no formato original, no entanto, começou a ficar
+                                                        pequena para o sonho do músico e para os turistas que querem conhecer as aeronaves construídas por ele. A família
+                                                        agora está de mudança e irá ampliar a Casa Avião, que passará a ser no quilômetro 6 da mesma estrada. <br>
+                                                    
+                                                        Interessados em visitar Gerardo, por ora, precisam aguardar o término da reforma que está sendo feita no local.
+                                                        Quando for reinaugurada, a Casa Avião ficará aberta todos os dias e trará "novidades" aos turistas.
+                                                    
+                                                    </p>
+                                                </div>
+                                                 <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                    
+                                                    
+                                                      Todo o andamento
+                                                        do projeto é compartilhado no Instagram, onde será feito o anúncio de reabertura. <br>
+                                                    
+                                                        Além da réplica do Boeing e do Phenom 100, ele também construiu a cópia de um helicóptero Bell 206 e irá oferecer,
+                                                        ainda, a réplica da aeronave Cessna 152. "Teremos uma maquete do aeroporto de Porto Velho com vários aviões no
+                                                        pátio", comemorou.
+                                                    
+                                                    
+                                                    </p>
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="dica-curiango" class="dica-curiango">
+                <a href="#" onclick="abrirModal()"> <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg"
+                        alt="Imagem do Curiango" class="imagem-curiango">
+                    <span class="texto-dica">Dica do Curiango</span></a>
+
+            </div> -->
+            <div id="footer-home"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+
+    <div id="dica-do-curiango" class="modal" style="display: none;">
+        <article class="modal-container">
+            <header class="modal-container-header">
+                <h3 class="modal-container-title" style="color: #878787; font-family: 'Oswald', sans-serif;">
+                    <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg" alt="Imagem do Curiango"
+                        class="imagem-curiango">
+                    Dicas do Curiango
+                </h3>
+                <button onclick="fecharModal()" class="icon-button">
+                    <svg style="color: #878787; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill="currentColor"
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </header>
+
+            <section class="modal-container-body rtf">
+                <!-- <h2 style="color: #878787;     font-family: 'Oswald', sans-serif;">Datas:  </h2> -->
+
+                <p style="color: #878787;     font-family: 'Oswald', sans-serif;"> Respeite a Cultura Local: ao chegar,
+                    respeite os costumes e a cultura dos moradores. Eles são
+                    acolhedores, mas valorizam suas tradições.</p>
+
+                <!-- <h3  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </h3>
+
+                <p  style="color: #878787;     font-family: 'Oswald', sans-serif;">   </p> -->
+            </section>
+
+        </article>
+    </div>
+
+    <script>
+
+        var modal = new bootstrap.Modal(document.getElementById('dica-do-curiango'));
+
+        function abrirModal() {
+
+            modal.show();
+        }
+
+        function fecharModal() {
+
+            modal.hide();
+        }
+    </script>
+</body>
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:24 GMT -->
+
+</html>

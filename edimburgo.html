@@ -1,0 +1,826 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon"
+        type="image/png">
+
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+    <style>
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+
+            50% {
+                transform: scale(1.1);
+                filter: brightness(120%);
+            }
+
+            100% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+        .dica-curiango {
+            bottom: 10px;
+            left: 20px;
+            /* Alinha o card à esquerda */
+            background-color: #ffffff;
+            color: #878787 !important;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            z-index: 9999;
+        }
+
+        .imagem-curiango {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+            animation: pulsar 2.9s infinite;
+
+        }
+
+        .texto-dica {
+            flex-grow: 1;
+        }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* End basic CSS override */
+
+        * {
+            scrollbar-width: 0;
+        }
+
+        *::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background-color: #ddd;
+            border: 4px solid #fff;
+        }
+
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#000, 0.25);
+        }
+
+        .modal-container {
+            max-height: 90vh;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+
+            @media (max-width: 600px) {
+                width: 90%;
+            }
+        }
+
+        .modal-container-header {
+            padding: 16px 32px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-container-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 1.125;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                color: #750550;
+            }
+        }
+
+        .modal-container-body {
+            padding: 24px 32px 51px;
+            overflow-y: auto;
+        }
+
+        .rtf {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.125;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            &>*+* {
+                margin-top: 1em;
+            }
+
+            &>*+ :is(h1, h2, h3) {
+                margin-top: 2em;
+            }
+
+            &> :is(h1, h2, h3)+* {
+                margin-top: 0.75em;
+            }
+
+            ul,
+            ol {
+                margin-left: 20px;
+                list-style-position: inside;
+            }
+
+            ol {
+                list-style: numeric;
+            }
+
+            ul {
+                list-style: disc;
+            }
+        }
+
+        .modal-container-footer {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top: 1px solid #ddd;
+            gap: 12px;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -51px;
+                left: 24px;
+                right: 24px;
+                height: 50px;
+                flex-shrink: 0;
+                background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+                pointer-events: none;
+            }
+        }
+
+        .button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s ease;
+
+            &.is-ghost {
+
+                &:hover,
+                &:focus {
+                    background-color: #dfdad7;
+                }
+            }
+
+            &.is-primary {
+                background-color: #750550;
+                color: #fff;
+
+                &:hover,
+                &:focus {
+                    background-color: #4a0433;
+                }
+            }
+        }
+
+        .icon-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.15s ease;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: #dfdad7;
+            }
+        }
+    </style>
+
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 class="heading"> EDIMBURGO, Escócia</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p
+                                                        style="color: #FD7D01; font-size: 20px !important; line-height: 30px;">
+                                                        Apontada como a cidade mais feliz do Reino Unido para férias,
+                                                        reúne equilíbrio entre áreas verdes (78 m² por
+                                                        pessoa), alimentação saudável em crescimento (7% dos
+                                                        restaurantes), caminhabilidade e qualidade do sono. Apesar de
+                                                        registrar menos horas de sol (1.428 anuais),
+                                                        os longos dias de verão favorecem atividades ao ar livre.
+
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="Castelo de Edimburgo"
+                                                        style="background:url('./img/edicaoOutubro/CARD\ 5\ -\ Foto\ 1.jpg');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 600px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 mb-5">
+
+                                                    <p>
+                                                        Em Edimburgo, explore o <a style="color: #9ed13b;"
+                                                            target="_blank"
+                                                            href="https://www.google.com/search?q=Castelo+de+Edimburgo&sca_esv=9e2f4bacbbf36aa5&sxsrf=AE3TifO6L-9ZLu-Wrpe1iqYlRwNzchkSbA%3A1759365249374&ei=gcjdaP3KFuXn1sQP3saW0QQ&ved=2ahUKEwj5oonwpISQAxW_rJUCHQZ8ADcQgK4QegQIARAC&uact=5&oq=edimburgo%2C+escocia+guia+r%C3%A1pido&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2VkaW1idXJnbywgZXNjb2NpYSBndWlhIHLDoXBpZG8yCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEiYPVAAWO4zcAB4AZABAJgBhgOgAd8gqgEIMC4xMC4zLjW4AQPIAQD4AQGYAgygAsATwgIGEAAYBxgewgIIEAAYBxgIGB7CAgYQABgIGB7CAgoQIRigARjDBBgKwgIIECEYoAEYwwSYAwCSBwcwLjkuMS4yoAf7SLIHBzAuOS4xLjK4B8ATwgcHMi02LjUuMcgHbw&sclient=gws-wiz-serp&mstk=AUtExfDHPWivVkvtZNb0Md2MJkoAz9uvLVOZguhiaLglrPrtctilxqLteX2D2QHDpQwr44XHetaSP4FY_HAUVU4mqOZqu9E64vFdFAIesSru_dbthxM_fod2MWfeMx6dNoJYwjg76T4sh-sv1ReUFjdACxGosk5sm_O7ZYIFbgrnu7_wPXA&csui=3">Castelo
+                                                            de Edimburgo</a>, caminhe pela <a style="color: #9ed13b;"
+                                                            target="_blank"
+                                                            href="https://www.google.com/search?q=Royal+Mile&sca_esv=9e2f4bacbbf36aa5&sxsrf=AE3TifO6L-9ZLu-Wrpe1iqYlRwNzchkSbA%3A1759365249374&ei=gcjdaP3KFuXn1sQP3saW0QQ&ved=2ahUKEwj5oonwpISQAxW_rJUCHQZ8ADcQgK4QegQIARAD&uact=5&oq=edimburgo%2C+escocia+guia+r%C3%A1pido&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2VkaW1idXJnbywgZXNjb2NpYSBndWlhIHLDoXBpZG8yCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEiYPVAAWO4zcAB4AZABAJgBhgOgAd8gqgEIMC4xMC4zLjW4AQPIAQD4AQGYAgygAsATwgIGEAAYBxgewgIIEAAYBxgIGB7CAgYQABgIGB7CAgoQIRigARjDBBgKwgIIECEYoAEYwwSYAwCSBwcwLjkuMS4yoAf7SLIHBzAuOS4xLjK4B8ATwgcHMi02LjUuMcgHbw&sclient=gws-wiz-serp&mstk=AUtExfDHPWivVkvtZNb0Md2MJkoAz9uvLVOZguhiaLglrPrtctilxqLteX2D2QHDpQwr44XHetaSP4FY_HAUVU4mqOZqu9E64vFdFAIesSru_dbthxM_fod2MWfeMx6dNoJYwjg76T4sh-sv1ReUFjdACxGosk5sm_O7ZYIFbgrnu7_wPXA&csui=3">Royal
+                                                            Mile</a>, visite o <a style="color: #9ed13b;"
+                                                            target="_blank"
+                                                            href="https://www.google.com/search?q=Museu+Nacional+da+Esc%C3%B3cia&sca_esv=9e2f4bacbbf36aa5&sxsrf=AE3TifO6L-9ZLu-Wrpe1iqYlRwNzchkSbA%3A1759365249374&ei=gcjdaP3KFuXn1sQP3saW0QQ&ved=2ahUKEwj5oonwpISQAxW_rJUCHQZ8ADcQgK4QegQIARAE&uact=5&oq=edimburgo%2C+escocia+guia+r%C3%A1pido&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2VkaW1idXJnbywgZXNjb2NpYSBndWlhIHLDoXBpZG8yCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEiYPVAAWO4zcAB4AZABAJgBhgOgAd8gqgEIMC4xMC4zLjW4AQPIAQD4AQGYAgygAsATwgIGEAAYBxgewgIIEAAYBxgIGB7CAgYQABgIGB7CAgoQIRigARjDBBgKwgIIECEYoAEYwwSYAwCSBwcwLjkuMS4yoAf7SLIHBzAuOS4xLjK4B8ATwgcHMi02LjUuMcgHbw&sclient=gws-wiz-serp&mstk=AUtExfDHPWivVkvtZNb0Md2MJkoAz9uvLVOZguhiaLglrPrtctilxqLteX2D2QHDpQwr44XHetaSP4FY_HAUVU4mqOZqu9E64vFdFAIesSru_dbthxM_fod2MWfeMx6dNoJYwjg76T4sh-sv1ReUFjdACxGosk5sm_O7ZYIFbgrnu7_wPXA&csui=3">Museu
+                                                            Nacional da Escócia</a> e a
+                                                        <a style="color: #9ed13b;" target="_blank"
+                                                            href="https://www.google.com/search?q=Catedral+de+St+Giles&sca_esv=9e2f4bacbbf36aa5&sxsrf=AE3TifO6L-9ZLu-Wrpe1iqYlRwNzchkSbA%3A1759365249374&ei=gcjdaP3KFuXn1sQP3saW0QQ&ved=2ahUKEwj5oonwpISQAxW_rJUCHQZ8ADcQgK4QegQIARAF&uact=5&oq=edimburgo%2C+escocia+guia+r%C3%A1pido&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2VkaW1idXJnbywgZXNjb2NpYSBndWlhIHLDoXBpZG8yCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEiYPVAAWO4zcAB4AZABAJgBhgOgAd8gqgEIMC4xMC4zLjW4AQPIAQD4AQGYAgygAsATwgIGEAAYBxgewgIIEAAYBxgIGB7CAgYQABgIGB7CAgoQIRigARjDBBgKwgIIECEYoAEYwwSYAwCSBwcwLjkuMS4yoAf7SLIHBzAuOS4xLjK4B8ATwgcHMi02LjUuMcgHbw&sclient=gws-wiz-serp&mstk=AUtExfDHPWivVkvtZNb0Md2MJkoAz9uvLVOZguhiaLglrPrtctilxqLteX2D2QHDpQwr44XHetaSP4FY_HAUVU4mqOZqu9E64vFdFAIesSru_dbthxM_fod2MWfeMx6dNoJYwjg76T4sh-sv1ReUFjdACxGosk5sm_O7ZYIFbgrnu7_wPXA&csui=3">Catedral
+                                                            de St Giles</a>, e suba a <a style="color: #9ed13b;"
+                                                            target="_blank"
+                                                            href="https://www.google.com/search?q=Carlton+Hill&sca_esv=9e2f4bacbbf36aa5&sxsrf=AE3TifO6L-9ZLu-Wrpe1iqYlRwNzchkSbA%3A1759365249374&ei=gcjdaP3KFuXn1sQP3saW0QQ&ved=2ahUKEwj5oonwpISQAxW_rJUCHQZ8ADcQgK4QegQIARAG&uact=5&oq=edimburgo%2C+escocia+guia+r%C3%A1pido&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2VkaW1idXJnbywgZXNjb2NpYSBndWlhIHLDoXBpZG8yCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEiYPVAAWO4zcAB4AZABAJgBhgOgAd8gqgEIMC4xMC4zLjW4AQPIAQD4AQGYAgygAsATwgIGEAAYBxgewgIIEAAYBxgIGB7CAgYQABgIGB7CAgoQIRigARjDBBgKwgIIECEYoAEYwwSYAwCSBwcwLjkuMS4yoAf7SLIHBzAuOS4xLjK4B8ATwgcHMi02LjUuMcgHbw&sclient=gws-wiz-serp&mstk=AUtExfDHPWivVkvtZNb0Md2MJkoAz9uvLVOZguhiaLglrPrtctilxqLteX2D2QHDpQwr44XHetaSP4FY_HAUVU4mqOZqu9E64vFdFAIesSru_dbthxM_fod2MWfeMx6dNoJYwjg76T4sh-sv1ReUFjdACxGosk5sm_O7ZYIFbgrnu7_wPXA&csui=3">Carlton
+                                                            Hill</a> para ter vistas panorâmicas. Use calçados
+                                                        confortáveis para as ladeiras
+                                                        de paralelepípedos, aproveite os museus gratuitos e experimente
+                                                        a culinária local em um pub, como o tradicional
+                                                        <a style="color: #9ed13b;" target="_blank"
+                                                            href="https://www.google.com/search?q=fish+%26+chips&sca_esv=9e2f4bacbbf36aa5&sxsrf=AE3TifO6L-9ZLu-Wrpe1iqYlRwNzchkSbA%3A1759365249374&ei=gcjdaP3KFuXn1sQP3saW0QQ&ved=2ahUKEwj5oonwpISQAxW_rJUCHQZ8ADcQgK4QegQIARAH&uact=5&oq=edimburgo%2C+escocia+guia+r%C3%A1pido&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2VkaW1idXJnbywgZXNjb2NpYSBndWlhIHLDoXBpZG8yCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEiYPVAAWO4zcAB4AZABAJgBhgOgAd8gqgEIMC4xMC4zLjW4AQPIAQD4AQGYAgygAsATwgIGEAAYBxgewgIIEAAYBxgIGB7CAgYQABgIGB7CAgoQIRigARjDBBgKwgIIECEYoAEYwwSYAwCSBwcwLjkuMS4yoAf7SLIHBzAuOS4xLjK4B8ATwgcHMi02LjUuMcgHbw&sclient=gws-wiz-serp&mstk=AUtExfDHPWivVkvtZNb0Md2MJkoAz9uvLVOZguhiaLglrPrtctilxqLteX2D2QHDpQwr44XHetaSP4FY_HAUVU4mqOZqu9E64vFdFAIesSru_dbthxM_fod2MWfeMx6dNoJYwjg76T4sh-sv1ReUFjdACxGosk5sm_O7ZYIFbgrnu7_wPXA&csui=3">fish
+                                                            & chips</a>. A cidade é compacta e pode ser explorada a pé,
+                                                        mas também oferece opções de passeios para explorar a região
+                                                        das Terras Altas.
+
+
+
+                                                    </p>
+
+
+
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title=" Castelo de Edimburgo"
+                                                        style="background:url('./img/edicaoOutubro/CARD\ 5\ -\ Foto\ 3.webp');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 400px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title=" Royal Mile, a rua mais famosa de Edimburgo"
+                                                        style="background:url('./img/edicaoOutubro/CARD\ 5\ -\ Foto\ 4.webp');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 400px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="Victoria Street, Edimburgo "
+                                                        style="background:url('./img/edicaoOutubro/CARD\ 5\ -\ Foto\ 5.jpg');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 400px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </article>
+                    </div>
+
+                    <!-- TÍTULO PRINCIPAL -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 details_with_sidebar">
+                        <article class="blog_post post_expand">
+                            <div class="post_content">
+                                <div class="post_header">
+                                    <div class="six"
+                                        style="position: relative; max-width: 90%; padding: 2em; margin: 1.5em auto; text-align: center;">
+                                        <h1><span style="font-size: 0.8em;">Principais Atrações</span></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="row">
+
+                        <!-- Castelo de Edimburgo -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                            Castelo de Edimburgo
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                        <p>
+                                                            Reserve seus ingressos com antecedência para este marco
+                                                            histórico, que abriga as joias da coroa escocesa.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Royal Mile -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                            Royal Mile
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                        <p>
+                                                            Explore esta famosa rua da Old Town, que liga o castelo ao
+                                                            Palácio de Holyroodhouse, repleta de edifícios antigos, pubs
+                                                            e lojas.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Museu Nacional da Escócia -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                            Museu Nacional da Escócia
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                        <p>
+                                                            Descubra a rica história escocesa, incluindo exposições
+                                                            sobre a ovelha Dolly, nesta atração gratuita.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Catedral de St Giles -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                            Catedral de St Giles
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                        <p>
+                                                            Uma igreja gótica de mais de mil anos localizada no coração
+                                                            de Edimburgo.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Victoria Street -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                            Victoria Street
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                        <p>
+                                                            Conhecida pela sua beleza arquitetônica, essa rua é uma
+                                                            inspiração para o Beco Diagonal da série Harry Potter.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Carlton Hill -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                            Carlton Hill
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                        <p>
+                                                            Suba a colina para ter vistas incríveis da cidade, do
+                                                            castelo e do mar, abrigando monumentos e o Observatório
+                                                            Nacional.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <!-- Dicas para sua Viagem -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 details_with_sidebar">
+                        <article class="blog_post post_expand">
+                            <div class="post_content">
+                                <div class="post_header">
+                                    <div class="six"
+                                        style="position: relative; max-width: 90%; padding: 2em; margin: 1.5em auto; text-align: center;">
+                                        <h1><span style="font-size: 0.8em;">Dicas para sua Viagem</span></h1>
+                                    </div>
+                                </div>
+                                <div class="container" style="justify-content: center; display: flex;">
+                                    <div class="col-md-10 col-sm-10 mb-5"
+                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                        <p><strong>Calçados confortáveis</strong> – A cidade é cheia de ladeiras e ruas
+                                            de
+                                            paralelepípedos, então calçados adequados são essenciais.</p>
+                                        <p><strong>Exploração a pé</strong> – Edimburgo é compacta e charmosa,
+                                            permitindo que você a
+                                            explore a pé para descobrir detalhes escondidos e becos pitorescos.</p>
+                                        <p><strong>Culinária Local</strong> – Experimente o fish & chips e o salmão, e
+                                            desfrute de um bom
+                                            uísque ou cerveja em um pub escocês.</p>
+                                        <p><strong>Eventos e Festivais</strong> – A cidade é sede de grandes eventos
+                                            culturais e
+                                            festivais, especialmente no verão e durante o Ano Novo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Opções de Passeios Extras -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 details_with_sidebar">
+                        <article class="blog_post post_expand">
+                            <div class="post_content">
+                                <div class="post_header">
+                                    <div class="six"
+                                        style="position: relative; max-width: 90%; padding: 2em; margin: 1.5em auto; text-align: center;">
+                                        <h1><span style="font-size: 0.8em;">Opções de Passeios Extras</span></h1>
+                                    </div>
+                                </div>
+                                <div class="container" style="justify-content: center; display: flex;">
+                                    <div class="col-md-10 col-sm-10 mb-5"
+                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                        <p><strong>Passeios pelas Terras Altas</strong> – Partindo de Edimburgo, é
+                                            possível fazer
+                                            passeios de um dia para conhecer a paisagem das Terras Altas, o misterioso
+                                            Lago Ness e o Viaduto Glenfinnan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- <div id="dica-curiango" class="dica-curiango">
+                <a href="#" onclick="abrirModal()"> <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg"
+                        alt="Imagem do Curiango" class="imagem-curiango">
+                    <span class="texto-dica">Dica do Curiango</span></a>
+
+            </div> -->
+        <div id="footer-home"></div>
+    </div>
+    </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+
+    <div id="dica-do-curiango" class="modal" style="display: none;">
+        <article class="modal-container">
+            <header class="modal-container-header">
+                <h3 class="modal-container-title" style="color: #878787; font-family: 'Oswald', sans-serif;">
+                    <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg" alt="Imagem do Curiango"
+                        class="imagem-curiango">
+                    Dicas do Curiango
+                </h3>
+                <button onclick="fecharModal()" class="icon-button">
+                    <svg style="color: #878787; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill="currentColor"
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </header>
+
+            <section class="modal-container-body rtf">
+                <!-- <h2 style="color: #878787;     font-family: 'Oswald', sans-serif;">Datas:  </h2> -->
+
+                <p style="color: #878787;     font-family: 'Oswald', sans-serif;"> --</p>
+
+                <!-- <h3  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </h3>
+
+                <p  style="color: #878787;     font-family: 'Oswald', sans-serif;">   </p> -->
+            </section>
+
+        </article>
+    </div>
+
+    <script>
+
+        var modal = new bootstrap.Modal(document.getElementById('dica-do-curiango'));
+
+        function abrirModal() {
+
+            modal.show();
+        }
+
+        function fecharModal() {
+
+            modal.hide();
+        }
+    </script>
+</body>
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:24 GMT -->
+
+</html>

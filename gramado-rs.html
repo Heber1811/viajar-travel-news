@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/gramado-rs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:45:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+   
+    <style>
+        @keyframes pulsar {
+           0% {
+               transform: scale(1);
+               filter: brightness(100%);
+           }
+           50% {
+               transform: scale(1.1);
+               filter: brightness(120%);
+           }
+           100% {
+               transform: scale(1);
+               filter: brightness(100%);
+           }
+       }
+
+         .dica-curiango {
+       bottom: 10px;
+       left: 20px; /* Alinha o card à esquerda */
+       background-color: #ffffff;
+       color: #878787 !important;
+       padding: 10px;
+       border-radius: 5px;
+       display: flex;
+       align-items: center;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       font-family: 'Oswald', sans-serif;
+       font-size: 14px;
+       z-index: 9999;
+       }
+
+       .imagem-curiango {
+           width: 80px;
+           height: 80px;
+           margin-right: 10px;
+           border-radius: 50%;
+           animation: pulsar 2.9s infinite;
+
+       }
+
+       .texto-dica {
+           flex-grow: 1;
+       }
+
+   
+       @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+   
+       *,
+       *:before,
+       *:after {
+           box-sizing: border-box;
+       }
+   
+      
+       button,
+       input,
+       select,
+       textarea {
+           font: inherit;
+       }
+   
+       a {
+           color: inherit;
+       }
+   
+       /* End basic CSS override */
+   
+       * {
+           scrollbar-width: 0;
+       }
+   
+       *::-webkit-scrollbar {
+           background-color: transparent;
+           width: 12px;
+       }
+   
+       *::-webkit-scrollbar-thumb {
+           border-radius: 99px;
+           background-color: #ddd;
+           border: 4px solid #fff;
+       }
+   
+       .modal {
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background-color: rgba(#000, 0.25);
+       }
+   
+       .modal-container {
+           max-height: 90vh;
+           max-width: 500px;
+           margin-left: auto;
+           margin-right: auto;
+           background-color: #fff;
+           border-radius: 16px;
+           overflow: hidden;
+           display: flex;
+           flex-direction: column;
+           box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+   
+           @media (max-width: 600px) {
+               width: 90%;
+           }
+       }
+   
+       .modal-container-header {
+           padding: 16px 32px;
+           border-bottom: 1px solid #ddd;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+       }
+   
+       .modal-container-title {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           line-height: 1;
+           font-weight: 700;
+           font-size: 1.125;
+   
+           svg {
+               width: 32px;
+               height: 32px;
+               color: #750550;
+           }
+       }
+   
+       .modal-container-body {
+           padding: 24px 32px 51px;
+           overflow-y: auto;
+       }
+   
+       .rtf {
+   
+           h1,
+           h2,
+           h3,
+           h4,
+           h5,
+           h6 {
+               font-weight: 700;
+           }
+   
+           h1 {
+               font-size: 1.5rem;
+               line-height: 1.125;
+           }
+   
+           h2 {
+               font-size: 1.25rem;
+               line-height: 1.25;
+           }
+   
+           h3 {
+               font-size: 1rem;
+               line-height: 1.5;
+           }
+   
+           &>*+* {
+               margin-top: 1em;
+           }
+   
+           &>*+ :is(h1, h2, h3) {
+               margin-top: 2em;
+           }
+   
+           &> :is(h1, h2, h3)+* {
+               margin-top: 0.75em;
+           }
+   
+           ul,
+           ol {
+               margin-left: 20px;
+               list-style-position: inside;
+           }
+   
+           ol {
+               list-style: numeric;
+           }
+   
+           ul {
+               list-style: disc;
+           }
+       }
+   
+       .modal-container-footer {
+           padding: 20px 32px;
+           display: flex;
+           align-items: center;
+           justify-content: flex-end;
+           border-top: 1px solid #ddd;
+           gap: 12px;
+           position: relative;
+   
+           &:after {
+               content: "";
+               display: block;
+               position: absolute;
+               top: -51px;
+               left: 24px;
+               right: 24px;
+               height: 50px;
+               flex-shrink: 0;
+               background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+               pointer-events: none;
+           }
+       }
+   
+       .button {
+           padding: 12px 20px;
+           border-radius: 8px;
+           background-color: transparent;
+           border: 0;
+           font-weight: 600;
+           cursor: pointer;
+           transition: 0.15s ease;
+   
+           &.is-ghost {
+   
+               &:hover,
+               &:focus {
+                   background-color: #dfdad7;
+               }
+           }
+   
+           &.is-primary {
+               background-color: #750550;
+               color: #fff;
+   
+               &:hover,
+               &:focus {
+                   background-color: #4a0433;
+               }
+           }
+       }
+   
+       .icon-button {
+           padding: 0;
+           border: 0;
+           background-color: transparent;
+           width: 40px;
+           height: 40px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           line-height: 1;
+           cursor: pointer;
+           border-radius: 8px;
+           transition: 0.15s ease;
+   
+           svg {
+               width: 24px;
+               height: 24px;
+           }
+   
+           &:hover,
+           &:focus {
+               background-color: #dfdad7;
+           }
+       }
+   </style>
+
+
+
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled%20image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 class="heading">GRAMADO, RS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+
+                                                    <p>
+                                                        <b style="font-style: italic;">Difícil descrever, fácil se
+                                                            apaixonar</b>
+                                                    </p>
+                                                    <p><b>
+                                                            Está aberta a temporada de vinhos, fondues e chocolates,
+
+                                                            na encantadora Suiça Brasileira
+
+                                                        </b>
+                                                    </p>
+
+                                                    <p style="color: #FD7D01;">De 20 de março a 21 de Junho, o Outono
+                                                        toma conta de Gramado. Aos poucos, as
+                                                        cores começam a mudar. As árvores se despem do verde vivo para
+                                                        vestirem-se em
+                                                        vermelho e dourado, com suas nuanças ocres e carmins. Tudo vai
+                                                        se aquietando.
+
+                                                        O dia é um espetáculo teatral que se despede em grande estilo,
+
+                                                        desbotando as cores, calando a alma.
+
+                                                        Como quando você adapta a tela do seu celular para a opção Night
+                                                        Shift...</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <!-- <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            História: fazendas e belezas naturais intocadas
+                                        </p>
+                                      
+                                    </div> -->
+                                    <!-- <br> -->
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Gramado"
+                                                        style="background:url('img/edicaoAbril/pgramado.jpg');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 600px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="experiências gastronômicas, gramado"
+                                                        style="background:url('img/edicaoAbril/CARROSSEL - FONDUE DE QUEIJO DO CATHERINE RESTAURANT - GRAMADO, RS.jpg');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 500px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+
+                                                    <p>
+                                                        Conhecida carinhosamente como a ‘Suíça Brasileira’ – dentre
+                                                        outros, pelo clima temperado -
+                                                        Gramado mostra claramente as influências francesa, alemã e
+                                                        portuguesa, seja nas belíssimas
+                                                        construções de chalés alpinos e nos casarões, seja na tradição
+                                                        de fabricação de chocolates, na
+                                                        rica gastronomia, na cultura musical e no artesanato. As ruas
+                                                        arborizadas ganham os tons
+                                                        avermelhados dos plátanos espalhados pelas calçadas, um visual
+                                                        único que inunda os olhos e a
+                                                        alma.
+
+                                                    </p>
+
+                                                    <p>
+                                                        A cidade oferece uma variedade de experiências gastronômicas,
+                                                        incluindo cafés coloniais e
+                                                        fondues que combinam perfeitamente com o clima ameno. É o lugar
+                                                        perfeito para uma viagem
+                                                        inesquecível nesta estação - não raro, a gente presencia a
+                                                        chegada de uma neblina ou nevoeiro,
+                                                        conferido ares ainda mais europeus ao cenário.
+                                                        Caminhar pelas ruas de Gramado já é um programa e tanto! Se você
+                                                        não conhece a cidade, é um
+                                                        bom momento. Se já conhece, mata as saudades. A Avenida Borges
+                                                        de Medeiros é um convite
+                                                        para andar sem destino certo. O frio é uma delícia para saborear
+                                                        um chocolate quente, e as
+                                                        lojinhas e restaurantes ganham a tonalidade mágica do pôr-do-sol
+                                                        outonal. Não deixe de passear
+                                                        também pelas ruas que margeiam o Lago Negro.
+                                                    </p>
+
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Rua Coberta: charme genuíno
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        Curtir um bom vinho na charmosa Rua Coberta não tem preço.
+                                                        Aliás, você só sente Gramado, se
+                                                        conhecer a Rua Coberta. Localizada bem no centro da cidade, ali
+                                                        se concentram restaurantes,
+                                                        cafeterias e lojas, sem falar que também é palco dos mais
+                                                        diversos eventos e apresentações
+                                                        culturais, incluindo o Festival de Cinema – quando um imenso
+                                                        tapete vermelho é estendido por toda
+                                                        a extensão da Rua Coberta até a entrada do Palácio dos
+                                                        Festivais, onde, durante uma semana,
+                                                        artistas, diretores, produtores e imprensa nacional e
+                                                        internacional desfilam pela Rua Coberta, que
+                                                        fica tomada pelo público.
+
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title=" Rua Coberta"
+                                                        style="background:url('img/edicaoAbril/e3917a_7b11596da8444050975d11400ee1c695~mv2.avif');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 340px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Vizinhança de estilo
+
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Canela"
+                                                        style="background:url('img/edicaoAbril/Imagem16-1-1024x768.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        A vizinha Canela é um convite irrecusável a uma visita sem
+                                                        pressa. É linda e aconchegante. A 7
+                                                        km de Gramado, uma área conhecida como Região das Hortênsias, a
+                                                        cidade é uma joia rara na
+
+                                                        majestosa Serra Gaúcha, uma jornada de encantos, com sua
+                                                        atmosfera acolhedora e paisagens
+                                                        deslumbrantes, rodeada de colinas verdejantes e forte herança
+                                                        cultural. É o passeio ideal para
+                                                        quem também curte aventura e boa gastronomia. Para os
+                                                        apreciadores de vinhos, as opções são
+                                                        inúmeras em Canela.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+
+                                            Não deixe de conhecer...
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <p>
+                                                        As comemorações da FESTA DA COLÔNIA, da <b>PÁSCOA</b>  e o <b>NATAL LUZ</b> em
+                                                        Gramado – que
+                                                        vai de outubro a janeiro - são as atrações mais procuradas por
+                                                        viajantes do mundo inteiro, que
+                                                        lotam a cidade e outras vizinhas.
+                                                        Cercado de mata, azaleias, hortênsias e araucárias, o <b>LAGO NEGRO</b>
+                                                        fica na região dos bairros
+                                                        Planalto e bairro Lago Negro, no Centro de Gramado.
+                                                        O <b>MINI MUNDO</b> é um parque temático composto de réplicas em
+                                                        miniatura de cidades,
+                                                        monumentos e paisagens de todas as partes do mundo, com tudo que
+                                                        você encontra  em uma
+                                                        cidade.
+                                                     
+
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="FESTA DA COLÔNIA"
+                                                        style="background:url('img/edicaoAbril/FESTA-DA-COLONIA-scaled.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="LAGO NEGRO"
+                                                        style="background:url('img/edicaoAbril/CARD 1.webp');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+
+                                             
+
+
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="O REINO DO CHOCOLATE CARACOL"
+                                                        style="background:url('img/edicaoAbril/caption.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <p>
+                                                      
+                                                        <b>O REINO DO CHOCOLATE CARACOL e MUNDO DO CHOCOLATE dispensam
+                                                            comentários. <br>
+                                                            O SNOWLAND, em Gramado, é uma </b>ótima sugestão do que fazer em
+                                                        Gramado e Canela. É
+                                                        conhecer a neve sem sair do Brasil. O Snowland  é uma das
+                                                        principais atrações para o ano
+                                                        inteiro. Lugar perfeito pra andar de esqui, de snowboard (surf
+                                                        na neve), patinação no gelo e
+                                                        escorregar montanha abaixo em colchões infláveis.
+                                                     
+
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="SNOWLAND"
+                                                        style="background:url('img/edicaoAbril/Snowland-7-1024x768.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+
+                                               
+                                               
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="O SKAY GLASS CANELA"
+                                                        style="background:url('img/edicaoAbril/tour-chocolate-skyglass-61d5972a8d5e1-large.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 400px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+                                                
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="O SKAY GLASS CANELA"
+                                                        style="background:url('img/edicaoAbril/vale-da-ferradura.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 400px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <p>
+                                                     <b>O SKAY GLASS CANELA</b>, no Vale da Ferradura, é uma das maiores
+                                                     atrações da Serra Gaúcha.
+                                                     Esse passeio é uma loucura! Imperdível para quem procura o que
+                                                     fazer em Gramado e e Canela.
+                                                     Construída em aço e vidro, a 360 metros do chão. <br>
+                                                     <br>
+                                                     <b>PARQUE CARACOL</b> – Canela
+                                                     Se você gosta de ecoturismo e está na dúvida sobre o que fazer
+                                                     em Gramado e Canela visite o
+                                                     Parque Caracol. É uma unidade de preservação ambiental, uma
+                                                     reserva natural repleta de
+                                                     atrações. Localizado na rodovia RS 466, km 0, Canela- RS, conta
+                                                     com excelente infraestrutura
+                                                     incluindo lanchonetes, playgrounds, quadras esportivas,
+                                                     churrasqueiras, trilhas mirantes,
+                                                     banheiros e estacionamento.
+                                                    </p>
+ 
+                                                 </div>
+                                               
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+
+                                            Onde comer...
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <p>
+                                                        Difícil falar da cena gastronômica da Serra Gaúcha, repleta de
+                                                        infinitas e excelentes opções. Em
+                                                        Gramado e Canela, você encontra restaurantes variados, dos
+                                                        simples aos mais elegantes e
+                                                        sofisticados, seja na culinária brasileira, nas Casas
+                                                        especializados em fondue, carnes, massas e
+                                                        galetos, além de doces, cafés coloniais, lojas de chocolates e
+                                                        por aí vai. Sem falar nos rodízios de
+                                                        pizzas e jantares temáticos, que costumam entrar na programação
+                                                        de muitas famílias.
+                                                        Dentre as opções de fondue o <b>LE CHALET DE LA FONDUE</b> e do <b>BELLE DU VALAIS</b>.
+                                                       
+
+                                                    </p>
+                                                </div>
+
+
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        data-title="fondue, Gramado"
+                                                        style="background:url('img/edicaoAbril/nossa-missao-e-proporcionar.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 400px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                    <p>
+                                                        DESTACAMOS: as carnes maravilhosas do <b>MALBEC</b>, o <b>PIETRO GRILL</b>, um
+                                                        dos restaurantes
+                                                        mais tradicionais da cidade, ao lado da Igreja São Pedro, de
+                                                        Gramado, que oferece uma
+                                                        gastronomia de alto padrão com toques de religiosidade no
+                                                        ambiente e nos pratos que seguem
+                                                        este viés. <br>
+                                                    
+                                                        O excepcional <b>CATHERINE RESTAURANT</b> reúne sabor e apresentação
+                                                        artística, uma releitura
+                                                        de clássicos franceses com ingredientes locais em combinações
+                                                        verdadeiramente inusitadas e
+                                                        deliciosas, como o Sorbet de Goiaba e Pato ao Molho de
+                                                        Bergamota. Entre as fondues, destaque
+                                                        para as de queijo e chocolate Callebaut, todas com opções para
+                                                        vegetarianos, veganos e
+                                                        intolerantes à lactose.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+
+                                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                                            <article class="blog_post post_expand">
+                                                <div class="post_content">
+                                                    <div class="post_header">
+                                                        <p class="letra"
+                                                            style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                                            O que fazer em Gramado e Canela à noite
+                                                        </p>
+
+
+                                                    </div>
+                                                    <br>
+                                                    <div class="post_fulltext">
+                                                        <div class="fulltext_section">
+                                                            <div class="row">
+
+
+                                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                                    <p>
+                                                                        O que os turistas mais gostam de fazer a noite
+                                                                        em Gramado e Canela, é frequentar a <b>RUA
+                                                                            COBERTA</b>, em Gramado, onde se concentram, dentre
+                                                                        outros, bares, restaurantes, cafés, lojas de
+                                                                        chocolate, roupas e artesanato. Com 100 metros
+                                                                        de extensão, é uma rua fechada, somente para
+                                                                        pedestres. Como é coberta você pode frequentar
+                                                                        mesmo com chuva.
+                                                                        Outra sugestão imperdível do que fazer em
+                                                                        Gramado e Canela é aproveitar uma das melhores
+                                                                        atrações noturnas de Gramado. O <b>SNOWLAND
+                                                                            NIGHT</b> oferece atrações noturnas para toda a
+                                                                        família. Conheça de perto a Montanha de Neve,
+                                                                        assista shows de patinação artística no gelo,
+                                                                        show musical, visita à Oficina do Tio Urso e
+                                                                        Caverna do Yeti, opção de jantar com vista
+                                                                        panorâmica para a Montanha de Neve.Por fim,
+                                                                        saboreie a <b>CERVEJA REGIONAL</b>, além dos
+                                                                        vinhos e espumantes da melhor
+                                                                        qualidade. Aproveite e faça um tour pelo centro
+                                                                        de Gramado que
+                                                                        tem uma iluminação belíssima. A noite em Gramado
+                                                                        é mágica.
+
+                                                                    </p>
+                                                                </div>
+
+
+                                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                                    <div class="custom-card__background"
+                                                                        data-title="RUA COBERTA"
+                                                                        style="background:url('img/edicaoAbril/5-raz%c3%b5es-para-visitar-a-Rua-Coberta-de-Gramado.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 400px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                                    <div class="custom-card__background"
+                                                                        data-title="SNOWLAND NIGHT"
+                                                                        style="background:url('img/edicaoAbril/Neve em Gramado.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 400px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="col-md-4 col-sm-12 mb-5">
+                                                                    <div class="custom-card__background"
+                                                                        data-title="show musical, SNOWLAND NIGHT"
+                                                                        style="background:url('img/edicaoAbril/133785980_3595119337232779_2737402940960907304_o-compressed-1024x682.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 400px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+
+                                            Onde ficar?
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            
+                                            <div id="foto-mapa" style=" background-image: url(img/mapa.jpeg); margin: 30px 40px;">
+                                                <div class="row">
+
+                                            
+                                                    <div class="col-md-12 col-sm-12 mb-5">
+                                                        <div id="foto-mapa" style=" background-image: url(img/mapa.jpeg);">
+                                                            <div class="row" >
+                                                
+                                                                <blockquote3 style="margin:  0px 0px !important; padding: 0px 0px !important ;">
+                                                                    <b style="margin-left: 20px;"> Taí uma dúvida cruel! Gramado possui excelente estrutura
+                                                                        hoteleira, com acomodações para
+                                                                        todos os bolsos e estilos de viajantes. <br>
+                                                                        <br>
+                                                                        A importância da localização do hotel está relacionada com como
+                                                                        será sua forma de transporte
+                                                                        pela cidade. <br>
+                                                                        O comércio se concentra principalmente no centro de
+                                                                        Gramado e no centro de
+                                                                        Canela; então, para quem planeja conhecer a cidade a pé, é muito
+                                                                        importante pensar na
+                                                                        localização do hotel próxima a essas áreas. <br>
+                                                                        Para ficar em uma área bem central, é bom considerar uma
+                                                                        hospedagem próxima de pontos de
+                                                                        interesse como a Rua Coberta, perto da rodoviária e a Av. Borges
+                                                                        de Medeiros. <br> Na dúvida, confira
+                                                                        sempre um mapa para ter noção da distância do seu hotel até o
+                                                                        centro de Gramado. <br>
+                                                                        Segue uma lista com alguns dos hotéis mais reservados e bem
+                                                                        avaliados.</b> <br>
+                                                                    <br>
+                                                
+                                                
+                                                                    <b>HOTÉIS EM GRAMADO</b> <br>
+                                                
+                                                
+                                                                </blockquote3>
+                                                
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-4 col-sm-12 mb-5">
+                                                        <div>
+                                                            <div class="row">
+                                                
+                                                                <blockquote3 style="margin:  0px 0px !important; padding: 0px 0px !important ;">
+                                                
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/gramado-interlaken.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">Hotel
+                                                                            Gramado Interlaken</a></b><br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/gramado-exclusive-gramado.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Exclusive Gramado Hotel </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/pousada-monte-felice-gramado.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Hotel Monte Felice </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/recanto-da-serra.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Hotel Recanto da Serra </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/laghetto-stilo-vita.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Laghetto Stilo Vita </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/bella-gramado-by-gramado-parks-gramado.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Bella Gramado Resort </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/buona-vitta-gramado-by-gramado-parks.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Buona Vitta Gramado Resort </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/bavaria-sport.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Bavária Sport </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/prodigy-gramado.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__&amp;lang=pt-br">
+                                                                            Prodigy Gramado </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.google.com/url?sa=D&amp;q=https://www.booking.com/hotel/br/eleganz-hostel-amp-suites-gramado.pt-br.html%3Faid%3D335683%26amp%3Blabel%3DMD-POST-hoteis-gramado-380871__&amp;ust=1744628100000000&amp;usg=AOvVaw0EdwOLhotOGC91mpyeXVT3&amp;hl=pt-BR&amp;source=gmail">
+                                                                            Eleganz Hostel </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/glamour-da-serra.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Hotel Glamour da Serra </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/tri-gramado.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Tri Hotel Lago Gramado</a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/laghetto-stilo-borges.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Hotel Laghetto Stilo Borges </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/sky-serra-gramado.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Sky Serra Hotel </a></b> <br>
+                                                
+                                                                            <b><a target="_blank"
+                                                                                href="https://www.booking.com/hotel/br/laghetto-resort-golden-gramado.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                                Laghetto Resort Golden Gramado </a></b> <br>
+                                                
+                                                
+                                                                </blockquote3>
+
+                                                                
+                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-12 mb-5">
+                                                        <div>
+                                                            <div class="row">
+                                                
+                                                                <blockquote3 style="margin:  0px 0px !important; padding: 0px 0px !important ;">
+                                                
+                                                
+                                                                  
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/gramado-palace.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Hotel Gramado Palace </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/serra-azul.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Serrazul Hotel Distributed By Intercity </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.google.com/url?sa=D&amp;q=https://www.booking.com/hotel/br/pousada-nossa-casa-gramado.html%3Faid%3D335683%26amp%3Blabel%3DMD-POST-hoteis-gramado-380871__&amp;ust=1744628160000000&amp;usg=AOvVaw3NSpI0mASAaC555t9gNA8H&amp;hl=pt-BR&amp;source=gmail">
+                                                                            Pousada Floratta Nossa Casa </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/sky-palace.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Sky Palace Hotel </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/alpenhaus.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Sky Borges Hotel Alpenhaus </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/renascenca-gramado.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Hotel Renascença </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/serrano-resort-convencoes-spa.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Wish Serrano </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/encantos-hortensias.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Sky Premium Hotel Gramado </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/klein-ville-gramado.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Sky Ville Hotel Gramado </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/gramado-master-palace.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__&amp;lang=pt-br">
+                                                                            Master Gramado Hotel </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/sky.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Hotel Sky Gramado </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/sossego-do-major.pt-br.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Sky Valle Hotel </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/gramado-termas-resort-amp-spa-by-wyndham.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Wyndham Gramado Termas Resort </a></b> <br>
+                                                                    <b><a target="_blank"
+                                                                            href="https://www.booking.com/hotel/br/cavalo-branco-spa.html?aid=335683&amp;label=MD-POST-hoteis-gramado-380871__">
+                                                                            Sky Centro Hotel </a></b> <br>
+                                                
+                                                
+                                                
+                                                                </blockquote3>
+                                                                <br>
+                                                                <b>
+                                                                  Veja também: <a target="_blank" href="https://www.melhoresdestinos.com.br/resort-gramado-2.html">
+                                                                       Resort em Gramado: 5 hotéis maravilhosos para relaxar na Serra Gaúcha</a>
+                                                              </b>
+                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                 
+                                                
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                      
+                    
+                    </div>
+
+                </div>
+            </div>
+            <div id="dica-curiango" class="dica-curiango">
+                <a href="#" onclick="abrirModal()"> <img src="images/WhatsApp%20Image%202024-02-14%20at%2021.04.28.jpg"
+                        alt="Imagem do Curiango" class="imagem-curiango">
+                    <span class="texto-dica">Dica do Curiango</span></a>
+            
+            </div>
+            <div id="footer-home"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+
+    <div id="dica-do-curiango" class="modal" style="display: none;">
+        <article class="modal-container">
+            <header class="modal-container-header">
+                <h3 class="modal-container-title" style="color: #878787; font-family: 'Oswald', sans-serif;">
+                    <img src="images/WhatsApp%20Image%202024-02-14%20at%2021.04.28.jpg" alt="Imagem do Curiango"
+                        class="imagem-curiango">
+                    Dicas do Curiango
+                </h3>
+                <button onclick="fecharModal()" class="icon-button">
+                    <svg style="color: #878787; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill="currentColor"
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </header>
+                            
+            <section class="modal-container-body rtf">
+                <!-- <h2 style="color: #878787;     font-family: 'Oswald', sans-serif;">Datas:  </h2> -->
+
+                <p style="color: #878787;     font-family: 'Oswald', sans-serif;"> Reserve com antecedência. Principalmente em férias, feriados,
+                    datas comemorativas e no Natal Luz.</p>
+
+                </ol>
+                <!-- <h3  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </h3>
+
+                <p  style="color: #878787;     font-family: 'Oswald', sans-serif;">   </p> -->
+            </section>
+
+        </article>
+    </div>
+
+    <script>
+
+        var modal = new bootstrap.Modal(document.getElementById('dica-do-curiango'));
+
+        function abrirModal() {
+
+            modal.show();
+        }
+
+        function fecharModal() {
+
+            modal.hide();
+        }
+    </script>
+</body>
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:24 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/gramado-rs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:45:33 GMT -->
+</html>

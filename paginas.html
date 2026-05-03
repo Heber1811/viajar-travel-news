@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <style>
+        .img-row {
+            margin: 40px 0;
+        }
+
+        .img-text-row {
+            margin: 60px 0;
+            align-items: center;
+        }
+
+        .texto-lateral {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .img-caption {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            color: #888;
+            margin-top: 10px;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        .img-full {
+            margin: 40px 0;
+        }
+
+        .lista-pousadas {
+            list-style: none;
+            padding: 0;
+            columns: 2;
+            /* divide em 2 colunas */
+        }
+
+        .lista-pousadas li {
+            margin-bottom: 8px;
+        }
+
+        .lista-pousadas a {
+            text-decoration: none;
+            color: #0b7a3d;
+            font-weight: 500;
+        }
+
+        .lista-pousadas a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-article {
+            position: relative;
+            height: 70vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-article-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-article::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+        }
+
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .hero-content p {
+            hyphens: none;
+            -webkit-hyphens: none;
+            -ms-hyphens: none;
+            word-break: normal;
+            overflow-wrap: normal;
+        }
+
+        .hero-caption {
+            position: absolute;
+            left: 50%;
+            bottom: 16px;
+            transform: translateX(-50%);
+            z-index: 3;
+            width: calc(100% - 40px);
+            max-width: 900px;
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 12px;
+            line-height: 1.35;
+            text-align: center;
+            font-style: italic;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+        }
+
+        #pagina,
+        #pagina *,
+        #curiango,
+        #curiango *,
+        .hero-article,
+        .hero-article * {
+            hyphens: none !important;
+            -webkit-hyphens: none !important;
+            -ms-hyphens: none !important;
+            word-break: normal !important;
+            overflow-wrap: normal !important;
+        }
+
+        .article-container {
+            max-width: 900px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .article-container p {
+            font-size: 18px;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 25px;
+        }
+
+        .article-container.texto-duas-colunas {
+            max-width: 1180px;
+        }
+
+        .article-container.texto-duas-colunas>p {
+            column-count: 2;
+            column-gap: 45px;
+            text-align: justify;
+            hyphens: none;
+            -webkit-hyphens: none;
+            -ms-hyphens: none;
+            word-break: normal;
+            overflow-wrap: normal;
+        }
+
+        @media (max-width: 767px) {
+            .article-container.texto-duas-colunas>p {
+                column-count: 1;
+            }
+        }
+
+        .section-title {
+            color: #FD7D01;
+            font-size: 25px;
+            margin: 60px 0 25px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .section-title span {
+            display: block;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 90px;
+            height: 4px;
+            margin: 18px auto 0;
+            background: linear-gradient(to right, #FD7D01 0 55%, #d6d6d6 55% 100%);
+        }
+
+        .img-premium {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 10px 0px 10px 0px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .box-highlight {
+            background: #faf7f2;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 60px 0;
+            border-left: 6px solid #FD7D01;
+        }
+
+        .box-highlight.box-highlight--imagem {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+        }
+
+        .box-highlight.box-highlight--imagem .section-title,
+        .box-highlight.box-highlight--imagem p {
+            color: #fff;
+        }
+
+        .box-highlight.box-highlight--duas-colunas p {
+            column-count: 2;
+            column-gap: 45px;
+        }
+
+        .box-highlight--itens {
+            padding: 48px;
+        }
+
+        .box-items {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        .box-items li {
+            color: #fff;
+            font-size: 17px;
+            line-height: 1.35;
+            text-align: center;
+            padding: 13px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.088);
+            backdrop-filter: blur(2px);
+        }
+
+        @media (max-width: 767px) {
+            .box-highlight.box-highlight--duas-colunas p {
+                column-count: 1;
+            }
+
+            .box-highlight--itens {
+                padding: 32px 22px;
+            }
+
+            .box-items {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+
+            50% {
+                transform: scale(1.1);
+                filter: brightness(120%);
+            }
+
+            100% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+        .dica-curiango {
+            bottom: 10px;
+            left: 20px;
+            /* Alinha o card à esquerda */
+            background-color: #ffffff;
+            color: #878787 !important;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            z-index: 9999;
+        }
+
+        .imagem-curiango {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+            animation: pulsar 2.9s infinite;
+
+        }
+
+        .texto-dica {
+            flex-grow: 1;
+        }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* End basic CSS override */
+
+        * {
+            scrollbar-width: 0;
+        }
+
+        *::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background-color: #ddd;
+            border: 4px solid #fff;
+        }
+
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#000, 0.25);
+        }
+
+        .modal-container {
+            max-height: 90vh;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+
+            @media (max-width: 600px) {
+                width: 90%;
+
+            }
+        }
+
+        /* 📱 MOBILE */
+        @media (max-width: 600px) {
+            .lista-pousadas {
+                display: contents !important;
+            }
+        }
+
+        .modal-container-header {
+            padding: 16px 32px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-container-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 1.125;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                color: #750550;
+            }
+        }
+
+        .modal-container-body {
+            padding: 24px 32px 51px;
+            overflow-y: auto;
+        }
+
+        .rtf {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.125;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            &>*+* {
+                margin-top: 1em;
+            }
+
+            &>*+ :is(h1, h2, h3) {
+                margin-top: 2em;
+            }
+
+            &> :is(h1, h2, h3)+* {
+                margin-top: 0.75em;
+            }
+
+            ul,
+            ol {
+                margin-left: 20px;
+                list-style-position: inside;
+            }
+
+            ol {
+                list-style: numeric;
+            }
+
+            ul {
+                list-style: disc;
+            }
+        }
+
+        .modal-container-footer {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top: 1px solid #ddd;
+            gap: 12px;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -51px;
+                left: 24px;
+                right: 24px;
+                height: 50px;
+                flex-shrink: 0;
+                background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+                pointer-events: none;
+            }
+        }
+
+        .button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s ease;
+
+            &.is-ghost {
+
+                &:hover,
+                &:focus {
+                    background-color: #dfdad7;
+                }
+            }
+
+            &.is-primary {
+                background-color: #750550;
+                color: #fff;
+
+                &:hover,
+                &:focus {
+                    background-color: #4a0433;
+                }
+            }
+        }
+
+        .icon-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.15s ease;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: #dfdad7;
+            }
+        }
+    </style>
+
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 id="card-title" class="heading"> </h2>
+                </div>
+            </div>
+        </div>
+        <div class="m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <div id="pagina" class="col-12"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="featured_category bg_image_1 dica-curiango" data-aos="fade-up" data-aos-duration="700"
+                style=" padding: 50px 0px 50px 0px">
+                <div class="container">
+                    <div class="row" style="justify-content: center; display: flex;">
+                        <div id="curiango" class="col-lg-6 col-sm-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="footer-home"></div>
+        </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/htmlDinamico.js?v=20260428-9"></script>
+
+</body>
+
+</html>

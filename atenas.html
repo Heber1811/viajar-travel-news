@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/atenas.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:45:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon"
+        type="image/png">
+
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+    <style>
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+
+            50% {
+                transform: scale(1.1);
+                filter: brightness(120%);
+            }
+
+            100% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+        .dica-curiango {
+            bottom: 10px;
+            left: 20px;
+            /* Alinha o card à esquerda */
+            background-color: #ffffff;
+            color: #878787 !important;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            z-index: 9999;
+        }
+
+        .imagem-curiango {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+            animation: pulsar 2.9s infinite;
+
+        }
+
+        .texto-dica {
+            flex-grow: 1;
+        }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* End basic CSS override */
+
+        * {
+            scrollbar-width: 0;
+        }
+
+        *::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background-color: #ddd;
+            border: 4px solid #fff;
+        }
+
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#000, 0.25);
+        }
+
+        .modal-container {
+            max-height: 90vh;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+
+            @media (max-width: 600px) {
+                width: 90%;
+            }
+        }
+
+        .modal-container-header {
+            padding: 16px 32px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-container-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 1.125;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                color: #750550;
+            }
+        }
+
+        .modal-container-body {
+            padding: 24px 32px 51px;
+            overflow-y: auto;
+        }
+
+        .rtf {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.125;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            &>*+* {
+                margin-top: 1em;
+            }
+
+            &>*+ :is(h1, h2, h3) {
+                margin-top: 2em;
+            }
+
+            &> :is(h1, h2, h3)+* {
+                margin-top: 0.75em;
+            }
+
+            ul,
+            ol {
+                margin-left: 20px;
+                list-style-position: inside;
+            }
+
+            ol {
+                list-style: numeric;
+            }
+
+            ul {
+                list-style: disc;
+            }
+        }
+
+        .modal-container-footer {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top: 1px solid #ddd;
+            gap: 12px;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -51px;
+                left: 24px;
+                right: 24px;
+                height: 50px;
+                flex-shrink: 0;
+                background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+                pointer-events: none;
+            }
+        }
+
+        .button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s ease;
+
+            &.is-ghost {
+
+                &:hover,
+                &:focus {
+                    background-color: #dfdad7;
+                }
+            }
+
+            &.is-primary {
+                background-color: #750550;
+                color: #fff;
+
+                &:hover,
+                &:focus {
+                    background-color: #4a0433;
+                }
+            }
+        }
+
+        .icon-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.15s ease;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: #dfdad7;
+            }
+        }
+    </style>
+
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled%20image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 class="heading"> ATENAS, Grécia</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p
+                                                        style="color: #FD7D01; font-size: 20px !important; line-height: 30px;">
+                                                        A capital grega obteve a melhor pontuação em caminhabilidade,
+                                                        com trajetos
+                                                        de até 30 minutos a pé entre principais pontos históricos. Conta
+                                                        com 2.773
+                                                        horas de sol por ano e quase 10% de restaurantes saudáveis.
+                                                        Apesar da menor quantidade de áreas verdes urbanas,
+                                                        o litoral da Riviera Ateniense compensa esse aspecto.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Partenon, Acrópole de Atenas"
+                                                        style="background:url('img/edicaoOutubro/CARD 4 - Foto 1.webp');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 600px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 mb-5">
+
+                                                    <p>
+                                                        Em Atenas, priorize a <a style="color: #9ed13b;" target="_blank"
+                                                            href="https://www.google.com/search?q=Acr%C3%B3pole&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIARAC&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Acrópole</a> e o <a style="color: #9ed13b;"
+                                                            target="_blank" href="https://www.google.com/search?q=Museu+da+Acr%C3%B3pole&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIARAD&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Museu da Acrópole</a> no primeiro
+                                                        dia, explore a <a style="color: #9ed13b;" target="_blank"
+                                                            href="https://www.google.com/search?q=%C3%81gora+Antiga&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIARAE&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Ágora Antiga</a> e
+                                                        o bairro de <a style="color: #9ed13b;" target="_blank"
+                                                            href="https://www.google.com/search?q=Plaka&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIARAF&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Plaka</a>, e visite o <a style="color: #9ed13b;"
+                                                            target="_blank" href="https://www.google.com/search?q=Museu+Arqueol%C3%B3gico+Nacional&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIARAG&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Museu Arqueológico Nacional</a> no
+                                                        segundo dia. Para um
+                                                        roteiro mais
+                                                        completo, visite o <a style="color: #9ed13b;" target="_blank"
+                                                            href="https://www.google.com/search?q=Jardim+Nacional&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIARAH&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Jardim Nacional</a>, o <a style="color: #9ed13b;"
+                                                            target="_blank" href="https://www.google.com/search?q=Est%C3%A1dio+Panatenaico&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIARAI&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Estádio Panatenaico</a> e o <a
+                                                            style="color: #9ed13b;" target="_blank" href="https://www.google.com/search?q=Monte+Licabeto&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIARAJ&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Monte
+                                                            Licabeto</a>. Lembre-se de
+                                                        comprar ingressos online com antecedência, especialmente para a
+                                                        Acrópole, e estar atento à
+                                                        segurança.
+
+
+                                                    </p>
+
+
+
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Acrópole de Atenas"
+                                                        style="background:url('img/edicaoOutubro/CARD 4 - Foto 4.jpg');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 400px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="Plaka, o bairro mais antigo de Atenas, na Grécia "
+                                                        style="background:url('img/edicaoOutubro/CARD 4 - Foto 5.jpg');    
+                                                                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                                                                background-position: center !important;              
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 400px;
+                                                                                                                                                                position: relative;
+                                                                                                                                                                display: flex;
+                                                                                                                                                                margin: auto;            
+                                                                                                                                                                background-size: cover;
+                                                                                                                                                                border-radius: 10px;">
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- TÍTULO PRINCIPAL -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <div class="six"
+                                            style="position: relative; max-width: 90%; padding: 2em; margin: 1.5em auto; text-align: center;">
+                                            <h1><span style="font-size: 0.8em;">Pontos Turísticos Imperdíveis</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="row">
+
+                            <!-- Acrópole e Partenon -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                                <article class="blog_post post_expand">
+                                    <div class="post_content">
+                                        <div class="post_header">
+                                            <p class="letra"
+                                                style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                                Acrópole e Partenon
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="post_fulltext">
+                                            <div class="fulltext_section">
+                                                <div class="row">
+                                                    <div class="container"
+                                                        style="justify-content: center; display: flex;">
+                                                        <div class="col-md-10 col-sm-10 mb-5"
+                                                            style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                            <p>
+                                                                O ícone de Atenas e berço da civilização grega. Chegue
+                                                                cedo para evitar multidões.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Museu da Acrópole -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                                <article class="blog_post post_expand">
+                                    <div class="post_content">
+                                        <div class="post_header">
+                                            <p class="letra"
+                                                style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                                Museu da Acrópole
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="post_fulltext">
+                                            <div class="fulltext_section">
+                                                <div class="row">
+                                                    <div class="container"
+                                                        style="justify-content: center; display: flex;">
+                                                        <div class="col-md-10 col-sm-10 mb-5"
+                                                            style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                            <p>
+                                                                Localizado próximo à Acrópole, abriga artefatos
+                                                                encontrados no sítio.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Ágora Antiga -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                                <article class="blog_post post_expand">
+                                    <div class="post_content">
+                                        <div class="post_header">
+                                            <p class="letra"
+                                                style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                                Ágora Antiga
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="post_fulltext">
+                                            <div class="fulltext_section">
+                                                <div class="row">
+                                                    <div class="container"
+                                                        style="justify-content: center; display: flex;">
+                                                        <div class="col-md-10 col-sm-10 mb-5"
+                                                            style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                            <p>
+                                                                O antigo centro da vida pública da cidade, com o <a style="color: #9ed13b;" target="_blank" href="https://www.google.com/search?q=Templo+de+Hefesto&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIAxAF&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Templo de Hefesto</a> e o <a style="color: #9ed13b;" target="_blank" href="https://www.google.com/search?q=Museu+da+%C3%81gora&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIAxAG&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Museu da Ágora</a>.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Bairro de Plaka -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                                <article class="blog_post post_expand">
+                                    <div class="post_content">
+                                        <div class="post_header">
+                                            <p class="letra"
+                                                style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                                Bairro de Plaka
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="post_fulltext">
+                                            <div class="fulltext_section">
+                                                <div class="row">
+                                                    <div class="container"
+                                                        style="justify-content: center; display: flex;">
+                                                        <div class="col-md-10 col-sm-10 mb-5"
+                                                            style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                            <p>
+                                                                Explore as ruas charmosas, restaurantes e lojas.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Museu Arqueológico Nacional -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                                <article class="blog_post post_expand">
+                                    <div class="post_content">
+                                        <div class="post_header">
+                                            <p class="letra"
+                                                style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                                Museu Arqueológico Nacional
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="post_fulltext">
+                                            <div class="fulltext_section">
+                                                <div class="row">
+                                                    <div class="container"
+                                                        style="justify-content: center; display: flex;">
+                                                        <div class="col-md-10 col-sm-10 mb-5"
+                                                            style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                            <p>
+                                                                Uma das mais ricas coleções de artefatos da Grécia
+                                                                Antiga.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Jardim Nacional e Zappeion -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                                <article class="blog_post post_expand">
+                                    <div class="post_content">
+                                        <div class="post_header">
+                                            <p class="letra"
+                                                style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                                Jardim Nacional e Zappeion
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="post_fulltext">
+                                            <div class="fulltext_section">
+                                                <div class="row">
+                                                    <div class="container"
+                                                        style="justify-content: center; display: flex;">
+                                                        <div class="col-md-10 col-sm-10 mb-5"
+                                                            style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                            <p>
+                                                                Um oásis verde no coração da cidade.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Estádio Panatenaico -->
+                            <div class="col-lg-6 col-md-6 col-sm-12 details_with_sidebar">
+                                <article class="blog_post post_expand">
+                                    <div class="post_content">
+                                        <div class="post_header">
+                                            <p class="letra"
+                                                style="text-align: center; font-size: 18px !important; color: #43474B !important;">
+                                                Estádio Panatenaico
+                                            </p>
+                                        </div>
+                                        <br>
+                                        <div class="post_fulltext">
+                                            <div class="fulltext_section">
+                                                <div class="row">
+                                                    <div class="container"
+                                                        style="justify-content: center; display: flex;">
+                                                        <div class="col-md-10 col-sm-10 mb-5"
+                                                            style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                            <p>
+                                                                Palco dos primeiros Jogos Olímpicos modernos.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+
+                        <!-- Roteiro Sugerido -->
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <div class="six"
+                                            style="position: relative; max-width: 90%; padding: 2em; margin: 1.5em auto; text-align: center;">
+                                            <h1><span style="font-size: 0.8em;">Roteiro Sugerido</span></h1>
+                                        </div>
+                                    </div>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="container" style="justify-content: center; display: flex;">
+                                                <div class="col-md-10 col-sm-10 mb-5"
+                                                    style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                                    <ul
+                                                        style="list-style-type: disc; text-align: left; margin-left: 1.5em;">
+                                                        <li><strong>Dia 1:</strong> Acrópole, Museu da Acrópole e bairro
+                                                            de Plaka</li>
+                                                        <li><strong>Dia 2:</strong> Museu Arqueológico Nacional, Jardim
+                                                            Nacional e Monte Licabeto
+                                                            para o pôr do sol.</li>
+                                                        <li><strong>Dia 3 (ou mais):</strong> Ágora Antiga, <a style="color: #9ed13b;" target="_blank" href="https://www.google.com/search?q=Monastiraki&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIBRAF&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Monastiraki</a>,
+                                                            <a style="color: #9ed13b;" target="_blank" href="https://www.google.com/search?q=Pra%C3%A7a+Syntagma&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIBRAG&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Praça Syntagma</a> e passeios
+                                                            por regiões próximas ou praias.</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Dicas Essenciais -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <div class="six"
+                                            style="position: relative; max-width: 90%; padding: 2em; margin: 1.5em auto; text-align: center;">
+                                            <h1><span style="font-size: 0.8em;">Dicas Essenciais</span></h1>
+                                        </div>
+                                    </div>
+                                    <div class="container" style="justify-content: center; display: flex;">
+                                        <div class="col-md-10 col-sm-10 mb-5"
+                                            style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px;">
+                                            <p><strong>Compre Ingressos Online</strong> – Compre ingressos com antecedência,
+                                                especialmente para a Acrópole, para evitar filas e ter descontos;</p>
+                                            <p><strong>Seguro Viagem</strong> – Obrigatório para brasileiros viajarem para países da
+                                                Europa, com cobertura mínima de 30.000 Euros;</p>
+                                            <p><strong>Chegue Cedo</strong> – Para visitar pontos turísticos como a Acrópole, chegar cedo
+                                                é fundamental para evitar as multidões;</p>
+                                            <p><strong>Caminhe e Explore</strong> – Atenas convida a caminhadas, principalmente nos
+                                                bairros de Plaka e Monastiraki;</p>
+                                            <p><strong>Cultura Local</strong> – Experimente a culinária grega, com restaurantes famosos
+                                                como o <em><a style="color: #9ed13b;" target="_blank" href="https://www.google.com/search?q=Geros+Tou+Moria&amp;sca_esv=9e2f4bacbbf36aa5&amp;sxsrf=AE3TifOgvWq76cQXZPda0IM7XkqEbd803w%3A1759361579798&amp;ei=K7rdaOK_MOrf1sQPl_SKyQQ&amp;ved=2ahUKEwjU4OmlooSQAxUErpUCHYOtGA4QgK4QegQIBxAJ&amp;uact=5&amp;oq=atenas%2C+gr%C3%A9cia+guia+r%C3%A1pido&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiHGF0ZW5hcywgZ3LDqWNpYSBndWlhIHLDoXBpZG8yCBAhGKABGMMESJAzUABY4ipwAHgBkAEAmAGrAaAB3hCqAQQwLjE0uAEDyAEA-AEBmAINoAKIEcICBhAAGAcYHsICCBAAGAcYChgewgIIEAAYBxgIGB7CAggQABiABBiiBMICBRAAGO8FwgIKECEYoAEYwwQYCpgDAJIHBDAuMTOgB-U0sgcEMC4xM7gHiBHCBwcyLTcuNS4xyAd4&amp;sclient=gws-wiz-serp&amp;mstk=AUtExfAxeTiwIzVBZi_e5tJzQ8wbLUfWccAKajZR1XmU31ffApbnHa4N-iU_TIeHlg2kftMA_NQycHNNkXtPzBX7qsuSq-Sz0SJZsnwOvZ-KsnXYkpOBxBYCeoqhESc5rTP_-r0y0OL7o0gV-FfXkVDC3boSGB_-3glPtFtPuT_1KyX98zE&amp;csui=3">Geros Tou Moria</a></em>, e explore os bares e a vida noturna da
+                                                cidade;</p>
+                                            <p><strong>Passeios de Ônibus</strong> – Considere um tour de ônibus turístico para ter uma
+                                                visão geral da cidade e aprender sobre a história de cada local.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="dica-curiango" class="dica-curiango">
+                <a href="#" onclick="abrirModal()"> <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg"
+                        alt="Imagem do Curiango" class="imagem-curiango">
+                    <span class="texto-dica">Dica do Curiango</span></a>
+
+            </div> -->
+            <div id="footer-home"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+
+    <div id="dica-do-curiango" class="modal" style="display: none;">
+        <article class="modal-container">
+            <header class="modal-container-header">
+                <h3 class="modal-container-title" style="color: #878787; font-family: 'Oswald', sans-serif;">
+                    <img src="images/WhatsApp%20Image%202024-02-14%20at%2021.04.28.jpg" alt="Imagem do Curiango"
+                        class="imagem-curiango">
+                    Dicas do Curiango
+                </h3>
+                <button onclick="fecharModal()" class="icon-button">
+                    <svg style="color: #878787; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill="currentColor"
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </header>
+
+            <section class="modal-container-body rtf">
+                <!-- <h2 style="color: #878787;     font-family: 'Oswald', sans-serif;">Datas:  </h2> -->
+
+                <p style="color: #878787;     font-family: 'Oswald', sans-serif;"> --</p>
+
+                <!-- <h3  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </h3>
+
+                <p  style="color: #878787;     font-family: 'Oswald', sans-serif;">   </p> -->
+            </section>
+
+        </article>
+    </div>
+
+    <script>
+
+        var modal = new bootstrap.Modal(document.getElementById('dica-do-curiango'));
+
+        function abrirModal() {
+
+            modal.show();
+        }
+
+        function fecharModal() {
+
+            modal.hide();
+        }
+    </script>
+</body>
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:24 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/atenas.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:45:11 GMT -->
+</html>

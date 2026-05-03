@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <style>
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+
+            50% {
+                transform: scale(1.1);
+                filter: brightness(120%);
+            }
+
+            100% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+        .dica-curiango {
+            bottom: 10px;
+            left: 20px;
+            /* Alinha o card à esquerda */
+            background-color: #ffffff;
+            color: #878787 !important;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            z-index: 9999;
+        }
+
+        .imagem-curiango {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+            animation: pulsar 2.9s infinite;
+
+        }
+
+        .texto-dica {
+            flex-grow: 1;
+        }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* End basic CSS override */
+
+        * {
+            scrollbar-width: 0;
+        }
+
+        *::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background-color: #ddd;
+            border: 4px solid #fff;
+        }
+
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#000, 0.25);
+        }
+
+        .modal-container {
+            max-height: 90vh;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+
+            @media (max-width: 600px) {
+                width: 90%;
+            }
+        }
+
+        .modal-container-header {
+            padding: 16px 32px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-container-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 1.125;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                color: #750550;
+            }
+        }
+
+        .modal-container-body {
+            padding: 24px 32px 51px;
+            overflow-y: auto;
+        }
+
+        .rtf {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.125;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            &>*+* {
+                margin-top: 1em;
+            }
+
+            &>*+ :is(h1, h2, h3) {
+                margin-top: 2em;
+            }
+
+            &> :is(h1, h2, h3)+* {
+                margin-top: 0.75em;
+            }
+
+            ul,
+            ol {
+                margin-left: 20px;
+                list-style-position: inside;
+            }
+
+            ol {
+                list-style: numeric;
+            }
+
+            ul {
+                list-style: disc;
+            }
+        }
+
+        .modal-container-footer {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top: 1px solid #ddd;
+            gap: 12px;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -51px;
+                left: 24px;
+                right: 24px;
+                height: 50px;
+                flex-shrink: 0;
+                background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+                pointer-events: none;
+            }
+        }
+
+        .button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s ease;
+
+            &.is-ghost {
+
+                &:hover,
+                &:focus {
+                    background-color: #dfdad7;
+                }
+            }
+
+            &.is-primary {
+                background-color: #750550;
+                color: #fff;
+
+                &:hover,
+                &:focus {
+                    background-color: #4a0433;
+                }
+            }
+        }
+
+        .icon-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.15s ease;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: #dfdad7;
+            }
+        }
+    </style>
+
+
+
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 class="heading">OS VAGÕES
+                        CATEGORIA BOUTIQUE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12">
+
+                                                    <p>
+                                                        <b>Todos os vagões da Categoria Boutique incluem serviço de
+                                                            bordo
+                                                            com lanche, bebidas à vontade (água, suco, refrigerante e
+                                                            cerveja)
+                                                            e guia de turismo (bilíngue, sob demanda) durante o trajeto
+                                                            do trem.</b>
+                                                    </p>
+                                                    <p>BOUTIQUE - BARÃO DO SERRO AZUL</p>
+
+                                                    <p>Varanda panorâmica</p>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <!-- <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            História: fazendas e belezas naturais intocadas
+                                        </p>
+                                      
+                                    </div> -->
+                                    <!-- <br> -->
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        Em homenagem ao Barão do Serro Azul, personalidade paranaense
+                                                        que teve papel importante
+                                                        na economia e desenvolvimento do Estado, este vagão possui
+                                                        detalhes especiais. <br>
+                                                        Um dos diferenciais é que os passageiros podem desfrutar de uma
+                                                        varanda panorâmica na cauda
+                                                        do trem no trajeto de Curitiba para Morretes, ideal para
+                                                        apreciar as paisagens da Serra do Mar e
+                                                        estar em contato direto com a natureza. Na parte interna, conta
+                                                        com janelas amplas e mesas para
+                                                        até quatro pessoas.
+
+                                                    </p>
+
+                                                </div>
+
+                                                <!-- <div class="col-md-4 col-sm-12 mb-5">
+                                                    <p>
+                                                     
+                                                    </p>
+                                                </div> -->
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        style="background:url('./img/ediodejan2025/Trem.jpg');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 300px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            BOUTIQUE - BOVE
+
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        Primeiro vagão pet friendly do Brasil <br>
+                                                        <br>
+                                                        O vagão oferece espaço para os animais seguirem confortáveis na
+                                                        viagem ao lado de seus
+                                                        tutores, que também usufruem de assentos confortáveis e
+                                                        estofados. Também possui uma
+                                                        varanda, localizada na parte central, entre os lounges.
+                                                        Para os pets, é obrigatório apresentar carteira de vacinação,
+                                                        comprovando a imunização
+                                                        antirrábica há mais de 30 dias, e autorização do veterinário
+                                                        para a realização do passeio (emitida
+                                                        há menos de 15 dias).
+
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        style="background:url('img/ediodejan2025/CARD 4 - Vagão Bove Primeiro vagão Pet Friendly do Brasil.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            BOUTIQUE - IMPERIAL
+
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        style="background:url('img/ediodejan2025/card-4-vagao-boutique-imperial.jpg');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        Uma experiência nostálgica e de luxo. <br>
+                                                        <br>
+                                                        Toda a decoração interna remete aos anos 30. Com mesas,
+                                                        cadeiras, lustres e luminárias no
+                                                        estilo retrô, o ambiente transporta os passageiros para uma
+                                                        imersão na era dos trens do passado.
+                                                        Uma vivência exclusiva e apaixonante.
+
+                                                    </p>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            BOUTIQUE - CAMAROTE
+
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p><b>Cabines exclusivas e decoração clássica remetem ao início do
+                                                            século
+                                                            passado.</b></p>
+                                                    <p>
+                                                        Como o próprio nome sugere, possui janelas amplas e que se
+                                                        abrem. Comportam até quatro
+                                                        pessoas, sendo ideal para grupo de amigos e famílias viajarem
+                                                        com privacidade.
+
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        style="background:url('img/ediodejan2025/CARD 4 - Vagão Bolutique Camarote.png');    
+                                                                                                                background-repeat: no-repeat !important;
+                                                                                                                background-position: center !important;              
+                                                                                                                width: 100%;
+                                                                                                                height: 300px;
+                                                                                                                position: relative;
+                                                                                                                display: flex;
+                                                                                                                margin: auto;            
+                                                                                                                background-size: cover;
+                                                                                                                border-radius: 10px;">
+                                                    </div>
+
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            BOUTIQUE - GUARDIÕES DO MARUMBI
+
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p><b>Montanhismo e homenagem à Serra do Mar</b></p>
+                                                    <p>
+                                                        Inaugurado em dezembro de 2021, o vagão homenageia grandes nomes
+                                                        do montanhismo do
+                                                        Estado. Com uma varanda central, o projeto traz referências ao
+                                                        montanhismo e à beleza
+                                                        exuberante da Serra do Mar Paranaense. Os detalhes remetem à
+                                                        conexão que essas ilustres
+                                                        personalidades criaram com a natureza do Paraná. Em cada canto é
+                                                        possível observar
+                                                        particularidades que ajudam a contar a história do montanhismo
+                                                        da região.
+
+                                                    </p>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            CATEGORIA BOUTIQUE - CARMEN SILVA (ACESSÍVEL)
+
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p><b> Tributo à paratleta paranaense Carmen Silva Santos</b></p>
+                                                    <p>
+
+                                                        Totalmente adaptado para receber pessoas com diferentes tipos de
+                                                        necessidades especiais, o
+                                                        vagão inclusivo conta ainda com uma varanda, que garante o
+                                                        contato com a natureza, além de
+                                                        uma experiência sensorial diferenciada.
+                                                        E o primeiro – único, no Brasil –desenvolvido exclusivamente
+                                                        para atender pessoas com
+                                                        deficiências, mobilidade reduzida e transtornos, como autismo.
+                                                        O carro, projetado pelas arquitetas Lucille Amaral e Silvane
+                                                        Eclache, possui 27 assentos, dois
+                                                        lugares para cadeiras de rodas, além de banheiro com
+                                                        acessibilidade.
+                                                    </p>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra"
+                                            style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                            CATEGORIA LITORINA
+
+                                        </p>
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        style="background:url('./img/ediodejan2025/litorina.jpg');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 400px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background"
+                                                        style="background:url('img/ediodejan2025/CARD 4 - Vagão Litorina Luxo.jpg');    
+                                                                                                                                            background-repeat: no-repeat !important;
+                                                                                                                                            background-position: center !important;              
+                                                                                                                                            width: 100%;
+                                                                                                                                            height: 400px;
+                                                                                                                                            position: relative;
+                                                                                                                                            display: flex;
+                                                                                                                                            margin: auto;            
+                                                                                                                                            background-size: cover;
+                                                                                                                                            border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p>O trem da categoria Litorina é o único trem de luxo do Brasil e
+                                                        um dos únicos
+                                                        do mundo com sistema automotriz (sistema de tração próprio), ou
+                                                        seja, ela
+                                                        pode viajar pelos trilhos sem a necessidade de toda a
+                                                        composição.
+                                                        O passeio nas Litorinas inclui Welcome Drink (espumante) serviço
+                                                        de bordo
+                                                        com lanche, bebidas à vontade (água, suco, refrigerante e
+                                                        cerveja)
+                                                        e guia de turismo (bilíngue, sob demanda) durante o trajeto do
+                                                        trem.</p>
+                                                    <p>
+                                        
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div style=" min-height: 330px; padding: 20px; border-radius: 20px; border: 1px solid #878787;">
+                                                        <b>LITORINA LUXO - COPACABANA</b> <br>
+                                                        <br>
+                                                        <b>Inspiração carioca e decoração neoclássica</b> <br>
+                                                        <br>
+                                                        A Litorina Copacabana é inspirada no calçadão de um dos bairros
+                                                        mais famosos da cidade
+                                                        maravilhosa. A decoração neoclássica resgata elementos
+                                                        tradicionais do Rio de Janeiro e
+                                                        transporta os passageiros para uma viagem à parte. O vagão
+                                                        oferece poltronas, cadeiras
+                                                        estofadas e pequenos sofás.
+                                                    </p>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div  style="min-height: 330px; padding: 20px; border-radius: 20px; border: 1px solid #878787;">
+                                                        <b>LITORINA LUXO – CURITIBA</b> <br>
+                                                        <br>
+                                                        <b>Modernidade</b> <br>
+                                                        <br>
+                                                        <p>A Litorina Curitiba conta com uma decoração moderna, com símbolos
+                                                            e cores que fazem
+                                                            referência à capital paranaense. A iluminação especial
+                                                            transforma o ambiente em lugar
+                                                            aconchegante e elegante, como a cidade de Curitiba.</p>
+    
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div style="min-height: 330px; padding: 20px; border-radius: 20px; border: 1px solid #878787;">
+                                                        <b>LITORINA LUXO - FOZ DO IGUAÇU</b> <br>
+                                                        <br>
+                                                        <b>Uma consagração à imponência das Cataratas</b> <br>
+                                                        <br>
+                                                        <p>A Litorina Foz do Iguaçu é uma homenagem à cidade dona de uma das
+                                                            Sete Maravilhas do
+                                                            Mundo. A natureza da região e a imponência das Cataratas do
+                                                            Iguaçu estão representadas na
+                                                            decoração neoclássica. Cada detalhe foi pensado para
+                                                            proporcionar uma experiência imersiva.
+                                                            O vagão oferece poltronas, cadeiras estofadas e pequenos sofás.
+                                                        </p>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div style="min-height: 330px; padding: 20px; border-radius: 20px; border: 1px solid #878787;">
+                                                        <b>CATEGORIA TURÍSTICA</b> <br>
+                                                        <br>
+                                                        <b>Simplicidade e serviço de bordo</b> <br>
+                                                        <br>
+                                                        <p>Os vagões da Categoria Turística oferecem poltronas confortáveis
+                                                            e amplas janelas.
+                                                            Alguns vagões desta categoria possuem poltronas com encostos
+                                                            flexíveis, possibilitando a
+                                                            inversão dos assentos para acompanhar o sentido do trajeto do
+                                                            trem.
+                                                            Essa opção não conta com decoração, mas inclui serviço de bordo
+                                                            com lanche, 1 água ou 1
+                                                            refrigerante e guia de turismo (em português).</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div style="min-height: 330px; padding: 20px; border-radius: 20px; border: 1px solid #878787;">
+                                                        <b>CATEGORIA ECONÔMICA</b> <br>
+                                                        <br>
+                                                        <b>Transporte de montanhistas</b> <br>
+                                                        <br>
+                                                        <p>A Categoria Econômica conta com cadeiras de plástico e banheiro.
+                                                            Por não possuir serviço de
+                                                            bordo ou guia, é destinada como meio de transporte para quem vai
+                                                            até o Pico do Marumbi
+                                                            praticar montanhismo. No sentido Morretes – Curitiba a
+                                                            circulação é de costas ao sentido do trem.</p>
+                                                    
+                                                    </div>
+                                                   
+                                                </div>
+                                              
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div id="dica-curiango" class="dica-curiango">
+                <a href="#" onclick="abrirModal()"> <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg"
+                        alt="Imagem do Curiango" class="imagem-curiango">
+                    <span class="texto-dica">Dica do Curiango</span></a>
+            
+            </div> -->
+            <div id="footer-home"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+
+    <div id="dica-do-curiango" class="modal" style="display: none;">
+        <article class="modal-container">
+            <header class="modal-container-header">
+                <h3 class="modal-container-title" style="color: #878787; font-family: 'Oswald', sans-serif;">
+                    <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg" alt="Imagem do Curiango"
+                        class="imagem-curiango">
+                    Dicas do Curiango
+                </h3>
+                <button onclick="fecharModal()" class="icon-button">
+                    <svg style="color: #878787; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill="currentColor"
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </header>
+            <section class="modal-container-body rtf">
+                <h2 style="color: #878787;     font-family: 'Oswald', sans-serif;">Datas:  </h2>
+
+                <p style="color: #878787;     font-family: 'Oswald', sans-serif;"> Caso o vagão escolhido não tenha
+                    datas disponíveis, aproveite para conhecer as outras opções.
+                    Qualquer dúvida, é só entrar em contato pelo WhatsApp: (41) 3888-3472.</p>
+
+                </ol>
+                <!-- <h3  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </h3> -->
+
+                <!-- <p  style="color: #878787;     font-family: 'Oswald', sans-serif;">   </p> -->
+            </section>
+
+        </article>
+    </div>
+
+    <script>
+
+        var modal = new bootstrap.Modal(document.getElementById('dica-do-curiango'));
+
+        function abrirModal() {
+
+            modal.show();
+        }
+
+        function fecharModal() {
+
+            modal.hide();
+        }
+    </script>
+</body>
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:24 GMT -->
+
+</html>

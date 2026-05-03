@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:15 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/forro-aracaju.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:45:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Viajar Travel News">
+    <meta name="author" content="">
+
+    <!-- Page Title -->
+    <title>Viajar Travel News</title>
+
+    <!-- Favicon and touch Icons -->
+    <link href="img/favicon.png" rel="shortcut icon"
+        type="image/png">
+
+    <link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Lead Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+    <style>
+        @keyframes pulsar {
+            0% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+
+            50% {
+                transform: scale(1.1);
+                filter: brightness(120%);
+            }
+
+            100% {
+                transform: scale(1);
+                filter: brightness(100%);
+            }
+        }
+
+        .dica-curiango {
+            bottom: 10px;
+            left: 20px;
+            /* Alinha o card à esquerda */
+            background-color: #ffffff;
+            color: #878787 !important;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            z-index: 9999;
+        }
+
+        .imagem-curiango {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 50%;
+            animation: pulsar 2.9s infinite;
+
+        }
+
+        .texto-dica {
+            flex-grow: 1;
+        }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        /* End basic CSS override */
+
+        * {
+            scrollbar-width: 0;
+        }
+
+        *::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            border-radius: 99px;
+            background-color: #ddd;
+            border: 4px solid #fff;
+        }
+
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#000, 0.25);
+        }
+
+        .modal-container {
+            max-height: 90vh;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 15px 30px 0 rgba(#000, 0.25);
+
+            @media (max-width: 600px) {
+                width: 90%;
+            }
+        }
+
+        .modal-container-header {
+            padding: 16px 32px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .modal-container-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 1.125;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                color: #750550;
+            }
+        }
+
+        .modal-container-body {
+            padding: 24px 32px 51px;
+            overflow-y: auto;
+        }
+
+        .rtf {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                line-height: 1.125;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                line-height: 1.25;
+            }
+
+            h3 {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            &>*+* {
+                margin-top: 1em;
+            }
+
+            &>*+ :is(h1, h2, h3) {
+                margin-top: 2em;
+            }
+
+            &> :is(h1, h2, h3)+* {
+                margin-top: 0.75em;
+            }
+
+            ul,
+            ol {
+                margin-left: 20px;
+                list-style-position: inside;
+            }
+
+            ol {
+                list-style: numeric;
+            }
+
+            ul {
+                list-style: disc;
+            }
+        }
+
+        .modal-container-footer {
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top: 1px solid #ddd;
+            gap: 12px;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -51px;
+                left: 24px;
+                right: 24px;
+                height: 50px;
+                flex-shrink: 0;
+                background-image: linear-gradient(to top, rgba(#fff, 0.75), transparent);
+                pointer-events: none;
+            }
+        }
+
+        .button {
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s ease;
+
+            &.is-ghost {
+
+                &:hover,
+                &:focus {
+                    background-color: #dfdad7;
+                }
+            }
+
+            &.is-primary {
+                background-color: #750550;
+                color: #fff;
+
+                &:hover,
+                &:focus {
+                    background-color: #4a0433;
+                }
+            }
+        }
+
+        .icon-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.15s ease;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: #dfdad7;
+            }
+        }
+    </style>
+
+
+
+    <div id="preloader" class="loader_show">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pointer start -->
+    <div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+    <div class="content">
+        <div class="top_part">
+            <!-- Start Header -->
+            <!-- Start Header -->
+            <header id="header" class="header_1 header">
+                <div class="navigation">
+                    <nav id="flexmenu">
+                        <div class="logo logo-container">
+                            <a href="index.html"><img style="max-height: 100px;" src="img/Untitled%20image.png"
+                                    alt="logo"><span style="padding-left: 40px; font-size:20px; color: #43474b;">Viajar
+                                    Travel News</span>
+                            </a>
+                        </div>
+                        <!-- <div id="div-titulo">
+								<b id="titulo-viajar" style="padding-left: 20px; font-size: 40px;">Viajar Travel News</b>
+
+							</div> -->
+                        <div class="nav-inner">
+                            <div id="mobile-toggle" class="mobile-btn"></div>
+                            <ul class="main-menu">
+                                <li class="menu-item "><a href="index.html">Início</a></li>
+                                <!-- <li class="menu-item"><a href="#quem-somos">Quem Somos</a></li>
+									<li class="menu-item"><a href="#quem-faz">Quem Faz</a></li>
+									<li class="menu-item"><a href="#news">News</a></li> -->
+                                <li class="menu-item"><a href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="page-header">
+            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
+                <div class="container">
+                    <h2 class="heading"> FORRÓ CAJU | Aracaju, SE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper m_tp_0">
+            <div class="container">
+                <div class="blog_details">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                        
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                        
+                                                    <!-- <div class="post_header">
+                                                                                <div class="six" style=" position: relative;
+                                                                                max-width: 90%; /* Torna o tamanho flexível */
+                                                                                padding: 2em;
+                                                                                margin: 1.5em auto;
+                                                                                text-align: center;">
+                                                                                    <h1> Titulo
+                                                                                        <span></span>
+                                                                                    </h1>
+                                                                                </div>
+                        
+                                                                            </div> -->
+                                                    <!-- <p>
+                                                                                <b style="font-style: italic; font-size: 20px !important;">Você
+                                                                                    conhece a cidade mais isolada do Brasil?</b>
+                                                                            </p> -->
+                                                    <!-- <p><b>
+                                                                               
+                        
+                                                                                </b>
+                                                                            </p> -->
+                        
+                                                    <p style="color: #FD7D01; font-size: 20px !important; line-height: 30px;">
+                                                        Desde o dia 30 de maio, as celebrações juninas começaram na Praça Fausto
+                                                        Cardoso, berço histórico e cultural da cidade, região central de Aracaju.
+                                                        Mas a programação principal acontece entre 18 e 29 de junho,
+                                                        na tradicional Praça Hilton Lopes, entre os mercados centrais.
+                                                    </p>
+                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <!-- <div class="post_header">
+                                                                <p class="letra" style="text-align: center; font-size: 25px !important; color: #43474B !important;">
+                                                                    História: fazendas e belezas naturais intocadas
+                                                                </p>
+                                                              
+                                                            </div> -->
+                                    <!-- <br> -->
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="FORRÓ CAJU"
+                                                        style="background:url('img/edicaoJunho/CARD\ 5\ \(3\).webp');    
+                                                                                                                                                                    background-repeat: no-repeat !important;
+                                                                                                                                                                    background-position: center !important;              
+                                                                                                                                                                    width: 100%;
+                                                                                                                                                                    height: 600px;
+                                                                                                                                                                    position: relative;
+                                                                                                                                                                    display: flex;
+                                                                                                                                                                    margin: auto;            
+                                                                                                                                                                    background-size: cover;
+                                                                                                                                                                    border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="FORRÓ CAJU"
+                                                        style="background:url('img/edicaoJunho/CARD 5.webp');    
+                                                                                                                                                                    background-repeat: no-repeat !important;
+                                                                                                                                                                    background-position: center !important;              
+                                                                                                                                                                    width: 100%;
+                                                                                                                                                                    height: 400px;
+                                                                                                                                                                    position: relative;
+                                                                                                                                                                    display: flex;
+                                                                                                                                                                    margin: auto;            
+                                                                                                                                                                    background-size: cover;
+                                                                                                                                                                    border-radius: 10px;">
+                                                    </div>
+                                                </div>
+                        
+                        
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                        
+                                                    <p>
+                                                        Este ano, pela primeira vez, as celebrações juninas ganham formato descentralizado,
+                                                        distribuído
+                                                        pelos bairros da cidade. O objetivo é aproximar os festejos das comunidades, movimentar
+                                                        o
+                                                        comércio e impulsionar a economia de diversos bairros. <br>
+                                                        <br>
+                                                        Criado em 1993, o Forró Caju - que resgata um capítulo marcante da memória coletiva dos
+                                                        aracajuanos - ganhou status de megaevento quando saiu da praça Fausto Cardoso para os
+                                                        Mercados Centrais, e se consolidou como um dos maiores festejos juninos do país. A nova
+                                                        configuração proporcionou uma melhor estrutura para a festa.
+                        
+                        
+                                                    </p>
+                        
+                        
+                        
+                                                </div>
+                        
+                        
+                        
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                        
+                                        <div class="post_header">
+                                            <div class="six"
+                                                style=" position: relative;
+                                                                                                                                                max-width: 90%; /* Torna o tamanho flexível */
+                                                                                                                                                padding: 2em;
+                                                                                                                                                margin: 1.5em auto;
+                                                                                                                                                text-align: center;">
+                                                <h1> Fórum do Forró: a importância do ritmo
+                                                    <span></span>
+                                                </h1>
+                                            </div>
+                        
+                                        </div>
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <p>
+                                                        A capital sergipana oferece uma festa junina animada e cheia de tradição. O Forró Caju é
+                                                        o
+                                                        principal arraiá da cidade, reunindo uma programação cultural diversificada, com
+                                                        apresentações
+                                                        de quadrilhas, shows de artistas locais e nacionais, além de uma ampla variedade de
+                                                        comidas
+                                                        típicas. <br>
+                                                        <br>
+                                                        Durante a apresentação da programação, a prefeita Emília Corrêa destacou a valorização
+                                                        da cultura
+                                                        local com cerca de 60% da programação com artistas sergipanos. E ressaltou o impacto
+                                                        econômico,
+                                                        através da geração de emprego e renda em vários setores da cidade. <br>
+                                                        <br>
+                                                        O evento conta ainda com o Fórum do Forró, um evento que vai promover o diálogo e a
+                                                        discussão
+                                                        sobre o forró, a música nordestina e as tradições juninas. É um espaço para diferentes
+                                                        vozes se
+                                                        unirem e debaterem, com a presença de músicos, artistas, pesquisadores e amantes do
+                                                        forró. 
+                                                        O Fórum vai debater a importância do ritmo para a cultura do país.
+                        
+                                                    </p>
+                                                </div>
+                        
+                                                <div class="col-md-6 col-sm-12 mb-5">
+                                                    <div class="custom-card__background" data-title="FORRÓ CAJU"
+                                                        style="background:url('img/edicaoJunho/forrocaju2022-fotofelipegoettenauer-1.jpg');    
+                                                                                                                                                                                                                    background-repeat: no-repeat !important;
+                                                                                                                                                                                                                    background-position: center !important;              
+                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                    height: 500px;
+                                                                                                                                                                                                                    position: relative;
+                                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                                    margin: auto;            
+                                                                                                                                                                                                                    background-size: cover;
+                                                                                                                                                                                                                    border-radius: 10px;">
+                                                    </div>
+                        
+                                                </div>
+                        
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <div class="six"
+                                            style=" position: relative;
+                                                                                                                                                                    max-width: 90%; /* Torna o tamanho flexível */
+                                                                                                                                                                    padding: 2em;
+                                                                                                                                                                    margin: 1.5em auto;
+                                                                                                                                                                    text-align: center;">
+                                            <h1>Onde ficar em Aracaju
+                                                <span></span>
+                                            </h1>
+                                        </div>
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p>
+                                                        A cidade não é tão grande – são pouco mais de 570 mil moradores – e isso nos
+                                                        permite fazer
+                                                        deslocamentos mais rápidos, com chances de aproveitar mais áreas da cidade. Mas é
+                                                        preciso saber
+                                                        onde ficar.
+                        
+                                                    </p>
+                                                    <div class="six"
+                                                        style=" position: relative;
+                                                                                                                                                                                                                                                                    max-width: 90%; /* Torna o tamanho flexível */
+                                                                                                                                                                                                                                                                    padding: 2em;
+                                                                                                                                                                                                                                                                    margin: 1.5em auto;
+                                                                                                                                                                                                                                                                    text-align: center;">
+                                                        <b>ONDE FICAR EM ARACAJU, SEGUNDO O BLOG <a
+                                                                target="_blank"  style="color: #FD7D01 !important;" href="PENAESTRADA.BLOG.BR/index.html">PENAESTRADA.BLOG.BR</a> </b>
+                                                    </div>
+                                                   
+                                                      <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                           ORLA DE ATALAIA
+                                        </p>
+                                                </div>
+                        
+                        
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </article>
+                        
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Ibis Budget Aracaju
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                            Hotel <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=2254253&amp;dest_type=hotel&amp;label=v3.cmbinpq62rwed0894x8903h5h"><b
+                                                                    style="color: #A0CF14;">Ibis Budget Aracaju</b></a>
+                                                            ótima opção para quem quer ficar na Orla de Atalaia sem gastar muito.
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Celi Hotel Aracaju
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                            <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=259359&amp;dest_type=hotel&amp;label=v3.cmbinrgc0rbgj0858kiprquwj"><b
+                                                                    style="color: #A0CF14;">Celi Hotel Aracaju</b></a>
+                                                            fica pertinho do Ibis Budget, tem quartos arejados, bem decorados e atendimento
+                                                            profissional.
+                        
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Pousada Encantare
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=374373&amp;dest_type=hotel&amp;label=v3.cmbinszc0rhum0898kpldt5kf"><b
+                                                                    style="color: #A0CF14;">Pousada Encantare</b></a>
+                                                            bem decorada, tem uma área com piscina e os quartos são bem aconchegantes.
+                        
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            San Manuel Praia Hotel
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=258849&amp;dest_type=hotel&amp;label=v3.cmbinu00qrim20898430l4eez"><b
+                                                                    style="color: #A0CF14;">San Manuel Praia Hotel</b></a>
+                                                            fica, praticamente, na Passarela do Caranguejo e tem quartos simples, mas bem
+                                                            resolvidos.
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Anauê Pousada e Hostel
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=1028383&amp;dest_type=hotel&amp;label=v3.cmbinuwvgs06k0894vw0nu4tz"><b
+                                                                    style="color: #A0CF14;">Anauê Pousada e Hostel</b></a> é uma ótima opção
+                                                            para quem procura um hostel para ficar em Aracaju.
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Concept Tower Praia Apart
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=4145990&amp;dest_type=hotel&amp;label=v3.cmbinvu5mrjvg0898homoramw"><b
+                                                                    style="color: #A0CF14;">Concept Tower Praia Apart</b></a>
+                                                            a três quadras da praia, em uma região super valorizada e perto de tudo.
+                        
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Residencial Sol Nascente
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=3705810&amp;dest_type=hotel&amp;label=v3.cmbinwpwnrrex0854m2eta2yj"><b
+                                                                    style="color: #A0CF14;">Residencial Sol Nascente</b></a>
+                                                            também fica pertinho da praia, numa área mais tranquila, mas, ainda assim, perto de
+                                                            tudo.
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Apartamento vista mar Atalaia
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=6189654&amp;dest_type=hotel&amp;label=v3.cmbinya8is2mm0894xkauiz06"><b
+                                                                    style="color: #A0CF14;">Apartamento vista mar Atalaia</b></a>
+                                                            tem uma localização ótima, perto dos melhores bares e restaurantes da orla.
+                        
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Orla de Atalaia
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                            Perfeito Apartamento na <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=5504704&amp;dest_type=hotel&amp;label=v3.cmbio05qes3yx0894y97emlmu"><b
+                                                                    style="color: #A0CF14;">Orla de Atalaia</b></a>
+                                                            fica coladinho na praia – são só três quadras – e perto de tudo.
+                        
+                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                              Apto Praia Atalaia
+                                        </p>
+                        
+                        
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                            <a target="_blank" href="https://www.booking.com/hotel/br/condominio-residencial-santa-cecilia.html?aid=1607597&amp;label=v3.cmbiod9yarwi80898jb78w4lt"><b style="color: #A0CF14;">Apto Praia Atalaia </b></a>
+                                                             tem 73 metros quadrados e três quartos: dois com cama de casal e outro com duas de solteiro.
+                                                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p class="letra"
+                                                        style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                                       COROA DO MEIO
+                                                    </p>
+                                                </div>
+                        
+                        
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </article>
+                        
+                        </div>
+                         <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Real Classic Hotel
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=257667&amp;dest_type=hotel&amp;label=v3.cmbioky5arwd80858clzbrgsv"><b style="color: #A0CF14;">Real Classic Hotel</b></a> fica de frente para a praia e para os Lagos da Orla, uma área ótima para fazer caminhadas.
+
+
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                         <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                                Del Mar Hotel
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=418112&amp;dest_type=hotel&amp;label=v3.cmbiol21ks20f0898l3062x64"><b style="color: #A0CF14;">Del Mar Hotel</b></a>
+                                                              tem uma estrutura excelente, com umapiscina grande, área verde super bem cuidada e academia.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                         <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Aquarios Praia Hotel
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                            <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=259411&amp;dest_type=hotel&amp;label=v3.cmbiol6phrwjt08589ze93mxi"><b
+                                                                    style="color: #A0CF14;">Aquarios Praia Hotel</b></a>
+                                                            fica de frente para a praia, perto da área mais indicada para quem está viajando com
+                                                            crianças.
+                                                        
+                                                        
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                         <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Real Praia Hotel
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=257777&amp;dest_type=hotel&amp;label=v3.cmbiolajhs95z0854s5op97rw"><b style="color: #A0CF14;">Real Praia Hotel</b></a> é daqueles hotéis pequenos, mas super aconchegantes e com tudo no lugar certo.
+
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                         <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Arcus Hotel Aracaju
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=2108017&amp;dest_type=hotel&amp;label=v3.cmbiold9rs28n0898haprtsrv"><b style="color: #A0CF14;">Arcus Hotel Aracaju</b></a>
+                                                             hotel de rede internacional, com atendimento padronizado e profissional, muito bom para ficar em Aracaju.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                         <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Aracaju Corais Hotel
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                            <a target="_blank"
+                                                                href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=1602217&amp;dest_type=hotel&amp;label=v3.cmbiolg35rwrb0858icy0uuyt"><b
+                                                                    style="color: #A0CF14;">Aracaju Corais Hotel</b></a> pequeno, novinho, super bem cuidado e decorado com
+                                                            muitos detalhes.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                         <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Farol Plaza Hotel
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=5562628&amp;dest_type=hotel&amp;label=v3.cmbiolj1tsix10894rlgpauy2"><b style="color: #A0CF14;">Farol Plaza Hotel</b></a>
+                                                              fica no final da praia, na boca do rio, é interessante para quem quer ficar em Aracaju sem gastar muito.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                         <div class="col-lg-3 col-md-3  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Quality Hotel Aracaju
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                         <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=266254&amp;dest_type=hotel&amp;label=v3.cmbioll81siyp08945yan2fb5"><b style="color: #A0CF14;">Quality Hotel Aracaju</b></a>
+                                                          não fica de frente para a praia, mas é uma das melhores opções para ficar em Aracaju.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p class="letra"
+                                                        style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                                        PRAIA DE ARUANA
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+                        <div class="col-lg-6 col-md-6  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Aruanã Eco Praia Hotel
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=263599&amp;dest_type=hotel&amp;label=v3.cmbioo0lcryms0858q7vczx66"><b style="color: #A0CF14;">Aruanã Eco Praia Hotel</b></a>
+                                                             tem a leveza e rusticidade de um bom hotel pé na areia.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                          <div class="col-lg-6 col-md-6  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Tropical Mar Hotel
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=4185443&amp;dest_type=hotel&amp;label=v3.cmbioo2mos44v0898zdnsp4rk"><b style="color: #A0CF14;">Tropical Mar Hotel</b></a>
+                                                              pertinho da Praia do Refúgio, é pequeno, novinho e muito bem cuidado.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 mb-5">
+                                                    <p class="letra"
+                                                        style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                                        GRAGERU E JARDINS
+                                                    </p>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <div class="col-lg-6 col-md-6  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            Ibis Aracaju
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                             <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=1850009&amp;dest_type=hotel&amp;label=v3.cmbioop8rsbkf08541u9zpyzn"><b style="color: #A0CF14;">Ibis Aracaju</b></a>
+                                                              fica no Grageru e segue aquele padrão que a gente conhece bem: quartos compactos, bem planejados, limpeza em dia e atendimento profissional.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-6 col-md-6  col-sm-12 details_with_sidebar">
+                            <article class="blog_post post_expand">
+                                <div class="post_content">
+                                    <div class="post_header">
+                                        <p class="letra" style="text-align: center; font-size: 20px !important; color: #43474B !important;">
+                                            NB Hoteis
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="post_fulltext">
+                                        <div class="fulltext_section">
+                                            <div class="row">
+                                                <div class="container" style="justify-content: center; display: flex;">
+                                                    <div class="col-md-10 col-sm-10 mb-5"
+                                                        style="border: 1px solid #FD7D01; border-radius: 15px; padding: 15px 15px 0px 15px;">
+                                                        <p>
+                                                         <a target="_blank" href="https://www.booking.com/searchresults.html?aid=1607597&amp;dest_id=2474885&amp;dest_type=hotel&amp;label=v3.cmbiooybarzai085831v8ccqa"><b style="color: #A0CF14;">NB Hoteis</b></a>
+                                                         hotel super novo que fica no Jardins e tem uma das melhores avaliações da cidade.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="dica-curiango" class="dica-curiango">
+                <a href="#" onclick="abrirModal()"> <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg"
+                        alt="Imagem do Curiango" class="imagem-curiango">
+                    <span class="texto-dica">Dica do Curiango</span></a>
+
+            </div> -->
+            <div id="footer-home"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- All JavaScript Files
+        ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
+
+    <div id="dica-do-curiango" class="modal" style="display: none;">
+        <article class="modal-container">
+            <header class="modal-container-header">
+                <h3 class="modal-container-title" style="color: #878787; font-family: 'Oswald', sans-serif;">
+                    <img src="images/WhatsApp%20Image%202024-02-14%20at%2021.04.28.jpg" alt="Imagem do Curiango"
+                        class="imagem-curiango">
+                    Dicas do Curiango
+                </h3>
+                <button onclick="fecharModal()" class="icon-button">
+                    <svg style="color: #878787; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill="currentColor"
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </header>
+
+            <section class="modal-container-body rtf">
+                <!-- <h2 style="color: #878787;     font-family: 'Oswald', sans-serif;">Datas:  </h2> -->
+
+                <p style="color: #878787;     font-family: 'Oswald', sans-serif;"> Respeite a Cultura Local: ao chegar,
+                    respeite os costumes e a cultura dos moradores. Eles são
+                    acolhedores, mas valorizam suas tradições.</p>
+
+                <!-- <h3  style="color: #878787;     font-family: 'Oswald', sans-serif;"> </h3>
+
+                <p  style="color: #878787;     font-family: 'Oswald', sans-serif;">   </p> -->
+            </section>
+
+        </article>
+    </div>
+
+    <script>
+
+        var modal = new bootstrap.Modal(document.getElementById('dica-do-curiango'));
+
+        function abrirModal() {
+
+            modal.show();
+        }
+
+        function fecharModal() {
+
+            modal.hide();
+        }
+    </script>
+</body>
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:52:24 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/forro-aracaju.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:45:20 GMT -->
+</html>

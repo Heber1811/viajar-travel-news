@@ -1,0 +1,4198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Mirrored from wpthemebooster.com/demo/themeforest/html/benzo/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Sep 2023 13:51:10 GMT -->
+
+
+<!-- Mirrored from viajartravelnews.com.br/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:35:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="description" content="Viajar Travel News">
+	<meta name="author" content="">
+
+	<!-- Page Title -->
+	<title>Viajar Travel News</title>
+
+	<!-- Favicon and touch Icons -->
+	<link href="img/favicon.png" rel="shortcut icon" type="image/png">
+	<link href="images/apple-touch-icon.html" rel="apple-touch-icon">
+	<link href="images/apple-touch-icon-72x72.html" rel="apple-touch-icon" sizes="72x72">
+	<link href="images/apple-touch-icon-114x114.html" rel="apple-touch-icon" sizes="114x114">
+	<link href="images/apple-touch-icon-144x144.html" rel="apple-touch-icon" sizes="144x144">
+
+	<link href="https://fonts.cdnfonts.com/css/tenor-sans" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;family=Roboto:wght@300&amp;display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link href="https://fonts.cdnfonts.com/css/maulysia" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/justin-brown-monoline" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&amp;display=swap" rel="stylesheet">
+
+
+
+	<!-- <link href="https://fonts.cdnfonts.com/css/shyntia-bella" rel="stylesheet"> -->
+	<link href="https://fonts.cdnfonts.com/css/faithful-hand" rel="stylesheet">
+
+	<!-- Lead Style -->
+	<link href="css/style.css?v=20260425-1" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+
+<style>
+	.insta-btn {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 9999;
+
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		text-decoration: none;
+		background: #fff;
+		padding: 8px 12px;
+		border-radius: 40px;
+
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+		/* animação pulsando */
+		animation: pulse 1.5s infinite;
+	}
+
+	.insta-btn img {
+		width: 30px;
+	}
+
+	.insta-btn span {
+		font-size: 13px;
+		font-family: Arial;
+		font-weight: bold;
+		color: #000000;
+	}
+
+	/* ANIMAÇÃO */
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+
+		50% {
+			transform: scale(1.12);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+
+	/* 📱 MOBILE */
+	@media (max-width: 600px) {
+
+		.insta-btn {
+			bottom: 15px;
+			right: 15px;
+			padding: 6px 10px;
+		}
+
+		.insta-btn img {
+			width: 26px;
+		}
+
+		.insta-btn span {
+			font-size: 12px;
+		}
+
+	}
+
+	@media (max-width: 600px) {
+		.insta-btn span {
+			display: none;
+		}
+
+		.insta-btn {
+			padding: 10px;
+			border-radius: 50%;
+		}
+	}
+
+
+	.insta-btn:active {
+		transform: scale(0.95);
+	}
+
+	.page-search-widget {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 10000;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
+	}
+
+	.search-menu-item {
+		display: flex;
+		align-items: center;
+		padding: 0 !important;
+	}
+
+	.menu-search-btn {
+		width: auto;
+		height: auto;
+		padding: 10px 16px;
+		border-radius: 25px;
+		border: none;
+		background: linear-gradient(135deg, #f17c3a 0%, #f1a73a 100%);
+		box-shadow: 0 4px 15px rgba(241, 124, 58, 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		pointer-events: auto;
+		letter-spacing: 0.5px;
+	}
+
+	/* .menu-search-btn:hover {
+		background: linear-gradient(135deg, #e86b2a 0%, #e0962a 100%);
+		box-shadow: 0 6px 25px rgba(241, 124, 58, 0.5);
+		transform: translateY(-2px);
+	} */
+
+	.search-btn-content {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+	}
+
+	.search-btn-content i {
+		color: #a5d23e;
+	}
+
+	.search-text {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+
+	.search-toggle {
+		font-family: "Tenor Sans", sans-serif;
+		letter-spacing: 2px;
+		width: 122px;
+		height: 40px;
+		/* border-radius: 50%; */
+		/* border: 1px solid rgba(0, 0, 0, 0.12); */
+		background: #ffffff;
+		box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #333;
+		font-size: 10px;
+		cursor: pointer;
+		transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+	}
+
+	.search-toggle:hover:not(.menu-search-btn) {
+		transform: scale(1.05);
+	}
+
+	.search-panel {
+		width: 320px;
+		max-width: calc(100vw - 40px);
+		background: rgba(255, 255, 255, 0.96);
+		border-radius: 18px;
+		box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+		padding: 14px;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-10px);
+		transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+		position: fixed;
+		top: 80px;
+		right: 20px;
+		z-index: 10001;
+		pointer-events: auto;
+	}
+
+	.search-panel.open {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	.search-panel form {
+		position: relative;
+		display: block;
+	}
+
+	.search-panel input {
+		width: 100%;
+		border: 1px solid #d3d3d3;
+		border-radius: 12px;
+		padding: 12px 54px 12px 14px;
+		font-size: 14px;
+		color: #222;
+		background: #fafafa;
+	}
+
+	.search-panel button[type="submit"],
+	.search-panel .search-close {
+		width: 34px;
+		height: 34px;
+		border: none;
+		border-radius: 12px;
+		background: #f17c3a;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	.search-panel .search-close {
+		background: #999;
+		position: absolute;
+		top: 50%;
+		right: 8px;
+		transform: translateY(-50%);
+	}
+
+	.search-hint,
+	.search-notice {
+		margin-top: 10px;
+		font-size: 12px;
+		color: #555;
+	}
+
+	.search-notice {
+		color: #c0392b;
+	}
+
+	.search-highlight {
+		background: rgba(255, 238, 128, 0.65);
+		border-radius: 6px;
+		transition: background 0.3s ease;
+	}
+
+	@media (max-width: 768px) {
+		.search-menu-item {
+			display: block;
+			width: 100%;
+			margin: 12px 0 16px;
+		}
+
+		.search-panel {
+			width: auto;
+			max-width: none;
+			top: 16px;
+			left: 12px;
+			right: 12px;
+			padding: 12px;
+			border-radius: 16px;
+		}
+
+		.menu-search-btn {
+			width: 100%;
+			min-height: 48px;
+			padding: 10px 16px;
+			justify-content: flex-start;
+			border-radius: 18px;
+			font-size: 15px;
+			margin-top: 8px;
+		}
+
+		.search-toggle {
+			width: 100%;
+			height: auto;
+			min-height: 48px;
+			justify-content: flex-start;
+		}
+
+		.search-btn-content {
+			width: 100%;
+			justify-content: flex-start;
+		}
+
+		.search-panel input {
+			font-size: 16px;
+			padding-right: 52px;
+		}
+	}
+
+
+
+
+	.logo-container img {
+		transition: transform 0.9s ease-in-out;
+	}
+
+	.circle-container {
+		position: relative;
+		width: 300px;
+		height: 350px;
+		overflow: hidden;
+	}
+
+	.circle-overlay {
+		position: absolute;
+		top: 31%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 200px;
+		/* Ajuste este valor conforme necessário */
+		height: 200px;
+		/* Ajuste este valor conforme necessário */
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	.circle-overlay img {
+		width: 100%;
+		height: auto;
+	}
+
+	.background-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	.overlay {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.overlay::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.309) !important;
+		z-index: 1;
+	}
+
+	.notification {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		background-color: #f8d7da;
+		color: #ef6429;
+		padding: 10px 20px;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		font-family: 'Muli', sans-serif;
+		font-size: 18px;
+		z-index: 9999;
+	}
+
+	.close-btn {
+		background: none;
+		border: none;
+		color: #9ED01E;
+		font-size: 20px;
+		margin-left: 10px;
+		cursor: pointer;
+		padding: 0;
+	}
+
+	.close-btn:hover {
+		color: #81ab19;
+	}
+
+	.img-cards {
+		/* border-radius: 10px; */
+		height: 395px;
+		width: 100%;
+		}
+
+		.carousel-bg {
+			background-repeat: no-repeat !important;
+			background-position: center !important;
+			background-size: cover;
+			width: 100%;
+			height: 650px;
+			position: relative;
+			display: flex;
+			margin: auto;
+		}
+
+			.conexao-piri-feature {
+				border: 1px solid rgba(253, 125, 1, 0.24);
+				background: linear-gradient(135deg, #fffaf4 0%, #ffffff 58%, #f5fbec 100%);
+				padding: 24px 28px;
+				margin: 0 0 34px;
+				text-align: center;
+				box-shadow: 0 16px 38px rgba(0, 0, 0, 0.08);
+				position: relative;
+				overflow: hidden;
+			}
+
+			.conexao-piri-feature::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 6px;
+				background: #FD7D01;
+			}
+
+			.conexao-piri-eyebrow {
+				display: block;
+				margin-bottom: 8px;
+				font-size: 0.78rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #6c7f25;
+			}
+
+			.conexao-piri-logo {
+				display: block;
+				font-family: 'Tenor Sans', sans-serif;
+				font-size: clamp(1.3rem, 4vw, 2.7rem);
+				letter-spacing: 0;
+				color: #FD7D01;
+				text-transform: uppercase;
+				line-height: 1.05;
+			}
+
+			.conexao-piri-copy {
+				max-width: 720px;
+				margin: 10px auto 0;
+				font-size: 0.96rem;
+				line-height: 1.55;
+				color: #3b3b3b;
+			}
+
+		.conexao-piri-instagram {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			margin-top: 10px;
+			color: #242424;
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		.conexao-piri-instagram img {
+			width: 18px;
+			height: 18px;
+			object-fit: contain;
+		}
+
+		.card-mantiqueira,
+		.card-mantiqueira *,
+		.card-vtn,
+		.card-vtn *,
+		.card-lua-cheia,
+		.card-lua-cheia *,
+		.moon-card,
+		.moon-card *,
+		#news,
+		#news *,
+		.text-top-left,
+		.text-top-left * {
+			hyphens: none !important;
+			-webkit-hyphens: none !important;
+			-ms-hyphens: none !important;
+			word-break: normal !important;
+			overflow-wrap: normal !important;
+		}
+
+		@media screen and (max-width: 968px) {
+
+			/* Regras específicas para celular deitado */
+			.img-cards {
+				/* height: 650px; */
+			width: 100%;
+		}
+	}
+
+		@media screen and (max-width: 768px) {
+			.carousel-bg {
+				height: 480px;
+			}
+
+			.img-cards-lua {
+				height: 300px !important;
+				width: 100%;
+			}
+
+		.img-cards {
+			height: 550px;
+			width: 100%;
+		}
+
+	}
+
+		@media screen and (max-width: 480px) {
+			.carousel-bg {
+				height: 420px;
+			}
+
+			.main-wrapper {
+				margin: 50px 0px;
+			}
+
+		.img-cards {
+			height: 335px;
+			width: 100%;
+		}
+
+		.carousel-container {
+			height: 1150px !important;
+		}
+
+		.carousel-container-container {
+			height: 1050px !important;
+		}
+
+	}
+</style>
+
+<body>
+
+	<div class="page-search-widget">
+		<div class="search-panel" id="pageSearchPanel" aria-hidden="true">
+			<form id="pageSearchForm">
+				<input id="pageSearchInput" type="text" placeholder="Pesquisar na página..." autocomplete="off">
+				<button type="button" class="search-close" id="closePageSearch" aria-label="Fechar pesquisa"><i
+						class="fa fa-times"></i></button>
+			</form>
+		</div>
+	</div>
+
+	<a target="_blank" href="https://www.instagram.com/viajartravelnews/?hl=en" class="insta-btn">
+
+		<img src="img/edicaofev/instagram-removebg-preview.png" alt="Instagram">
+
+		<span>@VIAJARTRAVELNEWS</span>
+	</a>
+
+	<div id="preloader" class="loader_show">
+		<div class="loader-wrap">
+			<div class="loader">
+				<!-- <div class="loader-inner"></div> -->
+				<img src="img/vtn.png" alt="Logo de Loader">
+
+			</div>
+		</div>
+	</div>
+
+	<!-- pointer start -->
+	<div class="pointer bnz-pointer" id="bnz-pointer"></div>
+
+	<div class="content">
+		<div class="top_part">
+			<!-- Start Header -->
+			<header id="header" class="header_1 header">
+				<div class="navigation">
+					<nav id="flexmenu">
+						<div class="logo logo-container">
+							<!-- <a href="#"><img style="max-height: 100px;" src="img/Untitled image.png" alt="logo"><span
+									class="text-logo">Viajar
+									Travel News</span>
+							</a> -->
+							<a href="#">
+								<img style="max-height: 100px;" src="img/Untitled%20image.png" alt="logo">
+								<span class="text-logo">
+									<span class="with-hat">V</span>iajar Travel News
+
+								</span>
+							</a>
+						</div>
+						<div class="nav-inner">
+							<div id="mobile-toggle" class="mobile-btn"></div>
+							<ul class="main-menu">
+								<li class="menu-item search-menu-item">
+									<button id="openPageSearch" class="search-toggle menu-search-btn"
+										aria-label="Abrir pesquisa">
+										<span class="search-btn-content">
+											<i class="fas fa-magnifying-glass"> Encontre</i>
+										</span>
+									</button>
+								</li>
+								<li class="menu-item active"><a href="index.html">HOME</a></li>
+								<li class="menu-item"><a href="#rotas-destinos">ROTAS &amp; DESTINOS</a></li>
+								<!-- <li class="menu-item"><a href="#fique-por-dentro">FIQUE POR DENTRO</a></li> -->
+								<li class="menu-item"><a href="galeria.html">DIÁRIO DE BORDO</a></li>
+								<li class="menu-item"><a href="pessoas-vtn.html">SOBRE NÓS</a></li>
+								
+								<!-- <li class="menu-item"><a href="#contact">VAMOS JUNTOS</a></li> -->
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="overlay">
+							<div class="text-top-left  ">
+									<p class="letra2" style="text-align: center !important;">Querida Piri!
+									<br>
+								</p>
+							</div>
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/carrossel-pirenopolis-go.jpeg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Pirenópolis, GO</h2>
+							<p
+								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
+								Foto: Arquivo Curta Mais - André Carvalho</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PORTAL DE ENTRADA (Foto TripAdvisor).jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Portal de entrada</h2>
+							<p
+								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
+								Foto: TripAdvisor</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/carrossel-paroquia-rosario.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Paróquia Nossa Senhora do Rosário</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/carrossel-casario-danae.webp');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Casario histórico</h2>
+							<p
+								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
+								Foto: Dânae</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PONTE DO CARMO SOBRE O RIO DAS ALMAS (Foto PiriPark).jpeg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Ponte do Carmo sobre o Rio das Almas</h2>
+							<p
+								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
+								Foto: PiriPark</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - CACHOEIRA DO ABADE.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Cachoeira do Abade</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - CACHOEIRA DO COQUEIRO.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Cachoeira do Coqueiro</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - RECANTO CARRANCA (Foto recantocarranca).jpeg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Recanto Carranca</h2>
+							<p
+								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
+								Foto: recantocarranca</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/cavalhadas-pirenopolis.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Cavalhadas recriam batalhas medievais entre cristãos e mouros</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg" style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - FORNERIA PIRENEUS - A MELHOR FOCACCIA.jpeg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Forneria Pireneus - a melhor focaccia</h2>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+			<!-- O que é VTN -->
+			<div class="main-wrapper">
+				<div class="container">
+					<div class="conexao-piri-feature">
+						<span class="conexao-piri-eyebrow">Parceiro desta edição</span>
+						<span class="conexao-piri-logo">Conexão Piri</span>
+						<p class="conexao-piri-copy">
+							DICAS DE HOSPEDAGEM, RESTAURANTES E ATRATIVOS DIRETAMENTE NO INSTA. O CONEXÃO PIRI RESPONDE NA HORA. 
+						</p>
+						<a class="conexao-piri-instagram" target="_blank" href="https://www.instagram.com/conexaopiri/"
+							aria-label="Instagram do Conexão Piri">
+							<img src="img/edicaofev/instagram-removebg-preview.png" alt="">
+							<span>@conexaopiri</span>
+						</a>
+					</div>
+					<div class="row g-4 cards-equilibrados">
+						<div class="col-lg-6 col-12 mb-4 coluna-esquerda-cards">
+
+						<div class="row stack-cards">
+							<div class="col-lg-12 col-12 mb-4 stack-card-item stack-card-item--maior">
+								<div class="modern-card travel card-vtn">
+									<h2 style="font-family: 'Tenor Sans', sans-serif; color:#FD7D01 !important">O Que É
+										A Viajar
+										Travel News?</h2>
+									<div style="background: #9ed13b !important;" class="divider"></div>
+
+									<p><span class="text-indent"></span>
+
+
+										A VIAJAR TRAVEL NEWS é um site voltado a viagens e ao trade <br>turístico, fundado
+										em 2005,
+										em Florianópolis, SC. Temos free-lancers pelo <br> Brasil, que divulgam
+										nossas reportagens, alinhadas a fontes independentes e seguras.
+
+									</p>
+									<p><span class="text-indent"></span>
+										Nosso diferencial é o conteúdo que acrescenta. Na VTN, todas as matérias, antes
+										de
+										publicadas, passam por uma checagem rigorosa de fatos e fontes. <br>
+										Porque CONTEÚDO com consistência é o que mantém o leitor seguro.
+
+
+
+
+									</p>
+									<p><span class="text-indent"></span>
+
+										E apesar da indiscutível relevância estratégica e da otimização de processos que
+										a IA
+										oferece,
+										ela jamais substituirá a SENSIBILIDADE HUMANA.
+										Um texto precisa transmitir emoção.
+										Ou apenas ocupará espaço, sem dizer nada.
+
+									</p>
+
+
+
+									<!-- <p> <strong>
+											Fátima Vianna<br>
+											Jornalista e Chief Communication Officer
+										</strong></p> -->
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-12 mb-4 stack-card-item stack-card-item--menor">
+								<div class="modern-card travel card-lua-cheia">
+								
+									<h2 style="font-family: 'Tenor Sans', sans-serif; color:#FD7D01 !important">
+									Por que
+										na Lua Cheia?</h2>
+
+									<p><span class="text-indent"></span>
+										A lua cheia transborda CLAREZA - intelectual e interpretativa.
+
+
+									</p>
+									<p><span class="text-indent"></span>
+										Assim como ela surge no breu e revela a paisagem, nas palavras ela representa o
+										momento da compreensão total,
+										da preservação do conhecimento.
+
+									</p>
+									<p><span class="text-indent"></span>
+
+										Ela clareia a tradição e os textos passados, para que possamos <br> compreendê-los no
+										presente. É quando as peças se
+										encaixam e o leitor finalmente enxerga a intenção.
+
+										Porque a lua cheia é a metáfora da lucidez
+
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- CARD ESQUERDA -->
+					<div class="col-lg-6 col-12 mb-4 coluna-direita-card">
+						<div class="modern-card gold card-mantiqueira">
+
+								<h2>Nesta Edição…</h2>
+								<div class="divider"></div>
+
+									<span class="card-subtitle">Querida Piri</span>
+
+								<span style="display: flex; justify-content: center;">Onde o tempo fez morada...</span>
+									<br>
+								<p> <span class="text-indent"></span>
+									Carinhosamente chamada de "Piri", Pirenópolis não é apenas uma cidade, mas um
+									lugar onde o tempo fez morada, e, de tão à vontade, parece não ter pressa nenhuma
+									de passar...
+								</p>
+								<p> <span class="text-indent"></span>
+									Ali, aos pés da Serra dos Pireneus, Piri respira história pelas esquinas, em todo
+									canto, em cada uma das pedras dos becos que guardam quase três séculos de
+									memórias.
+
+								</p>
+									<p> <span class="text-indent"></span>
+										Para mostrar essa inspiração, convidamos alguém especial: uma referência que
+										dispensa apresentações e que personifica tudo o que vamos mostrar nesta edição.<br>
+										Alguém que transformou desafios em conquistas e aceitou dividir sua jornada com a
+										gente: <strong>CARLOS NAVES</strong>.
+
+									</p>
+									<p><span class="text-indent"></span>
+										Além de administrador, empreendedor e produtor de eventos - com forte atuação em
+										Pirenópolis -, Naves é diretor de Patrimônio da Federação das Apaes do Estado de
+										Goiás, e atua com uma equipe multidisciplinar, com experiência em tecnologia, IA,
+										posicionamento de marca e branding.
+									</p>
+									<p><span class="text-indent"></span>
+										Mas para mim, Carlos Naves vai muito além disso tudo. É um tradutor de emoções, um
+										comunicador nato, alguém que domina a arte das conexões humanas, e do fazer, de uma
+										ideia simples, uma ocasião memorável.
+									</p>
+									<p><span class="text-indent"></span>
+										À frente do <strong>CONEXÃO PIRI</strong> (primeiro card do Destaque), ele não só conecta pessoas e vivências,
+										mas nos mostra que Pirenópolis é um caleidoscópio vivo, onde as Cavalhadas se
+										misturam à gastronomia, ao artesanato, à arte, às cachoeiras... 
+								  </p>
+								
+								  <p><span class="text-indent"></span>
+									Com vocês, <strong>PIRENÓPOLIS</strong>, sob o olhar de quem interpreta, como
+									ninguém, a alma deste lugar. <br>
+									<br>
+								   Valeu, Naves!</p>
+							
+							<p style="font-family: 'Courgette', cursive !important;"> 
+											<a target="_blank" href="pessoas-vtn.html">Fátima Vasconcelos Nunes<br>
+											Jornalista</a>  
+										</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<style>
+			.card-mantiqueira {
+				position: relative;
+				overflow: hidden;
+			}
+
+			/* FOTO */
+
+			.card-mantiqueira::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 60%;
+
+				/* background:
+					linear-gradient(to top,
+						rgba(0, 0, 0, 0.55) 100%,
+						rgba(0, 0, 0, 0.35) 40%,
+						rgba(0, 0, 0, 0.1) 10%,
+						transparent 100%),
+					url("./img/edicaoAbr/PRAIA DA GALHETA.webp"); */
+
+				background-size: cover;
+				background-position: center;
+				filter: brightness(1.12);
+
+				clip-path: polygon(0 40%,
+						100% 0,
+						100% 100%,
+						0 100%);
+
+				z-index: 0;
+			}
+
+			/* TEXTO SOBRE FOTO */
+
+			.texto-sobre-imagem {
+				color: #020202c4 !important;
+				font-size: 18px;
+				text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+			}
+
+			/* FRASE FINAL */
+
+			.final-frase {
+				color: white !important;
+				text-align: center;
+				font-size: 22px;
+				font-weight: 200;
+				text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+
+			}
+
+			.final-frase-shadow {
+				color: white !important;
+				text-align: center;
+				font-size: 22px;
+				font-weight: 200;
+				text-shadow: 0 3px 12px rgb(0, 0, 0);
+			}
+
+			/* garante texto acima da foto */
+
+			.card-mantiqueira * {
+				position: relative;
+				z-index: 1;
+			}
+
+			/* ---- AJUSTES GERAIS ---- */
+
+			.text-indent {
+				display: inline-block;
+				width: 15px;
+			}
+
+			.modern-card.card-mantiqueira {
+				background: #cad84112 !important;
+			}
+
+			.modern-card {
+				/* background: #ffffff; */
+
+				padding: 55px 60px;
+				border-radius: 26px;
+				border: 1px solid #d4a43c;
+				box-shadow:
+					0 15px 40px rgba(0, 0, 0, 0.08),
+					inset 0 0 12px rgba(255, 255, 255, 0.5);
+				font-family: "Inter", sans-serif;
+				line-height: 1.75;
+				color: #020202c4;
+				position: relative;
+				/* height: 100%; */
+				transition: 0.3s ease;
+			}
+
+			.cards-equilibrados>div,
+			.stack-card-item {
+				display: flex;
+			}
+
+			.stack-card-item .modern-card,
+			.coluna-direita-card .modern-card {
+				width: 100%;
+			}
+
+			@media (min-width: 992px) {
+				.cards-equilibrados {
+					align-items: stretch;
+				}
+
+				.coluna-esquerda-cards,
+				.coluna-direita-card {
+					min-height: 100%;
+				}
+
+				.stack-cards {
+					flex: 1;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					gap: 1.5rem;
+				}
+
+				.stack-card-item {
+					flex: 1;
+					margin-bottom: 0 !important;
+				}
+
+				.stack-card-item--maior {
+					flex: 1.2;
+				}
+
+				.stack-card-item--menor {
+					flex: 0.8;
+				}
+
+				.stack-card-item .modern-card,
+				.coluna-direita-card .modern-card {
+					height: 100%;
+				}
+			}
+
+			.modern-card h2 {
+				line-height: 1.15;
+				margin-bottom: 18px;
+			}
+
+			.modern-card .divider {
+				margin-bottom: 26px;
+			}
+
+			.stack-card-item .modern-card {
+				justify-content: flex-start;
+			}
+
+			.coluna-direita-card .modern-card {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			.coluna-direita-card .card-subtitle {
+				display: block;
+				margin-bottom: 18px;
+			}
+
+			.coluna-direita-card p:last-child,
+			.stack-card-item .modern-card p:last-child {
+				margin-bottom: 0;
+			}
+
+			.card-lua-cheia {
+				background: #ff7d0012 !important;
+				box-shadow:
+					0 18px 42px rgba(5, 10, 24, 0.28),
+					inset 0 0 30px rgba(146, 179, 255, 0.08);
+				overflow: hidden;
+			}
+
+			.card-lua-cheia::after {
+				content: "";
+				position: absolute;
+				top: 36px;
+				right: 100px;
+				width: 18px;
+				height: 18px;
+				background: rgba(255, 231, 173, 0.98);
+				clip-path: polygon(50% 0%, 61% 38%, 100% 50%, 61% 62%, 50% 100%, 39% 62%, 0% 50%, 39% 38%);
+				box-shadow:
+					-76px 12px 0 -6px rgba(255, 248, 234, 0.98),
+					-44px 38px 0 -8px rgba(198, 219, 255, 0.98),
+					18px 24px 0 -7px rgba(255, 240, 204, 0.95),
+					-6px 58px 0 -9px rgba(255, 250, 239, 0.9);
+				opacity: 1;
+				pointer-events: none;
+				z-index: 0;
+				filter: drop-shadow(0 0 10px rgba(255, 224, 146, 0.5));
+			}
+
+			.card-lua-cheia::before {
+				content: "";
+				position: absolute;
+				top: 22px;
+				right: 24px;
+				width: 96px;
+				height: 96px;
+				border-radius: 50%;
+				background:
+					radial-gradient(circle at 34% 30%, rgba(255, 255, 255, 1) 0%, rgba(251, 250, 245, 0.98) 28%, rgba(236, 240, 249, 0.96) 58%, rgba(210, 220, 241, 0.94) 78%, rgba(192, 208, 235, 0.96) 100%),
+					radial-gradient(circle at 63% 38%, rgba(205, 214, 233, 0.3) 0 8px, transparent 9px),
+					radial-gradient(circle at 43% 64%, rgba(194, 204, 224, 0.24) 0 6px, transparent 7px),
+					radial-gradient(circle at 72% 67%, rgba(185, 198, 222, 0.18) 0 4px, transparent 5px);
+				border: 1px solid rgba(223, 231, 250, 0.9);
+				box-shadow:
+					0 0 0 10px rgba(236, 242, 255, 0.22),
+					0 0 30px rgba(208, 222, 251, 0.42),
+					0 0 58px rgba(181, 207, 255, 0.28),
+					inset -10px -12px 18px rgba(177, 192, 221, 0.18);
+				opacity: 0.99;
+				z-index: 0;
+			}
+
+			.card-lua-cheia h2 {
+				color: #ff9838 !important;
+				max-width: 78%;
+				/* text-shadow: 0 2px 12px rgba(0, 0, 0, 0.22); */
+			}
+
+			.card-lua-cheia .divider {
+				background: linear-gradient(90deg, #9ed13b 0%, #d8f18f 100%) !important;
+				box-shadow: 0 0 12px rgba(158, 209, 59, 0.2);
+			}
+
+			.card-lua-cheia p {
+				color: #5f4a3a;
+				text-shadow: none;
+			}
+
+			.card-lua-cheia strong {
+				color: #3f2f24;
+			}
+
+			.card-lua-cheia>* {
+				position: relative;
+				z-index: 1;
+			}
+
+			.card-vtn {
+				background: #ff7d0012 !important;
+			}
+
+			.modern-card:hover {
+				transform: translateY(-6px);
+				box-shadow:
+					0 20px 50px rgba(0, 0, 0, 0.13),
+					inset 0 0 18px rgba(255, 255, 255, 0.7);
+			}
+
+			/* ---- CARD DOURADO ---- */
+
+			.modern-card.gold {
+				padding: 50px 55px !important;
+				/* background: linear-gradient(180deg, #fffbe93f, #f6e7bc54 60%, #f0da9a51); */
+				border: 1px solid #e6d28b;
+			}
+
+			.modern-card.gold p {
+				/* font-family: 'Courgette', cursive !important; */
+				font-family: 'Tenor Sans', sans-serif !important;
+				/* color: #f17d3adf !important; */
+				color: #020202c4;
+			}
+
+			.modern-card.travel p {
+				font-size: 14px !important;
+			}
+
+			.modern-card.travel:hover p {
+				font-size: 15px !important;
+			}
+
+			.modern-card.gold:hover p {
+				font-size: 15px !important;
+			}
+
+			.modern-card.card-mantiqueira:hover p {
+				font-size: 17px !important;
+			}
+
+
+			/* ---- TÍTULOS ---- */
+
+			.modern-card h2 {
+				font-family: 'Tenor Sans', sans-serif !important;
+				font-size: 27px;
+				font-weight: 600;
+				color: #9ed13b;
+				margin-bottom: 15px;
+			}
+
+			.divider {
+				width: 60px;
+				height: 4px;
+				background: #f17c3a;
+				border-radius: 10px;
+				margin-bottom: 25px;
+			}
+
+			/* Subtítulos */
+			.card-subtitle {
+				display: block;
+				color: #f17c3a;
+				font-size: 24px;
+				/* font-style: italic; */
+				text-align: center;
+				margin-top: -10px;
+				margin-bottom: 10px;
+				letter-spacing: 0.4px;
+				font-family: 'Courgette', cursive;
+			}
+
+			.card-subsubtitle {
+				display: block;
+				color: #f17c3a;
+				font-size: 18px;
+				text-align: center;
+				margin-bottom: 25px;
+				font-family: 'Courgette', cursive;
+				/* font-style: italic; */
+			}
+
+			/* ---- PARÁGRAFOS ---- */
+
+			.modern-card p {
+				font-family: "Tenor Sans", sans-serif;
+				font-size: 16px;
+				margin-bottom: 15px;
+			}
+		</style>
+		<!-- O que é VTN -->
+
+		<!-- Image 1, 2 -->
+		<!-- <div class="main-wrapper">
+			<section class="secao">
+				<div style="margin: 30px 0px;">
+					<div class="container">
+						<div class="row g-4">
+
+							<div class="col-lg-6 col-12 mb-5">
+
+								<div class="cariri-block">
+									<span class="cariri-label">PEDRA DA MINA, A 4ª MONTANHA MAIS ALTA DO BRASIL</span>
+									<br>
+									<h2 style="line-height: 25px;">
+										<span style="margin-left: 15px !important;"></span>Localizada na Serra da
+										Mantiqueira - entre Passa Quatro (MG) e
+										Lavrinhas/Queluz (SP), a Pedra
+										da Mina, é a 4ª montanha mais alta do Brasil, com 2.798 metros de altitude. Fica
+										atrás apenas do
+										Pico da Neblina (2.995,3m), na Serra do Imeri (AM), o ponto mais alto do Brasil
+										na fronteira com
+										a Venezuela; Pico 31 de Março (2.974,1m), também na Serra do Imeri e o vizinho
+										imediato do
+										Pico da Neblina e o Pico da Bandeira (2.891,3m), na Serra do Caparaó, divisa
+										entre os estados
+										de Minas Gerais e Espírito Santo.
+
+									</h2>
+									<div class="d-none d-lg-block" style="margin-top: 170px;"></div>
+									<div class="d-block d-lg-none"></div> 
+
+									<span class="cariri-label"></h2>
+										<div class="cariri-image" style="margin-top: 24px;">
+											<img style="height: 440px;" class="img-images"
+												src="./img/edicaoMar/IMAGEM 1 - PEDRA DA MINA (Foto  Alexandre-Perlingeiro).jpg"
+												alt=" PEDRA DA MINA - FOTO: ALEXANDRE PERLINGEIRO">
+										</div>
+								</div>
+
+
+							</div>
+							<div class="col-lg-6 col-12 mb-5">
+								<div class="cariri-block">
+									<span class="cariri-label">A GENEROSIDADE E O RESPEITO DO POVO DO PÁSSARO
+										AZUL</span>
+									<br>
+									<h2 style="line-height: 25px;">
+										<span style="margin-left: 15px !important;"></span>A Aldeia Shanenawa,
+										&quot;povo do pássaro azul&quot;, está
+										localizada no município de Feijó, no Acre,
+										próxima ao rio Envira, e representa um dos mais intensos lugares diferentes para
+										viajar no Brasil.
+										O território oferece uma vivência real com um povo indígena que preserva saberes
+										ancestrais,
+										espiritualidade e conexão profunda com a floresta.
+										<br>
+										<span style="margin-left: 15px !important;"></span> Durante a estadia, o
+										visitante é acolhido com cuidado e
+										participa de rituais sagrados, banhos de
+										ervas, rodas de conversa e oficinas de pintura corporal. Cada atividade é
+										conduzida pelas
+										lideranças da aldeia, que compartilham seu modo de vida com generosidade e
+										respeito. O ritmo é
+										guiado pela natureza e pela espiritualidade. O tempo desacelera, permitindo
+										escuta profunda,
+										introspecção e reconexão com valores essenciais. É uma experiência
+										transformadora, de onde se
+										sai mais inteiro.
+
+									</h2>
+									<div class="cariri-image" style="margin-top: 24px;">
+										<img style="height: 335px;" class="img-images"
+											src="./img/edicaofev/IMAGEM 2 (Povo do pássaro azul).webp"
+											alt="Povo do pássaro azul">
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div> -->
+
+		<style>
+			.cariri-block {
+				/* min-height: 820px; */
+				/* background: #fff; */
+				padding: 15px;
+				border-radius: 18px;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.32);
+			}
+
+			.cariri-block img {
+				width: 100%;
+				border-radius: 12px;
+				display: block;
+			}
+
+			.cariri-label {
+				padding: 20px 0px 0px 0px;
+				display: block;
+				font-size: 1.1rem;
+				letter-spacing: 1.5px;
+				color: #9ed13b;
+				font-weight: 700;
+				/* margin-bottom: 10px; */
+				text-transform: uppercase;
+				font-family: "Tenor Sans", sans-serif;
+
+			}
+
+			.cariri-block h2 {
+				font-family: "Tenor Sans", sans-serif;
+				font-size: 1rem;
+				font-weight: 600;
+				color: #838080;
+				line-height: 1.35;
+				margin: 0;
+			}
+
+			.cariri-image img {
+				width: 100%;
+				height: 300px;
+				/* ou ajuste conforme desejar */
+				object-fit: cover;
+				border-radius: 18px;
+				box-shadow: 0 8px 32px rgba(60, 40, 10, 0.13);
+			}
+		</style>
+
+		<style>
+			.secao {
+				padding: 40px 20px;
+				background: #f5f5f5;
+			}
+
+			.secao p {
+				font-family: 'Tenor Sans', sans-serif;
+			}
+
+			.secao strong {
+				color: #FD7D01;
+				font-family: 'Tenor Sans', sans-serif;
+			}
+		</style>
+		<!-- Image 1, 2 -->
+
+		<!-- Frase e Lua cards -->
+
+		<div id="" class="main-wrapper">
+			<div class="container">
+				<div class="row g-4 lua-frase-grid">
+					<div class="col-sm-12 col-md-8 col-lg-8 mb-5 lua-frase-col">
+						<div class="moon-section">
+
+							<div class="moon-card">
+								<div class="moon-top">
+									<div class="moon-image">
+										<div id="recent-posts-6" class="widget widget_recent_posts img-cards img-cards-lua">
+											<div class="content-lua">
+												<h1 class="letra-lua">Próxima Lua Cheia</h1>
+												<div class="post-content">
+													<p class="letra-lua" style="font-size: 15px; color: #fff !important;">
+														Lua de Morango (Strawberry Moon): colheita espiritual
+													</p>
+													<div class="moon-schedule">
+														<div class="moon-schedule-main">
+															<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+																fill="currentColor" class="bi bi-calendar2-check"
+																viewBox="0 0 16 16">
+																<path
+																	d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+																<path
+																	d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+																<path
+																	d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
+															</svg>
+															<span>28, 29 e 30/06</span>
+														</div>
+														<div class="moon-schedule-times">
+															<div class="moon-schedule-time">
+																<strong>Auge da Lua Cheia: 29 de junho</strong>
+																<span>20:58h</span>
+																<em>Horário de Brasília</em>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="moon-bottom">
+									<div class="moon-content moon-content-split">
+											<div class="moon-text-block">
+												<div class="moon-highlight-title">Lua de Morango:</div>
+												<p>
+													A Lua de Morango, em junho, carrega um forte simbolismo de maturação e
+													recompensa. Representa o ponto de equilíbrio entre o esforço (trabalho) e o
+													prazer (o fruto).
+												</p>
+											</div>
+
+											<div class="moon-text-block">
+												<div class="moon-highlight-title">Colheita espiritual:</div>
+												<p>
+													Assim como os morangos amadurecem, este é o momento de ver os resultados de
+													projetos ou intenções iniciadas meses atrás. O nome evoca a "doçura da vida" e
+													convida a desacelerar, desfrutar pequenas vitórias e nutrir relacionamentos com
+													afeto e gratidão.
+												</p>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4 col-lg-4 mb-5 lua-frase-col">
+						<figure class="cardFrase">
+							<img class="cardFrase-img" src="img/351479.jpg" alt="foto" />
+
+								<div class="cardFrase-texto">
+									"LUTE COM DETERMINAÇÃO, ABRACE A VIDA COM PAIXÃO, PERCA COM CLASSE E VENÇA COM
+									OUSADIA, PORQUE O MUNDO PERTENCE A QUEM SE ATREVE E A VIDA É MUITO BELA PARA SER
+									INSIGNIFICANTE."
+									<span class="cardFrase-autor"> CHARLES CHAPLIN</span>
+								</div>
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			/* --- RESPONSIVIDADE PARA A SESSÃO DA LUA --- */
+
+
+
+			@media (max-width: 992px) {
+				.moon-bottom,
+				.moon-content-split,
+				.moon-card {
+					flex-direction: column;
+				}
+
+				.moon-image,
+				.moon-content,
+				.moon-text-block {
+					width: 100% !important;
+				}
+
+				.moon-image {
+					min-height: 260px;
+				}
+
+				.moon-content {
+					padding: 20px;
+				}
+			}
+
+			@media (max-width: 768px) {
+
+				/* Ajusta o card de fundo das próximas luas */
+				#recent-posts-6 {
+					padding: 22px 14px 18px;
+					background-position: center;
+				}
+
+				#recent-posts-6 h1.letra-lua {
+					text-align: center;
+					font-size: 18px;
+					line-height: 1.2;
+					margin-bottom: 8px;
+				}
+
+				#recent-posts-6 p {
+					font-size: 11px;
+					text-align: center;
+					line-height: 1.35em;
+					margin-bottom: 8px;
+				}
+
+				/* Texto do lado direito */
+				.moon-content h2 {
+					font-size: 18px;
+					text-align: center;
+				}
+
+				.moon-content p {
+					font-size: 13px;
+					/* text-align: center; */
+				}
+
+				.moon-top {
+					flex: 0 0 auto;
+					height: auto;
+				}
+
+				.moon-top #recent-posts-6 {
+					min-height: 0;
+				}
+
+				.moon-top p.letra-lua {
+					font-size: 16px !important;
+					line-height: 1.25;
+				}
+
+				.moon-schedule {
+					gap: 8px;
+				}
+
+				.moon-schedule-main {
+					font-size: 11px;
+					gap: 6px;
+					line-height: 1.3;
+				}
+
+				.moon-schedule-times {
+					grid-template-columns: 1fr;
+					gap: 8px;
+				}
+
+				.moon-schedule-time {
+					padding: 10px 12px;
+				}
+
+				.moon-schedule-time strong {
+					font-size: 10px;
+					line-height: 1.25;
+				}
+
+				.moon-schedule-time span {
+					font-size: 17px;
+					line-height: 1.15;
+				}
+
+				.moon-schedule-time em {
+					font-size: 10px;
+					line-height: 1.25;
+				}
+
+				.moon-text-block {
+					padding: 10px 12px;
+				}
+
+				.moon-highlight-title {
+					font-size: 18px;
+				}
+			}
+
+			@media (max-width: 480px) {
+
+				#recent-posts-6 {
+					padding: 18px 12px 16px;
+				}
+
+				.moon-image {
+					min-height: 200px;
+				}
+
+				.moon-content {
+					padding: 15px;
+				}
+
+				.moon-content p {
+					font-size: 11px;
+					line-height: 1.5;
+				}
+
+				.moon-top h1.letra-lua {
+					font-size: 16px;
+				}
+
+				.moon-top p.letra-lua {
+					font-size: 14px !important;
+				}
+
+				.moon-schedule-main {
+					font-size: 10px;
+				}
+
+				.moon-schedule-time {
+					padding: 9px 10px;
+				}
+
+				.moon-schedule-time span {
+					font-size: 16px;
+				}
+
+				.moon-highlight-title {
+					font-size: 16px;
+				}
+			}
+
+			.lua-frase-col {
+				display: flex;
+				align-self: stretch;
+			}
+
+			.lua-frase-col .moon-section,
+			.lua-frase-col .cardFrase {
+				width: 100%;
+			}
+
+			.lua-frase-col .moon-section {
+				display: flex;
+			}
+
+			@media (min-width: 768px) {
+				.lua-frase-grid {
+					align-items: stretch;
+				}
+
+				.lua-frase-col .moon-section,
+				.lua-frase-col .moon-card,
+				.lua-frase-col .cardFrase {
+					height: 100%;
+				}
+			}
+
+			@media (min-width: 992px) {
+				.lua-frase-col {
+					margin-bottom: 0 !important;
+				}
+
+				.lua-frase-grid {
+					align-items: stretch !important;
+				}
+
+				/* .lua-frase-col .moon-card,
+				.lua-frase-col .cardFrase {
+					height: 470px;
+					min-height: 470px;
+				} */
+
+				.lua-frase-col .moon-section {
+					height: 100%;
+				}
+			}
+
+			/* CARD EXCLUSIVO - NÃO CONFLITA COM NADA */
+			figure.cardFrase {
+				position: relative;
+				width: 100%;
+				max-width: 100%;
+				height: 100%;
+				min-height: 395px;
+				overflow: hidden;
+				/* border-radius: 14px; */
+				border-top-right-radius: 0px;
+				background: #000;
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+				display: flex;
+				align-items: stretch;
+			}
+
+			/* IMAGEM */
+			.cardFrase-img {
+				/* width: 100%;
+				height: 100%; */
+				object-fit: cover;
+				filter: brightness(68%);
+			}
+
+			/* TEXTO SOBREPOSTO */
+			.cardFrase-texto {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+
+				padding: 50px 15px 50px 15px;
+
+				background: linear-gradient(to top,
+						rgba(0, 0, 0, 0.852),
+						rgba(0, 0, 0, 0.619),
+						rgba(0, 0, 0, 0));
+
+				color: #fff;
+				font-size: 0.9em;
+				font-style: italic;
+				line-height: 1.4em;
+				text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.9);
+			}
+
+			/* AUTOR */
+			.cardFrase-autor {
+				display: block;
+				margin-top: 8px;
+				font-size: 0.8em;
+				font-style: normal;
+				opacity: 0.9;
+			}
+
+			.moon-section {
+				width: 100%;
+				/* max-width: 1100px; */
+				/* margin: 40px auto; */
+				font-family: "Arial", sans-serif;
+			}
+
+			.moon-card {
+				display: flex;
+				flex-direction: column;
+				background: white;
+				/* border-radius: 14px; */
+				overflow: hidden;
+				box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+				height: 100%;
+			}
+
+			.moon-top {
+				width: 100%;
+				flex: 0 0 220px;
+				height: 220px;
+			}
+
+			.moon-bottom {
+				display: flex;
+				flex: 1;
+				width: 100%;
+			}
+
+			.moon-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.moon-image {
+				width: 100%;
+				height: 100%;
+				min-height: 220px;
+			}
+
+			.moon-top #recent-posts-6 {
+				height: 100% !important;
+				min-height: 220px;
+				padding: 20px 18px 20px;
+				background-position: center;
+			}
+
+			.moon-top .content-lua {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			.moon-top .post-content {
+				max-width: 100%;
+			}
+
+			.moon-top h1.letra-lua {
+				margin-bottom: 10px;
+				font-size: 24px;
+			}
+
+			.moon-top p.letra-lua {
+				margin-bottom: 10px;
+				font-size: 22px !important;
+			}
+
+			.moon-schedule {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				color: #fff;
+			}
+
+			.moon-schedule-main {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 8px;
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 1.2;
+				text-align: center;
+			}
+
+			.moon-schedule-main svg {
+				flex: 0 0 auto;
+			}
+
+				.moon-schedule-times {
+					display: grid;
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+					gap: 12px;
+					width: 100%;
+				}
+
+				.moon-schedule-times:has(.moon-schedule-time:only-child) {
+					grid-template-columns: minmax(240px, 520px);
+					justify-content: center;
+				}
+
+				.moon-schedule-time {
+					background: rgba(4, 8, 20, 0.26);
+					padding: 8px 10px;
+				border: 1px solid rgba(255, 255, 255, 0.14);
+				text-align: center;
+				line-height: 1.2;
+			}
+
+			.moon-schedule-time strong,
+			.moon-schedule-time span,
+			.moon-schedule-time em {
+				display: block;
+			}
+
+			.moon-schedule-time strong {
+				font-size: 11px;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				margin-bottom: 2px;
+			}
+
+			.moon-schedule-time span {
+				font-size: 12px;
+				font-weight: 600;
+				margin-bottom: 2px;
+			}
+
+			.moon-schedule-time em {
+				font-size: 11px;
+				font-style: italic;
+				opacity: 0.95;
+			}
+
+			.moon-content {
+				background:
+					radial-gradient(ellipse 2000px 200px at 20% 0%, rgba(0, 0, 0, 0.15) 0%, transparent 40%),
+					radial-gradient(ellipse 2000px 200px at 80% 100%, rgba(0, 0, 0, 0.12) 0%, transparent 40%),
+					radial-gradient(ellipse at 15% 15%, rgba(200, 150, 80, 0.08) 0%, transparent 30%),
+					radial-gradient(ellipse at 85% 85%, rgba(139, 90, 43, 0.1) 0%, transparent 35%),
+					linear-gradient(135deg, #e8d5b7 0%, #f5e6c3 40%, #e8d5b7 70%, #d4c5a9 100%);
+				background-attachment: fixed;
+				position: relative;
+				/* Bordas queimadas agressivas */
+				box-shadow:
+					inset 0 0 30px rgba(0, 0, 0, 0.3),
+					inset -8px 0 20px rgba(0, 0, 0, 0.25),
+					inset 8px 0 20px rgba(0, 0, 0, 0.2),
+					inset 0 -8px 20px rgba(0, 0, 0, 0.25),
+					inset 0 8px 15px rgba(0, 0, 0, 0.15),
+					0 20px 50px rgba(0, 0, 0, 0.5);
+
+
+				/* leve tom envelhecido */
+				filter: sepia(25%);
+				width: 100%;
+				padding: 6px 8px;
+			}
+
+			.moon-content-split {
+				display: flex;
+				width: 100%;
+				height: 100%;
+				padding: 0;
+			}
+
+			.moon-text-block {
+				width: 50%;
+				padding: 10px 12px;
+			}
+
+			.moon-text-block + .moon-text-block {
+				border-left: 1px solid rgba(122, 79, 29, 0.18);
+			}
+
+			.moon-content h2 {
+				font-family: "Georgia", "Times New Roman", serif;
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+
+			.moon-content h3 {
+				font-family: "Georgia", "Times New Roman", serif;
+				margin-top: 20px;
+			}
+
+			.moon-highlight-title {
+				display: inline-block;
+				margin: 8px 0 6px;
+				padding: 8px 0 6px;
+				color: #7a4f1d;
+				font-family: 'Faithful Hand', cursive;
+				font-size: 22px;
+				line-height: 1;
+				letter-spacing: 0.5px;
+				position: relative;
+			}
+
+			.moon-highlight-title::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 8px;
+				background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='8' viewBox='0 0 160 8'%3E%3Cpath d='M2 5 C20 2, 38 7, 56 4 S92 2, 110 5 S146 7, 158 4' fill='none' stroke='%23b27a39' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x left bottom;
+				background-size: 160px 8px;
+				opacity: 0.9;
+			}
+
+			.moon-content p {
+				/* font-family: "Georgia", "Times New Roman", serif; */
+				line-height: 1.22;
+				margin: 4px 0;
+				font-size: 18px;
+				font-family: 'Dancing Script', cursive;
+			}
+
+			.moon-list {
+				padding-left: 20px;
+				margin: 10px 0;
+			}
+
+			.moon-list li {
+				margin: 6px 0;
+			}
+
+			/* Evolução da Lua */
+			.moon-evolution {
+				margin-top: 30px;
+				display: flex;
+				gap: 20px;
+				justify-content: center;
+			}
+
+			.moon-step {
+				text-align: center;
+			}
+
+			.moon-step img {
+				width: 60px;
+				height: 60px;
+				border-radius: 10px;
+				object-fit: cover;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+			}
+
+			.moon-step span {
+				display: block;
+				margin-top: 8px;
+				font-size: 15px;
+			}
+
+			@media (max-width: 768px) {
+				.moon-card .moon-top {
+					flex: 0 0 auto;
+					height: auto;
+				}
+
+				.moon-card .moon-image {
+					min-height: 0;
+					height: auto;
+				}
+
+				.moon-card .moon-top #recent-posts-6 {
+					height: auto !important;
+					min-height: 0;
+					padding: 18px 12px 14px;
+				}
+
+				.moon-card .moon-top .content-lua {
+					gap: 6px;
+				}
+
+				.moon-card .moon-top h1.letra-lua {
+					font-size: 17px;
+					line-height: 1.2;
+					margin-bottom: 4px;
+					text-align: center;
+				}
+
+				.moon-card .moon-top p.letra-lua {
+					font-size: 13px !important;
+					line-height: 1.3;
+					margin-bottom: 6px;
+					text-align: center;
+				}
+
+				.moon-card .moon-schedule {
+					gap: 8px;
+				}
+
+				.moon-card .moon-schedule-main {
+					font-size: 10px;
+					line-height: 1.3;
+					gap: 6px;
+				}
+
+				.moon-card .moon-schedule-main span {
+					display: block;
+				}
+
+				.moon-card .moon-schedule-times {
+					grid-template-columns: 1fr;
+					gap: 8px;
+				}
+
+				.moon-card .moon-schedule-time {
+					padding: 8px 10px;
+					line-height: 1.25;
+				}
+
+				.moon-card .moon-schedule-time strong {
+					font-size: 10px;
+					line-height: 1.25;
+					margin-bottom: 4px;
+				}
+
+				.moon-card .moon-schedule-time span {
+					font-size: 14px;
+					line-height: 1.1;
+					margin-bottom: 4px;
+				}
+
+				.moon-card .moon-schedule-time em {
+					font-size: 10px;
+					line-height: 1.25;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.moon-card .moon-top #recent-posts-6 {
+					padding: 16px 10px 12px;
+				}
+
+				.moon-card .moon-top h1.letra-lua {
+					font-size: 15px;
+				}
+
+				.moon-card .moon-top p.letra-lua {
+					font-size: 12px !important;
+				}
+
+				.moon-card .moon-schedule-main {
+					font-size: 9px;
+				}
+
+				.moon-card .moon-schedule-time strong {
+					font-size: 9px;
+				}
+
+				.moon-card .moon-schedule-time span {
+					font-size: 13px;
+				}
+
+				.moon-card .moon-schedule-time em {
+					font-size: 9px;
+				}
+			}
+		</style>
+
+
+		<div id="" class="main-wrapper" style="display: none;">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div id="recent-posts-7" class="widget widget_recent_posts img-cards">
+							<div class="content-lua">
+								<div class="post-content frase-destaque">
+									<p class="text-frase">
+										A liberdade é a possibilidade do isolamento.
+										Se te é impossível viver só, nasceste escravo.
+
+
+
+									</p>
+									<p style="font-style: italic; font-size: 12px !important;">Fernando Pessoa</p>
+								</div>
+								<div class="post-content frase-destaque" style="padding: 120px 15px 20px 15px;">
+									<p class="text-frase" style="font-size: 12px !important;">
+										Nascido em Lisboa, Fernando Pessoa é um dos mais importantes escritores
+										portugueses do modernismo e um dos maiores poetas de língua portuguesa.
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div id="recent-posts-6" class="widget widget_recent_posts img-cards img-cards-lua">
+							<div class="content-lua">
+								<!-- <h1 class="letra-lua">Nos Vemos na Próxima <br> Lua Cheia</h1> -->
+								<h1 class="letra-lua">Origem dos nomes das LUAS CHEIAS</h1>
+								<p class="letra-lua" style="color: #fff !important;">
+									Os nomes das Luas Cheias foram inspirados nos primeiros nativos da América
+
+								</p>
+								<div class="post-content">
+									<p>
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+											fill="currentColor" class="bi bi-calendar2-check" viewBox="0 0 16 16">
+											<path
+												d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+											<path
+												d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+											<path
+												d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
+										</svg> 04,05 e 06 de Dezembro<br>
+										<br>
+										<span style="font-style: italic;">Auge da Lua Cheia: dia 4, às 20:15h
+											(GMT).</span> <br>
+									</p>
+									<p style="font-size: 15px">A lua cheia estará em seu ponto mais próximo da Terra:
+										quase 8% maior e 15% mais
+										brilhante do que uma lua cheia comum.</p>
+
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			#typing-text {
+				font-weight: bold;
+				font-size: 1.5em;
+				color: #fff;
+				position: relative;
+			}
+
+			#typing-text::after {
+				content: "|";
+				position: absolute;
+				right: -8px;
+				animation: blink 0.7s infinite;
+				color: #fff;
+			}
+
+			@keyframes blink {
+				50% {
+					opacity: 0;
+				}
+			}
+
+			/* quando terminar a digitação, tira o cursor */
+			#typing-text.done::after {
+				content: "";
+			}
+		</style>
+		<!-- Frase e Lua cards -->
+
+
+		<!-- VERSÃO DESKTOP -->
+		<div class="d-none d-lg-block w-100 main-wrapper" style="overflow: hidden;">
+			<div class="row">
+				<div class="col-12" style="width: 100%; position: relative; overflow: hidden;">
+					<div
+						style="width: 100%; height: 40vh; background-image: url('img/carroselViajarTravelNews/texto-do-seu-paragrafo-1.png'); background-size: cover; background-position: center; display: flex; align-items: center; position: relative;">
+							<img id="aviao-desktop" src="img/edicaoJulho/b3b87850-7dc2-4814-afca-bf9459309994.png"
+								width="200" alt="">
+							<!-- TEXTO NO CANTO SUPERIOR -->
+							<div class="selo-texto-simples">
+								Pirenópolis fica no leste goiano, a cerca de 130km da capital, Goiânia, e a pouco mais
+								de 150km de Brasília. A cidade, de 298 anos, foi tombada pelo IPHAN em 1990. Em 2026,
+								foi eleita uma das cidades mais acolhedoras do mundo pelo Traveller Review Awards.
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+
+		<!-- VERSÃO MOBILE -->
+		<div class="d-block d-lg-none main-wrapper">
+			<div class="row">
+				<div class="col-12" style="width: 100%; position: relative; overflow: hidden;">
+						<div
+							style="width: 100%; height: 50vh; background-image: url('img/mapa.jpeg'); background-size: contain; background-repeat: no-repeat; display: flex; align-items: center;">
+							<img id="aviao-mobile" src="img/edicaoJulho/b3b87850-7dc2-4814-afca-bf9459309994.png"
+								width="300" alt="">
+							<div class="selo-texto-simples">
+								Pirenópolis fica no leste goiano, a cerca de 130km de Goiânia e a pouco mais de
+								150km de Brasília. Em 2026, foi eleita uma das cidades mais acolhedoras do mundo
+								pelo Traveller Review Awards.
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<!-- Edição  -->
+
+		<div id="rotas-destinos" class="main-wrapper">
+			<div class="container">
+					<h2 class="titulo"
+						style="color: #FD7D01 !important;  display: flex; justify-content: center; font-size: 1.6rem;">
+						<b style="margin: 0px 5px 0px 0px"> DESTAQUE | </b> ESPECIAL PIRENÓPOLIS
+					</h2>
+			</div>
+			<div style="margin: 30px 0px;">
+					<div class="row justify-content-center">
+						<div class=" card-destaque">
+							<img src="img/edicaoMaio_26/WhatsApp Image 2026-04-14 at 21.06.48.jpeg" alt="">
+							<div class="card-content">
+								<h2>
+									DESCUBRA O CONEXÃO PIRI.<br>
+									<br>
+									CARLOS NAVES
+								</h2>
+								<p style="text-transform: uppercase;text-align: left !important;">
+
+								</p>
+								<a href="paginas.html?id=21" class="button">
+									Leia mais
+									<span class="material-symbols-outlined">
+										arrow_right_alt
+								</span>
+							</a>
+						</div>
+						</div>
+						<div class=" card-destaque">
+							<img src="img/carroselViajarTravelNews/carrossel-casario-danae.webp" alt="">
+							<div class="card-content">
+								<h2>
+									VIVA O MELHOR DE PIRI!<br>
+									<br>
+									Entre ruas históricas, cachoeiras e uma
+gastronomia surpreendente.
+								</h2>
+							<p style="text-transform: uppercase;text-align: left !important;">
+
+							</p>
+							<a href="paginas.html?id=22" class="button">
+								Leia mais
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+						</div>
+						</div>
+						<div class=" card-destaque">
+							<img src="img/carroselViajarTravelNews/cavalhadas-pirenopolis.jpg" alt="">
+							<div class="card-content">
+								<h2>
+									DO CERRADO AO PALADAR<br>
+									<br>VINHOS E QUEIJOS QUE REVELAM A REGIÃO DOS PIRINEUS
+								</h2>
+							<p style="text-transform: uppercase;text-align: left !important;">
+
+							</p>
+							<a href="paginas.html?id=23" class="button">
+								Leia mais
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+						</div>
+						</div>
+						<div class=" card-destaque">
+							<img src="img/carroselViajarTravelNews/CARROSSEL - CACHOEIRA DO ABADE.jpg" alt="">
+							<div class="card-content">
+								<h2> ENTRE O BARRO E A ALMA <br>
+									<br>
+									A ARTE SECRETA DE PIRENÓPOLIS
+								</h2>
+							<p style="text-transform: uppercase;text-align: left !important;">
+
+							</p>
+							<a href="paginas.html?id=24" class="button">
+								Leia mais
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+						</div>
+						</div>
+						<div class=" card-destaque">
+							<img src="img/carroselViajarTravelNews/CARROSSEL - FORNERIA PIRENEUS - A MELHOR FOCACCIA.jpeg" alt="">
+							<div class="card-content">
+								<h2> PIRENÓPOLIS <br>
+									<br>
+									ONDE SE HOSPEDAR VIRA EXPERIÊNCIA
+								</h2>
+							<p style="text-transform: uppercase;text-align: left !important;">
+
+							</p>
+							<a href="paginas.html?id=25" class="button">
+								Leia mais
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="container">
+				<div style="display: flex; justify-content: end;">
+					<button class="btn-materias" onclick="window.location.href='arquivo.html'">
+						Todas as Matérias
+						<span class="material-symbols-outlined">arrow_right_alt</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<style>
+			.btn-wrapper {
+				padding: 30px 100px 0px;
+			}
+
+			.viagem-videos-actions {
+				display: flex;
+				justify-content: center;
+				margin-top: 36px;
+			}
+
+			#viagemVideosList {
+				overflow: visible !important;
+			}
+
+			#viagemVideosGrid {
+				display: grid !important;
+				grid-template-columns: repeat(4, minmax(0, 1fr));
+				gap: 24px;
+				margin: 0;
+			}
+
+			#viagemVideosGrid>.details_with_sidebar {
+				width: auto !important;
+				max-width: none !important;
+				flex: none !important;
+				padding: 0;
+				margin: 0;
+			}
+
+			#viagemVideosGrid>.details_with_sidebar.viagem-video-hidden {
+				display: none !important;
+			}
+
+			#viagemVideosGrid:not(.is-expanded)>.details_with_sidebar:nth-child(n + 5) {
+				display: none !important;
+			}
+
+			#viagemVideosGrid .blog_post {
+				margin-bottom: 0;
+			}
+
+			#viagemVideosGrid .post_video {
+				margin: 0 0 12px 0 !important;
+				height: 300px !important;
+				background: #090909;
+			}
+
+			#viagemVideosGrid video {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.viagem-videos-toggle {
+				border: 1px solid rgba(253, 125, 1, 0.26);
+				background: #fff7ef;
+				color: #FD7D01;
+				padding: 12px 24px;
+				border-radius: 999px;
+				font-family: 'Tenor Sans', sans-serif;
+				font-size: 14px;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				transition: all 0.25s ease;
+			}
+
+			.viagem-videos-toggle:hover {
+				background: #FD7D01;
+				color: #fff;
+			}
+
+			.viagem-video-hidden {
+				display: none;
+			}
+
+			#home-content-row {
+				display: flex !important;
+				flex-wrap: wrap;
+				clear: both;
+			}
+
+			#home-main-col,
+			#home-sidebar-col {
+				display: block !important;
+			}
+
+			/* em telas menores, reduza as margens laterais */
+			@media (max-width: 992px) {
+				#viagemVideosGrid {
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+				}
+
+				.btn-wrapper {
+					padding: 30px 40px 0px;
+					justify-content: center;
+					/* centraliza o botão no celular */
+				}
+			}
+
+			@media (max-width: 576px) {
+				#viagemVideosGrid {
+					grid-template-columns: 1fr;
+				}
+
+				.btn-wrapper {
+					padding: 20px 50px 0px;
+					justify-content: center;
+				}
+			}
+
+			/* TEXTO SIMPLES NO CANTO SUPERIOR */
+			.selo-texto-simples {
+				position: absolute;
+				top: 20px;
+				right: 40px;
+				background: rgba(255, 255, 255, 0.9);
+				padding: 5px;
+				border-radius: 8px;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+				font-family: 'Georgia', serif;
+				font-size: 14px;
+				line-height: 1.4;
+				color: #333;
+				max-width: 320px;
+				border-left: 4px solid #f17c3a;
+				animation: pulse 8s infinite;
+
+			}
+
+			.selo-texto-simples strong {
+				font-size: 16px;
+				color: #8B4513;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			/* Responsividade */
+			@media (max-width: 1200px) {
+				.selo-texto-simples {
+					font-size: 12px;
+					padding: 10px;
+					max-width: 250px;
+				}
+
+				.selo-texto-simples strong {
+					font-size: 14px;
+				}
+			}
+		</style>
+
+		<div class="main-wrapper" style="margin: 90px 0px 90px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div id="sobre-nos" class="related_posts" data-aos="fade-up" data-aos-duration="900"
+							style="border-bottom: none !important;">
+							<div class="sec_title">
+								<h1 class="titulo" style="color: #FD7D01; font-size: 2.1em;">Viaje com a gente...</h1>
+							</div>
+							<div class="more_posts viagem-videos-list" id="viagemVideosList">
+								<div class="row" id="viagemVideosGrid">
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-05%20at%2020.27.59.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">2026: OS 100 ANOS DA NOVA
+														PONTE HERCILIO LUZ, SÍMBOLO DE FLORIANÓPOLIS
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-05%20at%2020.15.25.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">POUSADA COSTA SOLAR, LAGOA
+														DA CONCEIÇÃO - FLORIANÓPOLIS, SC.
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-04%20at%2021.40.20.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">FLORIPA: VISTA DO TREE BAR,
+														NA LAGOA
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-04%20at%2021.38.08.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">AEROPORTO INTERNACIONAL DE
+														FLORIANÓPOLIS HERCÍLIO LUZ: REFERÊNCIA EM DESIGN, CONFORTO E
+														BELEZA NO BRASIL
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-04%20at%2021.28.20.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">TREE BAR: CHOPP ALEMÃO IPA
+														SCHORNSTEIN
+
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-04%20at%2021.21.10.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">GAIVOTAS SÃO PARCEIRAS DA
+														PESCA ARTESANAL, ATUANDO COMO “RADARES VIVOS” PARA OS
+														PESCADORES
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-04%20at%2021.11.15.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">FLORIPA: RUFUS BAR, NA
+														LAGOA DA CONCEIÇÃO, POSSUI 20 TORNEIRAS DE CHOPP ARTESANAL
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-04%20at%2021.05.49.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">AMANHECER NA LAGOA DA
+														CONCEIÇÃO, VISTO DA POUSADA COSTA SOLAR</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAbr/WhatsApp%20Video%202026-04-04%20at%2021.04.22.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">A CAMINHO DA COSTA DA LAGOA
+
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2013.55.00.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">WELINGTON, DA PIZZARIA OURO
+														FINO: KNOW HOW TRAZIDO A EUROPA - GOIÁS VELHO, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2013.59.56.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">MARCOS E SEU REPERTÓRIO
+														ECLÉTICO, DE U2 A BILLIE HOLIDAY - ESPAÇO OURO FINO - GOIÁS
+														VELHO, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2014.04.16.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">VILA BOA DE GOYAZ, CIDADE
+														DE GOIÁS OU GOIÁS VELHO, GO: VÁRIOS NOMES E UMA SÓ PALAVRA:
+														MEMÓRIA
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2014.08.35.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">ATELIÊ DO ‘SEU’ CASTRINHO -
+														GOIÁS VELHO, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2014.12.16.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">ESTRADINHA PARA O POÇO DO
+														SUCURI - ZONA RURAL DE GOIÁS VELHO, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2014.13.57.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">UMA DAS TRILHAS DO POÇO DO
+														SUCURI - GOIÁS VELHO, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2014.15.19.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">POUSADA FLOR DE LARANJEIRA
+														EM GOIÁS VELHO, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2014.17.03.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">ALI, PASSAVA BOI, PASSAVA
+														BOIADA …
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2014.19.55.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">FOLLOW THE RAIN…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMar/WhatsApp%20Video%202026-03-05%20at%2014.22.38.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">UM DE NOSSOS VIZINHOS EM
+														SEU PASSEIO HABITUAL …
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoOutubro/WhatsApp%20Video%202025-10-03%20at%2010.22.15.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">VISITA ILUSTRE DO NOSSO
+														VIZINHO…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoOutubro/WhatsApp%20Video%202025-10-03%20at%2010.23.39.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">ÀS VEZES PRECISAMOS SÓ
+														OUVIR O VENTO…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoOutubro/WhatsApp%20Video%202025-10-03%20at%2010.24.15.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">NOSSA GUARDIÃ SEMPRE DE
+														OLHO…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoJunho/WhatsApp%20Video%202025-06-01%20at%2011.16.14.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">MANHÃS DE OUTONO…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoJunho/WhatsApp%20Video%202025-06-01%20at%2011.12.10.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">CREPUSCULAR…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoJunho/WhatsApp%20Video%202025-06-01%20at%2011.10.08.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">FIM DE NOITE…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoJunho/WhatsApp%20Video%202025-06-01%20at%2011.08.54.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">VIVA SÃO JOÃO!!
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMaio/dia-das-maes/WhatsApp%20Video%202025-05-09%20at%2015.43.39.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">QUAL É A SUA ESTRADA?…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMaio/dia-das-maes/WhatsApp%20Video%202025-05-09%20at%2015.47.10.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">LADY GAGA RIO 2025: EMOÇÃO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMaio/dia-das-maes/WhatsApp%20Video%202025-05-09%20at%2015.47.56.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">CASARÃO VILLA DO IMPÉRIO:
+														PIRENÓPOLIS, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMaio/dia-das-maes/WhatsApp%20Video%202025-05-09%20at%2015.48.12.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">CASARÃO VILLA DO IMPÉRIO:
+														PIRENÓPOLIS, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMaio/dia-das-maes/WhatsApp%20Video%202025-05-09%20at%2015.49.29.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">SUÍTE CONFORT - CASARÃO
+														VILLA DO IMPÉRIO: PIRENÓPOLIS, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMaio/dia-das-maes/WhatsApp%20Video%202025-05-09%20at%2015.51.46.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">POR DO SOL NO BAR DO
+														MIRANTE: VILA SÃO JORGE - CHAPADA DOS VEADEIROS, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMaio/dia-das-maes/WhatsApp%20Video%202025-05-09%20at%2015.52.52.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">AS BRUMAS DO AMANHECER…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoMaio/dia-das-maes/WhatsApp%20Video%202025-05-09%20at%2016.07.47.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">RELAX: PISCINA AQUECIDA DO
+														CASARÃO VILLA DO IMPÉRIO - PIRENÓPOLIS, GO
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/videos-agosto/WhatsApp%20Video%202024-08-19%20at%2022.35.51.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">
+														19 DE AGOSTO: A SUPER LUA AZUL REINA ABSOLUTA…</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/videos-agosto/WhatsApp%20Video%202024-08-19%20at%2022.39.24.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">O CERRADO É CONSIDERADO A
+														SAVANA MAIS RICA EM BIODIVERSIDADE DO MUNDO
+
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/videos-agosto/WhatsApp%20Video%202024-08-19%20at%2022.44.02.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">‘O QUE A NOITE NÃO REVELA,
+														O DIA MOSTRA PRA MIM’ - Renato Teixeira
+
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/videos-agosto/WhatsApp%20Video%202024-08-19%20at%2022.47.28.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">EM COMPANHIA DE UM
+														ARCO-ÍRIS…
+
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/videos-agosto/WhatsApp%20Video%202024-08-19%20at%2023.34.06.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">NO ORIENTE, ACREDITA-SE QUE
+														O TRONCO OCO DO BAMBU SERVE DE MORADA AOS DEUSES…
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/videos-site/WhatsApp%20Video%202024-07-21%20at%2021.08.42.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">
+														JANTAR SOBRE AS DUNAS: GALINHOS A DOIS - GALINHOS, RN</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<!-- <div class="post_header">
+															<h2 class="post_title">
+																<a href="#">Live with no excuses and travel with no regrets</a>
+															</h2>
+														</div> -->
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/videos-site/WhatsApp%20Video%202024-07-21%20at%2021.23.49.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">
+														GALINHOS A DOIS: ESPETÁCULO DE ARTE E ROMANTISMO</span>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="viagem-videos-actions">
+									<button type="button" class="viagem-videos-toggle" id="toggleViagemVideos">
+										Ver mais vídeos
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row" id="home-content-row">
+					<div class="col-lg-8 col-md-7" id="home-main-col">
+
+						<div class="related_posts" data-aos="fade-up" data-aos-duration="900"
+							style="border-bottom: none;">
+							<div class="sec_title">
+								<h1 class="titulo" style="color: #FD7D01; font-size: 2.1em;">Vem Com A Gente</h1>
+							</div>
+							<div class="more_posts">
+								<div class="row">
+									<div class="col-lg-3 col-sm-6 mb-5">
+										<div class="article-card">
+											<div class="content">
+												<!-- <p class="date">Jan 1, 2022</p> -->
+												<a href="por-ai.html">
+													<p class="title">Por aí...</p>
+												</a>
+
+											</div>
+
+											<img src="img/fotos/por-ai-rosewood-sao-paulo-1.webp"
+												alt="article-cover" />
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mb-5">
+										<div class="article-card">
+											<div class="content">
+												<!-- <p class="date">Jan 1, 2022</p> -->
+												<a href="cultura-arte.html">
+													<p class="title">Cultura&Arte</p>
+												</a>
+											</div>
+											<img src="images/WhatsApp%20Image%202024-03-18%20at%2011.08.21.jpg"
+												alt="article-cover" />
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mb-5">
+										<div class="article-card">
+											<div class="content">
+												<!-- <p class="date">Jan 1, 2022</p> -->
+												<a href="lifestyle.html">
+													<p class="title">Lifestyle</p>
+												</a>
+											</div>
+											<img src="img/WhatsApp%20Image%202024-02-27%20at%2017.01.42.jpeg"
+												alt="article-cover" />
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mb-5">
+										<div class="article-card">
+											<div class="content">
+												<!-- <p class="date">Jan 1, 2022</p> -->
+												<a href="biodiversidade.html">
+													<p class="title">Planeta vivo</p>
+												</a>
+											</div>
+											<img src="images/WhatsApp%20Image%202024-03-18%20at%2011.07.34.jpg"
+												alt="article-cover" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="blog_list" data-aos="fade-up" data-aos-duration="700">
+							<div class="main-wrapper">
+								<div class="container">
+									<h2 class="titulo titulo-lua"
+										style="color: #FD7D01 !important;  display: flex; justify-content: center;">
+										VIAJAR TRAVEL NEWS</h2>
+									<p class="titulo titulo-lua-lua"
+										style="font-size: 24px; color: #FD7D01 !important;  display: flex; justify-content: center;">
+										SEMPRE NA LUA CHEIA</p>
+								</div>
+							</div>
+
+							<article id="news" class="blog_post">
+								<div class="post_img" data-aos="overlay-right">
+									<!-- <a><img src="img/anews.jpg" style="border-radius: 10px;" alt="blog"></a> -->
+									<a><img src="img/3d-halloween-background-with-tree-silhouetted-against-moon%20(1).jpeg"
+											style="border-radius: 10px;" alt="blog"></a>
+
+								</div>
+								<div class="post_content">
+									<div class="">
+										<div class="row">
+											<div class="col-lg-8">
+												<div class="post_intro">
+													<p class="letra-tenor"
+														style="font-size: 17px; text-align: justify; margin-bottom: 0px !important;">
+
+														<b style="margin-left: 20px;"></b>Desde as mais remotas
+														civilizações, o homem já se orientava pela
+														lua, para saber o momento certo do plantio, da colheita, caça e
+														pesca, mudanças climáticas…
+													</p>
+
+													<p class="letra-tenor"
+														style="font-size: 17px; text-align: justify;margin-bottom: 0px !important">
+														<b style="margin-left: 20px;"></b>Os antigos diziam que a lua
+														era um cálice vazio, enchendo e
+														esvaziando devagar, representando as mudanças cíclicas das
+														emoções e necessidades humanas.
+													</p>
+
+													<p class="letra-tenor"
+														style="font-size: 17px; text-align: justify;margin-bottom: 0px !important">
+														<b style="margin-left: 20px;"></b>E é por acreditarmos na sua
+														influência, especialmente a CHEIA,
+														quando o seu lado iluminado está de frente para a Terra e a luz
+														plena e oposta ao sol amplia o campo magnético, que o nosso site
+														é atualizado sempre às luas cheias.
+
+													</p>
+													<p class="letra-tenor"
+														style="font-size: 17px; text-align: justify;margin-bottom: 0px !important">
+														<b style="margin-left: 20px;"></b>Em sintonia positiva com essa
+														energia, levamos até você, por
+														meio das nossas matérias e sob a magia e o magnetismo dessa luz
+														arrebatadora, os lugares mais inspiradores. <br>
+														Porque Viajar é a melhor inspiração. <br>
+
+													</p>
+
+												</div>
+											</div>
+
+											<div class="col-lg-4">
+												<div class="a-box">
+													<div class="img-container">
+														<div class="img-inner">
+															<div class="inner-skew">
+
+																<img
+																	src="images/WhatsApp%20Image%202024-02-14%20at%2021.06.18.jpg">
+															</div>
+														</div>
+													</div>
+													<div class="text-container" style="background: #ffffff !important;">
+														<h2>Curiango</h2>
+														<p style="font-style: italic;">Nyctidromus albicollis</p>
+
+														<div class="post_intro">
+															<p class="letra-tenor"
+																style="font-size: 13px;line-height: 20px;">
+																Mãe da LUA, e Ave Símbolo da
+																VIAJAR TRAVEL NEWS
+															</p>
+															<div class="" style="padding-top: 10px;">
+																<a href="curiango.html" class="letra-tenor"
+																	style="font-size: 17px;color: #FD7D01 !important">Leia
+																	mais...</a>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+
+						<div style="display: none;" id="fique-por-dentro" class="blog_list" data-aos="fade-up"
+							data-aos-duration="700">
+							<div class="main-wrapper">
+								<div class="container">
+									<h2 class="titulo"
+										style="color: #FD7D01 !important;  display: flex; justify-content: center;">
+										Fique Por Dentro</h2>
+								</div>
+							</div>
+							<article class="blog_post">
+								<div class="post_content">
+									<div class="row">
+										<div class="col-lg-6 mb-5 por-dentro">
+											<article class="custom-card">
+												<div class="custom-card__background" style="background:url('images/1598462532244.jpg');    
+																									background-repeat: no-repeat !important;
+																									background-position: center !important;              
+																									width: 100%;
+																									height: 240px;
+																									position: relative;
+																									display: flex;
+																									margin: auto;            
+																									background-size: cover;">
+												</div>
+
+												<div class="custom-card__content | flow" style=" background: linear-gradient(
+															180deg,
+															hsla(0, 0%, 0%, 0.535) 0%,
+															hsla(0, 0%, 0%, 0.566) 10%,
+															hsl(0, 0%, 0%) 100%
+														  );">
+													<div class="custom-card__content--container | flow">
+														<h2 class="custom-card__title" style="color: #fff !important">
+															hub-and-spoke</h2>
+														<p class="custom-card__description"
+															style="color: #fff !important">
+															Você já ouviu falar ?
+														</p>
+													</div>
+													<a href="ja-ouviu-falar.html">
+														<button id="" class="custom-card__button"
+															style="color: #fff !important">Leia mais</button>
+													</a>
+
+												</div>
+											</article>
+										</div>
+										<div class="col-lg-6 mb-5 por-dentro">
+											<article class="custom-card">
+												<div class="custom-card__background" style="background:url('images/hands-holding-smartphone-social-media-concept.jpg');    
+																									background-repeat: no-repeat !important;
+																									background-position: center !important;              
+																									width: 100%;
+																									height: 240px;
+																									position: relative;
+																									display: flex;
+																									margin: auto;            
+																									background-size: cover;">
+												</div>
+
+												<div class="custom-card__content | flow">
+													<div class="custom-card__content--container | flow">
+														<h2 class="custom-card__title" style="color: #fff !important">
+															Instagram</h2>
+														<p class="custom-card__description"
+															style="color: #fff !important">
+
+															Principal fonte de inspiração <br>
+															de viagens para brasileiros
+														</p>
+													</div>
+													<a href="instagram.html">
+														<button id="" class="custom-card__button"
+															style="color: #fff !important">Leia mais</button>
+													</a>
+												</div>
+											</article>
+										</div>
+										<div class="col-lg-6 mb-5 por-dentro">
+											<article class="custom-card">
+												<div class="custom-card__background" style="background:url('images/exterior.jpg');    
+																									background-repeat: no-repeat !important;
+																									background-position: center !important;              
+																									width: 100%;
+																									height: 240px;
+																									position: relative;
+																									display: flex;
+																									margin: auto;            
+																									background-size: cover;">
+												</div>
+
+												<div class="custom-card__content | flow">
+													<div class="custom-card__content--container | flow">
+														<h2 class="custom-card__title" style="color: #fff !important">
+															Cidade
+															de São Paulo </h2>
+														<p class="custom-card__description"
+															style="color: #fff !important">
+															Teve a hospedagem ...
+														</p>
+													</div>
+													<a href="cidade-sao-paulo.html">
+														<button id="" class="custom-card__button"
+															style="color: #fff !important">Leia mais</button>
+													</a>
+												</div>
+											</article>
+										</div>
+										<div class="col-lg-6 mb-5 por-dentro">
+											<article class="custom-card">
+												<div class="custom-card__background" style="background:url('img/images (3).jpeg');    
+																									background-repeat: no-repeat !important;
+																									background-position: center !important;              
+																									width: 100%;
+																									height: 240px;
+																									position: relative;
+																									display: flex;
+																									margin: auto;            
+																									background-size: cover;">
+												</div>
+
+												<div class="custom-card__content | flow">
+													<div class="custom-card__content--container | flow">
+														<h2 class="custom-card__title" style="color: #fff !important">
+															Mudanças climáticas </h2>
+														<p class="custom-card__description"
+															style="color: #fff !important">
+															Já afetam o turismo...
+														</p>
+													</div>
+													<a href="mudancas.html">
+														<button class="custom-card__button"
+															style="color: #fff !important">Leia mais</button>
+													</a>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-5" id="home-sidebar-col">
+						<div class="sidebar" data-aos="fade-up" data-aos-duration="900">
+
+							<div id="recent-posts-3" class="widget widget_recent_posts">
+								<h4 class="widget_title titulo" style="color: #FD7D01; font-size: 1.9em;">
+									Jornada Literária</h4>
+								<div class="sidebar_recent_posts">
+
+									<ul class="category_list">
+										<li><a class="letra-tenor; "
+												style="font-size:13px !important;padding-right:30px!important"
+												target="_blank" href="https://www.amyrklink.com.br/pt/livros/">Cem Dias
+												Entre Céu e Mar – Amyr Klink</a></li>
+										<li><a class="letra-tenor; "
+												style="font-size:13px !important;padding-right:30px!important"
+												target="_blank" href="https://thomazbrandolin.com.br/livros.php">Sozinho
+												no Pólo Norte – Thomaz Brandolin</a></li>
+										<li><a class="letra-tenor; "
+												style="font-size:13px !important;padding-right:30px!important"
+												target="_blank"
+												href="https://www.amazon.com.br/volta-mundo-80-dias/dp/8594318146">A
+												Volta ao Mundo em 80 dias – Júlio Verne</a></li>
+										<li><a class="letra-tenor; "
+												style="font-size:13px !important;padding-right:30px!important"
+												target="_blank"
+												href="https://www.amazon.com.br/dp/8554238001?ie=UTF8&amp;tag=livralivro08-20&amp;linkCode=ur2&amp;linkId=0769a8eedb4652037177554f4079e1b1&amp;camp=1789&amp;creative=9325&amp;index=books&amp;keywords=9788554238001">A
+												Estrada Dá Tudo Que Você Precisa - Mirella Rabelo Rômulo Wolff</a></li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div id="recent-posts-1" class="widget widget_recent_posts">
+								<h4 class="widget_title titulo" style="color: #FD7D01; font-size: 1.9em;">
+									Parceiros</h4>
+								<div class="sidebar_recent_posts">
+									<ul>
+										<li style="display: block;"><a
+												href="https://www.instagram.com/lojafarofinoracoes/" target="_blank"
+												style="padding-bottom: 0px; padding-right: 0px">
+												<img width="40px" style="border-radius: 50%;" src="img/logo-faro.jpg"
+													alt="">
+
+											</a><span style="font-size: 14px;color: #222;">Faro Fino Rações
+											</span>
+										</li>
+										<li style="display: block;"><a href="https://www.granmarquise.com.br/"
+												target="_blank" style="padding-bottom: 0px; padding-right: 0px">
+
+												<svg style="width: 100px;" xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 566.93 182.48">
+													<g id="Layer_2" data-name="Layer 2">
+														<g id="Layer_1-2" data-name="Layer 1">
+															<path class="logoColor"
+																d="M71.47,2.08a.27.27,0,0,1,.32.13.16.16,0,0,1,0,.06l6.59,16.2L79.05,1a.2.2,0,0,1,0-.07.26.26,0,0,1,.51,0,.31.31,0,0,1,0,.1l.22,20.91,6.85,16.84L90.47,21,87.05.33s0-.07,0-.1A.26.26,0,0,1,87.26,0a.25.25,0,0,1,.29.17.4.4,0,0,1,0,.07l3.67,17.1L94.91.25V.18a.27.27,0,0,1,.51.05s0,.06,0,.1L92,21l3.82,17.77,6.84-16.84L102.91,1a.38.38,0,0,1,0-.1.25.25,0,0,1,.24-.19.26.26,0,0,1,.26.22V1l.66,17.48,6.58-16.2a.1.1,0,0,1,0-.06.26.26,0,0,1,.32-.13.26.26,0,0,1,.17.26.28.28,0,0,1,0,.1l-6.94,19.72.67,18.17,9.66-15.4L118.4,4.39a.4.4,0,0,1,0-.1.26.26,0,0,1,.49.12v.07l-2.4,17.33L125.81,7l0-.06a.26.26,0,0,1,.33-.07.25.25,0,0,1,.12.29.34.34,0,0,1,0,.09L116,25.47l-2.49,18L125.71,30l7.36-19.57a.19.19,0,0,1,0-.09.25.25,0,0,1,.3-.1.26.26,0,0,1,.16.3.24.24,0,0,1,0,.07l-5.38,16.65,11.74-13a.1.1,0,0,1,0-.05.27.27,0,0,1,.34,0,.25.25,0,0,1,.07.3.3.3,0,0,1-.06.09L127.05,30.77l-5.57,17.29L135.82,36.9l10.65-18a.3.3,0,0,1,.06-.09.25.25,0,0,1,.3,0,.26.26,0,0,1,.12.32l0,.06-8.18,15.46L152.55,23.9l.05,0a.27.27,0,0,1,.34.06.26.26,0,0,1,0,.31l-.08.07L137,37.91,128.51,54l16.07-8.5L158.19,29.6l.08-.07a.24.24,0,0,1,.31,0,.27.27,0,0,1,.06.34l0,0L147.85,43.74l15.46-8.18.06,0a.27.27,0,0,1,.33.12.28.28,0,0,1,0,.3l-.09.06-18,10.65L134.42,61l17.29-5.58,16.16-13.27.09-.06a.28.28,0,0,1,.3.06.27.27,0,0,1,0,.35l-.05.05-13,11.73,16.64-5.37.06,0a.27.27,0,0,1,.31.17.25.25,0,0,1-.09.3l-.1,0-19.57,7.36L139,69l18-2.49,18.22-10.26.09,0a.25.25,0,0,1,.28.13.26.26,0,0,1-.07.33l-.06,0L160.69,66,178,63.57h.06a.27.27,0,0,1,.27.22.25.25,0,0,1-.14.27l-.11,0-20.56,3.85L142.15,77.6l18.17.67L180,71.33l.1,0a.26.26,0,0,1,.13.5l-.05,0L164,78.41l17.48.65h.07a.26.26,0,0,1,.23.26.25.25,0,0,1-.19.25h-.11l-20.91.22-16.84,6.84,17.77,3.82,20.63-3.41h.11a.26.26,0,0,1,.23.21.27.27,0,0,1-.18.29l-.07,0-17.1,3.66,17.1,3.68.07,0a.26.26,0,0,1,.18.29.25.25,0,0,1-.23.21h-.11L161.52,92l-17.77,3.81,16.84,6.85,20.91.22h.11a.25.25,0,0,1,.19.25.26.26,0,0,1-.23.26h-.07l-17.48.65,16.2,6.58.05,0a.25.25,0,0,1,.13.32.26.26,0,0,1-.26.17.35.35,0,0,1-.1,0l-19.72-6.93-18.17.67,15.39,9.66,20.56,3.85.11,0a.25.25,0,0,1,.14.28.26.26,0,0,1-.27.22H178l-17.33-2.4,14.81,9.3.06,0a.26.26,0,0,1,.07.34.25.25,0,0,1-.28.12.21.21,0,0,1-.09,0L157,116l-18-2.49,13.47,12.19,19.58,7.36a.25.25,0,0,1,.1.05.25.25,0,0,1,.09.29.27.27,0,0,1-.3.16l-.07,0-16.64-5.37,13,11.73.05,0a.26.26,0,0,1,0,.34.24.24,0,0,1-.3.07l-.09-.05-16.16-13.27-17.3-5.58,11.17,14.35,18,10.65.09.06a.28.28,0,0,1,0,.31.28.28,0,0,1-.33.11l-.06,0-15.46-8.17,10.74,13.8a.22.22,0,0,0,0,.06.26.26,0,0,1-.06.34.24.24,0,0,1-.31,0,.3.3,0,0,1-.08-.07L144.58,137l-16.06-8.5L137,144.58l15.88,13.61.08.08a.26.26,0,0,1,0,.31.28.28,0,0,1-.34.05l-.06,0-13.79-10.74,8.17,15.46,0,.05a.28.28,0,0,1-.12.33.25.25,0,0,1-.3,0,.2.2,0,0,1-.07-.09l-10.65-18-14.34-11.16,5.57,17.3,13.27,16.16.06.09a.25.25,0,0,1-.07.3.25.25,0,0,1-.34,0,.1.1,0,0,1,0,0l-11.74-13,5.38,16.64a.28.28,0,0,1,0,.07.27.27,0,0,1-.16.31.25.25,0,0,1-.3-.1.2.2,0,0,1,0-.09l-7.36-19.57L113.52,139,116,157l10.26,18.22a.35.35,0,0,1,0,.1.25.25,0,0,1-.12.29.26.26,0,0,1-.33-.06l0-.06-9.29-14.81L118.91,178a.25.25,0,0,1,0,.07.27.27,0,0,1-.22.27.26.26,0,0,1-.27-.14.39.39,0,0,1,0-.1l-3.85-20.55-9.66-15.39-.67,18.16L111.15,180a.27.27,0,0,1-.14.36.26.26,0,0,1-.32-.12l0-.06L104.08,164l-.66,17.48v.07a.27.27,0,0,1-.26.23.24.24,0,0,1-.24-.19.44.44,0,0,1,0-.11l-.23-20.91-6.84-16.83L92,161.51l3.41,20.64a.42.42,0,0,1,0,.1.25.25,0,0,1-.21.23.26.26,0,0,1-.29-.18v-.06l-3.67-17.1-3.67,17.1s0,0,0,.06a.26.26,0,0,1-.29.18.26.26,0,0,1-.21-.23s0-.07,0-.1l3.41-20.64-3.81-17.77-6.85,16.83-.22,20.91a.36.36,0,0,1,0,.11.26.26,0,0,1-.51,0,.23.23,0,0,1,0-.07L78.41,164l-6.59,16.2,0,.06a.27.27,0,0,1-.32.12.25.25,0,0,1-.16-.26.2.2,0,0,1,0-.1l6.94-19.73-.67-18.16-9.67,15.39L64.08,178.1a.21.21,0,0,1,0,.1.26.26,0,0,1-.28.14.27.27,0,0,1-.22-.27.42.42,0,0,1,0-.07L66,160.68l-9.29,14.81s0,0,0,.06a.26.26,0,0,1-.46-.22.57.57,0,0,1,0-.1L66.47,157,69,139,56.78,152.49l-7.36,19.57a.55.55,0,0,1,0,.09.26.26,0,0,1-.3.1.28.28,0,0,1-.17-.3l0-.07,5.37-16.63-11.73,13,0,0a.26.26,0,0,1-.42-.29.4.4,0,0,1,.06-.09l13.27-16.16L61,134.42,46.66,145.57,36,163.57a.26.26,0,0,1-.07.09.25.25,0,0,1-.3,0,.27.27,0,0,1-.12-.33l0-.05,8.18-15.46L29.93,158.59l0,0a.28.28,0,0,1-.34-.05.25.25,0,0,1,0-.31.27.27,0,0,1,.08-.08l15.87-13.61L54,128.51,37.91,137,24.3,152.88a.27.27,0,0,1-.08.07.25.25,0,0,1-.31,0,.26.26,0,0,1,0-.34s0,0,0-.06l10.74-13.8-15.45,8.17-.07,0a.26.26,0,0,1-.32-.11.25.25,0,0,1,0-.31l.09-.06,18-10.65,11.16-14.34-17.29,5.58L14.61,140.33a.27.27,0,0,1-.09.05.24.24,0,0,1-.3-.07.26.26,0,0,1,0-.34l0,0,13-11.74L10.6,133.55l-.07,0a.26.26,0,0,1-.21-.45.19.19,0,0,1,.1-.05L30,125.71l13.49-12.19-18,2.49L7.25,126.26l-.09,0a.26.26,0,0,1-.23-.46l.06,0,14.81-9.3-17.33,2.4H4.41a.28.28,0,0,1-.27-.21.27.27,0,0,1,.14-.28l.1,0,20.55-3.85,15.4-9.66-18.17-.67L2.45,111.15l-.11,0a.25.25,0,0,1-.26-.16.25.25,0,0,1,.12-.32l.06,0,16.2-6.58L1,103.42H.92a.26.26,0,0,1-.22-.26.25.25,0,0,1,.19-.25H1l20.9-.23,16.84-6.84L21,92,.34,95.42H.23A.25.25,0,0,1,0,95.22a.25.25,0,0,1,.17-.29l.07,0,17.1-3.68L.25,87.57l-.07,0a.26.26,0,0,1,0-.51H.34L21,90.46l17.77-3.82L21.9,79.8,1,79.58H.89a.25.25,0,0,1-.19-.25.26.26,0,0,1,.22-.26H1l17.48-.65L2.27,71.82l-.06,0a.27.27,0,0,1-.12-.33.25.25,0,0,1,.26-.17l.11,0,19.72,6.94,18.17-.67L24.94,67.94,4.38,64.09l-.1,0a.26.26,0,0,1-.14-.27.28.28,0,0,1,.27-.22h.06L21.8,66,7,56.67l-.06,0a.26.26,0,0,1,.23-.46l.09,0L25.47,66.47l18,2.49L30,56.78,10.42,49.42l-.1-.05a.25.25,0,0,1-.08-.3.25.25,0,0,1,.29-.17l.07,0,16.65,5.37-13-11.73,0,0a.27.27,0,0,1,0-.35.28.28,0,0,1,.3-.06.35.35,0,0,1,.09.06L30.77,55.43,48.07,61,36.91,46.66,18.91,36,18.82,36a.25.25,0,0,1,0-.31.26.26,0,0,1,.32-.12l.07,0,15.45,8.18L23.9,29.93l0,0a.26.26,0,0,1,0-.34.25.25,0,0,1,.31,0s0,0,.08.07L37.91,45.47,54,54l-8.5-16.06L29.6,24.29a.24.24,0,0,1-.08-.07.25.25,0,0,1,0-.31.28.28,0,0,1,.34-.06l0,0L43.75,34.63,35.57,19.17l0-.06a.26.26,0,0,1,.12-.32.25.25,0,0,1,.3,0l.06.09,10.65,18L61,48.06,55.43,30.77,42.16,14.61a.5.5,0,0,1-.06-.09.26.26,0,0,1,.08-.3.27.27,0,0,1,.34,0l0,.05,11.73,13L48.93,10.6a.59.59,0,0,1,0-.07.27.27,0,0,1,.17-.3.25.25,0,0,1,.3.1l0,.09L56.78,30,69,43.47l-2.5-18L56.22,7.25a.41.41,0,0,1,0-.09.26.26,0,0,1,.11-.29.27.27,0,0,1,.34.06.27.27,0,0,0,0,.06L66,21.8,63.57,4.47a.29.29,0,0,1,0-.07.27.27,0,0,1,.22-.27.25.25,0,0,1,.28.14.33.33,0,0,1,0,.1l3.85,20.55,9.67,15.4.67-18.17L71.33,2.44a.21.21,0,0,1,0-.1.26.26,0,0,1,.16-.26ZM91.24,25.67,88.38,43l2.85,7h0l2.85-7L91.24,25.67Zm13.81,19.25.28,7.56,0,0,5.08-5.63,3.24-17.26-8.62,15.3ZM91.24,156.81l2.86-17.32-2.85-7,0,0-2.85,7,2.86,17.32ZM77.43,137.56,77.15,130l0,0L72,135.6l-3.23,17.26,8.61-15.3Zm8.25,1.69-1.59-7.42,0,0-4,6.4-.18,17.56,5.83-16.56Zm-5.58-6.44L85.65,123l1.84,11.15,3.75-10.66L95,134.12,96.84,123l5.55,9.84-.12-11.3,7.18,8.74-2.09-11.1,8.58,7.36-4-10.58,9.73,5.76-5.76-9.73,10.58,4-7.36-8.58,11.11,2.08-8.73-7.17,11.3.12L123,96.84,134.11,95l-10.65-3.76,10.66-3.74L123,85.65l9.85-5.54-11.3.11L130.25,73l-11.11,2.09,7.36-8.58-10.58,4,5.76-9.73-9.73,5.76,4-10.58-8.58,7.36,2.09-11.11L102.26,61l.12-11.31-5.55,9.85L95,48.37,91.24,59,87.49,48.37,85.65,59.51l-5.54-9.85L80.22,61l-7.17-8.73,2.08,11.11L66.56,56l4,10.58-9.72-5.76,5.76,9.73L56,66.55l7.35,8.58L52.24,73,61,80.22l-11.3-.11,9.84,5.54L48.37,87.49,59,91.23,48.37,95l11.14,1.84-9.84,5.55L61,102.26l-8.73,7.17,11.1-2.08L56,115.93l10.58-4-5.76,9.73,9.72-5.76-4,10.58,8.58-7.36-2.08,11.1,7.17-8.74-.12,11.3Zm22.33-88.59.2-17.56L96.8,43.23l1.59,7.4v0l4-6.43ZM69.6,134.46l1-7.51h0l-6,4.65L58.46,148,69.6,134.46ZM112.89,48l-1,7.49v0l6-4.67L124,34.45,112.89,48ZM62.42,130l2.33-7.23h0L58,126.36l-8.94,15.11L62.42,130Zm57.65-77.6-2.33,7.2v0l6.71-3.55L133.39,41,120.07,52.44Zm-63.95,72,3.55-6.71h0l-7.21,2.32L41,133.38l15.11-8.94ZM126.36,58l-3.54,6.68v0L130,62.42l11.42-13.33L126.36,58ZM50.89,117.84l4.66-6h0l-7.49,1L34.45,124l16.44-6.18ZM131.6,64.64l-4.64,6v0l7.52-1L148,58.46,131.6,64.64Zm-84.72,45.8,5.63-5.09,0,0-7.56-.27-15.31,8.61,17.27-3.23ZM135.6,72.05,130,77.12v0l7.58.28,15.29-8.62L135.6,72.05ZM44.23,102.44l6.42-4,0,0-7.4-1.58-16.56,5.83,17.56-.19Zm94-22.39-6.41,4,0,0,7.42,1.59,16.56-5.83L138.26,80ZM43,94.1l7-2.86h0l-7-2.85L25.67,91.23,43,94.1Zm96.5-5.73-7,2.85h0l7,2.86,17.32-2.87L139.5,88.38Zm-96.27-2.7,7.42-1.59,0,0-6.4-4-17.56-.19,16.56,5.83Zm96,11.12-7.4,1.58,0,0,6.43,4,17.55.19L139.26,96.8ZM44.92,77.43l7.58-.28v0L46.88,72,29.63,68.81l15.3,8.62Zm92.64,27.63-7.56.27,0,0,5.62,5.09,17.26,3.23-15.3-8.61ZM48,69.59l7.52,1v0l-4.64-6L34.45,58.46,48,69.59Zm86.43,43.29-7.49-1h0l4.65,6L148,124l-13.57-11.14Zm-82-50.46,7.22,2.33v0L56.12,58,41,49.09,52.44,62.42ZM130,120.06l-7.2-2.32h0l3.55,6.71,15.11,8.94L130,120.06ZM58,56.12l6.71,3.55v0l-2.32-7.2L49.09,41,58,56.12Zm66.42,70.24-6.69-3.53h0l2.33,7.23,13.32,11.43-8.94-15.11ZM64.64,50.89l6,4.67v0L69.6,48,58.46,34.46l6.18,16.43Zm53.21,80.71-6-4.65h0l1,7.51L124,148l-6.19-16.43ZM72,46.89l5.09,5.63v0l.28-7.56-8.61-15.3L72,46.89Zm38.38,88.72-5.07-5.6,0,0-.28,7.58,8.62,15.31-3.24-17.26ZM80,44.23l4,6.42,0,0,1.59-7.4L79.86,26.67,80,44.23Zm22.4,94-4-6.4v0l-1.6,7.42,5.83,16.57Z">
+															</path>
+															<path class="logoColor"
+																d="M226.52,43.91v-12H206.13v12a1.32,1.32,0,0,1-1.31,1.22V18.71a1.29,1.29,0,0,1,1.31,1.23V30.62h20.39V19.95a1.27,1.27,0,0,1,1.32-1.23V45.13A1.29,1.29,0,0,1,226.52,43.91Z">
+															</path>
+															<path class="logoColor"
+																d="M204.45,45.52V18.35h.37a1.66,1.66,0,0,1,1.68,1.6V30.25h19.66V19.95a1.64,1.64,0,0,1,1.69-1.6h.37V45.52l-.39,0a1.66,1.66,0,0,1-1.66-1.6V32.25H206.5V43.91a1.69,1.69,0,0,1-1.66,1.6l-.39,0Zm1.31-14h21.13V43.91a.85.85,0,0,0,.58.77V19.15a.85.85,0,0,0-.58.8V31H205.76v-11a.89.89,0,0,0-.58-.79V44.68a.88.88,0,0,0,.58-.77V31.52Z">
+															</path>
+															<path class="logoColor"
+																d="M248.14,46.27a13.73,13.73,0,0,1-13.94-13.49,13.95,13.95,0,0,1,27.88,0A13.74,13.74,0,0,1,248.14,46.27Zm0-25.71a12.45,12.45,0,0,0-12.62,12.22,12.63,12.63,0,0,0,25.24,0A12.43,12.43,0,0,0,248.14,20.57Z">
+															</path>
+															<path class="logoColor"
+																d="M248.14,46.64a14.1,14.1,0,0,1-14.3-13.86,14.31,14.31,0,0,1,28.61,0,14.1,14.1,0,0,1-14.31,13.86Zm0-27a13.37,13.37,0,0,0-13.57,13.11,13.58,13.58,0,0,0,27.15,0,13.37,13.37,0,0,0-13.57-13.11Zm0,25.71a12.81,12.81,0,0,1-13-12.59,13,13,0,0,1,26,0,12.81,12.81,0,0,1-13,12.59Zm0-24.44a12.07,12.07,0,0,0-12.25,11.85,12.26,12.26,0,0,0,24.51,0,12.08,12.08,0,0,0-12.26-11.85Z">
+															</path>
+															<path class="logoColor"
+																d="M286.54,21.16H277V46.08a1.24,1.24,0,0,1-1.31-1.19V21.16H266a1.3,1.3,0,0,1-1.32-1.27h23.16A1.3,1.3,0,0,1,286.54,21.16Z">
+															</path>
+															<path class="logoColor"
+																d="M277.32,46.44H277a1.61,1.61,0,0,1-1.69-1.55V21.53H266a1.66,1.66,0,0,1-1.68-1.63v-.36h23.88v.36a1.66,1.66,0,0,1-1.68,1.63h-9.22V46.44ZM265.16,20.27a1,1,0,0,0,.86.53h10v24.1a.81.81,0,0,0,.58.76V20.79h10a1,1,0,0,0,.86-.53Z">
+															</path>
+															<path class="logoColor"
+																d="M316.13,21.13H296.31a.23.23,0,0,0-.25.23V31.56h17.81a1.25,1.25,0,0,1-1.23,1.26H296.06V44.37a.19.19,0,0,0,.21.2h18.54a1.27,1.27,0,0,1,1.28,1.27s0,0-20,0a1.26,1.26,0,0,1-1.31-1.19V21.13a1.3,1.3,0,0,1,1.31-1.27H317.4A1.27,1.27,0,0,1,316.13,21.13Z">
+															</path>
+															<path class="logoColor"
+																d="M296.06,46.25a1.62,1.62,0,0,1-1.68-1.56V21.13a1.66,1.66,0,0,1,1.68-1.64h21.72v.37a1.64,1.64,0,0,1-1.64,1.63h-19.7V31.2h17.8v.37a1.62,1.62,0,0,1-1.6,1.63h-16.2v11h18.38a1.64,1.64,0,0,1,1.64,1.63c0,.37,0,.37-2.87.38-2.5,0-7.51,0-17.53,0Zm0-26a.94.94,0,0,0-.94.9V44.69a.9.9,0,0,0,.94.82c14.48,0,18.48,0,19.58,0a.88.88,0,0,0-.83-.54H296.27a.55.55,0,0,1-.57-.57V32.46h16.94a.87.87,0,0,0,.8-.53H295.69V21.36a.6.6,0,0,1,.62-.6h19.82a.89.89,0,0,0,.83-.53Z">
+															</path>
+															<path class="logoColor"
+																d="M326.52,45.84a1.23,1.23,0,0,1-1.32-1.19V19.74a1.27,1.27,0,0,1,1.32,1.19V44.34a.22.22,0,0,0,.2.23h17.39a1.27,1.27,0,0,1,1.28,1.27Z">
+															</path>
+															<path class="logoColor"
+																d="M345.76,46.2H326.52a1.61,1.61,0,0,1-1.68-1.55V19.37h.37a1.63,1.63,0,0,1,1.68,1.56V44.21h17.23a1.64,1.64,0,0,1,1.64,1.63v.37Zm-20.19-26V44.65a.87.87,0,0,0,1,.82h18.43a.9.9,0,0,0-.84-.53H326.72a.59.59,0,0,1-.57-.6V20.92a.83.83,0,0,0-.58-.76Z">
+															</path>
+															<path class="logoColor"
+																d="M220.86,108c-12.78,0-23.12-10-23.12-22.37S208.09,63.3,220.86,63.3a23.63,23.63,0,0,1,13.19,3.94,23.1,23.1,0,0,1,8,9.42,2.15,2.15,0,0,1-2.85-.74,21,21,0,0,0-18.33-10.48c-11.52,0-20.9,9-20.9,20.17s9.37,20.23,20.9,20.23c11,0,20.14-8.41,20.84-18.9a.48.48,0,0,0-.42-.27h-15a2.15,2.15,0,0,1-2.22-2.14h17.7a2,2,0,0,1,2.15,2C243.43,98.43,233.29,108,220.86,108Z">
+															</path>
+															<path class="logoColor"
+																d="M288.91,107.1l-15-18.29h-17A2.12,2.12,0,0,1,259,86.67h14.09c6.94,0,15.21-1.8,15.21-10.62,0-6.81-5.14-10.28-15.21-10.28h-18.4a.37.37,0,0,0-.35.33V106a2.23,2.23,0,0,1-2.22,2V65.64a2.14,2.14,0,0,1,2.22-2h18.75c14.37,0,17.42,6.81,17.42,12.42a11.08,11.08,0,0,1-5.27,10,20.79,20.79,0,0,1-8.61,2.67L292,107.43A2.27,2.27,0,0,1,288.91,107.1Z">
+															</path>
+															<path class="logoColor"
+																d="M340.51,106.77l-5.84-12.08h-31l-5.76,12.08a2.4,2.4,0,0,1-3,1L315,66.24v-.07a4.51,4.51,0,0,1,8.4,0l20,41.53A2.18,2.18,0,0,1,340.51,106.77ZM321.41,67.1a2.7,2.7,0,0,0-2.22-1.67A2.54,2.54,0,0,0,317,67.1L304.75,92.54h28.88Z">
+															</path>
+															<path class="logoColor"
+																d="M387.16,107.9a2.09,2.09,0,0,1-1.59-.73L352.38,66v39.79a2.25,2.25,0,0,1-2.23,2.14V65.5a2.11,2.11,0,0,1,2-2.13,1.83,1.83,0,0,1,1.38.67l33.4,41.4v-40a2.18,2.18,0,0,1,2.22-2.07v42.46A2,2,0,0,1,387.16,107.9Z">
+															</path>
+															<path class="logoColor"
+																d="M251.4,162V122.84l-19.51,36.06A3.43,3.43,0,0,1,229,161a3.27,3.27,0,0,1-2.85-2.07l-19.51-36.06v39.39a2.29,2.29,0,0,1-2.23,1.94V121a1.75,1.75,0,0,1,1.81-1.47,1.77,1.77,0,0,1,1.59.87l20.28,37.46c.14.27.55.94.9.94s.7-.67.84-.94l20.27-37.46h.07a1.7,1.7,0,0,1,1.6-.87,1.73,1.73,0,0,1,1.8,1.47v43.14A2.25,2.25,0,0,1,251.4,162Z">
+															</path>
+															<path class="logoColor"
+																d="M305.84,163,300,150.88H269L263.28,163a2.4,2.4,0,0,1-3,1l20.07-41.53v-.07a4.5,4.5,0,0,1,8.4,0l20,41.53A2.18,2.18,0,0,1,305.84,163ZM286.75,123.3a2.71,2.71,0,0,0-2.22-1.67,2.54,2.54,0,0,0-2.15,1.67l-12.29,25.44H299Z">
+															</path>
+															<path class="logoColor"
+																d="M352.3,163.3l-15-18.3h-17a2.12,2.12,0,0,1,2.09-2.13h14.1c6.94,0,15.2-1.81,15.2-10.62,0-6.81-5.14-10.28-15.2-10.28h-18.4a.37.37,0,0,0-.35.33v39.86a2.23,2.23,0,0,1-2.22,2V121.83a2.13,2.13,0,0,1,2.22-2h18.75c14.37,0,17.42,6.81,17.42,12.42a11.07,11.07,0,0,1-5.28,9.94,20.84,20.84,0,0,1-8.61,2.68l15.41,18.76A2.27,2.27,0,0,1,352.3,163.3Z">
+															</path>
+															<path class="logoColor"
+																d="M383.06,164.3a24.66,24.66,0,0,1-16.95-6.55,22,22,0,0,1-7-16.09,22.79,22.79,0,0,1,7-16.36,24.38,24.38,0,0,1,33.81,0,22.74,22.74,0,0,1,7,16.36,21.7,21.7,0,0,1-9,17.69,2.24,2.24,0,0,1-3-.4c-.07,0-.07-.06-.14-.13a19.91,19.91,0,0,0,9.93-17.16,20.62,20.62,0,0,0-6.32-14.83,22,22,0,0,0-15.34-6.21,21.74,21.74,0,0,0-15.35,6.21,20.71,20.71,0,0,0-6.39,14.83,20,20,0,0,0,6.32,14.56,22.3,22.3,0,0,0,15.42,5.94h25.69A2.19,2.19,0,0,1,411,164.3Z">
+															</path>
+															<path class="logoColor"
+																d="M457.77,142c0,6.61-2.29,12.28-6.46,16.29a23.51,23.51,0,0,1-31.1,0c-4.17-4-6.46-9.68-6.46-16.29V119.56A2.2,2.2,0,0,1,416,121.7v20.1c0,12.09,8,20.23,19.79,20.23s19.78-8.14,19.78-20.23V121.7a2.2,2.2,0,0,1,2.22-2.14Z">
+															</path>
+															<path class="logoColor"
+																d="M470.28,164.17a2.17,2.17,0,0,1-2.16-2.07V119.56a2.14,2.14,0,0,1,2.22,2.07v42.53Z">
+															</path>
+															<path class="logoColor"
+																d="M513.73,160.83a31.48,31.48,0,0,1-27.7,0c-3.68-2.07-5.76-4.87-6-7.88a2.12,2.12,0,0,1,2.49,1.34c1.67,4.27,8.89,7.62,17.28,7.62,9.59,0,17.71-4.34,17.71-9.41,0-7.14-9.93-9.48-19.59-11.82-9.23-2.21-18-4.28-18-10.75,0-5.74,8.75-10.28,19.85-10.28s19.65,4.41,19.86,10a2.19,2.19,0,0,1-2.5-1.2c-1.6-3.74-8.82-6.68-17.36-6.68-9.51,0-17.63,3.74-17.63,8.15,0,4.81,7.92,6.68,16.32,8.68,9.93,2.4,21.25,5.07,21.25,13.89C519.78,155.69,517.62,158.63,513.73,160.83Z">
+															</path>
+															<path class="logoColor"
+																d="M564.77,122H531.3a.39.39,0,0,0-.42.4V139.6H561a2.12,2.12,0,0,1-2.08,2.13h-28v19.5a.32.32,0,0,0,.35.34h31.32a2.13,2.13,0,0,1,2.14,2.14s0,.06-33.81.07a2.13,2.13,0,0,1-2.22-2V122a2.2,2.2,0,0,1,2.22-2.14h36A2.13,2.13,0,0,1,564.77,122Z">
+															</path>
+														</g>
+													</g>
+												</svg>
+											</a><span style="font-size: 14px;color: #222;">Fortaleza,CE</span></li>
+										<li style="display: block;"><a href="https://villanauticajeri.com/"
+												target="_blank" style="padding-bottom: 0px; padding-right: 0px">
+												<img width="120px" src="images/images.png" alt="">
+
+											</a><span style="font-size: 14px;color: #222;">Villa Nautica
+											</span></li>
+										<li style="display: block;"><a href="https://tocadacoruja.com.br/"
+												target="_blank" style="padding-bottom: 0px; padding-right: 0px">
+												<img width="80px" src="images/images%20(1).png" alt="">
+
+											</a><span style="font-size: 14px;color: #222;">Toca da Coruja
+											</span>
+										</li>
+										<li style="display: block;"><a href="https://pousadaoasisgalinhos.com.br/"
+												target="_blank" style="padding-bottom: 0px; padding-right: 0px">
+												<img width="80px" src="images/oasis-logo-menu-min.png" alt="">
+
+											</a><span style="font-size: 14px;color: #222;">Pousada Oásis
+											</span>
+										</li>
+										<li style="display: block;"><a href="https://lencois.com.br/" target="_blank"
+												style="padding-bottom: 0px; padding-right: 0px">
+												<img width="80px" src="images/download%20(2).webp" alt="">
+											</a><span style="font-size: 14px;color: #222;">Lençóis | Chapada
+												Diamantina,BA</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div id="recent-posts-5" class="widget widget_recent_posts"
+								style="padding: 20px 0px; background: #ffc27317; ">
+								<h4 class="widget_title titulo" style="color: #FD7D01; font-size: 1.9em;">
+									PANROTAS</h4>
+								<div class="sidebar_recent_posts">
+									<div class="sidebar_recent_posts" style="display: flex; justify-content: center;">
+										<!-- <div class="viezzer_blog_post"> -->
+											<div class="viezzer_blog_post" style="background-image:url('images/pan.png');    
+																									background-repeat: no-repeat !important;
+																									background-position: center !important;              
+																									width: 80%;
+																									height: 150px;
+																									position: relative;
+																									display: flex;
+																									margin: auto;            
+																									background-size: cover;
+																									background: #142232;
+																								">
+											<div
+												style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.285);border-radius: 10px;">
+											</div>
+
+											<div class="viezzer_img_pod">
+												<img src="images/pan.png" alt="random image">
+											</div>
+											<div class="viezzer_container_copy">
+												<p class="letra-tenor" style="color: #fff !important;font-size: 17px; background-color: rgb(0 0 0 / 13%);
+																								  ">Portal PANROTAS</p>
+												<div style="width: max-content;">
+													<button id="linkButton" class="btn_primary letra-tenor"
+														style="font-size: 13px !important;color: #fff !important">Leia
+														mais</button>
+												</div>
+
+
+
+											</div>
+
+
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+
+		<div id="footer-home"></div>
+	</div>
+
+	<!-- All JavaScript Files
+        ================================================== -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="plugins/swiper/swiper.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="plugins/aos/aos.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/home.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const entrelaButton = document.getElementById("entrela");
+			if (entrelaButton) {
+				entrelaButton.addEventListener("click", function () {
+					window.location.href = "singapura.html";
+				});
+			}
+		});
+		document.addEventListener("DOMContentLoaded", function () {
+			const entrelaButton = document.getElementById("aline-viezzer");
+			if (entrelaButton) {
+				entrelaButton.addEventListener("click", function () {
+					window.location.href = "aline-viezzer.html";
+				});
+			}
+		});
+		document.addEventListener("DOMContentLoaded", function () {
+			const entrelaButton = document.getElementById("linkButton");
+			if (entrelaButton) {
+				entrelaButton.addEventListener("click", function () {
+					window.open("https://www.panrotas.com.br/", "_blank")
+					// window.location.href = "https://www.panrotas.com.br";
+				});
+			}
+		});
+
+			document.addEventListener("DOMContentLoaded", function () {
+				const videosGrid = document.getElementById("viagemVideosGrid");
+				const toggleButton = document.getElementById("toggleViagemVideos");
+
+			if (!videosGrid || !toggleButton) {
+				return;
+			}
+
+				const videoCards = Array.from(videosGrid.children);
+				const visibleCount = 4;
+				let isExpanded = false;
+
+			if (videoCards.length <= visibleCount) {
+				toggleButton.style.display = "none";
+				return;
+			}
+
+				function updateVideosVisibility() {
+					videosGrid.classList.toggle("is-expanded", isExpanded);
+
+					videoCards.forEach(function (card, index) {
+						card.classList.toggle("viagem-video-hidden", !isExpanded && index >= visibleCount);
+					});
+
+					toggleButton.textContent = isExpanded ? "Ver menos videos" : "Ver mais videos";
+				}
+
+			toggleButton.addEventListener("click", function () {
+				isExpanded = !isExpanded;
+				updateVideosVisibility();
+
+				if (!isExpanded) {
+					videosGrid.scrollIntoView({ behavior: "smooth", block: "start" });
+				}
+			});
+
+			updateVideosVisibility();
+		});
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const openSearchBtn = document.getElementById("openPageSearch");
+			const closeSearchBtn = document.getElementById("closePageSearch");
+			const searchPanel = document.getElementById("pageSearchPanel");
+			const searchForm = document.getElementById("pageSearchForm");
+			const searchInput = document.getElementById("pageSearchInput");
+			const searchNotice = document.querySelector(".search-notice");
+			let lastHighlight = null;
+
+			function setSearchOpen(isOpen) {
+				if (searchPanel) {
+					searchPanel.classList.toggle("open", isOpen);
+					searchPanel.setAttribute("aria-hidden", String(!isOpen));
+				}
+				if (!isOpen && searchInput) {
+					searchInput.value = "";
+				}
+				if (isOpen && searchInput) {
+					searchInput.focus();
+				}
+			}
+
+			if (openSearchBtn) {
+				openSearchBtn.addEventListener("click", function (event) {
+					event.stopPropagation();
+					setSearchOpen(true);
+				});
+			}
+
+			if (closeSearchBtn) {
+				closeSearchBtn.addEventListener("click", function () {
+					setSearchOpen(false);
+				});
+			}
+
+			document.addEventListener("click", function (event) {
+				if (!searchPanel || !searchPanel.classList.contains("open")) {
+					return;
+				}
+				if (!searchPanel.contains(event.target) && event.target !== openSearchBtn) {
+					setSearchOpen(false);
+				}
+			});
+
+			if (searchForm) {
+				searchForm.addEventListener("submit", function (event) {
+					event.preventDefault();
+					if (!searchInput) {
+						return;
+					}
+					const normalizeText = text => text
+						.toLowerCase()
+						.normalize("NFD")
+						.replace(/[\u0300-\u036f]/g, "");
+					const query = normalizeText(searchInput.value.trim());
+					if (!query) {
+						if (searchNotice) {
+							searchNotice.textContent = "Digite algo para buscar.";
+						}
+						return;
+					}
+					const elements = Array.from(document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, li, span, a, figcaption, td, th, blockquote"));
+					const match = elements.find(function (el) {
+						return el.offsetParent !== null && normalizeText(el.textContent).includes(query);
+					});
+					if (lastHighlight) {
+						lastHighlight.classList.remove("search-highlight");
+						lastHighlight = null;
+					}
+					if (match) {
+						match.classList.add("search-highlight");
+						lastHighlight = match;
+						match.scrollIntoView({ behavior: "smooth", block: "center" });
+						if (searchNotice) {
+							searchNotice.textContent = "Resultado encontrado.";
+						}
+					} else {
+						if (searchNotice) {
+							searchNotice.textContent = "Nenhum resultado encontrado.";
+						}
+					}
+				});
+			}
+
+			if (searchInput) {
+				searchInput.addEventListener("input", function () {
+					if (searchNotice) {
+						searchNotice.textContent = "Digite e pressione Enter";
+					}
+				});
+			}
+		});
+	</script>
+
+</body>
+
+
+<!-- Mirrored from viajartravelnews.com.br/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Apr 2026 11:39:17 GMT -->
+</html>
