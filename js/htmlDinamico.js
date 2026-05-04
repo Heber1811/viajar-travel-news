@@ -45,7 +45,7 @@ const paginasData = [
                                                     </p>
                                                 </div>
                                                 <div class="col-md-6 col-sm-12 mb-5">
-                                                    <div class="custom-card__background" data-title=" VINHO DA SERRA GAÚCHA " style="background:url('./img/edicaoDezembro/CARD\ 1\ -\ Foto\ 1.jpeg') no-repeat center;    
+                                                    <div class="custom-card__background" data-title=" VINHO DA SERRA GAÚCHA " style="background:url('./img/edicaoDezembro/CARD 1 - Foto 1.jpeg') no-repeat center;    
                                                                                  background-repeat: no-repeat !important;
                                                                                  background-position: center !important;              
                                                                                  width: 100%;
@@ -58,7 +58,7 @@ const paginasData = [
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 col-sm-12 mb-5">
-                                                    <div class="custom-card__background" data-title="SERRA GAÚCHA " style="background:url('./img/edicaoDezembro/CARD\ 1\ -\ Foto\ 2.webp') no-repeat center;    
+                                                    <div class="custom-card__background" data-title="SERRA GAÚCHA " style="background:url('./img/edicaoDezembro/CARD 1 - Foto 2.webp') no-repeat center;    
                                                                                  background-repeat: no-repeat !important;
                                                                                  background-position: center !important;              
                                                                                  width: 100%;
