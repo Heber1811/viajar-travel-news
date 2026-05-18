@@ -4489,7 +4489,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         secoes: [
             {
                 tipo: "titulo",
-                texto: "O Melhor de Piri: uma experiência que se sente, vive e leva pra vida"
+                texto: "O Melhor de Piri: uma experiência que se sente, <br> vive e leva pra vida"
             },
             {
                 tipo: "texto",
@@ -4603,7 +4603,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 colunaUnica: true,
                 fontSize: "20px",
                 texto: `
-               <span style="color: #FD7D01;"> No coração do Cerrado brasileiro, a região dos Pirineus, em Goiás, revela um cenário que vai muito além das cachoeiras e do charme colonial.</span>
+               <span style="color: #FD7D01; justify-content:center; display:flex"> No coração do Cerrado brasileiro, a região dos Pirineus, em Goiás, revela um cenário <br> que vai muito além das cachoeiras e do charme colonial.</span>
                 `
             },
 
