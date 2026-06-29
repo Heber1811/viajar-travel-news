@@ -3709,7 +3709,7 @@ Aos finais de <strong>semana e feriados</strong>, a ponte é <strong>exclusiva p
 
             {
                 tipo: "quatro-imagens",
-                 height: "300px",
+                height: "300px",
                 imagens: [
                     { src: "/img/edicaoAbr/CARD 1 (Onde ficar no centro) BEWIKI.jpg", legenda: "Bewiki" },
                     { src: "/img/edicaoAbr/CARD 1 (Onde ficar no centro) FAIAL.jpg", legenda: "Faial" },
@@ -3953,7 +3953,7 @@ Já as praias localizadas no <strong>Leste da Ilha</strong> começam com um cart
                 `
 
             },
-       
+
             {
                 tipo: "texto",
                 conteudo: `
@@ -4478,7 +4478,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         id: 22,
         titulo: "VIVA O MELHOR DE PIRI!",
 
-        
+
 
         hero: {
             imagem: "./img/edicaoMaio_26/WhatsApp Image 2026-04-14 at 21.13.45.jpeg",
@@ -4598,7 +4598,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         },
 
         secoes: [
-          {
+            {
                 tipo: "texto",
                 colunaUnica: true,
                 fontSize: "20px",
@@ -4613,7 +4613,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 Ali, entre serras, paisagens naturais e o clima singular da região, nasce uma experiência rural sofisticada esurpreendente: o encontro entre vinhos autorais e queijos premiados, produzidos com identidade e paixão. As vinícolas locais têm ganhado protagonismo ao oferecer mais do que rótulos: entregam vivências. Na Vinícola Assunção e na Vinícola Aurum, o visitante é convidado a caminhar entre os parreirais, entender o cultivo adaptado ao Cerrado e mergulhar em uma experiência sensorial que se completa com a harmonização de vinhos produzidos ali mesmo, naquela terra de sol forte e noites frescas. É o terroir do Centro-Oeste se revelando em cada taça.
                 `
             },
-           
+
             {
                 tipo: "titulo",
                 texto: "Turismo rural, tour e brunch"
@@ -4634,7 +4634,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 ],
                 legenda: "Fotos: Conexão Piri"
             },
-          
+
             {
                 tipo: "titulo",
                 texto: "Polo enogastronômico"
@@ -4661,7 +4661,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         },
 
         secoes: [
-              {
+            {
                 tipo: "texto",
                 colunaUnica: true,
                 fontSize: "20px",
@@ -4802,7 +4802,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 Porque aqui, mais do que se hospedar, você vivencia.
                 `
             },
-              {
+            {
                 tipo: "duas-imagens",
                 height: "320px",
                 imagens: [
@@ -4811,7 +4811,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 ],
                 legenda: "Fotos: Dádiva Hotel"
             },
-              {
+            {
                 tipo: "duas-imagens",
                 height: "320px",
                 imagens: [
@@ -4819,6 +4819,1690 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     "./img/edicaoMaio_26/WhatsApp Image 2026-04-16 at 20.36.05.jpeg",
                 ],
                 legenda: "Fotos: Pousada Vereda da Serra"
+            }
+        ],
+
+        curiango: ``
+    },
+    {
+        id: 26,
+        titulo: "DOMIGOS MARTINS, ONDE COMEÇA A VIAGEM...",
+
+        hero: {
+            imagem: "./img/carroselViajarTravelNews/CARROSSEL - Domingos Martins (Foto Gabriel Lordello-Mosaico Imagem).jpg",
+            subtitulo: "Uma Experiência Sensorial",
+            legenda: "Foto: Gabriel Lordello-Mosaico Imagem"
+        },
+
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Uma Experiência Sensorial. Assim eu definiria a Serra Capixaba,
+                começando por Domingos Martins, onde cada amanhecer não é só
+                o início de mais um dia, mas o erguer das cortinas para um
+                espetáculo de sons, cores e sabores. Ali, os protagonista são os
+
+                cafés premiados, os morangos da serra e, claro,
+                o ‘Grand Finale’: as cervejas artesanais.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Domingos Martins: porta de entrada"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A cerca de 50km de Vitória é conhecida como a &quot;Cidade do Verde&quot; pela preservação da Mata
+                Atlântica, Domingos Martins é um dos destinos mais charmosos das montanhas do Espírito
+                Santo. Para chegar até lá, nós optamos por pegar um transfer no Aeroporto de Vitória. Fomos
+                com o ELBER TÁXI VITÓRIA, que indicamos com total segurança (Mais informações no CARD
+                5).<br>
+                De lá, até Pedra Azul, são mais uns 50km, embora o percurso seja mais demorado, porque a
+                gente segue pela BR-262, que leva a Belo Horizonte, uma rodovia perigosa, cheia de curvas e
+                sem acostamento.<br>
+                A recomendação é alugar um carro em Domingos Martins, primeiro porque você fica
+                independente para conhecer a região, e depois porque não há locadoras de veículos em Pedra
+                Azul. Indicação de ouro: Rocha Locadora (ver Box no final da matéria).
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.17.26.jpeg",
+                        legenda: "A tradição das flores na janela em Domingos Martins é uma herança cultural fortíssima, e une a identidade estética europeia ao orgulho de suas raízes."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.23.27.jpeg",
+                        legenda: "O cuidado com e espaço público, a organização e a limpeza impecáveis são marcas registradas de Domingos Martins, frequentemente elogiados por quem visita a região."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Pioneirismo"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Porta de entrada para as montanhas capixabas, Domingos Martins foi moldado pela coragem e a
+                esperança. A história da região começou a ganhar novos contornos nos idos de 1800, com a
+                chegada das primeiras famílias de imigrantes alemães, pomeranos e italianos. Deixando para trás
+                uma Europa em crise, esses pioneiros subiram a serra em busca de uma vida melhor, trazendo
+                na bagagem apenas as ferramentas de trabalho, sementes e uma fé inabalável. Nascia ali a
+                antiga colônia de Campinho, onde cada árvore derrubada e cada semente plantada na terra fria
+                representavam o alicerce do que viria a ser um novo amanhã.<br>
+                Hoje, o município possui pouco mais de 35.000 habitantes, sendo que 81% da população reside
+                na zona rural, enquanto apenas 19% vive na área urbana. 
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Herança cultural"
+            },
+            {
+                tipo: "imagem-texto",
+                imagemDireita: true,
+                height: "520px",
+                imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.27.00.jpeg",
+                legenda: "O ESTILO EIXAMEL até em fachadas de prédios, é reflexo cultural dos descendentes alemães, pomeranos e italianos.",
+                conteudo: `
+                O nome do município homenageia Domingos José Martins, herói capixaba e um dos líderes da
+                Revolução Pernambucana de 1817. Essa herança cultural pulsa forte no dia a dia, especialmente
+                através da forte identidade pomerana e alemã. O legado mantém-se vivo nas danças folclóricas,
+                nos festivais de inverno e nos saberes passados de geração em geração, que transformaram
+                Domingos Martins em um polo de preservação <br> cultural único no país.<br>
+                Os antigos caminhos coloniais deram lugar a rotas turísticas vibrantes, onde a gastronomia de
+                montanha é a grande protagonista. Dos cafés coloniais fartos aos bistrôs sofisticados, das
+                cozinhas de pratos típicos europeus às cervejarias artesanais contemporâneas, a culinária local
+                aprendeu a abraçar a modernidade sem perder a essência.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Praça Dr. Arthur Gerhardt"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Localizada no famoso “Campinho”, a Praça Dr. Arthur Gerhardt, é o principal cartão-postal da
+                cidade e o ponto central onde a cultura alemã é celebrada, sendo palco principal dos grandes
+                eventos do município, como o prestigiado Festival de Inverno de Música Erudita e Popular e a
+                Sommerfest (a festa da imigração alemã). Ela encanta pela rica vegetação que remete aos jardins
+                europeus e por reunir marcos fundamentais da colonização germânica. A praça é também Vila Germânica: complexo gastronômico a céu aberto.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.35.53.jpeg",
+                        legenda: "O apelido carinhoso de “Cidade do Verde” (ou “Cidade Verde”), ganhou fama internacional pelo alto grau de preservação ambiental da região serrana capixaba."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.44.22.jpeg",
+                        legenda: "O cuidado milimétrico com as vias de paralelepípedo e blocos intertravados atende a uma política de preservação cultural e de infraestrutura urbana voltada para o bem-estar e o turismo."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.56.31.jpeg",
+                        legenda: "O grande termômetro da Praça Dr. Arthur Gerhardt tem o formato e o símbolo de uma garrafa de cerveja artesanal Stein. O design homenageia a forte tradição alemã de produção de cervejas artesanais na região serrana e celebra a renomada marca local ‘Cervejaria Stein’."
+                    }
+                ]
+            },
+
+            {
+                tipo: "titulo",
+                texto: "Vila Germânia e Rua do Lazer: <br> complexo gastronômico a céu aberto"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A Vila Germânica e a Rua do Lazer (Rua João Batista Wernersbach), localizadas lado a lado no
+                centro de Domingos Martins, funcionam como um grande complexo gastronômico a céu aberto. O
+                espaço é totalmente fechado para pedestres e reúne opções que vão da comida típica alemã aos
+                cortes de carne nobres e, claro, chopes artesanais.<br>
+                Ali é o local do agito, concentrando o melhor da culinária local em um charmoso calçadão de
+                pedestres, onde a tradição europeia ganha sabor em locais emblemáticos como o Fritz Frida,
+                famoso por seus pratos alemães, e descontração nos chopes artesanais da Trarko Tap House e
+                do Porão Beer. Entre cortes nobres na grelha da Aromen Parrilla e a sofisticação de frutos do mar
+                no Empório 85, o centrinho ferve ao som de música ao vivo nos fins de semana, transformando
+                cada noite serrana em um brinde à boa mesa.<br>
+                O circuito gastronômico funciona de segunda a segunda – durante a semana, o foco principal é
+                o almoço e o café da tarde, com os restaurantes abrindo das 11:00 às 15:00 e os cafés
+                seguindo até as 18:00. Já de quinta a domingo, o agito se estende noite adentro, com bares,
+                petiscarias e choperias operando direto até por volta das 23 horas.<br>
+                Integradas aos bares e restaurantes, o centrinho conta também com uma excelente variedade de
+                lojinhas de souvenirs, moda e artesanato local, além de produtos regionais como o famoso
+                socol (embutido típico de herança italiana), queijos artesanais, licores, cachaças da região e
+                compotas de frutas produzidas nas montanha.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 15.33.52.jpeg",
+                        legenda: "A Cervejaria Domingos Martins está entre as ótimas opções para comer e beber, na Vila Germânica de Domingos Martins, conhecida como complexo da Rua das Flores."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.11.37.jpeg",
+                        legenda: "Rua do Lazer, coração turístico e o point mais vibrante do centro de Domingos Martins. Durante o dia, o calçadão ferve com turistas explorando cafeterias de cafés especiais, galerias e lojas. À noite, o local se transforma em animado polo gastronômico, com o melhor da culinária alemã, massas, carnes e chopes artesanais em mesas ao ar livre."
+                    }
+                ]
+            },
+
+            {
+                tipo: "titulo",
+                texto: "Canto Alemão Hospedagem: perto de tudo"
+            },
+            {
+                tipo: "imagem-texto",
+                imagemDireita: true,
+                height: "400px",
+                imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.16.10.jpeg",
+                legenda: "O Canto Alemão Hospedagem tem suítes compactas e sistema self check-in.",
+                conteudo: `
+               Uma guesthouse moderna e prática localizada no Centro de Domingos Martins e colada na Praça Principal e na Vila Germânica, a hospedagem funciona no sistema de self check-in, onde o hóspede recebe uma senha para acessar o local e o quarto com total autonomia, sem necessidade de portaria física. <br>
+               <br>
+               O espaço oferece 6 suítes compactas equipadas com ar-condicionado, Wi-Fi, estacionamento privativo e uma conveniente mini cozinha com micro-ondas e frigobar. <br>
+               <br>
+               Por não servir café da manhã, sua localização central é perfeita para explorar as cafeterias e restaurantes inteiramente a pé. Incluindo a ótima Carvalho Pães e Bistrô.
+      
+                `
+            },
+
+            {
+                tipo: "titulo",
+                texto: "Quando o café vira Arte"
+            },
+            {
+                tipo: "imagem-texto",
+                imagemDireita: true,
+                height: "400px",
+                imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.31.15.jpeg",
+                legenda: "Seguindo o conceito “cozinha aberta”, a Carvalho Pães e Bistrô é uma cafeteria e padaria artesanal de destaque no Centro de Domingos Martins. O espaço une o conceito de panificação clássica a um ambiente acolhedor de bistrô, com o lema oficial de carregar “Uma história de pão, café e amor”.",
+                conteudo: `
+                Nas encostas de montanhas como as de Pedra Azul e Castelo, o café deixa de ser bebida e vira
+                arte.<br>
+                <br>
+                 Cultivados com paciência e colhidos à mão, os grãos especiais da região — frequentemente
+                premiados internacionalmente — trazem notas que vão do chocolate às frutas cítricas. Cada
+                xícara reflete a delicadeza de quem dedica a vida ao grão perfeito.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Torta de morango: patrimônio da gastronomia capixaba"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A região serrana do Espírito Santo é uma das maiores produtoras de morango do país. Devido
+                ao clima frio e à altitude, a fruta colhida ali é extremamente doce, graúda e suculenta. Como as
+                confeitarias e cafeterias (como a tradicional Morangos Peterle e a Klein Sabores) utilizam frutas
+                frescas colhidas no mesmo dia diretamente das estufas locais, a torta ganha um frescor
+                impossível de ser replicado nas grandes capitais.<br>
+                As tortas de morango de Domingos Martins — especialmente na região do distrito de Pedra Azul
+                — são verdadeiros patrimônios da gastronomia capixaba. Elas atraem multidões e são
+                consideradas paradas obrigatórias para quem sobe as montanhas.<br>
+                O diferencial da torta está no equilíbrio: a sobremesa não é excessivamente doce, permitindo que
+                a leve acidez natural do morango fresco seja a grande protagonista de cada colherada. A receita,
+                claro, é segredo. Eu conseguí uma pequena pista dos possíveis ingredientes, mas um jornalista
+                nunca revela a sua fonte...
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "TORTA DE MORANGO",
+                texto: `
+                Uma massa leve de pão de ló umedecida.<br>
+                Um creme suave de brigadeiro branco - ou leite condensado.<br>
+                Uma camada farta de morangos inteiros ou em pedaços.<br>
+                Uma cobertura leve de chantilly fresco decorado com mais frutas.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Grand Finale: elas, as Cervejas Artesanais!"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Quando o sol se põe e a neblina esconde as montanhas, o cenário muda para o brinde, e as
+                atenções se voltam para o erguer das taças. A Serra Capixaba consolidou-se como polo de
+                cervejarias artesanais de excelência. Utilizando a água pura das nascentes locais, os mestres
+                cervejeiros criam receitas que harmonizam a força do malte com a leveza do clima. De IPAs
+                aromáticas a Stouts encorpadas, cada gole celebra a identidade de uma região que sabe
+                transformar tradição em inovação. No CARD 4 você vai conhecer as principais cervejarias.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.30.15.jpeg",
+                        legenda: "A Unidade 2 da Cervejaria Azzurra fica na Rota dos Ipês, no distrito de Soído, em Domingos Martins, entre muita natureza e uma vista privilegiada para o lago."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.38.32.jpeg",
+                        legenda: "Na Cervejaria Azzurra, o visual fica ainda mais impressionante no fim da tarde, quando o sol vai se pondo e refletindo na água do lago."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.43.17.jpeg",
+                        legenda: "O famoso Filé ao Molho de Gorgonzola da Cervejaria Azzurra é uma das opções gastronômicas mais elogiadas do cardápio."
+                    }
+                ]
+            },
+            {
+                tipo: "box",
+                titulo: "ROCHA LOCADORA: mobilidade com assinatura de excelência",
+                texto: `
+                Explorar os encantos de Domingos Martins e percorrer a Rota do Lagarto exige liberdade, e é
+                exatamente isso que a Rocha Locadora entrega, com um padrão superior de serviço. Como a
+                única locadora de veículos genuinamente martinense, a empresa transformou o transporte local
+                em uma experiência de alta confiabilidade, destacando-se pela excelência absoluta no
+                atendimento e pela desburocratização do processo de aluguel. Cada cliente é recebido com uma
+                atenção personalizada e ágil — com suporte prático via WhatsApp —, garantindo que a transição
+                do balcão para a estrada aconteça de forma rápida e sem nenhuma complicação
+                <br><br>
+                WhatsApp / Telefone: (27) 99829-4803<br>
+                Endereço: Av. Presidente Vargas, 471 - Centro, Domingos Martins - ES<br>
+                (Localizada anexa ao Auto Posto Martinense / Posto Shell)
+                `
+            },
+            {
+                tipo: "imagem",
+                height: "400px",
+                maxWidth: "400px",
+                imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.20.32.jpeg",
+                legenda: "A Rocha Locadora possui veículos novos, modernos e econômicos. Todos os carros passam por revisões rigorosas e higienização completa antes de cada retirada."
+            }
+        ],
+
+        curiango: ``
+    },
+    {
+        id: 27,
+        titulo: "PEDRA AZUL E A ROTA DO LAGARTO",
+
+        hero: {
+            imagem: "./img/carroselViajarTravelNews/CARROSSEL - Parque Estadual da Pedra Azul (Foto  Eduardo M S Neves).jpg",
+            subtitulo: "Localizada no coração das montanhas.",
+            legenda: "Foto: Eduardo M S Neves"
+        },
+
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Localizada no coração das montanhas, a charmosa vila de Pedra
+                Azul fica em Aracê, o distrito mais famoso de Domingos Martins.
+                É um povoado pequeno, mas com excelente infraestrutura voltada
+
+                para o turismo, concentrando o que há de melhor
+
+                na região serrana capixaba.
+                `
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                O grande protagonista do lugar é a homônima Pedra Azul, imponente rocha que se ergue em
+                meio a Mata Atlântica, com seus mais de 1.800 metros de altura. A denominação ‘Pedra Azul’ é
+                devido à luz que incide no granito e aos líquens que se formam na rocha, dando os tons
+                azulados, que, dependendo da incidência solar, época do ano e horário, adquire mais de 30
+                nuances que mudam ao longo do dia e incluem também tons do laranja ao rosa, uma paleta viva
+                de cores. É um ícone do turismo de montanha capixaba, e é em homenagem a ela, os nomes da
+                vila e também do Parque Estadual. Mas além dessa dança das cores, o que rouba a cena, é a
+                saliência no formato de um lagarto, que parece subir a rocha, e cuja semelhança e beleza
+                impressionam.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 16.56.36.jpeg",
+                        legenda: "A Rota do Lagarto começa oficialmente no km 88 da BR-262, logo na entrada para o distrito de Pedra Azul. Ao todo, são 8 Km  de percurso totalmente pavimentado. O principal ponto de partida e referência histórica do início do trajeto é o Restaurante e Pousada Peterle."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.02.26.jpeg",
+                        legenda: "À medida em que a gente avança pela BR-262 e se aproxima da entrada da Rota do Lagarto, o imponente maciço de granito de 1.822m, domina a paisagem. Mesmo à distância, a silhueta do Lagarto — uma impressionante formação que parece escalar a rocha principal — já se destaca nitidamente contra o céu da serra."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "De Vitória à Pedra Azul: a caminho das montanhas"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Pouco mais de 40km separam a capital, Vitória, de Domingos Martins, porta de entrada para
+                quem vem de Vitória em direção às montanhas. O trecho é de subida de serra após o posto da
+                Polícia Rodoviária Federal, em Viana. A partir daí, até Pedra Azul, são mais 50km continuando a
+                subir a serra, sentido Belo Horizonte. Ao todo, de Vitória a Pedra Azul, são aproximadamente 90
+                km em 1h40 a 2h de viagem.<br>
+                No meio do caminho tem a Casa da Bica, que oferece café colonial, almoço no fogão a lenha,
+                lojinha de produtos caseiros e ainda uma pequena cachoeira atrás do restaurante; outros lugares
+                bons de parar são a Mayer Chocolates e o Café das Montanhas, para um lanche rápido, com
+                salgados típicos da região
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Por onde passamos"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A viagem passa pelos municípios de Cariacica, Viana, Marechal Floriano (Cidade das Orquídeas)
+                e, finalmente, Aracê (Pedra Azul), onde a vegetação começa a mudar e você já sente o clima
+                mais frio. É neste momento que você avista, pela primeira vez, o imenso granito e seu fiel
+                escudeiro: o lagarto. E eu já adianto: é uma visão impactante.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Histórias e lendas"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Várias são as histórias em torno do “lagarto”. Uma lenda popular conta que o réptil transformou-
+                se em pedra há milhões de anos, após um grande susto envolvendo uma onça, e há quem diga
+                que o lagarto é fiel guardião do lugar. Numa versão mais poética, o lagarto teria se apaixonado
+                pela própria Pedra Azul. Ele passava os dias observando a montanha mudar de cor conforme a
+                luz do sol, até que o tempo, para eternizar esse amor, decidiu petrificá-los, juntos.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.04.05.jpeg",
+                        legenda: "O belíssimo lago da Pousada Pedra Azul, uma das mais bonitas e inspiradoras da Rota do Lagarto"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.06.23.jpeg",
+                        legenda: "O Lago Negro da Pousada Pedra Azul é um dos maiores cartões-postais da região."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.13.41.jpeg",
+                        legenda: "As chamadas \"Árvores do Canadá\", na Rota do Lagarto (Maples Canadenses) - folhas da bandeira do Canadá - foram plantadas em propriedades da região e se adaptaram perfeitamente ao clima frio das montanhas capixabas"
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Rota do lagarto: luxo, gastronomia e ecoturismo em curta distância"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A Rota do Lagarto é o Cartão Postal, com 8km de extensão contornando a base da Pedra Azul.
+                Dá acesso ao Parque Estadual da Pedra Azul (trilhas e piscinas naturais) e ao famoso letreiro de
+                Pedra Azul, que traz o nome em letras grandes e coloridas, estrategicamente posicionado de
+                forma que, ao fotografar de frente, a Pedra Azul emoldura a imagem<br>
+                É considerada o centro do turismo de luxo, com pousadas de alto padrão, hotéis boutiques e alta
+                gastronomia. Bem no centro da Rota, o Quadrado de São Paulinho é uma espécie de ‘centrinho
+                gourmet’ a céu aberto, ali se concentram cafés premiados, lavandários e hospedagens
+                sofisticadas. Mas a magia mesmo deste percurso é a vista 360º para a grande estrela: a Pedra
+                Azul. Cada metro do caminho sinuoso de paralelepípedos, cercado por hortênsias e ipês, serve
+                de mirante onde quer que você esteja. Em cada curva, em toda direção que você olha, não
+                importa o ângulo, a visão monumental da pedra e do lagarto nos acompanha, como uma miragem
+                constante e surreal.<br>
+                A Rota do Lagarto não é apenas um caminho, mas uma metamorfose visual, onde a alma da
+                gente parece se renovar diante da imensidão.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.15.56.jpeg",
+                        legenda: "A Rota do Lagarto recebeu oficialmente o título de uma das Ruas Mais Legais do Espírito Santo, eleita pela TV Gazeta. Ela se destaca por reunir o melhor do charme serrano, gastronomia e paisagens em um só endereço"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.17.48.jpeg",
+                        legenda: "A Unidade 1 da Cervejaria Azzurra funciona como um charmoso Beer Garden, localizado bem no final da Rota do Lagarto"
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "ROTA DO CARMO, reduto do Agroturismo"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A Rota do Carmo é a zona rural de Pedra Azul, com estradas de terra e um clima campestre, com
+                flores, plantações de morango pelo caminho e mirantes menos conhecidos. O Agroturismo é forte
+                na região, onde é possível ter contato direto com os produtores locais, acompanhar de perto a
+                lida rural, aprender a fazer queijo e comprar produtos ali mesmo, colhidos na hora.<br>
+                Por ser uma Rota maior – cerca de 10 a 12 km nos trechos principais - os atrativos ficam mais
+                espalhados, ao contrário da Rota do Lagarto, onde tudo é mais concentrado.<br>
+                Entre as boas opções de restaurante estão a Moquecaria Recanto Verde, o restaurante
+                Espigueiro, com sua arquitetura icônica que remete aos antigos silos portugueses, e o Ninho do
+                Jacu, para quem busca a &quot;comida caipira raiz&quot;.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "ROTA DO LAGARTO: onde comer"
+            },
+            {
+                tipo: "lista-destaque",
+                itens: [
+                    {
+                        kicker: "Clássico da chegada",
+                        nome: "Restaurante Peterle",
+                        texto: `Fica logo na entrada da Rota do Lagarto, e é um clássico para café
+                        colonial e almoço, servindo como ponto de referência para quem chega à vila;`
+                    },
+                    {
+                        kicker: "Comida caseira",
+                        nome: "Cozinha da Rota",
+                        texto: `Excelente opção de self-service por quilo com comida caseira e bom preço.
+                        Fica bem na entrada da Rota do Lagarto, logo que você sai da BR-262, anexo ao Posto de
+                        Combustível e ao lado do Restaurante Peterle;`
+                    },
+                    {
+                        kicker: "Fogão a lenha",
+                        nome: "Grão da Terra",
+                        texto: `Localizado no final da Rota do Lagarto, comida no fogão a lenha em ambiente
+                        cercado pela natureza.`
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Alta Gastronomia, Romantismo e Clima Italiano"
+            },
+            {
+                tipo: "lista-destaque",
+                itens: [
+                    {
+                        kicker: "Romântico e exclusivo",
+                        nome: "Bistrô Chez Lagarto",
+                        texto: `É o restaurante da Pousada Rabo do Lagarto, um dos pontos mais
+                        exclusivos e românticos de Pedra Azul. Ali, a gastronomia não é apenas alimento, mas uma
+                        experiência transcendental. O Bacalhau Norueguês Gratinado é um dos carros-chefes no
+                        cardápio do Bistrô Chez Lagarto;`
+                    },
+                    {
+                        kicker: "Italiano refinado",
+                        nome: "Restaurante Don Due",
+                        texto: `Considerado um dos melhores da região, com culinária italiana refinada
+                        e pratos autorais, em ambiente elegante e acolhedor;`
+                    },
+                    {
+                        kicker: "À beira do lago",
+                        nome: "Restaurante Lago Negro",
+                        texto: `Gastronomia italiana dentro da propriedade da Pousada Pedra Azul.
+                        O ambiente é belíssimo, à beira de um lago com cisnes e vista para a pedra, extremamente
+                        romântico;.`
+                    },
+                    {
+                        kicker: "Pedacinho da Itália",
+                        nome: "Travoletta",
+                        texto: `Pratos mais elaborados, como risotos e massas de fabricação própria, é um
+                        pedacinho da Itália nas montanhas capixabas. A arquitetura segue o estilo rústico
+                        toscano/europeu clássico, apresentando arcos decorativos dividindo os ambientes. O carro-chefe
+                        da Casa é o Risoto Vesúvio, montado em formato cônico alto e finalizado à mesa com um
+                        maçarico, em um processo de flambagem no topo, uma homenagem ao famoso vulcão, em
+                        Nápoles;`
+                    },
+                    {
+                        kicker: "Rústico-chique",
+                        nome: "Alecrim Cozinha Artesanal",
+                        texto: `(Quadrado de São Paulinho): Um restaurante de referência com
+                        cardápio diversificado que inclui massas, carnes e frutos do mar. Ambiente rústico-chique com
+                        varanda e jardim;`
+                    },
+                    {
+                        kicker: "Cervejaria premiada",
+                        nome: "Ronchi Beer",
+                        texto: `Cervejaria artesanal e restaurante. É uma das cervejarias mais premiadas do
+                        Espírito Santo, acumulando medalhas e reconhecimento em concursos nacionais e
+                        internacionais. Atendimento maravilhoso e um amplo deck com vista para a rocha.`
+                    },
+                    {
+                        kicker: "Pizza napoletana",
+                        nome: "Vallino Pizzeria Napoletana",
+                        texto: `Foi eleita uma das 50 melhores pizzarias da América Latina pelo
+                        guia 50 Top Pizza por três anos consecutivos (2024, 2025 e 2026).`
+                    }
+                ]
+            },
+            {
+                tipo: "box",
+                titulo: "DICA DO CURIANGO",
+                texto: `
+                Aos finais de semana, os restaurantes da Rota do Lagarto costumam lotar cedo. Se for almoçar
+                por lá, chegue por volta das 11h30 ou faça reserva antecipada.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.22.11.jpeg",
+                        legenda: "O famoso termômetro no início da estradinha da Rota do Lagarto"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.26.08.jpeg",
+                        legenda: "Como um guardião eterno esculpido no tempo, a grande rocha observa a estrada. E não importa a curva do caminho ou a Pousada onde você decida parar: o lagarto de pedra estará sempre lá, subindo silenciosamente a montanha, eternizado na paisagem bucólica."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.31.48.jpeg",
+                        legenda: "Idílica e perfeitamente integrada à mata, a charmosa capelinha \"escondida\" encanta os viajantes na Rota do Lagarto."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Onde ficar em Pedra Azul (Rota do Lagarto e Entorno)"
+            },
+            {
+                tipo: "lista-destaque",
+                itens: [
+                    {
+                        destaque: true,
+                        kicker: "Roteiros de Charme",
+                        nome: "Pousada Rabo do Lagarto",
+                        texto: `Uma das mais bonitas e luxuosas da região, pertencente à
+                        Associação Roteiros de Charme – MATÉRIA ESPECIAL NO CARD 4;`
+                    },
+                    {
+                        kicker: "Vista cinematográfica",
+                        nome: "Vista Azul Hotel",
+                        texto: `Mistura do clássico e o rústico refinado, com vista cinematográfica das
+                        montanhas capixabas;`
+                    },
+                    {
+                        kicker: "Lago Negro",
+                        nome: "Pousada Pedra Azul",
+                        texto: `Arte e natureza às margens do Lago Negro;`
+                    },
+                    {
+                        kicker: "Arquitetura clássica",
+                        nome: "Aroso Paço Hotel",
+                        texto: `Arquitetura clássica grega em meio às montanhas;`
+                    },
+                    {
+                        kicker: "Na vila",
+                        nome: "Pousada Aracê",
+                        texto: `Na vila de Pedra Azul, conhecida pela proximidade com fazendas de morangos
+                        e cafés coloniais;`
+                    },
+                    {
+                        kicker: "Aromas da vila",
+                        nome: "Pousada Aromas da Pedra",
+                        texto: `Na vila de Pedra Azul;`
+                    },
+                    {
+                        kicker: "Vale do Carmo",
+                        nome: "Pousada Vista da Pedra Azul",
+                        texto: `No Vale do Carmo;`
+                    }
+                ]
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.41.50.jpeg",
+                        legenda: "De longe, o Aroso Paço Hotel, um dos hotéis mais tradicionais e icônicos de toda a região serrana do Espírito Santo, chama à atenção pela construção monumental inspirada na Grécia Antiga e isolada no topo da mata, remetendo a uma espécie de \"ruína de palácio antigo\" ou castelo solitário."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.44.37.jpeg",
+                        legenda: "No meio da Rota do Lagarto, o asfalto abre espaço para uma cena de puro bucolismo…"
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Parque Estadual da Pedra Azul"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Localizado na Rota do Lagarto, o Parque Estadual da Pedra Azul pode ser visitado, mas as
+                regras de visitação, hoje, incluem o agendamento prévio obrigatório, feito pelo portal Agenda ES.
+                Maio e junho, por exemplo, têm alta procura devido ao clima de outono, e as vagas para finais de
+                semana costumam esgotar com antecedência. Em caso de chuva, a visitação e a subida às
+                piscinas naturais podem ser suspensas imediatamente por questões de segurança.<br>
+                O Parque tem trilhas autoguiadas e bem sinalizadas, o que significa que não precisa contratar um
+                guia para realizar os percursos principais. Na chegada, você recebe as instruções da equipe do
+                parque, assina um termo de responsabilidade e pode escolher o circuito Parcial de 1 km até a
+                base da Pedra Azul e alguns mirantes, ou o Circuito Completo, com cerca de 3,5 km e que
+                engloba todos os mirantes e as famosas piscinas naturais. Mas mesmo sendo autoguiada, a visita
+                às trilhas e piscinas exige o agendamento prévio obrigatório pelo portal Agenda ES<br>
+                Para roteiros de maior intensidade ou trilhas de nível mais avançado, é necessário um
+                agendamento específico de &quot;Escalada&quot; e o acompanhamento de guias especializados.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "DICA DO CURIANGO",
+                texto: `
+                Para detalhes sobre atrações e roteiros turísticos, como a famosa Rota
+                do Lagarto, confira o Portal Pedra Azul do Aracê.
+                `
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Há muito o que se fazer na vila de Pedra Azul, além dos atrativos naturais. Você pode alugar um
+                quadriciclo, contratar um passeio de balão, fazer cavalgadas e visitar o fervedouro da montanha,
+                que conta com um poço de água cristalina para um refrescante banho. Depois de tanta emoção, a
+                dica é bater perna pelo centrinho e explorar o comércio local, com ateliês de artesanato, roupas
+                de inverno, decoração e as adegas. Nas lojas de produtos caseiros você encontra o Socol
+                (embutido típico da região, de tradição italiana, feito de lombo suíno.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 18.14.50.jpeg",
+                        legenda: "Fachadas com vigas de madeira, telhados inclinados (para escoamento da chuva e neblina) e com coberturas vegetais inspiradas nas técnicas tradicionais da Noruega. Construtores locais adaptaram a ideia para combinar com o clima frio e montanhoso da serra capixaba, integrando o visual à floresta nativa."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 18.36.08.jpeg",
+                        legenda: "Em cada curva, placas indicam o caminho para cafés coloniais, pousadas românticas, bistrôs e propriedades de agroturismo, dando uma identidade única à região serrana"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 18.41.18.jpeg",
+                        legenda: "A ROTA DO CARMO destaca-se pelo turismo de experiência e agroturismo, uma alternativa mais tranquila à vizinha Rota do Lagarto. O percurso é famoso por abrigar propriedades de cafés especiais premiados, empórios rurais e queijos artesanais, além de divertidos sistemas de \"colhe e pague\" de morangos e amoras frescos diretamente do pé."
+                    }
+                ]
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 19.08.20.jpeg",
+                        legenda: "Uma estrada que convida a contemplar, onde as curvas abraçam a natureza e o tempo desacelera. A Rota do Lagarto é a beleza em cada metro de caminho…"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 19.19.03.jpeg",
+                        legenda: "BALLET DAS CORES: maior mistério e encanto do lagarto e de toda a Pedra Azul é que eles mudam de cor até 36 vezes em um único dia"
+                    }
+                ]
+            }
+        ],
+
+        curiango: ``
+    },
+    {
+        id: 28,
+        titulo: "DO CAMPO AO COPO: UM ROTEIRO CERVEJEIRO",
+
+        hero: {
+            imagem: "./img/carroselViajarTravelNews/CARROSSEL - Cervejaria Azzurra.jpg",
+            subtitulo: "PELAS MONTANHAS CAPIXABAS",
+            legenda: ""
+        },
+
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Subindo a Serra, onde a altitude encontra a cerveja artesanal, a
+                produção capixaba entrega alta qualidade técnica, e já acumula
+                medalhas em concursos internacionais. A variedade agrada desde
+                quem busca refrescância até quem prefere bebidas densas para os
+
+                dias frios. E o que é melhor ainda: cerveja com vista!
+                `
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Subir a serra do Espírito Santo é uma experiência inesquecível. À medida em que a altitude
+                aumenta, o ar é tomado por um novo frescor, onde as temperaturas brandas definem a
+                identidade da região e ditam o ritmo da natureza. É nesse ambiente, acolhedor e privilegiado por
+                águas puríssimas, que a produção artesanal local ganhou força, transformando a região em um
+                dos destinos mais cobiçados do país.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Novo Polo da Cerveja de Altitude"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Para os amantes da boa bebida, a viagem é uma sucessão de descobertas que passeia entre
+                IPAs aromáticas e Stouts encorpadas. Nas torneiras locais, as India Pale Ales explodem em
+                aromas cítricos e tropicais, enquanto as densas Stouts trazem notas marcantes de café e
+                chocolate, perfeitas para aquecer os dias frios da serra.<br>
+                E é nesse cenário que as grandes marcas ganham vida, o clima e o copo ganham forma e
+                algumas paradas, tornam-se obrigatórias:
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                itens: [
+                    {
+                        kicker: "Domingos Martins",
+                        nome: "Cervejaria Barba Ruiva",
+                        texto: `Fica bem na entrada da cidade, com um amplo bar de fábrica e excelentes versões de American
+                        IPA e Sweet Stout diretas da torneira;`
+                    },
+                    {
+                        kicker: "Castelo/Venda Nova",
+                        nome: "Cervejaria Altezza",
+                        texto: `Localizada a mais de 1.100 metros de altitude, foca em receitas de inspiração italiana e utiliza a
+                        água pura da própria propriedade, na montanha;`
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Cervejaria Ronchi Beer: Pedra Azul"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Uma das marcas mais premiadas das Montanhas Capixabas, a Ronchi Beer situa-se
+                estrategicamente às margens da BR-262 (Km 89), bem pertinho do centro de Pedra Azul,
+                combinando uma estrutura altamente moderna com a vista panorâmica espetacular para a
+                rocha Pedra Azul.<br>
+                Uma imponente fábrica, com paredes de vidro, permite que a gente veja a produção enquanto
+                harmoniza petiscos com os seus mais de dez tipos de chope nas torneiras. A Casa segue
+                rigorosos padrões de fabricação, sob a batuta de mestres cervejeiros renomados, acumulando
+                medalhas de destaque como o ouro na Copa Capixaba de Cerveja Artesanal.<br>
+                A Régua de Degustação é a melhor pedida para quem visita a Casa pela primeira vez, pois
+                permite experimentar pequenas porções de diferentes chopes da casa (como a encorpada IPA ou
+                a tradicional Weiss) antes de escolher o favorito. Além do chope direto da torneira na régua de
+                degustação, as bebidas são distribuídas em garrafas tradicionais de 600 ml, long necks de 355 ml
+                e também para abastecimento de growlers.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "390px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_3/WhatsApp Image 2026-06-24 at 19.48.02.jpeg",
+                        legenda: "RONCHI BEER, uma das mais famosas cervejarias artesanais Premium das montanhas capixabas"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_3/WhatsApp Image 2026-06-24 at 19.59.51.jpeg",
+                        legenda: "Os petiscos da Ronchi Beer são focados na harmonização com as cervejas artesanais. O cardápio mistura a culinária alemã clássica com porções tradicionais de boteco, como os Bolinhos de Bacalhau com Maionese Caseira."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_3/WhatsApp Image 2026-06-24 at 20.24.13.jpeg",
+                        legenda: "O processo de produção da Ronchi Beer pode ser assistido e visitado pelos clientes. A fábrica foi construída com as paredes todas em vidro exposto, voltadas para a área do bar e restaurante. A gente pode ver tudo sentado à mesa, petiscando e tomando chopp"
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Cervejaria Pedra Azul, na Rota do Lagarto"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Esta é considerada uma das paradas mais charmosas e estratégicas da região serrana. O grande
+                diferencial do espaço é a sua proposta de beer garden ao ar livre, oferecendo aos visitantes
+                uma das melhores vistas - frontais e panorâmicas - para a imponente formação rochosa da
+                Pedra Azul e do lagarto. O visual, realmente, é de tirar o fôlego, não tem como explicar em
+                palavras, só estando lá, para sentir. Uma atmosfera sagrada e uma presença impalpável que
+                transmitem a sensação forte de proteção, de abraço e pertencimento. Como se uma energia
+                silenciosa vivesse ali, guardando aquele lugar.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "380px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_3/WhatsApp Image 2026-06-24 at 20.36.48.jpeg",
+                        legenda: "Menor e mais intimista, a Cervejaria Pedra Azul está localizada diretamente na charmosa Rota do Lagarto, uma experiência ao ar livre, bem aos pés da montanha."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_3/WhatsApp Image 2026-06-24 at 20.45.10.jpeg",
+                        legenda: "No cenário inspirador da Cervejaria Pedra Azul, até o tira-gosto tem papel secundário…"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_3/WhatsApp Image 2026-06-24 at 20.51.57.jpeg",
+                        legenda: "Quão pequenos somos diante de tanta beleza natural! É uma sensação de profunda paz e pertencimento, e neste momento, agradecemos por estar exatamente ali, testemunhando aquele espetáculo sagrado da serra."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Cervejaria Azzurra"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Parada clássica, bem próxima ao cartão-postal da Pedra Azul, a Cervejaria Azzurra é um dos
+                grandes símbolos da Rota do Lagarto. O que começou como uma produção caseira e
+                despretensiosa, ganhou forma, força e mercado nas montanhas capixabas. Hoje, a marca traduz
+                o clima e a essência de Pedra Azul em cada garrafa, transformando aquela antiga paixão de fim
+                de semana em uma das cervejarias mais icônicas da região.<br>
+                E o hobby - que virou negócio – faz tanto sucesso que conta com duas unidades incríveis na
+                região, combinando alta qualidade artesanal e cenários deslumbrantes.
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                itens: [
+                    {
+                        kicker: "Unidade 1",
+                        nome: "Beer Garden",
+                        texto: `(Rota do Lagarto, em Pedra Azul)
+                        Fica localizada no famoso Quadrado de São Paulinho, bem no miolo turístico da serra. O
+                        espaço tem um jardim impecável e muito bem cuidado, perfeito para beber ao ar livre apreciando
+                        a natureza`
+                    },
+                    {
+                        kicker: "Unidade 2",
+                        nome: "Vila Gastronômica",
+                        texto: `(Rota dos Ipês, em Domingos Martins)
+                        É a caçula da marca, localizada dentro do complexo Mudrah Eco Living. Possui uma arquitetura
+                        moderna e imponente de 300 metros quadrados. Mas o grande DIFERENCIAL desta unidade,
+                        sem dúvida, é a vista privilegiada para um lindo lago, integrando boa gastronomia e natureza.`
+                    }
+                ]
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A cervejaria aposta em uma atmosfera totalmente integrada à natureza das montanhas. É o lugar
+                perfeito para relaxar no fim de tarde e curtir o clima frio da serra.<br>
+                A Azzurra trabalha com mais de uma dezena de cervejas especiais, com destaque para as
+                medalhistas locais. A Régua de Degustação é a escolha perfeita para passear por estilos como
+                a aromática American Pale Ale (APA) e suas opções sazonais de inverno. Para acompanhar, o
+                cardápio conta com ótimas porções de petiscos finos e carnes de parrilla.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "390px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_3/WhatsApp Image 2026-06-24 at 20.58.19.jpeg",
+                        legenda: "Imagina degustar uma IPA neste cenário! A Unidade 2 da Cervejaria Azzurra, em Domingos Martins, fica em uma charmosa área de 300 metros quadrados totalmente integrada à natureza linda daquela região. O grande diferencial do cenário é a sua vista privilegiada para o lago."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_3/WhatsApp Image 2026-06-24 at 21.04.29.jpeg",
+                        legenda: "A arquitetura da Cervejaria Azzurra une o rústico e o moderno. Seus espaços valorizam o aconchego das montanhas, e as estruturas de tijolos aparentes e ferro fundido ganham um toque contemporâneo com grandes fachadas de vidro e conceitos abertos, que inundam o ambiente com luz natural e integram os clientes diretamente à natureza ao redor."
+                    }
+                ]
+            },
+            {
+                tipo: "beer-box",
+                titulo: "O UNIVERSO DAS CERVEJAS ARTESANAIS",
+                texto: `
+                <strong>Família Ale (Alta Fermentação)</strong><br>
+                No mundo das cervejas artesanais, as três grandes famílias são divididas pelo tipo de
+                fermentação: Ale (alta fermentação), Lager (baixa fermentação) e Lambic (fermentação
+                espontânea). A ALE é o grupo maior (a ‘mãe’), e a IPA é o estilo específico (a &quot;filha&quot;), focada no
+                amargor e aroma do lúpulo.
+                <br><br>
+                Exemplos de estilos Ale: Stout, Porter, Weissbier (trigo), Dubbel e a própria IPA
+                <br><br>
+                <strong>Família IPA (India Pale Ale)</strong><br>
+                A IPA é um estilo específico que nasceu dentro da família Ale. Ela ficou famosa mundialmente por
+                levar uma carga muito alta de lúpulo, o que confere à bebida um amargor potente e aromas
+                intensos (florais, cítricos ou frutados). Essas cervejas escuras de alta fermentação (família Ale),
+                são famosas pela torrefação intensa. O termo &quot;encorpadas&quot; refere-se à sua densidade, textura
+                aveludada e forte sensação de preenchimento na boca. Elas apresentam notas marcantes de
+                café, chocolate amargo e caramelo, derivadas dos maltes tostados.
+                <br><br>
+                <strong>ESTILOS DE IPA MAIS CONHECIDOS</strong><br><br>
+                <strong>Clássicas e Tradicionais</strong><br>
+                English IPA: A versão original britânica, com amargor equilibrado e notas terrosas, herbais e de
+                chá;
+                <br><br>
+                American IPA: A versão que popularizou o estilo no mundo: aromas cítricos (como maracujá e
+                grapefruit) e amargor marcante;
+                <br><br>
+                <strong>Modernas e Aromáticas</strong><br>
+                New England IPA (NEIPA) / Hazy IPA: Cervejas turvas e com aparência de suco de frutas. Têm
+                textura cremosa e uma explosão de aroma de frutas tropicais. O amargor é bem baixo e macio;
+                <br><br>
+                Session IPA: Uma versão focada na refrescância. Mantém o aroma intenso de lúpulo, mas
+                possui teor alcoólico mais baixo (geralmente abaixo de 5%) e amargor moderado, sendo ideal
+                para quem quer beber em maior quantidade.
+                <br><br>
+                <strong>Potentes e Intensas</strong><br>
+                Imperial IPA / Double IPA: Uma versão &quot;turbinada&quot;, que leva o dobro de lúpulo e malte,
+                resultando em um amargor extremo, corpo denso e teor alcoólico elevado (acima de 7,5% a 8%);
+                <br><br>
+                Black IPA: Combinação exótica que une a cor escura e notas levemente tostadas de maltes
+                escuros (como café e chocolate) com o amargor e o aroma cítrico dos lúpulos de uma IPA
+                tradicional.
+                `
+            }
+        ],
+
+        curiango: ``
+    },
+    {
+        id: 29,
+        titulo: "POUSADA RABO DO LAGARTO",
+        instagram: {
+            url: "https://www.instagram.com/pousadarabodolagarto/?hl=en",
+            label: "@pousadarabodolagarto"
+        },
+
+        hero: {
+            imagem: "./img/carroselViajarTravelNews/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg",
+            subtitulo: "Simbiose perfeita",
+            legenda: ""
+        },
+
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                A Pousada Rabo do Lagarto não se descreve em palavras, porque
+                quando a poesia e o lugar se encontram, a beleza deixa de ser só
+
+                um adjetivo, para virar atmosfera.
+
+                Então ela alcança aquele nível de harmonia, onde a arquitetura não
+
+                quer sobrepor-se à natureza, e sim, emoldurá-la.
+                `
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Ainda no check-in, o hóspede recebe um menu de sabonetes para eleger os aromas (desde a
+                italiana Bvlgari, à lavanda de Provence, flor de cerejeira e outros) que vai levar ao quarto.
+                Também pode escolher aonde quer que lhe sirvam a refeição, se no deck com vista para a Pedra
+                Azul, no lounge, no jardim ou no conforto da própria suíte.<br>
+                Pertencente à seleta Associação Roteiros de Charme, que reúne hotéis e pousadas com alto
+                padrão de serviço e personalidade única, a Pousada Rabo do Lagarto é uma experiência
+                sensorial: você não sabe onde termina o conforto e começa o espírito do lugar. Qualquer tentativa
+                de explicação parece pequena demais para o que se percebe ali, porque o luxo silencioso não se
+                explica, se vive.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "440px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 11.25.01.jpeg",
+                        legenda: "VISTA DA NOSSA VARANDA, DA CAMA E DA BANHEIRA, DIRETAMENTE PARA A PEDRA AZUL. O QUARTO FOI DESENHADO PARA QUE A MONTANHA SEJA A PRIMEIRA IMAGEM AO SE ABRIR OS OLHOS..."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.05.24.jpeg",
+                        legenda: "RECEPÇÃO: ONDE O CAMINHO TERMINA E O DESCANSO COMEÇA..."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Gestos que marcam"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A conexão começa ainda cedo, com as primeiras luzes atravessado as frestas da varanda do
+                quarto, que dá vista direta para o Lagarto na Pedra, e continua no “tempo suspenso” do café da
+                manhã, onde cada etapa é parte do instante mais puro da hospitalidade e da experiência estética
+                da pousada.<br>
+                O acolhimento é a alma do lugar, e a gente sente que está em um ambiente que abraça o nosso
+                tempo. Esse toque humano, presente por toda parte, se estende aos quartos à noite, ao
+                retornarmos e encontrarmos sempre a cama já pronta para deitar, um bilhete de boa noite, um
+                doce, água fresquinha, tapete e chinelos convidando ao desapego, como a dizer: “bem-vindos ao
+                descanso!”. <br>
+                Todos esses detalhes transformam o quarto em um santuário de relaxamento e paz,
+                juntamente com a lareira, os lençóis de algodão egípcio e o edredom de pluma de ganso que nos
+                dá a sensação de dormir nas nuvens.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.28.25.jpeg",
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.26.16.jpeg",
+                        legenda: "A POUSADA RESPIRA ARTE EM TODOS OS CANTOS"
+                    },
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.29.23.jpeg"
+                ]
+            },
+            {
+                tipo: "box",
+                imagemFundo: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02.jpeg",
+                overlay: 0.42,
+                titulo: "Café da manhã, espetáculo em DOIS ATOS: <br> Happy Box e Surpresinhas",
+                texto: `
+                  SEM HORA E LUGAR. <br>
+                   O café começa às 8h e é servido até o último hóspede se levantar. Tudo é feito de forma autoral: tortas, bolos, quiches, waffles... <br> 
+                   e pode ser desfrutado no deck do bistrô, no lounge ou no aconchego da sua suíte.
+
+                `
+            },
+
+            {
+                tipo: "texto",
+                conteudo: `
+                Se olharmos como um espetáculo teatral, cada elemento representa o seu papel nessa
+                verdadeira encenação, a começar pelo cenário – diante da Pedra Azul e com o privilégio de ver o
+                sol mudar de posição na mesa - e pelo figurino, seja nos jogos americanos que trazem o toque
+                orgânico da terra, seja em peças de cerâmica artesanal, porcelanas finas, taças que capturam a
+                luz natural, enfim, tudo pronto para dar início ao espetáculo de sabores! <br>
+                Em um roteiro de atos definidos, o 1º é o ritual de abertura da famosa Happy Box, uma belíssima
+                caixa contendo os sabores típicos regionais, presentes em diferentes queijos, pães de
+
+                fermentação natural, frios diversos, iogurtes da fazenda, granola, mel e geleias, além de frutas,
+                manteiga caseira em formato de coração, tudo envolto em delicado papel de seda e selado com
+                uma flor colhida no jardim.
+                `
+            },
+
+            {
+                tipo: "quatro-imagens-col-3",
+                height: "340px",
+                imagens: [
+
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02 (1).jpeg",
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02 (4).jpeg",
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02 (2).jpeg",
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02 (3).jpeg"
+                ]
+            },
+
+
+            {
+                tipo: "texto",
+                conteudo: `
+                Agora, vem o II ° ATO, quando as ‘surpresinhas’ vão se revezando à mesa, no compasso ‘slow
+                food’, sem pressa, uma deliciosa revelação a cada momento: pão de queijo na versão waffle - que
+                une a massa tradicional mineira à textura crocante por fora e macia por dentro do waffle;
+                panquecas americanas, ovos conforme a preferência, mingau de tapioca, bolos, quiches, tortilhas
+                e compotas e o que mais a gente possa imaginar – ou não. Essa chamada ‘gastronomia de
+                experiência’ tem a proposta de surpreender com misturas inusitadas, como é o caso do
+                refrescante suco de laranja <br> com xarope de maçã verde, que cria um degradê de cores na taça,
+                antes de ser misturado.<br>
+                Para terminar, a pousada é uma galeria de arte particular, com obras de arte que se revelam em
+                cada canto, objetos que misturam tendências, estilos, peças que dialogam ao mesmo tempo com
+                o rústico e o contemporâneo, uma verdadeira imersão cultural, que torna a nossa estadia na
+                Rabo do Lagarto, uma experiência única, onde natureza, sofisticação e bom gosto caminham de
+                mãos dadas.
+                `
+            },
+
+            {
+                tipo: "titulo",
+                texto: "A autoria da obra"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Lilia Mello é a alma e a mente por trás de todo esse conceito. Ela é a proprietária e a curadora da
+                Pousada Rabo do Lagarto, e quem define cada detalhe. Foi ela quem concebeu a ideia de que o
+                hóspede não deve ter horários rígidos, criando a famosa Happy Box e o café da manhã sem
+                pressa.<br>
+                Apaixonada por arte e decoração, muitas das peças espalhadas pela pousada fazem parte de
+                seu acervo pessoal. Conversando com ela, sentimos o acolhimento genuíno, o seu amor à arte, e
+                neste momento entendemos que o verdadeiro luxo está nos detalhes - como a flor sobre a
+                embalagem, o bilhete de boa noite e a escolha dos sabonetes Bvlgari.<br>
+                 Mas o luxo maior, para
+                mim, foi conhecer a autora da obra. Sob as bênçãos de Nossa Senhora de Fátima.
+                `
+            },
+
+            {
+                tipo: "duas-imagens",
+                height: "300px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.40.16.jpeg",
+                        legenda: "Com LILIA MELLO, autora e a alma dessa grande obra de arte chamada Rabo do Lagarto"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.01.09.jpeg",
+                        legenda: "Construir um paraíso nas montanhas exige visão; mantê-lo, exige amor."
+                    },
+
+
+                ]
+            },
+            {
+                tipo: "tres-imagens",
+                height: "300px",
+                imagens: [
+
+
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.41.54.jpeg",
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.41.28.jpeg",
+                        legenda: "DETALHES QUE FAZEM A DIFERENÇA..."
+                    },
+
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.40.36.jpeg"
+
+                ]
+            },
+
+            {
+                tipo: "quatro-imagens-col-3",
+                height: "340px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.11.12.jpeg",
+                        legenda: "BOA NOITE!"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.14.49.jpeg",
+                        legenda: "Pequenos ninhos de afeto espalhados para acolher a alma..."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-24 at 10.40.55.jpeg",
+                        legenda: "Na varanda do nosso quarto, o sol desenha  a geometria perfeita da luz…"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.23.49.jpeg",
+                        legenda: "Onde a hospitalidade ganha a forma de poesia..."
+                    },
+
+                ]
+            },
+
+            {
+                tipo: "tres-imagens",
+                height: "300px",
+                imagens: [
+
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.29.25.jpeg",
+                        legenda: "As acomodações dispõem de enxoval de alta qualidade, com fios egípcios e peças Trousseau"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.41.13.jpeg",
+                        legenda: "Poesia engarrafada no silêncio da montanha..."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.47.25.jpeg",
+                        legenda: "HORA DE SILENCIAR..."
+                    }
+                ]
+            },
+
+
+
+
+        ],
+
+        curiango: ``
+    },
+    {
+        id: 30,
+        titulo: "VITÓRIA E VILA VELHA, ES",
+
+        hero: {
+            imagem: "./img/carroselViajarTravelNews/CCARROSSEL - Vila Velha, ES - Convento da Penha (Foto Tadeu Bianconi).jpg",
+            subtitulo: "Entre o mar, as montanhas e a fé",
+            legenda: "Foto: Tadeu Bianconi"
+        },
+
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Conhecida como uma joia escondida no Sudeste brasileiro, a capital
+                capixaba surpreende justamente por equilibrar o agito de uma
+                metrópole com a leveza de uma cidade litorânea.
+
+                Juntamente com a vizinha Vila Velha, foi eleita, recentemente, uma
+                das melhores cidades do Brasil em rankings de qualidade de vida,
+
+                nas áreas da Saúde, Segurança e Inovação
+                `
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Famosa por ser uma das três ilhas-capitais do Brasil (as outras são Florianópolis e São Luís), e
+                por ostentar um dos melhores Índices de Desenvolvimento Humano (IDH-M) do país, o
+                município é composto por um arquipélago de 33 ilhas e uma porção continental, interligadas por
+                pontes modernas - incluindo a famosa Terceira Ponte - que emolduram cenários deslumbrantes,
+                entre praias e montanhas. No visual único, o mar está presente em quase toda a rotina. O pôr
+                do sol na Curva da Jurema e a vista do Parque da Fonte Grande - no ‘coração’ da ilha, e que
+                abrange uma grande área de preservação de Mata Atlântica - são cartões-postais naturais
+                inesquecíveis.<br>
+                A cidade foi eleita a 3ª mais limpa do Brasil, e a impressão que a gente tem, é que tudo está no
+                seu devido lugar: os espaços públicos são bem desenvolvidos, não tem poluição visual e a gente
+                percebe a limpeza, a organização das ruas e os calçadões bem cuidados. Recém-eleita uma das
+                melhores cidades do Brasil em rankings de qualidade de vida, em áreas como saúde, segurança
+                e inovação, é considerada a cidade mais inteligente do país.<br>
+                Ao contrário de outras capitais vizinhas, Vitória preserva uma tranquilidade rara, permitindo
+                desfrutar de praias urbanas, parques arborizados e uma gastronomia rica — como a famosa
+                moqueca capixaba — com todo conforto.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.51.17 (1).jpeg",
+                        legenda: "MOQUECA CAPIXABA DO PARTIDO ALTO: UMA DAS MELHORES DE VITÓRIA"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.51.17.jpeg",
+                        legenda: "Partido Alto, em Vitória, parada certeira para provar a autêntica moqueca capixaba."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Terceira Ponte: maior símbolo de conexão do Espírito Santo"
+            },
+            {
+                tipo: "imagem-texto",
+                imagemDireita: true,
+                imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-24 at 22.28.12.jpeg",
+                legenda: "Terceira ponte: Vitória e Vila Velha unidas por um caminho de luzes sobre as águas.",
+                height: "420px",
+                texto: `
+                A capital capixaba é uma ilha cercada de águas e conectada por pontes que desenham sua
+                paisagem urbana e unem a capital capixaba ao continente e à vizinha Vila Velha. O grande
+                destaque é a monumental Terceira Ponte, com mais de três quilômetros de extensão
+                (alcançando 70m de altura no vão central), e um mirante com ciclovia que revela o mar e o
+                Convento da Penha. Completam esse cenário a tradicional Ponte Florentino Avidos (Cinco
+                Pontes) e a Ponte Ayrton Senna, que encurtam caminhos e criam verdadeiros caminhos de
+                luzes sobre a água ao anoitecer, transformando a engenharia em poesia visual.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Triângulo das Bermudas: o coração da vida noturna e boêmia de Vitória"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Localizado na Praia do Canto, o Triângulo das Bermudas é o polo boêmio e gastronômico mais
+                famoso do Espírito Santo. O apelido surgiu na década de 1970.<br>
+                Os boêmios e jornalistas locais notaram que a área em Vitória — formada pelo cruzamento de
+                três ruas principais — concentrava os melhores bares da cidade. Eles começaram a dizer que
+
+                quem entrava lá para tomar uma cerveja também &quot;desaparecia&quot;, perdendo a noção do tempo e só
+                retornando para casa no dia seguinte.<br>
+                Naquela época, o mistério do desaparecimento de navios e aviões no &quot;Triângulo das Bermudas&quot;
+                do Oceano Atlântico estava muito em alta na mídia. O apelido carinhoso pegou tanto que virou o
+                nome oficial do polo de entretenimento.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-24 at 22.38.54.jpeg",
+                legenda: "TRIÂNGULO DAS BERMUDAS: vibrante e democrático, o coração do happy hour capixaba reúne desde botecos tradicionais, com mesas na calçada, até pubs de rock e baladas sertanejas."
+            },
+            {
+                tipo: "box",
+                imagemFundo: "./img/carroselViajarTravelNews/CARROSSEL - A autêntica moqueca capixaba (Foto Receita Capixaba).webp",
+                titulo: "&quot;Moqueca é capixaba, o resto é peixada&quot;.",
+                texto: `
+                Quem já ouviu essa famosa frase sabe que a moqueca capixaba é um dos pratos mais
+                emblemáticos da culinária do Espírito Santo. Ao contrário da versão baiana, ela aposta no sabor
+                natural do peixe, além de ser mais leve: não leva dendê e leite de coco, e a coloração alaranjada
+                vem do azeite de urucum (colorau), não do dendê.<br>
+                É tradicionalmente preparada nas famosas panelas de barro do bairro Goiabeiras, em Vitória,
+                tradição de mais de 400 anos. De origem indígena, é considerada o primeiro Patrimônio
+                Imaterial do Brasil registrado pelo IPHAN. 
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Onde ficar em Vitória"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                A capital capixaba tem uma rede hoteleira variada. É possível encontrar hotéis em Vitória para
+                diferentes perfis, especialmente voltado para o público que viaja a negócios. E por ser uma ilha,
+                muitos dos hotéis oferecem vista para o mar ou estão localizados próximos às praias, o que deixa
+                a estadia ainda mais especial.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "SHERATON VITÓRIA: capítulo à parte",
+                texto: `
+                Recomendamos, sem sombra de dúvida, o Sheraton Vitória, onde nos hospedamos.<br>
+                Os apartamentos, a partir do 17º andar, representam o topo da experiência de hospedagem no
+                hotel, onde a elegância encontra a melhor perspectiva da capital, transformando a estadia em
+                uma experiência personalizada e perfeita para quem não abre mão de ver o mundo — e Vitória —
+                literalmente, de um ângulo superior.<br>
+                O que você verá da janela
+                <br><br>
+                Dependendo da posição do quarto, você tem a visão a direta do mar de Vitória, as ilhas do Boi e
+                do Frade, cartões-postais da capital capixaba, e, também, do Convento da Penha visível ao
+                longe, especialmente em dias claros.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10.jpeg",
+                        legenda: "Sheraton Vitória, onde nos hospedamos."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (5).jpeg",
+                        legenda: "Apartamento do Sheraton Vitória, com conforto e vista privilegiada da capital capixaba."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (1).jpeg",
+                        legenda: "Detalhe de boas-vindas no Sheraton Vitória."
+                    }
+                ]
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (2).jpeg",
+                        legenda: "Dependendo da posição do quarto, você tem a visão direta do mar de Vitória, as ilhas do Boi e do Frade, cartões-postais da capital capixaba"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (3).jpeg",
+                        legenda: "A vista do Sheraton Vitória revela o encontro da cidade com o mar."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (4).jpeg",
+                        legenda: "Fátima Vasconcelos e Ricardo Nunes (Viajar Travel News), com Daniela Pires (gerente de Marketing) e Luciana Rios (gerente Comercial)"
+                    }
+                ]
+            },
+            {
+                tipo: "imagem",
+                imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (6).jpeg",
+                legenda: "Detalhe do Sheraton Vitória."
+            },
+            {
+                tipo: "titulo",
+                texto: "Contrate um transfer privativo em Vitória "
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                O ELBER TÁXI VITÓRIA é referência absoluta em pontualidade e confiança, entregando um
+                atendimento personalizado com o profissional mais bem avaliado da região. A empresa oferece
+                serviços de transfer privativo saindo do Aeroporto de Vitória direto para as montanhas capixabas,
+                cobrindo destinos como Pedra Azul, Domingos Martins, e também as praias capixabas e
+                outros lugares turísticos.<br>
+                Para quem não abre mão da excelência, posso dizer que o Elber transformou o nosso
+                deslocamento – tanto em Vitória como no trajeto até Domingos Martins - em momentos de puro
+                conforto e satisfação.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "ELBER TÁXI VITÓRIA",
+                texto: `
+                <strong>Profissionalismo</strong><br>
+                Elber é reconhecido pela conduta impecável e pelo cumprimento rigoroso de cada detalhe
+                combinado. Um profissional correto, um carro de alto padrão e a certeza de que você está em
+                boas mãos do início ao fim. Com um atendimento pautado pela máxima discrição, entrega
+                pontualidade britânica e o compromisso de quem entende que o tempo da gente é um bem
+                precioso. 
+                <br><br>
+                WhatsApp e Telefone: +55 (27) 9 9239-6105<br>
+                Site oficial: Elber Táxi Vitória<br>
+                Instagram: @elbertaxivitoria
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.09.48.jpeg",
+                        legenda: "ELBER, DA ELBER TÁXI VITÓRIA: REFERÊNCIA NA REGIÃO PARA QUEM EXIGE O MELHOR: CONFORTO, SEGURANÇA E PONTUALIDADE"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.06.56.jpeg",
+                        legenda: "TRANSFER PRIVATIVO COM O ELBER TÁXI VITÓRIA"
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Hotéis em Vitória"
+            },
+            {
+                tipo: "hotel-links",
+                itens: [
+                    { nome: "Hotel Senac Ilha do Boi", link: "https://www.google.com/search?q=Hotel+Senac+Ilha+do+Boi" },
+                    { nome: "Pasargada Praia da Costa", link: "https://www.google.com/search?q=Pasargada+Praia+da+Costa" },
+                    { nome: "Apart Quartier Latin Hotel", link: "https://www.google.com/search?q=Apart+Quartier+Latin+Hotel" },
+                    { nome: "Alameda Vitória Hotel", link: "https://www.google.com/search?q=Alameda+Vit%C3%B3ria+Hotel" },
+                    { nome: "Golden Tulip Porto Vitória", link: "https://www.google.com/search?q=Golden+Tulip+Porto+Vit%C3%B3ria" },
+                    { nome: "Sheraton Vitoria", link: "https://www.google.com/search?q=Sheraton+Vitoria" },
+                    { nome: "Quality Hotel Vitória", link: "https://www.google.com/search?q=Quality+Hotel+Vit%C3%B3ria" },
+                    { nome: "Sleep Inn Praia do Canto", link: "https://www.google.com/search?q=Sleep+Inn+Praia+do+Canto" },
+                    { nome: "Nobile Suites Diamond", link: "https://www.google.com/search?q=Nobile+Suites+Diamond" },
+                    { nome: "Alice Vitoria Hotel Arte by Nobile", link: "https://www.google.com/search?q=Alice+Vitoria+Hotel+Arte+by+Nobile" },
+                    { nome: "Champagnat Praia Hotel", link: "https://www.google.com/search?q=Champagnat+Praia+Hotel" },
+                    { nome: "Quality Suites Vila Velha", link: "https://www.google.com/search?q=Quality+Suites+Vila+Velha" },
+                    { nome: "Go Inn Vitória", link: "https://www.google.com/search?q=Go+Inn+Vit%C3%B3ria" },
+                    { nome: "ibis Vitoria Praia de Camburi", link: "https://www.google.com/search?q=ibis+Vitoria+Praia+de+Camburi" },
+                    { nome: "Transamerica Fit Vitória Reta da Penha", link: "https://www.google.com/search?q=Transamerica+Fit+Vit%C3%B3ria+Reta+da+Penha" },
+                    { nome: "Slaviero Hotel Vitória", link: "https://www.google.com/search?q=Slaviero+Hotel+Vit%C3%B3ria" },
+                    { nome: "ibis Vitoria Praia do Canto", link: "https://www.google.com/search?q=ibis+Vitoria+Praia+do+Canto" }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Vila Velha: roteiro imperdível do litoral capixaba"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Fundada em 1535, a cidade mais antiga do Espírito Santo encanta por misturar belezas naturais
+                e muita história. O passeio principal é o Convento da Penha, um santuário do século XVI que
+                fica no alto de um penhasco e oferece uma vista linda de toda a região.<br>
+                Para quem gosta de mar, a Praia da Costa é perfeita para caminhar no calçadão e tomar um
+                banho de mar calmo. Os aventureiros podem subir o Morro do Moreno para ver o pôr do sol, e
+                os apaixonados por doces não podem deixar de visitar a famosa Fábrica da Garoto. É o destino
+                ideal para quem busca cultura, praias e boa gastronomia capixaba.<br>
+                Para quem ama compras, Vila Velha é um excelente destino capixaba. O grande destaque é o
+                Shopping Vila Velha, o maior do estado, perfeito para encontrar grandes marcas nacionais e
+                internacionais em um só lugar. Se preferir um ambiente sofisticado perto da orla, o Shopping
+                Praia da Costa oferece ótimas grifes e boutiques. Para quem busca economizar e comprar
+                roupas diretamente dos fabricantes, o polo de moda do bairro Glória é um verdadeiro shopping a
+                céu aberto, famoso pelo comércio popular de vestuário.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.06.56.jpeg",
+                        legenda: "Praias urbanas de Vila Velha, com mar, calçadão e a energia do litoral capixaba."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.25.58.jpeg",
+                        legenda: "Em Vila Velha, no Quiosque Marimar, com o amigo de longa data Cristiano Biancardi, Pró-Reitor Acadêmico de Educação à Distância da Universidade Vila Velha (UVV ON)"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.32.38.jpeg",
+                        legenda: "CASQUINHA DE SIRI DO QUIOSQUE MARIMAR - PRAIA DE ITAPARICA, VILA VELHA"
+                    }
+                ]
+            },
+
+
+            {
+                tipo: "titulo",
+                texto: "Vila Velha, berço capixaba: o charme da cidade mais antiga"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+               Vila Velha é a cidade mais antiga do Espírito Santo, combinando o charme histórico com o agito de uma metrópole litorânea. Colada à capital Vitória, a vizinha é emoldurada por praias famosas, como as praias da Costa, Itapoã e Itaparica, que fervem o ano inteiro com calçadões movimentados e quiosques modernos. <br>
+                O grande coração do município é o turismo histórico e religioso. É lá que fica o majestoso Convento da Penha, fundado em 1558 e cravado no topo de um penhasco de 154 metros de altura, oferecendo a vista panorâmica mais icônica do estado.
+
+                `
+            },
+
+            {
+                tipo: "titulo",
+                texto: "Convento da Penha"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Uma escadaria de 116 degraus leva do Campinho até a capela interna do Convento da Penha,
+                maior símbolo religioso e turístico do Espírito Santo. Localizado no topo de um penhasco de 154
+                metros de altitude em Vila Velha, o santuário oferece uma das vistas panorâmicas mais famosas
+                da Grande Vitória, abrangendo a Baía de Vitória e a Terceira Ponte.<br>
+                
+                Tombado pelo IPHAN em 1943, o Convento da Penha é um marco da arquitetura colonial
+                brasileira, atraindo cerca de 2 milhões de visitantes por ano. Foi eleito um dos 10 monumentos
+                turísticos mais queridos do país, em avaliações de usuários no TripAdvisor.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 22.49.33.jpeg",
+                        legenda: "FOTOS DO CONVENTO DE NOSSA SENHORA DA PENHA"
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 22.49.34 (4).jpeg",
+                        legenda: "A subida ao Convento da Penha atravessa a mata e conduz ao principal símbolo religioso do Espírito Santo."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 22.49.34.jpeg",
+                        legenda: "Do alto do Convento da Penha, a vista panorâmica revela Vila Velha, Vitória e o mar capixaba."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Obras de arte"
+            },
+            {
+                tipo: "texto",
+                conteudo: `
+                Obras de arte e quadros ornamentam altares e paredes, um deles - o óleo sobre tela, de Benedito
+                Calixto, pintada em 1926 e intitulada &quot;A chegada de Frei Pedro Palácios&quot; – é uma das obras mais
+                famosas do acervo do Convento. O interior do Santuário (uma mistura dos estilos barroco e
+                neoclássico) impressiona pelo luxo e simbologia. O Altar-Mor, construído entre 1894 e 1898, tem
+                mais de 19 tipos de mármore diferentes (italianos, portugueses e brasileiros). No centro, em um
+                nicho, fica a imagem de Nossa Senhora da Penha, vinda de Portugal em 1569.<br>
+                Esta imagem de Nossa Senhora da Penha, na Sala dos Milagres, é utilizada nas procissões e
+                romarias (como a famosa Romaria dos Homens) durante a Festa da Penha. Suas vestes seguem
+                as cores tradicionais (rosa e azul) que inspiraram a bandeira do Espírito Santo.
+                `
+            },
+            {
+                tipo: "tres-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 22.49.34 (1).jpeg",
+                        legenda: "O óleo sobre tela de Benedito Calixto, pintado em 1926 e intitulado \"A chegada de Frei Pedro Palácios\", é uma das obras mais famosas do acervo do Convento."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 22.49.34 (2).jpeg",
+                        legenda: "Interior do Santuário do Convento da Penha, com altares, paredes ornamentadas e forte simbologia religiosa."
+                    },
+                    {
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 22.49.34 (3).jpeg",
+                        legenda: "Imagem de Nossa Senhora da Penha, devoção que marca a fé e a identidade capixaba."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "O terço gigante"
+            },
+            {
+                tipo: "imagem-texto",
+                imagemDireita: true,
+                imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 22.49.34 (5).jpeg",
+                legenda: "O terço gigante, instalado entre duas palmeiras, é um dos símbolos visuais mais marcantes da Festa da Penha.",
+                height: "420px",
+                texto: `
+                Instalado entre duas palmeiras, em frente à subida para o Santuário, o terço gigante representa a
+                oração do Santo Rosário e a profunda conexão dos capixabas com Nossa Senhora da Penha.
+                É o principal símbolo visual da Festa da Penha, maior celebração religiosa do Espírito Santo, que
+                acontece durante as festividades de Corpus Christi.<br>
+                Antes de chegar ao topo (Santuário), você já tem uma visão privilegiada em 360° da Terceira
+                Ponte, ângulo mais famoso, onde dá para ver toda a extensão da ponte que liga Vila Velha a
+                Vitória, sobre a Baía de Vitória. Olhando para o outro lado, a orla de Vila Velha, com seus prédios
+                e o mar aberto.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Onde ficar em Vila Velha"
+            },
+            {
+                tipo: "lista-destaque",
+                itens: [
+                    {
+                        kicker: "Praia da Costa",
+                        nome: "Quality Suites Vila Velha",
+                        texto: `É uma opção de estilo flat na beira-mar, com piscina no terraço e café
+                        da manhã incluso. Av. Antônio Gil Veloso, 856`
+                    },
+                    {
+                        kicker: "Praia da Costa",
+                        nome: "Champagnat Praia Hotel",
+                        texto: `Situado a poucos metros da praia, é um hotel discreto e muito elogiado pela limpeza, com piscina.
+                        Av. Champagnat, 213.`
+                    },
+                    {
+                        kicker: "Praia de Itaparica",
+                        nome: "Hotel Santorini",
+                        texto: `A apenas 50m da praia, oferece um ambiente acolhedor e quartos com ar-
+                        condicionado. Rua Itaoca, 44`
+                    },
+                    {
+                        kicker: "Praia de Itaparica",
+                        nome: "Hotel Plaza Mar",
+                        texto: `Fica na avenida da praia, com piscina e vista para o mar.
+                        Av. Est. José Júlio de Souza, 2660`
+                    }
+                ]
             }
         ],
 
@@ -4841,8 +6525,24 @@ function renderPagina() {
 
     const pageHeader = document.querySelector(".page-header");
     const dica = document.querySelector(".dica-curiango");
+    const materiaInstagram = document.getElementById("materiaInstagram");
+    const materiaInstagramLabel = document.getElementById("materiaInstagramLabel");
 
     document.getElementById("card-title").innerText = pagina.titulo;
+
+    if (materiaInstagram) {
+        if (pagina.instagram?.url) {
+            materiaInstagram.href = pagina.instagram.url;
+            materiaInstagram.classList.add("is-visible");
+            materiaInstagram.setAttribute("aria-label", `Instagram: ${pagina.instagram.label ?? pagina.titulo}`);
+            if (materiaInstagramLabel) {
+                materiaInstagramLabel.textContent = pagina.instagram.label ?? "INSTAGRAM";
+            }
+        } else {
+            materiaInstagram.classList.remove("is-visible");
+            materiaInstagram.removeAttribute("href");
+        }
+    }
 
     // ===============================
     // 🔹 MODELO NOVO (secoes)
@@ -4866,10 +6566,12 @@ function renderPagina() {
             </div>`;
         }
 
-        const idsComTextoEmDuasColunas = [22, 23, 24, 25, 26];
+        const idsComTextoEmDuasColunas = [22, 23, 24, 25, 26, 27, 28, 29, 30];
         const classeDuasColunas = idsComTextoEmDuasColunas.includes(pagina.id) ? " texto-duas-colunas" : "";
 
         html += `<div class="article-container${classeDuasColunas}">`;
+
+        let destaqueIntroAplicado = false;
 
         pagina.secoes.forEach(sec => {
             const estiloSecao = [
@@ -4881,18 +6583,59 @@ function renderPagina() {
             const attrEstiloSecao = estiloSecao ? ` style="${estiloSecao};"` : "";
 
             if (sec.tipo === "texto") {
-                html += `<p${attrEstiloSecao}>${sec.conteudo ?? sec.texto ?? ""}</p>`;
+                const classeIntro = sec.colunaUnica && !destaqueIntroAplicado ? ` class="intro-highlight"` : "";
+                html += `<p${classeIntro}${attrEstiloSecao}>${sec.conteudo ?? sec.texto ?? ""}</p>`;
+                if (classeIntro) {
+                    destaqueIntroAplicado = true;
+                }
             }
 
             if (sec.tipo === "titulo") {
                 html += `<h2 class="section-title"${attrEstiloSecao}>${sec.texto ?? sec.conteudo ?? ""}</h2>`;
             }
 
+            if (sec.tipo === "lista-destaque") {
+                html += `<div class="service-grid">`;
+
+                sec.itens.forEach(item => {
+                    const classeItem = item.destaque ? " service-card--featured" : "";
+                    const kicker = item.kicker ? `<span class="service-kicker">${item.kicker}</span>` : "";
+                    const nomeItem = item.link ? `<a href="${item.link}" target="_blank" rel="noopener">${item.nome}</a>` : item.nome;
+                    html += `
+        <article class="service-card${classeItem}">
+            ${kicker}
+            <h3 class="service-name">${nomeItem}</h3>
+            <p>${item.texto}</p>
+        </article>`;
+                });
+
+                html += `</div>`;
+            }
+
+            if (sec.tipo === "beer-box") {
+                const tituloBeerBox = sec.titulo ? `<h3 class="section-title">${sec.titulo}</h3>` : "";
+                html += `
+        <div class="beer-box">
+            ${tituloBeerBox}
+            <p>${sec.texto ?? sec.conteudo ?? ""}</p>
+        </div>`;
+            }
+
+            if (sec.tipo === "hotel-links") {
+                html += `<div class="hotel-link-grid">`;
+                sec.itens.forEach(item => {
+                    html += `<a href="${item.link}" target="_blank" rel="noopener">${item.nome}</a>`;
+                });
+                html += `</div>`;
+            }
+
             // imagem grande
             if (sec.tipo === "imagem") {
+                const estiloImagem = sec.height ? ` style="height:${sec.height};"` : "";
+                const estiloContainerImagem = sec.maxWidth ? ` style="max-width:${sec.maxWidth}; margin-left:auto; margin-right:auto;"` : "";
                 html += `
-        <div class="img-full">
-            <img src="${sec.imagem}" class="img-premium">
+        <div class="img-full"${estiloContainerImagem}>
+            <img src="${sec.imagem}" class="img-premium"${estiloImagem}>
             ${sec.legenda ? `<span class="img-caption">${sec.legenda}</span>` : ""}
         </div>`;
             }
@@ -4978,21 +6721,51 @@ function renderPagina() {
                 html += `</div>`;
             }
 
+
+            // quatro imagens col 3
+            if (sec.tipo === "quatro-imagens-col-3") {
+
+                const height = sec.height ? sec.height : "450px";
+
+                html += `<div class="row img-row">`;
+
+                sec.imagens.forEach(img => {
+                    const src = typeof img === "string" ? img : img.src;
+                    const legenda = typeof img === "string" ? "" : img.legenda;
+                    html += `
+        <div class="col-md-3 col-12">
+            <img src="${src}" class="img-premium" style="height:${height};">
+            ${legenda ? `<span class="img-caption">${legenda}</span>` : ""}
+        </div>`;
+                });
+
+                if (sec.legenda) {
+                    html += `
+        <div class="col-12">
+            <span class="img-caption">${sec.legenda}</span>
+        </div>`;
+                }
+
+                html += `</div>`;
+            }
+
             // imagem + texto lado a lado
             if (sec.tipo === "imagem-texto") {
                 const textoImagem = sec.texto ?? sec.conteudo ?? "";
+                const estiloImagemTexto = sec.height ? ` style="height:${sec.height};"` : "";
+                const imagemHtml = `
+            <div class="col-md-6 col-12">
+                <img src="${sec.imagem}" class="img-premium"${estiloImagemTexto}>
+                ${sec.legenda ? `<span class="img-caption">${sec.legenda}</span>` : ""}
+            </div>`;
+                const textoHtml = `
+            <div class="col-md-6 col-12 texto-lateral">
+                <p>${textoImagem}</p>
+            </div>`;
 
                 html += `
         <div class="row img-text-row">
-
-            <div class="col-md-6 col-12">
-                <img src="${sec.imagem}" class="img-premium">
-            </div>
-
-            <div class="col-md-6 col-12 texto-lateral">
-                <p>${textoImagem}</p>
-            </div>
-
+            ${sec.imagemDireita ? textoHtml + imagemHtml : imagemHtml + textoHtml}
         </div>`;
             }
 
@@ -5001,7 +6774,8 @@ function renderPagina() {
                 const classeBox = sec.imagemFundo ? " box-highlight--imagem" : "";
                 const classeColunas = sec.colunas === 2 ? " box-highlight--duas-colunas" : "";
                 const classeItens = sec.itens ? " box-highlight--itens" : "";
-                const estiloBox = sec.imagemFundo ? ` style="background-image: linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)), url('${sec.imagemFundo}');"` : "";
+                const overlayBox = sec.overlay ?? 0.58;
+                const estiloBox = sec.imagemFundo ? ` style="background-image: linear-gradient(rgba(0,0,0,${overlayBox}), rgba(0,0,0,${overlayBox})), url('${sec.imagemFundo}');"` : "";
                 const conteudoBox = sec.itens
                     ? `<ul class="box-items">${sec.itens.map(item => `<li>${item}</li>`).join("")}</ul>`
                     : `<p>${sec.texto ?? sec.conteudo ?? ""}</p>`;

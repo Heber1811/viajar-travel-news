@@ -46,7 +46,7 @@
         .img-caption {
             display: block;
             text-align: center;
-            font-size: 18px;
+            font-size: 15px;
             color: #888;
             margin-top: 10px;
             font-style: italic;
@@ -55,6 +55,58 @@
 
         .img-full {
             margin: 40px 0;
+        }
+
+        .materia-insta-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            background: #fff;
+            padding: 8px 12px;
+            border-radius: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: pulse 1.5s infinite;
+        }
+
+        .materia-insta-btn img {
+            width: 30px;
+        }
+
+        .materia-insta-btn span {
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .materia-insta-btn.is-visible {
+            display: flex;
+        }
+
+        .materia-insta-btn:active {
+            transform: scale(0.95);
+        }
+
+        @media (max-width: 600px) {
+            .materia-insta-btn {
+                bottom: 15px;
+                right: 15px;
+                padding: 10px;
+                border-radius: 50%;
+            }
+
+            .materia-insta-btn img {
+                width: 26px;
+            }
+
+            .materia-insta-btn span {
+                display: none;
+            }
         }
 
         .lista-pousadas {
@@ -176,6 +228,11 @@
             overflow-wrap: normal;
         }
 
+        .article-container .intro-highlight {
+            color: #FD7D01;
+            font-weight: 700;
+        }
+
         @media (max-width: 767px) {
             .article-container.texto-duas-colunas>p {
                 column-count: 1;
@@ -269,6 +326,181 @@
             backdrop-filter: blur(2px);
         }
 
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            margin: 34px 0 58px;
+            break-inside: avoid;
+            column-span: all;
+        }
+
+        .service-card {
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(250, 247, 242, 0.94));
+            border: 1px solid rgba(253, 125, 1, 0.16);
+            border-radius: 14px;
+            padding: 24px 24px 22px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+        }
+
+        .service-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: linear-gradient(180deg, #FD7D01, #9ed13b);
+        }
+
+        .service-card--featured {
+            grid-column: 1 / -1;
+            padding: 34px 38px;
+            background:
+                linear-gradient(135deg, rgba(21, 64, 47, 0.88), rgba(35, 94, 65, 0.74)),
+                url("img/carroselViajarTravelNews/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg") center/cover;
+            color: #fff;
+            border: 0;
+        }
+
+        .service-card--featured::before {
+            width: 7px;
+            background: linear-gradient(180deg, #FD7D01, #f6d26f, #9ed13b);
+        }
+
+        .service-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            color: #78991f;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .service-card--featured .service-kicker {
+            color: #f6d26f;
+        }
+
+        .service-name {
+            margin: 0 0 10px;
+            color: #FD7D01;
+            font-size: 22px;
+            line-height: 1.2;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .service-card--featured .service-name {
+            color: #fff;
+            font-size: 28px;
+        }
+
+        .article-container .service-card p {
+            margin: 0;
+            color: #344047;
+            font-size: 17px;
+            line-height: 1.65;
+            text-align: left;
+            column-count: 1;
+        }
+
+        .article-container .service-card--featured p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 18px;
+        }
+
+        .beer-box {
+            position: relative;
+            overflow: hidden;
+            margin: 64px 0;
+            padding: 48px;
+            border-radius: 18px;
+            background:
+                radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.34) 0 5px, transparent 6px),
+                radial-gradient(circle at 88% 24%, rgba(255, 255, 255, 0.28) 0 7px, transparent 8px),
+                radial-gradient(circle at 78% 74%, rgba(255, 255, 255, 0.22) 0 4px, transparent 5px),
+                linear-gradient(135deg, #fff7e7 0%, #f7c66f 44%, #b56a1f 100%);
+            box-shadow: 0 26px 60px rgba(120, 72, 18, 0.18);
+            border: 1px solid rgba(181, 106, 31, 0.18);
+            column-span: all;
+            break-inside: avoid;
+        }
+
+        .beer-box::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 18px;
+            background:
+                radial-gradient(circle at 18px 0, #fff 0 18px, transparent 19px) repeat-x;
+            background-size: 46px 22px;
+            opacity: 0.72;
+        }
+
+        .beer-box .section-title {
+            color: #5a3212;
+            margin-top: 8px;
+        }
+
+        .article-container .beer-box p {
+            column-count: 1;
+            color: #3f2a16;
+            font-size: 17px;
+            line-height: 1.75;
+            text-align: left;
+        }
+
+        .beer-box strong {
+            color: #6f3e13;
+        }
+
+        .hotel-link-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin: 30px 0 58px;
+            padding: 34px;
+            background: linear-gradient(135deg, #f7fbff, #fff8f0);
+            border: 1px solid rgba(253, 125, 1, 0.14);
+            border-radius: 18px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+            column-span: all;
+            break-inside: avoid;
+        }
+
+        .hotel-link-grid a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 58px;
+            padding: 13px 14px;
+            border-radius: 10px;
+            background: #fff;
+            color: #264653;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.25;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid rgba(38, 70, 83, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+        }
+
+        .hotel-link-grid a:hover {
+            color: #FD7D01;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
         @media (max-width: 767px) {
             .box-highlight.box-highlight--duas-colunas p {
                 column-count: 1;
@@ -280,6 +512,24 @@
 
             .box-items {
                 grid-template-columns: 1fr;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card,
+            .service-card--featured {
+                padding: 24px 22px;
+            }
+
+            .beer-box {
+                padding: 38px 24px;
+            }
+
+            .hotel-link-grid {
+                grid-template-columns: 1fr;
+                padding: 24px;
             }
         }
 
@@ -570,6 +820,11 @@
         </div>
     </div>
 
+    <a id="materiaInstagram" class="materia-insta-btn" target="_blank" rel="noopener" href="#" aria-label="Instagram da matéria">
+        <img src="img/edicaofev/instagram-removebg-preview.png" alt="Instagram">
+        <span id="materiaInstagramLabel">INSTAGRAM</span>
+    </a>
+
     <!-- pointer start -->
     <div class="pointer bnz-pointer" id="bnz-pointer"></div>
 
@@ -646,7 +901,7 @@
     <script src="plugins/aos/aos.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/home.js"></script>
-    <script src="js/htmlDinamico.js?v=20260428-5"></script>
+    <script src="js/htmlDinamico.js?v=20260428-22"></script>
 
 </body>
 

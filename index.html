@@ -442,78 +442,114 @@
 		margin: auto;
 	}
 
-	.conexao-piri-feature {
-		border: 1px solid rgba(253, 125, 1, 0.24);
-		background: linear-gradient(135deg, #fffaf4 0%, #ffffff 58%, #f5fbec 100%);
+	.copa-brasil-feature {
+		border: 1px solid rgba(0, 156, 59, 0.18);
+		background: linear-gradient(135deg, #ffffff 0%, #f8fbf1 58%, #eef7ff 100%);
 		padding: 24px 28px;
 		margin: 0 0 34px;
 		text-align: center;
-		box-shadow: 0 16px 38px rgba(0, 0, 0, 0.08);
+		box-shadow: 0 16px 38px rgba(0, 0, 0, 0.06);
 		position: relative;
 		overflow: hidden;
 	}
 
-	.conexao-piri-feature::before {
+	.copa-brasil-feature::before {
 		content: "";
 		position: absolute;
 		left: 0;
 		top: 0;
 		bottom: 0;
 		width: 6px;
-		background: #FD7D01;
+		background: linear-gradient(180deg, #009c3b 0%, #ffdf00 50%, #002776 100%);
+		z-index: 2;
 	}
 
-	.conexao-piri-eyebrow {
+	.copa-brasil-eyebrow {
 		display: block;
 		margin-bottom: 8px;
-		font-size: 0.78rem;
+		font-size: 0.98rem;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: #6c7f25;
+		color: #1f7a3a;
+		position: relative;
+		z-index: 1;
 	}
 
-	.conexao-piri-logo {
-		display: block;
+	.copa-brasil-title {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
 		font-family: 'Tenor Sans', sans-serif;
-		font-size: clamp(1.3rem, 4vw, 2.7rem);
+		font-size: clamp(1.1rem, 4vw, 2.1rem);
 		letter-spacing: 0;
-		color: #FD7D01;
+		color: #002776;
 		text-transform: uppercase;
 		line-height: 1.05;
+		position: relative;
+		z-index: 1;
 	}
 
-	.conexao-piri-copy span {
-		display: block;
+	.copa-brasil-ball {
+		width: 48px;
+		height: 48px;
+		display: inline-block;
+		flex: 0 0 auto;
+		object-fit: contain;
+		filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.18));
+		animation: copaBallBounce 3.4s ease-in-out infinite;
+		transform-origin: center bottom;
 	}
 
-	.conexao-piri-copy {
+	@keyframes copaBallBounce {
+
+		0%,
+		100% {
+			transform: translateY(0) scale(1);
+		}
+
+		45% {
+			transform: translateY(-9px) scale(1);
+		}
+
+		55% {
+			transform: translateY(0) scale(1.04, 0.96);
+		}
+	}
+
+	.copa-brasil-copy {
 		max-width: 720px;
 		margin: 10px auto 0;
 		font-size: 0.96rem;
 		line-height: 1.55;
 		color: #3b3b3b;
-		hyphens: none;
-		-webkit-hyphens: none;
-		-ms-hyphens: none;
-		word-break: normal;
-		overflow-wrap: normal;
 	}
 
-	.conexao-piri-instagram {
+	.copa-brasil-badges {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		gap: 8px;
-		margin-top: 10px;
-		color: #242424;
-		font-weight: 700;
-		text-decoration: none;
+		gap: 10px;
+		margin-top: 14px;
 	}
 
-	.conexao-piri-instagram img {
-		width: 18px;
-		height: 18px;
-		object-fit: contain;
+	.copa-brasil-badges span {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	.copa-brasil-badges span:nth-child(1) {
+		background: #009c3b;
+	}
+
+	.copa-brasil-badges span:nth-child(2) {
+		background: #ffdf00;
+	}
+
+	.copa-brasil-badges span:nth-child(3) {
+		background: #002776;
 	}
 
 	.card-mantiqueira,
@@ -678,121 +714,127 @@
 					<div class="carousel-item active">
 						<div class="overlay">
 							<div class="text-top-left  ">
-								<p class="letra2" style="text-align: center !important;">Querida Piri!
+								<p class="letra2" style="text-align: center !important;">Pedra Azul: beleza cênica
 									<br>
 								</p>
 							</div>
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/carrossel-pirenopolis-go.jpeg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - Parque Estadual da Pedra Azul (Foto  Eduardo M S Neves).jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Pirenópolis, GO</h2>
+							<h2 class="letra">Pedra Azul</h2>
 							<p
 								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
-								Foto: Arquivo Curta Mais - André Carvalho</p>
+								Foto: Eduardo M S Neves</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PORTAL DE ENTRADA (Foto TripAdvisor).jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Portal de entrada</h2>
+							<h2 class="letra">Pousada Rabo do Lagarto, a 2ª melhor do Brasil</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg"
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - Cervejaria Azzurra.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Cervejaria Azzurra</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg"
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - Cervejaria Ronchi Beer (Foto Divulgação).jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Cervejaria Ronchi Beer</h2>
 							<p
 								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
-								Foto: TripAdvisor</p>
+								Foto: Divulgação</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/carrossel-paroquia-rosario.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - Domingos Martins (Foto Gabriel Lordello-Mosaico Imagem).jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Paróquia Nossa Senhora do Rosário</h2>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="overlay">
-							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/carrossel-casario-danae.webp');">
-							</div>
-						</div>
-						<div class="carousel-caption ">
-							<h2 class="letra">Casario histórico</h2>
+							<h2 class="letra">Domingos Martins</h2>
 							<p
 								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
-								Foto: Dânae</p>
+								Foto: Gabriel Lordello-Mosaico Imagem</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PONTE DO CARMO SOBRE O RIO DAS ALMAS (Foto PiriPark).jpeg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - A autêntica moqueca capixaba (Foto Receita Capixaba).webp');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Ponte do Carmo sobre o Rio das Almas</h2>
+							<h2 class="letra">A autêntica moqueca capixaba</h2>
 							<p
 								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
-								Foto: PiriPark</p>
+								Foto: Receita Capixaba</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - CACHOEIRA DO ABADE.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - Praia do Canto, o bairro mais charmoso de Vitória (Foto Diego Alves).jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Cachoeira do Abade</h2>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="overlay">
-							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - CACHOEIRA DO COQUEIRO.jpg');">
-							</div>
-						</div>
-						<div class="carousel-caption ">
-							<h2 class="letra">Cachoeira do Coqueiro</h2>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="overlay">
-							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - RECANTO CARRANCA (Foto recantocarranca).jpeg');">
-							</div>
-						</div>
-						<div class="carousel-caption ">
-							<h2 class="letra">Recanto Carranca</h2>
+							<h2 class="letra">Praia do Canto, o bairro mais charmoso de Vitória</h2>
 							<p
 								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
-								Foto: recantocarranca</p>
+								Foto: Diego Alves</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/cavalhadas-pirenopolis.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEl - Praia da Costa, Vila Velha (Foto - Divulgação PMVV).jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Cavalhadas recriam batalhas medievais entre cristãos e mouros</h2>
+							<h2 class="letra">Praia da Costa, Vila Velha</h2>
+							<p
+								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
+								Foto: Divulgação PMVV</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - FORNERIA PIRENEUS - A MELHOR FOCACCIA.jpeg');">
+								style="background-image: url('img/carroselViajarTravelNews/CCARROSSEL - Vila Velha, ES - Convento da Penha (Foto Tadeu Bianconi).jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Forneria Pireneus - a melhor focaccia</h2>
+							<h2 class="letra">Vila Velha, ES - Convento da Penha</h2>
+							<p
+								style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">
+								Foto: Tadeu Bianconi</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg"
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - Vitória à noite.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Vitória à noite</h2>
 						</div>
 					</div>
 				</div>
@@ -810,18 +852,18 @@
 		<!-- O que é VTN -->
 		<div class="main-wrapper">
 			<div class="container">
-				<div class="conexao-piri-feature">
-					<span class="conexao-piri-eyebrow">Parceiro desta edição</span>
-					<span class="conexao-piri-logo">Conexão Piri</span>
-					<p class="conexao-piri-copy">
-						<span>DICAS DE HOSPEDAGEM, RESTAURANTES E ATRATIVOS DIRETAMENTE NO INSTA.</span>
-						<span>O CONEXÃO PIRI RESPONDE NA HORA.</span>
-					</p>
-					<a class="conexao-piri-instagram" target="_blank" href="https://www.instagram.com/conexaopiri/"
-						aria-label="Instagram do Conexão Piri">
-						<img src="img/edicaofev/instagram-removebg-preview.png" alt="">
-						<span>@conexaopiri</span>
-					</a>
+				<div class="copa-brasil-feature">
+					<span class="copa-brasil-eyebrow">Brasil na Copa</span>
+					<span class="copa-brasil-title">Nossa torcida viaja junto <img class="copa-brasil-ball"
+							src="img/edicao_junho_2026/bola-copa-brasil.png" alt="bola da Copa"></span>
+					<!-- <p class="copa-brasil-copy">
+						Um toque verde, amarelo e azul para celebrar o país que inspira caminhos, encontros e grandes emoções.
+					</p> -->
+					<!-- <div class="copa-brasil-badges" aria-hidden="true">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div> -->
 				</div>
 				<div class="row g-4 cards-equilibrados">
 					<div class="col-lg-6 col-12 mb-4 coluna-esquerda-cards">
@@ -915,51 +957,36 @@
 							<h2>Nesta Edição…</h2>
 							<div class="divider"></div>
 
-							<span class="card-subtitle">Querida Piri</span>
+							<span class="card-subtitle">Pedra Azul</span>
 
-							<span style="display: flex; justify-content: center;">Onde o tempo fez morada...</span>
+							<span style="display: flex; justify-content: center;">No compasso manso das alturas</span>
 							<br>
 							<p> <span class="text-indent"></span>
-								Carinhosamente chamada de "Piri", Pirenópolis não é apenas uma cidade, mas um
-								lugar onde o tempo fez morada, e, de tão à vontade, parece não ter pressa nenhuma
-								de passar...
+								Subir as montanhas capixabas é apurar os sentidos. À medida em que a altitude ganha o céu, a
+								contemplação ganha o tempo. Ali, a gente pode sentir o vento entre as curvas da estrada e os
+								recortes da rocha, trazendo junto o cheiro de terra e café. As plantações colhem o melhor da
+								estação e o calor da hospitalidade faz qualquer estrangeiro se sentir em casa. Exatamente como
+								nos sentimos na Pousada Rabo do Lagarto (CARD 4), a 2ª melhor pousada do Brasil, onde nos
+								hospedamos.
 							</p>
 							<p> <span class="text-indent"></span>
-								Ali, aos pés da Serra dos Pireneus, Piri respira história pelas esquinas, em todo
-								canto, em cada uma das pedras dos becos que guardam quase três séculos de
-								memórias.
+								Pedra Azul é um estado de espírito que se funde à paisagem, sob o olhar atendo da grande rocha
+								- que muda de tom conforme a luz do dia. Sua presença sagrada está por toda parte - em
+								qualquer canto que olhemos, em cada curva, lá está o gigante de pedra, testemunho silencioso
+								através do tempo.
 
 							</p>
 							<p> <span class="text-indent"></span>
-								Para mostrar essa inspiração, convidamos alguém especial: uma referência que
-								dispensa apresentações e que personifica tudo o que vamos mostrar nesta edição.<br>
-								Alguém que transformou desafios em conquistas e aceitou dividir sua jornada com a
-								gente: <strong>CARLOS NAVES</strong>.
-
+								Viver essas montanhas é brindar à região, é saborear o instante em sua forma mais pura.
 							</p>
 							<p><span class="text-indent"></span>
-								Além de administrador, empreendedor e produtor de eventos - com forte atuação em
-								Pirenópolis -, Naves é diretor de Patrimônio da Federação das Apaes do Estado de
-								Goiás, e atua com uma equipe multidisciplinar, com experiência em tecnologia, IA,
-								posicionamento de marca e branding.
+								E falando em celebração, o lugar é reduto das melhores e mais prestigiadas cervejas artesanais,
+								devido ao clima e às águas puríssimas da serra. Por isso, dedicamos o CARD 4 a esses rótulos
+								consagrados, que eternizam a energia e o DNA das montanhas em cada em cada brinde.
 							</p>
 							<p><span class="text-indent"></span>
-								Mas para mim, Carlos Naves vai muito além disso tudo. É um tradutor de emoções, um
-								comunicador nato, alguém que domina a arte das conexões humanas, e do fazer, de uma
-								ideia simples, uma ocasião memorável.
-							</p>
-							<p><span class="text-indent"></span>
-								À frente do <strong>CONEXÃO PIRI</strong> (primeiro card do Destaque), ele não só
-								conecta pessoas e vivências,
-								mas nos mostra que Pirenópolis é um caleidoscópio vivo, onde as Cavalhadas se
-								misturam à gastronomia, ao artesanato, à arte, às cachoeiras...
-							</p>
-
-							<p><span class="text-indent"></span>
-								Com vocês, <strong>PIRENÓPOLIS</strong>, sob o olhar de quem interpreta, como
-								ninguém, a alma deste lugar. <br>
-								<br>
-								Valeu, Naves!
+								Acho que ali, a cerveja é apenas o convite. A receita artesanal foi só um pretexto para engarrafar
+								o clima e a alma de Pedra Azul.
 							</p>
 
 							<p style="font-family: 'Courgette', cursive !important;">
@@ -1250,19 +1277,19 @@
 			}
 
 			.modern-card.travel p {
-				font-size: 18px !important;
+				font-size: 15px !important;
 			}
 
 			.modern-card.travel:hover p {
-				font-size: 19px !important;
+				font-size: 16px !important;
 			}
 
 			.modern-card.gold:hover p {
-				font-size: 19px !important;
+				font-size: 17px !important;
 			}
 
 			.modern-card.card-mantiqueira:hover p {
-				font-size: 18px !important;
+				font-size: 17px !important;
 			}
 
 
@@ -1482,7 +1509,7 @@
 												<div class="post-content">
 													<p class="letra-lua"
 														style="font-size: 15px; color: #fff !important;">
-														Lua de Morango (Strawberry Moon): colheita espiritual
+														Lua do Cervo (ou Lua do Milho Maduro)
 													</p>
 													<div class="moon-schedule">
 														<div class="moon-schedule-main">
@@ -1496,13 +1523,13 @@
 																<path
 																	d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
 															</svg>
-															<span>28, 29 e 30/06</span>
+															<span>28, 29 e 30/07</span>
 														</div>
 														<div class="moon-schedule-times">
 															<div class="moon-schedule-time">
-																<strong>Auge da Lua Cheia: 29 de junho</strong>
-																<span>20:58h</span>
-																<em>Horário de Brasília</em>
+																<strong>Auge da Lua Cheia</strong>
+																<span>29 de julho, com o ápice às 11h:37</span>
+																<em>Horário Oficial de Brasília</em>
 															</div>
 														</div>
 													</div>
@@ -1514,26 +1541,15 @@
 
 								<div class="moon-bottom">
 									<div class="moon-content moon-content-split">
-										<div class="moon-text-block">
-											<div class="moon-highlight-title">Lua de Morango:</div>
+										<div class="moon-text-block moon-text-block-full">
+											<div class="moon-highlight-title">Origem dos nomes</div>
 											<p>
-												A Lua de Morango, em junho, carrega um forte simbolismo de maturação e
-												recompensa. Representa o ponto de equilíbrio entre o esforço (trabalho)
-												e o
-												prazer (o fruto).
-											</p>
-										</div>
-
-										<div class="moon-text-block">
-											<div class="moon-highlight-title">Colheita espiritual:</div>
-											<p>
-												Assim como os morangos amadurecem, este é o momento de ver os resultados
-												de
-												projetos ou intenções iniciadas meses atrás. O nome evoca a "doçura da
-												vida" e
-												convida a desacelerar, desfrutar pequenas vitórias e nutrir
-												relacionamentos com
-												afeto e gratidão.
+												A Lua Cheia de julho carrega nomes ligados aos ciclos da natureza; Lua do
+												Cervo porque coincide com a época em que os chifres dos cervos machos se
+												regeneram e crescem completamente. Já Lua do Milho Maduro vem de antigas
+												tribos agrícolas, que usavam o brilho dessa lua como sinalizador natural de que
+												o milho estava pronto para ser colhido e armazenado. Ambos os termos
+												funcionavam como um calendário vivo para os povos antigos.
 											</p>
 										</div>
 									</div>
@@ -1543,13 +1559,12 @@
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 mb-5 lua-frase-col">
 						<figure class="cardFrase">
-							<img class="cardFrase-img" src="img/351479.jpg" alt="foto" />
+							<img class="cardFrase-img" src="img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 11.25.01.jpeg" alt="foto" />
 
 							<div class="cardFrase-texto">
-								"LUTE COM DETERMINAÇÃO, ABRACE A VIDA COM PAIXÃO, PERCA COM CLASSE E VENÇA COM
-								OUSADIA, PORQUE O MUNDO PERTENCE A QUEM SE ATREVE E A VIDA É MUITO BELA PARA SER
-								INSIGNIFICANTE."
-								<span class="cardFrase-autor"> CHARLES CHAPLIN</span>
+								"AS VIAGENS SÃO VIVIDAS TRÊS VEZES: QUANDO SONHAMOS. QUANDO VIVEMOS.
+								QUANDO LEMBRAMOS”.
+								<span class="cardFrase-autor"> PAUL MORANO</span>
 							</div>
 						</figure>
 					</div>
@@ -1783,9 +1798,13 @@
 
 			/* IMAGEM */
 			.cardFrase-img {
-				/* width: 100%;
-				height: 100%; */
+				position: absolute;
+				inset: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
 				object-fit: cover;
+				object-position: center;
 				filter: brightness(68%);
 			}
 
@@ -1993,6 +2012,10 @@
 				padding: 10px 12px;
 			}
 
+			.moon-text-block-full {
+				width: 100%;
+			}
+
 			.moon-text-block+.moon-text-block {
 				border-left: 1px solid rgba(122, 79, 29, 0.18);
 			}
@@ -2009,8 +2032,8 @@
 			}
 
 			.moon-highlight-title {
-				display: inline-block;
-				margin: 8px 0 6px;
+				display: table;
+				margin: 15px auto 20px;
 				padding: 8px 0 6px;
 				color: #7a4f1d;
 				font-family: 'Faithful Hand', cursive;
@@ -2035,8 +2058,8 @@
 			.moon-content p {
 				/* font-family: "Georgia", "Times New Roman", serif; */
 				line-height: 1.22;
-				margin: 4px 0;
-				font-size: 18px;
+				margin: 15px 15px;
+				font-size: 19px;
 				font-family: 'Dancing Script', cursive;
 			}
 
@@ -2283,14 +2306,17 @@
 			<div class="row">
 				<div class="col-12" style="width: 100%; position: relative; overflow: hidden;">
 					<div
-						style="width: 100%; height: 40vh; background-image: url('img/carroselViajarTravelNews/texto-do-seu-paragrafo-1.png'); background-size: cover; background-position: center; display: flex; align-items: center; position: relative;">
+						style="width: 100%; height: 40vh; background-image: url('img/carroselViajarTravelNews/Texto\ do\ seu\ parágrafo.png'); background-size: cover; background-position: center; display: flex; align-items: center; position: relative;">
 						<img id="aviao-desktop" src="img/edicaoJulho/b3b87850-7dc2-4814-afca-bf9459309994.png"
 							width="200" alt="">
 						<!-- TEXTO NO CANTO SUPERIOR -->
 						<div class="selo-texto-simples">
-							Pirenópolis fica no leste goiano, a cerca de 130km da capital, Goiânia, e a pouco mais
-							de 150km de Brasília. A cidade, de 298 anos, foi tombada pelo IPHAN em 1990. Em 2026,
-							foi eleita uma das cidades mais acolhedoras do mundo pelo Traveller Review Awards.
+							MELHOR ESCOLHA <br>
+							Viajar com a Beni Tour Turismo é sinônimo de SEGURANÇA absoluta! O atendimento é de
+							EXCELÊNCIA, e o suporte ANTES, DURANTE e DEPOIS da viagem não tem preço. Pacotes
+							exclusivos nacionais e internacionais.  <br>
+							<br>  
+							👉 <a target="_blank" href="https://www.instagram.com/benitourturismo">@benitourturismo</a>
 						</div>
 					</div>
 				</div>
@@ -2306,9 +2332,12 @@
 						<img id="aviao-mobile" src="img/edicaoJulho/b3b87850-7dc2-4814-afca-bf9459309994.png"
 							width="300" alt="">
 						<div class="selo-texto-simples">
-							Pirenópolis fica no leste goiano, a cerca de 130km de Goiânia e a pouco mais de
-							150km de Brasília. Em 2026, foi eleita uma das cidades mais acolhedoras do mundo
-							pelo Traveller Review Awards.
+							MELHOR ESCOLHA <br>
+							Viajar com a Beni Tour Turismo é sinônimo de SEGURANÇA absoluta! O atendimento é de
+							EXCELÊNCIA, e o suporte ANTES, DURANTE e DEPOIS da viagem não tem preço. Pacotes
+							exclusivos nacionais e internacionais.  <br>
+							<br>  
+							👉 <a target="_blank" href="https://www.instagram.com/benitourturismo">@benitourturismo</a>
 						</div>
 					</div>
 				</div>
@@ -2321,23 +2350,21 @@
 			<div class="container">
 				<h2 class="titulo"
 					style="color: #FD7D01 !important;  display: flex; justify-content: center; font-size: 1.6rem;">
-					<b style="margin: 0px 5px 0px 0px"> DESTAQUE | </b> ESPECIAL PIRENÓPOLIS
+					<b style="margin: 0px 5px 0px 0px"> DESTAQUE | </b> PELAS MONTANHAS CAPIXABAS
 				</h2>
 			</div>
 			<div style="margin: 30px 0px;">
 				<div class="row justify-content-center">
 					<div class=" card-destaque">
-						<img src="img/edicaoMaio_26/WhatsApp Image 2026-04-14 at 21.06.48.jpeg" alt="">
+						<img src="img/carroselViajarTravelNews/CARROSSEL - Domingos Martins (Foto Gabriel Lordello-Mosaico Imagem).jpg" alt="">
 						<div class="card-content">
 							<h2>
-								DESCUBRA O CONEXÃO PIRI.<br>
-								<br>
-								CARLOS NAVES
+								DOMIGOS MARTINS, ONDE COMEÇA A VIAGEM...
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=21" class="button">
+							<a href="paginas.html?id=26" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2346,18 +2373,15 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/carroselViajarTravelNews/carrossel-casario-danae.webp" alt="">
+						<img src="img/carroselViajarTravelNews/CARROSSEL - Parque Estadual da Pedra Azul (Foto  Eduardo M S Neves).jpg" alt="">
 						<div class="card-content">
 							<h2>
-								VIVA O MELHOR DE PIRI!<br>
-								<br>
-								Entre ruas históricas, cachoeiras e uma
-								gastronomia surpreendente.
+								PEDRA AZUL E A ROTA DO LAGARTO
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=22" class="button">
+							<a href="paginas.html?id=27" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2366,34 +2390,17 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/carroselViajarTravelNews/cavalhadas-pirenopolis.jpg" alt="">
+						<img src="img/carroselViajarTravelNews/CARROSSEL - Cervejaria Azzurra.jpg" alt="">
 						<div class="card-content">
 							<h2>
-								DO CERRADO AO PALADAR<br>
-								<br>VINHOS E QUEIJOS QUE REVELAM A REGIÃO DOS PIRINEUS
-							</h2>
-							<p style="text-transform: uppercase;text-align: left !important;">
-
-							</p>
-							<a href="paginas.html?id=23" class="button">
-								Leia mais
-								<span class="material-symbols-outlined">
-									arrow_right_alt
-								</span>
-							</a>
-						</div>
-					</div>
-					<div class=" card-destaque">
-						<img src="img/carroselViajarTravelNews/CARROSSEL - CACHOEIRA DO ABADE.jpg" alt="">
-						<div class="card-content">
-							<h2> ENTRE O BARRO E A ALMA <br>
+								DO CAMPO AO COPO: UM ROTEIRO CERVEJEIRO<br>
 								<br>
-								A ARTE SECRETA DE PIRENÓPOLIS
+								PELAS MONTANHAS CAPIXABAS
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=24" class="button">
+							<a href="paginas.html?id=28" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2402,17 +2409,35 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/carroselViajarTravelNews/CARROSSEL - FORNERIA PIRENEUS - A MELHOR FOCACCIA.jpeg"
+						<img src="img/carroselViajarTravelNews/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg" alt="">
+						<div class="card-content">
+							<h2> POUSADA RABO DO LAGARTO <br>
+								<br>
+								Simbiose perfeita
+							</h2>
+							<p style="text-transform: uppercase;text-align: left !important;">
+
+							</p>
+							<a href="paginas.html?id=29" class="button">
+								Leia mais
+								<span class="material-symbols-outlined">
+									arrow_right_alt
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class=" card-destaque">
+						<img src="img/carroselViajarTravelNews/CCARROSSEL - Vila Velha, ES - Convento da Penha (Foto Tadeu Bianconi).jpg"
 							alt="">
 						<div class="card-content">
-							<h2> PIRENÓPOLIS <br>
+							<h2> VITÓRIA E VILA VELHA, ES <br>
 								<br>
-								ONDE SE HOSPEDAR VIRA EXPERIÊNCIA
+								Entre o mar, as montanhas e a fé
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=25" class="button">
+							<a href="paginas.html?id=30" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2551,11 +2576,11 @@
 				top: 20px;
 				right: 40px;
 				background: rgba(255, 255, 255, 0.9);
-				padding: 5px;
+				padding: 10px 10px;
 				border-radius: 8px;
 				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 				font-family: 'Georgia', serif;
-				font-size: 14px;
+				font-size: 13px;
 				line-height: 1.4;
 				color: #333;
 				max-width: 320px;
