@@ -442,6 +442,19 @@
 		margin: auto;
 	}
 
+	#carouselExampleIndicators {
+		max-width: 1225px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.mapa-aviao-wrapper {
+		max-width: 1225px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow: hidden;
+	}
+
 	.copa-brasil-feature {
 		border: 1px solid rgba(0, 156, 59, 0.18);
 		background: linear-gradient(135deg, #ffffff 0%, #f8fbf1 58%, #eef7ff 100%);
@@ -581,6 +594,14 @@
 	}
 
 	@media screen and (max-width: 768px) {
+		#carouselExampleIndicators {
+			max-width: none;
+		}
+
+		.mapa-aviao-wrapper {
+			max-width: none;
+		}
+
 		.carousel-bg {
 			height: 480px;
 		}
@@ -2302,7 +2323,7 @@
 
 
 		<!-- VERSÃO DESKTOP -->
-		<div class="d-none d-lg-block w-100 main-wrapper" style="overflow: hidden;">
+		<div class="d-none d-lg-block w-100 main-wrapper mapa-aviao-wrapper">
 			<div class="row">
 				<div class="col-12" style="width: 100%; position: relative; overflow: hidden;">
 					<div
@@ -2324,7 +2345,7 @@
 		</div>
 
 		<!-- VERSÃO MOBILE -->
-		<div class="d-block d-lg-none main-wrapper">
+		<div class="d-block d-lg-none main-wrapper mapa-aviao-wrapper">
 			<div class="row">
 				<div class="col-12" style="width: 100%; position: relative; overflow: hidden;">
 					<div
@@ -2580,7 +2601,7 @@
 				border-radius: 8px;
 				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 				font-family: 'Georgia', serif;
-				font-size: 13px;
+				font-size: 11px;
 				line-height: 1.4;
 				color: #333;
 				max-width: 320px;
@@ -2599,13 +2620,13 @@
 			/* Responsividade */
 			@media (max-width: 1200px) {
 				.selo-texto-simples {
-					font-size: 12px;
+					font-size: 9px;
 					padding: 10px;
 					max-width: 250px;
 				}
 
 				.selo-texto-simples strong {
-					font-size: 14px;
+					font-size: 11px;
 				}
 			}
 		</style>
