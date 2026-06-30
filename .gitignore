@@ -1,4 +1,5 @@
 .DS_Store
 .codex
+.firebase/
 firebase-debug.log
 *.log
