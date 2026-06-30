@@ -4942,7 +4942,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 height: "360px",
                 imagens: [
                     {
-                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.35.53.jpeg",
+                        src: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 11.35.53 (1) (1).jpeg",
                         legenda: "O apelido carinhoso de “Cidade do Verde” (ou “Cidade Verde”), ganhou fama internacional pelo alto grau de preservação ambiental da região serrana capixaba."
                     },
                     {
@@ -5007,7 +5007,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 imagemDireita: true,
                 height: "400px",
                 imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.16.10.jpeg",
-                legenda: "O Canto Alemão Hospedagem tem suítes compactas e sistema self check-in.",
+                legenda: "Canto Alemão: Hospedagem tem suítes compactas e sistema self check-in.",
                 conteudo: `
                Uma guesthouse moderna e prática localizada no Centro de Domingos Martins e colada na Praça Principal e na Vila Germânica, a hospedagem funciona no sistema de self check-in, onde o hóspede recebe uma senha para acessar o local e o quarto com total autonomia, sem necessidade de portaria física. <br>
                <br>
@@ -5039,7 +5039,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             },
             {
                 tipo: "titulo",
-                texto: "Torta de morango: patrimônio da gastronomia capixaba"
+                texto: "Torta de morango: patrimônio da gastronomia serrana capixaba"
             },
             {
                 tipo: "texto",
@@ -5070,7 +5070,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             },
             {
                 tipo: "titulo",
-                texto: "Grand Finale: elas, as Cervejas Artesanais!"
+                texto: "'Grand Finale': elas, as Cervejas Artesanais!"
             },
             {
                 tipo: "texto",
@@ -5102,6 +5102,13 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 ]
             },
             {
+                tipo: "imagem",
+                height: "400px",
+                maxWidth: "400px",
+                imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.20.32.jpeg",
+                legenda: "A Rocha Locadora possui veículos novos, modernos e econômicos. Todos os carros passam por revisões rigorosas e higienização completa antes de cada retirada."
+            },
+            {
                 tipo: "box",
                 titulo: "ROCHA LOCADORA: mobilidade com assinatura de excelência",
                 texto: `
@@ -5113,18 +5120,12 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 atenção personalizada e ágil — com suporte prático via WhatsApp —, garantindo que a transição
                 do balcão para a estrada aconteça de forma rápida e sem nenhuma complicação
                 <br><br>
-                WhatsApp / Telefone: (27) 99829-4803<br>
+                WhatsApp / Telefone: +55 (27) 99829-4803<br>
                 Endereço: Av. Presidente Vargas, 471 - Centro, Domingos Martins - ES<br>
                 (Localizada anexa ao Auto Posto Martinense / Posto Shell)
                 `
             },
-            {
-                tipo: "imagem",
-                height: "400px",
-                maxWidth: "400px",
-                imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.20.32.jpeg",
-                legenda: "A Rocha Locadora possui veículos novos, modernos e econômicos. Todos os carros passam por revisões rigorosas e higienização completa antes de cada retirada."
-            }
+          
         ],
 
         curiango: ``
@@ -5170,7 +5171,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             },
             {
                 tipo: "duas-imagens",
-                height: "430px",
+                height: "600px",
                 imagens: [
                     {
                         src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 16.56.36.jpeg",
@@ -5184,7 +5185,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             },
             {
                 tipo: "titulo",
-                texto: "De Vitória à Pedra Azul: a caminho das montanhas"
+                texto: "De Vitória a Pedra Azul: a caminho das montanhas"
             },
             {
                 tipo: "texto",
@@ -5232,7 +5233,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 height: "360px",
                 imagens: [
                     {
-                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.04.05.jpeg",
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.04.05 (1)",
                         legenda: "O belíssimo lago da Pousada Pedra Azul, uma das mais bonitas e inspiradoras da Rota do Lagarto"
                     },
                     {
@@ -5277,7 +5278,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                         legenda: "A Rota do Lagarto recebeu oficialmente o título de uma das Ruas Mais Legais do Espírito Santo, eleita pela TV Gazeta. Ela se destaca por reunir o melhor do charme serrano, gastronomia e paisagens em um só endereço"
                     },
                     {
-                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.17.48.jpeg",
+                        src: "./img/edicao_junho_2026/card_2/WhatsApp Image 2026-06-24 at 17.17.48 .jpeg",
                         legenda: "A Unidade 1 da Cervejaria Azzurra funciona como um charmoso Beer Garden, localizado bem no final da Rota do Lagarto"
                     }
                 ]
@@ -5389,14 +5390,6 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 ]
             },
             {
-                tipo: "box",
-                titulo: "DICA DO CURIANGO",
-                texto: `
-                Aos finais de semana, os restaurantes da Rota do Lagarto costumam lotar cedo. Se for almoçar
-                por lá, chegue por volta das 11h30 ou faça reserva antecipada.
-                `
-            },
-            {
                 tipo: "tres-imagens",
                 height: "360px",
                 imagens: [
@@ -5499,14 +5492,6 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 `
             },
             {
-                tipo: "box",
-                titulo: "DICA DO CURIANGO",
-                texto: `
-                Para detalhes sobre atrações e roteiros turísticos, como a famosa Rota
-                do Lagarto, confira o Portal Pedra Azul do Aracê.
-                `
-            },
-            {
                 tipo: "texto",
                 conteudo: `
                 Há muito o que se fazer na vila de Pedra Azul, além dos atrativos naturais. Você pode alugar um
@@ -5551,7 +5536,13 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             }
         ],
 
-        curiango: ``
+        curiango: `
+        Aos finais de semana, os restaurantes da Rota do Lagarto costumam lotar cedo. Se for almoçar
+        por lá, chegue por volta das 11h30 ou faça reserva antecipada.
+        <br><br>
+        Para detalhes sobre atrações e roteiros turísticos, como a famosa Rota do Lagarto, confira o Portal
+        Pedra Azul do Aracê.
+        `
     },
     {
         id: 28,
@@ -5638,7 +5629,8 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 permite experimentar pequenas porções de diferentes chopes da casa (como a encorpada IPA ou
                 a tradicional Weiss) antes de escolher o favorito. Além do chope direto da torneira na régua de
                 degustação, as bebidas são distribuídas em garrafas tradicionais de 600 ml, long necks de 355 ml
-                e também para abastecimento de growlers.
+                e também para abastecimento de growlers.<br>
+                <strong>Instagram:</strong> <a href="https://www.instagram.com/ronchibeer/?hl=en" target="_blank" rel="noopener">@ronchibeer</a>
                 `
             },
             {
@@ -5672,7 +5664,8 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 Pedra Azul e do lagarto. O visual, realmente, é de tirar o fôlego, não tem como explicar em
                 palavras, só estando lá, para sentir. Uma atmosfera sagrada e uma presença impalpável que
                 transmitem a sensação forte de proteção, de abraço e pertencimento. Como se uma energia
-                silenciosa vivesse ali, guardando aquele lugar.
+                silenciosa vivesse ali, guardando aquele lugar.<br>
+                <strong>Instagram:</strong> <a href="https://www.instagram.com/cervejariapedraazul/?hl=en" target="_blank" rel="noopener">@cervejariapedraazul</a>
                 `
             },
             {
@@ -5738,7 +5731,8 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 A Azzurra trabalha com mais de uma dezena de cervejas especiais, com destaque para as
                 medalhistas locais. A Régua de Degustação é a escolha perfeita para passear por estilos como
                 a aromática American Pale Ale (APA) e suas opções sazonais de inverno. Para acompanhar, o
-                cardápio conta com ótimas porções de petiscos finos e carnes de parrilla.
+                cardápio conta com ótimas porções de petiscos finos e carnes de parrilla.<br>
+                <strong>Instagram:</strong> <a href="https://www.instagram.com/azzurracervejaria/?hl=en" target="_blank" rel="noopener">@azzurracervejaria</a>
                 `
             },
             {
@@ -5854,7 +5848,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 imagens: [
                     {
                         src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 11.25.01.jpeg",
-                        legenda: "VISTA DA NOSSA VARANDA, DA CAMA E DA BANHEIRA, DIRETAMENTE PARA A PEDRA AZUL. O QUARTO FOI DESENHADO PARA QUE A MONTANHA SEJA A PRIMEIRA IMAGEM AO SE ABRIR OS OLHOS..."
+                        legenda: "O cenário pode ser visto da nossa varanda da cama e da hidro, DIRETAMENTE PARA A PEDRA AZUL. O QUARTO FOI DESENHADO PARA QUE A MONTANHA SEJA A PRIMEIRA IMAGEM AO SE ABRIR OS OLHOS..."
                     },
                     {
                         src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.05.24.jpeg",
@@ -5910,16 +5904,20 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             },
 
             {
-                tipo: "texto",
+                tipo: "imagem-texto",
+                imagemDireita: true,
+                height: "800px",
+                imagem: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-29 at 10.48.44.jpeg",
+                legenda: "1° ATO: LEONARDO NOS APRESENTA A HAPPY BOX, DELICADAMENTE ENVOLVIDA em PAPEL DE SEDA E CONTENDO PRODUTOS DAS FAZENDAS DA REGIÃO",
                 conteudo: `
                 Se olharmos como um espetáculo teatral, cada elemento representa o seu papel nessa
                 verdadeira encenação, a começar pelo cenário – diante da Pedra Azul e com o privilégio de ver o
                 sol mudar de posição na mesa - e pelo figurino, seja nos jogos americanos que trazem o toque
                 orgânico da terra, seja em peças de cerâmica artesanal, porcelanas finas, taças que capturam a
                 luz natural, enfim, tudo pronto para dar início ao espetáculo de sabores! <br>
+                <br>
                 Em um roteiro de atos definidos, o 1º é o ritual de abertura da famosa Happy Box, uma belíssima
                 caixa contendo os sabores típicos regionais, presentes em diferentes queijos, pães de
-
                 fermentação natural, frios diversos, iogurtes da fazenda, granola, mel e geleias, além de frutas,
                 manteiga caseira em formato de coração, tudo envolto em delicado papel de seda e selado com
                 uma flor colhida no jardim.
@@ -5932,9 +5930,9 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 imagens: [
 
                     "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02 (1).jpeg",
-                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02 (4).jpeg",
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-29 at 10.20.08.jpeg",
                     "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02 (2).jpeg",
-                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.10.02 (3).jpeg"
+                    "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-29 at 10.24.48.jpeg"
                 ]
             },
 
@@ -5950,7 +5948,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 experiência’ tem a proposta de surpreender com misturas inusitadas, como é o caso do
                 refrescante suco de laranja <br> com xarope de maçã verde, que cria um degradê de cores na taça,
                 antes de ser misturado.<br>
-                Para terminar, a pousada é uma galeria de arte particular, com obras de arte que se revelam em
+                Para terminar, a pousada é uma galeria particular, com obras de arte que se revelam em
                 cada canto, objetos que misturam tendências, estilos, peças que dialogam ao mesmo tempo com
                 o rústico e o contemporâneo, uma verdadeira imersão cultural, que torna a nossa estadia na
                 Rabo do Lagarto, uma experiência única, onde natureza, sofisticação e bom gosto caminham de
@@ -5980,10 +5978,10 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
 
             {
                 tipo: "duas-imagens",
-                height: "300px",
+                height: "400px",
                 imagens: [
                     {
-                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.40.16.jpeg",
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.40.161.jpeg",
                         legenda: "Com LILIA MELLO, autora e a alma dessa grande obra de arte chamada Rabo do Lagarto"
                     },
                     {
@@ -6068,7 +6066,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
 
         hero: {
             imagem: "./img/carroselViajarTravelNews/CCARROSSEL - Vila Velha, ES - Convento da Penha (Foto Tadeu Bianconi).jpg",
-            subtitulo: "Entre o mar, as montanhas e a fé",
+            subtitulo: "Entre o mar, as montanhas <br> e a fé",
             legenda: "Foto: Tadeu Bianconi"
         },
 
@@ -6123,6 +6121,20 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     }
                 ]
             },
+             {
+                tipo: "box",
+                imagemFundo: "./img/carroselViajarTravelNews/CARROSSEL - A autêntica moqueca capixaba (Foto Receita Capixaba).webp",
+                titulo: "&quot;Moqueca é capixaba, o resto é peixada&quot;.",
+                texto: `
+                Quem já ouviu essa famosa frase sabe que a moqueca capixaba é um dos pratos mais
+                emblemáticos da culinária do Espírito Santo. Ao contrário da versão baiana, ela aposta no sabor
+                natural do peixe, além de ser mais leve: não leva dendê e leite de coco, e a coloração alaranjada
+                vem do azeite de urucum (colorau), não do dendê.<br>
+                É tradicionalmente preparada nas famosas panelas de barro do bairro Goiabeiras, em Vitória,
+                tradição de mais de 400 anos. De origem indígena, é considerada o primeiro Patrimônio
+                Imaterial do Brasil registrado pelo IPHAN. 
+                `
+            },
             {
                 tipo: "titulo",
                 texto: "Terceira Ponte: maior símbolo de conexão do Espírito Santo"
@@ -6167,20 +6179,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-24 at 22.38.54.jpeg",
                 legenda: "TRIÂNGULO DAS BERMUDAS: vibrante e democrático, o coração do happy hour capixaba reúne desde botecos tradicionais, com mesas na calçada, até pubs de rock e baladas sertanejas."
             },
-            {
-                tipo: "box",
-                imagemFundo: "./img/carroselViajarTravelNews/CARROSSEL - A autêntica moqueca capixaba (Foto Receita Capixaba).webp",
-                titulo: "&quot;Moqueca é capixaba, o resto é peixada&quot;.",
-                texto: `
-                Quem já ouviu essa famosa frase sabe que a moqueca capixaba é um dos pratos mais
-                emblemáticos da culinária do Espírito Santo. Ao contrário da versão baiana, ela aposta no sabor
-                natural do peixe, além de ser mais leve: não leva dendê e leite de coco, e a coloração alaranjada
-                vem do azeite de urucum (colorau), não do dendê.<br>
-                É tradicionalmente preparada nas famosas panelas de barro do bairro Goiabeiras, em Vitória,
-                tradição de mais de 400 anos. De origem indígena, é considerada o primeiro Patrimônio
-                Imaterial do Brasil registrado pelo IPHAN. 
-                `
-            },
+           
             {
                 tipo: "titulo",
                 texto: "Onde ficar em Vitória"
@@ -6212,28 +6211,28 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             },
             {
                 tipo: "tres-imagens",
-                height: "360px",
+                height: "400px",
                 imagens: [
                     {
                         src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10.jpeg",
-                        legenda: "Sheraton Vitória, onde nos hospedamos."
+                        legenda: ""
                     },
                     {
                         src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (5).jpeg",
-                        legenda: "Apartamento do Sheraton Vitória, com conforto e vista privilegiada da capital capixaba."
+                        legenda: "Arquitetura que impressiona por fora, caminhos que encantam por dentro. Hospedar-se no Sheraton Vitória é viver a harmonia perfeita entre a imponente estrutura, a elegância dos espaços e o carinho de uma recepção inesquecível."
                     },
                     {
                         src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (1).jpeg",
-                        legenda: "Detalhe de boas-vindas no Sheraton Vitória."
+                        legenda: ""
                     }
                 ]
             },
             {
                 tipo: "tres-imagens",
-                height: "360px",
+                height: "400px",
                 imagens: [
                     {
-                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (2).jpeg",
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (2) .jpeg",
                         legenda: "Dependendo da posição do quarto, você tem a visão direta do mar de Vitória, as ilhas do Boi e do Frade, cartões-postais da capital capixaba"
                     },
                     {
@@ -6246,11 +6245,14 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     }
                 ]
             },
+
             {
                 tipo: "imagem",
-                imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (6).jpeg",
-                legenda: "Detalhe do Sheraton Vitória."
+                imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-29 at 11.44.43.jpeg",
+                legenda: "VISTA DO SHERATON: 360° DE PURA BELEZA, UMA PANORÂMICA IMPECÁVEL"
             },
+
+        
             {
                 tipo: "titulo",
                 texto: "Contrate um transfer privativo em Vitória "
@@ -6294,7 +6296,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     },
                     {
                         src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.06.56.jpeg",
-                        legenda: "TRANSFER PRIVATIVO COM O ELBER TÁXI VITÓRIA"
+                        legenda: "Praias urbanas de Vila Velha, com mar, calçadão e a energia do litoral capixaba."
                     }
                 ]
             },
@@ -6351,8 +6353,8 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 height: "360px",
                 imagens: [
                     {
-                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.06.56.jpeg",
-                        legenda: "Praias urbanas de Vila Velha, com mar, calçadão e a energia do litoral capixaba."
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-29 at 11.33.34.jpeg",
+                        legenda: "Luz natural, espaço clean e uma elegância que flui natural. "
                     },
                     {
                         src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.25.58.jpeg",
