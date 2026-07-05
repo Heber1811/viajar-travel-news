@@ -5102,28 +5102,38 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 ]
             },
             {
-                tipo: "imagem",
-                height: "400px",
-                maxWidth: "400px",
-                imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.20.32.jpeg",
-                legenda: "A Rocha Locadora possui veículos novos, modernos e econômicos. Todos os carros passam por revisões rigorosas e higienização completa antes de cada retirada."
+                tipo: "titulo",
+                texto: "ROCHA LOCADORA: mobilidade com assinatura de excelência"
             },
             {
-                tipo: "box",
-                titulo: "ROCHA LOCADORA: mobilidade com assinatura de excelência",
-                texto: `
+                tipo: "imagem-texto",
+                imagemDireita: true,
+                height: "400px",
+                imagem: "./img/edicao_junho_2026/card_1/WhatsApp Image 2026-06-24 at 16.20.32.jpeg",
+                legenda: "A Rocha Locadora possui veículos novos, modernos e econômicos. Todos os carros passam por revisões rigorosas e higienização completa antes de cada retirada.",
+                conteudo: `
                 Explorar os encantos de Domingos Martins e percorrer a Rota do Lagarto exige liberdade, e é
                 exatamente isso que a Rocha Locadora entrega, com um padrão superior de serviço. Como a
                 única locadora de veículos genuinamente martinense, a empresa transformou o transporte local
                 em uma experiência de alta confiabilidade, destacando-se pela excelência absoluta no
                 atendimento e pela desburocratização do processo de aluguel. Cada cliente é recebido com uma
                 atenção personalizada e ágil — com suporte prático via WhatsApp —, garantindo que a transição
-                do balcão para a estrada aconteça de forma rápida e sem nenhuma complicação
+                do balcão para a estrada aconteça de forma rápida e sem nenhuma complicação.
                 <br><br>
                 WhatsApp / Telefone: +55 (27) 99829-4803<br>
-                Endereço: Av. Presidente Vargas, 471 - Centro, Domingos Martins - ES<br>
+                Endereço: Av. Presidente Vargas, 471 - Centro, Domingos Martins - ES
                 (Localizada anexa ao Auto Posto Martinense / Posto Shell)
                 `
+            },
+            {
+                tipo: "instagram-box",
+                titulo: "Perfis para acompanhar",
+                texto: "Mais referências úteis para quem vai circular por Domingos Martins e pela região.",
+                perfis: [
+                    { nome: "Domingos Martins", usuario: "@domingosmartinses" },
+                    { nome: "Canto Alemão Hospedagem", usuario: "@cantoalemaodm" },
+                    { nome: "Rocha Locadora", usuario: "@rochalocadora.dm" }
+                ]
             },
           
         ],
@@ -5311,12 +5321,14 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Clássico da chegada",
                         nome: "Restaurante Peterle",
+                        link: "https://www.google.com/search?q=Restaurante+Peterle+Pedra+Azul",
                         texto: `Fica logo na entrada da Rota do Lagarto, e é um clássico para café
                         colonial e almoço, servindo como ponto de referência para quem chega à vila;`
                     },
                     {
                         kicker: "Comida caseira",
                         nome: "Cozinha da Rota",
+                        link: "https://www.google.com/search?q=Cozinha+da+Rota+Pedra+Azul",
                         texto: `Excelente opção de self-service por quilo com comida caseira e bom preço.
                         Fica bem na entrada da Rota do Lagarto, logo que você sai da BR-262, anexo ao Posto de
                         Combustível e ao lado do Restaurante Peterle;`
@@ -5324,6 +5336,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Fogão a lenha",
                         nome: "Grão da Terra",
+                        link: "https://www.google.com/search?q=Grão+da+Terra+Pedra+Azul",
                         texto: `Localizado no final da Rota do Lagarto, comida no fogão a lenha em ambiente
                         cercado pela natureza.`
                     }
@@ -5339,6 +5352,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Romântico e exclusivo",
                         nome: "Bistrô Chez Lagarto",
+                        link: "https://www.google.com/search?q=Bistrô+Chez+Lagarto+Pedra+Azul",
                         texto: `É o restaurante da Pousada Rabo do Lagarto, um dos pontos mais
                         exclusivos e românticos de Pedra Azul. Ali, a gastronomia não é apenas alimento, mas uma
                         experiência transcendental. O Bacalhau Norueguês Gratinado é um dos carros-chefes no
@@ -5347,12 +5361,14 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Italiano refinado",
                         nome: "Restaurante Don Due",
+                        link: "https://www.google.com/search?q=Restaurante+Don+Due+Pedra+Azul",
                         texto: `Considerado um dos melhores da região, com culinária italiana refinada
                         e pratos autorais, em ambiente elegante e acolhedor;`
                     },
                     {
                         kicker: "À beira do lago",
                         nome: "Restaurante Lago Negro",
+                        link: "https://www.google.com/search?q=Restaurante+Lago+Negro+Pedra+Azul",
                         texto: `Gastronomia italiana dentro da propriedade da Pousada Pedra Azul.
                         O ambiente é belíssimo, à beira de um lago com cisnes e vista para a pedra, extremamente
                         romântico;.`
@@ -5360,6 +5376,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Pedacinho da Itália",
                         nome: "Travoletta",
+                        link: "https://www.google.com/search?q=Travoletta+Pedra+Azul",
                         texto: `Pratos mais elaborados, como risotos e massas de fabricação própria, é um
                         pedacinho da Itália nas montanhas capixabas. A arquitetura segue o estilo rústico
                         toscano/europeu clássico, apresentando arcos decorativos dividindo os ambientes. O carro-chefe
@@ -5370,6 +5387,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Rústico-chique",
                         nome: "Alecrim Cozinha Artesanal",
+                        link: "https://www.google.com/search?q=Alecrim+Cozinha+Artesanal+Pedra+Azul",
                         texto: `(Quadrado de São Paulinho): Um restaurante de referência com
                         cardápio diversificado que inclui massas, carnes e frutos do mar. Ambiente rústico-chique com
                         varanda e jardim;`
@@ -5377,6 +5395,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Cervejaria premiada",
                         nome: "Ronchi Beer",
+                        link: "https://www.google.com/search?q=Ronchi+Beer+Pedra+Azul",
                         texto: `Cervejaria artesanal e restaurante. É uma das cervejarias mais premiadas do
                         Espírito Santo, acumulando medalhas e reconhecimento em concursos nacionais e
                         internacionais. Atendimento maravilhoso e um amplo deck com vista para a rocha.`
@@ -5384,6 +5403,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Pizza napoletana",
                         nome: "Vallino Pizzeria Napoletana",
+                        link: "https://www.google.com/search?q=Vallino+Pizzeria+Napoletana+Pedra+Azul",
                         texto: `Foi eleita uma das 50 melhores pizzarias da América Latina pelo
                         guia 50 Top Pizza por três anos consecutivos (2024, 2025 e 2026).`
                     }
@@ -5418,39 +5438,46 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                         destaque: true,
                         kicker: "Roteiros de Charme",
                         nome: "Pousada Rabo do Lagarto",
+                        link: "https://www.google.com/search?q=Pousada+Rabo+do+Lagarto+Pedra+Azul",
                         texto: `Uma das mais bonitas e luxuosas da região, pertencente à
                         Associação Roteiros de Charme – MATÉRIA ESPECIAL NO CARD 4;`
                     },
                     {
                         kicker: "Vista cinematográfica",
                         nome: "Vista Azul Hotel",
+                        link: "https://www.google.com/search?q=Vista+Azul+Hotel+Pedra+Azul",
                         texto: `Mistura do clássico e o rústico refinado, com vista cinematográfica das
                         montanhas capixabas;`
                     },
                     {
                         kicker: "Lago Negro",
                         nome: "Pousada Pedra Azul",
+                        link: "https://www.google.com/search?q=Pousada+Pedra+Azul",
                         texto: `Arte e natureza às margens do Lago Negro;`
                     },
                     {
                         kicker: "Arquitetura clássica",
                         nome: "Aroso Paço Hotel",
+                        link: "https://www.google.com/search?q=Aroso+Paço+Hotel+Pedra+Azul",
                         texto: `Arquitetura clássica grega em meio às montanhas;`
                     },
                     {
                         kicker: "Na vila",
                         nome: "Pousada Aracê",
+                        link: "https://www.google.com/search?q=Pousada+Aracê+Pedra+Azul",
                         texto: `Na vila de Pedra Azul, conhecida pela proximidade com fazendas de morangos
                         e cafés coloniais;`
                     },
                     {
                         kicker: "Aromas da vila",
                         nome: "Pousada Aromas da Pedra",
+                        link: "https://www.google.com/search?q=Pousada+Aromas+da+Pedra+Pedra+Azul",
                         texto: `Na vila de Pedra Azul;`
                     },
                     {
                         kicker: "Vale do Carmo",
                         nome: "Pousada Vista da Pedra Azul",
+                        link: "https://www.google.com/search?q=Pousada+Vista+da+Pedra+Azul",
                         texto: `No Vale do Carmo;`
                     }
                 ]
@@ -5533,6 +5560,20 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                         legenda: "BALLET DAS CORES: maior mistério e encanto do lagarto e de toda a Pedra Azul é que eles mudam de cor até 36 vezes em um único dia"
                     }
                 ]
+            },
+            {
+                tipo: "instagram-box",
+                titulo: "Instagrams citados",
+                texto: "Perfis para acompanhar a Rota do Lagarto, hospedagens e restaurantes de Pedra Azul.",
+                perfis: [
+                    { nome: "Rota do Lagarto ES", usuario: "@rotadolagartoes" },
+                    { nome: "Rota do Lagarto", usuario: "@rotadolagarto" },
+                    { nome: "Pedra Azul", usuario: "@pedraazul.es" },
+                    { nome: "Pousada Pedra Azul", usuario: "@pousada.pedraazul" },
+                    { nome: "Restaurante Don Due", usuario: "@restaurantedondue" },
+                    { nome: "Lago Negro Restaurante", usuario: "@lagonegrorestaurante" },
+                    { nome: "Vallino Pizzeria", usuario: "@vallinopizzeria" }
+                ]
             }
         ],
 
@@ -5599,12 +5640,14 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Domingos Martins",
                         nome: "Cervejaria Barba Ruiva",
+                        link: "https://www.google.com/search?q=Cervejaria+Barba+Ruiva+Domingos+Martins",
                         texto: `Fica bem na entrada da cidade, com um amplo bar de fábrica e excelentes versões de American
                         IPA e Sweet Stout diretas da torneira;`
                     },
                     {
                         kicker: "Castelo/Venda Nova",
                         nome: "Cervejaria Altezza",
+                        link: "https://www.google.com/search?q=Cervejaria+Altezza+Castelo+Venda+Nova",
                         texto: `Localizada a mais de 1.100 metros de altitude, foca em receitas de inspiração italiana e utiliza a
                         água pura da própria propriedade, na montanha;`
                     }
@@ -5629,8 +5672,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 permite experimentar pequenas porções de diferentes chopes da casa (como a encorpada IPA ou
                 a tradicional Weiss) antes de escolher o favorito. Além do chope direto da torneira na régua de
                 degustação, as bebidas são distribuídas em garrafas tradicionais de 600 ml, long necks de 355 ml
-                e também para abastecimento de growlers.<br>
-                <strong>Instagram:</strong> <a href="https://www.instagram.com/ronchibeer/?hl=en" target="_blank" rel="noopener">@ronchibeer</a>
+                e também para abastecimento de growlers.
                 `
             },
             {
@@ -5664,8 +5706,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 Pedra Azul e do lagarto. O visual, realmente, é de tirar o fôlego, não tem como explicar em
                 palavras, só estando lá, para sentir. Uma atmosfera sagrada e uma presença impalpável que
                 transmitem a sensação forte de proteção, de abraço e pertencimento. Como se uma energia
-                silenciosa vivesse ali, guardando aquele lugar.<br>
-                <strong>Instagram:</strong> <a href="https://www.instagram.com/cervejariapedraazul/?hl=en" target="_blank" rel="noopener">@cervejariapedraazul</a>
+                silenciosa vivesse ali, guardando aquele lugar.
                 `
             },
             {
@@ -5708,6 +5749,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Unidade 1",
                         nome: "Beer Garden",
+                        link: "https://www.google.com/search?q=Cervejaria+Azzurra+Beer+Garden+Pedra+Azul",
                         texto: `(Rota do Lagarto, em Pedra Azul)
                         Fica localizada no famoso Quadrado de São Paulinho, bem no miolo turístico da serra. O
                         espaço tem um jardim impecável e muito bem cuidado, perfeito para beber ao ar livre apreciando
@@ -5716,6 +5758,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Unidade 2",
                         nome: "Vila Gastronômica",
+                        link: "https://www.google.com/search?q=Cervejaria+Azzurra+Vila+Gastronômica+Rota+dos+Ipês",
                         texto: `(Rota dos Ipês, em Domingos Martins)
                         É a caçula da marca, localizada dentro do complexo Mudrah Eco Living. Possui uma arquitetura
                         moderna e imponente de 300 metros quadrados. Mas o grande DIFERENCIAL desta unidade,
@@ -5731,8 +5774,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 A Azzurra trabalha com mais de uma dezena de cervejas especiais, com destaque para as
                 medalhistas locais. A Régua de Degustação é a escolha perfeita para passear por estilos como
                 a aromática American Pale Ale (APA) e suas opções sazonais de inverno. Para acompanhar, o
-                cardápio conta com ótimas porções de petiscos finos e carnes de parrilla.<br>
-                <strong>Instagram:</strong> <a href="https://www.instagram.com/azzurracervejaria/?hl=en" target="_blank" rel="noopener">@azzurracervejaria</a>
+                cardápio conta com ótimas porções de petiscos finos e carnes de parrilla.
                 `
             },
             {
@@ -5793,6 +5835,19 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 escuros (como café e chocolate) com o amargor e o aroma cítrico dos lúpulos de uma IPA
                 tradicional.
                 `
+            },
+            {
+                tipo: "instagram-box",
+                titulo: "Instagrams citados",
+                texto: "Perfis das cervejarias citadas no roteiro, para conferir horários, novidades e experiências antes de visitar.",
+                perfis: [
+                    { nome: "Ronchi Beer", usuario: "@ronchibeer" },
+                    { nome: "Cervejaria Pedra Azul", usuario: "@cervejariapedraazul" },
+                    { nome: "Azzurra Cervejaria", usuario: "@azzurracervejaria" },
+                    { nome: "Azzurra Rota dos Ipês", usuario: "@azzurra.rotadosipes" },
+                    { nome: "Cervejaria Barba Ruiva", usuario: "@cervejariabarbaruiva.es" },
+                    { nome: "Cervejaria Altezza", usuario: "@cervejariiaaltezza" }
+                ]
             }
         ],
 
@@ -5848,7 +5903,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 imagens: [
                     {
                         src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 11.25.01.jpeg",
-                        legenda: "O cenário pode ser visto da nossa varanda da cama e da hidro, DIRETAMENTE PARA A PEDRA AZUL. O QUARTO FOI DESENHADO PARA QUE A MONTANHA SEJA A PRIMEIRA IMAGEM AO SE ABRIR OS OLHOS..."
+                        legenda: "O QUARTO FOI DESENHADO PARA QUE A MONTANHA SEJA A PRIMEIRA IMAGEM AO SE ABRIR OS OLHOS: O BELO CENÁRIO PODE SER VISTO DA VARANDA, DIRETAMENTE DA CAMA E TAMBÉM DA HIDRO."
                     },
                     {
                         src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.05.24.jpeg",
@@ -5910,6 +5965,8 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 imagem: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-29 at 10.48.44.jpeg",
                 legenda: "1° ATO: LEONARDO NOS APRESENTA A HAPPY BOX, DELICADAMENTE ENVOLVIDA em PAPEL DE SEDA E CONTENDO PRODUTOS DAS FAZENDAS DA REGIÃO",
                 conteudo: `
+                <b>Happy Box</b><br>
+                <br>
                 Se olharmos como um espetáculo teatral, cada elemento representa o seu papel nessa
                 verdadeira encenação, a começar pelo cenário – diante da Pedra Azul e com o privilégio de ver o
                 sol mudar de posição na mesa - e pelo figurino, seja nos jogos americanos que trazem o toque
@@ -5985,7 +6042,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                         legenda: "Com LILIA MELLO, autora e a alma dessa grande obra de arte chamada Rabo do Lagarto"
                     },
                     {
-                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.01.09.jpeg",
+                        src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 20.01.09.jpeg?v=20260630",
                         legenda: "Construir um paraíso nas montanhas exige visão; mantê-lo, exige amor."
                     },
 
@@ -6001,7 +6058,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.41.54.jpeg",
                     {
                         src: "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.41.28.jpeg",
-                        legenda: "DETALHES QUE FAZEM A DIFERENÇA..."
+                        legenda: "A mágica acontece nas entrelinhas. São detalhes sutis que conversam com os nossos sentidos sem precisar de explicação"
                     },
 
                     "./img/edicao_junho_2026/card_4/WhatsApp Image 2026-06-23 at 19.40.36.jpeg"
@@ -6197,62 +6254,73 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 tipo: "box",
                 titulo: "SHERATON VITÓRIA: capítulo à parte",
                 texto: `
-                Recomendamos, sem sombra de dúvida, o Sheraton Vitória, onde nos hospedamos.<br>
+                Recomendamos, de olhos fechados, o Sheraton Vitória, onde nos hospedamos, e que superou todas as expectativas.<br>
+                <br>
                 Os apartamentos, a partir do 17º andar, representam o topo da experiência de hospedagem no
                 hotel, onde a elegância encontra a melhor perspectiva da capital, transformando a estadia em
                 uma experiência personalizada e perfeita para quem não abre mão de ver o mundo — e Vitória —
-                literalmente, de um ângulo superior.<br>
-                O que você verá da janela
+                literalmente, de um ângulo superior.
+                `
+            },
+            {
+                tipo: "imagem-texto",
+                imagemDireita: true,
+                height: "400px",
+                imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-30 at 09.59.12.jpeg",
+                legenda: "",
+                conteudo: `
+                <b>O que você verá da janela</b>
                 <br><br>
-                Dependendo da posição do quarto, você tem a visão a direta do mar de Vitória, as ilhas do Boi e
-                do Frade, cartões-postais da capital capixaba, e, também, do Convento da Penha visível ao
-                longe, especialmente em dias claros.
+                Dos andares mais altos do Sheraton Vitória, as amplas janelas panorâmicas servem como molduras para uma vista deslumbrante em 360°. Acomodado nos apartamentos superiores, você tem a visão direta do mar de Vitória, as Ilhas do Boi e do Frade, e, ao longe, em dias mais claros, o Convento da Penha.
                 `
             },
             {
                 tipo: "tres-imagens",
                 height: "400px",
+                legenda: "Arquitetura que impressiona por fora, caminhos que encantam por dentro. Hospedar-se no Sheraton Vitória é viver a harmonia perfeita entre a imponente estrutura, a elegância dos espaços e o carinho de uma recepção inesquecível.",
                 imagens: [
                     {
-                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10.jpeg",
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.101111.jpeg",
                         legenda: ""
                     },
                     {
                         src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (5).jpeg",
-                        legenda: "Arquitetura que impressiona por fora, caminhos que encantam por dentro. Hospedar-se no Sheraton Vitória é viver a harmonia perfeita entre a imponente estrutura, a elegância dos espaços e o carinho de uma recepção inesquecível."
+                        legenda: ""
                     },
                     {
-                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (1).jpeg",
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10100.jpeg",
                         legenda: ""
                     }
                 ]
             },
             {
                 tipo: "tres-imagens",
-                height: "400px",
+                height: "380px",
                 imagens: [
                     {
-                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (2) .jpeg",
+                        src: "./img/edicao_junho_2026/card_5/sheraton-vista-mar-vitoria1.jpeg",
+                        objectFit: "cover",
+                        objectPosition: "center top",
                         legenda: "Dependendo da posição do quarto, você tem a visão direta do mar de Vitória, as ilhas do Boi e do Frade, cartões-postais da capital capixaba"
                     },
                     {
-                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (3).jpeg",
-                        legenda: "A vista do Sheraton Vitória revela o encontro da cidade com o mar."
+                        src: "./img/edicao_junho_2026/card_5/sheraton-recepcao-atendimento.jpeg",
+                        legenda: "A recepção oferece suporte completo e atendimento ao cliente durante toda a estadia"
                     },
                     {
-                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.10 (4).jpeg",
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 20.55.1011.jpeg",        
                         legenda: "Fátima Vasconcelos e Ricardo Nunes (Viajar Travel News), com Daniela Pires (gerente de Marketing) e Luciana Rios (gerente Comercial)"
                     }
                 ]
             },
+          
 
             {
                 tipo: "imagem",
-                imagem: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-29 at 11.44.43.jpeg",
-                legenda: "VISTA DO SHERATON: 360° DE PURA BELEZA, UMA PANORÂMICA IMPECÁVEL"
+                imagem: "./img/edicao_junho_2026/card_5/sheraton-lobby-bar.jpeg",
+                legenda: "Com um conceito minimalista, o LOBBY BAR recebe você em ambiente amplo e totalmente aberto, onde a iluminação natural destaca o design clean e sofisticado do espaço."
             },
 
-        
             {
                 tipo: "titulo",
                 texto: "Contrate um transfer privativo em Vitória "
@@ -6282,8 +6350,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                 precioso. 
                 <br><br>
                 WhatsApp e Telefone: +55 (27) 9 9239-6105<br>
-                Site oficial: Elber Táxi Vitória<br>
-                Instagram: @elbertaxivitoria
+                Site oficial: Elber Táxi Vitória
                 `
             },
             {
@@ -6350,11 +6417,11 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             },
             {
                 tipo: "tres-imagens",
-                height: "360px",
+                height: "500px",
                 imagens: [
                     {
-                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-29 at 11.33.34.jpeg",
-                        legenda: "Luz natural, espaço clean e uma elegância que flui natural. "
+                        src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-30 at 08.30.11.jpeg",
+                        legenda: "A BELEZA DESCONTRAÍDA DA PRAIA DE ITAPARICA - VILA VELHA, ES"
                     },
                     {
                         src: "./img/edicao_junho_2026/card_5/WhatsApp Image 2026-06-22 at 21.25.58.jpeg",
@@ -6366,11 +6433,9 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     }
                 ]
             },
-
-
             {
                 tipo: "titulo",
-                texto: "Vila Velha, berço capixaba: o charme da cidade mais antiga"
+                texto: "O charme da cidade mais antiga"
             },
             {
                 tipo: "texto",
@@ -6483,27 +6548,48 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
                     {
                         kicker: "Praia da Costa",
                         nome: "Quality Suites Vila Velha",
+                        link: "https://www.google.com/search?q=Quality+Suites+Vila+Velha",
                         texto: `É uma opção de estilo flat na beira-mar, com piscina no terraço e café
                         da manhã incluso. Av. Antônio Gil Veloso, 856`
                     },
                     {
                         kicker: "Praia da Costa",
                         nome: "Champagnat Praia Hotel",
+                        link: "https://www.google.com/search?q=Champagnat+Praia+Hotel",
                         texto: `Situado a poucos metros da praia, é um hotel discreto e muito elogiado pela limpeza, com piscina.
                         Av. Champagnat, 213.`
                     },
                     {
                         kicker: "Praia de Itaparica",
                         nome: "Hotel Santorini",
+                        link: "https://www.google.com/search?q=Hotel+Santorini+Vila+Velha",
                         texto: `A apenas 50m da praia, oferece um ambiente acolhedor e quartos com ar-
                         condicionado. Rua Itaoca, 44`
                     },
                     {
                         kicker: "Praia de Itaparica",
                         nome: "Hotel Plaza Mar",
+                        link: "https://www.google.com/search?q=Hotel+Plaza+Mar+Vila+Velha",
                         texto: `Fica na avenida da praia, com piscina e vista para o mar.
                         Av. Est. José Júlio de Souza, 2660`
                     }
+                ]
+            },
+            {
+                tipo: "instagram-box",
+                titulo: "Instagrams citados",
+                texto: "Perfis para acompanhar referências de Vitória, Vila Velha, hospedagem, gastronomia, transfer, UVV e Convento da Penha.",
+                perfis: [
+                    { nome: "Governo do Espírito Santo", usuario: "@governo_es" },
+                    { nome: "Partido Alto Restaurante", usuario: "@partidoaltorestaurante" },
+                    { nome: "Vitória Espírito Santo", usuario: "@vitoriaespiritosantobr" },
+                    { nome: "Curta Vila Velha", usuario: "@curtavilavelha" },
+                    { nome: "Triângulo das Bermudas Vitória", usuario: "@triangulo" },
+                    { nome: "Sheraton Vitória", usuario: "@sheratonvitoria" },
+                    { nome: "Cristiano Biancardi", usuario: "@cristianobiancardi" },
+                    { nome: "UVV ON Campos", usuario: "@uvvon.campos" },
+                    { nome: "Elber Táxi Vitória", usuario: "@elbertaxivitoria" },
+                    { nome: "Convento da Penha", usuario: "@conventodapenha" }
                 ]
             }
         ],
@@ -6631,6 +6717,24 @@ function renderPagina() {
                 html += `</div>`;
             }
 
+            if (sec.tipo === "instagram-box") {
+                const tituloInstagram = sec.titulo ? `<h3>${sec.titulo}</h3>` : "";
+                const textoInstagram = sec.texto ? `<p>${sec.texto}</p>` : "";
+                html += `
+        <div class="instagram-box">
+            ${tituloInstagram}
+            ${textoInstagram}
+            <div class="instagram-grid">
+                ${sec.perfis.map(perfil => `
+                    <a href="https://www.instagram.com/${perfil.usuario.replace("@", "")}/" target="_blank" rel="noopener">
+                        <span>${perfil.nome ?? perfil.usuario}</span>
+                        <strong>${perfil.usuario}</strong>
+                    </a>
+                `).join("")}
+            </div>
+        </div>`;
+            }
+
             // imagem grande
             if (sec.tipo === "imagem") {
                 const estiloImagem = sec.height ? ` style="height:${sec.height};"` : "";
@@ -6652,9 +6756,15 @@ function renderPagina() {
                 sec.imagens.forEach(img => {
                     const src = typeof img === "string" ? img : img.src;
                     const legenda = typeof img === "string" ? "" : img.legenda;
+                    const estiloPersonalizado = typeof img === "string" ? "" : [
+                        img.objectFit ? `object-fit:${img.objectFit}` : "",
+                        img.objectPosition ? `object-position:${img.objectPosition}` : "",
+                        img.background ? `background:${img.background}` : ""
+                    ].filter(Boolean).join(";");
+                    const estiloImagemGrade = [`height:${height}`, estiloPersonalizado].filter(Boolean).join(";");
                     html += `
         <div class="col-md-6 col-12">
-            <img src="${src}" class="img-premium" style="height:${height};">
+            <img src="${src}" class="img-premium" style="${estiloImagemGrade};">
             ${legenda ? `<span class="img-caption">${legenda}</span>` : ""}
         </div>`;
                 });
@@ -6679,9 +6789,15 @@ function renderPagina() {
                 sec.imagens.forEach(img => {
                     const src = typeof img === "string" ? img : img.src;
                     const legenda = typeof img === "string" ? "" : img.legenda;
+                    const estiloPersonalizado = typeof img === "string" ? "" : [
+                        img.objectFit ? `object-fit:${img.objectFit}` : "",
+                        img.objectPosition ? `object-position:${img.objectPosition}` : "",
+                        img.background ? `background:${img.background}` : ""
+                    ].filter(Boolean).join(";");
+                    const estiloImagemGrade = [`height:${height}`, estiloPersonalizado].filter(Boolean).join(";");
                     html += `
         <div class="col-md-4 col-12">
-            <img src="${src}" class="img-premium" style="height:${height};">
+            <img src="${src}" class="img-premium" style="${estiloImagemGrade};">
             ${legenda ? `<span class="img-caption">${legenda}</span>` : ""}
         </div>`;
                 });
