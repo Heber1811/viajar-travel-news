@@ -7069,7 +7069,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         id: 35,
         titulo: "A IMPRESSIONANTE SERRA DO RIO DO RASTRO",
         hero: {
-            imagem: "img/ed_julho/CARD 5 - Foto 1.jpeg",
+            imagem: "img/carroselViajarTravelNews/CARROSSEL - SERRA DO RIO DO RASTRO - Foto Iraci Duarte Scaled.webp",
             subtitulo: ""
         },
         secoes: [
