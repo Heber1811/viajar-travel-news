@@ -320,6 +320,40 @@
             font-weight: 700;
         }
 
+        .article-container .article-external-link {
+            color: #527d13;
+            font-weight: 700;
+            text-decoration-line: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+            text-decoration-color: #9ed13b;
+            border-radius: 4px;
+            transition: color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .article-container .article-external-link::after {
+            content: " ↗";
+            display: inline;
+            font-size: 0.78em;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .article-container .article-external-link:hover {
+            color: #315308;
+            background-color: rgba(158, 209, 59, 0.14);
+        }
+
+        .article-container .article-external-link:focus-visible {
+            outline: 3px solid rgba(253, 125, 1, 0.5);
+            outline-offset: 3px;
+        }
+
+        .article-paragraph-indent {
+            display: inline-block;
+            width: 2em;
+        }
+
         @media (max-width: 767px) {
             .article-container.texto-duas-colunas>p {
                 column-count: 1;
@@ -347,6 +381,106 @@
             height: 4px;
             margin: 18px auto 0;
             background: linear-gradient(to right, #FD7D01 0 55%, #d6d6d6 55% 100%);
+        }
+
+        .when-to-go {
+            margin: 64px 0;
+            padding: 34px;
+            border: 1px solid rgba(38, 70, 83, 0.1);
+            border-radius: 22px;
+            background: linear-gradient(145deg, #fbfaf6, #f3f8f7);
+            box-shadow: 0 20px 50px rgba(24, 54, 47, 0.08);
+            break-inside: avoid;
+        }
+
+        .when-to-go-heading {
+            margin-bottom: 24px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(38, 70, 83, 0.12);
+        }
+
+        .when-to-go-heading h2 {
+            margin: 0;
+            color: #264653;
+            font-size: 28px;
+            line-height: 1.1;
+        }
+
+        .when-to-go-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .when-to-go-card {
+            min-height: 210px;
+            padding: 26px;
+            border-radius: 16px;
+        }
+
+        .when-to-go-card--seca {
+            color: #68400e;
+            background: linear-gradient(145deg, #fff7df, #f3d594);
+        }
+
+        .when-to-go-card--cheia {
+            color: #124c60;
+            background: linear-gradient(145deg, #e9f8fb, #addde6);
+        }
+
+        .when-to-go-card-top {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .when-to-go-icon {
+            width: 46px;
+            height: 46px;
+            flex: 0 0 46px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.62);
+        }
+
+        .when-to-go-icon::before {
+            display: grid;
+            place-items: center;
+            height: 100%;
+            font-size: 25px;
+        }
+
+        .when-to-go-card--seca .when-to-go-icon::before {
+            content: "☀";
+        }
+
+        .when-to-go-card--cheia .when-to-go-icon::before {
+            content: "≈";
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .when-to-go-card h3 {
+            margin: 0 0 3px;
+            color: inherit;
+            font-size: 22px;
+        }
+
+        .when-to-go-months {
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            opacity: 0.78;
+        }
+
+        .article-container .when-to-go-card p {
+            margin: 0;
+            color: inherit;
+            font-size: 16px;
+            line-height: 1.65;
+            text-align: left;
+            column-count: 1;
         }
 
         .img-premium {
@@ -448,7 +582,7 @@
             padding: 34px 38px;
             background:
                 linear-gradient(135deg, rgba(21, 64, 47, 0.88), rgba(35, 94, 65, 0.74)),
-                url("img/carroselViajarTravelNews/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg") center/cover;
+                url("img/edicao_junho_2026/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg") center/cover;
             color: #fff;
             border: 0;
         }
@@ -591,6 +725,14 @@
         @media (max-width: 767px) {
             .box-highlight.box-highlight--duas-colunas p {
                 column-count: 1;
+            }
+
+            .when-to-go {
+                padding: 24px 18px;
+            }
+
+            .when-to-go-grid {
+                grid-template-columns: 1fr;
             }
 
             .box-highlight--itens {
@@ -988,7 +1130,7 @@
     <script src="plugins/aos/aos.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/home.js"></script>
-    <script src="js/htmlDinamico.js?v=20260724-2"></script>
+    <script src="js/htmlDinamico.js?v=20260724-10"></script>
 
 </body>
 

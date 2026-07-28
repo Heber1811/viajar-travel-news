@@ -4829,7 +4829,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         titulo: "DOMIGOS MARTINS, ONDE COMEÇA A VIAGEM...",
 
         hero: {
-            imagem: "./img/carroselViajarTravelNews/CARROSSEL - Domingos Martins (Foto Gabriel Lordello-Mosaico Imagem).jpg",
+            imagem: "./img/edicao_junho_2026/CARROSSEL - Domingos Martins (Foto Gabriel Lordello-Mosaico Imagem).jpg",
             subtitulo: "Uma Experiência Sensorial",
             legenda: "Foto: Gabriel Lordello-Mosaico Imagem"
         },
@@ -5145,7 +5145,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         titulo: "PEDRA AZUL E A ROTA DO LAGARTO",
 
         hero: {
-            imagem: "./img/carroselViajarTravelNews/CARROSSEL - Parque Estadual da Pedra Azul (Foto  Eduardo M S Neves).jpg",
+            imagem: "./img/edicao_junho_2026/CARROSSEL - Parque Estadual da Pedra Azul (Foto  Eduardo M S Neves).jpg",
             subtitulo: "Localizada no coração das montanhas.",
             legenda: "Foto: Eduardo M S Neves"
         },
@@ -5590,7 +5590,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         titulo: "DO CAMPO AO COPO: UM ROTEIRO CERVEJEIRO",
 
         hero: {
-            imagem: "./img/carroselViajarTravelNews/CARROSSEL - Cervejaria Azzurra.jpg",
+            imagem: "./img/edicao_junho_2026/CARROSSEL - Cervejaria Azzurra.jpg",
             subtitulo: "PELAS MONTANHAS CAPIXABAS",
             legenda: ""
         },
@@ -5862,7 +5862,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         },
 
         hero: {
-            imagem: "./img/carroselViajarTravelNews/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg",
+            imagem: "./img/edicao_junho_2026/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg",
             subtitulo: "Simbiose perfeita",
             legenda: ""
         },
@@ -6122,7 +6122,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         titulo: "VITÓRIA E VILA VELHA, ES",
 
         hero: {
-            imagem: "./img/carroselViajarTravelNews/CCARROSSEL - Vila Velha, ES - Convento da Penha (Foto Tadeu Bianconi).jpg",
+            imagem: "./img/edicao_junho_2026/CCARROSSEL - Vila Velha, ES - Convento da Penha (Foto Tadeu Bianconi).jpg",
             subtitulo: "Entre o mar, as montanhas <br> e a fé",
             legenda: "Foto: Tadeu Bianconi"
         },
@@ -6180,7 +6180,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             },
              {
                 tipo: "box",
-                imagemFundo: "./img/carroselViajarTravelNews/CARROSSEL - A autêntica moqueca capixaba (Foto Receita Capixaba).webp",
+                imagemFundo: "./img/edicao_junho_2026/CARROSSEL - A autêntica moqueca capixaba (Foto Receita Capixaba).webp",
                 titulo: "&quot;Moqueca é capixaba, o resto é peixada&quot;.",
                 texto: `
                 Quem já ouviu essa famosa frase sabe que a moqueca capixaba é um dos pratos mais
@@ -6595,504 +6595,585 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
         ],
 
         curiango: ``
-    }
-];
-
-window.paginasData = paginasData;
-
-(function () {
-    const artigos = [
-        {
-            card: 1,
-            id: 31,
-            titulo: "TRANSPANTANEIRA: VIDA SELVAGEM SEM FILTROS",
-            linhasTitulo: 1,
-            imagens: [
-                "img/ed_julho/CARD 1 - Foto1.jpg",
-                "img/ed_julho/CARD 1 - Foto 2.jpg",
-                "img/ed_julho/CARD 1 - Foto 3.jpg",
-                "img/ed_julho/CARD 1 - Foto 4 (POUSADA PIUVAL).avif",
-                "img/ed_julho/CARD 1 - Foto 5.jpg"
-            ]
+    },
+    {
+        id: 31,
+        titulo: "TRANSPANTANEIRA: VIDA SELVAGEM SEM FILTROS",
+        hero: {
+            imagem: "img/ed_julho/CARD 1 - Foto1.jpg",
+            subtitulo: ""
         },
-        {
-            card: 2,
-            id: 32,
-            titulo: "DE TREM ATÉ MORRETES",
-            linhasTitulo: 1,
-            imagens: [
-                "img/ed_julho/CARD 2 - Foto 1.jpg",
-                "img/ed_julho/CARD 2 - Foto 2.jpg",
-                "img/ed_julho/CARD 2 - Foto 3 (O FAMOSO BARREADO).jpg",
-                "img/ed_julho/CARD 2 - Foto 4 (A CHARMOSA MORRETES).jpeg",
-                "img/ed_julho/CARD 2 - Estrada da Graciosa.jpg"
-            ]
-        },
-        {
-            card: 3,
-            id: 33,
-            titulo: "VOANDO DE BALÃO NO ACRE: O DESPERTAR DA AMAZÔNIA POR OUTRO ÂNGULO",
-            linhasTitulo: 2,
-            imagens: [
-                "img/ed_julho/CARD 3 - Foto 1.jpeg",
-                "img/ed_julho/CARD 3 - Foto 2.jpg",
-                "img/ed_julho/CARD 3 - Foto 3.jpg",
-                "img/ed_julho/CARD 3 - Foto 4.webp",
-                "img/ed_julho/CARD 3 - Foto 5 (Geoglifos do Acre).jpeg"
-            ]
-        },
-        {
-            card: 4,
-            id: 34,
-            titulo: "O LOBO-GUARÁ E O SANTUÁRIO DO CARAÇA",
-            linhasTitulo: 1,
-            imagens: [
-                "img/ed_julho/CARD 4 - Foto 1.jpg",
-                "img/ed_julho/CARD 4 - Foto 2.webp",
-                "img/ed_julho/CARD 4 - Foto 3.jpeg",
-                "img/ed_julho/CARD 4 - Foto 4.jpeg",
-                "img/ed_julho/CARD 4 - Foto 5.jpeg"
-            ]
-        },
-        {
-            card: 5,
-            id: 35,
-            titulo: "A IMPRESSIONANTE SERRA DO RIO DO RASTRO",
-            linhasTitulo: 1,
-            imagens: [
-                "img/ed_julho/CARD 5 - Foto 1.jpeg",
-                "img/ed_julho/CARD 5 - Foto 2.jpg",
-                "img/ed_julho/CARD 5 - Foto 3.jpeg",
-                "img/ed_julho/CARD 5 - Foto 4.jpeg",
-                "img/ed_julho/CARD 5 - Foto 5.jpg"
-            ]
-        }
-    ];
-
-    function escaparHtml(texto) {
-        return texto
-            .replaceAll("&", "&amp;")
-            .replaceAll("<", "&lt;")
-            .replaceAll(">", "&gt;")
-            .replaceAll('"', "&quot;");
-    }
-
-    function obterBlocos(texto) {
-        const marcadores = [...texto.matchAll(/^CARD ([1-5])\s*$/gm)];
-        return marcadores.map((marcador, indice) => {
-            const inicio = marcador.index + marcador[0].length;
-            const fim = marcadores[indice + 1]?.index ?? texto.length;
-            return texto.slice(inicio, fim)
-                .replace(/^=+\s*$/gm, "")
-                .trim();
-        });
-    }
-
-    function criarSecoes(configuracao, bloco) {
-        const linhas = bloco.split(/\r?\n/);
-        let titulosRemovidos = 0;
-
-        while (linhas.length && titulosRemovidos < configuracao.linhasTitulo) {
-            const linha = linhas.shift();
-            if (linha.trim()) titulosRemovidos += 1;
-        }
-
-        const paragrafos = linhas.join("\n")
-            .trim()
-            .split(/\n\s*\n/)
-            .map(paragrafo => escaparHtml(paragrafo.trim()).replace(/\r?\n/g, "<br>"));
-        const tamanhoGrupo = Math.ceil(paragrafos.length / 3);
-        const grupos = [
-            paragrafos.slice(0, tamanhoGrupo),
-            paragrafos.slice(tamanhoGrupo, tamanhoGrupo * 2),
-            paragrafos.slice(tamanhoGrupo * 2)
-        ].map(grupo => grupo.join("<br><br>"));
-
-        return [
+        secoes: [
             {
                 tipo: "texto",
-                fontSize: "18px",
-                conteudo: grupos[0]
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Atravessar a Rodovia Transpantaneira (MT-060) é fazer um safári por uma das estradas mais cênicas do mundo. A rota possui 145 km de extensão e mais de 120 pontes, ligando a cidade de Poconé ao distrito de Porto Jofre, no coração do Pantanal mato-grossense.
+                É um verdadeiro corredor ecológico cercado por uma biodiversidade impressionante!
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A cada quilômetro vencido sob a poeira da seca ou a lama da cheia, as margens da estrada ganham vida: são milhares de jacarés que dividem o espaço com capivaras, imponentes tuiuiús e uma infinidade de aves que pintam o céu pantaneiro. No final dessa rota cinematográfica, onde a estrada literalmente morre nas águas do Rio Cuiabá, chegamos em Porto Jofre, santuário mundial da onça-pintada. Esta matéria convida você a embarcar em um safári genuinamente brasileiro, desbravando a logística, os desafios e os encantos da estrada-parque mais famosa do país.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Safári a céu aberto"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A Transpantaneira é uma imersão direta na natureza, onde a vida selvagem é visível sem filtros, funcionando como um imenso anfiteatro natural. A região destaca-se pela alta concentração de onças-pintadas em Porto Jofre, a dinâmica cíclica das águas e uma biodiversidade visível em um ecossistema equilibrado.<br><br>
+                Alguns pontos tornam essa travessia verdadeiramente inesquecível, a começar por uma traçado único, onde a engenharia humana curva-se ao ritmo das águas, e materializa-se nas mais de 120 pontes de madeira e concreto - praticamente uma ponte por quilômetro - que funcionam como mirantes improvisados sobre rios e vazantes. Ao longo de toda a Transpantaneira existem fazendas e pousadas pantaneiras excelentes para pernoite.<br><br>
+                Prepare-se para um safári a céu aberto e uma vida selvagem abundante, com milhares de jacarés, capivaras, tuiuiús, veados e garças margeando toda a estrada até chegar ao final, Porto Jofre, conhecido como a Capital da onça-pintada, por concentrar a maior densidade de onças-pintadas do mundo. E para completar, é claro, o Turismo fotográfico: os animais são acostumados com os veículos, o que facilita registros extraordinários de pertinho.
+                `
             },
             {
                 tipo: "duas-imagens",
                 height: "420px",
-                imagens: configuracao.imagens.slice(1, 3)
+                imagens: [
+                    "img/ed_julho/CARD 1 - Foto 2.jpg",
+                    "img/ed_julho/CARD 1 - Foto 3.jpg"
+                ]
+            },
+            {
+                tipo: "quando-ir",
+                titulo: "Quando ir",
+                periodos: [
+                    {
+                        classe: "seca",
+                        nome: "Seca",
+                        meses: "(Maio a Setembro)",
+                        texto: "- Melhor época para ver animais reunidos em lagoas menores. Carros comuns circulam com facilidade na terra firme;"
+                    },
+                    {
+                        classe: "cheia",
+                        nome: "Cheia",
+                        meses: "(Outubro a Abril)",
+                        texto: "- A paisagem fica totalmente alagada, exigindo veículos 4x4 e atenção redobrada em determinados trechos que podem ficar intransitáveis."
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Etapas estratégicas"
             },
             {
                 tipo: "texto",
-                fontSize: "18px",
-                conteudo: grupos[1]
+                colunaUnica: true,
+                conteudo: `
+                Atravessar a Transpantaneira e ver a onça-pintada exige planejamento de paradas. Como a estrada tem 145 km de terra e muitas pontes, o ideal é dividir a viagem em três etapas estratégicas para aproveitar ao máximo.
+                `
             },
             {
-                tipo: "tres-imagens",
+                tipo: "titulo",
+                texto: "Etapa 1 - O Início (De Poconé ao Km 30)"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Esta primeira parte serve para você se acostumar com a estrada de terra batida e curtir os primeiros animais.<br><br>
+                <strong>Onde parar/Hospedar</strong> - <a class="article-external-link" href="https://pousadapiuval.com.br/?utm_source=google&utm_medium=organic&utm_campaign=google-meu-negocio" target="_blank" rel="noopener">Pousada Piuval</a> (Km 10) ou a <a class="article-external-link" href="https://www.tripadvisor.com.br/HotelsNear-g1191961-d10292923-Estrada_Transpantaneira-Pocone_State_of_Mato_Grosso.html" target="_blank" rel="noopener">Araras Pantanal Eco Lodge</a> (Km 32).<br>
+                <strong>O que fazer</strong> - Safáris fotográficos curtos e caminhadas pelas passarelas suspensas que cortam os capões e as áreas alagadas
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Etapa 2 – No Centro da Transpantaneira (Km 30 ao Km 100)"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Aqui o movimento de veículos diminui e a concentração de jacarés e aves às margens da rodovia fica muito maior.<br><br>
+                <strong>Onde parar/Hospedar</strong>  - Aymara Lodge (Km 25) ou o <a class="article-external-link" href="https://www.penaestrada.blog.br/onde-ficar-na-transpantaneira/" target="_blank" rel="noopener">Hotel Pantanal Mato Grosso</a> (Km 65, às margens do Rio Pixaim).<br>
+                <strong>O que fazer</strong> - Passeio de barco focado em avistar o gavião-belo e as ariranhas no Rio Pixaim, além de focagem noturna para ver jacarés e corujas
+                `
+            },
+            {
+                tipo: "duas-imagens",
                 height: "360px",
-                imagens: configuracao.imagens.slice(3)
+                imagens: [
+                    {
+                        src: "img/ed_julho/CARD 1 - Foto 4 (POUSADA PIUVAL).avif",
+                        legenda: "Pousada Piuval"
+                    },
+                    "img/ed_julho/CARD 1 - Foto 5.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Etapa 3 - O Destino Final (Porto Jofre - Km 145)"
             },
             {
                 tipo: "texto",
-                fontSize: "18px",
-                conteudo: grupos[2]
-            }
-        ];
-    }
-
-    const roteiroJulho2026 = `
-EDIÇÃO JUL 2026 
-
-
-FRASE PARA O CARROSSEL:   Nossos Brasis...
-
-FRASE DO MÊS:  
-
-
-"DAQUI A VINTE ANOS, VOCÊ ESTARÁ MAIS ARREPENDIDO PELAS COISAS QUE NÃO FEZ DO QUE PELAS QUE FEZ. PORTANTO, SOLTE AS AMARRAS. AFASTE-SE DO PORTO SEGURO. 
-AGARRE OS VENTOS FAVORÁVEIS EM SUAS VELAS. EXPLORE. SONHE. DESCUBRA."
-— H. Jackson Brown Jr.
-
-
-Por que na Lua Cheia? Texto fixo
-
-
-O que é a Viajar Travel News? Texto fixo
-
-
-PRÓXIMA LUA CHEIA:  
-
-Lua do Esturjão 
-
-Dias 27, 28 e 29/08 
- 
-Auge da Lua Cheia
-28 de Agosto, com o ápice às 01h:18 (Horário Oficial de Brasília)
-
-Origem do nome
-
-O nome foi batizado por povos nativos da América do Norte (que habitavam a região dos Grandes Lagos) porque Agosto marcava a época em que o esturjão — um peixe gigante de água doce que já habitava a Terra há mais de 200 milhões de anos — subia os rios e lagos em grandes quantidades, tornando-se a principal e mais fácil fonte de alimento para as tribos locais
-
-FAIXA DO MAPA E DO AVIAOZINHO PASSANDO
-
-
-NESTA EDIÇÃO...
-
-Os muitos Brasis...
-
-Em MATO GROSSO, na Rodovia Transpantaneira, cada quilômetro vencido sob a poeira da seca ou a lama da cheia vai ganhando vida, literalmente, nos milhares de jacarés, capivaras e tuiuiús que margeiam a estrada até Porto Jofre, reduto da onça-pintada (CARD 1).
-
-No PARANÁ, as janelas abertas do trem deixam entrar o ar puro da floresta, o som das cachoeiras que despencam da serra e o visual de rios cristalinos correndo por entre as pedras, 
-um circuito cinematográfico onde cada curva revela nova perspectiva da nossa biodiversidade (CARD 2).
-
-Muita gente conhece a Amazônia. Mas...e a 300m de altitude? Você já viu a Amazônia do alto? No ACRE, você vive essa experiência incrível! (CARD 3).  
-
-O Santuário do Caraça, em MINAS GERAIS, recebe, todas as noites, um visitante ilustre: o Lobo-Guará, em busca da sua porção diária de carne (CARD 4); e em SANTA CATARINA, é a Serra do Rio do Rastro, um dos cenários mais impressionantes do Brasil, que rouba a cena (CARD 5)
-
-Esta edição convida você a desbravar esse e outros caminhos do nosso Brasil, numa imersão direta na natureza. 
-
-Fátima Vasconcelos Nunes
-Jornalista
-
-==========================================================================
-
-DESTAQUE  |  OS MUITOS BRASIS
-
-
-CARD 1
-
-
-TRANSPANTANEIRA: VIDA SELVAGEM SEM FILTROS
-
-Atravessar a Rodovia Transpantaneira (MT-060) é fazer um safári por uma das estradas mais cênicas do mundo. A rota possui 145 km de extensão e mais de 120 pontes, ligando a cidade de Poconé ao distrito de Porto Jofre, no coração do Pantanal mato-grossense. 
-É um verdadeiro corredor ecológico cercado por uma biodiversidade impressionante!
-
-
-A cada quilômetro vencido sob a poeira da seca ou a lama da cheia, as margens da estrada ganham vida: são milhares de jacarés que dividem o espaço com capivaras, imponentes tuiuiús e uma infinidade de aves que pintam o céu pantaneiro. No final dessa rota cinematográfica, onde a estrada literalmente morre nas águas do Rio Cuiabá, chegamos em Porto Jofre, santuário mundial da onça-pintada. Esta matéria convida você a embarcar em um safári genuinamente brasileiro, desbravando a logística, os desafios e os encantos da estrada-parque mais famosa do país.
-
-
-Safári a céu aberto
-
-A Transpantaneira é uma imersão direta na natureza, onde a vida selvagem é visível sem filtros, funcionando como um imenso anfiteatro natural. A região destaca-se pela alta concentração de onças-pintadas em Porto Jofre, a dinâmica cíclica das águas e uma biodiversidade visível em um ecossistema equilibrado. 
-
-Alguns pontos tornam essa travessia verdadeiramente inesquecível, a começar por uma traçado único, onde a engenharia humana curva-se ao ritmo das águas, e materializa-se nas mais de 120 pontes de madeira e concreto - praticamente uma ponte por quilômetro - que funcionam como mirantes improvisados sobre rios e vazantes. Ao longo de toda a Transpantaneira existem fazendas e pousadas pantaneiras excelentes para pernoite.
-
-Prepare-se para um safári a céu aberto e uma vida selvagem abundante, com milhares de jacarés, capivaras, tuiuiús, veados e garças margeando toda a estrada até chegar ao final, Porto Jofre, conhecido como a Capital da onça-pintada, por concentrar a maior densidade de onças-pintadas do mundo. E para completar, é claro, o Turismo fotográfico: os animais são acostumados com os veículos, o que facilita registros extraordinários de pertinho.
-
-Quando ir 
-
-Seca (Maio a Setembro) - Melhor época para ver animais reunidos em lagoas menores. Carros comuns circulam com facilidade na terra firme;
-
-Cheia (Outubro a Abril) - A paisagem fica totalmente alagada, exigindo veículos 4x4 e atenção redobrada em determinados trechos que podem ficar intransitáveis.
-
-Etapas estratégicas
-
-Atravessar a Transpantaneira e ver a onça-pintada exige planejamento de paradas. Como a estrada tem 145 km de terra e muitas pontes, o ideal é dividir a viagem em três etapas estratégicas para aproveitar ao máximo. 
-
-Etapa 1 - O Início (De Poconé ao Km 30)
-Esta primeira parte serve para você se acostumar com a estrada de terra batida e curtir os primeiros animais. 
-
-Onde parar/Hospedar - Pousada Piuval (Km 10) ou a Araras Pantanal Eco Lodge (Km 32).
-O que fazer - Safáris fotográficos curtos e caminhadas pelas passarelas suspensas que cortam os capões e as áreas alagadas
-
-Etapa 2 – No Centro da Transpantaneira (Km 30 ao Km 100)
-Aqui o movimento de veículos diminui e a concentração de jacarés e aves às margens da rodovia fica muito maior. 
-
-Onde parar/Hospedar  - Aymara Lodge (Km 25) ou o Hotel Pantanal Mato Grosso (Km 65, às margens do Rio Pixaim).
-O que fazer - Passeio de barco focado em avistar o gavião-belo e as ariranhas no Rio Pixaim, além de focagem noturna para ver jacarés e corujas
-
-Etapa 3 - O Destino Final (Porto Jofre - Km 145)
-Aqui é o ponto alto da viagem, onde a rodovia termina, no Rio Cuiabá. É local obrigatório para quem quer ver a onça-pintada de perto. 
-
-Onde parar/Hospedar - O clássico Hotel Porto Jofre Pantanal Norte ou a Pousada Porto Jofre Pantanal Southwild.
-
-O que fazer - Embarcar nas lanchas rápidas (voadeiras) que navegam pelos rios Cuiabá, Piquiri e Três Irmãos. Os barcos se comunicam por rádio, o que aumenta bastante a chance de encontrar as onças descansando nas margens. 
-
-
-Na Rota dos Jacarés e das Onças: Aventura Humana e Selvagem pela Transpantaneira
-
-Cruzar a Rodovia Transpantaneira (MT-060) não é apenas fazer uma viagem de carro, mas transpor a tênue linha que divide a civilização do ápice da vida selvagem sul-americana, em sua máxima expressão de liberdade. Ao longo de seus 145 km de terra que ligam a histórica cidade de Poconé ao isolado distrito de Porto Jofre, no Mato Grosso, o asfalto cede lugar a uma das maiores concentrações de vida bravia do planeta, em seu estado mais bruto. 
-
-Ali, diferente de outros ecossistemas onde os animais se escondem, a biodiversidade é explícita, e se manifesta de forma crua, primitiva e abundante, consolidando a região como o último grande reduto de fauna preservada do continente.
-
-BOX
-
-Detalhes da Travessia
-
-Ponto de Partida: cidade de Poconé, que fica a aproximadamente 100 km de Cuiabá (MT);
-Ponto de Chegada: Porto Jofre, às margens do Rio Cuiabá, limite com o Mato Grosso do Sul;
-Tempo de viagem: o trajeto leva de 4 a 6 horas para ser percorrido, pois a velocidade é baixa (média de 30 km/h) devido às pontes estreitas e à fauna na pista. 
-Veículo recomendado: Carros altos, preferencialmente 4x4, principalmente durante a época de chuvas (novembro a março), quando a estrada pode ficar alagada.
-
-==========================================================================
-
-
-CARD 2
-
-
-DE TREM ATÉ MORRETES
-
-O passeio de trem Curitiba-Morretes, operado pela Serra Verde Express, é considerado uma das experiências cênicas mais impressionantes do Brasil e um dos trajetos ferroviários mais bonitos do mundo. A viagem corta a Serra do Mar paranaense por dentro da maior reserva contínua de Mata Atlântica do Brasil. Ao longo de 70km, a gente passa por 13 túneis e mais de 40 pontes e viadutos construídos no século XIX.
-
-
-A ferrovia que liga as duas cidades não é apenas um meio de transporte, mas um portal no tempo. Inaugurada em 1885 por engenheiros ousados que desafiaram a densa Mata Atlântica e os abismos da Serra do Mar paranaense, ela abriga hoje um dos passeios de trem mais famosos e impressionantes do mundo. Ao longo de aproximadamente quatro horas de viagem, o ritmo lento dos trilhos convida o viajante a desacelerar e contemplar uma engenharia monumental em perfeita harmonia com a natureza.
-
-
-Voando sobre o abismo
-
-A descida é um espetáculo de engenharia composto por 13 túneis escavados na rocha e 41 pontes e viadutos que desafiam a gravidade, e onde o trem vai serpenteando a imponente Serra do Mar, vencendo um desnível que desce do planalto até o nível do mar. A viagem é marcada por uma sucessão de cenários dramáticos e inesquecíveis. 
-
-Entre os pontos mais marcantes está o Viaduto Presidente Carvalho, onde o trem parece flutuar à beira de um penhasco, oferecendo uma vista vertiginosa do cânion. Outro destaque é a Ponte São João, uma imensa estrutura de aço que corta o vale a dezenas de metros de altura, cercada por picos imponentes como o Marumbi. Cachoeiras despencam entre as frestas da mata e rios de águas cristalinas correm paralelamente aos trilhos.
-
-Os vagões e o embarque
-
-O clima a bordo varia conforme a categoria escolhida. Nos vagões turísticos, o clima é de nostalgia e comunhão entre os passageiros, animados pelas explicações dos guias locais. Nos vagões boutique, o charme das varandas externas permite sentir o vento no rosto e ouvir o eco do apito do trem ricocheteando nas montanhas, criando a atmosfera perfeita para fotografias inesquecíveis.
-
-O embarque acontece na Estação Rodoferroviária de Curitiba. À medida em que o trem deixa a área urbana e começa a vencer o declive da serra, o cenário muda bruscamente. Os prédios dão lugar a um paredão verde-esmeralda vibrante, com o ar mais úmido e fresco, carregando o perfume da floresta nativa. 
-
-A jornada termina na pacata e charmosa Morretes, cidade histórica fundada no século XVIII. O contraste entre a imponência da serra e o casario colonial à beira do Rio Nhundiaquara coroa a experiência. Ali, o aroma do tradicional barreado — prato típico cozido por horas em panelas de barro — convida os viajantes a celebrar o fim de uma das rotas mais bonitas e poéticas do Brasil.
-
-BOX
-
-Os bilhetes são vendidos pela Serra Verde Express e os valores médios por trecho variam conforme a categoria
-Classe Turística: cerca de R$ 175 a R$ 219, incluindo kit lanche básico e guia;
-Classe Boutique (Temáticos): cerca de R$ 320 a R$ 450, com poltronas estofadas, open bar de bebidas e varanda externa;
-Litorina de Luxo: acima de R$ 500, com serviço premium e alta gastronomia inclusa. 
-
-Dica: Pacotes completos de um dia (incluindo ida de trem, almoço com ‘Barreado’ e retorno rodoviário) costumam girar entre R$ 390 e R$ 650 por pessoa. 
-
-IMPORTANTE: CHECAR OS PREÇOS ANTES, POIS OS VALORES COSTUMAM FLUTUAR  
-
-Roteiro de 1 Dia (Trem + Estrada da Graciosa)
-Para quem acha que pode ser cansativo fazer os dois trechos de trem, é possível combinar trilhos e estrada: 
-
-08h00 – Embarque: apresentação na Rodoferroviária de Curitiba; 
-08h30 às 12h30 – Descida da Serra: viagem contemplativa de trem cruzando pontes, túneis e cachoeiras da Mata Atlântica (sente-se do lado esquerdo para a melhor vista); 
-12h45 – Almoço Histórico: chegada a Morretes e parada imediata para comer o tradicional Barreado; 
-14h30 – Caminhada Cultural: passeio a pé pelo centro histórico de Morretes, margeando o tranquilo Rio Nhundiaquara; 
-16h00 – Retorno Cênico: volta para Curitiba de van de turismo ou ônibus pela Estrada da Graciosa, uma rodovia antiga repleta de curvas, hortênsias e portais históricos.
-
-Onde Comer o Legítimo Barreado
-
-O prato típico da região é cozido por 24 horas e servido com farinha de mandioca e banana. 
-
-Excelentes opções validadas por viajantes incluem: 
-
-Restaurante Madalozo - Um dos maiores e mais tradicionais da cidade, localizado bem à beira do rio, famoso pelo sistema de rodízio de barreado e frutos do mar;
-
-Villa Morretes -  Une tradição e sofisticação em um casarão rústico cercado por belos jardins;
-
-Restaurante Ponte Velha - Oferece um buffet farto com barreado livre, peixes fritos e 
-acompanhamentos com preço justo;
-
-Olimpo Restaurante: Altamente recomendado pelo atendimento e pela vista privilegiada das varandas para a Serra do Mar.
-
-
-==========================================================================
-
-CARD 3
-
-VOANDO DE BALÃO NO ACRE: 
-O DESPERTAR DA AMAZÔNIA POR OUTRO ÂNGULO
-
-O passeio de balão no Acre é uma das experiências de ecoturismo mais exclusivas e impressionantes do Brasil. 
-Operada nas proximidades da capital, Rio Branco, a atividade combina a emoção da aventura com a contemplação silenciosa 
-da maior biodiversidade do planeta.
-
-
-O grande diferencial é sobrevoar a Floresta Amazônica ao amanhecer e conseguir visualizar nitidamente os famosos geoglifos (desenhos geométricos milenares feitos na terra por povos antigos). A aventura começa ainda de madrugada, os passageiros costumam se encontrar por volta das 3h30 da manhã em Rio Branco para acompanhar o impressionante processo de inflagem do balão. 
-
-O voo livre dura entre 40 e 60 minutos lá no alto, dependendo das condições do vento, e o passeio tradicional se encerra com um café da manhã regional e o clássico brinde com espumante para celebrar o pouso.
-
-Como essas figuras arqueológicas só podem ser plenamente compreendidas e apreciadas quando vistas de cima, o balonismo tornou-se a ferramenta perfeita para essa viagem no tempo.
-
-Ao subir a cerca de 300 metros de altura, o voo revela o nascer do sol iluminando a imensidão verde da Floresta Amazônica. A sensação lá no alto é descrita como um misto de paz profunda e liberdade absoluta. 
-
-
-Os Misteriosos Geoglifos do Acre, um legado da Amazônia
-
-O grande diferencial deste passeio é a oportunidade única de visualizar os Geoglifos do Acre,  imensas estruturas geométricas escavadas no solo da Amazônia Ocidental. Feitos por povos indígenas pré-colombianos há cerca de 2.000 anos, esses desenhos gigantes possuem formatos perfeitos de círculos, quadrados e retângulos.
-
-Durante séculos, essas valas profundas e muretas de terra permaneceram encobertas pela densa floresta amazônica, elas só começaram a ser amplamente avistadas do alto a partir da década de 1970. Hoje, já existem mais de 800 dessas estruturas catalogadas na região. 
-A complexidade matemática das valas prova que a floresta abrigava sociedades organizadas e avançadas. Pesquisas indicam o uso para rituais religiosos ou reuniões políticas, não como habitação permanente.
-
-Devido a sua grande relevância, o IPHAN tombou o sítio Jacó Sá como patrimônio nacional. 
-Atualmente, o conjunto concorre a uma vaga na lista de Patrimônio Mundial da UNESCO. 
-
-Onde ficar
-
-Centro Histórico (Melhor para turismo e logística)
-Ficar no centro facilita o deslocamento na madrugada e permite que você conheça os principais pontos turísticos à pé durante o dia (como o Palácio Rio Branco e o Calçadão da Gameleira). 
-
-Hotel Nobile Suítes Gran Lumni - Uma das opções mais confortáveis da cidade, com ótima estrutura, piscina, bar e café da manhã;
-
-Inácio Palace Hotel - Uma opção tradicional com excelente custo-benefício, quartos práticos, piscina e restaurante interno;
-
-Diff Hotel: Opção de padrão moderno muito elogiada, que se destaca pela piscina de cobertura com vista da cidade.
-
-BOX 
-
-Detalhes do Voo
-Duração - Os voos duram entre 40 e 60 minutos, dependendo estritamente das condições do vento; 
-Capacidade - Existem opções de balões menores (para casais) e cestos maiores que comportam até 8 passageiros;
-Tradição - Ao pousar, os viajantes costumam celebrar a experiência com um tradicional brinde de espumante ou café da manhã regional no campo.
-
-Dicas para quem vai voar
-
-Avise à Recepção: informe ao hotel que você precisará sair de madrugada (por volta das 3h). Como perderá o horário padrão do café da manhã, pergunte na Recepção se eles podem deixar um "kit lanche" pronto para você levar;
-
-Deixe o transporte agendado: Conseguir carros por aplicativo às 3h da manhã em Rio Branco pode demorar um pouco mais do que o normal. Deixe um táxi pré-agendado com a recepção do hotel na noite anterior para não se atrasar.
-
-==========================================================================
-
-CARD 4
-
-O LOBO-GUARÁ E O SANTUÁRIO DO CARAÇA
-
-O Santuário do Caraça é um dos destinos mais fascinantes e místicos de Minas Gerais. Localizado na Serra do Espinhaço, entre os municípios de Catas Altas e Santa Bárbara, 
-o complexo fica a cerca de 120 km de Belo Horizonte. 
-Fundado em 1774, ele mistura, em um só lugar, fé, arquitetura histórica neogótica e ecoturismo em uma gigantesca 
-Reserva Particular do Patrimônio Natural (RPPN).
-
-Para quem busca uma experiência de viagem profunda, que une paz espiritual, contato íntimo com a vida selvagem e imersão na história colonial do Brasil, o Santuário do Caraça é o destino ideal. Erguido no coração de uma imponente cordilheira na Serra do Espinhaço, em Minas Gerais, o local funciona há mais de 250 anos como um refúgio sagrado, cercado por mais de 11 mil hectares de Mata Atlântica e Cerrado preservados.
-
-A hora do Lobo  
-
-O momento mais místico do Caraça acontece quando a noite cai. É a Hora do Lobo,  atrativo mais famoso e singular do Caraça. Desde 1982, os padres mantêm o hábito de deixar uma bandeja com alimentos no adro de pedra da igreja. Em um silêncio absoluto respeitado pelos visitantes, lobos-guarás selvagens costumam descer da mata para se alimentar. Esse impressionante exemplo de convivência harmoniosa entre o ser humano e a fauna silvestre é uma das poucas oportunidades no mundo de observar esse belo e tímido animal tão de perto.
-
-Complexo Histórico e Cultural
-O coração do Caraça abriga estruturas que contam séculos de história brasileira:
-
-Igreja de Nossa Senhora Mãe dos Homens – A imponente construção em estilo neogótico - a primeira desse estilo no Brasil - guarda vitrais franceses belíssimos e o quadro "A Última Ceia", pintado pelo célebre artista colonial Mestre Ataíde; 
-
-Antigo Colégio - Funcionou por mais de um século como colégio e seminário onde estudaram figuras ilustres da nossa história, incluindo os ex-presidentes Afonso Pena e Artur Bernardes. Em 1968, um grande incêndio destruiu parte do prédio, que hoje abriga um riquíssimo museu e uma biblioteca histórica.
-
-Ecoturismo e Cachoeiras
-
-Com mais de 11 mil hectares de área preservada em uma zona de transição entre a Mata Atlântica e o Cerrado, o parque oferece dezenas de atrativos naturais, entre elas a 
-Cascatinha (um conjunto de quedas d'água com piscinas naturais de coloração escura) e a Prainha (um ótimo banco de areia seguro para crianças), trilhas de fácil acesso.
-Já quem busca desafios maiores, as subidas até os picos da cordilheira, como o Pico da Carapuça, Pico do Inficionado e o Pico do Sol - o ponto mais alto, que revela visuais impressionantes do mar de montanhas mineiras. 
-
-BOX 
-
-Visitação diária: o parque fica aberto para visitas de um dia. A portaria cobra uma taxa de entrada por pessoa, funcionando geralmente das 8h às 17h. Checar antes de ir. 
-
-Pousada do Caraça: para viver a experiência completa (inclusive ver o lobo-guará à noite), o recomendado é dormir no próprio complexo. A Pousada do Caraça funciona nas alas do antigo colégio e as diárias funcionam em regime de pensão completa (incluindo café da manhã, almoço e jantar mineiro feito no fogão a lenha).
-
-
-CARD 5
-
-A IMPRESSIONANTE SERRA DO RIO DO RASTRO
-
-Um dos principais cartões-postais de Santa Catarina, a Serra do Rio do Rastro é famosa por abrigar uma das estradas mais impressionantes e sinuosas do mundo. 
-Cortada pela rodovia SC-390, a rota interliga o município de Lauro Müller (no pé da serra) à cidade de Bom Jardim da Serra (no planalto serrano), alcançando mais de 1.421 metros de altitude.
-
-
-
-O  Mirante Principal está localizado no topo da serra, oferecendo uma vista panorâmica espetacular de toda a estrada iluminada e das montanhas. Pertinho do topo fica o Cânion da Ronda, que conta com um parque eólico e proporciona uma vista magnífica dos desfiladeiros.
-Famoso pelas formações rochosas pontiagudas, o Cânion do Funil é muito procurado para trilhas e passeios de quadriciclo, e o Monumento aos Tropeiros homenageia os antigos viajantes que desbravavam a região no lombo de mulas. 
-
-
-A Serra do Rio do Rastro é um dos cenários mais impressionantes do Brasil. Localizada ao sul de Santa Catarina, a rodovia SC-390 rasga a Cordilheira do Mar e conecta o litoral ao planalto serrano. São mais de 250 curvas fechadas em um percurso de tirar o fôlego.
-
-O trecho mais famoso possui cerca de 8 a 12 km de extensão, cercados por penhascos, cachoeiras e pela rica vegetação da Mata Atlântica. A estrada atinge mais de 1.400 metros de altitude em relação ao nível do mar. Durante a subida, a paisagem se transforma drasticamente, revelando paredões de rocha cobertos pela Mata Atlântica e imensas cachoeiras. No topo, o mirante principal oferece uma visão panorâmica e inesquecível de toda a engenharia da pista iluminada à noite.
-
-Prepare a câmera...
-
-O clima na região é outro espetáculo à parte. Para os amantes da fotografia, é comum a chegada repentina da névoa espessa, chamada localmente de "viração", que cobre a serra em poucos minutos. No inverno, as temperaturas frequentemente caem abaixo de zero, trazendo geada e, ocasionalmente, episódios de neve que atraem milhares de turistas em busca do frio europeu no Brasil.
-
-Além do asfalto desafiador, a região abriga cânions gigantescos, como o do Funil e o da Ronda, ideais para o ecoturismo. A gastronomia local é rica e reconfortante, destacando o pinhão, o churrasco e o autêntico café serrano. É o destino perfeito para quem ama aventura, fotografia, belas estradas e o contato direto com a natureza selvagem.
-
-
-
-O acesso para quem quer subir a serra começa na cidade de Lauro Müller. Quem prefere descer inicia o trajeto por Bom Jardim da Serra. O mirante no topo fica a aproximadamente 200 km de Florianópolis. Toda a rota principal é asfaltada e bem conservada, mas exige extrema cautela dos motoristas e motociclistas devido à inclinação acentuada e à frequente presença de neblina (viração). 
-
-
-Escolhendo a melhor região
-
-Bom Jardim da Serra (No Topo): para quem busca a clássica experiência de turismo de inverno e ecoturismo: você já acorda pertinho do mirante principal e dos maiores cânions (Ronda e Funil). O clima é bem mais frio, ideal para curtir lareira e vinho no inverno.
-
-Lauro Müller ou Orleans (No Pé da Serra): para viajantes em trânsito ou entusiastas que querem focar na pilotagem e na subida da estrada: as tarifas costumam ser mais econômicas. 
-É a melhor opção se você pretende começar o seu dia fazendo a subida completa da serra de carro, moto ou bicicleta logo cedo.
-
-São Joaquim ou Urubici (Cidades Vizinhas): para quem busca um roteiro mais longo pela Serra Catarinense e quer usar uma cidade maior como base para explorar a região: ficam a cerca de 1h a 1h30 do mirante. Possuem infraestrutura de hotelaria e vinícolas muito maiores.
-
-Onde ficar
-
-Para hospedar-se na região da Serra do Rio do Rastro, as duas principais bases são Bom Jardim da Serra (no topo, ideal para clima de montanha e cânions) e Lauro Müller (no pé da serra, excelente para a logística de subida). 
-
-Hospedagens de Destaque
-
-As principais opções de hospedagem na região oferecem perfis bem diferentes, desde o luxo rústico até o excelente custo-benefício:
-
-Rio do Rastro Eco Resort (Bom Jardim da Serra) - Hotel 3 Estrelas localizado exatamente às margens do mirante principal, no topo da serra. Oferece chalés de luxo com lareira, piscina aquecida, jacuzzi e um restaurante de alta gastronomia serrana. É perfeito para casais e experiências românticas de alto padrão; 
-
-Serra & Jardim Pousada (Bom Jardim da Serra): Hotel 2 Estrelas situado na área urbana da cidade alta. Conta com quartos aconchegantes com ar-condicionado, lareira nas áreas comuns e um café da manhã muito elogiado, sendo uma ótima escolha para famílias e viajantes que buscam conforto com preço acessível;
-
-Hotel Du Rastro (Lauro Müller): Estrategicamente localizado dentro do próprio circuito da serra (no distrito de Guatá, na base), oferece uma vista espetacular das montanhas direto das sacadas dos quartos, estacionamento coberto (ótimo para motociclistas) e restaurante próprio. 
-
-BOX
-Para planejar a sua viagem, você pode consultar o guia detalhado no Viagens e Caminhos ou ler relatos reais de viajantes no TripAdvisor. 
-
-
-=====================================================
-
-
-
-
-`;
-    const blocos = obterBlocos(roteiroJulho2026);
-
-    artigos.forEach((configuracao, indice) => {
-        window.paginasData.push({
-            id: configuracao.id,
-            titulo: configuracao.titulo,
-            hero: {
-                imagem: configuracao.imagens[0],
-                subtitulo: "DESTAQUE | OS MUITOS BRASIS"
+                colunaUnica: true,
+                conteudo: `
+                Aqui é o ponto alto da viagem, onde a rodovia termina, no Rio Cuiabá. É local obrigatório para quem quer ver a onça-pintada de perto.<br><br>
+                <strong>Onde parar/Hospedar</strong> - O clássico <a class="article-external-link" href="http://www.portojofre.com.br/" target="_blank" rel="noopener">Hotel Porto Jofre Pantanal Norte</a> ou a <a class="article-external-link" href="https://www.portojofrepantanal.com.br/" target="_blank" rel="noopener">Pousada Porto Jofre Pantanal Southwild</a>.<br><br>
+                <strong>O que fazer</strong> - Embarcar nas lanchas rápidas (voadeiras) que navegam pelos rios Cuiabá, Piquiri e Três Irmãos. Os barcos se comunicam por rádio, o que aumenta bastante a chance de encontrar as onças descansando nas margens.
+                `
             },
-            secoes: criarSecoes(configuracao, blocos[indice]),
-            curiango: ""
-        });
-    });
-})();
+            {
+                tipo: "titulo",
+                texto: "Na Rota dos Jacarés e das Onças: <br> Aventura Humana e Selvagem pela Transpantaneira"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Cruzar a Rodovia Transpantaneira (MT-060) não é apenas fazer uma viagem de carro, mas transpor a tênue linha que divide a civilização do ápice da vida selvagem sul-americana, em sua máxima expressão de liberdade. Ao longo de seus 145 km de terra que ligam a histórica cidade de Poconé ao isolado distrito de Porto Jofre, no Mato Grosso, o asfalto cede lugar a uma das maiores concentrações de vida bravia do planeta, em seu estado mais bruto.<br><br>
+                Ali, diferente de outros ecossistemas onde os animais se escondem, a biodiversidade é explícita, e se manifesta de forma crua, primitiva e abundante, consolidando a região como o último grande reduto de fauna preservada do continente.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Detalhes da Travessia",
+                conteudo: `
+                <strong>Ponto de Partida:</strong> cidade de Poconé, que fica a aproximadamente 100 km de Cuiabá (MT);<br>
+                <strong>Ponto de Chegada:</strong> Porto Jofre, às margens do Rio Cuiabá, limite com o Mato Grosso do Sul;<br>
+                Tempo de viagem: o trajeto leva de 4 a 6 horas para ser percorrido, pois a velocidade é baixa (média de 30 km/h) devido às pontes estreitas e à fauna na pista.<br>
+                <strong>Veículo recomendado</strong>: Carros altos, preferencialmente 4x4, principalmente durante a época de chuvas (novembro a março), quando a estrada pode ficar alagada.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 32,
+        titulo: "DE TREM ATÉ MORRETES",
+        hero: {
+            imagem: "img/ed_julho/CARD 2 - Foto 1.jpg",
+            subtitulo: ""
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                <em>O passeio de trem Curitiba-Morretes, operado pela <a class="article-external-link" href="https://serraverdeexpress.com.br/" target="_blank" rel="noopener">Serra Verde Express</a>, é considerado uma das experiências cênicas mais impressionantes do Brasil e um dos trajetos ferroviários mais bonitos do mundo. A viagem corta a Serra do Mar paranaense por dentro da maior reserva contínua de Mata Atlântica do Brasil. Ao longo de 70km, a gente passa por 13 túneis e mais de 40 pontes e viadutos construídos no século XIX.</em>
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A ferrovia que liga as duas cidades não é apenas um meio de transporte, mas um portal no tempo. Inaugurada em 1885 por engenheiros ousados que desafiaram a densa Mata Atlântica e os abismos da Serra do Mar paranaense, ela abriga hoje um dos passeios de trem mais famosos e impressionantes do mundo. Ao longo de aproximadamente quatro horas de viagem, o ritmo lento dos trilhos convida o viajante a desacelerar e contemplar uma engenharia monumental em perfeita harmonia com a natureza.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Voando sobre o abismo"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A descida é um espetáculo de engenharia composto por 13 túneis escavados na rocha e 41 pontes e viadutos que desafiam a gravidade, e onde o trem vai serpenteando a imponente Serra do Mar, vencendo um desnível que desce do planalto até o nível do mar. A viagem é marcada por uma sucessão de cenários dramáticos e inesquecíveis.<br><br>
+                Entre os pontos mais marcantes está o <em>Viaduto Presidente Carvalho</em>, onde o trem parece flutuar à beira de um penhasco, oferecendo uma vista vertiginosa do cânion. Outro destaque é a <em>Ponte São João</em>, uma imensa estrutura de aço que corta o vale a dezenas de metros de altura, cercada por picos imponentes como o Marumbi. Cachoeiras despencam entre as frestas da mata e rios de águas cristalinas correm paralelamente aos trilhos.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/ed_julho/CARD 2 - Foto 2.jpg",
+                    {
+                        src: "img/ed_julho/CARD 2 - Foto 3 (O FAMOSO BARREADO).jpg",
+                        legenda: "O famoso barreado"
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Os vagões e o embarque"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O clima a bordo varia conforme a categoria escolhida. Nos vagões turísticos, o clima é de nostalgia e comunhão entre os passageiros, animados pelas explicações dos guias locais. Nos vagões boutique, o charme das varandas externas permite sentir o vento no rosto e ouvir o eco do apito do trem ricocheteando nas montanhas, criando a atmosfera perfeita para fotografias inesquecíveis.<br><br>
+                O embarque acontece na Estação Rodoferroviária de Curitiba. À medida em que o trem deixa a área urbana e começa a vencer o declive da serra, o cenário muda bruscamente. Os prédios dão lugar a um paredão verde-esmeralda vibrante, com o ar mais úmido e fresco, carregando o perfume da floresta nativa.<br><br>
+                A jornada termina na pacata e charmosa Morretes, cidade histórica fundada no século XVIII. O contraste entre a imponência da serra e o casario colonial à beira do Rio Nhundiaquara coroa a experiência. Ali, o aroma do tradicional <em>barreado</em> — prato típico cozido por horas em panelas de barro — convida os viajantes a celebrar o fim de uma das rotas mais bonitas e poéticas do Brasil.
+                `
+            },
+            {
+                tipo: "box",
+                conteudo: `
+                Os bilhetes são vendidos pela <a class="article-external-link" href="https://serraverdeexpress.com.br/" target="_blank" rel="noopener">Serra Verde Express</a> e os valores médios por trecho variam conforme a categoria<br>
+                <strong>Classe Turística:</strong> cerca de R$ 175 a R$ 219, incluindo kit lanche básico e guia;<br>
+                <strong>Classe Boutique (Temáticos):</strong> cerca de R$ 320 a R$ 450, com poltronas estofadas, <em>open bar</em> de bebidas e varanda externa;<br>
+                <strong>Litorina de Luxo:</strong> acima de R$ 500, com serviço premium e alta gastronomia inclusa.<br><br>
+                <em><strong>Dica:</strong></em> Pacotes completos de um dia (incluindo ida de trem, almoço com ‘Barreado’ e retorno rodoviário) costumam girar entre R$ 390 e R$ 650 por pessoa.<br><br>
+                <strong>IMPORTANTE: CHECAR OS PREÇOS ANTES, POIS OS VALORES COSTUMAM FLUTUAR</strong>
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Roteiro de 1 Dia (Trem + Estrada da Graciosa)"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Para quem acha que pode ser cansativo fazer os dois trechos de trem, é possível combinar trilhos e estrada:<br><br>
+                <strong>08h00 – Embarque:</strong> apresentação na Rodoferroviária de Curitiba;<br>
+                <strong>08h30 às 12h30 – Descida da Serra:</strong> viagem contemplativa de trem cruzando pontes, túneis e cachoeiras da Mata Atlântica (sente-se do lado esquerdo para a melhor vista);<br>
+                <strong>12h45 – Almoço Histórico:</strong> chegada a Morretes e parada imediata para comer o tradicional Barreado;<br>
+                <strong>14h30 – Caminhada Cultural:</strong> passeio a pé pelo centro histórico de Morretes, margeando o tranquilo Rio Nhundiaquara;<br>
+                <strong>16h00 – Retorno Cênico:</strong> volta para Curitiba de van de turismo ou ônibus pela Estrada da Graciosa, uma rodovia antiga repleta de curvas, hortênsias e portais históricos.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "360px",
+                imagens: [
+                    {
+                        src: "img/ed_julho/CARD 2 - Foto 4 (A CHARMOSA MORRETES).jpeg",
+                        legenda: "A charmosa Morretes"
+                    },
+                    {
+                        src: "img/ed_julho/CARD 2 - Estrada da Graciosa.jpg",
+                        legenda: "Estrada da Graciosa"
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Onde Comer o Legítimo Barreado"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                O prato típico da região é cozido por 24 horas e servido com farinha de mandioca e banana.<br><br>
+                Excelentes opções validadas por viajantes incluem:<br><br>
+                <strong>Restaurante Madalozo</strong> - Um dos maiores e mais tradicionais da cidade, localizado bem à beira do rio, famoso pelo sistema de rodízio de barreado e frutos do mar;<br><br>
+                <a class="article-external-link" href="https://www.instagram.com/villamorretes.oficial/" target="_blank" rel="noopener">Villa Morretes</a> -  Une tradição e sofisticação em um casarão rústico cercado por belos jardins;<br><br>
+                <a class="article-external-link" href="http://www.morretespontevelha.com.br/" target="_blank" rel="noopener">Restaurante Ponte Velha</a> - Oferece um buffet farto com barreado livre, peixes fritos e acompanhamentos com preço justo;<br><br>
+                <strong>Olimpo Restaurante:</strong> Altamente recomendado pelo atendimento e pela vista privilegiada das varandas para a Serra do Mar.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 33,
+        titulo: "VOANDO DE BALÃO NO ACRE: <br> O DESPERTAR DA AMAZÔNIA POR OUTRO ÂNGULO",
+        hero: {
+            imagem: "img/ed_julho/CARD 3 - Foto 1.jpeg",
+            subtitulo: ""
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                <em>O passeio de balão no Acre é uma das experiências de ecoturismo mais exclusivas e impressionantes do Brasil.
+                Operada nas proximidades da capital, Rio Branco, a atividade combina a emoção da aventura com a contemplação silenciosa
+                da maior biodiversidade do planeta.</em>
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O grande diferencial é sobrevoar a Floresta Amazônica ao amanhecer e conseguir visualizar nitidamente os famosos geoglifos (desenhos geométricos milenares feitos na terra por povos antigos). A aventura começa ainda de madrugada, os passageiros costumam se encontrar por volta das 3h30 da manhã em Rio Branco para acompanhar o impressionante processo de inflagem do balão.<br><br>
+                O voo livre dura entre 40 e 60 minutos lá no alto, dependendo das condições do vento, e o passeio tradicional se encerra com um café da manhã regional e o clássico brinde com espumante para celebrar o pouso.<br><br>Como essas figuras arqueológicas só podem ser plenamente compreendidas e apreciadas quando vistas de cima, o balonismo tornou-se a ferramenta perfeita para essa viagem no tempo.<br><br>
+                Ao subir a cerca de 300 metros de altura, o voo revela o nascer do sol iluminando a imensidão verde da Floresta Amazônica. A sensação lá no alto é descrita como um misto de paz profunda e liberdade absoluta.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/ed_julho/CARD 3 - Foto 2.jpg",
+                    "img/ed_julho/CARD 3 - Foto 3.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Os Misteriosos Geoglifos do Acre, um legado da Amazônia"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O grande diferencial deste passeio é a oportunidade única de visualizar os <a class="article-external-link" href="https://pt.wikipedia.org/wiki/Geoglifos_do_Acre" target="_blank" rel="noopener">Geoglifos do Acre</a>,  imensas estruturas geométricas escavadas no solo da Amazônia Ocidental. Feitos por povos indígenas pré-colombianos há cerca de 2.000 anos, esses desenhos gigantes possuem formatos perfeitos de círculos, quadrados e retângulos.<br><br>
+                Durante séculos, essas valas profundas e muretas de terra permaneceram encobertas pela densa floresta amazônica, elas só começaram a ser amplamente avistadas do alto a partir da década de 1970. Hoje, já existem mais de 800 dessas estruturas catalogadas na região.<br><br>
+                A complexidade matemática das valas prova que a floresta abrigava sociedades organizadas e avançadas. Pesquisas indicam o uso para rituais religiosos ou reuniões políticas, não como habitação permanente.<br><br>
+                Devido a sua grande relevância, o <a class="article-external-link" href="https://g1.globo.com/ciencia-e-saude/noticia/2018/11/06/o-misterioso-geoglifo-de-2-mil-anos-que-deve-se-tornar-patrimonio-brasileiro.ghtml" target="_blank" rel="noopener">IPHAN</a> tombou o sítio Jacó Sá como patrimônio nacional.<br><br>
+                Atualmente, o conjunto concorre a uma vaga na lista de Patrimônio Mundial da UNESCO.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "360px",
+                imagens: [
+                    "img/ed_julho/CARD 3 - Foto 4.webp",
+                    {
+                        src: "img/ed_julho/CARD 3 - Foto 5 (Geoglifos do Acre).jpeg",
+                        legenda: "Geoglifos do Acre"
+                    }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Onde ficar"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                <strong>Centro Histórico (Melhor para turismo e logística)</strong><br>
+                Ficar no centro facilita o deslocamento na madrugada e permite que você conheça os principais pontos turísticos à pé durante o dia (como o Palácio Rio Branco e o Calçadão da Gameleira).<br><br>
+                <strong>Hotel Nobile Suítes Gran Lumni</strong> - Uma das opções mais confortáveis da cidade, com ótima estrutura, piscina, bar e café da manhã;<br><br>
+                <a class="article-external-link" href="https://inacio-palace.30hotel.com/" target="_blank" rel="noopener">Inácio Palace Hotel</a> - Uma opção tradicional com excelente custo-benefício, quartos práticos, piscina e restaurante interno;<br><br>
+                <strong>Diff Hotel:</strong> Opção de padrão moderno muito elogiada, que se destaca pela piscina de cobertura com vista da cidade.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Detalhes do Voo",
+                conteudo: `
+                <strong>Duração</strong> - Os voos duram entre 40 e 60 minutos, dependendo estritamente das condições do vento;<br>
+                <strong>Capacidade</strong> - Existem opções de balões menores (para casais) e cestos maiores que comportam até 8 passageiros;<br>
+                <strong>Tradição</strong> - Ao pousar, os viajantes costumam celebrar a experiência com um tradicional brinde de espumante ou café da manhã regional no campo.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Dicas para quem vai voar"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                <strong>Avise à Recepção:</strong> informe ao hotel que você precisará sair de madrugada (por volta das 3h). Como perderá o horário padrão do café da manhã, pergunte na Recepção se eles podem deixar um "kit lanche" pronto para você levar;<br><br>
+                <strong>Deixe o transporte agendado:</strong> Conseguir carros por aplicativo às 3h da manhã em Rio Branco pode demorar um pouco mais do que o normal. Deixe um táxi pré-agendado com a recepção do hotel na noite anterior para não se atrasar.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 34,
+        titulo: "O LOBO-GUARÁ E O SANTUÁRIO DO CARAÇA",
+        hero: {
+            imagem: "img/ed_julho/CARD 4 - Foto 1.jpg",
+            subtitulo: ""
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                <em>O <a class="article-external-link" href="https://www.santuariodocaraca.com.br/" target="_blank" rel="noopener">Santuário do Caraça</a> é um dos destinos mais fascinantes e místicos de Minas Gerais. Localizado na Serra do Espinhaço, entre os municípios de Catas Altas e Santa Bárbara,
+                o complexo fica a cerca de 120 km de Belo Horizonte.
+                Fundado em 1774, ele mistura, em um só lugar, fé, arquitetura histórica neogótica e ecoturismo em uma gigantesca
+                Reserva Particular do Patrimônio Natural (RPPN).</em>
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Para quem busca uma experiência de viagem profunda, que une paz espiritual, contato íntimo com a vida selvagem e imersão na história colonial do Brasil, o Santuário do Caraça é o destino ideal. Erguido no coração de uma imponente cordilheira na Serra do Espinhaço, em Minas Gerais, o local funciona há mais de 250 anos como um refúgio sagrado, cercado por mais de 11 mil hectares de Mata Atlântica e Cerrado preservados.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "A hora do Lobo"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O momento mais místico do Caraça acontece quando a noite cai. É a Hora do Lobo,  atrativo mais famoso e singular do Caraça. Desde 1982, os padres mantêm o hábito de deixar uma bandeja com alimentos no adro de pedra da igreja. Em um silêncio absoluto respeitado pelos visitantes, lobos-guarás selvagens costumam descer da mata para se alimentar. Esse impressionante exemplo de convivência harmoniosa entre o ser humano e a fauna silvestre é uma das poucas oportunidades no mundo de observar esse belo e tímido animal tão de perto.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/ed_julho/CARD 4 - Foto 2.webp",
+                    "img/ed_julho/CARD 4 - Foto 3.jpeg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Complexo Histórico e Cultural"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O coração do Caraça abriga estruturas que contam séculos de história brasileira:<br><br>
+                <strong>Igreja de Nossa Senhora Mãe dos Homens</strong> – A imponente construção em estilo neogótico - a primeira desse estilo no Brasil - guarda vitrais franceses belíssimos e o quadro "A Última Ceia", pintado pelo célebre artista colonial Mestre Ataíde;<br><br>
+                <strong>Antigo Colégio</strong> - Funcionou por mais de um século como colégio e seminário onde estudaram figuras ilustres da nossa história, incluindo os ex-presidentes Afonso Pena e Artur Bernardes. Em 1968, um grande incêndio destruiu parte do prédio, que hoje abriga um riquíssimo museu e uma biblioteca histórica.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "360px",
+                imagens: [
+                    "img/ed_julho/CARD 4 - Foto 4.jpeg",
+                    "img/ed_julho/CARD 4 - Foto 5.jpeg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Ecoturismo e Cachoeiras"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Com mais de 11 mil hectares de área preservada em uma zona de transição entre a Mata Atlântica e o Cerrado, o parque oferece dezenas de atrativos naturais, entre elas a
+                Cascatinha (um conjunto de quedas d'água com piscinas naturais de coloração escura) e a Prainha (um ótimo banco de areia seguro para crianças), trilhas de fácil acesso.<br><br>
+                Já quem busca desafios maiores, as subidas até os picos da cordilheira, como o Pico da Carapuça, Pico do Inficionado e o Pico do Sol - o ponto mais alto, que revela visuais impressionantes do mar de montanhas mineiras.
+                `
+            },
+            {
+                tipo: "box",
+                conteudo: `
+                <strong>Visitação diária:</strong> o parque fica aberto para visitas de um dia. A portaria cobra uma taxa de entrada por pessoa, funcionando geralmente das 8h às 17h. Checar antes de ir.<br><br>
+                <strong>Pousada do Caraça:</strong> para viver a experiência completa (inclusive ver o lobo-guará à noite), o recomendado é dormir no próprio complexo. A <a class="article-external-link" href="https://santuariodocaraca.com.br/hospede-se-conosco/pousada-do-caraca/" target="_blank" rel="noopener">Pousada do Caraça</a> funciona nas alas do antigo colégio e as diárias funcionam em regime de pensão completa (incluindo café da manhã, almoço e jantar mineiro feito no fogão a lenha).
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 35,
+        titulo: "A IMPRESSIONANTE SERRA DO RIO DO RASTRO",
+        hero: {
+            imagem: "img/ed_julho/CARD 5 - Foto 1.jpeg",
+            subtitulo: ""
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Um dos principais cartões-postais de Santa Catarina, a Serra do Rio do Rastro é famosa por abrigar uma das estradas mais impressionantes e sinuosas do mundo.
+                Cortada pela rodovia SC-390, a rota interliga o município de Lauro Müller (no pé da serra) à cidade de Bom Jardim da Serra (no planalto serrano), alcançando mais de 1.421 metros de altitude.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O  Mirante Principal está localizado no topo da serra, oferecendo uma vista panorâmica espetacular de toda a estrada iluminada e das montanhas. Pertinho do topo fica o Cânion da Ronda, que conta com um parque eólico e proporciona uma vista magnífica dos desfiladeiros.<br><br>
+                Famoso pelas formações rochosas pontiagudas, o Cânion do Funil é muito procurado para trilhas e passeios de quadriciclo, e o Monumento aos Tropeiros homenageia os antigos viajantes que desbravavam a região no lombo de mulas.<br><br>
+                A Serra do Rio do Rastro é um dos cenários mais impressionantes do Brasil. Localizada ao sul de Santa Catarina, a rodovia SC-390 rasga a Cordilheira do Mar e conecta o litoral ao planalto serrano. São mais de 250 curvas fechadas em um percurso de tirar o fôlego.<br><br>
+                O trecho mais famoso possui cerca de 8 a 12 km de extensão, cercados por penhascos, cachoeiras e pela rica vegetação da Mata Atlântica. A estrada atinge mais de 1.400 metros de altitude em relação ao nível do mar. Durante a subida, a paisagem se transforma drasticamente, revelando paredões de rocha cobertos pela Mata Atlântica e imensas cachoeiras. No topo, o mirante principal oferece uma visão panorâmica e inesquecível de toda a engenharia da pista iluminada à noite.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/ed_julho/CARD 5 - Foto 2.jpg",
+                    "img/ed_julho/CARD 5 - Foto 3.jpeg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Prepare a câmera..."
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O clima na região é outro espetáculo à parte. Para os amantes da fotografia, é comum a chegada repentina da névoa espessa, chamada localmente de "viração", que cobre a serra em poucos minutos. No inverno, as temperaturas frequentemente caem abaixo de zero, trazendo geada e, ocasionalmente, episódios de neve que atraem milhares de turistas em busca do frio europeu no Brasil.<br><br>
+                Além do asfalto desafiador, a região abriga cânions gigantescos, como o do Funil e o da Ronda, ideais para o ecoturismo. A gastronomia local é rica e reconfortante, destacando o pinhão, o churrasco e o autêntico café serrano. É o destino perfeito para quem ama aventura, fotografia, belas estradas e o contato direto com a natureza selvagem.<br><br>
+                O acesso para quem quer subir a serra começa na cidade de Lauro Müller. Quem prefere descer inicia o trajeto por Bom Jardim da Serra. O mirante no topo fica a aproximadamente 200 km de Florianópolis. Toda a rota principal é asfaltada e bem conservada, mas exige extrema cautela dos motoristas e motociclistas devido à inclinação acentuada e à frequente presença de neblina (viração).
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "360px",
+                imagens: [
+                    "img/ed_julho/CARD 5 - Foto 4.jpeg",
+                    "img/ed_julho/CARD 5 - Foto 5.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Escolhendo a melhor região"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                <strong>Bom Jardim da Serra (No Topo):</strong> para quem busca a clássica experiência de turismo de inverno e ecoturismo: você já acorda pertinho do mirante principal e dos maiores cânions (Ronda e Funil). O clima é bem mais frio, ideal para curtir lareira e vinho no inverno.<br><br>
+                <strong>Lauro Müller ou Orleans (No Pé da Serra):</strong> para viajantes em trânsito ou entusiastas que querem focar na pilotagem e na subida da estrada: as tarifas costumam ser mais econômicas.
+                É a melhor opção se você pretende começar o seu dia fazendo a subida completa da serra de carro, moto ou bicicleta logo cedo.<br><br>
+                <strong>São Joaquim ou Urubici (Cidades Vizinhas):</strong> para quem busca um roteiro mais longo pela Serra Catarinense e quer usar uma cidade maior como base para explorar a região: ficam a cerca de 1h a 1h30 do mirante. Possuem infraestrutura de hotelaria e vinícolas muito maiores.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Onde ficar"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Para hospedar-se na região da Serra do Rio do Rastro, as duas principais bases são Bom Jardim da Serra (no topo, ideal para clima de montanha e cânions) e Lauro Müller (no pé da serra, excelente para a logística de subida).
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Hospedagens de Destaque"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                As principais opções de hospedagem na região oferecem perfis bem diferentes, desde o luxo rústico até o excelente custo-benefício:<br><br>
+                <a class="article-external-link" href="http://www.riodorastro.com.br/?utm_source=google&utm_medium=organic&utm_campaign=google-meu-negocio" target="_blank" rel="noopener">Rio do Rastro Eco Resort</a> (Bom Jardim da Serra) - Hotel 3 Estrelas localizado exatamente às margens do mirante principal, no topo da serra. Oferece chalés de luxo com lareira, piscina aquecida, jacuzzi e um restaurante de alta gastronomia serrana. É perfeito para casais e experiências românticas de alto padrão;<br><br>
+                <a class="article-external-link" href="https://instagram.com/serraejardimpousada?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener">Serra &amp; Jardim Pousada</a> (Bom Jardim da Serra): Hotel 2 Estrelas situado na área urbana da cidade alta. Conta com quartos aconchegantes com ar-condicionado, lareira nas áreas comuns e um café da manhã muito elogiado, sendo uma ótima escolha para famílias e viajantes que buscam conforto com preço acessível;<br><br>
+                <a class="article-external-link" href="http://www.hoteldurastro.com.br/?utm_source=google&utm_medium=organic&utm_campaign=google-meu-negocio" target="_blank" rel="noopener">Hotel Du Rastro</a> (Lauro Müller): Estrategicamente localizado dentro do próprio circuito da serra (no distrito de Guatá, na base), oferece uma vista espetacular das montanhas direto das sacadas dos quartos, estacionamento coberto (ótimo para motociclistas) e restaurante próprio.
+                `
+            },
+            {
+                tipo: "box",
+                conteudo: `
+                Para planejar a sua viagem, você pode consultar o guia detalhado no <a class="article-external-link" href="https://www.viagensecaminhos.com/serra-do-rio-do-rastro-sc/" target="_blank" rel="noopener">Viagens e Caminhos</a> ou ler relatos reais de viajantes no <a class="article-external-link" href="https://www.tripadvisor.com.br/Attraction_Review-g4084093-d2405960-Reviews-Serra_do_Rio_do_Rastro-Lauro_Muller_State_of_Santa_Catarina.html" target="_blank" rel="noopener">TripAdvisor</a>.
+                `
+            }
+        ],
+        curiango: ""
+    }
+];
+
+window.paginasData = paginasData;
 
 function getPaginaId() {
     const params = new URLSearchParams(window.location.search);
@@ -7166,7 +7247,16 @@ function renderPagina() {
 
             if (sec.tipo === "texto") {
                 const classeIntro = sec.colunaUnica && !destaqueIntroAplicado ? ` class="intro-highlight"` : "";
-                html += `<p${classeIntro}${attrEstiloSecao}>${sec.conteudo ?? sec.texto ?? ""}</p>`;
+                let conteudoTexto = sec.conteudo ?? sec.texto ?? "";
+
+                if (sec.recuoParagrafos) {
+                    const marcadorRecuo = `<span class="article-paragraph-indent" aria-hidden="true"></span>`;
+                    conteudoTexto = marcadorRecuo + conteudoTexto
+                        .trim()
+                        .replace(/<br\s*\/?>\s*<br\s*\/?>/gi, `<br>${marcadorRecuo}`);
+                }
+
+                html += `<p${classeIntro}${attrEstiloSecao}>${conteudoTexto}</p>`;
                 if (classeIntro) {
                     destaqueIntroAplicado = true;
                 }
@@ -7174,6 +7264,29 @@ function renderPagina() {
 
             if (sec.tipo === "titulo") {
                 html += `<h2 class="section-title"${attrEstiloSecao}>${sec.texto ?? sec.conteudo ?? ""}</h2>`;
+            }
+
+            if (sec.tipo === "quando-ir") {
+                html += `
+        <section class="when-to-go" aria-labelledby="when-to-go-${pagina.id}">
+            <div class="when-to-go-heading">
+                <h2 id="when-to-go-${pagina.id}">${sec.titulo}</h2>
+            </div>
+            <div class="when-to-go-grid">
+                ${sec.periodos.map(periodo => `
+                    <article class="when-to-go-card when-to-go-card--${periodo.classe}">
+                        <div class="when-to-go-card-top">
+                            <span class="when-to-go-icon" aria-hidden="true"></span>
+                            <div>
+                                <h3>${periodo.nome}</h3>
+                                <span class="when-to-go-months">${periodo.meses}</span>
+                            </div>
+                        </div>
+                        <p>${periodo.texto}</p>
+                    </article>
+                `).join("")}
+            </div>
+        </section>`;
             }
 
             if (sec.tipo === "lista-destaque") {
