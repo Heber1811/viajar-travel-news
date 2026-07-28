@@ -1,0 +1,10 @@
+{
+  "name": "viajar-travel-news",
+  "private": true,
+  "scripts": {
+    "dev": "firebase serve --only hosting:previa-viajar-travel-news",
+    "prod": "firebase serve --only hosting:viajar-travel-news",
+    "deploy:dev": "firebase deploy --only hosting:previa-viajar-travel-news",
+    "deploy:prod": "firebase deploy --only hosting:viajar-travel-news"
+  }
+}
