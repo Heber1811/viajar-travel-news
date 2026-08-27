@@ -136,6 +136,92 @@
 		transform: scale(0.95);
 	}
 
+	.curiango-audio-btn {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		z-index: 5;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		width: fit-content;
+		margin: 0;
+		padding: 6px 9px 6px 6px;
+		border: 0;
+		border-radius: 40px;
+		background: rgba(255, 255, 255, 0.94);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+		color: #2f2f2f;
+		font-family: Arial, sans-serif;
+		font-size: 13px;
+		font-weight: 700;
+		cursor: pointer;
+		animation: curiango-pulse 2.8s ease-in-out infinite;
+	}
+
+	.curiango-audio-btn img {
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	.curiango-audio-icon {
+		color: #FD7D01;
+		font-size: 25px;
+		line-height: 1;
+	}
+
+	.curiango-audio-text {
+		font-size: 12px;
+		white-space: nowrap;
+	}
+
+	.curiango-audio-btn.is-playing {
+		box-shadow: 0 5px 18px rgba(126, 171, 49, 0.48);
+	}
+
+	@keyframes curiango-pulse {
+		0%, 100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.035);
+		}
+	}
+
+	@media (max-width: 600px) {
+		.curiango-audio-btn {
+			top: 8px;
+			right: 8px;
+			gap: 3px;
+			padding: 4px 7px 4px 4px;
+		}
+
+		.curiango-audio-btn img {
+			width: 32px;
+			height: 32px;
+		}
+
+		.curiango-audio-icon {
+			font-size: 22px;
+		}
+
+		.curiango-audio-text {
+			display: none;
+		}
+
+		.insta-btn {
+			bottom: 12px;
+			right: 10px;
+			padding: 8px;
+		}
+
+		.insta-btn img {
+			width: 24px;
+		}
+	}
+
 	.page-search-widget {
 		position: fixed;
 		top: 0;
@@ -448,11 +534,25 @@
 		overflow: hidden;
 	}
 
+	.letra2.carousel-main-title {
+		font-size: 2.5rem !important;
+	}
+
 	.mapa-aviao-wrapper {
 		max-width: 1225px;
 		margin-left: auto;
 		margin-right: auto;
 		overflow: hidden;
+	}
+
+	.edicao-banner-navio {
+		width: 100%;
+		height: 50vh;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		align-items: center;
+		position: relative;
 	}
 
 	.copa-brasil-feature {
@@ -594,12 +694,40 @@
 	}
 
 	@media screen and (max-width: 768px) {
+		.letra2.carousel-main-title {
+			font-size: 2.2rem !important;
+		}
+
 		#carouselExampleIndicators {
 			max-width: none;
 		}
 
 		.mapa-aviao-wrapper {
+			width: calc(100% - 30px) !important;
 			max-width: none;
+			margin-left: 15px !important;
+			margin-right: 15px !important;
+		}
+
+		.mapa-aviao-wrapper>.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.mapa-aviao-wrapper>.row>.col-12 {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.edicao-banner-navio {
+			height: 240px;
+			background-position: center;
+		}
+
+		.edicao-banner-navio>img {
+			left: 12px !important;
+			width: 135px !important;
+			max-height: 88% !important;
 		}
 
 		.carousel-bg {
@@ -730,119 +858,122 @@
 					<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
 					<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
 					<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="overlay">
 							<div class="text-top-left  ">
-								<p class="letra2" style="text-align: center !important;">Os muitos Brasis!
-									<br>
+								<p class="letra2 carousel-main-title" style="text-align: center !important;">Navegar é preciso...
 								</p>
 							</div>
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - A AMAZÔNIA VISTA DO ALTO.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - VOLTA AO MUNDO NO COSTA DELIZIOSA.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">A Amazônia vista do alto</h2>
+							<h2 class="letra"></h2>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<div class="overlay">
-							
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - RODOVIA TRANSPANTANEIRA.jpeg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL -TERRA DO FOGO.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Rodovia Transpantaneira</h2>
+							<h2 class="letra">Terra do Fogo</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PORTO JOFRE -´Foto Pantanal Explorer.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - ALMA LATINA.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Porto Jofre</h2>
-							<p style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">Foto: Pantanal Explorer</p>
+							<h2 class="letra">Alma Latina</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - TREM CURITIBA A MORRETES.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - VERÃO EUROPEU.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Trem Curitiba a Morretes</h2>
-						</div>
-					</div>
-					
-					<div class="carousel-item">
-						<div class="overlay">
-							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - Lobo Guará no Santuário do Caraça.jpg');">
-							</div>
-						</div>
-						<div class="carousel-caption ">
-							<h2 class="letra">Lobo-Guará no Santuário do Caraça</h2>
+							<h2 class="letra">Verão europeu</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - SANTUÁRIO DO CARAÇA.webp');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - VOLTA AO MUNDO PASSA POR DURBAN, ÁFRICA DO SUL.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Santuário do Caraça</h2>
+							<h2 class="letra">Volta ao mundo: Durban, África do Sul</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - SERRA DO RIO DO RASTRO - Foto Iraci Duarte Scaled.webp');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - FESTA DA LUA BRANCA.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Serra do Rio do Rastro</h2>
-							<p style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">Foto: Iraci Duarte</p>
-						</div>
-					</div>
-				
-					<div class="carousel-item">
-						<div class="overlay">
-							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - CÂNION DO FUNIL.jpeg');">
-							</div>
-						</div>
-						<div class="carousel-caption ">
-							<h2 class="letra">Cânion do Funil</h2>
+							<h2 class="letra">Festa da Lua Branca</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - BOM JARDIM DA SERRA - Foto Divulgação Prefeitura Municipal.webp');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - COSTA FASCINOSA.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Bom Jardim da Serra</h2>
-							<p style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">Foto: Divulgação Prefeitura Municipal</p>
+							<h2 class="letra">Costa Fascinosa</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - SABORES DA SERRA CATARINENSE - Foto Markito.webp');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - VERÃO EUROPEU 2.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Sabores da Serra Catarinense</h2>
-							<p style="text-align: center !important; text-transform: uppercase;font-style: italic; font-size: 10px;">Foto: Markito</p>
+							<h2 class="letra">Verão europeu</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg"
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - ALMA LATINA INSPIRA COSTA FASCINOSA.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Alma Latina inspira o Costa Fascinosa</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg"
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL  - COSTA SERENA.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Costa Serena</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg"
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - VERÃO EUROPEU NA COSTA CRUZEIROS.jpg');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Verão europeu na Costa Cruzeiros</h2>
 						</div>
 					</div>
 				</div>
@@ -858,7 +989,7 @@
 		</div>
 
 		<!-- O que é VTN -->
-		<div class="main-wrapper">
+		<div id="apresentacao-vtn" class="main-wrapper">
 			<div class="container">
 				<div class="row g-4 cards-equilibrados">
 					<div class="col-lg-6 col-12 mb-4 coluna-esquerda-cards">
@@ -901,9 +1032,7 @@
 										Ou apenas ocupará espaço, sem dizer nada.
 
 									</p>
-
-
-
+									<br>
 									<!-- <p> <strong>
 											Fátima Vianna<br>
 											Jornalista e Chief Communication Officer
@@ -952,22 +1081,28 @@
 							<h2>Nesta Edição…</h2>
 							<div class="divider"></div>
 
-							<span class="card-subtitle">Os muitos Brasis...</span>
+							<span class="card-subtitle">Nos mares do mundo</span>
 							<br>
 							<p> <span class="text-indent"></span>
-								Em MATO GROSSO, na Rodovia Transpantaneira, cada quilômetro vencido sob a poeira da seca ou a lama da cheia vai ganhando vida, literalmente, nos milhares de jacarés, capivaras e tuiuiús que margeiam a estrada até Porto Jofre, reduto da onça-pintada <a class="edicao-card-link" href="paginas.html?id=31"><b>(CARD 1)</b></a>.
+								Nesta Edição, convidamos você a conhecer o mundo a bordo da <strong class="edicao-termo-destaque">COSTA CRUZEIROS</strong>, que gentilmente nos abriu as portas – ou melhor, as águas, de seus roteiros inspiradores. Vamos navegar por ‘mares nunca dantes navegados’, como diria Camões, em <em>Os Lusíadas</em>.
 							</p>
 							<p> <span class="text-indent"></span>
-								No PARANÁ, as janelas abertas do trem deixam entrar o ar puro da floresta, o som das cachoeiras que despencam da serra e o visual de rios cristalinos correndo por entre as pedras, um circuito cinematográfico onde cada curva revela nova perspectiva da nossa biodiversidade <a class="edicao-card-link" href="paginas.html?id=32"><b>(CARD 2)</b></a>.
+								A Costa Crociere - Costa Cruzeiros, empresa italiana com sede em Gênova, é considerada o maior grupo de cruzeiros do mundo. Há mais de 75 anos, seus navios conectam pessoas aos quatro cantos do mundo, levando-as a descobrirem experiências únicas - a bordo e em terra.
 							</p>
 							<p> <span class="text-indent"></span>
-								Muita gente conhece a Amazônia. Mas...e a 300m de altitude? Você já viu a Amazônia do alto? No ACRE, você vive essa experiência incrível! <a class="edicao-card-link" href="paginas.html?id=33"><b>(CARD 3)</b></a>.
+								Atualmente, a frota conta com nove navios, todos de bandeira italiana, navegando pelo Mediterrâneo, Norte da Europa, Caribe, América Central, América do Sul e Emirados Árabes Unidos, além dos cruzeiros "Volta ao Mundo" e "Grandes Cruzeiros", que visitam diferentes continentes em uma única viagem.
 							</p>
 							<p><span class="text-indent"></span>
-								O Santuário do Caraça, em MINAS GERAIS, recebe, todas as noites, um visitante ilustre: o Lobo-Guará, em busca da sua porção diária de carne <a class="edicao-card-link" href="paginas.html?id=34"><b>(CARD 4)</b></a>; e em SANTA CATARINA, é a Serra do Rio do Rastro, um dos cenários mais impressionantes do Brasil, que rouba a cena <a class="edicao-card-link" href="paginas.html?id=35"><b>(CARD 5)</b></a>
+								A América do Sul é um dos mercados prioritários da companhia. Para a temporada 2026/2027, a empresa terá dois navios na região: o <strong class="edicao-termo-destaque">COSTA DIADEMA</strong>, já conhecido do público sul-americano, e o <strong class="edicao-termo-destaque">COSTA SERENA</strong>, que vem à América do Sul após mais de uma década, completamente renovado.
 							</p>
 							<p><span class="text-indent"></span>
-								Esta edição convida você a desbravar esse e outros caminhos do nosso Brasil, numa imersão direta na natureza.
+								Os principais destinos e roteiros, você confere agora, em nossos <strong class="edicao-termo-destaque">CARDS</strong>, no <strong class="edicao-termo-destaque">DESTAQUE</strong>.
+							</p>
+							<p><span class="text-indent"></span>
+								Queremos expressar nosso agradecimento pela parceria e pronto atendimento <strong class="edicao-termo-destaque">COSTA CRUZEIROS</strong>. As fotografias utilizadas nesta edição foram <strong>DISPONIBILIZADAS PELA EMPRESA, QUE AUTORIZOU</strong> expressamente o seu uso pela Viajar Travel News.
+							</p>
+							<p><span class="text-indent"></span>
+								A todos... bons ventos e marés tranquilas!
 							</p>
 
 							<p style="font-family: 'Courgette', cursive !important;">
@@ -985,6 +1120,11 @@
 			.card-mantiqueira {
 				position: relative;
 				overflow: hidden;
+			}
+
+			.card-mantiqueira .edicao-termo-destaque {
+				color: #FD7D01;
+				font-weight: 700;
 			}
 
 			/* FOTO */
@@ -1481,6 +1621,15 @@
 						<div class="moon-section">
 
 							<div class="moon-card">
+								<button id="curiangoAudioButton" class="curiango-audio-btn" type="button"
+									aria-label="Escute o canto do curiango" aria-pressed="false">
+									<img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg" alt="">
+					<span class="material-symbols-outlined curiango-audio-icon" aria-hidden="true">play_arrow</span>
+					<span class="curiango-audio-text">Ouça o canto</span>
+								</button>
+								<audio id="curiangoAudio" preload="metadata">
+									<source src="images/AUDIO-2024-02-17-16-14-22.mp3" type="audio/mpeg">
+								</audio>
 								<div class="moon-top">
 									<div class="moon-image">
 										<div id="recent-posts-6"
@@ -1490,7 +1639,7 @@
 												<div class="post-content">
 													<p class="letra-lua"
 														style="font-size: 15px; color: #fff !important;">
-														Lua do Esturjão
+																Lua da Colheita e Lua do Milho
 													</p>
 													<div class="moon-schedule">
 														<div class="moon-schedule-main">
@@ -1504,12 +1653,12 @@
 																<path
 																	d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
 															</svg>
-															<span>27, 28 e 29/08</span>
+															<span>25, 26 e 27/09</span>
 														</div>
 														<div class="moon-schedule-times">
 															<div class="moon-schedule-time">
 																<strong>Auge da Lua Cheia</strong>
-																<span>28 de Agosto, com o ápice às 01h:18</span>
+																<span>26 de Agosto, com o ápice às 13h:50</span>
 																<em>Horário Oficial de Brasília</em>
 															</div>
 														</div>
@@ -1525,8 +1674,11 @@
 										<div class="moon-text-block moon-text-block-full">
 											<div class="moon-highlight-title">Origem do nome</div>
 											<p>
-												O nome foi batizado por povos nativos da América do Norte (que habitavam a região dos Grandes Lagos) porque Agosto marcava a época em que o esturjão — um peixe gigante de água doce que já habitava a Terra há mais de 200 milhões de anos — subia os rios e lagos em grandes quantidades, tornando-se a principal e mais fácil fonte de alimento para as tribos locais
+													<strong>Lua da Colheita</strong>, por ser a mais próxima do equinócio de outono no Hemisfério Norte, e <strong>Lua do Milho</strong>, uma referência cultural das tribos nativas americanas à época de colheita do grão.
 											</p>
+											<img class="moon-cornfield-strip"
+												src="img/edicaoAgosto_2026/images.jpeg"
+												alt="Milharal sob o céu aberto">
 										</div>
 									</div>
 								</div>
@@ -1535,12 +1687,11 @@
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 mb-5 lua-frase-col">
 						<figure class="cardFrase">
-							<img class="cardFrase-img" src="img/ed_julho/CARD 3 - Foto 2.jpg" alt="foto" />
+							<img class="cardFrase-img" src="img/edicaoAgosto_2026/bela-paisagem-de-um-caminho-em-uma-colina-cercada-por-vegetacao-sob-um-ceu-nublado_181624-34664.avif" alt="foto" />
 
 							<div class="cardFrase-texto">
-								"DAQUI A VINTE ANOS, VOCÊ ESTARÁ MAIS ARREPENDIDO PELAS COISAS QUE NÃO FEZ DO QUE PELAS QUE FEZ. PORTANTO, SOLTE AS AMARRAS. AFASTE-SE DO PORTO SEGURO.
-								AGARRE OS VENTOS FAVORÁVEIS EM SUAS VELAS. EXPLORE. SONHE. DESCUBRA."
-								<span class="cardFrase-autor">— H. Jackson Brown Jr.</span>
+								"NÃO VÁ POR ONDE O CAMINHO PODE LEVAR. VÁ, EM VEZ DISSO, POR ONDE NÃO HÁ CAMINHO, E DEIXE UMA NOVA TRILHA PARA OS QUE VIEREM DEPOIS."
+								<span class="cardFrase-autor">— Ralph Waldo Emerson</span>
 							</div>
 						</figure>
 					</div>
@@ -1659,6 +1810,10 @@
 
 				.moon-text-block {
 					padding: 10px 12px;
+				}
+
+				.moon-cornfield-strip {
+					height: 70px;
 				}
 
 				.moon-highlight-title {
@@ -1822,6 +1977,7 @@
 			}
 
 			.moon-card {
+				position: relative;
 				display: flex;
 				flex-direction: column;
 				background: white;
@@ -1986,10 +2142,21 @@
 			.moon-text-block {
 				width: 50%;
 				padding: 10px 12px;
+				box-sizing: border-box;
 			}
 
 			.moon-text-block-full {
 				width: 100%;
+			}
+
+			.moon-cornfield-strip {
+				display: block;
+				width: calc(100% + 24px);
+				max-width: none;
+				height: 90px;
+				margin: 12px -12px -10px;
+				object-fit: cover;
+				object-position: center 58%;
 			}
 
 			.moon-text-block+.moon-text-block {
@@ -2149,6 +2316,10 @@
 					font-size: 10px;
 					line-height: 1.25;
 				}
+
+				.moon-cornfield-strip {
+					height: 70px;
+				}
 			}
 
 			@media (max-width: 480px) {
@@ -2278,13 +2449,17 @@
 
 
 		<!-- VERSÃO DESKTOP -->
-		<div class="d-none d-lg-block w-100 main-wrapper mapa-aviao-wrapper">
+		<!-- <div class="d-none d-lg-block w-100 main-wrapper mapa-aviao-wrapper"> -->
+	    <div class=" w-100 main-wrapper mapa-aviao-wrapper">
 			<div class="row">
 				<div class="col-12" style="width: 100%; position: relative; overflow: hidden;">
-					<div
-						style="width: 100%; height: 40vh; background-image: url('img/carroselViajarTravelNews/Texto\ do\ seu\ parágrafo.png'); background-size: cover; background-position: center; display: flex; align-items: center; position: relative;">
-						<img id="aviao-desktop" src="img/edicaoJulho/b3b87850-7dc2-4814-afca-bf9459309994.png"
-							width="200" alt="">
+					<div class="edicao-banner-navio"
+						style="background-image: url('img/edicaoAgosto_2026/CARD\ 4\ -\ Foto\ 6.jpg');">
+						<img src="img/edicaoAgosto_2026/ChatGPT Image 27 de ago. de 2026, 13_22_49.png"
+							alt="Placas indicando os destinos da edição de agosto"
+							style="position: absolute; left: 3%; bottom: 0; width: min(18vw, 420px); max-height: 92%; object-fit: contain; object-position: left bottom; z-index: 2;">
+						<!-- <img id="aviao-desktop" src="img/edicaoJulho/b3b87850-7dc2-4814-afca-bf9459309994.png"
+							width="200" alt=""> -->
 						<!-- <div class="selo-texto-simples">
 							MELHOR ESCOLHA <br>
 							Viajar com a Beni Tour Turismo é sinônimo de SEGURANÇA absoluta! O atendimento é de
@@ -2299,13 +2474,13 @@
 		</div>
 
 		<!-- VERSÃO MOBILE -->
-		<div class="d-block d-lg-none main-wrapper mapa-aviao-wrapper">
+		<!-- <div class="d-block d-lg-none main-wrapper mapa-aviao-wrapper">
 			<div class="row">
 				<div class="col-12" style="width: 100%; position: relative; overflow: hidden;">
 					<div
 						style="width: 100%; height: 50vh; background-image: url('img/mapa.jpeg'); background-size: contain; background-repeat: no-repeat; display: flex; align-items: center;">
 						<img id="aviao-mobile" src="img/edicaoJulho/b3b87850-7dc2-4814-afca-bf9459309994.png"
-							width="300" alt="">
+							width="300" alt=""> -->
 						<!-- <div class="selo-texto-simples">
 							MELHOR ESCOLHA <br>
 							Viajar com a Beni Tour Turismo é sinônimo de SEGURANÇA absoluta! O atendimento é de
@@ -2314,10 +2489,10 @@
 							<br>  
 							👉 <a target="_blank" href="https://www.instagram.com/benitourturismo">@benitourturismo</a>
 						</div> -->
-					</div>
+					<!-- </div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- Edição  -->
 
@@ -2325,21 +2500,21 @@
 			<div class="container">
 				<h2 class="titulo"
 					style="color: #FD7D01 !important;  display: flex; justify-content: center; font-size: 1.6rem;">
-					<b style="margin: 0px 5px 0px 0px"> DESTAQUE | </b> OS MUITOS BRASIS
+					<b style="margin: 0px 5px 0px 0px"> DESTAQUE | </b> NAVEGAR É PRECISO
 				</h2>
 			</div>
 			<div style="margin: 30px 0px;">
 				<div class="row justify-content-center">
 					<div class=" card-destaque">
-						<img src="img/ed_julho/CARD 1 - Foto1.jpg" alt="">
+						<img src="img/edicaoAgosto_2026/CARD 1 VOLTA AO MUNDO - Foto 1.jpg" alt="Costa Deliziosa em viagem de volta ao mundo">
 						<div class="card-content">
 							<h2>
-								TRANSPANTANEIRA: VIDA SELVAGEM SEM FILTROS
+								VOLTA AO MUNDO 2028: <br> UMA JORNADA ÉPICA
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=31" class="button">
+							<a href="paginas.html?id=36" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2348,15 +2523,15 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/ed_julho/CARD 2 - Foto 1.jpg" alt="">
+						<img src="img/edicaoAgosto_2026/CARD 2 TERRA DO FOGO - Foto 1.jpg" alt="Terra do Fogo a bordo do Costa Serena">
 						<div class="card-content">
 							<h2>
-								DE TREM ATÉ MORRETES
+								TERRA DO FOGO <br> A BORDO DO COSTA SERENA
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=32" class="button">
+							<a href="paginas.html?id=37" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2365,17 +2540,15 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/ed_julho/CARD 3 - Foto 1.jpeg" alt="">
+						<img src="img/edicaoAgosto_2026/CARD 3 ALMA LATINA - Foto 1.jpg" alt="Programa Alma Latina da Costa Cruzeiros">
 						<div class="card-content">
 							<h2>
-								VOANDO DE BALÃO NO ACRE:<br>
-								<br>
-								O DESPERTAR DA AMAZÔNIA POR OUTRO ÂNGULO
+								ALMA LATINA: <br> O ESPÍRITO DO CARIBE
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=33" class="button">
+							<a href="paginas.html?id=38" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2384,14 +2557,14 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/ed_julho/CARD 4 - Foto 1.jpg" alt="">
+						<img src="img/edicaoAgosto_2026/CARD 4 VERÃO EUROPEU - Foto 1.jpg" alt="Verão europeu a bordo da Costa Cruzeiros">
 						<div class="card-content">
-							<h2> O LOBO-GUARÁ E O SANTUÁRIO DO CARAÇA
+							<h2> VERÃO EUROPEU 2026 <br> COM A COSTA CRUZEIROS
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=34" class="button">
+							<a href="paginas.html?id=39" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2400,15 +2573,15 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/ed_julho/CARD 5 - Foto 1.jpeg"
-							alt="">
+						<img src="img/edicaoAgosto_2026/CARD 5 EUROPA-BRASIL - Foto 1.jpg"
+							alt="Viagem Europa-Brasil no Costa Diadema">
 						<div class="card-content">
-							<h2> A IMPRESSIONANTE SERRA DO RIO DO RASTRO
+							<h2> EUROPA-BRASIL <br> NO COSTA DIADEMA
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=35" class="button">
+							<a href="paginas.html?id=40" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2592,6 +2765,25 @@
 							</div>
 							<div class="more_posts viagem-videos-list" id="viagemVideosList">
 								<div class="row" id="viagemVideosGrid">
+									<div class="col-lg-3 col-md-3 details_with_sidebar">
+										<article class="blog_post post_expand">
+											<div class="post_content">
+												<div class="post_fulltext">
+													<div class="post_video"
+														style="height: 300px !important;background: #090909;">
+
+														<video
+															src="img/edicaoAgosto_2026/WhatsApp%20Video%202026-08-12%20at%2013.59.22.mp4"
+															controls width="100%" height="100%">
+															Your browser does not support the video tag.
+														</video>
+													</div>
+													<span style="text-transform: uppercase;">BÉNI TOUR TURISMO: SEU PRÓXIMO DESTINO COMEÇA AQUI
+													</span>
+												</div>
+											</div>
+										</article>
+									</div>
 									<div class="col-lg-3 col-md-3 details_with_sidebar">
 										<article class="blog_post post_expand">
 											<div class="post_content">
@@ -4137,6 +4329,43 @@
 
 
 	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const button = document.getElementById("curiangoAudioButton");
+			const audio = document.getElementById("curiangoAudio");
+			const icon = button ? button.querySelector(".curiango-audio-icon") : null;
+
+			if (!button || !audio) {
+				return;
+			}
+
+			function setPlaying(isPlaying) {
+				button.classList.toggle("is-playing", isPlaying);
+				button.setAttribute("aria-pressed", String(isPlaying));
+				button.setAttribute("aria-label", isPlaying ? "Pausar o canto do curiango" : "Escute o canto do curiango");
+				if (icon) {
+					icon.textContent = isPlaying ? "pause" : "play_arrow";
+				}
+			}
+
+			button.addEventListener("click", function () {
+				if (audio.paused) {
+					audio.play().then(function () {
+						setPlaying(true);
+					}).catch(function () {
+						setPlaying(false);
+					});
+				} else {
+					audio.pause();
+					setPlaying(false);
+				}
+			});
+
+			audio.addEventListener("ended", function () {
+				setPlaying(false);
+				audio.currentTime = 0;
+			});
+		});
+
 		document.addEventListener("DOMContentLoaded", function () {
 			const entrelaButton = document.getElementById("entrela");
 			if (entrelaButton) {

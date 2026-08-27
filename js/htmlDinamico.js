@@ -7170,6 +7170,749 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             }
         ],
         curiango: ""
+    },
+    {
+        id: 36,
+        titulo: "VOLTA AO MUNDO 2028: UMA JORNADA ÉPICA",
+        hero: {
+            imagem: "img/edicaoAgosto_2026/CARD 1 VOLTA AO MUNDO - Foto 1.jpg",
+            subtitulo: "São 139 dias, cinco continentes e três oceanos"
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                O novo cruzeiro Volta ao Mundo 2028 tem estadias prolongadas nas cidades mais icônicas do mundo. Para quem deseja explorar o planeta, uma experiência de encantamento contínuo, onde cada parada revela uma surpresa.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Partindo de Savona no dia 25 de novembro de 2027, o <strong>COSTA DELIZIOSA</strong> levará os hóspedes em um itinerário extraordinário, com escalas em 51 destinos de 29 países, incluindo 21 ilhas. Criada para inspirar os exploradores modernos, a jornada oferece uma experiência completa que mistura grandes metrópoles globais, natureza intocada, culturas ancestrais e alguns dos portos remotos mais fascinantes do planeta.<br><br>
+                Além do itinerário completo de 139 dias saindo de Savona, os hóspedes também podem aproveitar um outro segmento do Volta ao Mundo: um cruzeiro de 100 dias com embarque em São Francisco, facilmente acessível por voos dos principais aeroportos internacionais. Esta opção inclui paradas em destinos na Oceania, Ásia e África, e se encerra em Savona, no dia 11 de abril de 2028.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 1 - Foto 3.jpg",
+                    "img/edicaoAgosto_2026/CARD 1 - Foto 4.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Sem pressa"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Com o cruzeiro Volta ao Mundo 2028, a Costa Cruzeiros oferece uma experiência de viagem verdadeiramente extraordinária, desenhada para aqueles que desejam explorar o mundo sem pressa. Um itinerário de 139 dias cruzando cinco continentes e três oceanos, com estadias prolongadas, programas terrestres exclusivos e momentos icônicos, como o Réveillon em Los Angeles e o acesso à Celebration Key — uma ilha particular nas Bahamas que abrirá pela primeira vez para os hóspedes da Costa.
+                `
+            },
+            {
+                tipo: "box",
+                conteudo: `
+                “É uma proposta que une emoção, profundidade e qualidade, refletindo nossa capacidade de criar jornadas distintas e de alto valor, dedicadas aos exploradores do mundo e viajantes que querem saborear cada destino de forma autêntica”, afirma Luigi Stefanelli, Vice-Presidente Mundial de Vendas da Costa Cruzeiros.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "400px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 1 - Foto 5.jpg",
+                    "img/edicaoAgosto_2026/CARD 1 - Foto 6.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Seguindo viagem..."
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Depois de deixar o Mediterrâneo, a jornada ganha forma na América do Norte entre os ícones das costas Leste e Oeste, com estadias prolongadas em Nova York e Los Angeles, culminando em um Réveillon espetacular na costa californiana. O itinerário pode ser ainda mais aprimorado com experiências exclusivas, como um tour de helicóptero pelo Grand Canyon. Entre os grandes destaques da edição de 2028 está uma fuga total para Celebration Key, a nova ilha particular nas Bahamas que abrirá pela primeira vez para os hóspedes da Costa: uma joia tropical onde a areia branca encontra um mar que se funde em infinitos tons de turquesa, permeada por clubes de praia exclusivos, águas cristalinas e recantos de natureza intocada.<br><br>
+                Do sol do Caribe, a rota se abre para a imensidão do Oceano Pacífico, onde a jornada reserva algumas de suas experiências mais inesquecíveis. O Havaí recebe os hóspedes com paisagens forjadas pelo fogo: em Hilo, a natureza reina absoluta com crateras, túneis de lava e cachoeiras que surgem em meio à selva; em Honolulu, a energia de Waikiki e a cultura polinésia se fundem em uma atmosfera magnética que cativa à primeira vista.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 1 - Foto 7.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Novo roteiro tem paradas icônicas em São Francisco, Nova York e Havaí"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O itinerário continua pela Oceania mais autêntica, com as atmosferas exóticas de Fiji, onde Suva conta histórias de tradições ancestrais e paisagens exuberantes, e Samoa, com Apia, apresentando piscinas naturais esculpidas em rocha vulcânica, praias douradas e a essência mais pura da cultura polinésia. A jornada segue então para a Nova Zelândia, que se revela como um vasto cenário natural de fiordes, litorais acidentados e colinas onduladas, oferecendo algumas das paradas mais espetaculares de toda a viagem: de Tauranga a Auckland, até a evocativa Bay of Islands, onde mais de cem ilhotas verde-esmeralda pontilham o mar, criando um cenário de rara beleza. A viagem chega então à Austrália, com Melbourne, uma capital criativa e multicultural, e Sydney, onde o navio permanece por dois dias, permitindo que os hóspedes vivenciem plenamente a cidade e acordem de frente para o icônico horizonte da Opera House.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 1 - Foto 8.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Ásia: mudança de cenário"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A Ásia marca uma mudança clara de atmosfera. O Japão assume o protagonismo com Tóquio, onde o navio permanece por dois dias, impressionando pelo equilíbrio perfeito entre vanguarda e tradição: templos silenciosos, distritos futuristas e jardins escondidos coexistem em perfeita harmonia. Após outras escalas em portos japoneses e uma parada na Coreia do Sul, a jornada chega a Hong Kong antes de seguir pelo Sudeste Asiático, com destinos como Langkawi, na Malásia — um exuberante arquipélago de florestas tropicais, manguezais e paisagens suspensas entre o mar e as montanhas — e as praias radiantes de Phuket, na Tailândia, emolduradas por falésias esculpidas e águas cristalinas.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 1 - Foto 9.jpg",
+                    "img/edicaoAgosto_2026/CARD 1 - Foto 10.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Montanhas, religião e cultura"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A viagem continua pelo azul profundo do Oceano Índico, chegando ao Sri Lanka, com seus templos antigos, plantações de chá e cultura milenar; às Maldivas, com águas de uma transparência extraordinária; e às ilhas Maurício, com montanhas cor de esmeralda e cultura crioula. Serão 139 dias conhecendo cenários cinematográficos — Auckland, a energia vibrante da Cidade do Cabo, a transparência absoluta das águas nas Ilhas Maurício.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 1 - Foto 11.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "box",
+                titulo: "Roteiros incluem Volta ao Mundo",
+                conteudo: `
+                A temporada terá roteiros de 3, 4, 7, 8 e 9 noites, com opções de embarque em Santos, Itajaí, Rio de Janeiro e Buenos Aires. O <strong>COSTA DIADEMA</strong> fará cruzeiros de 3 e 4 noites com embarques em Santos e Itajaí, incluindo paradas em destinos como Ilhabela. Já os roteiros mais longos, de 7 noites, terão como destino a região do Rio da Prata, com escalas em Buenos Aires e Montevidéu, a bordo do Costa Diadema e do Costa Serena. O <strong>COSTA SERENA</strong> também terá uma chegada especial à América do Sul. Antes de iniciar sua operação regular na região, o navio fará uma viagem de 65 noites, partindo de Tóquio e chegando a Buenos Aires, como parte de um roteiro de Volta ao Mundo.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Sea &amp; Land Destinations: terra e mar"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Entre os diferenciais da Costa estão os roteiros Sea &amp; Land Destinations, que combinam a experiência a bordo com a possibilidade de conhecer diferentes destinos e realizar experiências em terra disponíveis em roteiros da Costa no Mediterrâneo, Norte Europeu, Ilhas Canárias e Caribe. Para quem vai fazer um cruzeiro, a principal recomendação é planejar a viagem com antecedência.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "De olho nos trâmites, documentação, informação e antecedência"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O passageiro pode contar com o apoio de uma agência de viagens para escolher o roteiro e a cabine, além de receber orientações sobre documentação e transfers, ou realizar o planejamento diretamente pelos canais da companhia. A documentação é um dos principais pontos de atenção. Para cruzeiros pela costa brasileira e América do Sul, é necessário apresentar um documento de identificação com foto, como RG ou passaporte. Para roteiros internacionais, o passaporte é obrigatório e, dependendo do destino, pode haver necessidade de visto.<br><br>
+                A recomendação é verificar previamente a validade e as condições dos documentos e os requisitos específicos do roteiro escolhido. Também é importante considerar a programação do navio na hora de preparar a bagagem. A Costa realiza diferentes atividades e noites temáticas, por isso é recomendável consultar a programação antes do embarque. Outro recurso disponível aos hóspedes é o <strong>COSTA APP</strong>, aplicativo da companhia que permite consultar a programação diária, reservar excursões, restaurantes temáticos e realizar pagamentos de serviços extras.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Seguro viagem e orçamento planejado"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A Costa também recomenda a contratação de Seguro Viagem para qualquer eventualidade. Em relação ao custo, o cruzeiro pode ser uma alternativa interessante para quem busca maior previsibilidade no orçamento da viagem. Isso porque a tarifa reúne hospedagem, deslocamento entre os destinos e diversas opções de entretenimento em um mesmo produto.<br><br>
+                Em uma viagem terrestre, esses gastos costumam ser contratados separadamente, incluindo hotel, transporte, alimentação e ingressos para atrações. Para famílias, os navios também oferecem espaços destinados a diferentes faixas etárias, com opções para crianças e adolescentes, permitindo que os pais aproveitem a programação enquanto os filhos participam de atividades específicas.<br><br>
+                Além da operação na América do Sul, a Costa mantém cruzeiros em diferentes regiões do mundo ao longo do ano. A oferta inclui desde minicruzeiros de 3 ou 4 noites até roteiros mais longos pelo Mediterrâneo, Caribe, Norte da Europa, Dubai e Oriente Médio, Ásia, Ilhas Canárias, Costa Africana, travessias transatlânticas e Cruzeiros de Volta ao Mundo.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 37,
+        titulo: "NA TERRA DO FOGO A BORDO DO COSTA SERENA",
+        hero: {
+            imagem: "img/edicaoAgosto_2026/CARD 2 TERRA DO FOGO - Foto 1.jpg",
+            subtitulo: "Pacote completo inclui voos, hotel e transfers"
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                O programa <strong>CONEXÃO COSTA</strong>, da Costa Cruzeiros, lança um pacote completo e inédito para a Terra do Fogo, itinerário emblemático de 14 noites que liga San Antonio, no Chile, a Buenos Aires, na Argentina, a bordo do Costa Serena, em dezembro de 2026.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A Terra do Fogo é um dos destinos de destaque — também um dos mais belos — da Costa Cruzeiros. Além do cruzeiro de 14 noites, o pacote inclui os voos entre Brasil, Argentina e Chile; uma noite de hospedagem em Santiago antes do embarque no navio; e os transfers terrestres. A viagem fica a partir de 12x de R$ 1.436,83 por pessoa, em cabine interna dupla, na tarifa MyCruise.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 2 - Foto 2.jpg",
+                    "img/edicaoAgosto_2026/CARD 2 - Foto 3.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Dezembro de 2026: programe-se!"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O embarque no cruzeiro acontece em San Antonio, no dia 8 de dezembro de 2026, com paradas em Puerto Montt, Puerto Chacabuco, Punta Arenas, Ushuaia (com pernoite) e Puerto Madryn.<br><br>
+                Um dos grandes diferenciais da viagem é a pernoite em Ushuaia, a cidade do “fim do mundo”, em terras argentinas, permitindo que os hóspedes desfrutem de mais tempo para vivenciar a atmosfera local, admirar as paisagens e observar a vida selvagem em seu habitat natural. O desembarque acontece em Buenos Aires no dia 22 de dezembro.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 2 - Foto 4.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Volta ao Mundo"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O pacote completo pela Terra do Fogo contempla o trecho final de 14 noites do cruzeiro Volta ao Mundo a bordo do Costa Serena — iniciado em Tóquio em outubro de 2026 —; os voos de ida São Paulo-Buenos Aires e Buenos Aires-Santiago no dia 7 de dezembro; e o bilhete aéreo de retorno Buenos Aires-São Paulo, em 22 de dezembro.<br><br>
+                Inclui, ainda, uma noite de hospedagem com café da manhã no Hotel Plaza San Francisco, em Santiago (Chile), na véspera do embarque, bem como os transfers entre aeroportos, hotel e os portos de San Antonio e Buenos Aires.
+                `
+            },
+            {
+                tipo: "box",
+                conteudo: `
+                “Com esse novo produto, o viajante brasileiro precisa apenas se ‘preocupar’ em aproveitar uma experiência única e exclusiva da Costa na América do Sul na próxima temporada. É uma oportunidade imperdível para conhecer as paisagens extraordinárias da Patagônia e dos canais chilenos, com toda a logística de voos, hospedagem e traslados cuidadosamente planejada pela Costa”, afirma Carlos Coscione, diretor de Business Intelligence and Marketing Planning para as Américas.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "O que mais está incluso"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Além dos serviços incluídos no pacote completo, durante a experiência a bordo do Costa Serena, o hóspede tem direito ao pacote de bebidas <strong>MyDrinks Lunch &amp; Dinner</strong>, que oferece o consumo de bebidas em taça — vinhos, chope, refrigerantes, sucos e água mineral — durante o almoço e o jantar nos restaurantes principais e no buffet. Também estão incluídas três excursões selecionadas que permitem explorar pontos icônicos, culturais e gastronômicos em Puerto Madryn, Ushuaia e Buenos Aires.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 2  - Foto 6.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Jornada em alto estilo"
+            },
+            {
+                tipo: "box",
+                conteudo: `
+                “O Costa Serena carrega a exclusividade de realizar uma Volta ao Mundo, e o trecho pela Terra do Fogo é, sem dúvida, um dos pontos altos de sua jornada pelo globo. Ao combinar o melhor da Itália a bordo em hospitalidade, gastronomia e entretenimento com a natureza exótica e selvagem da região e as facilidades do pacote Air&amp;Sea, criamos um produto de valor incomparável para quem busca uma viagem verdadeiramente memorável”, destaca Ruy Ribeiro, Diretor Comercial da Costa Cruzeiros no Brasil.
+                `
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                O pacote completo com voos, hotel, transfers e cruzeiro de 14 noites a bordo do Costa Serena pela Terra do Fogo pode ser adquirido por meio das agências de viagens e no portal <a class="article-external-link" href="https://click.cse360.com.br/Click/AddCampaignEmailClick/865f4ff0-e37e-4a3e-cfef-08dddbf6b6b3/https%253a%252f%252fwww.costaextra.com.br%252f/4f91b403-0170-4655-9d82-08d7c5ff26d1/claudiavcamillo@gmail.com/True" target="_blank" rel="noopener">Costa Extra</a>, exclusivo para as agências de viagens. Mais informações no site <a class="article-external-link" href="https://click.cse360.com.br/Click/AddCampaignEmailClick/865f4ff0-e37e-4a3e-cfef-08dddbf6b6b3/https%253a%252f%252fwww.costacruzeiros.com%252fconexao-costa.html/4f91b403-0170-4655-9d82-08d7c5ff26d1/claudiavcamillo@gmail.com/True" target="_blank" rel="noopener">Conexão Costa</a>.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 38,
+        titulo: "COSTA CRUZEIROS TRAZ O ESPÍRITO DO CARIBE COM O NOVO PROGRAMA ‘ALMA LATINA’",
+        hero: {
+            imagem: "img/edicaoAgosto_2026/CARD 3 ALMA LATINA - Foto 1.jpg",
+            subtitulo: "Novas experiências, entretenimento e gastronomia a bordo do Costa Fascinosa"
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                O Alma Latina oferece uma imersão completa na cultura caribenha e está disponível nos cruzeiros com embarques em La Romana, na República Dominicana, entre dezembro de 2026 e março de 2027.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A Costa Cruzeiros está trazendo os ritmos vibrantes, os sabores marcantes e as ricas tradições do Caribe e da América Latina com seu novo programa <strong>“Alma Latina”</strong> a bordo do navio Costa Fascinosa. Disponível de dezembro de 2026 a março de 2027 nos roteiros com embarque em La Romana, na República Dominicana, o programa apresenta entretenimento inspirado na região, experiências gastronômicas autênticas, celebrações festivas e os exclusivos Sea Destinations.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Luz, câmera, ação!"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Do nascer ao pôr do sol, os hóspedes poderão desfrutar de eventos exclusivos inspirados nas culturas caribenha e latino-americana. Desenvolvido para atender aos hóspedes latinos e também para ser apreciado por viajantes de todas as nacionalidades, o programa inclui a festa <strong>Sabor Latino</strong> e apresentações ao vivo de artistas e DJs locais, que levam a bordo os ritmos característicos das ilhas caribenhas. A celebração continua à beira da piscina com apresentações coloridas de música e dança, enquanto experiências interativas, incluindo competições de dança latina, convidam os hóspedes a entrar na pista e fazer parte da festa.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 3 - Foto 2.jpg",
+                    "img/edicaoAgosto_2026/CARD 3 - Foto 3.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Sea Destinations a bordo do Costa Fascinosa"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Os itinerários caribenhos da Costa são enriquecidos pelos <strong>Sea Destinations</strong>, experiências exclusivas que podem ser vivenciadas a bordo enquanto o navio está em alto-mar. Durante os cruzeiros pelo Caribe, os hóspedes terão a oportunidade de participar de atividades como observação das estrelas, dançar ao som dos ritmos das ilhas nos decks e degustar coquetéis inspirados na lua.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Baía de Catalina e Festa no Mar"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Após retornar ao navio de uma emocionante aventura na ilha de Catalina, os hóspedes poderão dançar a noite toda em uma das festas mais animadas do Caribe. Música ao vivo, bebidas caribenhas e apresentações de dança tornam a celebração inesquecível.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Mar do Caribe em um Mar de Estrelas"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Nas profundezas do Mar do Caribe, os hóspedes poderão descobrir as estrelas como nunca antes. Um especialista a bordo conduzirá a experiência, apresentando constelações pouco conhecidas e compartilhando histórias e lendas que fazem parte da tradição dessas águas.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 3 - Foto 4.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Baía de Guadalupe: Festa da Lua Branca"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Os hóspedes podem vivenciar uma das festas mais deslumbrantes da viagem. A celebração homenageia a energia da lua com artistas, delícias gastronômicas, coquetéis inspirados no universo lunar e espetáculos de luzes que iluminam o céu noturno. Uma experiência que transporta os participantes para um mundo “astral”, suspenso entre o céu e o mar.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Turks &amp; Caicos com Aperitivo de Rum ao Pôr do Sol"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                No arquipélago de Turks &amp; Caicos, os hóspedes são envolvidos por um cenário paradisíaco de águas cristalinas e areia branca. A bordo, explosões de cores e sons tropicais tomam conta dos decks, enquanto os viajantes dançam ao som do DJ e apreciam um autêntico coquetel à base de rum ao pôr do sol.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 3 - Foto 6.jpg",
+                    "img/edicaoAgosto_2026/CARD 3 - Foto 7.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Cruzeiro especial de Natal"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Para vivenciar o programa Alma Latina, uma das opções é o cruzeiro especial de Natal, com embarque em 20 de dezembro de 2026, no porto de La Romana. Durante sete noites, o Costa Fascinosa visita as ilhas de Santa Lúcia, Guadalupe, Antígua e Barbuda, St. Kitts e Ilhas Virgens Britânicas, retornando a La Romana em 27 de dezembro. Neste roteiro, os hóspedes poderão participar de dois exclusivos Sea Destinations: Mar de Estrelas, no ponto mais escuro do Mar do Caribe, e a Festa da Lua Branca, na Baía de Guadalupe.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Boas-vindas a 2027!"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Já no cruzeiro com embarque no dia 24 de janeiro de 2027, ao longo de sete noites, o Costa Fascinosa navega pelas ilhas Catalina, Arroyo Barril, Puerto Plata e Cabo Rojo, da República Dominicana, e por Grand Turk, em Turks e Caicos. Além do programa Alma Latina, os hóspedes vivenciam neste itinerário outras duas experiências exclusivas Sea Destinations: Festa no Mar, realizada na Baía de Catalina, e o Aperitivo de Rum ao Pôr do Sol em meio às águas cristalinas do arquipélago de Turks e Caicos.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "12 vezes sem juros"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Os cruzeiros a bordo do Costa Fascinosa pelo Caribe com o programa Alma Latina durante a temporada 2026/2027 podem ser adquiridos em até 12 vezes sem juros no cartão de crédito pelo site <a class="article-external-link" href="https://www.costacruzeiros.com/" target="_blank" rel="noopener">Costa Cruzeiros</a> e pelo portal <a class="article-external-link" href="https://www.costaextra.com.br/" target="_blank" rel="noopener">Costa Extra</a>, exclusivo para agências de viagens.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Saiba mais sobre o Costa Fascinosa",
+                conteudo: `
+                Com 1.580 cabines, o <strong>Costa Fascinosa</strong> reúne nove restaurantes, sendo cinco de especialidades, como Sushino, Archipelago, The Salty Beach Street Food, Teppanyaki e Pizzeria Pummid’Oro, além de nove bares, entre eles Aperol Spritz Bar, Wine Bar, Sunset Bar e Gelateria Amarillo, com sorvetes e doces artesanais. Há ainda o Solemio Spa, com piscina de talassoterapia e salas de tratamentos, além de cassino, shopping, academia, teatro, pista de corrida panorâmica, campo poliesportivo, nove piscinas e jacuzzis e espaços dedicados para crianças e adolescentes, como Squok Baby, Squok Club e Teen Zone.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 39,
+        titulo: "VERÃO EUROPEU 2026: ENCANTE-SE NAS FÉRIAS A BORDO COM A COSTA CRUZEIROS",
+        hero: {
+            imagem: "img/edicaoAgosto_2026/CARD 4 VERÃO EUROPEU - Foto 1.jpg",
+            subtitulo: "O encanto atemporal do Norte Europeu e dos fiordes, além dos grandes clássicos do Mediterrâneo"
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Sea &amp; Land Wonder, Sea Destinations e Land Destinations compõem uma experiência relaxante e completa para quem deseja aproveitar o verão europeu e descobrir vários destinos em uma mesma viagem.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O cruzeiro marítimo é uma opção especialmente relevante para o viajante que deseja aproveitar o verão europeu sem ter que gerenciar traslados contínuos, mudanças de hotel ou itinerários complexos.<br><br>
+                Do encanto atemporal do Norte Europeu e dos fiordes aos grandes clássicos do Mediterrâneo, o verão europeu com a Costa Cruzeiros é uma experiência de férias pensada para acompanhar o viajante do embarque ao desembarque.
+                `
+            },
+            {
+                tipo: "box",
+                conteudo: `
+                “Hoje, o verdadeiro valor ao escolher as férias reside em poder planejá-las com tranquilidade. Quem reserva agora procura soluções simples”, afirma Francesco Muglia, Chief Commercial Officer e Vice-Presidente Sênior da Costa Crociere. “O desejo de viajar continua forte e a Costa responde a essa necessidade com elementos muito concretos: embarques de portos de fácil acesso, que reduzem o estresse logístico; férias planejadas e cuidadas do princípio ao fim. Esta abordagem simplifica a organização da viagem e facilita a tomada de decisões, unindo a tranquilidade da escolha ao deslumbramento da experiência Costa em um roteiro organizado em cada detalhe”.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Sea &amp; Land Wonder"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O que torna a experiência de férias no verão europeu verdadeiramente distinta é a plataforma <strong>Sea &amp; Land Wonder</strong>, o ecossistema desenvolvido pela Costa que integra o que acontece a bordo, no mar e em terra. Com a Costa, a viagem se transforma em uma experiência completa que vai além dos próprios destinos e abraça uma maneira autêntica de vivenciar o mar, o navio e o tempo de férias.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 4 - Foto 2.jpg",
+                    "img/edicaoAgosto_2026/CARD 4 - Foto 3.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Sea Destinations"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Por um lado, existem os <strong>Sea Destinations</strong>: atrativos únicos no mar, situados nos pontos mais evocativos dos itinerários, escolhidos por sua força emocional e vivenciados através de momentos imersivos. Entre eles estão concertos ao amanhecer, quando a luz revela paisagens moldadas pela água e pelo tempo; entardeceres impactantes celebrados a partir do mar diante de horizontes intactos, acompanhados por música e pelo ritmo da navegação; noites sob céus extraordinariamente estrelados, longe da luz artificial; e momentos de meditação no mar, onde o tempo desacelera e a viagem convida à contemplação.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Land Destinations"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Por outro lado, estão os <strong>Land Destinations</strong>, escalas cuidadosamente selecionadas em terra que valorizam o ambiente local, com experiências desenhadas para diferentes estilos de viagem, ritmos e necessidades. Esta abordagem integrada entre mar e terra converte o deslumbramento em uma experiência contínua e diferenciada, possível apenas com a Costa.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 4 - Foto 4.jpg",
+                    "img/edicaoAgosto_2026/CARD 4 - Foto 5.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Mediterrâneo: próximo, vibrante e surpreendente"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                No verão de 2026, o Mediterrâneo ganha destaque como o destino ideal para quem busca beleza e variedade. Um mar rico em cultura e paisagens icônicas. No Mediterrâneo Ocidental, entre Itália, França e Espanha, a bordo do Costa Smeralda, Costa Toscana e Costa Pacifica, a navegação torna-se parte essencial da viagem através de emblemáticos Sea Destinations: desde amanheceres sobre as falésias brancas do Parque Nacional de Calanques até noites estreladas no ponto mais escuro do mar das Baleares; de entardeceres frente aos Faraglioni de Capri até Ibiza, o golfo Aranci e a baía de Palma, acompanhados de música e experiências imersivas.<br><br>
+                Em terra, os itinerários alternam entre grandes cidades e destinos de forte identidade mediterrânea — Barcelona, Palermo, Nápoles, Cagliari e Roma — para uma viagem que combina cultura, paisagens e ritmos autênticos.<br><br>
+                O Mediterrâneo a bordo dos navios da Costa Cruzeiros combina o charme de monumentos icônicos com a cultura e as praias paradisíacas.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 4 - Foto 6.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Mediterrâneo Oriental"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                No Mediterrâneo Oriental, os itinerários a bordo do <strong>COSTA FASCINOSA</strong>, <strong>COSTA DELIZIOSA</strong> e <strong>COSTA FORTUNA</strong> percorrem as ilhas gregas, portos do Adriático e redutos icônicos das grandes civilizações marítimas. O mar continua sendo o grande protagonista: desde a entrada na lagoa de Veneza ao entardecer, emoldurando um carnaval de verão suspenso sobre as águas, até noites estreladas em um dos pontos mais escuros do mar Jônico; da atmosfera vibrante da baía de Mykonos ao pôr do sol interminável diante de Santorini. Em terra, a viagem passa por Corfu e Cefalônia, Dubrovnik e Split, Atenas, Malta e o leste da Sicília, onde o vulcão Etna domina a paisagem.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 4 - Foto 8.jpg",
+                    "img/edicaoAgosto_2026/CARD 4 - Foto 9.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Os fiordes noruegueses: o verão que você não esperava"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Para quem busca um verão que combine descoberta e tranquilidade sem abrir mão do conforto, o Norte Europeu oferece férias em que a natureza dita o ritmo. A bordo do Costa Diadema e do Costa Favolosa, os fiordes noruegueses revelam-se como uma experiência de profunda reconexão, na qual o tempo desacelera e a paisagem se torna a verdadeira protagonista.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "O emblemático Geirangerfjord"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Navegar pelo Geirangerfjord, declarado Patrimônio da Humanidade pela UNESCO, permite admirar as famosas cachoeiras das Sete Irmãs caindo dos penhascos em direção ao mar, um dos cenários naturais mais emblemáticos da Noruega, contemplado a partir da perspectiva privilegiada do navio.<br><br>
+                No mar da Noruega, cercado por um profundo silêncio, o viajante desfruta de momentos de reconexão íntima com a natureza inspirados na filosofia do <em>Friluftsliv</em>, por meio de meditação guiada ao ar livre, uma luz diurna que parece interminável e um ritmo de tempo mais pausado.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 4 - Foto 11.jpg",
+                height: "520px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Terra firme"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Em terra, os itinerários levam à descoberta dos fiordes Patrimônio da Humanidade, com escalas em cidades como Stavanger e Bergen, entre portos históricos e casas coloridas debruçadas sobre a água, além de travessias por paisagens de fiordes icônicos onde aldeias, cachoeiras e cenários esculpidos pelo gelo revelam a alma mais autêntica da Noruega. Alguns itinerários estendem-se para além do Círculo Polar Ártico, até as ilhas Lofoten e o Cabo Norte, onde o sol da meia-noite acompanha as navegações de verão e torna a experiência ainda mais extraordinária.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Planeje seu verão europeu",
+                conteudo: `
+                Os cruzeiros para o verão de 2026 pelo Mediterrâneo, Norte Europeu e fiordes, a bordo dos navios Costa Smeralda, Costa Toscana, Costa Pacifica, Costa Fascinosa, Costa Deliziosa, Costa Fortuna, Costa Diadema e Costa Favolosa, podem ser adquiridos em até 12x sem juros no cartão de crédito pelo site <a class="article-external-link" href="https://www.costacruzeiros.com/" target="_blank" rel="noopener">Costa Cruzeiros</a> e pelo portal <a class="article-external-link" href="https://www.costaextra.com.br/" target="_blank" rel="noopener">Costa Extra</a>, exclusivo para agências de viagens.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 40,
+        titulo: "NOVEMBRO DE 2026: EUROPA-BRASIL NO COSTA DIADEMA",
+        hero: {
+            imagem: "img/edicaoAgosto_2026/CARD 5 EUROPA-BRASIL - Foto 1.jpg",
+            subtitulo: "Uma experiência única de travessia do Atlântico a bordo de um cruzeiro"
+        },
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                A Costa oferece condições especiais para o cruzeiro transatlântico que parte da Europa rumo ao Brasil em novembro de 2026, a bordo do <strong>COSTA DIADEMA</strong>, com partidas de Marselha, Savona e Barcelona.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Por meio do programa Conexão Costa, a companhia marítima oferece pacotes completos para o cruzeiro transatlântico Europa–Brasil. A travessia tem partidas de Marselha, Savona e Barcelona nos dias 1º, 2 e 3 de novembro de 2026, respectivamente, e chegada ao porto de Santos em 23 de novembro de 2026.<br><br>
+                Além do cruzeiro, os pacotes — a partir de 12 vezes de R$ 1.325,23 por pessoa, em cabine interna dupla, na tarifa MyCruise — contemplam os voos saindo de São Paulo, duas noites de hotel antes do embarque no cruzeiro e os traslados entre aeroportos, hotéis e portos de embarque.<br><br>
+                Com os pacotes completos, o hóspede pode escolher entre três opções de portos de embarque — Marselha, França; Savona, Itália; ou Barcelona, Espanha — para realizar o roteiro e ainda aproveitar duas noites de hotel em território europeu antes do início do cruzeiro.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    "img/edicaoAgosto_2026/CARD 5 - Foto 2.jpg",
+                    "img/edicaoAgosto_2026/CARD 5 - Foto 3.jpg"
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Travessia contempla paradas"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Ao longo da travessia transatlântica, o Costa Diadema faz paradas nas cidades espanholas de Málaga, Cádiz, Las Palmas e Santa Cruz de Tenerife, passa por Lisboa, Mindelo, Maceió, Salvador e Rio de Janeiro até o desembarque final na cidade de Santos, no dia 23 de novembro. O itinerário combina a riqueza histórica e cultural das cidades europeias com as belezas naturais do Atlântico e da costa brasileira.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Em Marselha"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                A primeira opção de pacote permite embarcar em Marselha no dia 1º de novembro de 2026 para um cruzeiro de 22 noites a bordo do Costa Diadema. O pacote completo inclui as passagens aéreas nos trechos São Paulo-Lisboa e Lisboa-Marselha; duas noites de hotel 4 estrelas com café da manhã em Lisboa antes do embarque no cruzeiro, no período de 30 de outubro a 1º de novembro; e os transfers entre o aeroporto e o hotel em Lisboa e o aeroporto e o terminal de cruzeiros em Marselha. O pacote está disponível a partir de 12 vezes de R$ 1.375,31 por pessoa, em cabine interna dupla, na tarifa <em>MyCruise</em>.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 5 - Foto 4.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Em Savona"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Quem optar pelo embarque em Savona, no dia 2 de novembro de 2026, desfruta de um cruzeiro de 21 noites. O pacote abrange os voos nos trechos São Paulo–Lisboa e Lisboa–Milão; duas noites de hotel 4 estrelas com café da manhã em Lisboa antes do embarque no cruzeiro, no período de 31 de outubro a 2 de novembro; e os traslados entre o aeroporto e o hotel em Lisboa e o aeroporto e o terminal de cruzeiros em Savona. Neste caso, o pacote sai a partir de 12 vezes de R$ 1.325,23 por pessoa, em cabine interna dupla, na tarifa <em>MyCruise</em>.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 5 - Foto 5.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "titulo",
+                texto: "Em Barcelona"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Há também a oportunidade de cruzar o Atlântico a bordo do Costa Diadema embarcando em Barcelona no dia 3 de novembro de 2026. Além do cruzeiro de 20 noites, este pacote engloba os voos São Paulo-Lisboa-Barcelona; duas noites de hotel 4 estrelas com café da manhã em Barcelona antes do embarque no cruzeiro, no período de 1º a 3 de novembro; e os transfers entre o aeroporto, o hotel e o terminal de cruzeiros em Barcelona. O pacote custa a partir de 12 vezes de R$ 1.356,96 por pessoa, em cabine interna dupla, na tarifa <em>MyCruise</em>.
+                `
+            },
+            {
+                tipo: "box",
+                conteudo: `
+                “A viagem entre a Europa e o Brasil reúne culturas, paisagens e experiências muito distintas em um único roteiro. Os pacotes ampliam essa vivência ao permitir que o hóspede Costa comece a aproveitar as férias antes mesmo de embarcar no navio”, completa Carlos Coscione, Diretor de <em>Business Intelligence and Marketing Planning</em> para as Américas.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoAgosto_2026/CARD 5 - Foto 6.jpg",
+                height: "500px"
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Os pacotes completos a bordo do Costa Diadema podem ser adquiridos em até 12 vezes sem juros no cartão de crédito por meio das agências de viagens e no portal <a class="article-external-link" href="https://www.costaextra.com.br/" target="_blank" rel="noopener">Costa Extra</a>, exclusivo para as agências de viagens.<br><br>
+                <em>Os pacotes mencionados estão sujeitos à disponibilidade e podem sofrer alterações sem aviso prévio.</em>
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Saiba mais sobre o Costa Diadema",
+                conteudo: `
+                O <strong>Costa Diadema</strong> reúne 11 restaurantes, incluindo <em>Teppanyaki, Sushino At Costa, La Fiorentina Steak House</em> e <em>Pizzeria Pummid’Oro</em>, e 12 bares, entre eles <em>Aperol Spritz Bar, Carlsberg Country Rock Club</em> e <em>Gelateria Amarillo</em>; o Solemio Spa, com área termal, piscina de talassoterapia e salas de tratamentos; além de cassino, shopping, academia, teatro, pista de jogging, campo poliesportivo, 11 piscinas e hidromassagens e espaços dedicados para crianças e adolescentes, como o <em>Squok Club</em> e o <em>Teen Zone</em>.
+                `
+            }
+        ],
+        curiango: ""
     }
 ];
 
@@ -7229,7 +7972,7 @@ function renderPagina() {
             </div>`;
         }
 
-        const idsComTextoEmDuasColunas = [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35];
+        const idsComTextoEmDuasColunas = [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40];
         const classeDuasColunas = idsComTextoEmDuasColunas.includes(pagina.id) ? " texto-duas-colunas" : "";
 
         html += `<div class="article-container${classeDuasColunas}">`;
