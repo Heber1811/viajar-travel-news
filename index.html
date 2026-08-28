@@ -177,6 +177,27 @@
 		white-space: nowrap;
 	}
 
+	.curiango-audio-label {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		line-height: 1.15;
+	}
+
+	.curiango-audio-name {
+		color: #FD7D01;
+		font-size: 11px;
+		font-weight: 700;
+		white-space: nowrap;
+	}
+
+	.card-lua-cheia .curiango-audio-btn {
+		position: relative;
+		top: auto;
+		right: auto;
+		margin-top: 18px;
+	}
+
 	.curiango-audio-btn.is-playing {
 		box-shadow: 0 5px 18px rgba(126, 171, 49, 0.48);
 	}
@@ -207,8 +228,12 @@
 			font-size: 22px;
 		}
 
+		.curiango-audio-name {
+			font-size: 10px;
+		}
+
 		.curiango-audio-text {
-			display: none;
+			font-size: 10px;
 		}
 
 		.insta-btn {
@@ -1044,30 +1069,38 @@
 								<div class="modern-card travel card-lua-cheia">
 
 									<h2 style="font-family: 'Tenor Sans', sans-serif; color:#FD7D01 !important">
-										Por que
-										na Lua Cheia?</h2>
+										A Lua Cheia e o Curiango</h2>
 
 									<p><span class="text-indent"></span>
 										A lua cheia transborda CLAREZA - intelectual e interpretativa.
-
-
 									</p>
 									<p><span class="text-indent"></span>
 										Assim como ela surge no breu e revela a paisagem, nas palavras ela representa o
-										momento da compreensão total,
-										da preservação do conhecimento.
-
+										momento da compreensão total, da preservação do conhecimento.
 									</p>
 									<p><span class="text-indent"></span>
-
-										Ela clareia a tradição e os textos passados, para que possamos <br>
-										compreendê-los no
-										presente. É quando as peças se
-										encaixam e o leitor finalmente enxerga a intenção.
-
-										Porque a lua cheia é a metáfora da lucidez
-
+										Ela clareia a tradição e os textos passados, para que possamos compreendê-los no
+										presente. É quando as peças se encaixam e o leitor finalmente enxerga a intenção.
+										Porque a lua cheia é a metáfora da lucidez.
 									</p>
+									<p><span class="text-indent"></span>
+										O CURIANGO, ave-símbolo da Viajar Travel News, representa o mistério do
+										desconhecido, a liberdade da jornada. Diziam os antigos, que o canto do curiango,
+										sob o brilho da LUA CHEIA, abria caminhos e revelava o destino...
+									</p>
+									<button id="curiangoAudioButton" class="curiango-audio-btn" type="button"
+										aria-label="Escute o canto do curiango" aria-pressed="false">
+										<img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg" alt="">
+										<span class="material-symbols-outlined curiango-audio-icon"
+											aria-hidden="true">play_arrow</span>
+										<span class="curiango-audio-label">
+											<span class="curiango-audio-name">CURIANGO</span>
+											<span class="curiango-audio-text">Ouça o canto</span>
+										</span>
+									</button>
+									<audio id="curiangoAudio" preload="metadata">
+										<source src="images/AUDIO-2024-02-17-16-14-22.mp3" type="audio/mpeg">
+									</audio>
 								</div>
 							</div>
 						</div>
@@ -1099,7 +1132,7 @@
 								Os principais destinos e roteiros, você confere agora, em nossos <strong class="edicao-termo-destaque">CARDS</strong>, no <strong class="edicao-termo-destaque">DESTAQUE</strong>.
 							</p>
 							<p><span class="text-indent"></span>
-								Queremos expressar nosso agradecimento pela parceria e pronto atendimento <strong class="edicao-termo-destaque">COSTA CRUZEIROS</strong>. As fotografias utilizadas nesta edição foram <strong>DISPONIBILIZADAS PELA EMPRESA, QUE AUTORIZOU</strong> expressamente o seu uso pela Viajar Travel News.
+								Queremos expressar nosso agradecimento pela parceria e pronto atendimento da <strong class="edicao-termo-destaque">COSTA CRUZEIROS</strong>. As fotografias utilizadas nesta edição foram <strong>DISPONIBILIZADAS PELA EMPRESA, QUE AUTORIZOU</strong> expressamente o seu uso pela Viajar Travel News.
 							</p>
 							<p><span class="text-indent"></span>
 								A todos... bons ventos e marés tranquilas!
@@ -1253,11 +1286,11 @@
 				}
 
 				.stack-card-item--maior {
-					flex: 1.2;
+					flex: 0 0 auto;
 				}
 
 				.stack-card-item--menor {
-					flex: 0.8;
+					flex: 1;
 				}
 
 				.stack-card-item .modern-card,
@@ -1621,15 +1654,6 @@
 						<div class="moon-section">
 
 							<div class="moon-card">
-								<button id="curiangoAudioButton" class="curiango-audio-btn" type="button"
-									aria-label="Escute o canto do curiango" aria-pressed="false">
-									<img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg" alt="">
-					<span class="material-symbols-outlined curiango-audio-icon" aria-hidden="true">play_arrow</span>
-					<span class="curiango-audio-text">Ouça o canto</span>
-								</button>
-								<audio id="curiangoAudio" preload="metadata">
-									<source src="images/AUDIO-2024-02-17-16-14-22.mp3" type="audio/mpeg">
-								</audio>
 								<div class="moon-top">
 									<div class="moon-image">
 										<div id="recent-posts-6"
