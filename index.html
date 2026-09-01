@@ -872,6 +872,17 @@
 			</header>
 
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<div class="selo-edicao-home" aria-label="Edição número 28">
+					<div class="selo-edicao-fitas" aria-hidden="true">
+						<span></span>
+						<span></span>
+					</div>
+					<div class="selo-edicao-medalha">
+						<span>Edição</span>
+						<strong>Nº 28</strong>
+						<small>★ ★ ★</small>
+					</div>
+				</div>
 				<ol class="carousel-indicators">
 					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -1030,10 +1041,9 @@
 									<p><span class="text-indent"></span>
 
 
-										A VIAJAR TRAVEL NEWS é um site voltado a viagens e ao trade <br>turístico,
-										fundado
-										em 2005,
-										em Florianópolis, SC. Temos free-lancers pelo <br> Brasil, que divulgam
+										A VIAJAR TRAVEL NEWS é um site voltado a viagens e ao trade turístico,
+										fundado em 2005,
+										em Florianópolis, SC. Temos free-lancers pelo Brasil, que divulgam
 										nossas reportagens, alinhadas a fontes independentes e seguras.
 
 									</p>
@@ -1158,6 +1168,125 @@
 			.card-mantiqueira .edicao-termo-destaque {
 				color: #FD7D01;
 				font-weight: 700;
+			}
+
+			.selo-edicao-home {
+				position: absolute;
+				top: 16px;
+				right: 18px;
+				z-index: 20;
+				width: 96px;
+				height: 118px;
+				pointer-events: none;
+				filter: drop-shadow(0 7px 7px rgba(0, 0, 0, 0.38));
+			}
+
+			.selo-edicao-medalha {
+				position: relative;
+				z-index: 2;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 96px;
+				height: 96px;
+				border: 5px ridge #f8c541;
+				border-radius: 50%;
+				background: radial-gradient(circle at 35% 28%, #ffe997 0%, #f5bd35 42%, #d78a09 100%);
+				box-shadow: inset 0 0 0 3px #8f5905, inset 0 0 0 6px #ffd969;
+				color: #432800;
+				font-family: "Tenor Sans", sans-serif;
+				line-height: 1.05;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			.selo-edicao-medalha span {
+				padding-bottom: 4px;
+				border-bottom: 1px solid rgba(93, 54, 0, 0.6);
+				font-size: 0.55rem;
+				font-weight: 700;
+				letter-spacing: 0.16em;
+			}
+
+			.selo-edicao-medalha strong {
+				margin-top: 5px;
+				color: inherit;
+				font-family: Georgia, "Times New Roman", serif;
+				font-size: 1.12rem;
+				letter-spacing: 0.01em;
+			}
+
+			.selo-edicao-medalha small {
+				margin-top: 5px;
+				font-size: 0.44rem;
+				letter-spacing: 0.18em;
+			}
+
+			.selo-edicao-fitas {
+				position: absolute;
+				top: 67px;
+				left: 18px;
+				z-index: 1;
+				display: flex;
+				gap: 7px;
+			}
+
+			.selo-edicao-fitas span {
+				display: block;
+				width: 26px;
+				height: 47px;
+				background: linear-gradient(90deg, #c65300 0%, #FD7D01 55%, #e96900 100%);
+				clip-path: polygon(0 0, 100% 0, 91% 100%, 50% 79%, 8% 100%);
+			}
+
+			.selo-edicao-fitas span:first-child {
+				transform: rotate(12deg);
+			}
+
+			.selo-edicao-fitas span:last-child {
+				transform: rotate(-12deg);
+			}
+
+			@media screen and (max-width: 480px) {
+				.selo-edicao-home {
+					top: 8px;
+					right: 8px;
+					width: 68px;
+					height: 84px;
+				}
+
+				.selo-edicao-medalha {
+					width: 68px;
+					height: 68px;
+					border-width: 4px;
+				}
+
+				.selo-edicao-medalha span {
+					padding-bottom: 4px;
+					font-size: 0.4rem;
+				}
+
+				.selo-edicao-medalha strong {
+					margin-top: 4px;
+					font-size: 0.78rem;
+				}
+
+				.selo-edicao-medalha small {
+					margin-top: 4px;
+					font-size: 0.32rem;
+				}
+
+				.selo-edicao-fitas {
+					top: 48px;
+					left: 13px;
+					gap: 5px;
+				}
+
+				.selo-edicao-fitas span {
+					width: 18px;
+					height: 34px;
+				}
 			}
 
 			/* FOTO */
