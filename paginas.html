@@ -240,7 +240,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.02));
         }
 
 
@@ -248,6 +248,7 @@
             position: relative;
             z-index: 2;
             max-width: 900px;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
         }
 
         .hero-content p {
@@ -256,6 +257,14 @@
             -ms-hyphens: none;
             word-break: normal;
             overflow-wrap: normal;
+        }
+
+        .article-byline {
+            display: block;
+            margin: 24px auto 0;
+            color: #777;
+            font-size: 14px;
+            text-align: center;
         }
 
         .hero-caption {
@@ -1128,7 +1137,7 @@
     <script src="plugins/swiper/swiper.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="plugins/aos/aos.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js?v=20260922-2"></script>
     <script src="js/home.js"></script>
     <script src="js/htmlDinamico.js?v=20260828-32"></script>
 

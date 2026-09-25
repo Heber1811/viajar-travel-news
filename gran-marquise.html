@@ -26,6 +26,571 @@
 
     <!-- Lead Style -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <style>
+        .hotel-hero {
+            position: relative;
+            min-height: clamp(440px, 68vh, 720px);
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .hotel-hero>img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hotel-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10, 18, 24, 0.08) 20%, rgba(10, 18, 24, 0.82) 100%);
+        }
+
+        .hotel-hero__content {
+            position: relative;
+            z-index: 1;
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 70px 0;
+        }
+
+        .hotel-hero__eyebrow {
+            display: inline-block;
+            margin-bottom: 14px;
+            color: #fff;
+            font-size: 13px;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+        }
+
+        .hotel-hero h1 {
+            max-width: 850px;
+            margin: 0 0 14px;
+            color: #fff;
+            font-size: clamp(42px, 6vw, 82px);
+            line-height: 1.02;
+            text-shadow: 0 3px 18px rgba(0, 0, 0, .28);
+        }
+
+        .hotel-hero__location {
+            margin: 0;
+            color: rgba(255, 255, 255, .94);
+            font-size: clamp(16px, 2vw, 21px);
+            letter-spacing: .06em;
+            text-transform: uppercase;
+        }
+
+        .hotel-article {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 86px 20px 95px;
+        }
+
+        .hotel-article p {
+            margin: 0 0 24px;
+            color: #43474b;
+            font-size: 17px;
+            line-height: 1.85;
+            text-align: left;
+        }
+
+        .hotel-section {
+            margin-bottom: 90px;
+        }
+
+        .hotel-section__heading {
+            max-width: 760px;
+            margin: 0 auto 42px;
+            text-align: center;
+        }
+
+        .hotel-section__heading::before {
+            content: "";
+            display: block;
+            width: 54px;
+            height: 3px;
+            margin: 0 auto 17px;
+            background: #FD7D01;
+        }
+
+        .hotel-section__heading h2 {
+            margin: 0;
+            color: #43474b;
+            font-size: clamp(30px, 4vw, 46px);
+            font-weight: 400;
+            line-height: 1.16;
+        }
+
+        .hotel-intro {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(280px, .72fr);
+            gap: 55px;
+            align-items: center;
+        }
+
+        .hotel-intro__text {
+            columns: 2;
+            column-gap: 38px;
+        }
+
+        .hotel-intro__text p {
+            break-inside: avoid;
+        }
+
+        .hotel-photo {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .hotel-intro__photo {
+            min-height: 520px;
+            max-height: 640px;
+            box-shadow: 0 22px 55px rgba(45, 55, 62, .15);
+        }
+
+        .hotel-photo-pair {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            margin-top: 38px;
+        }
+
+        .hotel-photo-pair figure {
+            height: 470px;
+            margin: 0;
+        }
+
+        .hotel-feature {
+            display: grid;
+            grid-template-columns: .95fr 1.05fr;
+            gap: 58px;
+            align-items: center;
+            padding: 55px;
+            background: #f8f8f1;
+            border: 1px solid rgba(253, 125, 1, .24);
+            border-radius: 24px;
+        }
+
+        .hotel-feature__photo {
+            min-height: 560px;
+            box-shadow: 0 18px 40px rgba(45, 55, 62, .12);
+        }
+
+        .hotel-feature__copy h2,
+        .hotel-production h2,
+        .hotel-gallery h2 {
+            margin: 0 0 25px;
+            color: #43474b;
+            font-size: clamp(30px, 3.5vw, 44px);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .hotel-production {
+            max-width: 900px;
+            margin: 0 auto 90px;
+            padding: 42px 48px;
+            border-left: 4px solid #FD7D01;
+            background: #fff8f1;
+        }
+
+        .hotel-production p:last-child {
+            margin-bottom: 0;
+        }
+
+        .hotel-gallery h2 {
+            text-align: center;
+        }
+
+        .hotel-gallery__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 250px;
+            gap: 14px;
+        }
+
+        .hotel-gallery__grid figure {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 14px;
+        }
+
+        .hotel-gallery__grid figure:nth-child(1),
+        .hotel-gallery__grid figure:nth-child(6) {
+            grid-column: span 2;
+        }
+
+        .hotel-contact {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 26px;
+            align-items: center;
+            margin-top: 70px;
+            padding: 34px 38px;
+            background: #43474b;
+            border-radius: 20px;
+            color: #fff;
+        }
+
+        .hotel-contact__mark {
+            display: grid;
+            width: 58px;
+            height: 58px;
+            place-items: center;
+            border-radius: 50%;
+            background: #FD7D01;
+            font-size: 25px;
+        }
+
+        .hotel-contact h2 {
+            margin: 0 0 8px;
+            color: #fff;
+            font-size: 22px;
+        }
+
+        .hotel-contact address {
+            margin: 0;
+            color: rgba(255, 255, 255, .86);
+            font-style: normal;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 900px) {
+            .hotel-intro,
+            .hotel-feature {
+                grid-template-columns: 1fr;
+            }
+
+            .hotel-intro__text {
+                columns: 1;
+            }
+
+            .hotel-intro__photo,
+            .hotel-feature__photo {
+                min-height: 480px;
+            }
+
+            .hotel-feature {
+                padding: 38px;
+            }
+
+            .hotel-gallery__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hotel-hero {
+                min-height: 520px;
+            }
+
+            .hotel-hero__content {
+                width: calc(100% - 30px);
+                padding-bottom: 48px;
+            }
+
+            .hotel-article {
+                padding: 58px 15px 70px;
+            }
+
+            .hotel-section {
+                margin-bottom: 65px;
+            }
+
+            .hotel-intro {
+                gap: 30px;
+            }
+
+            .hotel-intro__photo,
+            .hotel-feature__photo {
+                min-height: 410px;
+            }
+
+            .hotel-photo-pair {
+                grid-template-columns: 1fr;
+            }
+
+            .hotel-photo-pair figure {
+                height: 390px;
+            }
+
+            .hotel-feature {
+                gap: 32px;
+                padding: 28px 20px;
+                border-radius: 18px;
+            }
+
+            .hotel-production {
+                padding: 30px 24px;
+            }
+
+            .hotel-gallery__grid {
+                grid-auto-rows: 190px;
+                gap: 9px;
+            }
+
+            .hotel-gallery__grid figure:nth-child(1),
+            .hotel-gallery__grid figure:nth-child(6) {
+                grid-column: span 1;
+            }
+
+            .hotel-contact {
+                grid-template-columns: 1fr;
+                padding: 28px 24px;
+            }
+        }
+
+        /* Estrutura editorial baseada no modelo novo de paginas.html */
+        main.gran-marquise-main {
+            display: block;
+            width: 100%;
+            padding: 0;
+        }
+
+        .reference-hero {
+            position: relative;
+            width: min(1225px, calc(100% - 30px));
+            height: 70vh;
+            min-height: 480px;
+            margin: 45px auto 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .reference-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, .24), rgba(0, 0, 0, .02));
+        }
+
+        .reference-hero__content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .reference-hero h1 {
+            margin: 0 0 12px;
+            color: #fff;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, .55);
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 1.25;
+            text-transform: uppercase;
+        }
+
+        .reference-hero p {
+            margin: 0;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .reference-article {
+            max-width: 1180px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .reference-article>p {
+            column-count: 2;
+            column-gap: 45px;
+            margin-bottom: 35px;
+            color: #444;
+            font-size: 18px;
+            line-height: 1.9;
+            text-align: left;
+        }
+
+        .reference-article>p.reference-intro {
+            column-count: 1;
+            max-width: 900px;
+            margin: 0 auto 18px;
+            color: #FD7D01;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .reference-byline {
+            display: block;
+            margin: 0 0 45px;
+            color: #777;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .reference-title {
+            margin: 60px 0 25px;
+            color: #FD7D01;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 1.35;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .reference-title::after {
+            content: "";
+            display: block;
+            width: 90px;
+            height: 4px;
+            margin: 18px auto 0;
+            background: linear-gradient(to right, #FD7D01 0 55%, #d6d6d6 55% 100%);
+        }
+
+        .reference-image {
+            display: block;
+            width: 100%;
+            height: 500px;
+            margin: 34px 0;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .reference-image--portrait {
+            object-position: center 35%;
+        }
+
+        .reference-images {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            margin: 34px 0 50px;
+        }
+
+        .reference-images img {
+            display: block;
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .reference-images--three {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .reference-copy-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 45px;
+            margin-bottom: 35px;
+        }
+
+        .reference-copy-grid p {
+            margin: 0 0 25px;
+            color: #444;
+            font-size: 18px;
+            line-height: 1.9;
+            text-align: left;
+        }
+
+        .reference-copy-grid p:last-child {
+            margin-bottom: 0;
+        }
+
+        .reference-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 34px;
+        }
+
+        .reference-gallery img {
+            display: block;
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .reference-box {
+            margin: 58px 0 0;
+            padding: 34px;
+            border-radius: 18px;
+            background: #fff5eb;
+            border: 1px solid rgba(253, 125, 1, .3);
+        }
+
+        .reference-box h2 {
+            margin: 0 0 15px;
+            color: #FD7D01;
+            font-size: 24px;
+        }
+
+        .reference-box address {
+            color: #444;
+            font-size: 17px;
+            font-style: normal;
+            line-height: 1.75;
+        }
+
+        @media (max-width: 767px) {
+            .reference-hero {
+                width: calc(100% - 30px);
+                height: 62vh;
+                min-height: 430px;
+                margin-top: 24px;
+            }
+
+            .reference-hero h1 {
+                font-size: 26px;
+            }
+
+            .reference-hero p {
+                font-size: 17px;
+            }
+
+            .reference-article {
+                padding: 55px 15px 70px;
+            }
+
+            .reference-article>p {
+                column-count: 1;
+                font-size: 17px;
+            }
+
+            .reference-images,
+            .reference-images--three,
+            .reference-gallery,
+            .reference-copy-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reference-image,
+            .reference-images img,
+            .reference-gallery img {
+                height: 390px;
+            }
+
+            .reference-title {
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -72,355 +637,80 @@
             </header>
         </div>
 
-        <div class="page-header">
-            <div class="page-header-content" style="padding: 40px 0px 40px 0px;">
-                <div class="container">
-                    <h2 class="heading">HOTEL GRAN MARQUISE</h2>
+        <main class="gran-marquise-main">
+            <section class="reference-hero"
+                style="background-image: url('img/gran/image-fortaleza-ceara-gran-marquise-hotel-25.jpeg');"
+                aria-labelledby="hotel-title">
+                <div class="reference-hero__content">
+                    <h1 id="hotel-title">Hotel Gran Marquise</h1>
+                    <p>Mais que um hotel, um conceito</p>
                 </div>
-            </div>
-        </div>
-        <div class="main-wrapper m_tp_0">
-            <div class="container">
-                <div class="blog_details">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
-                            <article class="blog_post post_expand">
-                                <div class="post_content">
-                                    <div class="post_header">
-                                        <p class="letra" style="text-align: center; font-size: 25px !important; color: #43474B !important;">
-                                            Mais que um hotel, um conceito </p>
-                                    </div>
-                                    <br>
-                                    <div class="post_fulltext">
-                                        <div class="fulltext_section">
-                                            <div class="row">
-                                                <div class="col-md-4 col-sm-12 mb-5">
-                        
-                                                    <p>
-                                                        Único Cinco Estrelas de Fortaleza, o Gran Marquise vai muito
-                                                        além de um hotel. É uma
-                                                        referência que serve de modelo para a indústria hoteleira no
-                                                        Brasil, pela excelência
-                                                        no atendimento e a excepcional qualidade de serviços. É um hotel
-                                                        moderno, mas acima
-                                                        de tudo, humano. Ao mesmo tempo em que é PetFriendly, possui
-                                                        pelo menos 20 variações
-                                                        de salas para realizar de seminários a feiras e congressos, com
-                                                        todo conforto -
-                                                        recentemente, a área de eventos teve seus espaços totalmente
-                                                        repaginados.
-                        
-                                                        Ambiente requintado e de elegância ímpar, oferece experiências
-                                                        de super luxo, já
-                                                        tendo hospedado Paul McCartney, Elton John e Beyoncé.
-                                                    </p>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12 mb-5">
-                                                    <div class="custom-card__background"
-                                                        style="background:url('img/WhatsApp Image 2024-05-27 at 09.28.06.jpeg');    
-                                                                                                                                                            background-repeat: no-repeat !important;
-                                                                                                                                                            background-position: center !important;              
-                                                                                                                                                            width: 100%;
-                                                                                                                                                            height: 350px;
-                                                                                                                                                            position: relative;
-                                                                                                                                                            display: flex;
-                                                                                                                                                            margin: auto;            
-                                                                                                                                                            background-size: cover;
-                                                                                                                                                            border-radius: 10px;">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12 mb-5">
-                        
-                                                    <p>
-                                                        Agora,
-                                                        prepara-se para receber, entre junho e agosto deste ano, chefes
-                                                        de Estado e de
-                                                        Governo que participam do G20, grupo que reúne as 19 maiores
-                                                        economias do mundo e
-                                                        representantes da União Europeia e da União Africana.
-                        
-                                                        O Guest Service é outro capítulo à parte, orientando e
-                                                        gerenciando as solicitações
-                                                        dos hóspedes por meio de um atendimento rápido e eficiente. Os
-                                                        agentes do Guest
-                                                        Service conseguem informações sobre preferências, hábitos,
-                                                        hobbies, restrições
-                                                        alimentares e outros. É uma central de soluções de extrema
-                                                        importância para o bom
-                                                        acolhimento do cliente, assim como as indicações do concierge.
-                        
-                                                    </p>
-                                                </div>
-                                                <div class="col-md-6 col-sm-12 mb-5">
-                                                    <div class="custom-card__background"
-                                                        style="background:url('img/WhatsApp Image 2024-05-27 at 09.29.08 (1).jpeg');    
-                                                                                                                                                            background-repeat: no-repeat !important;
-                                                                                                                                                            background-position: center !important;              
-                                                                                                                                                            width: 100%;
-                                                                                                                                                            height: 500px;
-                                                                                                                                                            position: relative;
-                                                                                                                                                            display: flex;
-                                                                                                                                                            margin: auto;            
-                                                                                                                                                            background-size: cover;
-                                                                                                                                                            border-radius: 10px;">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-12 mb-5">
-                                                    <div class="custom-card__background"
-                                                        style="background:url('img/WhatsApp Image 2024-05-27 at 09.29.08.jpeg');    
-                                                                                                                                                            background-repeat: no-repeat !important;
-                                                                                                                                                            background-position: center !important;              
-                                                                                                                                                            width: 100%;
-                                                                                                                                                            height: 500px;
-                                                                                                                                                            position: relative;
-                                                                                                                                                            display: flex;
-                                                                                                                                                            margin: auto;            
-                                                                                                                                                            background-size: cover;
-                                                                                                                                                            border-radius: 10px;">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
-                            <article class="blog_post post_expand">
-                                <div class="post_content">
-                                    <div class="post_header">
-                                        <p class="letra" style="text-align: center; font-size: 25px !important; color: #43474B !important;">
-                                            Conhecendo o hotel
-                                        </p>
-                                    </div>
-                                    <br>
-                                    <div class="post_fulltext">
-                                        <div class="fulltext_section">
-                                            <div class="row">
-                                                <div class="col-md-4 col-sm-12 mb-5">
-                                                    <p>Nosso tour começa na Cobertura pelo ROOFTOP, uma tendência
-                                                        mundial para espaços que conjugam convivência e uma vista
-                                                        panorâmica da cidade. Mas você não precisa sair do Brasil para
-                                                        curtir um visual incrível. No Gran Marquise, a piscina de borda
-                                                        infinita aproxima o horizonte e contempla boa parte da orla de
-                                                        Fortaleza, até as velas do Mucuripe. O por do sol é inspirador!
-                                                        Também na cobertura ficam o GRAN SPA by L'Occitane e uma
-                                                        academia de design convidativo e equipamentos da Life Fitness,
-                                                        como a esteira que permite exercícios cardiovasculares imersivos
-                                                        por meio do acesso fácil a aplicativos de bem estar, dentre
-                                                        outros.
-                        
-                                                        No RESTAURANTE MUCURIPE, carro-chefe do hotel, são servidos o
-                                                        café da manhã, além de opções de almoço e jantar. A Feijoada,
-                                                        aos sábados, foi eleita pela revista Veja a melhor de Fortaleza,
-                        
-                                                        por oito anos consecutivos.
-                        
-                                                    </p>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12 mb-5">
-                                                    <div class="custom-card__background"
-                                                        style="background:url('img/gran/WhatsApp\ Image\ 2025-06-03\ at\ 19.12.32\ \(1\).jpeg');    
-                                                                                                                                        background-repeat: no-repeat !important;
-                                                                                                                                        background-position: center !important;              
-                                                                                                                                        width: 100%;
-                                                                                                                                        height: 400px;
-                                                                                                                                        position: relative;
-                                                                                                                                        display: flex;
-                                                                                                                                        margin: auto;            
-                                                                                                                                        background-size: cover;
-                                                                                                                                        border-radius: 10px;">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-12 mb-5">
-                                                    <p>
-                        
-                                                        O RESTAURANTE MANGOSTIN oferece o melhor da culinária
-                                                        contemporânea asiática com Festival de Sushi às sextas. Assim
-                                                        como o Rooftop, ambos também são abertos ao público.
-                        
-                                                        O LOBBY BAR é onde a boa música, alta gastronomia e drinks
-                                                        incríveis se encontram com a descontração e com a arte
-                                                        contemporânea, que servem de pano de fundo para os negócios e o
-                                                        Happy Hour mais concorrido da cidade.
-                        
-                                                        O Gran Marquise investe na produção própria dos produtos
-                                                        oferecidos no café da manhã. No cardápio à disposição dos
-                                                        hóspedes são postos à mesa, dentre outros, todo o tipo de pão:
-                                                        francês, multicereais, italiano, australiano e croissants, tudo
-                                                        produzido diariamente com ingredientes regionais, que são
-                                                        priorizados.
-                        
-                        
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-lg-12 col-md-12  col-sm-12 details_with_sidebar">
-                            <article class="blog_post post_expand">
-                                <div class="post_content">
-                                    <div class="post_header">
-                                        <p class="letra" style="text-align: center; font-size: 25px !important; color: #43474B !important;">
-                                            Produção própria
-                                        </p>
-                                    </div>
-                                    <br>
-                                    <div class="post_fulltext">
-                                        <div class="fulltext_section">
-                                            <div class="row">
-                                                <div class="col-md-12 col-sm-12 mb-5">
-                                                    <p>
-                                                        O Gran Marquise investe na produção própria dos produtos
-                                                        oferecidos no café da manhã. No cardápio à disposição dos
-                                                        hóspedes são postos à mesa, dentre outros, todo o tipo de pão:
-                                                        francês, multicereais, italiano, australiano e croissants, tudo
-                                                        produzido diariamente com ingredientes regionais, que são
-                                                        priorizados.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="custom-card__background"
-                                style="background:url('img/WhatsApp Image 2024-05-27 at 14.57.42.jpeg');    
-                                                                                        background-repeat: no-repeat !important;
-                                                                                        background-position: center !important;              
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        position: relative;
-                                                                                        display: flex;
-                                                                                        margin: auto;            
-                                                                                        background-size: cover;
-                                                                                        border-radius: 10px;">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="custom-card__background"
-                                style="background:url('img/WhatsApp Image 2024-05-27 at 14.41.17.jpeg');    
-                                                                                        background-repeat: no-repeat !important;
-                                                                                        background-position: center !important;              
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        position: relative;
-                                                                                        display: flex;
-                                                                                        margin: auto;            
-                                                                                        background-size: cover;
-                                                                                        border-radius: 10px;">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="custom-card__background"
-                                style="background:url('img/hotel/WhatsApp Image 2024-05-27 at 09.31.27.jpeg');    
-                                                                                        background-repeat: no-repeat !important;
-                                                                                        background-position: center !important;              
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        position: relative;
-                                                                                        display: flex;
-                                                                                        margin: auto;            
-                                                                                        background-size: cover;
-                                                                                        border-radius: 10px;">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="custom-card__background"
-                                style="background:url('img/hotel/WhatsApp\ Image\ 2024-05-27\ at\ 09.31.27\ \(1\).jpeg');    
-                                                                                        background-repeat: no-repeat !important;
-                                                                                        background-position: center !important;              
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        position: relative;
-                                                                                        display: flex;
-                                                                                        margin: auto;            
-                                                                                        background-size: cover;
-                                                                                        border-radius: 10px;">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="custom-card__background"
-                                style="background:url('img/hotel/WhatsApp Image 2024-05-27 at 09.31.28.jpeg');    
-                                                                                        background-repeat: no-repeat !important;
-                                                                                        background-position: center !important;              
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        position: relative;
-                                                                                        display: flex;
-                                                                                        margin: auto;            
-                                                                                        background-size: cover;
-                                                                                        border-radius: 10px;">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="custom-card__background"
-                                style="background:url('img/hotel/WhatsApp\ Image\ 2024-05-27\ at\ 09.31.28\ \(1\).jpeg');    
-                                                                                        background-repeat: no-repeat !important;
-                                                                                        background-position: center !important;              
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        position: relative;
-                                                                                        display: flex;
-                                                                                        margin: auto;            
-                                                                                        background-size: cover;
-                                                                                        border-radius: 10px;">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="custom-card__background"
-                                style="background:url('img/hotel/WhatsApp\ Image\ 2024-05-27\ at\ 09.31.28\ \(2\).jpeg');    
-                                                                                        background-repeat: no-repeat !important;
-                                                                                        background-position: center !important;              
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        position: relative;
-                                                                                        display: flex;
-                                                                                        margin: auto;            
-                                                                                        background-size: cover;
-                                                                                        border-radius: 10px;">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 mb-5">
-                            <div class="custom-card__background"
-                                style="background:url('img/hotel/WhatsApp\ Image\ 2024-05-27\ at\ 09.31.28\ \(3\).jpeg');    
-                                                                                        background-repeat: no-repeat !important;
-                                                                                        background-position: center !important;              
-                                                                                        width: 100%;
-                                                                                        height: 300px;
-                                                                                        position: relative;
-                                                                                        display: flex;
-                                                                                        margin: auto;            
-                                                                                        background-size: cover;
-                                                                                        border-radius: 10px;">
-                            </div>
-                        </div>
+            </section>
 
+            <article class="reference-article">
+                <p class="reference-intro">Único Cinco Estrelas de Fortaleza, o Gran Marquise vai muito além de um hotel.</p>
+                <span class="reference-byline">Por Fátima Vasconcelos Nunes</span>
+
+                <p>É uma referência que serve de modelo para a indústria hoteleira no Brasil, pela excelência no atendimento e a excepcional qualidade de serviços. É um hotel moderno, mas acima de tudo, humano. Ao mesmo tempo em que é PetFriendly, possui pelo menos 20 variações de salas para realizar de seminários a feiras e congressos, com todo conforto — recentemente, a área de eventos teve seus espaços totalmente repaginados.<br><br>
+                Ambiente requintado e de elegância ímpar, oferece experiências de super luxo, já tendo hospedado Paul McCartney, Elton John e Beyoncé.<br><br>
+                Agora, prepara-se para receber, entre junho e agosto deste ano, chefes de Estado e de Governo que participam do G20, grupo que reúne as 19 maiores economias do mundo e representantes da União Europeia e da União Africana.<br><br>
+                O Guest Service é outro capítulo à parte, orientando e gerenciando as solicitações dos hóspedes por meio de um atendimento rápido e eficiente. Os agentes do Guest Service conseguem informações sobre preferências, hábitos, hobbies, restrições alimentares e outros. É uma central de soluções de extrema importância para o bom acolhimento do cliente, assim como as indicações do concierge.</p>
+
+                <div class="reference-images reference-images--three">
+                    <img src="img/WhatsApp Image 2024-05-27 at 09.28.06.jpeg"
+                        alt="Ambiente do Gran Marquise Hotel" loading="lazy">
+                    <img src="img/WhatsApp Image 2024-05-27 at 09.29.08 (1).jpeg"
+                        alt="Detalhe das instalações do Gran Marquise Hotel" loading="lazy">
+                    <img src="img/WhatsApp Image 2024-05-27 at 09.29.08.jpeg"
+                        alt="Experiência no Gran Marquise Hotel" loading="lazy">
+                </div>
+
+                <h2 class="reference-title">Conhecendo o hotel</h2>
+
+                <div class="reference-copy-grid">
+                    <div>
+                        <p>Nosso tour começa na Cobertura pelo ROOFTOP, uma tendência mundial para espaços que conjugam convivência e uma vista panorâmica da cidade. Mas você não precisa sair do Brasil para curtir um visual incrível. No Gran Marquise, a piscina de borda infinita aproxima o horizonte e contempla boa parte da orla de Fortaleza, até as velas do Mucuripe. O por do sol é inspirador! Também na cobertura ficam o GRAN SPA by L'Occitane e uma academia de design convidativo e equipamentos da Life Fitness, como a esteira que permite exercícios cardiovasculares imersivos por meio do acesso fácil a aplicativos de bem estar, dentre outros.</p>
+                        <p>No RESTAURANTE MUCURIPE, carro-chefe do hotel, são servidos o café da manhã, além de opções de almoço e jantar. A Feijoada, aos sábados, foi eleita pela revista Veja a melhor de Fortaleza, por oito anos consecutivos.</p>
                     </div>
-                    <div class="row">
-                        <div class="author_div" data-aos="fade-up" data-aos-duration="700" style="margin: 20px;">
-                            <div class="author-block">
-                                <h5 class="author_name" style="text-transform: uppercase;">HOTEL GRAN MARQUISE</h5>
-                                <p class="author_intro">
-                                    Avenida Beira Mar, 3980 - Mucuripe <br>
-                                    Fortaleza | CE | Brasil | <br>
-                                    Tel: +55(85) 4006-5000 | TOLL FREE: 0800 275 2202 <br>
-                                    E-mail: reservas@granmarquise.com.br
-                                </p>
-                            </div>
-                        </div>
+                    <div>
+                        <p>O RESTAURANTE MANGOSTIN oferece o melhor da culinária contemporânea asiática com Festival de Sushi às sextas. Assim como o Rooftop, ambos também são abertos ao público.</p>
+                        <p>O LOBBY BAR é onde a boa música, alta gastronomia e drinks incríveis se encontram com a descontração e com a arte contemporânea, que servem de pano de fundo para os negócios e o Happy Hour mais concorrido da cidade.</p>
+                        <p>O Gran Marquise investe na produção própria dos produtos oferecidos no café da manhã. No cardápio à disposição dos hóspedes são postos à mesa, dentre outros, todo o tipo de pão: francês, multicereais, italiano, australiano e croissants, tudo produzido diariamente com ingredientes regionais, que são priorizados.</p>
                     </div>
                 </div>
-                <div id="footer-home"></div>
-            </div>
-        </div>
+
+                <img class="reference-image"
+                    src="img/gran/WhatsApp Image 2025-06-03 at 19.12.32 (1).jpeg"
+                    alt="Rooftop do Gran Marquise Hotel" loading="lazy">
+
+                <h2 class="reference-title">Produção própria</h2>
+                <p>O Gran Marquise investe na produção própria dos produtos oferecidos no café da manhã. No cardápio à disposição dos hóspedes são postos à mesa, dentre outros, todo o tipo de pão: francês, multicereais, italiano, australiano e croissants, tudo produzido diariamente com ingredientes regionais, que são priorizados.</p>
+
+                <h2 class="reference-title">Gran Marquise em imagens</h2>
+                <div class="reference-gallery">
+                    <img src="img/WhatsApp Image 2024-05-27 at 14.57.42.jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                    <img src="img/WhatsApp Image 2024-05-27 at 14.41.17.jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                    <img src="img/hotel/WhatsApp Image 2024-05-27 at 09.31.27.jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                    <img src="img/hotel/WhatsApp Image 2024-05-27 at 09.31.27 (1).jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                    <img src="img/hotel/WhatsApp Image 2024-05-27 at 09.31.28.jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                    <img src="img/hotel/WhatsApp Image 2024-05-27 at 09.31.28 (1).jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                    <img src="img/hotel/WhatsApp Image 2024-05-27 at 09.31.28 (2).jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                    <img src="img/hotel/WhatsApp Image 2024-05-27 at 09.31.28 (3).jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                    <img src="img/gran/images.jpeg" alt="Gran Marquise Hotel" loading="lazy">
+                </div>
+
+                <aside class="reference-box" aria-label="Contato do Hotel Gran Marquise">
+                    <h2>Hotel Gran Marquise</h2>
+                    <address>
+                        Avenida Beira Mar, 3980 — Mucuripe<br>
+                        Fortaleza | CE | Brasil<br>
+                        Tel: +55 (85) 4006-5000 | Toll Free: 0800 275 2202<br>
+                        E-mail: reservas@granmarquise.com.br
+                    </address>
+                </aside>
+            </article>
+        </main>
+        <div id="footer-home"></div>
     </div>
 
     <!-- All JavaScript Files
@@ -430,7 +720,7 @@
     <script src="plugins/swiper/swiper.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="plugins/aos/aos.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js?v=20260922-2"></script>
     <script src="js/home.js"></script>
 
 </body>

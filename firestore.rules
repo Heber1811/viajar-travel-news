@@ -1,0 +1,120 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function metricWriter(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    function validMonth(month) {
+      return month.matches('^[0-9]{4}-(0[1-9]|1[0-2])$');
+    }
+
+    function createdNow() {
+      return request.resource.data.createdAt == request.time;
+    }
+
+    function reportAdmin() {
+      return request.auth != null
+        && request.auth.token.email in [
+          'heberluiz1811@gmail.com',
+          'hudson.m.3110@gmail.com'
+        ];
+    }
+
+    match /metricSites/viajar-travel-news/months/{month}/visitors/{visitorId} {
+      allow read: if reportAdmin();
+      allow create: if validMonth(month)
+        && metricWriter(visitorId)
+        && request.resource.data.keys().hasOnly(['uid', 'createdAt'])
+        && request.resource.data.uid == visitorId
+        && createdNow();
+    }
+
+    match /metricSites/viajar-travel-news/months/{month}/sessions/{sessionDocId} {
+      allow read: if reportAdmin();
+      allow create: if validMonth(month)
+        && metricWriter(request.resource.data.uid)
+        && request.resource.data.keys().hasOnly(['uid', 'sessionId', 'createdAt'])
+        && request.resource.data.sessionId.matches('^[a-fA-F0-9]{32}$')
+        && sessionDocId == request.resource.data.uid + '_' + request.resource.data.sessionId
+        && createdNow();
+    }
+
+    match /metricSites/viajar-travel-news/months/{month}/pageViews/{pageId} {
+      allow read: if reportAdmin();
+      allow create: if validMonth(month)
+        && metricWriter(request.resource.data.uid)
+        && request.resource.data.keys().hasAll(['uid', 'sessionId', 'pageId', 'path', 'createdAt'])
+        && request.resource.data.keys().hasOnly(['uid', 'sessionId', 'pageId', 'path', 'title', 'location', 'createdAt'])
+        && request.resource.data.sessionId.matches('^[a-fA-F0-9]{32}$')
+        && request.resource.data.pageId == pageId
+        && pageId.matches('^[a-fA-F0-9]{32}$')
+        && request.resource.data.path is string
+        && request.resource.data.path.size() <= 240
+        && request.resource.data.path.matches('^/.*')
+        && (!('title' in request.resource.data)
+          || (request.resource.data.title is string
+            && request.resource.data.title.size() >= 1
+            && request.resource.data.title.size() <= 160))
+        && (!('location' in request.resource.data)
+          || (request.resource.data.location is map
+            && request.resource.data.location.keys().hasOnly(['city', 'state', 'country'])
+            && request.resource.data.location.keys().hasAll(['city', 'state', 'country'])
+            && request.resource.data.location.city is string
+            && request.resource.data.location.city.size() >= 1
+            && request.resource.data.location.city.size() <= 80
+            && request.resource.data.location.state is string
+            && request.resource.data.location.state.size() >= 1
+            && request.resource.data.location.state.size() <= 80
+            && request.resource.data.location.country is string
+            && request.resource.data.location.country.size() >= 1
+            && request.resource.data.location.country.size() <= 80))
+        && createdNow();
+    }
+
+    match /metricSites/viajar-travel-news/months/{month}/engagement/{eventId} {
+      allow read: if reportAdmin();
+      allow create: if validMonth(month)
+        && metricWriter(request.resource.data.uid)
+        && request.resource.data.keys().hasOnly(['uid', 'sessionId', 'pageId', 'seconds', 'createdAt'])
+        && request.resource.data.sessionId.matches('^[a-fA-F0-9]{32}$')
+        && request.resource.data.pageId.matches('^[a-fA-F0-9]{32}$')
+        && eventId.matches('^[a-fA-F0-9]{32}$')
+        && request.resource.data.seconds is int
+        && request.resource.data.seconds >= 1
+        && request.resource.data.seconds <= 120
+        && createdNow();
+    }
+
+    match /metricSites/viajar-travel-news/months/{month}/locations/{visitorId} {
+      allow read: if reportAdmin();
+      allow create: if validMonth(month)
+        && metricWriter(visitorId)
+        && request.resource.data.keys().hasOnly(['uid', 'city', 'state', 'country', 'createdAt'])
+        && request.resource.data.uid == visitorId
+        && request.resource.data.city is string
+        && request.resource.data.city.size() >= 1
+        && request.resource.data.city.size() <= 80
+        && request.resource.data.state is string
+        && request.resource.data.state.size() >= 1
+        && request.resource.data.state.size() <= 80
+        && request.resource.data.country is string
+        && request.resource.data.country.size() >= 1
+        && request.resource.data.country.size() <= 80
+        && createdNow();
+    }
+
+    // Nenhuma leitura pelo site e nenhuma alteração ou exclusão de métricas.
+    match /metricSites/{document=**} {
+      allow read, write: if false;
+    }
+
+    // Preserva as permissões que já existiam para todas as outras coleções.
+    // A exclusão explícita é necessária porque regras do Firestore são aditivas.
+    match /{collection}/{document=**} {
+      allow read: if collection != 'metricSites';
+      allow write: if collection != 'metricSites' && request.auth != null;
+    }
+  }
+}

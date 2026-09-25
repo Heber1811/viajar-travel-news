@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Relatório de métricas | Viajar Travel News</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/metricas-admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+    <script type="module" src="js/metricas-admin.js"></script>
+</head>
+<body>
+    <main class="report-shell">
+        <section id="loginPanel" class="login-card">
+            <div class="login-brand">
+                <img src="img/Untitled image.png" alt="Viajar Travel News">
+                <div><span>Viajar Travel News</span><strong>Painel de métricas</strong></div>
+            </div>
+            <div class="login-content">
+            <h2>Bem-vinda</h2>
+            <p>Entre para consultar os resultados do site.</p>
+            <form id="loginForm">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" autocomplete="username" required>
+                <label for="password">Senha</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required>
+                <button class="button" type="submit">Entrar</button>
+                <div id="loginError" class="error" role="alert"></div>
+            </form>
+            </div>
+        </section>
+
+        <section id="dashboard" class="hidden">
+            <header class="report-header">
+                <div class="report-brand">
+                    <img src="img/Untitled image.png" alt="Viajar Travel News">
+                    <div>
+                        <span>Viajar Travel News</span>
+                        <h1>Relatório de métricas</h1>
+                        <p id="reportSubtitle">Viajar Travel News</p>
+                    </div>
+                </div>
+                <button id="logoutButton" class="button secondary no-print" type="button">Sair</button>
+            </header>
+
+            <div class="toolbar no-print">
+                <div>
+                    <label for="monthSelect">Mês do relatório</label>
+                    <select id="monthSelect"></select>
+                </div>
+                <button id="refreshButton" class="button" type="button">Atualizar</button>
+                <div class="spacer"></div>
+                <button id="csvButton" class="button secondary" type="button">Exportar CSV</button>
+                <button id="pdfButton" class="button secondary" type="button">Salvar em PDF</button>
+            </div>
+
+            <div id="reportContent">
+                <div class="metrics-grid">
+                    <article class="metric-card"><span>Visitantes únicos</span><strong id="visitorsValue">—</strong></article>
+                    <article class="metric-card"><span>Sessões</span><strong id="sessionsValue">—</strong></article>
+                    <article class="metric-card"><span>Páginas visualizadas</span><strong id="pageViewsValue">—</strong></article>
+                    <article class="metric-card"><span>Tempo médio por sessão</span><strong id="averageTimeValue">—</strong></article>
+                </div>
+                <div class="charts-grid">
+                    <article class="chart-card">
+                        <h2>Acessos por dia</h2>
+                        <div class="chart-wrap"><canvas id="dailyChart"></canvas></div>
+                    </article>
+                    <article class="chart-card">
+                        <h2>Páginas mais acessadas</h2>
+                        <div class="chart-wrap"><canvas id="pagesChart"></canvas></div>
+                    </article>
+                </div>
+                <article class="chart-card time-card">
+                    <h2>Tempo por página</h2>
+                    <div class="chart-wrap"><canvas id="pageTimeChart"></canvas></div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Página</th><th>Visualizações</th><th>Tempo total</th><th>Tempo médio</th></tr></thead>
+                            <tbody id="pageTimeTable"></tbody>
+                        </table>
+                    </div>
+                </article>
+                <article class="chart-card location-card">
+                    <h2>Visitantes por cidade</h2>
+                    <p class="chart-note">Localização aproximada por IP. VPN e redes móveis podem indicar outra cidade.</p>
+                    <div class="chart-wrap"><canvas id="locationChart"></canvas></div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Cidade</th><th>Estado</th><th>País</th><th>Visitantes</th></tr></thead>
+                            <tbody id="locationTable"></tbody>
+                        </table>
+                    </div>
+                </article>
+            </div>
+            <p id="reportError" class="error" role="alert"></p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,12 +1,43 @@
 {
+  "functions": {
+    "source": "functions"
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
   "hosting": [
     {
       "site": "viajar-travel-news",
       "public": ".",
       "ignore": [
         "firebase.json",
+        "firestore.rules",
+        "firestore.indexes.json",
+        ".git/**",
+        ".gitignore",
+        ".agents/**",
+        ".codex/**",
+        "METRICAS.md",
+        "functions/**",
+        "package.json",
+        "package-lock.json",
+        "scripts/**",
         "**/.*",
         "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "**/*.js",
+          "headers": [{ "key": "Cache-Control", "value": "no-cache, max-age=0" }]
+        },
+        {
+          "source": "**/*.html",
+          "headers": [{ "key": "Cache-Control", "value": "no-cache, max-age=0" }]
+        },
+        {
+          "source": "search-index.json",
+          "headers": [{ "key": "Cache-Control", "value": "no-cache, max-age=0" }]
+        }
       ]
     },
     {
@@ -14,8 +45,33 @@
       "public": ".",
       "ignore": [
         "firebase.json",
+        "firestore.rules",
+        "firestore.indexes.json",
+        ".git/**",
+        ".gitignore",
+        ".agents/**",
+        ".codex/**",
+        "METRICAS.md",
+        "functions/**",
+        "package.json",
+        "package-lock.json",
+        "scripts/**",
         "**/.*",
         "**/node_modules/**"
+      ],
+      "headers": [
+        {
+          "source": "**/*.js",
+          "headers": [{ "key": "Cache-Control", "value": "no-cache, max-age=0" }]
+        },
+        {
+          "source": "**/*.html",
+          "headers": [{ "key": "Cache-Control", "value": "no-cache, max-age=0" }]
+        },
+        {
+          "source": "search-index.json",
+          "headers": [{ "key": "Cache-Control", "value": "no-cache, max-age=0" }]
+        }
       ]
     }
   ]

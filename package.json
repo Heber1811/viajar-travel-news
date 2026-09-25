@@ -2,9 +2,17 @@
   "name": "viajar-travel-news",
   "private": true,
   "scripts": {
+    "build:search": "node scripts/build-search-index.js",
+    "predev": "npm run build:search",
     "dev": "firebase serve --only hosting:previa-viajar-travel-news",
+    "preprod": "npm run build:search",
     "prod": "firebase serve --only hosting:viajar-travel-news",
+    "preemulators": "npm run build:search",
+    "emulators": "firebase emulators:start --only functions,firestore,hosting:viajar-travel-news",
+    "deploy:metrics": "firebase deploy --only firestore:rules",
+    "predeploy:dev": "npm run build:search",
     "deploy:dev": "firebase deploy --only hosting:previa-viajar-travel-news",
-    "deploy:prod": "firebase deploy --only hosting:viajar-travel-news"
+    "predeploy:prod": "npm run build:search",
+    "deploy:prod": "firebase deploy --only firestore:rules,hosting:viajar-travel-news"
   }
 }

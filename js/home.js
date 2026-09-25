@@ -240,5 +240,3 @@ $(document).ready(function () {
 
     
 });
-
-

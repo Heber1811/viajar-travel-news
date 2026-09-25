@@ -5856,6 +5856,7 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
     {
         id: 29,
         titulo: "POUSADA RABO DO LAGARTO",
+        autor: "Fátima Vasconcelos Nunes",
         instagram: {
             url: "https://www.instagram.com/pousadarabodolagarto/?hl=en",
             label: "@pousadarabodolagarto"
@@ -7971,6 +7972,10 @@ function renderPagina() {
                 ${legendaHero}
             </div>`;
         }
+        if (pagina.autor) {
+            html += `<span class="article-byline">Por ${pagina.autor}</span>`;
+        }
+
 
         const idsComTextoEmDuasColunas = [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40];
         const classeDuasColunas = idsComTextoEmDuasColunas.includes(pagina.id) ? " texto-duas-colunas" : "";
