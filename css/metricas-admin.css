@@ -95,3 +95,8 @@ th:not(:first-child), td:not(:first-child) { text-align: right; white-space: now
     .chart-card { margin-bottom: 14px; }
     .table-wrap { overflow: visible; }
 }
+
+.data-card { margin-top: 16px; min-height: auto; }
+.data-grid { margin-top: 0; }
+.source-note { margin: 18px 2px -4px; color: var(--muted); font-size: 13px; }
+.source-note + .metrics-grid { margin-top: 12px; }

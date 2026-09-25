@@ -1,19 +1,25 @@
 'use strict';
 
 const crypto = require('node:crypto');
+const { BetaAnalyticsDataClient } = require('@google-analytics/data');
 const { initializeApp } = require('firebase-admin/app');
 const { FieldValue, getFirestore, Timestamp } = require('firebase-admin/firestore');
 const { HttpsError, onCall } = require('firebase-functions/v2/https');
 
 initializeApp();
 const db = getFirestore();
+const analyticsData = new BetaAnalyticsDataClient();
 const SITE_ID = 'viajar-travel-news';
 const ALLOWED_ORIGINS = new Set([
     'https://viajartravelnews.com.br',
     'https://www.viajartravelnews.com.br',
     'https://viajar-travel-news.web.app',
-    'https://viajar-travel-news.firebaseapp.com'
+    'https://viajar-travel-news.firebaseapp.com',
+    'https://previa-viajar-travel-news.web.app',
+    'https://previa-viajar-travel-news.firebaseapp.com'
 ]);
+const REPORT_EMAILS = new Set(['heberluiz1811@gmail.com', 'hudson.m.3110@gmail.com']);
+const GA_PROPERTY = 'properties/556011023';
 const ID_PATTERN = /^[a-f0-9]{32}$/i;
 
 function required(value, name, max, pattern) {
@@ -115,4 +121,81 @@ exports.registrarMetrica = onCall({
         });
     });
     return { accepted: true };
+});
+
+function reportRows(report) {
+    const dimensions = (report.dimensionHeaders || []).map((header) => header.name);
+    const metrics = (report.metricHeaders || []).map((header) => header.name);
+    return (report.rows || []).map((row) => {
+        const item = {};
+        dimensions.forEach((name, index) => { item[name] = row.dimensionValues[index]?.value || ''; });
+        metrics.forEach((name, index) => { item[name] = Number(row.metricValues[index]?.value || 0); });
+        return item;
+    });
+}
+
+function monthRange(month) {
+    if (typeof month !== 'string' || !/^\d{4}-(0[1-9]|1[0-2])$/.test(month)) {
+        throw new HttpsError('invalid-argument', 'Mês inválido.');
+    }
+    const [year, monthNumber] = month.split('-').map(Number);
+    const lastDay = new Date(Date.UTC(year, monthNumber, 0)).getUTCDate();
+    return { startDate: `${month}-01`, endDate: `${month}-${String(lastDay).padStart(2, '0')}` };
+}
+
+function reportRequest(dateRanges, dimensions, metrics, options = {}) {
+    return {
+        property: GA_PROPERTY,
+        dateRanges: [dateRanges],
+        dimensions: dimensions.map((name) => ({ name })),
+        metrics: metrics.map((name) => ({ name })),
+        limit: options.limit,
+        orderBys: options.orderBys
+    };
+}
+
+exports.relatorioGoogleAnalytics = onCall({
+    region: 'southamerica-east1',
+    maxInstances: 3,
+    timeoutSeconds: 30,
+    memory: '256MiB'
+}, async (request) => {
+    const email = request.auth?.token?.email;
+    if (!email || !REPORT_EMAILS.has(email)) {
+        throw new HttpsError('permission-denied', 'Conta não autorizada.');
+    }
+    if (!ALLOWED_ORIGINS.has(request.rawRequest.headers.origin)) {
+        throw new HttpsError('permission-denied', 'Origem não autorizada.');
+    }
+
+    const dateRanges = monthRange(request.data?.month);
+    const descending = (metricName) => [{ metric: { metricName }, desc: true }];
+    try {
+        const requests = [
+            reportRequest(dateRanges, [], ['activeUsers', 'sessions', 'screenPageViews', 'averageSessionDuration']),
+            reportRequest(dateRanges, ['date'], ['activeUsers', 'sessions', 'screenPageViews'], { orderBys: [{ dimension: { dimensionName: 'date' } }] }),
+            reportRequest(dateRanges, ['pageTitle', 'pagePath'], ['activeUsers', 'screenPageViews', 'userEngagementDuration'], { limit: 50, orderBys: descending('screenPageViews') }),
+            reportRequest(dateRanges, ['sessionDefaultChannelGroup'], ['activeUsers', 'sessions'], { limit: 20, orderBys: descending('sessions') }),
+            reportRequest(dateRanges, ['deviceCategory'], ['activeUsers', 'sessions'], { orderBys: descending('sessions') }),
+            reportRequest(dateRanges, ['city', 'region', 'country'], ['activeUsers'], { limit: 50, orderBys: descending('activeUsers') })
+        ];
+        const responses = await Promise.all(requests.map((query) => analyticsData.runReport(query)));
+        const [summary, daily, pages, channels, devices, locations] = responses.map(([report]) => reportRows(report));
+        return {
+            propertyId: GA_PROPERTY.replace('properties/', ''),
+            month: request.data.month,
+            summary: summary[0] || {},
+            daily,
+            pages,
+            channels,
+            devices,
+            locations
+        };
+    } catch (error) {
+        console.error('Google Analytics Data API:', error);
+        if (error.code === 7 || error.code === 403) {
+            throw new HttpsError('permission-denied', 'A conta de serviço ainda não tem acesso à propriedade do Analytics.');
+        }
+        throw new HttpsError('internal', 'Não foi possível consultar o Google Analytics.');
+    }
 });

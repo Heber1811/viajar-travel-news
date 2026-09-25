@@ -13,6 +13,7 @@
     "predeploy:dev": "npm run build:search",
     "deploy:dev": "firebase deploy --only hosting:previa-viajar-travel-news",
     "predeploy:prod": "npm run build:search",
-    "deploy:prod": "firebase deploy --only firestore:rules,hosting:viajar-travel-news"
+    "deploy:prod": "firebase deploy --only firestore:rules,functions:relatorioGoogleAnalytics,hosting:viajar-travel-news",
+    "deploy:analytics": "firebase deploy --only functions:relatorioGoogleAnalytics"
   }
 }

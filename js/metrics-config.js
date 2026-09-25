@@ -2,6 +2,7 @@ export const metricsConfig = {
     enabled: true,
     siteId: 'viajar-travel-news',
     googleAnalyticsMeasurementId: 'G-LPVE4ZBHVT',
+    googleAnalyticsPropertyId: '556011023',
     reportEmails: [
         'heberluiz1811@gmail.com',
         'hudson.m.3110@gmail.com'

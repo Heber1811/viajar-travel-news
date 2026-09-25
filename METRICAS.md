@@ -43,6 +43,13 @@ persistente por navegador. Nenhum endereço IP é consultado ou armazenado.
 
 O painel fica em `/metricas.html` e exige login com e-mail e senha. As regras
 autorizam somente `heberluiz1811@gmail.com` e `hudson.m.3110@gmail.com`. O painel
+
+O seletor `Google Analytics` consulta a propriedade GA4 `556011023` pela Cloud
+Function `relatorioGoogleAnalytics`. A Google Analytics Data API deve estar ativa
+no projeto `sites-estaticos`, e a conta de serviço
+`918522422846-compute@developer.gserviceaccount.com` deve ter acesso de Leitor à
+propriedade. A consulta exige login com um dos e-mails autorizados e nunca expõe
+credenciais do Google Analytics no navegador.
 permite escolher um dos últimos 24 meses, exibe indicadores e gráficos e exporta
 o resumo em CSV ou PDF. O relatório por página mostra visualizações, tempo total
 e tempo médio por acesso. A opção PDF usa a janela de impressão do navegador.

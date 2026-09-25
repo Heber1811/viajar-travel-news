@@ -49,13 +49,20 @@
                     <label for="monthSelect">Mês do relatório</label>
                     <select id="monthSelect"></select>
                 </div>
+                <div>
+                    <label for="sourceSelect">Fonte dos dados</label>
+                    <select id="sourceSelect">
+                        <option value="firebase">Métrica própria</option>
+                        <option value="google">Google Analytics</option>
+                    </select>
+                </div>
                 <button id="refreshButton" class="button" type="button">Atualizar</button>
                 <div class="spacer"></div>
                 <button id="csvButton" class="button secondary" type="button">Exportar CSV</button>
                 <button id="pdfButton" class="button secondary" type="button">Salvar em PDF</button>
             </div>
 
-            <div id="reportContent">
+            <div id="firebaseReportContent">
                 <div class="metrics-grid">
                     <article class="metric-card"><span>Visitantes únicos</span><strong id="visitorsValue">—</strong></article>
                     <article class="metric-card"><span>Sessões</span><strong id="sessionsValue">—</strong></article>

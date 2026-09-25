@@ -12,6 +12,7 @@ import {
     getDocs,
     getFirestore
 } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
+import { setupGoogleAnalyticsDashboard } from './google-analytics-admin.js';
 import { metricsConfig } from './metrics-config.js';
 import { friendlyPageName } from './page-names.js';
 
@@ -25,7 +26,9 @@ const loginForm = document.querySelector('#loginForm');
 const loginError = document.querySelector('#loginError');
 const reportError = document.querySelector('#reportError');
 const monthSelect = document.querySelector('#monthSelect');
-const reportContent = document.querySelector('#reportContent');
+const sourceSelect = document.querySelector('#sourceSelect');
+const reportContent = document.querySelector('#firebaseReportContent');
+const googleDashboard = setupGoogleAnalyticsDashboard({ app, monthSelect, firebaseContent: reportContent, reportError });
 let dailyChart;
 let pagesChart;
 let pageTimeChart;
@@ -321,6 +324,14 @@ loginForm.addEventListener('submit', async (event) => {
     event.preventDefault();
     loginError.textContent = '';
     try {
+async function loadSelectedReport() {
+    const googleSelected = sourceSelect.value === 'google';
+    reportContent.classList.toggle('hidden', googleSelected);
+    googleDashboard.element.classList.toggle('hidden', !googleSelected);
+    document.querySelector('#reportSubtitle').textContent = `Viajar Travel News · ${monthSelect.options[monthSelect.selectedIndex].textContent}`;
+    return googleSelected ? googleDashboard.load() : loadReport();
+}
+
         await persistenceReady;
         await signInWithEmailAndPassword(auth, loginForm.email.value.trim(), loginForm.password.value);
     } catch (_) {
@@ -329,10 +340,11 @@ loginForm.addEventListener('submit', async (event) => {
 });
 
 document.querySelector('#logoutButton').addEventListener('click', () => signOut(auth));
-document.querySelector('#refreshButton').addEventListener('click', loadReport);
-document.querySelector('#csvButton').addEventListener('click', exportCsv);
+document.querySelector('#refreshButton').addEventListener('click', loadSelectedReport);
+document.querySelector('#csvButton').addEventListener('click', () => sourceSelect.value === 'google' ? googleDashboard.exportCsv() : exportCsv());
 document.querySelector('#pdfButton').addEventListener('click', () => window.print());
-monthSelect.addEventListener('change', loadReport);
+monthSelect.addEventListener('change', loadSelectedReport);
+sourceSelect.addEventListener('change', loadSelectedReport);
 
 fillMonths();
 onAuthStateChanged(auth, async (user) => {
@@ -342,7 +354,7 @@ onAuthStateChanged(auth, async (user) => {
     if (authorized) {
         inactivityLogout = false;
         resetInactivityTimer();
-        await loadReport();
+        await loadSelectedReport();
     } else if (user) {
         stopInactivityTimer();
         await signOut(auth);
