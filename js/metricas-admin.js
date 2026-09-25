@@ -320,10 +320,6 @@ function exportCsv() {
     URL.revokeObjectURL(link.href);
 }
 
-loginForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    loginError.textContent = '';
-    try {
 async function loadSelectedReport() {
     const googleSelected = sourceSelect.value === 'google';
     reportContent.classList.toggle('hidden', googleSelected);
@@ -332,6 +328,10 @@ async function loadSelectedReport() {
     return googleSelected ? googleDashboard.load() : loadReport();
 }
 
+loginForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    loginError.textContent = '';
+    try {
         await persistenceReady;
         await signInWithEmailAndPassword(auth, loginForm.email.value.trim(), loginForm.password.value);
     } catch (_) {
