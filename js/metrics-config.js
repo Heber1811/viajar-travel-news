@@ -5,7 +5,8 @@ export const metricsConfig = {
     googleAnalyticsPropertyId: '556011023',
     reportEmails: [
         'heberluiz1811@gmail.com',
-        'hudson.m.3110@gmail.com'
+        'hudson.m.3110@gmail.com',
+        'diretora.america@gmail.com'
     ],
     firebase: {
         projectId: 'sites-estaticos',

@@ -18,7 +18,11 @@ const ALLOWED_ORIGINS = new Set([
     'https://previa-viajar-travel-news.web.app',
     'https://previa-viajar-travel-news.firebaseapp.com'
 ]);
-const REPORT_EMAILS = new Set(['heberluiz1811@gmail.com', 'hudson.m.3110@gmail.com']);
+const REPORT_EMAILS = new Set([
+    'heberluiz1811@gmail.com',
+    'hudson.m.3110@gmail.com',
+    'diretora.america@gmail.com'
+]);
 const GA_PROPERTY = 'properties/556011023';
 const ID_PATTERN = /^[a-f0-9]{32}$/i;
 
