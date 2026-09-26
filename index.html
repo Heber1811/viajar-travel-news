@@ -308,7 +308,7 @@
 	.search-toggle {
 		font-family: "Tenor Sans", sans-serif;
 		letter-spacing: 2px;
-		width: 122px;
+		width: 190px;
 		height: 40px;
 		/* border-radius: 50%; */
 		/* border: 1px solid rgba(0, 0, 0, 0.12); */
@@ -440,6 +440,15 @@
 		background: rgba(255, 238, 128, 0.65);
 		border-radius: 6px;
 		transition: background 0.3s ease;
+	}
+
+	@media (min-width: 769px) {
+		#openPageSearch {
+			width: 190px;
+			min-width: 190px;
+			flex: 0 0 190px;
+			white-space: nowrap;
+		}
 	}
 
 	@media (max-width: 768px) {
@@ -908,17 +917,13 @@
 									<button id="openPageSearch" class="search-toggle menu-search-btn"
 										aria-label="Abrir pesquisa">
 										<span class="search-btn-content">
-											<i class="fas fa-magnifying-glass"> Encontre</i>
+											<i class="fas fa-magnifying-glass"> Encontre aqui</i>
 										</span>
 									</button>
 								</li>
 								<li class="menu-item active"><a href="index.html">HOME</a></li>
 								<li class="menu-item"><a href="#rotas-destinos">ROTAS &amp; DESTINOS</a></li>
-								<!-- <li class="menu-item"><a href="#fique-por-dentro">FIQUE POR DENTRO</a></li> -->
-								<li class="menu-item"><a href="galeria.html">DIÁRIO DE BORDO</a></li>
 								<li class="menu-item"><a href="pessoas-vtn.html">SOBRE NÓS</a></li>
-
-								<!-- <li class="menu-item"><a href="#contact">VAMOS JUNTOS</a></li> -->
 							</ul>
 						</div>
 					</nav>
