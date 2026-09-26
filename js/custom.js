@@ -187,6 +187,6 @@ import('./google-analytics.js?v=20260925-1').catch(function () {
 
 // A coleta fica em um módulo separado e só é ativada nos domínios de produção.
 // Assim, todas as páginas que já carregam custom.js recebem a mesma versão.
-import('./metrics.js?v=20260922-2').catch(function () {
+import('./metrics.js?v=20260925-3').catch(function () {
     // Métricas nunca devem impedir o funcionamento normal do site.
 });

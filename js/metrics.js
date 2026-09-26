@@ -8,8 +8,9 @@ const SESSION_TIMEOUT_MS = 30 * 60 * 1000;
 const HEARTBEAT_MS = 60 * 1000;
 const SESSION_KEY = 'vtn_metrics_session';
 const LOCATION_KEY = 'vtn_metrics_location';
-const LOCATION_MONTHS_KEY = 'vtn_metrics_location_months';
+const LOCATION_MONTHS_KEY = 'vtn_metrics_location_months_v2';
 const LOCATION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+const LOCATION_RETRY_MS = 5 * 60 * 1000;
 
 function randomId() {
     return crypto.randomUUID().replaceAll('-', '');
@@ -55,7 +56,7 @@ async function approximateLocation() {
     let location = null;
     try {
         const response = await fetch('https://ipwho.is/', {
-            signal: AbortSignal.timeout(3000),
+            signal: AbortSignal.timeout(8000),
             referrerPolicy: 'no-referrer'
         });
         const data = await response.json();
@@ -72,7 +73,7 @@ async function approximateLocation() {
 
     localStorage.setItem(LOCATION_KEY, JSON.stringify({
         location,
-        expiresAt: Date.now() + (location ? LOCATION_TTL_MS : 24 * 60 * 60 * 1000)
+        expiresAt: Date.now() + (location ? LOCATION_TTL_MS : LOCATION_RETRY_MS)
     }));
     return location;
 }
@@ -148,15 +149,14 @@ async function start() {
 
     if (locationPromise) {
         locationPromise.then(async (location) => {
-            if (location) {
-                await setDoc(doc(database, `${basePath}/locations/${user.uid}`), {
-                    uid: user.uid,
-                    city: location.city,
-                    state: location.state,
-                    country: location.country,
-                    createdAt: serverTimestamp()
-                });
-            }
+            if (!location) return;
+            await setDoc(doc(database, `${basePath}/locations/${user.uid}`), {
+                uid: user.uid,
+                city: location.city,
+                state: location.state,
+                country: location.country,
+                createdAt: serverTimestamp()
+            });
             rememberLocationMonth(month);
         }).catch(() => {});
     }

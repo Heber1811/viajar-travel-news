@@ -223,6 +223,9 @@ function renderLocations(pageViews, savedLocations) {
     const top = stats.slice(0, 10);
 
     locationChart?.destroy();
+    const chartCanvas = document.querySelector('#locationChart');
+    chartCanvas.closest('.chart-wrap').classList.toggle('hidden', top.length === 0);
+    document.querySelector('#locationEmpty').classList.toggle('hidden', top.length > 0);
     locationChart = new window.Chart(document.querySelector('#locationChart'), {
         type: 'bar',
         data: {
