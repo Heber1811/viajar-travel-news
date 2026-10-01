@@ -593,16 +593,19 @@
 		background-position: center !important;
 		background-size: cover;
 		width: 100%;
-		height: 650px;
+		height: clamp(520px, 62vh, 700px);
 		position: relative;
 		display: flex;
 		margin: auto;
 	}
 
 	#carouselExampleIndicators {
-		max-width: 1225px;
-		margin: 0 auto;
+		width: 94%;
+		max-width: 1400px;
+		margin: 22px auto 0;
 		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0 12px 32px rgba(32, 40, 28, 0.14);
 	}
 
 	.letra2.carousel-main-title {
@@ -781,7 +784,10 @@
 		}
 
 		#carouselExampleIndicators {
+			width: calc(100% - 30px);
 			max-width: none;
+			margin-top: 15px;
+			border-radius: 8px;
 		}
 
 		.mapa-aviao-wrapper {
@@ -1073,41 +1079,27 @@
 					<div class="col-12 mb-4 coluna-esquerda-cards">
 
 						<div class="row stack-cards">
-							<div class="col-lg-6 col-12 mb-4 stack-card-item stack-card-item--maior">
+							<div class="col-12 col-lg-6 mb-4 stack-card-item stack-card-item--maior">
 								<div class="modern-card travel card-vtn">
 									<h2 style="font-family: 'Tenor Sans', sans-serif; color:#FD7D01 !important">O Que É
-										A Viajar
-										Travel News?</h2>
+										A VTN?</h2>
 									<div style="background: #9ed13b !important;" class="divider"></div>
 
 									<p><span class="text-indent"></span>
-
-
-										A VIAJAR TRAVEL NEWS é um site voltado a viagens e ao trade turístico,
-										fundado em 2005,
-										em Florianópolis, SC. Temos free-lancers pelo Brasil, que divulgam
-										nossas reportagens, alinhadas a fontes independentes e seguras.
-
+										A Viajar Travel News não é agência nem operadora de turismo. Somos um portal
+										especializado em curadoria de viagens, para quem busca experiências autênticas
+										e fora do comum.
 									</p>
 									<p><span class="text-indent"></span>
-										Nosso diferencial é o conteúdo que acrescenta. Na VTN, todas as matérias, antes
-										de
-										publicadas, passam por uma checagem rigorosa de fatos e fontes. <br>
-										Porque CONTEÚDO com consistência é o que mantém o leitor seguro.
-
-
-
-
+										Aqui, nós não listamos tudo, só o que realmente importa. Nosso foco é descobrir
+										e compartilhar hotéis escolhidos a dedo, que se destacam pelo charme, bom gosto
+										e exclusividade. Privilegiamos a boa gastronomia, atrativos únicos e o contato
+										genuíno com a natureza, defendendo o respeito profundo ao meio ambiente e à
+										sustentabilidade.
 									</p>
 									<p><span class="text-indent"></span>
-
-										E apesar da indiscutível relevância estratégica e da otimização de processos que
-										a IA
-										oferece,
-										ela jamais substituirá a SENSIBILIDADE HUMANA.
-										Um texto precisa transmitir emoção.
-										Ou apenas ocupará espaço, sem dizer nada.
-
+										Se você procura o extraordinário e valoriza o turismo com propósito, seu lugar é
+										com a gente.
 									</p>
 									<br>
 									<!-- <p> <strong>
@@ -1117,7 +1109,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-6 col-12 mb-4 stack-card-item stack-card-item--menor">
+							<div class="col-12 col-lg-6 mb-4 stack-card-item stack-card-item--menor">
 								<div class="modern-card travel card-lua-cheia">
 
 									<h2 style="font-family: 'Tenor Sans', sans-serif; color:#FD7D01 !important">
@@ -1327,9 +1319,9 @@
 				font-size: 16px !important;
 			}
 
-			.cards-editoriais .modern-card.travel:hover p {
+			/* .cards-editoriais .modern-card.travel:hover p {
 				font-size: 15px !important;
-			}
+			} */
 
 			@media (min-width: 992px) {
 				.cards-editoriais .stack-cards {
@@ -1711,23 +1703,55 @@
 			}
 
 			.card-vtn {
-				background: #ff7d0012 !important;
+				/* background: #ff7d0012 !important; */
+				overflow: hidden;
 			}
 
-			.modern-card:hover {
+			.card-vtn::before {
+				content: "";
+				position: absolute;
+				right: -72px;
+				bottom: -78px;
+				width: 390px;
+				aspect-ratio: 1;
+				background: url("img/Untitled image.png") center / contain no-repeat;
+				opacity: 0.18;
+				filter: grayscale(18%);
+				pointer-events: none;
+				z-index: 0;
+			}
+
+			.card-vtn::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background: linear-gradient(115deg, rgba(255, 255, 255, 0.14) 18%, rgba(255, 255, 255, 0.42) 68%, rgba(255, 255, 255, 0.12) 100%);
+				pointer-events: none;
+				z-index: 0;
+			}
+
+			.card-vtn > * {
+				position: relative;
+				z-index: 1;
+			}
+
+			@media (max-width: 767px) {
+				.card-vtn::before {
+					right: -82px;
+					bottom: -52px;
+					width: 300px;
+					opacity: 0.095;
+				}
+			}
+
+			/* .modern-card:hover {
 				transform: translateY(-6px);
 				box-shadow:
 					0 20px 50px rgba(0, 0, 0, 0.13),
 					inset 0 0 18px rgba(255, 255, 255, 0.7);
-			}
+			} */
 
 			/* ---- CARD DOURADO ---- */
-
-			.modern-card.gold {
-				padding: 50px 55px !important;
-				/* background: linear-gradient(180deg, #fffbe93f, #f6e7bc54 60%, #f0da9a51); */
-				border: 1px solid #e6d28b;
-			}
 
 			.modern-card.gold p {
 				/* font-family: 'Courgette', cursive !important; */
@@ -1736,7 +1760,7 @@
 				color: #020202c4;
 			}
 
-			.modern-card.travel p {
+			/* .modern-card.travel p {
 				font-size: 15px !important;
 			}
 
@@ -1745,12 +1769,12 @@
 			}
 
 			.modern-card.gold:hover p {
-				font-size: 17px !important;
+				font-size: 15px !important;
 			}
 
 			.modern-card.card-mantiqueira:hover p {
-				font-size: 17px !important;
-			}
+				font-size: 15px !important;
+			} */
 
 
 			/* ---- TÍTULOS ---- */

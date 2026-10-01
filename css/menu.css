@@ -8,6 +8,10 @@
     left: 0;
     width: 100%;
     z-index: 5;
+    background: #fffdf8;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, #A0CF14 0%, #A0CF14 58%, #FD9B12 58%, #FD9B12 100%) 1;
+    box-shadow: 0 7px 22px rgba(45, 52, 40, 0.11);
 }
 .navigation{
     position: relative;
@@ -220,6 +224,11 @@
     padding: 10px 20px;
 }
 
+.header_1 .logo img{
+    width: auto;
+    max-height: 88px !important;
+}
+
 /*--- Header 2 ---*/
 .header_2.header{
     position: absolute;
@@ -256,7 +265,11 @@
         width: 100%;
     }
     .header_1 .navigation{
-        padding: 20px 20px;
+        padding: 12px 20px;
+    }
+
+    .header_1 .logo img{
+        max-height: 76px !important;
     }
     .navigation{
         padding: 20px 0px;

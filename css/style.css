@@ -16,7 +16,7 @@
 @import "font-awesome/css/font-awesome.min.css";
 @import "ionicons/css/ionicons.css";
 @import "bootstrap.css";
-@import "menu.css";
+@import "menu.css?v=20261001-1";
 @import "../plugins/aos/aos.css";
 @import "../plugins/swiper/swiper.css";
 
