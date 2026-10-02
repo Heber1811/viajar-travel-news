@@ -3677,6 +3677,28 @@ main {
     font-weight: 700;
 }
 
+/* Destaque da sigla no título "O Que É A VTN?" */
+.modern-card.card-vtn > h2 {
+    font-family: "Kalam", cursive !important;
+    font-size: 28px !important;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+}
+
+.destaque-vtn {
+    font-weight: inherit;
+    text-decoration-line: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    text-decoration-skip-ink: none;
+}
+
+.modern-card.card-vtn > p {
+    font-family: "Kalam", cursive;
+}
+
 
 /* curiango */
 
