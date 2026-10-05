@@ -5,12 +5,13 @@ import { metricsConfig } from './metrics-config.js';
 import { friendlyPageName } from './page-names.js';
 
 const SESSION_TIMEOUT_MS = 30 * 60 * 1000;
+const IDLE_TIMEOUT_MS = 60 * 1000;
 const HEARTBEAT_MS = 60 * 1000;
 const SESSION_KEY = 'vtn_metrics_session';
 const LOCATION_KEY = 'vtn_metrics_location';
-const LOCATION_MONTHS_KEY = 'vtn_metrics_location_months_v2';
-const LOCATION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+const LOCATION_TTL_MS = 24 * 60 * 60 * 1000;
 const LOCATION_RETRY_MS = 5 * 60 * 1000;
+const ACTIVITY_EVENTS = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
 
 function randomId() {
     return crypto.randomUUID().replaceAll('-', '');
@@ -78,23 +79,6 @@ async function approximateLocation() {
     return location;
 }
 
-function locationAlreadyRecorded(month) {
-    try {
-        return JSON.parse(localStorage.getItem(LOCATION_MONTHS_KEY) || '[]').includes(month);
-    } catch (_) {
-        return false;
-    }
-}
-
-function rememberLocationMonth(month) {
-    try {
-        const months = JSON.parse(localStorage.getItem(LOCATION_MONTHS_KEY) || '[]');
-        localStorage.setItem(LOCATION_MONTHS_KEY, JSON.stringify([...new Set([...months, month])].slice(-24)));
-    } catch (_) {
-        // O bloqueio do armazenamento local não impede a coleta.
-    }
-}
-
 function authenticatedUser(auth) {
     if (auth.currentUser) return Promise.resolve(auth.currentUser);
 
@@ -128,42 +112,46 @@ async function start() {
     const app = initializeApp(metricsConfig.firebase);
     const user = await authenticatedUser(getAuth(app));
     const database = getFirestore(app);
-    const session = currentSession();
+    let session = currentSession();
     const month = monthInSaoPaulo();
-    const pageId = randomId();
+    let pageId = randomId();
     const path = `${location.pathname || '/'}${location.search}`.slice(0, 240);
     const pageHeading = document.querySelector('#card-title')?.textContent?.trim()
         || document.querySelector('main h1, article h1, .hero-content h1')?.textContent?.trim();
     const title = friendlyPageName(path, pageHeading || document.title).slice(0, 160);
     const basePath = `metricSites/${metricsConfig.siteId}/months/${month}`;
-    const locationPromise = locationAlreadyRecorded(month) ? null : approximateLocation();
+    async function recordPageView() {
+        const visit = { sessionId: session.id, pageId };
+        await setDoc(doc(database, `${basePath}/pageViews/${visit.pageId}`), {
+            uid: user.uid,
+            sessionId: visit.sessionId,
+            pageId: visit.pageId,
+            path,
+            title,
+            createdAt: serverTimestamp()
+        });
 
-    await setDoc(doc(database, `${basePath}/pageViews/${pageId}`), {
-        uid: user.uid,
-        sessionId: session.id,
-        pageId,
-        path,
-        title,
-        createdAt: serverTimestamp()
-    });
-
-    if (locationPromise) {
-        locationPromise.then(async (location) => {
+        approximateLocation().then(async (location) => {
             if (!location) return;
-            await setDoc(doc(database, `${basePath}/locations/${user.uid}`), {
+            await setDoc(doc(database, `${basePath}/locations/${user.uid}_${visit.sessionId}`), {
                 uid: user.uid,
+                sessionId: visit.sessionId,
                 city: location.city,
                 state: location.state,
                 country: location.country,
                 createdAt: serverTimestamp()
             });
-            rememberLocationMonth(month);
         }).catch(() => {});
     }
 
+    await recordPageView();
+
     let pendingSeconds = 0;
     let visibleSince = document.visibilityState === 'visible' ? performance.now() : null;
-    let sending = false;
+    let sending;
+    let idleTimer;
+    let lastActivity = Date.now();
+    let restartingSession = false;
 
     function collectVisibleTime() {
         if (visibleSince === null) return;
@@ -174,34 +162,77 @@ async function start() {
 
     async function flushEngagement() {
         collectVisibleTime();
-        if (sending || pendingSeconds < 1) return;
-        sending = true;
+        if (sending) await sending;
+        if (pendingSeconds < 1) return;
         const seconds = Math.min(pendingSeconds, 120);
         const eventId = randomId();
-        try {
-            await setDoc(doc(database, `${basePath}/engagement/${eventId}`), {
-                uid: user.uid,
-                sessionId: session.id,
-                pageId,
-                seconds,
-                createdAt: serverTimestamp()
-            });
-            pendingSeconds -= seconds;
-        } catch (_) {
+        const eventSessionId = session.id;
+        const eventPageId = pageId;
+        pendingSeconds -= seconds;
+        sending = setDoc(doc(database, `${basePath}/engagement/${eventId}`), {
+            uid: user.uid,
+            sessionId: eventSessionId,
+            pageId: eventPageId,
+            seconds,
+            createdAt: serverTimestamp()
+        }).catch(() => {
             // Tenta enviar novamente no próximo intervalo.
-        } finally {
-            sending = false;
-        }
+            pendingSeconds += seconds;
+        }).finally(() => {
+            sending = undefined;
+        });
+        await sending;
     }
+
+    function stopActiveTime() {
+        collectVisibleTime();
+        visibleSince = null;
+        window.clearTimeout(idleTimer);
+    }
+
+    function scheduleIdleTimeout() {
+        window.clearTimeout(idleTimer);
+        idleTimer = window.setTimeout(() => {
+            stopActiveTime();
+            flushEngagement();
+        }, IDLE_TIMEOUT_MS);
+    }
+
+    async function registerActivity() {
+        const now = Date.now();
+        const sessionExpired = now - lastActivity > SESSION_TIMEOUT_MS;
+        lastActivity = now;
+        if (sessionExpired && !restartingSession) {
+            restartingSession = true;
+            await flushEngagement();
+            session = { id: randomId(), lastActivity: now };
+            pageId = randomId();
+            pendingSeconds = 0;
+            localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+            try {
+                await recordPageView();
+            } finally {
+                restartingSession = false;
+            }
+        } else {
+            session.lastActivity = now;
+            localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+        }
+        if (document.visibilityState === 'visible' && visibleSince === null) visibleSince = performance.now();
+        scheduleIdleTimeout();
+    }
+
+    ACTIVITY_EVENTS.forEach((eventName) => {
+        window.addEventListener(eventName, () => { registerActivity().catch(() => {}); }, { passive: true });
+    });
+    if (visibleSince !== null) scheduleIdleTimeout();
 
     document.addEventListener('visibilitychange', () => {
         if (document.visibilityState === 'hidden') {
+            stopActiveTime();
             flushEngagement();
-            visibleSince = null;
         } else {
-            visibleSince = performance.now();
-            session.lastActivity = Date.now();
-            localStorage.setItem(SESSION_KEY, JSON.stringify(session));
+            registerActivity().catch(() => {});
         }
     });
     window.setInterval(flushEngagement, HEARTBEAT_MS);

@@ -12,7 +12,7 @@ import {
     getDocs,
     getFirestore
 } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
-import { setupGoogleAnalyticsDashboard } from './google-analytics-admin.js';
+import { setupGoogleAnalyticsDashboard } from './google-analytics-admin.js?v=20261005-1';
 import { metricsConfig } from './metrics-config.js';
 import { friendlyPageName } from './page-names.js';
 
@@ -214,25 +214,32 @@ function renderPageTime(pageViews, engagement) {
 }
 
 function renderLocations(pageViews, savedLocations) {
-    const visitors = new Map();
+    const sessions = new Map();
     pageViews.forEach((view) => {
+        if (!view.uid || !view.sessionId) return;
+        const sessionKey = `${view.uid}:${view.sessionId}`;
+        if (!sessions.has(sessionKey)) sessions.set(sessionKey, null);
         if (view.uid && view.location?.city && view.location?.state && view.location?.country) {
-            visitors.set(view.uid, view.location);
+            sessions.set(sessionKey, view.location);
         }
     });
     savedLocations.forEach((location) => {
         if (location.uid && location.city && location.state && location.country) {
-            visitors.set(location.uid, location);
+            const sessionKey = location.sessionId
+                ? `${location.uid}:${location.sessionId}`
+                : [...sessions.keys()].find((key) => key.startsWith(`${location.uid}:`));
+            if (sessionKey) sessions.set(sessionKey, location);
         }
     });
     const grouped = new Map();
-    visitors.forEach((location) => {
-        const key = `${location.city}|${location.state}|${location.country}`;
-        const current = grouped.get(key) || { ...location, visitors: 0 };
-        current.visitors += 1;
+    sessions.forEach((location) => {
+        const normalized = location || { city: 'Não identificada', state: '—', country: '—' };
+        const key = `${normalized.city}|${normalized.state}|${normalized.country}`;
+        const current = grouped.get(key) || { ...normalized, sessions: 0 };
+        current.sessions += 1;
         grouped.set(key, current);
     });
-    const stats = [...grouped.values()].sort((a, b) => b.visitors - a.visitors || a.city.localeCompare(b.city, 'pt-BR'));
+    const stats = [...grouped.values()].sort((a, b) => b.sessions - a.sessions || a.city.localeCompare(b.city, 'pt-BR'));
     const top = stats.slice(0, 10);
 
     locationChart?.destroy();
@@ -243,7 +250,7 @@ function renderLocations(pageViews, savedLocations) {
         type: 'bar',
         data: {
             labels: top.map((item) => `${item.city} · ${item.state}`),
-            datasets: [{ label: 'Visitantes', data: top.map((item) => item.visitors), backgroundColor: '#9ed13b' }]
+            datasets: [{ label: 'Sessões', data: top.map((item) => item.sessions), backgroundColor: '#9ed13b' }]
         },
         options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, ticks: { precision: 0 } } } }
     });
@@ -251,7 +258,7 @@ function renderLocations(pageViews, savedLocations) {
     const table = document.querySelector('#locationTable');
     table.replaceChildren(...stats.map((item) => {
         const row = document.createElement('tr');
-        [item.city, item.state, item.country, formatNumber(item.visitors)].forEach((value) => {
+        [item.city, item.state, item.country, formatNumber(item.sessions)].forEach((value) => {
             const cell = document.createElement('td');
             cell.textContent = value;
             row.append(cell);
@@ -319,14 +326,14 @@ function exportCsv() {
         ['Visitantes únicos', currentReport.visitors],
         ['Sessões', currentReport.sessions],
         ['Páginas visualizadas', currentReport.pageViews],
-        ['Tempo total (segundos)', currentReport.seconds],
-        ['Tempo médio por sessão (segundos)', Math.round(currentReport.averageSeconds)],
+        ['Tempo ativo estimado total (segundos)', currentReport.seconds],
+        ['Tempo ativo estimado por sessão (segundos)', Math.round(currentReport.averageSeconds)],
         [],
-        ['Página', 'Visualizações', 'Tempo total (segundos)', 'Tempo médio (segundos)'],
+        ['Página', 'Visualizações', 'Tempo ativo estimado total (segundos)', 'Tempo ativo estimado médio (segundos)'],
         ...currentReport.pageTimes.map((item) => [item.label, item.views, item.seconds, Math.round(item.average)]),
         [],
-        ['Cidade', 'Estado', 'País', 'Visitantes'],
-        ...currentReport.locations.map((item) => [item.city, item.state, item.country, item.visitors])
+        ['Cidade aproximada', 'Estado aproximado', 'País aproximado', 'Sessões'],
+        ...currentReport.locations.map((item) => [item.city, item.state, item.country, item.sessions])
     ];
     const csv = rows.map((row) => row.map((value) => `"${String(value ?? '').replaceAll('"', '""')}"`).join(';')).join('\r\n');
     const link = document.createElement('a');

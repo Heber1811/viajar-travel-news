@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/metricas-admin.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
-    <script type="module" src="js/metricas-admin.js"></script>
+    <script type="module" src="js/metricas-admin.js?v=20261005-1"></script>
 </head>
 <body>
     <main class="report-shell">
@@ -78,7 +78,7 @@
                     <article class="metric-card"><span>Visitantes únicos</span><strong id="visitorsValue">—</strong></article>
                     <article class="metric-card"><span>Sessões</span><strong id="sessionsValue">—</strong></article>
                     <article class="metric-card"><span>Páginas visualizadas</span><strong id="pageViewsValue">—</strong></article>
-                    <article class="metric-card"><span>Tempo médio por sessão</span><strong id="averageTimeValue">—</strong></article>
+                    <article class="metric-card"><span>Tempo ativo estimado por sessão</span><strong id="averageTimeValue">—</strong></article>
                 </div>
                 <div class="charts-grid">
                     <article class="chart-card">
@@ -91,23 +91,23 @@
                     </article>
                 </div>
                 <article class="chart-card time-card">
-                    <h2>Tempo por página</h2>
+                    <h2>Tempo ativo estimado por página</h2>
                     <div class="chart-wrap"><canvas id="pageTimeChart"></canvas></div>
                     <div class="table-wrap">
                         <table>
-                            <thead><tr><th>Página</th><th>Visualizações</th><th>Tempo total</th><th>Tempo médio</th></tr></thead>
+                            <thead><tr><th>Página</th><th>Visualizações</th><th>Tempo ativo total</th><th>Tempo ativo médio</th></tr></thead>
                             <tbody id="pageTimeTable"></tbody>
                         </table>
                     </div>
                 </article>
                 <article class="chart-card location-card">
-                    <h2>Visitantes por cidade</h2>
-                    <p class="chart-note">Localização aproximada por IP. VPN e redes móveis podem indicar outra cidade.</p>
+                    <h2>Sessões por localização</h2>
+                    <p class="chart-note">Localização aproximada por IP. País e estado tendem a ser mais confiáveis que cidade; VPN e redes móveis podem indicar outro local.</p>
                     <div class="chart-wrap"><canvas id="locationChart"></canvas></div>
                     <p id="locationEmpty" class="chart-empty hidden">Ainda não há localizações registradas neste mês.</p>
                     <div class="table-wrap">
                         <table>
-                            <thead><tr><th>Cidade</th><th>Estado</th><th>País</th><th>Visitantes</th></tr></thead>
+                            <thead><tr><th>Cidade</th><th>Estado</th><th>País</th><th>Sessões</th></tr></thead>
                             <tbody id="locationTable"></tbody>
                         </table>
                     </div>

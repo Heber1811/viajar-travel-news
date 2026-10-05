@@ -10,7 +10,8 @@ A coleta registra apenas nos domínios de produção e de prévia autorizados:
 - visitantes únicos estimados por navegador e mês, derivados das visualizações;
 - sessões, derivadas das visualizações (uma nova após 30 minutos sem atividade);
 - páginas visualizadas;
-- tempo de engajamento com a página visível;
+- tempo ativo estimado, contado somente enquanto a página está visível e por até
+  60 segundos após a última interação (clique, toque, teclado ou rolagem);
 
 Cada visualização guarda o caminho completo, incluindo parâmetros como
 `paginas.html?id=29`, e o título apresentado na matéria.
@@ -18,14 +19,17 @@ No painel, `/` e `/index.html` são agrupados como `Página inicial`; páginas s
 título específico recebem um nome amigável derivado do endereço.
 
 A cidade, o estado e o país são estimados pela API `ipwho.is`. A visualização é
-gravada imediatamente; a localização é salva separadamente uma vez por visitante
-e mês. A consulta externa ocorre no máximo uma vez por navegador a cada 30 dias,
-e o endereço IP não é salvo no Firestore. A localização pode estar incorreta em
-redes móveis, corporativas ou VPN.
+gravada imediatamente e a localização é associada separadamente a cada sessão.
+A consulta externa usa cache de 24 horas no navegador, e o endereço IP não é
+salvo no Firestore. País e estado tendem a ser mais confiáveis do que cidade.
+A localização pode estar incorreta em redes móveis, corporativas ou VPN e não é
+esperado que coincida exatamente com a localização estimada pelo GA4. Sessões em
+que a consulta falha aparecem no painel como `Não identificada`.
 
 Os eventos ficam em `metricSites/viajar-travel-news/months/AAAA-MM`, separados
 dos demais sites do projeto. O Firebase Authentication cria um usuário anônimo
-persistente por navegador. Nenhum endereço IP é consultado ou armazenado.
+persistente por navegador. O endereço IP é consultado diretamente pelo serviço
+de geolocalização, mas não é salvo no Firestore.
 
 ## Configuração antes da publicação
 
@@ -42,7 +46,7 @@ persistente por navegador. Nenhum endereço IP é consultado ou armazenado.
 ## Painel administrativo
 
 O painel fica em `/metricas.html` e exige login com e-mail e senha. As regras
-autorizam somente `heberluiz1811@gmail.com` e `hudson.m.3110@gmail.com`. O painel
+autorizam os e-mails listados em `firestore.rules` e `functions/index.js`. O painel
 
 O seletor `Google Analytics` consulta a propriedade GA4 `556011023` pela Cloud
 Function `relatorioGoogleAnalytics`. A Google Analytics Data API deve estar ativa
@@ -63,13 +67,14 @@ alteradas no futuro, replique a mudança no repositório antes da próxima publi
 
 ## Relatório e custo
 
-O relatório mensal pode contar os documentos de `visitors`, `sessions` e
-`pageViews`, e somar `seconds` em `engagement`. O tempo médio é essa soma dividida
-pelo número de sessões. A leitura desses dados deve ser feita pelo Console do
+O relatório mensal conta os identificadores presentes em `pageViews` e soma
+`seconds` em `engagement`. O tempo ativo estimado médio é essa soma dividida pelo
+número de sessões. A leitura desses dados deve ser feita pelo Console do
 Firebase ou por uma área administrativa autenticada; visitantes não têm leitura.
 
 As gravações de engajamento são agrupadas em intervalos de aproximadamente um
-minuto. Isso reduz custo sem contar tempo em que a aba ficou oculta.
+minuto. Isso reduz custo sem contar tempo em que a aba ficou oculta ou permaneceu
+sem interação por mais de 60 segundos.
 Visitantes e sessões não exigem gravações separadas: o painel conta os
 identificadores presentes nas visualizações, reduzindo o custo da coleta.
 Em um site de tráfego pequeno, a tendência é permanecer nas cotas gratuitas do

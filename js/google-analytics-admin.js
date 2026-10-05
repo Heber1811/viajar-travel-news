@@ -28,6 +28,28 @@ function tableRows(target, rows) {
     }));
 }
 
+function groupedPages(pages) {
+    const grouped = new Map();
+    pages.forEach((item) => {
+        const isHome = item.pagePath === '/' || item.pagePath === '/index.html';
+        const key = isHome ? '__home__' : `${item.pageTitle}|${item.pagePath}`;
+        const current = grouped.get(key) || {
+            pageTitle: isHome ? 'Página inicial' : item.pageTitle,
+            pagePath: isHome ? '/' : item.pagePath,
+            activeUsers: 0,
+            screenPageViews: 0,
+            userEngagementDuration: 0
+        };
+        // Sem identificadores individuais, o maior valor evita somar duas vezes
+        // o mesmo usuário que abriu / e /index.html.
+        current.activeUsers = Math.max(current.activeUsers, Number(item.activeUsers) || 0);
+        current.screenPageViews += Number(item.screenPageViews) || 0;
+        current.userEngagementDuration += Number(item.userEngagementDuration) || 0;
+        grouped.set(key, current);
+    });
+    return [...grouped.values()].sort((a, b) => b.screenPageViews - a.screenPageViews);
+}
+
 function downloadCsv(rows, month) {
     const csv = rows.map((row) => row.map((value) => `"${String(value ?? '').replaceAll('"', '""')}"`).join(';')).join('\r\n');
     const link = document.createElement('a');
@@ -40,7 +62,7 @@ function downloadCsv(rows, month) {
 export function setupGoogleAnalyticsDashboard({ app, monthSelect, firebaseContent, reportError }) {
     firebaseContent.insertAdjacentHTML('afterend', `
         <div id="googleReportContent" class="hidden">
-            <p class="source-note">Dados oficiais do Google Analytics 4 · propriedade 556011023</p>
+            <p class="source-note">Dados oficiais do Google Analytics 4 · propriedade 556011023 · confirme no GA4 o fuso America/Sao_Paulo</p>
             <div class="metrics-grid">
                 <article class="metric-card"><span>Usuários ativos</span><strong id="gaUsersValue">—</strong></article>
                 <article class="metric-card"><span>Sessões</span><strong id="gaSessionsValue">—</strong></article>
@@ -63,7 +85,7 @@ export function setupGoogleAnalyticsDashboard({ app, monthSelect, firebaseConten
                     <thead><tr><th>Dispositivo</th><th>Usuários</th><th>Sessões</th></tr></thead>
                     <tbody id="gaDevicesTable"></tbody>
                 </table></div></article>
-                <article class="chart-card data-card"><h2>Usuários por cidade</h2><div class="table-wrap"><table>
+                <article class="chart-card data-card"><h2>Usuários por localização aproximada</h2><p class="chart-note">País e estado tendem a ser mais confiáveis que cidade. Os valores podem divergir da coleta própria.</p><div class="table-wrap"><table>
                     <thead><tr><th>Cidade</th><th>Estado</th><th>País</th><th>Usuários</th></tr></thead>
                     <tbody id="gaLocationsTable"></tbody>
                 </table></div></article>
@@ -78,6 +100,7 @@ export function setupGoogleAnalyticsDashboard({ app, monthSelect, firebaseConten
 
     function render(data) {
         const summary = data.summary || {};
+        const pages = groupedPages(data.pages || []);
         document.querySelector('#gaUsersValue').textContent = formatNumber(summary.activeUsers);
         document.querySelector('#gaSessionsValue').textContent = formatNumber(summary.sessions);
         document.querySelector('#gaViewsValue').textContent = formatNumber(summary.screenPageViews);
@@ -103,7 +126,7 @@ export function setupGoogleAnalyticsDashboard({ app, monthSelect, firebaseConten
             options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, ticks: { precision: 0 } } } }
         });
 
-        tableRows(document.querySelector('#gaPagesTable'), data.pages.map((item) => [
+        tableRows(document.querySelector('#gaPagesTable'), pages.map((item) => [
             item.pageTitle && item.pageTitle !== '(not set)' ? item.pageTitle : item.pagePath,
             formatNumber(item.activeUsers),
             formatNumber(item.screenPageViews),
@@ -140,6 +163,7 @@ export function setupGoogleAnalyticsDashboard({ app, monthSelect, firebaseConten
     function exportCsv() {
         if (!currentReport) return;
         const data = currentReport;
+        const pages = groupedPages(data.pages || []);
         downloadCsv([
             ['Google Analytics 4', 'Viajar Travel News'],
             ['Mês', data.month],
@@ -149,12 +173,12 @@ export function setupGoogleAnalyticsDashboard({ app, monthSelect, firebaseConten
             ['Duração média da sessão (segundos)', Math.round(data.summary.averageSessionDuration || 0)],
             [],
             ['Página', 'Caminho', 'Usuários', 'Visualizações', 'Engajamento (segundos)'],
-            ...data.pages.map((item) => [item.pageTitle, item.pagePath, item.activeUsers, item.screenPageViews, Math.round(item.userEngagementDuration)]),
+            ...pages.map((item) => [item.pageTitle, item.pagePath, item.activeUsers, item.screenPageViews, Math.round(item.userEngagementDuration)]),
             [],
             ['Canal', 'Usuários', 'Sessões'],
             ...data.channels.map((item) => [item.sessionDefaultChannelGroup, item.activeUsers, item.sessions]),
             [],
-            ['Cidade', 'Estado', 'País', 'Usuários'],
+            ['Cidade aproximada', 'Estado aproximado', 'País aproximado', 'Usuários'],
             ...data.locations.map((item) => [item.city, item.region, item.country, item.activeUsers])
         ], data.month);
     }

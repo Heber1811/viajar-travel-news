@@ -91,9 +91,10 @@ service cloud.firestore {
     match /metricSites/viajar-travel-news/months/{month}/locations/{visitorId} {
       allow read: if reportAdmin();
       allow create: if validMonth(month)
-        && metricWriter(visitorId)
-        && request.resource.data.keys().hasOnly(['uid', 'city', 'state', 'country', 'createdAt'])
-        && request.resource.data.uid == visitorId
+        && metricWriter(request.resource.data.uid)
+        && request.resource.data.keys().hasOnly(['uid', 'sessionId', 'city', 'state', 'country', 'createdAt'])
+        && request.resource.data.sessionId.matches('^[a-fA-F0-9]{32}$')
+        && visitorId == request.resource.data.uid + '_' + request.resource.data.sessionId
         && request.resource.data.city is string
         && request.resource.data.city.size() >= 1
         && request.resource.data.city.size() <= 80
