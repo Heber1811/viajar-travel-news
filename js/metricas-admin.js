@@ -24,6 +24,8 @@ const loginPanel = document.querySelector('#loginPanel');
 const dashboard = document.querySelector('#dashboard');
 const loginForm = document.querySelector('#loginForm');
 const loginError = document.querySelector('#loginError');
+const passwordInput = document.querySelector('#password');
+const togglePassword = document.querySelector('#togglePassword');
 const reportError = document.querySelector('#reportError');
 const monthSelect = document.querySelector('#monthSelect');
 const sourceSelect = document.querySelector('#sourceSelect');
@@ -38,6 +40,17 @@ let inactivityTimer;
 let inactivityLogout = false;
 const INACTIVITY_LIMIT = 30 * 60 * 1000;
 const ACTIVITY_EVENTS = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+
+togglePassword.addEventListener('click', () => {
+    const showPassword = passwordInput.type === 'password';
+    const label = showPassword ? 'Ocultar senha' : 'Mostrar senha';
+
+    passwordInput.type = showPassword ? 'text' : 'password';
+    togglePassword.setAttribute('aria-pressed', String(showPassword));
+    togglePassword.setAttribute('aria-label', label);
+    togglePassword.title = label;
+    passwordInput.focus();
+});
 
 function stopInactivityTimer() {
     window.clearTimeout(inactivityTimer);
