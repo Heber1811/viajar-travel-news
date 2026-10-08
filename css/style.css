@@ -3679,11 +3679,7 @@ main {
 
 /* Destaque da sigla no título "O Que É A VTN?" */
 .modern-card.card-vtn > h2 {
-    font-family: "Kalam", cursive !important;
-    font-size: 28px !important;
-    font-weight: 700;
-    line-height: 1.12;
-    letter-spacing: -0.02em;
+    font-family: "Tenor Sans", sans-serif !important;
 }
 
 .destaque-vtn {
@@ -3695,8 +3691,10 @@ main {
     text-decoration-skip-ink: none;
 }
 
-.modern-card.card-vtn > p {
-    font-family: "Kalam", cursive;
+.modern-card.card-vtn > p,
+.modern-card.card-vtn > p * {
+    font-family: "Tenor Sans", sans-serif !important;
+    font-weight: 700 !important;
 }
 
 
