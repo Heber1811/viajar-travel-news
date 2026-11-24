@@ -3,6 +3,7 @@ import { getAuth, onAuthStateChanged, signInAnonymously } from 'https://www.gsta
 import { doc, getFirestore, serverTimestamp, setDoc } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 import { metricsConfig } from './metrics-config.js';
 import { friendlyPageName } from './page-names.js';
+import { isInternalTraffic, isLikelyAutomatedTraffic } from './traffic-classification.js';
 
 const SESSION_TIMEOUT_MS = 30 * 60 * 1000;
 const IDLE_TIMEOUT_MS = 60 * 1000;
@@ -102,7 +103,11 @@ function authenticatedUser(auth) {
 }
 
 async function start() {
-    if (!metricsConfig.enabled || !metricsConfig.productionHosts.includes(location.hostname) || !crypto.randomUUID) return;
+    if (!metricsConfig.enabled
+        || !metricsConfig.productionHosts.includes(location.hostname)
+        || !crypto.randomUUID
+        || isInternalTraffic()
+        || isLikelyAutomatedTraffic()) return;
 
     if (document.readyState === 'loading') {
         await new Promise((resolve) => document.addEventListener('DOMContentLoaded', resolve, { once: true }));

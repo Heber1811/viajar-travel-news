@@ -598,6 +598,36 @@
 		position: relative;
 		display: flex;
 		margin: auto;
+		transform: scale(1.012);
+		will-change: transform;
+	}
+
+	.carousel-item.active .carousel-bg {
+		animation: carouselAtmosphere 16s ease-in-out infinite alternate;
+	}
+
+	#carouselExampleIndicators .overlay::after {
+		content: "";
+		position: absolute;
+		z-index: 2;
+		inset: 38% -8% -16%;
+		background:
+			radial-gradient(ellipse at 18% 100%, rgba(255, 255, 255, 0.22), transparent 48%),
+			radial-gradient(ellipse at 72% 100%, rgba(239, 243, 240, 0.16), transparent 52%);
+		filter: blur(16px);
+		opacity: 0.34;
+		pointer-events: none;
+		animation: carouselMist 18s ease-in-out infinite alternate;
+	}
+
+	@keyframes carouselAtmosphere {
+		from { transform: scale(1.012); }
+		to { transform: scale(1.026); }
+	}
+
+	@keyframes carouselMist {
+		from { opacity: 0.22; transform: translate3d(-1.5%, 7%, 0) scale(0.98); }
+		to { opacity: 0.38; transform: translate3d(1.5%, -5%, 0) scale(1.03); }
 	}
 
 	#carouselExampleIndicators {
@@ -639,6 +669,17 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.carousel-item.active .carousel-bg,
+		#carouselExampleIndicators .overlay::after {
+			animation: none;
+		}
+
+		.carousel-bg {
+			transform: none;
+		}
 	}
 
 	.copa-brasil-feature {
@@ -809,14 +850,15 @@
 		}
 
 		.mapa-aviao-banner {
-			height: 240px;
-			background-image: url('img/carroselViajarTravelNews/Texto do seu parágrafo .png') !important;
+			height: min(125vw, 540px);
+			background-image: url('img/ed_novembro_2026/mapa-lado-b-nordeste-sem-aviao-v2.png') !important;
+			background-size: cover;
 			background-position: center;
 		}
 
 		.mapa-aviao-banner>img {
 			left: 12px !important;
-			width: 160px !important;
+				width: 130px !important;
 			max-height: 88% !important;
 			animation-duration: 12s !important;
 		}
@@ -937,9 +979,9 @@
 			</header>
 
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<div class="lua-carrossel-home" aria-label="Edição número 29">
+				<div class="lua-carrossel-home" aria-label="Edição número 31">
 					<span>Edição</span>
-					<strong>29</strong>
+					<strong>31</strong>
 				</div>
 				<ol class="carousel-indicators">
 					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -952,112 +994,124 @@
 					<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
 					<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
 					<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="overlay">
 							<div class="text-top-left  ">
-								<p class="letra2 carousel-main-title" style="text-align: center !important;">Lugares com alma...
+								<p class="letra2 carousel-main-title" style="text-align: center !important;">Um Nordeste raiz
 								</p>
 							</div>
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - A VISTA ÚNICA DE UMA DAS SUÍTES DO GRAN MARQUISE.avif');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PARNA dos Lençóis Maranhenses (Foto Brunonogaki).jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Gran Marquise Hotel: a exclusividade do único 5 estrelas <br> Fortaleza, Ceará</h2>
+							<h2 class="letra">Parque Nacional dos Lençóis Maranhenses</h2>
+							<small class="carousel-photo-credit">Foto: Brunonogaki</small>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - ROOF TOP DO GRAN MARQUISE HOTEL.webp');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - CANINDÉ DE SÃO FRANCISCO.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Rooftop do Gran Marquise: o mais lindo pôr do sol de Fortaleza</h2>
+							<h2 class="letra">Canindé de São Francisco</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - CONFORTO E ELEGÂNCIA NA  NA TOCA DA CORUJA.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - CÂNIONS DO XINGÓ.webp');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Conforto e elegância na Toca da Coruja</h2>
+							<h2 class="letra">Cânions do Xingó</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - TOCA DA CORUJA - ESSÊNCIA RÚSTICA E ALMA SOFISTICADA  (Foto Marcelo Isola).png');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PALMEIRAS DO RIO PREGUIÇAS.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Toca da Coruja</h2>
-							<small class="carousel-photo-credit">Foto: Marcelo Isola</small>
+							<h2 class="letra">Palmeiras do Rio Preguiças</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - VILLA NÁUTICA - DESIGN ESSENCIAL, CONFORTO ABSOLUTO.jpg');">
+								style="background-image: url('img/ed_novembro_2026/carrossel-sete-cidades-alta-resolucao.png');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Design e conforto absoluto no Villa Náutica</h2>
+							<h2 class="letra">Parque Nacional de Sete Cidades</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - VILLA NÁUTICA - ONDE A NOITE ENCONTRA SUA MELHOR VERSÃO.jpeg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PARNA DO VALE DO CATIMBAU (Foto Alexandre Bittencourt Leite Marques).jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Villa Náutica: onde a noite encontra sua melhor versão</h2>
+							<h2 class="letra">Parque Nacional do Vale do Catimbau</h2>
+							<small class="carousel-photo-credit">Foto: Alexandre Bittencourt Leite Marques</small>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - POUSADA OÁSIS - PORTAS ABERTAS PARA A BRISA.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - A GRANDIOSIDADE DO VELHO CHICO.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Pousada Oásis: portas abertas para a brisa</h2>
+							<h2 class="letra">A grandiosidade do Velho Chico</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL -LEVEZA E BOM GOSTO NATURAL.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PEDRA DA TARTARUGA - SETE CIDADES.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Leveza e bom gosto natural nas suítes da Pousada Oásis</h2>
+							<h2 class="letra">Pedra da Tartaruga — Sete Cidades</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - ELEGÂNCIA PARA VIVER A DOIS NA POUSADA RABO DO LAGARTO.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - PINTURAS RUPESTRES DO VALE DO CATIMBAU.jpeg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Elegância para viver a dois na Pousada Rabo do Lagarto</h2>
+							<h2 class="letra">Pinturas rupestres do Vale do Catimbau</h2>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="overlay">
 							<div class="carousel-bg"
-								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - RABO DO LAGARTO - ROMANTISMO NAS MONTANHAS CAPIXABAS.jpg');">
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - ROTA DO CANGAÇO.jpg');">
 							</div>
 						</div>
 						<div class="carousel-caption ">
-							<h2 class="letra">Rabo do Lagarto: romantismo nas montanhas capixabas</h2>
+							<h2 class="letra">Rota do Cangaço</h2>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="overlay">
+							<div class="carousel-bg"
+								style="background-image: url('img/carroselViajarTravelNews/CARROSSEL - SETE CIDADES - A LENDA DA RAINHA E DOS PRÍNCIPES PETRIFICADOS.webp');">
+							</div>
+						</div>
+						<div class="carousel-caption ">
+							<h2 class="letra">Sete Cidades — a lenda da rainha e dos príncipes petrificados</h2>
 						</div>
 					</div>
 				</div>
@@ -1171,30 +1225,30 @@
 							<h2>Nesta Edição…</h2>
 							<div class="divider"></div>
 
-							<span class="card-subtitle">Mar ou Montanha?</span>
-							<h3 class="edicao-chamada">Cinco hotéis para curtir o 12 de outubro em grande estilo</h3>
+							<span class="card-subtitle">O Lado B do Nordeste</span>
+							<h3 class="edicao-chamada">De Alagoas ao Maranhão, um Nordeste raiz<br>para quem gosta de fugir do óbvio</h3>
 							<div class="edicao-conteudo-grid">
 								<div class="edicao-introducao">
-							<p> <span class="text-indent"></span>
-								O feriado nacional de 12 de outubro cai estrategicamente em uma segunda-feira, cenário perfeito para aquela escapada prolongada que todo apaixonado por viagens precisa. É a pausa ideal no segundo semestre para arrumar as malas, mudar de ares e quebrar a rotina, seja para renovar as energias sentindo a brisa e o som das ondas do mar, seja para buscar o aconchego e o clima fresco das altitudes.
-							</p>
-							<p> <span class="text-indent"></span>
-								Pensando nisso, selecionamos cinco hotéis incríveis, onde já me hospedei, e considero lugares perfeitos para você curtir esses dias de tranquilidade – sem abrir mão de segurança, bom gosto, conforto e beleza.
-							</p>
-							<p class="edicao-pergunta"><span class="text-indent"></span>Capital, interior, praia, montanha, elegante ou rústico... qual desses estilos você prefere?<span class="edicao-seta" aria-hidden="true">→</span></p>
+							<p><span class="text-indent"></span><span class="edicao-primeira-frase">Nesta edição, vamos focar exclusivamente em roteiros diferenciados pelo Nordeste.</span> Fugiremos das capitais e das praias lotadas para revelar a força de interiores místicos, cânions profundos, dunas e lugares intocados. Vamos nessa?</p>
+							<p><span class="text-indent"></span>Do deserto de areias e lagoas dos Lençóis Maranhenses às impressionantes muralhas de pedra de Sete Cidades e da Serra da Capivara, no Piauí, desbravamos um Nordeste que pulsa história e mistério.</p>
+							<p><span class="text-indent"></span>O percurso passa ainda pelas águas verdes e sagradas do Cânion do Xingó e pelos templos naturais esculpidos pela força dos ventos e das chuvas no Vale do Catimbau.</p>
 								</div>
 								<div class="edicao-destaques">
-							<p><strong class="edicao-termo-destaque">REQUINTE COSMOPOLITA (<span class="hotel-nome">Gran Marquise Hotel</span>):</strong> O belíssimo rooftop a céu aberto deste 5 Estrelas é perfeito para um drink ao entardecer, diante de um mar que se funde ao horizonte, onde as famosas velas do Mucuripe encontram as águas do Atlântico – FORTALEZA, CE.</p>
-							<p><strong class="edicao-termo-destaque">RÚSTICO-CHIQUE (<span class="hotel-nome">Toca da Coruja</span>):</strong> Uma reserva particular da Mata Atlântica, uma imersão romântica entre bangalôs rústicos, piscinas e jardins tropicais. Na beleza intocada da Praia das Minas, o restaurante Mar by Toca é um capítulo à parte – PIPA, RN.</p>
-							<p><strong class="edicao-termo-destaque">CHARME AUSTRÍACO (<span class="hotel-nome">Villa Náutica Boutique Hotel</span>):</strong> No luxo silencioso e intimista, o design ao ar livre permite mergulhar na piscina e curtir o visual de um céu indescritível, diretamente de dentro da água – JERICOACOARA, CE.</p>
-							<p><strong class="edicao-termo-destaque">LEVEZA (<span class="hotel-nome">Pousada Oasis</span>):</strong> Este é o próprio oásis à beira-mar, que se debruça sobre as águas mansas da península, e onde corpo e mente se confundem com a placidez do cenário – GALINHOS, RN.</p>
-							<p><strong class="edicao-termo-destaque">ELEGÂNCIA SUTIL (<span class="hotel-nome">Pousada Rabo do Lagarto</span>):</strong> Este refúgio nas montanhas capixabas tem um magnetismo indescritível, uma pintura viva, emoldurada pela imponente Pedra Azul – DOMINGOS MARTINS, ES.</p>
-								<div class="edicao-fecho">
-									<p>E então?...</p>
-									<p class="edicao-assinatura" style="font-family: 'Courgette', cursive !important;">
-										<a target="_blank" href="pessoas-vtn.html">Fátima Vasconcelos Nunes<br>
-											Jornalista</a>
-									</p>
+							<p><span class="text-indent"></span>Prepare-se para descobrir verdadeiras joias escondidas, partindo dos territórios alagoano e sergipano em direção a Pernambuco, ao Piauí e ao Maranhão.</p>
+								<div class="edicao-encerramento-visual">
+									<figure class="edicao-foto-final">
+										<img src="img/ed_novembro_2026/editorial-lencois-maranhenses-v2.png"
+											alt="Dunas e lagoas dos Lençóis Maranhenses iluminadas pelo fim de tarde">
+									</figure>
+									<div class="edicao-encerramento-conteudo">
+										<p><span class="text-indent"></span>Essa rota vai surpreender você com uma gastronomia sertaneja autêntica, hotelaria de charme e lendas ancestrais que provam que o maior tesouro da região está muito além do litoral que a gente conhece.</p>
+										<div class="edicao-fecho">
+											<p class="edicao-assinatura" style="font-family: 'Courgette', cursive !important;">
+												<a target="_blank" href="pessoas-vtn.html">Fátima Vasconcelos Nunes<br>
+													Jornalista</a>
+											</p>
+										</div>
+									</div>
 								</div>
 								</div>
 							</div>
@@ -1253,10 +1307,23 @@
 				margin: 0 0 36px;
 				color: #FD7D01;
 				font-family: "Tenor Sans", sans-serif;
-				font-size: 18px;
+				font-size: clamp(20px, 1.8vw, 24px);
 				font-weight: 700;
 				line-height: 1.45;
 				text-align: left;
+			}
+
+			.edicao-primeira-frase {
+				text-transform: uppercase;
+			}
+
+			.edicao-destaques .edicao-boas-vindas {
+				margin-top: 4px;
+				color: #FD7D01;
+				font-family: "Tenor Sans", sans-serif;
+				font-size: 16px;
+				font-weight: 700;
+				letter-spacing: 0.06em;
 			}
 
 			.edicao-pergunta {
@@ -1287,6 +1354,8 @@
 			}
 
 			.edicao-destaques>p {
+				position: relative;
+				z-index: 2;
 				margin: 0 0 12px;
 				padding: 0;
 				border: 0;
@@ -1302,14 +1371,14 @@
 			}
 
 			.edicao-fecho {
+				position: relative;
+				z-index: 3;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: flex-end;
 				margin-top: auto;
-				padding-top: 18px;
-				padding-bottom: 18px;
-				border-bottom: 2px solid rgba(253, 125, 1, 0.72);
+				padding: 0;
 				text-align: center;
 			}
 
@@ -1322,10 +1391,79 @@
 			}
 
 			.edicao-assinatura {
+				position: relative;
+				z-index: 3;
 				display: inline-block;
-				width: 100%;
-				margin-top: 22px;
+				width: auto;
+				margin-top: 0;
 				margin-bottom: 0 !important;
+				padding: 7px 18px 8px;
+				border-radius: 999px;
+				background: rgba(13, 22, 18, 0.16);
+				backdrop-filter: blur(2px);
+			}
+
+			.edicao-assinatura a {
+				color: #fff !important;
+				text-shadow: 0 1px 3px rgba(0, 0, 0, 0.58);
+			}
+
+			.edicao-encerramento-visual {
+				position: relative;
+				display: grid;
+				height: 340px;
+				margin-top: 2px;
+				overflow: hidden;
+				border-radius: 12px;
+				box-shadow: 0 9px 22px rgba(36, 29, 18, 0.18);
+			}
+
+			.edicao-encerramento-conteudo {
+				position: relative;
+				z-index: 2;
+				grid-area: 1 / 1;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				height: 340px;
+				padding: 24px 26px 22px;
+				background: linear-gradient(to bottom,
+					rgba(14, 24, 19, 0.72) 0%,
+					rgba(14, 24, 19, 0.5) 52%,
+					rgba(14, 24, 19, 0.24) 76%,
+					rgba(14, 24, 19, 0.34) 100%);
+			}
+
+			.edicao-encerramento-conteudo > p:first-child {
+				position: relative;
+				z-index: 2;
+				margin: 0;
+				color: #fff !important;
+				text-shadow: 0 2px 7px rgba(0, 0, 0, 0.78);
+			}
+
+			.edicao-encerramento-conteudo .edicao-boas-vindas {
+				position: relative;
+				z-index: 2;
+				margin-top: 18px;
+				color: #fff !important;
+				text-shadow: 0 2px 7px rgba(0, 0, 0, 0.78);
+			}
+
+			.edicao-foto-final {
+				position: relative;
+				z-index: 0;
+				grid-area: 1 / 1;
+				height: 340px;
+				margin: 0;
+			}
+
+			.edicao-foto-final img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center 58%;
 			}
 
 			.cards-editoriais .modern-card.card-mantiqueira:hover p {
@@ -1405,6 +1543,17 @@
 				.edicao-destaques>p {
 					margin-bottom: 16px;
 				}
+
+				.edicao-encerramento-visual,
+				.edicao-encerramento-conteudo,
+				.edicao-foto-final {
+					height: 400px;
+				}
+
+				.edicao-encerramento-conteudo {
+					padding: 22px 18px 20px;
+				}
+
 			}
 
 			.lua-carrossel-home {
@@ -2002,11 +2151,11 @@
 										<div id="recent-posts-6"
 											class="widget widget_recent_posts img-cards img-cards-lua">
 											<div class="content-lua">
-												<h1 class="letra-lua">Próxima Lua Cheia</h1>
+												<h1 class="letra-lua">DEZEMBRO | ÚLTIMA SUPERLUA ENCERRA O CALENDÁRIO LUNAR DE 2026</h1>
 												<div class="post-content">
 													<p class="letra-lua"
 														style="font-size: 15px; color: #fff !important;">
-																Lua do Caçador (Hunter’s Moon)
+														Lua Fria (Cold Moon)
 													</p>
 													<div class="moon-schedule">
 														<div class="moon-schedule-main">
@@ -2020,12 +2169,12 @@
 																<path
 																	d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
 															</svg>
-																	<span>25, 26 e 27/10</span>
+																	<span>22, 23 e 24/12</span>
 														</div>
 														<div class="moon-schedule-times">
 															<div class="moon-schedule-time">
 																<strong>Auge da Lua Cheia</strong>
-																		<span>26 de Outubro, com o ápice às 01h:13</span>
+																		<span>23 de Dezembro, com o ápice às 22:28h</span>
 																<em>Horário Oficial de Brasília</em>
 															</div>
 														</div>
@@ -2041,7 +2190,7 @@
 										<div class="moon-text-block moon-text-block-full">
 											<div class="moon-highlight-title">Origem do nome</div>
 											<p>
-															É a lua cheia que surge logo após a Lua da Colheita. Antigamente, com os campos já limpos após a colheita, a luz dessa lua permitia aos caçadores enxergar animais à noite, enquanto se preparavam para o inverno.
+											Lua Fria — o nome vem da cultura do povo indígena norte-americano Mohawk (<em>tsothohrha</em>, que significa “tempo de frio”) e faz referência à queda brusca das temperaturas e ao início oficial do inverno no Hemisfério Norte.
 											</p>
 										</div>
 									</div>
@@ -2051,12 +2200,12 @@
 					</div>
 					<div class="col-sm-12 col-md-4 col-lg-4 mb-5 lua-frase-col">
 						<figure class="cardFrase">
-							<img class="cardFrase-img" src="img/edicaoSetembro_2026/veleiro-rumo-ao-mar-aberto.png"
-								alt="Veleiro deixando o porto em direção ao mar aberto ao amanhecer" />
+							<img class="cardFrase-img" src="img/carroselViajarTravelNews/CARROSSEL - CÂNIONS DO XINGÓ.webp"
+								alt="Cânions do Xingó sob o céu noturno" />
 
 							<div class="cardFrase-texto">
-								“DAQUI A VINTE ANOS, VOCÊ ESTARÁ MAIS ARREPENDIDO PELAS COISAS QUE NÃO FEZ DO QUE PELAS QUE FEZ. PORTANTO, DESAMARRE AS AMARRAS. AFASTE-SE DO PORTO SEGURO. AGARRE OS VENTOS EM SUAS VELAS. EXPLORE. SONHE. DESCUBRA.”
-								<span class="cardFrase-autor">— Mark Twain</span>
+								“ANTES QUE 2027 DESPONTE, A LUA CELEBRA O ÚLTIMO CAPÍTULO DO ANO COM TODO O SEU ESPLENDOR.”
+								<span class="cardFrase-autor">— Viajar Travel News</span>
 							</div>
 						</figure>
 					</div>
@@ -2544,10 +2693,11 @@
 				margin: 15px auto 20px;
 				padding: 8px 0 6px;
 				color: #7a4f1d;
-				font-family: 'Faithful Hand', cursive;
-				font-size: 22px;
-				line-height: 1;
-				letter-spacing: 0.5px;
+				font-family: "Tenor Sans", sans-serif;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 1.2;
+				letter-spacing: 0.04em;
 				position: relative;
 			}
 
@@ -2717,10 +2867,10 @@
 				}
 			}
 
-			/* Card da Lua do Caçador: uma única foto com todo o texto sobreposto */
+			/* Card da próxima Lua Cheia: uma única foto com todo o texto sobreposto */
 			.moon-card--hunter {
 				isolation: isolate;
-				background: url("img/edicaoSetembro_2026/lua-do-cacador-campo-colhido.png") center / cover no-repeat;
+				background: url("img/ed_novembro_2026/lua-fria-cold-moon-2026.png") center / cover no-repeat;
 			}
 
 			.moon-card--hunter::before {
@@ -2757,6 +2907,21 @@
 			.moon-card--hunter .moon-content p {
 				color: #fff;
 				text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+			}
+
+			.moon-card--hunter .moon-content p {
+				margin: 8px 12px 12px;
+				padding: 12px 16px;
+				border: 1px solid rgba(255, 255, 255, 0.22);
+				border-radius: 6px;
+				background: rgba(3, 12, 25, 0.58);
+				font-family: "Tenor Sans", sans-serif;
+				font-size: clamp(13px, 1.35vw, 16px);
+				font-weight: 500;
+				line-height: 1.55;
+				letter-spacing: 0.01em;
+				text-align: left;
+				text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
 			}
 
 			.moon-card--hunter .moon-highlight-title::after {
@@ -2866,9 +3031,9 @@
 			<div class="row">
 				<div class="col-12" style="width: 100%; position: relative; overflow: hidden;">
 					<div class="mapa-aviao-banner"
-						style="background-image: url('img/carroselViajarTravelNews/Texto\ do\ seu\ parágrafo1\ \(1\).png');">
+						style="background-image: url('img/ed_novembro_2026/mapa-lado-b-nordeste-sem-aviao-v2.png');">
 						<img id="aviao-desktop" src="img/edicaoSetembro_2026/aviao-vtn-realista-v2.png"
-							width="200" alt="Avião cruzando o mapa da edição de setembro">
+							width="200" alt="Avião VTN atravessando o mapa da edição de novembro">
 						<!-- <div class="selo-texto-simples">
 							MELHOR ESCOLHA <br>
 							Viajar com a Beni Tour Turismo é sinônimo de SEGURANÇA absoluta! O atendimento é de
@@ -2909,21 +3074,23 @@
 			<div class="container">
 				<h2 class="titulo"
 					style="color: #FD7D01 !important;  display: flex; justify-content: center; font-size: 1.6rem;">
-					<b style="margin: 0px 5px 0px 0px"> DESTAQUE | </b> HOTÉIS QUE VALEM A VISITA
+					<b style="margin: 0px 5px 0px 0px"> DESTAQUE | </b> O LADO B DO NORDESTE
 				</h2>
 			</div>
 			<div style="margin: 30px 0px;">
 				<div class="row justify-content-center">
 					<div class=" card-destaque">
-						<img src="img/edicaoSetembro_2026/WhatsApp Image 2026-09-25 at 12.14.51.jpeg" alt="Gran Marquise Hotel, em Fortaleza">
+						<img src="img/ed_novembro_2026/editorial-lencois-maranhenses-v2.png"
+							alt="Dunas e lagoas dos Lençóis Maranhenses">
 						<div class="card-content">
 							<h2>
-								GRAN MARQUISE HOTEL <br> FORTALEZA, CE
+								<span class="destaque-card-tema">LENÇÓIS MARANHENSES</span>
+								<span class="destaque-card-chamada">O DESERTO DAS LAGOAS DOCES</span>
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="gran-marquise.html" class="button">
+							<a href="paginas.html?id=46" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2932,15 +3099,17 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/toca-coruja/WhatsApp Image 2024-06-18 at 20.46.42 (2).jpeg" alt="Toca da Coruja, na Praia da Pipa">
+						<img src="img/ed_novembro_2026/CARD 2 1.jpg"
+							alt="Cânion do Xingó e as águas do Rio São Francisco">
 						<div class="card-content">
 							<h2>
-								TOCA DA CORUJA <br> PRAIA DA PIPA, RN
+								<span class="destaque-card-tema">CÂNION DO XINGÓ</span>
+								<span class="destaque-card-chamada">OS PAREDÕES SAGRADOS DO VELHO CHICO</span>
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="toca-curuja.html" class="button">
+							<a href="paginas.html?id=47" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2949,15 +3118,17 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/villa/Villa-Nautica-29-1.jpeg" alt="Villa Náutica Boutique Hotel, em Jericoacoara">
+						<img src="img/carroselViajarTravelNews/CARROSSEL - PARNA DO VALE DO CATIMBAU (Foto Alexandre Bittencourt Leite Marques).jpg"
+							alt="Formações rochosas do Vale do Catimbau">
 						<div class="card-content">
 							<h2>
-								VILLA NÁUTICA BOUTIQUE HOTEL <br> JERICOACOARA, CE
+								<span class="destaque-card-tema">VALE DO CATIMBAU</span>
+								<span class="destaque-card-chamada">ONDE O AGRESTE ENCONTRA O SERTÃO</span>
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="villa-nautica.html" class="button">
+							<a href="paginas.html?id=48" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2966,14 +3137,17 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/fotos-galinhos/WhatsApp Image 2024-07-18 at 00.10.15 (1).jpeg" alt="Pousada Oasis, em Galinhos">
+						<img src="img/ed_novembro_2026/carrossel-sete-cidades-alta-resolucao.png"
+							alt="Formações rochosas do Parque Nacional de Sete Cidades">
 						<div class="card-content">
-							<h2> POUSADA OASIS <br> GALINHOS, RN
+							<h2>
+								<span class="destaque-card-tema">SETE CIDADES</span>
+								<span class="destaque-card-chamada">REINO ENCANTADO OU OBRA DO VENTO?</span>
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="pousada-oasis.html" class="button">
+							<a href="paginas.html?id=49" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -2982,15 +3156,17 @@
 						</div>
 					</div>
 					<div class=" card-destaque">
-						<img src="img/edicao_junho_2026/CARROSSEL - Pousada Rabo do Lagarto, a 2a melhor do Brasil.jpg"
-							alt="Pousada Rabo do Lagarto, em Domingos Martins">
+						<img src="img/ed_novembro_2026/card-serra-da-capivara-v2.png"
+							alt="Boqueirão da Pedra Furada, na Serra da Capivara">
 						<div class="card-content">
-							<h2> POUSADA RABO DO LAGARTO <br> DOMINGOS MARTINS, ES
+							<h2>
+								<span class="destaque-card-tema">SERRA DA CAPIVARA</span>
+								<span class="destaque-card-chamada">MAIOR ACERVO DE ARTE PRÉ-HISTÓRICA DAS AMÉRICAS</span>
 							</h2>
 							<p style="text-transform: uppercase;text-align: left !important;">
 
 							</p>
-							<a href="paginas.html?id=29" class="button">
+							<a href="paginas.html?id=50" class="button">
 								Leia mais
 								<span class="material-symbols-outlined">
 									arrow_right_alt
@@ -3012,6 +3188,16 @@
 		</div>
 
 		<style>
+			.destaque-card-tema,
+			.destaque-card-chamada {
+				display: block;
+			}
+
+			.destaque-card-chamada {
+				margin-top: 12px;
+				line-height: 1.35;
+			}
+
 			.btn-wrapper {
 				padding: 30px 100px 0px;
 			}

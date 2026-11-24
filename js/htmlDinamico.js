@@ -7914,10 +7914,1649 @@ Embora não ofereça café da manhã, a recepção sempre disponibiliza mimos co
             }
         ],
         curiango: ""
+    },
+    {
+        id: 41,
+        titulo: "ROTEIRO MÍSTICO E DE CHARME",
+        hero: {
+            imagem: "img/edicaoOutubro_2026/CARD 1 - MORRO DO PAI INÁCIO.jpg",
+            subtitulo: "Seis dias no coração da Bahia"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Entre cidades históricas, vales sagrados, grutas, cânions e águas de força arrebatadora, este roteiro de seis dias atravessa o coração da Chapada Diamantina em uma jornada de contemplação, charme e renovação.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Dia 1: Lençóis"
+            },
+            {
+                tipo: "box",
+                titulo: "O Portal de Entrada e o Pôr do Sol Sagrado",
+                conteudo: `
+                <strong>Manhã:</strong> chegada em Lençóis. Check-in em um hotel de charme, como o <a class="article-external-link" href="https://lencois.com.br/" target="_blank" rel="noopener">Hotel Canto das Águas</a>, integrado ao rio. Caminhada pelas ruas de paralelepípedo e pelos casarios coloniais para absorver a energia histórica do antigo garimpo de diamantes.<br><br>
+                <strong>Tarde:</strong> visita ao Serrano, colado na cidade, onde os caldeirões de hidromassagem natural formam verdadeiras piscinas. É o lugar perfeito para um banho de descarrego, para recobrar as energias e estabelecer a primeira conexão com os cristais de quartzo da região.<br><br>
+                <strong>Fim de tarde:</strong> subida ao Morro do Pai Inácio, em Palmeiras, perto de Lençóis. É o ápice místico da Chapada. O visual de 360 graus das mesetas e o pôr do sol imponente trazem uma sensação de paz transcendental. Muitos dizem que o local é um forte ponto de avistamento de OVNIs e canalização de energia.<br><br>
+                <strong>Noite:</strong> jantar romântico ou sofisticado no centro de Lençóis. Sugestão: Restaurante Cozinha de Garimpo.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 1 - LENÇÓIS.webp", legenda: "Lençóis, portal de entrada da Chapada Diamantina" },
+                    { src: "img/edicaoOutubro_2026/CARD 1 - PISCINAS NATURAIS DO SERRANO.jpg", legenda: "Piscinas naturais do Serrano" }
+                ]
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoOutubro_2026/CARD 1 - PONTE DE PEDRA SOBRE O RIO LENÇÓIS (Foto Jeilson Barreto Andrade).webp",
+                height: "460px",
+                legenda: "Ponte de Pedra sobre o Rio Lençóis — Foto: Jeilson Barreto Andrade"
+            },
+            {
+                tipo: "titulo",
+                texto: "Dia 2: Vale do Capão"
+            },
+            {
+                tipo: "box",
+                titulo: "O Vale Sagrado e as Vibrações Alternativas",
+                conteudo: `
+                <strong>Dia inteiro:</strong> deslocamento para o Vale do Capão, em Caeté-Açu, coração da comunidade mística e alternativa da Chapada.<br><br>
+                <strong>Trilha do dia:</strong> caminhada até a Cachoeira da Fumaça por cima. São 12 quilômetros de imersão, ida e volta, com uma subida inicial forte. Chegar ao topo de uma das maiores cachoeiras do Brasil, com quase 400 metros de queda, onde a água se dispersa antes de tocar o chão, é uma experiência de meditação ativa profunda.<br><br>
+                <strong>Tarde e noite:</strong> explorar a vila do Capão e visitar o comércio local de incensos, óleos essenciais e terapias integrativas.<br><br>
+                <strong>Jantar:</strong> degustar a famosa pizza integral com ingredientes locais na Pizzaria Capão Grande, em um ambiente rústico e caloroso. Dormida no Capão, em chalés integrados à mata.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 1 - VALE DO CAPÃO.webp", legenda: "Vale do Capão" },
+                    { src: "img/edicaoOutubro_2026/CARD 1 - CACHOEIRA DA FUMAÇA.jpg", legenda: "Cachoeira da Fumaça" }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Dia 3: Palmeiras e Marimbus"
+            },
+            {
+                tipo: "box",
+                titulo: "Do Vale Místico à Calmaria do Pantanal Baiano",
+                conteudo: `
+                <strong>Manhã:</strong> despedida das montanhas de Palmeiras, saindo do Vale do Capão, em direção à planície inundada do Marimbus, conhecida como o “Pantanal Baiano”. O acesso principal é feito pela histórica comunidade quilombola do Remanso.<br><br>
+                <strong>O passeio:</strong> embarque em canoas canadenses de madeira conduzidas por remadores locais. A embarcação desliza em silêncio por um espelho-d’água gigante, coberto por vitórias-régias e cercado por revoadas de garças. É uma experiência profunda de paz e desaceleração.<br><br>
+                <strong>Almoço:</strong> desembarque na base do Rio Roncador para saborear a legítima culinária quilombola feita no fogão a lenha.<br><br>
+                <strong>Tarde:</strong> banho relaxante nos caldeirões naturais e nas hidromassagens do Rio Roncador, onde as águas correm sobre pedras avermelhadas. Retorno de canoa ao entardecer, com o reflexo das montanhas na água.<br><br>
+                <strong>Noite:</strong> retorno ao conforto do hotel em Lençóis para recarregar as energias.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoOutubro_2026/CARD 1 - PANTANAL DE MARIMBUS.jpg",
+                height: "500px",
+                legenda: "Marimbus, o Pantanal Baiano"
+            },
+            {
+                tipo: "titulo",
+                texto: "Dia 4: Grutas Azul e Lapa Doce"
+            },
+            {
+                tipo: "box",
+                titulo: "Luz Divina nas Profundezas da Terra",
+                conteudo: `
+                <strong>Manhã:</strong> ida até a Fazenda Pratinha, em Iraquara, um verdadeiro oásis com águas de azul-turquesa intenso devido aos minerais. Visita à Gruta Azul. A transparência da água e o silêncio do lugar evocam uma conexão profunda com o elemento água.<br><br>
+                <strong>Almoço:</strong> gastronomia regional na própria Pratinha ou em restaurantes de apoio no caminho.<br><br>
+                <strong>Tarde:</strong> visita à Gruta da Lapa Doce, um dos maiores sistemas de cavernas do país. Caminhar na escuridão, com lanternas, e observar estalactites e estalagmites milenares traz uma forte sensação de introspecção e conexão com o útero da Terra.<br><br>
+                <strong>Noite:</strong> retorno para Lençóis. Noite livre para curtir o burburinho da Rua das Pedras.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoOutubro_2026/CARD 1 - GRUTA AZUL.jpg",
+                height: "500px",
+                legenda: "Gruta Azul"
+            },
+            {
+                tipo: "titulo",
+                texto: "Dia 5: Mucugê e Igatu"
+            },
+            {
+                tipo: "box",
+                titulo: "Os Portais de Cristal e a Cidade de Pedra",
+                conteudo: `
+                <strong>Manhã:</strong> viagem em direção ao sul da Chapada, com parada no Poço Encantado, em Itaetê. Entre abril e setembro, com ápice em junho e julho, um raio de sol atravessa a fenda da gruta e ilumina o poço de água azul-cristalina, com 60 metros de profundidade. O efeito parece abrir um portal para outra dimensão.<br><br>
+                <strong>Tarde:</strong> visita à vila de Igatu, em Andaraí, conhecida como a “Machu Picchu baiana”. É uma vila feita de pedras, construída no auge do garimpo, com atmosfera nostálgica, silenciosa e artística.<br><br>
+                <strong>Fim da tarde:</strong> chegada a Mucugê, uma das cidades mais organizadas e charmosas da Chapada, com pousadas boutique excepcionais, como o <a class="article-external-link" href="https://www.refugionaserra.com.br/" target="_blank" rel="noopener">Refúgio na Serra Boutique Hotel</a>. Visita obrigatória ao icônico Cemitério Bizantino, que brilha aos pés da serra ao entardecer.<br><br>
+                <strong>Noite:</strong> jantar sofisticado em Mucugê, harmonizado com vinhos de altitude produzidos na própria região, como os da Vinícola Uvva.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 1 - IGATU, A CIDADE DE PEDRA.jpg", legenda: "Igatu, a Cidade de Pedra" },
+                    { src: "img/edicaoOutubro_2026/CARD 1 - CEMITÉRIO BIZANTINO DE MUCUGÊ.webp", legenda: "Cemitério Bizantino de Mucugê" }
+                ]
+            },
+            {
+                tipo: "titulo",
+                texto: "Cemitério Bizantino"
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                <strong>Poesia arquitetônica silenciosa.</strong><br><br>
+                O Cemitério Santa Isabel, popularmente conhecido como Cemitério Bizantino de Mucugê, foi erguido no século XIX, entre 1854 e 1886, após um severo surto de cólera. Foi estrategicamente posicionado aos pés de um imenso paredão rochoso da Serra do Sincorá, isolado da cidade para evitar a contaminação da água.<br><br>
+                A verdadeira mágica do lugar está em sua arquitetura vernacular, única no Brasil. O termo vem de “vernáculo”: aquilo que nasce de forma espontânea e intuitiva, feito por pessoas de uma comunidade, sem o projeto formal de um arquiteto. A construção se baseia na tradição, no conhecimento transmitido entre gerações e no uso inteligente dos recursos disponíveis na própria região.<br><br>
+                Financiados pelos ricos barões do auge da exploração de diamantes, os mausoléus familiares simulam miniaturas de igrejas góticas e capelas caiadas de branco, com formas e cúpulas que remetem aos templos do Mar Egeu do antigo Império Bizantino.<br><br>
+                O cemitério é tombado pelo Iphan como patrimônio histórico e paisagístico desde 1980.
+                `
+            },
+            {
+                tipo: "titulo",
+                texto: "Dia 6: Ibicoara"
+            },
+            {
+                tipo: "box",
+                titulo: "Renascimento sob as Águas",
+                conteudo: `
+                <strong>Manhã:</strong> partida para Ibicoara para fazer a trilha da Cachoeira do Buracão. É uma das experiências mais impressionantes da Chapada. O visitante percorre um cânion estreito e sinuoso de pedras avermelhadas e flutua na água, com colete salva-vidas, até chegar a uma imensa garganta com uma queda estrondosa de 85 metros.<br><br>
+                <strong>Momento místico:</strong> o banho no Buracão funciona como um verdadeiro ritual de purificação e renascimento. A força da água e o eco nas paredes de pedra são arrebatadores.<br><br>
+                <strong>Tarde:</strong> almoço tardio de comida caseira feita no fogão a lenha na comunidade local.<br><br>
+                <strong>Fim do dia:</strong> retorno ou despedida da Chapada com a alma renovada.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoOutubro_2026/CARD 1 - CACHOEIRA DO BURACÃO.jpg",
+                height: "560px",
+                maxWidth: "760px",
+                legenda: "Cachoeira do Buracão"
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 42,
+        titulo: "MAGIA, CONFORTO, NATUREZA",
+        hero: {
+            imagem: "img/edicaoOutubro_2026/CARD 2 - REFÚGIO NA SERRA BOUTIQUE HOTEL.jpg",
+            subtitulo: "O lado místico e sofisticado da Chapada Diamantina"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto", colunaUnica: true, fontSize: "20px",
+                conteudo: `Desbravar os cenários enigmáticos da Chapada não significa abrir mão do bem-estar. O destino consolidou-se como um polo de turismo de charme, onde o verdadeiro luxo é meditar no Morro do Pai Inácio, purificar-se na Cachoeira do Buracão e terminar o dia entre lençóis de fios nobres, spas integrados à mata e alta gastronomia.`
+            },
+            {
+                tipo: "texto", colunaUnica: true,
+                conteudo: `Selecionamos alguns dos melhores hotéis e pousadas de charme na Chapada Diamantina, divididos pelas principais cidades-base do roteiro. Eles oferecem conforto sem abrir mão da energia mística da região.`
+            },
+            { tipo: "titulo", texto: "Lençóis" },
+            {
+                tipo: "box", titulo: "A base principal e sofisticada",
+                conteudo: `
+                <strong><a class="article-external-link" href="https://lencois.com.br/" target="_blank" rel="noopener">Hotel Canto das Águas</a></strong><br>O primeiro hotel sustentável do Brasil, construído de forma integrada às margens do Rio Lençóis. Tem atmosfera de extrema paz, alta gastronomia, jardins tropicais e uma piscina icônica cercada por pedras naturais. Perfeito para quem busca luxo sem ostentação.<br><br>
+                <strong><a class="article-external-link" href="https://www.vilaserrano.com/" target="_blank" rel="noopener">Pousada Vila Serrano</a></strong><br>Uma pousada de charme desenhada sob os princípios do Feng Shui. Cercada por jardins tropicais, oferece spa com terapias holísticas, ioga e massagens, a poucos passos do centro histórico.<br><br>
+                <strong><a class="article-external-link" href="https://www.portallencois.tur.br/" target="_blank" rel="noopener">Hotel Portal Lençóis</a></strong><br>Localizado no alto de uma colina, oferece vista panorâmica para a cidade e as montanhas, estrutura de lazer, piscina cercada pela mata e sauna.
+                `
+            },
+            {
+                tipo: "duas-imagens", height: "420px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 2 - HOTEL CANTO DAS ÁGUAS.jpg", legenda: "Hotel Canto das Águas" },
+                    { src: "img/edicaoOutubro_2026/CARD 2 - POUSADA VILA SERRANO.webp", legenda: "Pousada Vila Serrano" }
+                ]
+            },
+            { tipo: "titulo", texto: "Vale do Capão / Palmeiras" },
+            {
+                tipo: "box", titulo: "O coração místico",
+                conteudo: `
+                <strong><a class="article-external-link" href="https://www.pousadaterrasdopoente.com.br/" target="_blank" rel="noopener">Pousada Terras do Poente</a></strong><br>Localizada nas montanhas do Capão, seus chalés têm vista cinematográfica para o pôr do sol e os vales. A proposta é voltada à conexão com a natureza, ideal após a trilha da Cachoeira da Fumaça.<br><br>
+                <strong><a class="article-external-link" href="https://pousadalagoadascores.com.br/" target="_blank" rel="noopener">Pousada Villa Lagoa das Cores</a></strong><br>Um dos refúgios de charme e bem-estar mais tradicionais da Chapada. Oferece spa holístico, espaços de meditação, ioga e massagens; piscina, lareira, hidromassagem e sauna integrada à natureza; café da manhã artesanal e restaurante próprio.
+                `
+            },
+            {
+                tipo: "duas-imagens", height: "420px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 2 - POUSADA TERRAS DO POENTE.jpeg", legenda: "Pousada Terras do Poente" },
+                    { src: "img/edicaoOutubro_2026/CARD 2 - POUSADA VILLA LAGOA DAS CORES.jpeg", legenda: "Pousada Villa Lagoa das Cores" }
+                ]
+            },
+            {
+                tipo: "curiango-inline",
+                etiqueta: "Conceição dos Gatos",
+                conteudo: `Não deixe de conhecer o povoado histórico de Conceição dos Gatos, em Palmeiras. Caminhe até a Cachoeira Boa Vista, renove as energias no Poço das Cobras e termine a jornada com a culinária afetiva feita no fogão a lenha pela comunidade, ouvindo as lendas sobre a antiga moradora que batizou o vilarejo. Mais sobre Conceição dos Gatos no Card 5.`
+            },
+            { tipo: "titulo", texto: "Mucugê" },
+            {
+                tipo: "box", titulo: "Elegância e história",
+                conteudo: `<strong><a class="article-external-link" href="https://www.refugionaserra.com.br/" target="_blank" rel="noopener">Refúgio na Serra Boutique Hotel</a></strong><br>Hotel boutique encantador que mistura o estilo “hippie chique” com sofisticação. Oferece suítes modernas, paisagismo tropical, alta gastronomia e mimos diários. Fica no coração histórico e é uma excelente escolha antes de conhecer os vinhedos da região.`
+            },
+            {
+                tipo: "imagem", imagem: "img/edicaoOutubro_2026/CARD 2 - REFÚGIO NA SERRA BOUTIQUE HOTEL.jpg",
+                height: "500px", legenda: "Refúgio na Serra Boutique Hotel"
+            },
+            { tipo: "titulo", texto: "Mais opções" },
+            {
+                tipo: "box", titulo: "Igatu — a Vila de Pedra",
+                conteudo: `
+                <strong><a class="article-external-link" href="https://pousadaflordeacucena.com.br/" target="_blank" rel="noopener">Pousada Art Hotel Flor de Açucena</a></strong><br>Construída de forma integrada às rochas e às ruínas históricas de Igatu. Tem arquitetura artística singular, piscina natural e forte energia de reconexão.<br><br>
+                <strong>Pousada Pedras de Igatu</strong><br>Oferece chalés aconchegantes com vista para o vale, combinando a rusticidade das pedras com conforto e silêncio.
+                `
+            },
+            {
+                tipo: "imagem", imagem: "img/edicaoOutubro_2026/CARD 2 - POUSADA FLOR DE AÇUCENA.jpeg",
+                height: "500px", legenda: "Pousada Art Hotel Flor de Açucena"
+            },
+            {
+                tipo: "box", titulo: "Ibicoara — base para a Cachoeira do Buracão",
+                conteudo: `
+                <strong><a class="article-external-link" href="https://www.kabanadepedra.com.br/" target="_blank" rel="noopener">Pousada Kabana de Pedra</a></strong><br>Uma das melhores estruturas da cidade, com chalés charmosos na área rural, ideal para descansar com privacidade após as trilhas.<br><br>
+                <strong><a class="article-external-link" href="https://www.diamantinafalls.com/" target="_blank" rel="noopener">Diamantina Falls Boutique Hotel &amp; Spa</a></strong><br>Opção sofisticada em Ibicoara, com foco em design moderno, conforto e integração com a natureza.
+                `
+            },
+            {
+                tipo: "imagem", imagem: "img/edicaoOutubro_2026/CARD 2 - DIAMANTINA FALLS BOUTIQUE HOTEL.jpg",
+                height: "500px", legenda: "Diamantina Falls Boutique Hotel &amp; Spa"
+            },
+            {
+                tipo: "box", titulo: "Lençóis e Mucugê",
+                conteudo: `
+                <strong>Pousada Vila do Rezende — Lençóis</strong><br>Pousada de charme bem localizada, com atendimento personalizado, piscina e atmosfera tranquila.<br><br>
+                <strong><a class="article-external-link" href="https://www.pousadamonteazul.com.br/" target="_blank" rel="noopener">Pousada Monte Azul — Mucugê</a></strong><br>Charmosa e confortável, fica no centro histórico de Mucugê e oferece uma estadia acolhedora com excelente café da manhã.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 43,
+        titulo: "SABORES DA TERRA",
+        hero: {
+            imagem: "img/edicaoOutubro_2026/CARD 3 - VINÍCOLA Uvva.webp",
+            subtitulo: "Jornada gastronômica entre as raízes do garimpo e a alta culinária"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Explorar a Chapada Diamantina vai muito além dos olhos e das trilhas para se completar no paladar. A gastronomia da região é um reflexo da sua história. Os ingredientes rústicos que sustentavam os antigos garimpeiros no século XIX — godó de banana verde, palma, palmito de jaca e carne de sol — ganham vida nova ao serem abraçados pela alta gastronomia contemporânea, por chefs renomados e por conceitos como o <em>Slow Food</em>.
+                `
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Cada cidade-base do circuito oferece um banquete para a alma. Enquanto o Vale do Capão exala uma energia mística em suas pizzas de massa integral e opções orgânicas, e Mucugê surpreende com menus sofisticados harmonizados com vinhos de altitude premiados, é no Centro Histórico de Lençóis que a magia se consagra. Ao cair da noite, as icônicas ruelas de paralelepípedo, como a Rua das Pedras e a Rua da Baderna, fecham para os carros e se transformam em um charmoso salão ao ar livre. É o momento perfeito para caminhar entre igrejas coloniais iluminadas e escolher o cenário do seu próximo jantar.
+                `
+            },
+            { tipo: "titulo", texto: "Lençóis" },
+            {
+                tipo: "box",
+                titulo: "Circuito da Rua das Pedras e arredores",
+                conteudo: `
+                <strong><a class="article-external-link" href="https://www.hoteldelencois.com/rodadagua" target="_blank" rel="noopener">Restaurante Roda D’Água</a></strong><br>Localizado dentro do tradicional e histórico <a class="article-external-link" href="https://www.hoteldelencois.com/" target="_blank" rel="noopener">Hotel de Lençóis</a>, é um ambiente de elegância ímpar. Combina decoração requintada com pratos executados com primor, todos inspirados na rica culinária típica da Chapada Diamantina. É a escolha perfeita para um jantar memorável e sofisticado.<br><br>
+                <strong>Cozinha Aberta Slow Food</strong><br>Localizado próximo ao burburinho, é um dos mais premiados da região. Trabalha com o conceito <em>Slow Food</em>, utilizando ingredientes 100% orgânicos e locais em pratos autorais.<br><br>
+                <strong>Os Artistas da Massa</strong><br>Situado na Rua da Baderna, colado na Rua das Pedras, é um clássico queridinho do centro histórico. Conhecido pelas massas caseiras, artesanais e integrais impecáveis, além das pizzas deliciosas, oferece ambiente acolhedor e familiar, com mesas na calçada e atmosfera descontraída para o jantar. Tem sempre jazz ou blues como música ambiente.<br><br>
+                <strong>Bistrô do Mato</strong><br>Fica na Rua Miguel Calmon, colado na Rua das Pedras. Perfeito para comer o legítimo godó de banana verde com carne de sol em mesas dispostas na calçada de pedra.<br><br>
+                <strong>Bodega</strong><br>Situado na charmosa Rua das Pedras, funciona como um bistrô argentino-italiano. Embora seja famoso localmente pelo petisco de pastel de carne de jaca, a essência da casa traz cortes de carne típicos portenhos e massas artesanais, além de excelente carta de vinhos e empanadas. O local é perfeito para tomar um drinque e petiscar ao pôr do sol.<br><br>
+                <strong>El Jamiro</strong><br>Outro ponto de forte influência argentina na badalada Rua da Baderna. Mistura pizzaria com grelhados, empanadas argentinas legítimas e cortes como a tradicional picanha argentina na chapa e o bife de tira, sempre embalados por música ao vivo.<br><br>
+                <strong>Alcino Estalagem &amp; Atelier</strong><br>Seu café da manhã não é apenas uma refeição: é considerado um verdadeiro patrimônio e o melhor café da manhã de toda a Chapada Diamantina. Acontece em um casarão colonial impecavelmente preservado e funciona como um ritual artístico capitaneado pelo próprio Alcino. Hóspedes — e visitantes que reservam com antecedência — sentam-se juntos ao redor de uma imensa mesa coletiva de madeira. Ali, comidinhas regionais e autorais são servidas em pequenas etapas e porções, em louças e cerâmicas que o próprio Alcino molda e pinta em seu ateliê. É uma experiência gourmet, lenta e inesquecível.<br><br>
+                <strong>Restaurante O Bode</strong><br>Na Praça Horácio de Matos, coração do centro, é a parada obrigatória para o almoço pós-trilha, servindo o melhor da culinária típica sertaneja a quilo.<br><br>
+                <strong>Barraca do Acarajé da Ilda</strong><br><em>O tradicional acarajé de rua do centro.</em> Nenhuma matéria sobre a Bahia estaria completa sem o clássico tabuleiro de rua. No Centro Histórico de Lençóis, fazer uma parada na barraca da Ilda, na icônica Rua Perilo Benjamin, é um patrimônio local. É ali que nativos e turistas se misturam no fim de tarde para comer um acarajé frito na hora, crocante, sequinho e cheio de axé, servido no prato ou no papel.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 3 - RESTAURANTE RODA D'ÁGUA.webp", legenda: "Restaurante Roda D’Água" },
+                    { src: "img/edicaoOutubro_2026/CARD 3 - OS ARTISTAS DA MASSA.jpeg", legenda: "Os Artistas da Massa" }
+                ]
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 3 - BODEGA.jpg", legenda: "Bodega" },
+                    { src: "img/edicaoOutubro_2026/CARD 3 - ALCINO ESTALAGEM RESTAURADA.png", legenda: "Alcino Estalagem &amp; Atelier", objectPosition: "center" }
+                ]
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoOutubro_2026/CARD 3 - ACARAJÉ DA ILDA RESTAURADA.png",
+                height: "680px",
+                maxWidth: "480px",
+                objectFit: "cover",
+                objectPosition: "center 58%",
+                legenda: "Acarajé da Ilda"
+            },
+            { tipo: "titulo", texto: "Vale do Capão e Palmeiras" },
+            {
+                tipo: "box",
+                titulo: "Alternativo e saudável",
+                conteudo: `
+                <strong>Pizzaria Capão Grande — Vale do Capão</strong><br>Localizada na praça da vila, é o lugar mais famoso do Capão. Serve apenas dois sabores de pizza por noite, feitos com massa integral e recheios como mel de abelha local.<br><br>
+                <strong>Ôxe! Restô — Palmeiras</strong><br>Restaurante aconchegante e romântico, focado em gastronomia contemporânea com toques regionais. O risoto de cogumelos é um dos destaques.<br><br>
+                <strong>Orquídea Negra Bistrot — Palmeiras</strong><br>Perfeito para um jantar sofisticado no clima frio do vale, com releituras da cozinha brasileira e global.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoOutubro_2026/CARD 3 - PIZZARIA CAPÃO GRANDE.webp",
+                height: "500px",
+                legenda: "Pizzaria Capão Grande"
+            },
+            { tipo: "titulo", texto: "Mucugê" },
+            {
+                tipo: "box",
+                titulo: "Alta gastronomia e sofisticação",
+                conteudo: `
+                <strong><a class="article-external-link" href="https://www.refugionaserra.com.br/restaurante-paraguassu/cardapio/" target="_blank" rel="noopener">Restaurante Paraguassu</a></strong><br>Integrado ao hotel boutique <a class="article-external-link" href="https://www.refugionaserra.com.br/" target="_blank" rel="noopener">Refúgio na Serra</a>, é considerado o restaurante mais fino de Mucugê, oferecendo menus degustação refinados que reinterpretam clássicos locais.<br><br>
+                <strong><a class="article-external-link" href="https://vinicolauvva.com.br/arenito-restaurante/" target="_blank" rel="noopener">Restaurante Arenito</a></strong><br>Uma experiência de altíssimo luxo. Fica dentro do complexo da Vinícola Uvva e permite almoçar com vista para as parreiras e as montanhas da Chapada, harmonizando a refeição com os premiados vinhos de altitude da casa.<br><br>
+                <strong>Restaurante Comida Caseira da Dona Nena</strong><br>Para o almoço, oferece comida regional afetiva impecável no centro histórico, sendo aclamado como o melhor tempero caseiro da cidade.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 3 - VINÍCOLA Uvva.webp", legenda: "Vinícola Uvva, onde fica o Restaurante Arenito" },
+                    { src: "img/edicaoOutubro_2026/CARD 3 - DONA NENA COMIDA CASEIRA.jpg", legenda: "Comida Caseira da Dona Nena" }
+                ]
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 44,
+        titulo: "O CHARME COLONIAL E MÍSTICO DO CENTRO HISTÓRICO DE LENÇÓIS",
+        hero: {
+            imagem: "img/edicaoOutubro_2026/CARD 4  - ENTARDECER NO CENTRO HISTÓRICO DE LENÇÓIS.jpg",
+            subtitulo: "Uma viagem no tempo ao coração da Chapada Diamantina",
+            legenda: "Entardecer no Centro Histórico de Lençóis — Foto: Pulsar Imagens"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Caminhar pelo Centro Histórico de Lençóis é fazer uma viagem no tempo até o auge da era do garimpo de diamantes no século XIX. Tombado pelo Iphan, o casario colonial colorido preserva a opulência da época em que a cidade chegou a exportar joias diretamente para a Europa.
+                `
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                A profissionalização do turismo é uma realidade em Lençóis e conta com projetos de inclusão social e a adoção de uma cultura humanizada, para que o lugar não venha a se tornar um parque temático. O Mercado Cultural, antigo centro de comércio de joias, hoje abriga artesanato e debates sobre o Jarê, religião afro-indígena exclusiva da Chapada.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Histórias do garimpo",
+                conteudo: `
+                Há muitas histórias de coronéis e garimpo, como a do lendário Coronel Horácio de Mattos, cujos jagunços ditavam as regras na região. Esse clima histórico se funde ao folclore local, repleto de causos sobre o <em>bambúrrio</em> — a sorte grande de achar um diamante gigante após avisos místicos em sonhos.
+                `
+            },
+            { tipo: "titulo", texto: "Arte e vida noturna" },
+            {
+                tipo: "imagem-texto",
+                imagem: "img/edicaoOutubro_2026/CARD 4 - AS AREIAS COLORIDAS DA CHAPADA.jpeg",
+                height: "430px",
+                legenda: "Arte produzida com as areias coloridas da Chapada",
+                texto: `
+                O artesanato mais poético local são os potes de areias coloridas naturais, técnica nascida nas próprias minas. Ao cair da noite, as icônicas Rua das Pedras e Rua da Baderna fecham para os carros, transformando-se em um salão ao ar livre com música ao vivo, rodas espontâneas de capoeira e mesas na calçada.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "500px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 4 - RUA DAS PEDRAS.jpg", legenda: "Rua das Pedras", objectPosition: "center" },
+                    { src: "img/edicaoOutubro_2026/CARD 4 - RUA DA BADERNA.jpeg", legenda: "Rua da Baderna", objectPosition: "center" }
+                ]
+            },
+            {
+                tipo: "box",
+                titulo: "O coração pulsante da Chapada",
+                conteudo: `
+                Durante o dia, a Rua das Pedras e a Rua da Baderna revelam a beleza das calçadas feitas com pedras de rio. À noite, fecham exclusivamente para pedestres e se transformam no coração pulsante da Chapada, com mesinhas iluminadas ao ar livre, música ao vivo e o aroma irresistível que sai dos restaurantes.
+                `
+            },
+            { tipo: "titulo", texto: "O rio e as pontes de pedra" },
+            {
+                tipo: "imagem-texto",
+                imagem: "img/edicaoOutubro_2026/CARD 1 - PONTE DE PEDRA SOBRE O RIO LENÇÓIS (Foto Jeilson Barreto Andrade).webp",
+                height: "430px",
+                legenda: "Ponte de Pedra sobre o Rio Lençóis — Foto: Jeilson Barreto Andrade",
+                imagemDireita: true,
+                texto: `
+                Enquanto o desenho das ruas reflete a religiosidade e as tradições da região, o Rio Lençóis vai serpenteando o coração da cidade, correndo sobre leitos de pedras escuras. As pontes históricas que o atravessam oferecem o som relaxante das águas como trilha sonora permanente, enquanto a gente caminha entre os casarões.
+                `
+            },
+            { tipo: "titulo", texto: "Igrejas históricas" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                No final das ruelas de paralelepípedo, destacam-se duas joias arquitetônicas. A Igreja Matriz de Nossa Senhora do Rosário era frequentada pela elite da época, enquanto a icônica Igreja do Senhor Bom Jesus dos Passos acolhia a fé fervorosa dos garimpeiros, sendo o santo padroeiro daqueles que buscavam a sorte nas rochas.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoOutubro_2026/CARD 4 - IGREJA NOSSA SENHORA DO ROSÁRIO.jpg",
+                height: "520px",
+                legenda: "Igreja Matriz de Nossa Senhora do Rosário"
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 45,
+        titulo: "ROTEIRO PERFEITO",
+        hero: {
+            imagem: "img/edicaoOutubro_2026/CARD 1 - CACHOEIRA DO BURACÃO.jpg",
+            subtitulo: "A força da Terra, dos cânions e das águas"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Desacelere o coração deslizando em canoas pelas vitórias-régias do Pantanal do Marimbus e explore as águas cristalinas da Gruta da Pratinha. Cruzar os cânions avermelhados da Cachoeira do Buracão é testemunhar um dos santuários ecológicos mais belos e preservados do planeta.
+                `
+            },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                <strong>Mas é no Vale do Pati que mora a verdadeira essência da Chapada Diamantina.</strong>
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 1 - PANTANAL DE MARIMBUS.jpg", legenda: "Pantanal do Marimbus" },
+                    { src: "img/edicaoOutubro_2026/CARD 1 - GRUTA AZUL.jpg", legenda: "Águas cristalinas da Chapada Diamantina" }
+                ]
+            },
+            { tipo: "titulo", texto: "Vale do Pati" },
+            {
+                tipo: "box",
+                titulo: "No coração do abismo, o portal secreto da Chapada",
+                conteudo: `
+                Considerado o trekking mais bonito e intocado do Brasil, o Vale do Pati é também o trekking mais místico do país, oferecendo uma experiência de isolamento total — sem sinal de celular ou internet — em meio a paredões gigantescos e paisagens intocadas.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "470px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 5 - VALE DO PATI.jpeg", legenda: "Vale do Pati" },
+                    { src: "img/edicaoOutubro_2026/CARD 5 - MIRANTE DO PATI.jpg", legenda: "Mirante do Pati" }
+                ]
+            },
+            { tipo: "titulo", texto: "Como chegar" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                O Pati fica no coração do Parque Nacional e não tem acesso para carros. A entrada é feita exclusivamente a pé por três principais portais oficiais:
+                `
+            },
+            {
+                tipo: "box",
+                itens: [
+                    "<strong>Pelo Guiné — Mucugê:</strong> é o acesso mais rápido e plano, iniciando pelo visual impressionante dos Gerais do Rio Preto.",
+                    "<strong>Pelo Vale do Capão — Palmeiras:</strong> é o caminho mais longo e desafiador, cruzando o imenso Gerais Vieira.",
+                    "<strong>Por Andaraí:</strong> acesso conhecido pela famosa e íngreme subida da Ladeira do Império."
+                ]
+            },
+            {
+                tipo: "curiango-inline",
+                etiqueta: "Vale do Pati",
+                conteudo: `
+                É altamente recomendável a contratação de um guia credenciado para fazer a travessia com segurança.
+                `
+            },
+            { tipo: "titulo", texto: "Onde ficar" },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                O grande charme do Pati é que você não precisa acampar. A hospedagem é feita nas casas dos nativos, famílias de antigos moradores que transformaram seus lares em abrigos acolhedores para os caminhantes.<br><br>
+                As casas oferecem quartos coletivos com camas confortáveis — ou redes — e banheiros com banho morno. A diária inclui um café da manhã farto e um jantar reforçado, feito no fogão a lenha, perfeitos para repor as energias. É o melhor lugar para ouvir causos históricos da Chapada e vivenciar o turismo comunitário.
+                `
+            },
+            { tipo: "titulo", texto: "Cachoeiras de tirar o fôlego" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                A natureza na Chapada Diamantina se manifesta em escala monumental, em um ecossistema colossal. Viver a aventura e a espiritualidade em uma jornada de seis dias é sentir a paz transcendental do pôr do sol no Morro do Pai Inácio, a meditação na Cachoeira da Fumaça e seguir conhecendo, sem pressa, algumas das inúmeras cachoeiras que a região oferece.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Águas monumentais",
+                conteudo: `
+                <strong>Cachoeira do Sossego — Lençóis</strong><br>Uma trilha técnica que segue pelo leito do rio de pedras, terminando em um cânion fechado com uma queda-d’água imponente e um poço profundo de águas escuras.<br><br>
+                <strong>Cachoeira da Fumacinha — Ibicoara</strong><br>Considerada uma das trilhas mais radicais do Brasil. Fica escondida no fundo de um cânion estreito e sinuoso, com paredões de quase 300 metros de altura, onde o sol mal consegue entrar.<br><br>
+                <strong>Cachoeira do Mixila — Lençóis</strong><br>Uma das quedas-d’água mais misteriosas e cenográficas da região. Fica escondida no final de um cânion estreito e sinuoso em formato de “S”, onde os paredões de pedra quase se fecham lá no alto. Para chegar ao poço verde-esmeralda, o viajante precisa nadar entre os imensos corredores de rocha, o que traz uma sensação indescritível de aventura e misticismo.<br><br>
+                <strong>Cachoeira dos Cristais — Vale do Capão</strong><br>Como o próprio nome sugere, é famosa pela transparência cristalina de suas águas e pela forte presença de quartzo em seu leito. Um verdadeiro refúgio de paz no Capão, muito procurado por quem deseja relaxar, meditar ao som da água e renovar as energias em meio à mata nativa preservada.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "500px",
+                imagens: [
+                    { src: "img/edicaoOutubro_2026/CARD 5 - CACHOEIRA DO MIXILA.jpeg", legenda: "Cachoeira do Mixila", objectPosition: "center" },
+                    { src: "img/edicaoOutubro_2026/CARD 5 - CACHOEIRA DOS CRISTAIS.jpg", legenda: "Cachoeira dos Cristais — Foto: Pulsar Imagens", objectPosition: "center" }
+                ]
+            },
+            { tipo: "titulo", texto: "Conceição dos Gatos" },
+            {
+                tipo: "imagem-texto",
+                imagem: "img/edicaoOutubro_2026/CARD 5 - CONCEIÇÃO DOS GATOS.jpg",
+                height: "470px",
+                legenda: "Conceição dos Gatos, em Palmeiras",
+                texto: `
+                No charmoso povoado de Conceição dos Gatos, a cerca de 10 quilômetros do Vale do Capão, no município de Palmeiras, está a Cachoeira da Conceição. Na verdade, é um circuito com várias quedas-d’água e poços.<br><br>
+                A Cachoeira Boa Vista, ou Cachoeira de Cima, é a mais imponente do vilarejo, com uma queda de aproximadamente 60 metros. O acesso mais conhecido e fácil é feito por uma passarela calçada, a partir do restaurante do morador local conhecido como Seu Zezão.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "A lenda dos gatos",
+                conteudo: `
+                O nome curioso do povoado vem do folclore local. Os nativos contam a lenda de uma antiga moradora da região, uma senhora chamada Conceição, que andava pelas trilhas carregando um balaio cheio de gatos, dando origem ao nome Conceição dos Gatos.<br><br>
+                Além das águas calmas, o povoado é muito conhecido na Chapada Diamantina pelo turismo comunitário e pela comida caseira afetiva servida no fogão a lenha diretamente na casa dos moradores.
+                `
+            },
+            { tipo: "titulo", texto: "Grutas e poços translúcidos" },
+            {
+                tipo: "box",
+                conteudo: `
+                <strong>Poço Azul — Nova Redenção</strong><br>Semelhante ao Poço Encantado, mas aqui é permitido flutuar na água incrivelmente azul e transparente. A sensação é de estar flutuando no espaço sideral.<br><br>
+                <strong>Gruta da Torrinha — Iraquara</strong><br>Uma das cavernas mais ricas do mundo em raridades geológicas. Guarda formações de gipso e agulhas de calcita que parecem flores de vidro brotando das rochas.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/edicaoOutubro_2026/CARD 5 - CAVERNA DA TORRINHA.jpg",
+                height: "520px",
+                legenda: "Gruta da Torrinha, em Iraquara"
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 46,
+        titulo: "LENÇÓIS MARANHENSES",
+        hero: {
+            imagem: "img/ed_novembro_2026/editorial-lencois-maranhenses-v2.png",
+            subtitulo: "O Deserto das Lagoas Doces",
+            legenda: "Lençóis Maranhenses, um território líquido e movediço"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Vistos de longe ou do alto, os morros de areia branca ondulados pelo vento parecem imensos lençóis estendidos para secar no quintal. Contam os antigos que as dunas nasceram do amor proibido entre uma indígena e o vento. Para protegê-la de sua tribo, o vento soprou toneladas de areia sobre ela. As lagoas cristalinas seriam as lágrimas de saudade que ela chora até hoje...
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Ali, onde a terra firme descansa e a natureza redesenha a paisagem, o Nordeste brasileiro guarda um dos maiores enigmas visuais: os Lençóis Maranhenses. Nesse território líquido e movediço, o tempo leva embora as pegadas e mergulha no horizonte sem fim. Localizado no litoral do Maranhão, o Parque Nacional dos Lençóis Maranhenses é um daqueles lugares que parecem pintura e desafiam a lógica geográfica. Com 155 mil hectares de extensão, o parque guarda a maior área de dunas de areia branca do Brasil, formando montanhas de até 40 metros de altura que mudam de desenho todos os dias.<br><br>
+                Diferente de um deserto comum, onde se esperaria apenas a aridez, nos Lençóis Maranhenses chove bastante no começo do ano, e as águas se acumulam entre as montanhas de areia, formando centenas de lagoas cristalinas ora verdes, ora azuis - a Lagoa Azul, Lagoa Bonita e Lagoa da Gaivota estão entre as mais famosas para banho e contemplação do pôr do sol. A melhor época para viajar é entre maio e setembro. Nesses meses, as chuvas já passaram, o sol brilha forte e as lagoas estão bem cheias e perfeitas para o banho.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "470px",
+                imagens: [
+                    { src: "img/ed_novembro_2026/CARD 1 3.jpeg", legenda: "Lagoas cristalinas entre as dunas" },
+                    { src: "img/ed_novembro_2026/CARD 1 4.jpeg", legenda: "Pôr do sol nos Lençóis Maranhenses" }
+                ]
+            },
+            { tipo: "titulo", texto: "Patrimônio Natural" },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Embora possa parecer um lugar vazio, o parque abriga muita vida. Nas áreas verdes e manguezais ao redor das dunas vivem aves como o guará (famoso pelas penas vermelho-vivo), raposas, veados e tartarugas marinhas que desovam nas praias. Já a vegetação é formada por plantas baixas, cactos e arbustos rasteiros que seguram a areia e aguentam o sol forte.<br><br>
+                Reconhecido como Patrimônio Natural da Humanidade pela UNESCO, o destino exige cuidado com a natureza. Por isso, os passeios são feitos apenas com guias locais e carros 4x4 autorizados, garantindo uma aventura segura e inesquecível.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "470px",
+                imagens: [
+                    {
+                        src: "img/ed_novembro_2026/CARD1 1.jpeg",
+                        legenda: "O desenho mutável das dunas e lagoas",
+                        objectPosition: "center"
+                    },
+                    {
+                        src: "img/ed_novembro_2026/CARD 1 6.jpg",
+                        legenda: "Caminhada pelas dunas",
+                        objectPosition: "center"
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde ficar" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Escolher onde ficar nos Lençóis Maranhenses é o primeiro passo, e vai depender do estilo da viagem. Com acesso controlado às dunas e longas distâncias entre os atrativos, definir a cidade-base é o primeiro passo para planejar a visita ao parque nacional. Veja o que cada uma das três principais regiões oferece em termos de hospedagem e estrutura:
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 3,
+                itens: [
+                    {
+                        kicker: "Base principal",
+                        nome: "Barreirinhas",
+                        texto: "Principal porta de entrada com infraestrutura completa de restaurantes, serviços e hotéis confortáveis (como Porto Preguiças Resort e Gran Lençóis Flat Residence), ideal para famílias;"
+                    },
+                    {
+                        kicker: "Perto das lagoas",
+                        nome: "Santo Amaro",
+                        texto: "Base tranquila na borda oeste (colado às dunas), com fácil acesso rodoviário e com as lagoas a poucos minutos do centro, destacando-se por pousadas acolhedoras como a Rancho das Dunas;"
+                    },
+                    {
+                        kicker: "Charme à beira-mar",
+                        nome: "Atins",
+                        texto: "Vilarejo rústico na foz do Rio Preguiças, famoso pelas pousadas boutique (como Atins Charme Chalés), gastronomia renomada e ventos ideais para kitesurfe entre julho e dezembro."
+                    }
+                ]
+            },
+            {
+                tipo: "box",
+                titulo: "Onde se hospedar nas três principais bases",
+                conteudo: `
+                A escolha da hospedagem define o estilo da viagem, já que cada vila oferece um nível diferente de infraestrutura e acesso às dunas.
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 3,
+                itens: [
+                    {
+                        kicker: "Base / Cidade",
+                        nome: "Barreirinhas",
+                        texto: "Principal porta de entrada, com maior oferta de hotéis, restaurantes e agências. Ideal para quem busca conforto e praticidade.<br><br>Porto Preguiças Resort (5 estrelas)<br>Gran Lençóis Flat Residence (4 estrelas)<br>Portal do Sol Lençóis (3 estrelas)"
+                    },
+                    {
+                        kicker: "Base / Cidade",
+                        nome: "Santo Amaro",
+                        texto: "Vila tranquila e rústica, localizada bem na borda do parque. Permite acesso rápido e com menos multidões às maiores lagoas.<br><br>Pousada Rancho das Dunas (3 estrelas)<br>Pousada Lençóis Maranhenses (3 estrelas)<br>Pousada Santo Amaro"
+                    },
+                    {
+                        kicker: "Base / Cidade",
+                        nome: "Atins",
+                        texto: "Vilarejo de pescadores pé na areia com clima charmoso, gastronomia sofisticada e ventos ideais para kitesurfe.<br><br>Atins Charme Chalés (5 estrelas) e pousadas boutique rústicas."
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Roteiros indispensáveis" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Por se tratar de uma unidade de conservação ambiental, o acesso às áreas internas do parque segue regras rígidas de circulação e acompanhamento de guias locais.<br><br>
+                Circuitos Lagoa Azul e Lagoa Bonita são os roteiros clássicos a partir de Barreirinhas. O trajeto inclui travessia de balsa pelo Rio Preguiças e trilha em veículos tracionados até o topo das dunas - de onde os visitantes seguem a pé - com guias locais até as lagoas e mirantes naturais para o pôr do sol. Os veículos 4x4 não sobem até o topo das dunas.
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 1,
+                itens: [
+                    {
+                        kicker: "Clássicos",
+                        nome: "Lagoa Azul e Bonita",
+                        texto: "Saída de Barreirinhas - Lagoa Azul e Lagoa Bonita (Circuito Lagoa Azul &amp; Lagoa Bonita)<br><br>Travessia do Rio Preguiças - A travessia de balsa é o método tradicional. Nos últimos anos, com a construção da ponte sobre o Rio Preguiças na região, parte dos operadores também utiliza a ponte dependendo do roteiro, mas a balsa continua sendo referência clássica nos guias;<br><br>Acesso e deslocamento - Por regras ambientais do ICMBio, os veículos 4x4 (jardineiras) percorrem as trilhas de areia e vegetação apenas até a base das dunas, onde ficam os estacionamentos autorizados. A subida até o topo das dunas e o deslocamento entre as lagoas são feitos a pé pelos visitantes – Os veículos 4x4 não sobem até o topo das dunas.<br><br>Na Lagoa Bonita há uma escadaria de madeira para vencer a duna íngreme;"
+                    },
+                    {
+                        kicker: "Santo Amaro",
+                        nome: "Gaivota e Emendadas",
+                        texto: "Lagoa da Gaivota e Lagoa das Emendadas - Principais destaques de Santo Amaro, impressionam pela extensão e pelo volume de água. A Lagoa das Emendadas é acessada por meio de caminhada sobre as dunas, oferecendo um cenário mais preservado e silencioso;"
+                    },
+                    {
+                        kicker: "Navegação",
+                        nome: "Rio Preguiças",
+                        texto: "Navegação pelo Rio Preguiças - Passeio de lancha voadeira que conecta Barreirinhas ao litoral. O itinerário faz paradas estratégicas em Vassouras (área dos Pequenos Lençóis e macacos-prego), no Farol de Mandacaru (com vista panorâmica de 360 graus da região) e na península de Caburé, faixa de areia situada entre o rio e o mar (Rio Preguiças);"
+                    }
+                ]
+            },
+            {
+                tipo: "duas-imagens",
+                height: "400px",
+                imagens: [
+                    { src: "img/ed_novembro_2026/CARD 1 2.jpeg", legenda: "Macaco-prego na região dos Pequenos Lençóis" },
+                    { src: "img/ed_novembro_2026/CARD 1 6.jpeg", legenda: "Águas e dunas dos Lençóis Maranhenses" }
+                ]
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 3,
+                itens: [
+                    {
+                        kicker: "Sabores e lagoas",
+                        nome: "Canto de Atins",
+                        texto: "Canto de Atins - Região próxima às dunas que cercam o vilarejo de Atins, conhecida pelas lagoas tranquilas e pelos restaurantes familiares que servem camarão grelhado com receitas tradicionais da culinária maranhense (Canto de Atins);"
+                    },
+                    {
+                        kicker: "Aventura",
+                        nome: "Travessia a pé",
+                        texto: "Travessia dos Lençóis A Pé – Para viajantes experientes em ecoturismo, a caminhada cruza o parque de ponta a ponta (geralmente entre Atins e Santo Amaro) em roteiros de três a cinco dias, com pernoites em redários nos oásis de Baixa Grande e Queimada dos Britos;"
+                    },
+                    {
+                        kicker: "Vista aérea",
+                        nome: "Sobrevoo panorâmico",
+                        texto: "Sobrevoo Panorâmico - Operado por aeronaves de pequeno porte a partir de Barreirinhas, o voo de aproximadamente 30 minutos permite visualizar a dimensão real do campo de dunas e o desenho geométrico das lagoas."
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "O que comer na região" },
+            {
+                tipo: "lista-destaque",
+                colunas: 3,
+                itens: [
+                    {
+                        kicker: "Barreirinhas",
+                        nome: "Bambaê",
+                        texto: "Em Barreirinhas — Bambaê Bar Restaurante e Pizzaria. Localizado à beira do Rio Preguiças, dentro da pousada Encantes do Nordeste, destaca-se pelo ambiente rústico e arborizado. O cardápio reúne frutos do mar, carnes, pizzas e drinques autorais, sendo uma das referências gastronômicas mais procuradas da cidade;"
+                    },
+                    {
+                        kicker: "Santo Amaro",
+                        nome: "Quintal do Casarão",
+                        texto: "Em Santo Amaro do Maranhão — Quintal do Casarão. Situado no centro da vila, funciona como uma vila gastronômica em ambiente acolhedor e ao ar livre. Serve desde pratos típicos da culinária maranhense — como peixes, camarões e carne de sol — até petiscos e coquetéis, costumando contar com música ambiente à noite;"
+                    },
+                    {
+                        kicker: "Atins",
+                        nome: "Casa de Juja",
+                        texto: "Em Atins — Casa de Juja - Instalado em uma casa rústica na rua principal do vilarejo, o ateliê gastronômico valoriza a culinária tradicional maranhense. O cardápio destaca receitas regionais como a caldeirada, tortas de caranguejo e o famoso arroz do mar preparado com frutos do mar frescos.<br><br>DICA - Se você quiser uma experiência clássica nas dunas do Canto do Atins, os restaurantes familiares Restaurante da Luzia e Restaurante do Antônio são os mais famosos pelo tradicional camarão grelhado com molho caseiro."
+                    }
+                ]
+            },
+            {
+                tipo: "lenda",
+                conteudo: `
+                A cidade encantada de Dom Sebastião fala do rei português Dom Sebastião, que desapareceu em uma batalha no século XVI e vive encantado nas dunas. Em noites de lua cheia, é possível ver luzes misteriosas ou ouvir o som de sinos e navios fantasma surgindo em meio à areia.<br><br>
+                Diz a lenda que as dunas nasceram do amor proibido entre uma indígena e o vento. Para protegê-la de sua tribo, o vento soprou toneladas de areia sobre ela. As lagoas cristalinas seriam as lágrimas de saudade que ela chora até hoje.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Como chegar",
+                conteudo: `
+                <span class="service-inline-label">Serviço</span>
+                A principal porta de entrada para os Lençóis Maranhenses é a capital São Luís (SLZ), que recebe voos diretos de diversas cidades do Brasil;<br><br>
+                A partir do aeroporto, o trajeto até as cidades-base do parque, como Barreirinhas ou Santo Amaro, é feito por via terrestre e leva cerca de 4 horas pela rodovia BR-135;<br><br>
+                Os viajantes podem escolher entre transfers compartilhados em vans (a opção mais econômica e prática), carros privativos ou aluguel de veículo. Quem deseja seguir para o vilarejo de Atins, mais isolado e rústico, precisa pegar uma lancha pelo Rio Preguiças a partir de Barreirinhas, em um passeio que dura aproximadamente 1 hora.
+                `
+            },
+            {
+                tipo: "curiango-inline",
+                etiqueta: "O que colocar na mala",
+                conteudo: `
+                Como você vai caminhar bastante na areia e pegar sol e vento o dia todo, leve roupas leves e confortáveis. Não esqueça de colocar na mochila:<br><br>
+                Protetor solar, óculos escuros e roupas com proteção UV;<br>
+                Boné ou chapéu - bem firme na cabeça - para não voar nos carros abertos;<br>
+                Chinelo confortável e uma bolsinha ou capa à prova d&#39;água para proteger o celular.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 47,
+        titulo: "CÂNION DO XINGÓ",
+        hero: {
+            imagem: "img/ed_novembro_2026/CARD 2 2.jpg",
+            subtitulo: "Os Paredões Sagrados do Velho Chico",
+            legenda: "Cânion do Xingó, na divisa entre Sergipe e Alagoas"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Imagine navegar por águas calmas e verde-esmeralda cercado por imensos paredões de pedra alaranjada que chegam a 50 metros de altura, bem no meio do sertão nordestino. Sim, esse cenário de cinema existe e fica na divisa entre Sergipe e Alagoas.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Engana-se quem pensa que sertão nordestino é só terra seca e sol forte. Os Cânions do Xingó - quinto maior cânion navegável do mundo - chegam para mudar essa ideia. O lugar reúne escarpas enormes e um rio de águas verdes e cristalinas, formando uma das paisagens mais impressionantes do país. Com formações rochosas que datam de cerca de 600 milhões de anos, os cânions impressionam pela grandiosidade. Os paredões chegam a 50 metros de altura e criam um contraste incrível com o céu azul e a vegetação da caatinga.<br><br>
+                A navegabilidade que conhecemos hoje é recente. Ela surgiu na década de 1990, quando as águas do Velho Chico foram represadas para a construção da Usina Hidrelétrica de Xingó. O alagamento do vale permitiu que barcos e catamarãs chegassem bem perto das rochas, transformando a região em um polo turístico fascinante e de destaque no Nordeste.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "460px",
+                imagens: [
+                    { src: "img/ed_novembro_2026/CARD 2 1.jpg", legenda: "Águas verde-esmeralda entre os paredões" },
+                    { src: "img/ed_novembro_2026/CARD 2 3.jpeg", legenda: "A grandiosidade do Cânion do Xingó" }
+                ]
+            },
+            { tipo: "titulo", texto: "Cultura e história para além dos paredões" },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Visitar os Cânions do Xingó também é mergulhar na história do Nordeste. A região faz parte da Rota do Cangaço, permitindo combinar o passeio de barco com visitas à Grota do Angico — local onde Lampião e seu bando foram emboscados em 1938 — e ao centro histórico de Piranhas, tombado pelo patrimônio nacional.<br><br>
+                O passeio tradicional pelos cânions dura cerca de 3 horas a bordo de grandes catamarãs (com estrutura de bar e restaurante) ou lanchas rápidas para grupos menores.
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 1,
+                itens: [
+                    {
+                        kicker: "Trajeto",
+                        nome: "Navegação",
+                        texto: "A navegação até o ponto principal leva cerca de 1 hora. No caminho, o guia aponta formações curiosas esculpidas pelo tempo, como a Pedra do Japonês, o Morro dos Macacos e a Ponta do Papagaio."
+                    },
+                    {
+                        kicker: "Parada para banho",
+                        nome: "Paraíso do Talhado",
+                        texto: "O ponto alto é o Paraíso do Talhado. O barco atraca em uma estrutura flutuante com deck e rede de proteção, onde os turistas têm 1 hora livre para mergulhar nas águas mornas e cristalinas do rio."
+                    },
+                    {
+                        kicker: "Melhores fotos",
+                        nome: "Canoas",
+                        texto: "Lá na plataforma flutuante, você pode contratar um passeio opcional em pequenos barcos a remo (chamados de &quot;canoas&quot;). Eles entram pelas fendas mais estreitas dos paredões, onde os barcos grandes não passam, rendendo as melhores fotos da viagem."
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Imperdível" },
+            {
+                tipo: "lista-destaque",
+                colunas: 3,
+                itens: [
+                    {
+                        kicker: "Navegação",
+                        nome: "Cânion do Xingó",
+                        texto: "Passeio de catamarã ou lancha privativa por entre paredões de rocha arenítica avermelhada com mais de 50 metros de altura;"
+                    },
+                    {
+                        kicker: "Santuário",
+                        nome: "Gruta do Talhado",
+                        texto: "Um santuário de águas verdes cristalinas e silenciosas encravado no meio dos cânions, onde é possível nadar e fazer passeios de canoa rústica;"
+                    },
+                    {
+                        kicker: "Piranhas",
+                        nome: "Rota do Cangaço",
+                        texto: "Trilha histórica que refaz os últimos passos de Lampião e Maria Bonita até a Grota de Angicos."
+                    }
+                ]
+            },
+            {
+                tipo: "box",
+                titulo: "Canindé de São Francisco (SE) ou Piranhas (AL)?",
+                conteudo: `
+                A distância entre Canindé de São Francisco e Piranhas é de aproximadamente 10 km a 13 km por estrada, um tempo de viagem de cerca de 15 a 20 minutos. A escolha da base depende do estilo da sua viagem;<br><br>
+                Canindé de São Francisco (Sergipe) - É de onde sai a maioria dos catamarãs (do Restaurante Karrancas). Ficar aqui oferece maior praticidade para quem quer acordar perto do ponto de embarque;<br><br>
+                Piranhas (Alagoas) - Fica a cerca de 15 km de Canindé. É a escolha ideal se você busca charme, história e vida noturna. O centro histórico é tombado pelo IPHAN, cheio de casarões coloridos, ótimos restaurantes e música ao vivo à noite.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "430px",
+                imagens: [
+                    { src: "img/ed_novembro_2026/CARD 2 5.jpg", legenda: "Piranhas e o Rio São Francisco" },
+                    { src: "img/ed_novembro_2026/CARD 2 4.jpeg", legenda: "Estrutura turística à beira do rio" }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde comer em Piranhas" },
+            {
+                tipo: "lista-destaque",
+                colunas: 2,
+                itens: [
+                    {
+                        kicker: "Gastronomia",
+                        nome: "Restaurante Flor de Cactus",
+                        texto: "Pratos típicos do sertão servidos com vista panorâmica para o Rio São Francisco;"
+                    },
+                    {
+                        kicker: "Peixes de água doce",
+                        nome: "Caboclo D'Água",
+                        texto: "Focado em peixes de água doce, como a tilápia e o tucunaré, preparados com temperos locais e leite de coco;"
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde ficar em Piranhas" },
+            {
+                tipo: "lista-destaque",
+                colunas: 2,
+                itens: [
+                    {
+                        kicker: "Mirante",
+                        nome: "Pedra do Sino Hotel",
+                        texto: "Localizado no alto de um mirante, oferece uma das vistas mais espetaculares do leito do rio;"
+                    },
+                    {
+                        kicker: "Aconchego",
+                        nome: "Pousada O Canto do Sabiá",
+                        texto: "Ambiente acolhedor com decoração que valoriza o artesanato e o aconchego sertanejo."
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde comer em Canindé de São Francisco" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Em Canindé de São Francisco você encontra excelentes opções que vão desde restaurantes turísticos à beira do Rio São Francisco até lugares com comida regional caseira.
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 1,
+                itens: [
+                    {
+                        kicker: "À beira rio",
+                        nome: "Karrancas Restaurante",
+                        texto: "Localizado às margens do Rio São Francisco, é ponto de embarque para os passeios aos Cânions do Xingó. Oferece buffet e pratos à la carte com foco na culinária regional;"
+                    },
+                    {
+                        kicker: "À beira rio",
+                        nome: "Bar e Restaurante Boteco BarRio",
+                        texto: "Fica na Orla da Prainha Beira Rio e é uma boa pedida para petiscos e frutos do mar (como filé de camarão à milanesa) em um clima descontraído à beira d'água;"
+                    },
+                    {
+                        kicker: "Na cidade: comida regional e custo-benefício",
+                        nome: "Restaurante Casa de Mãe",
+                        texto: "Fica no centro da cidade e destaca-se pelo ambiente familiar, rústico e acolhedor, sendo uma das melhores escolhas para o jantar em Canindé."
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde ficar em Canindé de São Francisco" },
+            {
+                tipo: "box",
+                titulo: "Localização geográfica (Sergipe x Alagoas)",
+                conteudo: `
+                Embora ambos fiquem colados na usina e no embarque dos catamarãs, o Xingó Parque Hotel fica do lado de Sergipe (Canindé de São Francisco), e o Hotel Reserva do Xingó fica logo após a barragem, já do lado de Alagoas (município de Piranhas).
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 2,
+                itens: [
+                    {
+                        kicker: "Hotel com ampla estrutura",
+                        nome: "Xingó Parque Hotel",
+                        texto: "O Xingó Parque Hotel - Site do Xingó Parque Hotel é um hotel grande (categoria 5 estrelas), e oferece padrão de hotelaria tradicional, com mais comodidades e serviços internos. Possui área de lazer com piscina panorâmica, bar molhado, academia, restaurante amplo e espaços para eventos. O hotel cobra mais pela infraestrutura completa, para quem prefere curtir o hotel;"
+                    },
+                    {
+                        kicker: "Pousada intimista e econômica",
+                        nome: "Hotel Reserva do Xingó",
+                        texto: "Já o Hotel Reserva do Xingó - Hotel Reserva do Xingó é uma hospedagem menor e mais reservada, focada no essencial para dormir bem, sem grande estrutura de lazer. Destaca-se pelo clima rústico e aconchegante, com varandas privativas equipadas com rede e vista direta para a usina. Costuma ter diárias bem mais acessíveis, sendo ideal para quem vai passar o dia inteiro nos passeios e quer apenas um bom lugar para descansar."
+                    }
+                ]
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/ed_novembro_2026/CARD 2 6.jpg",
+                height: "520px",
+                legenda: "Hotel e Usina Hidrelétrica de Xingó"
+            },
+            { tipo: "titulo", texto: "3 dias no Xingó" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Se você está planejando conhecer esse paraíso no Rio São Francisco, preparamos um guia prático para três dias entre Canindé de São Francisco e Piranhas, com dicas essenciais e uma estimativa de custo diário por pessoa.<br><br>
+                Perfil Econômico: R$ 280 – R$ 380 | Perfil Premium/Conforto: R$ 850 – R$ 1.500
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 1,
+                itens: [
+                    {
+                        kicker: "Dia 1",
+                        nome: "O charme histórico de Piranhas (AL)",
+                        texto: "Manhã/Tarde - Chegada à região e check-in na hospedagem (recomendamos ficar em Piranhas pelo charme noturno). Aproveite a tarde para caminhar pelo Centro Histórico, conhecer o Museu do Sertão e ir até o Mirante Secular para ver o pôr do sol sobre o Rio São Francisco;<br><br>Noite - Jantar na rua principal do centro histórico, com gastronomia regional e música ao vivo nos barzinhos."
+                    },
+                    {
+                        kicker: "Dia 2",
+                        nome: "O grande dia nos Cânions do Xingó (SE)",
+                        texto: "Manhã - Ida até o Restaurante Karrancas, em Canindé de São Francisco (cerca de 20 minutos de carro saindo de Piranhas), para embarcar no passeio dos Cânions do Xingó. Faça o trajeto até o Paraíso do Talhado e não deixe de fazer o passeio extra nas canoas a remo;<br><br>Tarde - Almoço no próprio Karrancas, à beira do rio. Na volta para Piranhas, faça uma parada estratégica para conhecer a Usina Hidrelétrica de Xingó (é necessário agendar a visita guiada com antecedência).<br><br>Noite – Curtir a Feirinha de Piranhas e experimentar as tapiocas e pratos típicos da feirinha de Piranhas."
+                    },
+                    {
+                        kicker: "Dia 3",
+                        nome: "Rota do Cangaço e despedida",
+                        texto: "Manhã - Embarque no catamarã que sai do centro de Piranhas até em direção ao Restaurante Ecológico Castanho ou à comunidade de Entremontes (famosa pelos bordados). De lá, faça a trilha guiada até a Grota do Angico, local histórico onde Lampião e seu bando foram emboscados em 1938.<br><br>Tarde - Almoço na estrutura à beira do rio, último mergulho nas águas do Velho Chico e retorno para o aeroporto ou próximo destino."
+                    }
+                ]
+            },
+            {
+                tipo: "lenda",
+                conteudo: `
+                A Cidade Submersa de Petrolândia<br><br>
+                Com a construção da usina hidrelétrica, antigas cidades foram inundadas pelo Velho Chico. Ribeirinhos juram que, em noites de lua cheia, é possível ouvir os sinos da igreja submersa tocando no fundo do rio. Há, ainda, a lenda do Caboclo d’Água, criatura mística que protege ou assombra os pescadores...
+                `
+            },
+            { tipo: "titulo", texto: "Catamarã ou Lancha Rápida: Qual escolher?" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                Para ajudar você a decidir a melhor embarcação para o seu perfil de viagem, comparamos as principais características dos dois passeios disponíveis na região:
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 2,
+                itens: [
+                    {
+                        kicker: "Passeio de Catamarã",
+                        nome: "Grande porte",
+                        texto: "<strong>Capacidade e Perfil:</strong> Grande porte (até 250 pessoas), ideal para famílias e quem busca conforto.<br><br><strong>Tempo de Deslocamento:</strong> Cerca de 1 hora para ir e 1 hora para voltar.<br><br><strong>Estrutura a Bordo:</strong> Possui banheiros, bar, restaurante, som ambiente e cobertura contra o sol.<br><br><strong>Flexibilidade:</strong> Horários fixos e roteiro padrão com parada de 1 hora no Paraíso do Talhado.<br><br><strong>Custo Médio:</strong> Mais econômico (cobrado por pessoa)."
+                    },
+                    {
+                        kicker: "Passeio de Lancha Rápida",
+                        nome: "Pequeno porte",
+                        texto: "<strong>Capacidade e Perfil:</strong> Pequeno porte (6 a 12 pessoas), ideal para casais e grupos de amigos.<br><br><strong>Tempo de Deslocamento:</strong> Cerca de 25 a 30 minutos cada trecho.<br><br><strong>Estrutura a Bordo:</strong> Estrutura simples, sem banheiro a bordo e com menos sombra.<br><br><strong>Flexibilidade:</strong> Horários mais flexíveis e possibilidade de explorar áreas menos cheias.<br><br><strong>Custo Médio:</strong> Mais caro (geralmente cobrado pelo aluguel da lancha fechada ou valor individual superior)."
+                    }
+                ]
+            },
+            {
+                tipo: "box",
+                titulo: "Serviço",
+                conteudo: `
+                Melhor época - O destino pode ser visitado o ano inteiro, pois faz calor na região em todas as estações. Mas se você quer ver a água na tonalidade verde-esmeralda bem intensa, programe sua viagem entre setembro e março, período em que chove menos, o céu fica mais aberto e a transparência do rio atinge seu auge;<br><br>
+                Duração do passeio - Cerca de 3 horas no total (1 hora de ida, 1 hora para banho e contemplação, e 1 hora de volta);<br><br>
+                Leve dinheiro em espécie - O sinal de internet nos cânions é praticamente inexistente. Para pagar o passeio extra nos barquinhos a remo ou consumir algo na plataforma, garanta dinheiro em espécie na carteira;
+                `
+            },
+            {
+                tipo: "curiango-inline",
+                etiqueta: "O que colocar na mala",
+                conteudo: `
+                Não esqueça de incluir na mochila: protetor solar, óculos escuros, chapéu ou boné, roupas leves de banho, toalha e uma capa à prova d&#39;água para proteger o celular na hora das fotos.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 48,
+        titulo: "BEM-VINDOS AO VALE DO CATIMBAU",
+        hero: {
+            imagem: "img/carroselViajarTravelNews/CARROSSEL - PARNA DO VALE DO CATIMBAU (Foto Alexandre Bittencourt Leite Marques).jpg",
+            subtitulo: "Onde o Agreste encontra o Sertão",
+            legenda: "Parque Nacional do Catimbau — Foto: Alexandre Bittencourt Leite Marques"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Segundo maior parque arqueológico do Brasil reúne paredões milenares, pinturas rupestres e misticismo no coração de Pernambuco, um santuário ecológico e místico que revela um Nordeste profundo, ancestral e inesquecível. Além da beleza natural, o Vale do Catimbau carrega uma aura de mistério.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                No coração de Pernambuco, o tempo parece correr em outro ritmo. Ali, paredões de pedra esculpidos pelo vento há milhões de anos guardam segredos milenares, pinturas rupestres e um silêncio que convida à contemplação. Você acaba de chegar ao Vale do Catimbau!<br><br>
+                A cerca de 290 km do Recife, o Parque Nacional do Catimbau — mais conhecido como Vale do Catimbau — é um daqueles destinos que surpreendem pela grandiosidade. Com mais de 62 mil hectares que abrangem os municípios de Buíque, Ibimirim e Tupanatinga, o lugar guarda formações rochosas esculpidas há milhões de anos, cavernas, cânions e mais de cem sítios arqueológicos com pinturas rupestres datadas de até 6 mil anos. Considerado o segundo maior parque arqueológico do país, o vale combina ecoturismo de aventura com uma forte atmosfera mística, que mistura tradições indígenas e africanas.<br><br>
+                Com mais de 62 mil hectares espalhados pelos municípios de Buíque, Ibimirim e Tupanatinga, o Parque Nacional do Catimbau — o segundo maior parque arqueológico do Brasil — reúne cânions, cavernas e mais de cem sítios com registros pré-históricos de até seis mil anos. Um destino obrigatório para quem busca aventura, história e contato genuíno com a caatinga.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "450px",
+                imagens: [
+                    { src: "img/ed_novembro_2026/CARD 3 1.jpg", legenda: "O encontro do Agreste com o Sertão" },
+                    { src: "img/ed_novembro_2026/CARD 3 2.jpg", legenda: "Formações rochosas do Vale do Catimbau" }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde ficar no Vale do Catimbau" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                A principal base para explorar o parque é o município de Buíque, especialmente na Vila do Catimbau, que fica colada na entrada das trilhas. As opções vão de pousadas intimistas a chalés integrados à natureza:
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 2,
+                itens: [
+                    {
+                        kicker: "Vila do Catimbau",
+                        nome: "Pousada Vale do Catimbau",
+                        texto: "Situada na Vila do Catimbau, oferece clima acolhedor e familiar, quartos confortáveis, café da manhã regional completo e área para fogueira à noite;"
+                    },
+                    {
+                        kicker: "Próxima às trilhas",
+                        nome: "Pousada Vista Pro Vale do Catimbau",
+                        texto: "Fica bem próxima às trilhas, com vista panorâmica para os paredões rochosos durante o café da manhã;"
+                    },
+                    {
+                        kicker: "Privacidade",
+                        nome: "Pousada Chalés Vale do Catimbau",
+                        texto: "Ideal para quem busca mais privacidade, conta com chalés individuais em meio à vegetação nativa, ar-condicionado e estacionamento gratuito;"
+                    },
+                    {
+                        kicker: "Estrutura de lazer",
+                        nome: "Pousada Bangalôs Vale do Catimbau",
+                        texto: "Localizada na rodovia PE-270 (no acesso ao parque), é uma opção com ampla estrutura de lazer, incluindo piscina externa e banheira de hidromassagem para relaxar após as caminhadas."
+                    }
+                ]
+            },
+            {
+                tipo: "duas-imagens",
+                height: "420px",
+                imagens: [
+                    { src: "img/ed_novembro_2026/CARD 3 4.jpeg", legenda: "Trilhas entre as formações rochosas" },
+                    { src: "img/carroselViajarTravelNews/CARROSSEL - PINTURAS RUPESTRES DO VALE DO CATIMBAU.jpeg", legenda: "Pinturas rupestres do Vale do Catimbau" }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde comer na região" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                A gastronomia local é marcada pela comida caseira sertaneja, com destaque para pratos como carne de bode, galinha cabidela, macaxeira e queijo coalho. A maioria dos restaurantes funciona como ponto de apoio para quem volta das trilhas no almoço.
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 2,
+                itens: [
+                    {
+                        kicker: "Comida regional",
+                        nome: "Restaurante Sabor do Vale",
+                        texto: "Muito próximo às trilhas, oferece comida regional variada em um ambiente cercado pela natureza, com direito a redário sob as árvores para descansar depois do almoço;"
+                    },
+                    {
+                        kicker: "Ponto de apoio",
+                        nome: "Restaurante Toca do Vale",
+                        texto: "Serve como ponto de apoio estratégico para os trilheiros, com buffet livre de comida caseira em um espaço amplo e arejado;"
+                    },
+                    {
+                        kicker: "Tempero caseiro",
+                        nome: "Restaurante Nossa Senhora de Fátima",
+                        texto: "Fica na Vila do Catimbau, sendo muito elogiado pelo tempero caseiro e atendimento acolhedor; serve café, almoço e jantar (Reservar com antecedência);"
+                    },
+                    {
+                        kicker: "Trilha do Santuário",
+                        nome: "Restaurante Vista Pro Vale",
+                        texto: "Fica bem em frente à entrada da famosa Trilha do Santuário, sendo uma parada prática para repor as energias logo após o passeio."
+                    }
+                ]
+            },
+            {
+                tipo: "lenda",
+                conteudo: `
+                ‘Cachimbo pequeno e apagado’, ‘Morro sem ponta’, ‘Terra de cura’... O culto reforça a fama do lugar como um ponto de renovação energética e espiritual. Com a casca e as raízes da jurema, árvore típica da caatinga e do agreste nordestino, os mestres preparam uma bebida ritualística (vinho da Jurema), usada durante cânticos e toques de maracá para induzir o transe espiritual e buscar orientação. O nome catimbó está ligado a rituais de cura e espiritualidade.<br><br>
+                &quot;Morro sem ponta&quot;, uma referência ao relevo plano dos chapadões, é associado a &quot;cachimbo pequeno e apagado&quot;, desenhado em algumas rochas e pinturas rupestres da região.
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Por que entre Junho e Setembro?",
+                conteudo: `
+                <span class="service-inline-label">Serviço</span>
+                Conforto térmico nas trilhas – Os passeios são feitos a pé e a céu aberto, e nesses meses o calor intenso do sertão dá uma trégua;<br><br>
+                As noites são mais frias e agradáveis - Por conta da altitude serrana da região, as temperaturas caem bastante à noite e podem chegar perto de 14 °C no inverno;<br><br>
+                Trilhas abertas e seguras;<br><br>
+                Como chove pouco a partir de julho, as estradas de terra e os acessos aos paredões ficam firmes e sem risco de interdição.
+                `
+            },
+            {
+                tipo: "curiango-inline",
+                etiqueta: "O que colocar na mala",
+                conteudo: `
+                Como você vai caminhar bastante na areia e pegar sol e vento o dia todo, leve roupas leves e confortáveis. Não esqueça de colocar na mochila:<br><br>
+                Protetor solar, óculos escuros e roupas com proteção UV;<br>
+                Boné ou chapéu - bem firme na cabeça - para não voar nos carros abertos;<br>
+                Chinelo confortável e uma bolsinha ou capa à prova d&#39;água para proteger o celular.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 49,
+        titulo: "REINO ENCANTADO OU OBRA DO VENTO?",
+        hero: {
+            imagem: "img/ed_novembro_2026/carrossel-sete-cidades-alta-resolucao.png",
+            subtitulo: "Conheça os mistérios de Sete Cidades, no Piauí",
+            legenda: "Parque Nacional de Sete Cidades, no Piauí"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                Há cerca de 400 milhões de anos, onde hoje existe vegetação seca e chapadões silenciosos, havia um fundo de mar. Com o recuo das águas e a ação paciente da chuva e do vento, blocos gigantescos de arenito ganharam formas que lembram ruas, praças, castelos, animais e perfis humanos.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Ao norte do Piauí, a aproximadamente 200 km da capital, Teresina, a natureza parece ter brincado de arquiteta. Onde hoje existem vegetação seca e chapadões silenciosos, havia um fundo de mar há cerca de 400 milhões de anos. Com o recuo das águas e a ação paciente da chuva e do vento, blocos gigantescos de arenito foram esculpidos pelas forças da natureza até ganharem contornos imponentes e passagens estreitas que hoje desafiam a imaginação dos visitantes.<br><br>
+                Criado em 1961 entre os municípios de Piracuruca e Brasileira, o parque - verdadeiro museu a céu aberto - protege um patrimônio raro: além das esculturas naturais, abriga dezenas de sítios arqueológicos com pinturas rupestres feitas há até 10 mil anos.<br><br>
+                Antes de a geologia explicar que as rochas foram moldadas pela erosão ao longo de milhões de anos, o visual simétrico das pedras alimentou teorias fascinantes. Na década de 1920, pesquisadores chegaram a defender que o local seria uma antiga colônia fenícia ou vestígio de povos vikings no Brasil — e houve até quem associasse o lugar à lendária Atlântida. Já o folclore local conta a história de um reino encantado que foi petrificado após uma maldição de casamento.
+                `
+            },
+            {
+                tipo: "duas-imagens",
+                height: "450px",
+                imagens: [
+                    { src: "img/ed_novembro_2026/CARD 4 1.jpg", legenda: "Passagens entre as formações de arenito" },
+                    { src: "img/ed_novembro_2026/CARD 4 5.webp", legenda: "O museu de pedra a céu aberto" }
+                ]
+            },
+            { tipo: "titulo", texto: "Principais atrativos" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                O passeio tradicional percorre os sete circuitos rochosos — batizados de &quot;cidades&quot; — e pode ser feito de carro, bicicleta ou a pé, sempre com acompanhamento de guias locais credenciados no Centro de Visitantes.
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 1,
+                itens: [
+                    {
+                        kicker: "Circuitos rochosos",
+                        nome: "As Sete &quot;Cidades&quot; de Pedra",
+                        texto: "Cada setor guarda formações curiosas e pontos históricos. Entre os destaques estão o Mirante (na Segunda Cidade, com vista panorâmica de quase todo o parque), a Gruta do Catirina (onde viveu um antigo morador local na década de 1930), a Pedra da Tartaruga, a Biblioteca e a rocha com uma fenda no formato exato do mapa do Piauí;"
+                    },
+                    {
+                        kicker: "Arqueologia",
+                        nome: "Pinturas Rupestres",
+                        texto: "O parque reúne mais de 20 sítios arqueológicos catalogados com registros pré-históricos em tons de vermelho e ocre. Os painéis mostram figuras humanas, animais, formas geométricas e marcas de mãos — incluindo a famosa Pedra dos Seis Dedos;"
+                    },
+                    {
+                        kicker: "Oásis de frescor",
+                        nome: "Cachoeira do Riachão e Olho d'Água dos Milagres",
+                        texto: "Oásis de frescor em meio ao clima quente da região. Enquanto a cachoeira ganha força no período chuvoso, o olho d'água mantém suas águas cristalinas durante o ano inteiro."
+                    }
+                ]
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/ed_novembro_2026/CARD 4 2.jpeg",
+                height: "540px",
+                maxWidth: "760px",
+                legenda: "Cachoeira do Riachão"
+            },
+            { tipo: "titulo", texto: "Onde se hospedar" },
+            {
+                tipo: "lista-destaque",
+                colunas: 3,
+                itens: [
+                    {
+                        kicker: "Dentro do parque",
+                        nome: "Imersão na natureza",
+                        texto: "O próprio parque conta com uma estrutura de hospedagem simples, o Parque Hotel Sete Cidades, ideal para quem deseja acordar cercado pelas trilhas e pelo silêncio da reserva;"
+                    },
+                    {
+                        kicker: "Piripiri e Piracuruca",
+                        nome: "Praticidade e acesso rápido",
+                        texto: "São as cidades mais próximas das portarias sul e norte do parque (a menos de 30 km), oferecendo hotéis funcionais e restaurantes de comida regional;"
+                    },
+                    {
+                        kicker: "Teresina ou Parnaíba",
+                        nome: "Base para roteiros maiores",
+                        texto: "Muitas pessoas visitam Sete Cidades no esquema bate-volta a partir da capital Teresina (200 km) ou como parada estratégica no caminho para o litoral piauiense e o Delta do Parnaíba (160 km);"
+                    }
+                ]
+            },
+            {
+                tipo: "lenda",
+                conteudo: `
+                A Maldição dos Sete Reinos e o Beijo do Lagarto<br><br>
+                Dizem que o lugar abrigava sete reinos ricos e encantados. Para selar a paz entre os dois maiores reinos, um príncipe e uma princesa foram prometidos em casamento ainda bebês. No entanto, o príncipe se apaixonou pela princesa de um terceiro reino e abandonou a noiva no altar. A mãe da noiva rejeitada — que também era feiticeira — lançou uma maldição que petrificou todos os reinos e transformou o casal apaixonado em lagartos. Os guias mostram hoje duas rochas próximas que lembram lagartos se beijando...
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Melhor época",
+                conteudo: `
+                <span class="service-inline-label">Serviço</span>
+                O parque recebe visitantes o ano todo. De janeiro a julho, a vegetação fica mais verde e a Cachoeira do Riachão tem água. Entre agosto e dezembro, o clima é mais seco e quente, exigindo proteção solar reforçada;
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Acesso e transporte",
+                conteudo: `
+                O aeroporto comercial mais próximo fica em Teresina (THE). De lá, o trajeto terrestre segue pela BR-343 até Piripiri e depois pela BR-222 até a entrada do parque (cerca de 2h30 de viagem).
+                `
+            },
+            {
+                tipo: "curiango-inline",
+                etiqueta: "Dica prática",
+                conteudo: `
+                Não há lanchonetes ao longo das trilhas internas. É fundamental levar água, lanche leve, chapéu e calçados fechados.
+                `
+            }
+        ],
+        curiango: ""
+    },
+    {
+        id: 50,
+        titulo: "SERRA DA CAPIVARA",
+        hero: {
+            imagem: "img/ed_novembro_2026/card-serra-da-capivara-v2.png",
+            subtitulo: "Maior acervo de arte pré-histórica das Américas",
+            legenda: "Boqueirão da Pedra Furada, na Serra da Capivara — representação visual"
+        },
+        autor: "Fátima Vasconcelos Nunes",
+        secoes: [
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                fontSize: "20px",
+                conteudo: `
+                No coração da caatinga piauiense, paredões de arenito protegem registros deixados há milhares de anos pelos primeiros habitantes do continente, garantindo à região reconhecimento internacional tanto na arqueologia quanto no turismo sustentável.
+                `
+            },
+            {
+                tipo: "texto",
+                recuoParagrafos: true,
+                textAlign: "left",
+                conteudo: `
+                Reconhecido como Patrimônio Cultural da Humanidade pela Unesco, o parque nacional no sul piauiense reúne a maior concentração de arte rupestre das Américas e desafia a história da ocupação humana no continente.<br><br>
+                Na vastidão do semiárido do Piauí, paredões imponentes de arenito guardam o maior livro de história a céu aberto do Brasil. Muito antes da chegada dos europeus ou da formação das grandes civilizações antigas, grupos pré-históricos usaram as paredes das grutas e desfiladeiros da região como tela para registrar cenas de caça, danças, rituais e animais.<br><br>
+                Criado em 1979 após as pesquisas lideradas pela arqueóloga Niède Guidon, o <a class="article-external-link" href="https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/caatinga/lista-de-ucs/parna-da-serra-da-capivara/informacoes-sobre-visitacao-2013-parna-da-serra-da-capivara" target="_blank" rel="noopener noreferrer">Parque Nacional Serra da Capivara</a> protege mais de 130 mil hectares de caatinga preservada e reúne mais de mil sítios arqueológicos catalogados — um patrimônio que transformou o interior nordestino em referência mundial para a ciência e o ecoturismo.
+                `
+            },
+            {
+                tipo: "imagem",
+                imagem: "img/ed_novembro_2026/serra-capivara-arte-rupestre-representacao.png",
+                height: "560px",
+                legenda: "Arte rupestre na paisagem da Serra da Capivara — representação visual"
+            },
+            { tipo: "titulo", texto: "Não deixe de conhecer" },
+            {
+                tipo: "texto",
+                colunaUnica: true,
+                conteudo: `
+                A visitação às áreas internas do parque ocorre diariamente e exige o acompanhamento de condutores credenciados, que organizam os roteiros conforme o tempo e o condicionamento físico de cada viajante.
+                `
+            },
+            {
+                tipo: "lista-destaque",
+                colunas: 1,
+                itens: [
+                    {
+                        kicker: "Cartão-postal",
+                        nome: "Boqueirão da Pedra Furada",
+                        texto: "Principal cartão-postal do parque, impressiona pelo arco monumental esculpido na rocha e pela concentração de centenas de pinturas rupestres. O circuito conta com passarelas acessíveis e iluminação noturna especial para contemplar os painéis milenares;"
+                    },
+                    {
+                        kicker: "Trilhas",
+                        nome: "Desfiladeiro da Capivara e Circuito da Chapada",
+                        texto: "Trilhas que revelam a grandiosidade geológica da região, passando por cânions profundos, mirantes naturais e tocas com registros pré-históricos bem preservados;"
+                    },
+                    {
+                        kicker: "Fim de tarde",
+                        nome: "Baixão das Andorinhas",
+                        texto: "Mirante natural situado na borda de um cânion profundo. No fim da tarde, o espaço oferece o espetáculo da revoada de milhares de andorinhas retornando aos paredões ao pôr do sol;"
+                    },
+                    {
+                        kicker: "Conhecimento",
+                        nome: "Museu do Homem Americano e Museu da Natureza",
+                        texto: "Localizados em São Raimundo Nonato e Coronel José Dias, respectivamente, os dois espaços complementam os passeios nas trilhas. Com recursos interativos e fósseis originais da megafauna, explicam a evolução climática e humana do continente;"
+                    },
+                    {
+                        kicker: "Projeto social",
+                        nome: "Cerâmica Serra da Capivara",
+                        texto: "Situado em Coronel José Dias, o ateliê artesanal criado a partir de projetos sociais locais produz peças utilitárias e decorativas inspiradas nos grafismos rupestres do parque."
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde se hospedar" },
+            {
+                tipo: "lista-destaque",
+                colunas: 2,
+                itens: [
+                    {
+                        kicker: "Melhor infraestrutura",
+                        nome: "São Raimundo Nonato",
+                        texto: "Principal cidade-base da região, concentra a maior oferta de hotéis, restaurantes, agências de guias e o Museu do Homem Americano.<br><br>Entre os destaques estão o Hotel Serra da Capivara Resort e Convention (4 estrelas), a Pousada Zabelê e o Rupestre Eco Lodge."
+                    },
+                    {
+                        kicker: "Proximidade às portarias",
+                        nome: "Coronel José Dias",
+                        texto: "Município vizinho que dá acesso direto a importantes circuitos do parque e ao Museu da Natureza, com opções tranquilas como o Baixão do Ouro Park Hotel e a Pousada Trilha da Capivara."
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde comer em São Raimundo Nonato" },
+            {
+                tipo: "lista-destaque",
+                colunas: 2,
+                itens: [
+                    {
+                        kicker: "Culinária piauiense",
+                        nome: "Restaurante Maria Docarmo",
+                        texto: "Muito bem avaliado pelos viajantes, serve almoço caseiro com pratos típicos da culinária piauiense em um ambiente simples e acolhedor no centro da cidade;"
+                    },
+                    {
+                        kicker: "À la carte",
+                        nome: "Caldeirão do Chapolin",
+                        texto: "Referência local para refeições à la carte preparadas na hora, com cozinha aberta e cardápio variado que atende bem grupos, famílias e também oferece opções vegetarianas;"
+                    }
+                ]
+            },
+            { tipo: "titulo", texto: "Onde comer em Coronel José Dias" },
+            {
+                tipo: "lista-destaque",
+                colunas: 1,
+                itens: [
+                    {
+                        kicker: "Próximo ao parque",
+                        nome: "Restaurante Trilha da Capivara",
+                        texto: "Fica no povoado Sítio do Mocó, bem perto do Museu da Natureza e das portarias do parque, sendo uma parada prática e saborosa entre um passeio e outro, com comida regional feita no fogão à lenha;"
+                    },
+                    {
+                        kicker: "Dica",
+                        nome: "Pousada da Cerâmica Serra da Capivara",
+                        texto: "Na zona rural de Coronel José Dias, o restaurante da Pousada da Cerâmica Serra da Capivara também é aberto ao público para refeições e permite combinar o almoço com a visita ao famoso ateliê de cerâmica local."
+                    }
+                ]
+            },
+            {
+                tipo: "lenda",
+                conteudo: `
+                O guardião encantado<br><br>
+                Antigos moradores dizem que uma onça-pintada gigantesca e misteriosa habitava as grutas próximas ao Boqueirão da Pedra Furada e protegia o lugar. Caçadores que tentavam perseguir o animal nas trilhas perdiam o rumo entre os paredões ou viam o bicho desaparecer subitamente dentro das fendas das rochas, como se fosse um guardião encantado das pinturas antigas...
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Melhor época",
+                conteudo: `
+                <span class="service-inline-label">Serviço</span>
+                Entre fevereiro e julho, as chuvas deixam a caatinga verde e as temperaturas mais amenas; de agosto a dezembro, o clima é seco e quente, exigindo hidratação reforçada e passeios logo nas primeiras horas da manhã;
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Acesso e transporte",
+                conteudo: `
+                São Raimundo Nonato conta com o Aeroporto Serra da Capivara (NSR), que recebe voos regionais. Outras alternativas são desembarcar em Petrolina (PE), a cerca de 300 km, ou em Teresina (PI), a aproximadamente 510 km, seguindo o restante do trajeto por rodovia em carro alugado ou transfer;
+                `
+            },
+            {
+                tipo: "box",
+                titulo: "Ingressos e regras",
+                conteudo: `
+                A entrada no parque nacional é gratuita pelo ICMBio, mas é cobrada uma Taxa de Preservação Ambiental municipal. É obrigatório o serviço de guia credenciado (pago à parte por grupo). Os museus possuem ingressos próprios.
+                `
+            },
+            {
+                tipo: "curiango-inline",
+                etiqueta: "O que colocar na mala",
+                conteudo: `
+                Como você vai caminhar bastante na areia e pegar sol e vento o dia todo, leve roupas leves e confortáveis. Não esqueça de colocar na mochila:<br><br>
+                Protetor solar, óculos escuros e roupas com proteção UV;<br>
+                Boné ou chapéu - bem firme na cabeça - para não voar nos carros abertos;<br>
+                Chinelo confortável e uma bolsinha ou capa à prova d&#39;água para proteger o celular.
+                `
+            }
+        ],
+        curiango: ""
     }
 ];
 
 window.paginasData = paginasData;
+
+const linksEdicaoNordesteRaiz = {
+    "Parque Nacional dos Lençóis Maranhenses": "https://www.google.com/search?kgmid=%2Fm%2F0bljh3",
+    "Circuito Lagoa Azul": "https://www.google.com/search?kgmid=%2Fg%2F11kj_c2lq1",
+    "Lagoa Bonita": "https://www.google.com/search?kgmid=%2Fg%2F11hygltwtm",
+    "Rio Preguiças": "https://www.google.com/search?kgmid=%2Fm%2F06w379q",
+    "Canto de Atins": "https://www.google.com/search?kgmid=%2Fg%2F11h0ycfgdv",
+    "Bambaê Bar Restaurante e Pizzaria": "https://www.google.com/search?kgmid=%2Fg%2F11byyhcg5m",
+    "Bambaê": "https://www.google.com/search?kgmid=%2Fg%2F11byyhcg5m",
+    "Quintal do Casarão": "https://www.google.com/search?kgmid=%2Fg%2F11zbqkhk26",
+    "Em Atins — Casa de Juja": "https://www.google.com/search?kgmid=%2Fg%2F11swd8n2gc",
+    "Casa de Juja": "https://www.google.com/search?kgmid=%2Fg%2F11swd8n2gc",
+    "Restaurante da Luzia": "https://www.google.com/search?kgmid=%2Fg%2F11hb3scc5f",
+    "Restaurante do Antônio": "https://www.google.com/search?kgmid=%2Fg%2F11cncwx49q",
+    "Barreirinhas": "https://www.google.com/search?kgmid=%2Fg%2F1ywqff921",
+    "Porto Preguiças Resort": "https://www.google.com/search?kgmid=%2Fg%2F1tgx6tyt",
+    "Gran Lençóis Flat Residence": "https://www.google.com/search?kgmid=%2Fg%2F1vkxmgxv",
+    "Portal do Sol Lençóis": "https://www.google.com/search?kgmid=%2Fg%2F11sgcpy035",
+    "Santo Amaro": "https://www.google.com/search?kgmid=%2Fg%2F1ywtx2r6f",
+    "Pousada Rancho das Dunas": "https://www.google.com/search?kgmid=%2Fg%2F11b6dqwz6q",
+    "Rancho das Dunas": "https://www.google.com/search?kgmid=%2Fg%2F11b6dqwz6q",
+    "Pousada Lençóis Maranhenses": "https://www.google.com/search?kgmid=%2Fg%2F11t46tx9h7",
+    "Pousada Santo Amaro": "https://www.google.com/search?kgmid=%2Fg%2F11sk0hp_pc",
+    "Atins": "https://www.google.com/search?kgmid=%2Fg%2F11bxfxjck8",
+    "Atins Charme Chalés": "https://www.google.com/search?kgmid=%2Fg%2F11hzzxkxl6",
+    "Cânion do Xingó": "https://www.google.com/search?kgmid=%2Fg%2F11bw7mds1k",
+    "Gruta do Talhado": "https://www.google.com/search?kgmid=%2Fg%2F11clytqzbt",
+    "Rota do Cangaço": "https://www.google.com/search?kgmid=%2Fg%2F11ptpl1hs5",
+    "Restaurante Flor de Cactus": "https://www.google.com/search?kgmid=%2Fg%2F11ckv38ftr",
+    "Caboclo D'Água": "https://www.google.com/search?kgmid=%2Fg%2F11lcfgj137",
+    "Pedra do Sino Hotel": "https://www.google.com/search?kgmid=%2Fg%2F12hn1w6rx",
+    "Karrancas Restaurante": "https://www.google.com/search?kgmid=%2Fg%2F11ssfhnkw4",
+    "Restaurante Karrancas": "https://www.google.com/search?kgmid=%2Fg%2F11ssfhnkw4",
+    "Bar e Restaurante Boteco BarRio": "https://www.google.com/search?kgmid=%2Fg%2F11h817y3lc",
+    "Restaurante Casa de Mãe": "https://www.google.com/search?kgmid=%2Fg%2F11h_488qb8",
+    "Site do Xingó Parque Hotel": "https://www.xingoparquehotel.com.br/",
+    "Xingó Parque Hotel": "https://www.xingoparquehotel.com.br/",
+    "Hotel Reserva do Xingó": "https://www.google.com/search?kgmid=%2Fg%2F11rrl2wkgp",
+    "A Cidade Submersa de Petrolândia": "https://www.google.com/search?kgmid=%2Fg%2F1pty1c6vb",
+    "Parque Nacional do Catimbau": "https://www.google.com/search?kgmid=%2Fm%2F03y71nm",
+    "Pousada Vale do Catimbau": "https://www.google.com/search?kgmid=%2Fg%2F11sjyg_9lj",
+    "Pousada Vista Pro Vale do Catimbau": "https://www.google.com/search?kgmid=%2Fg%2F11rqhyrsct",
+    "Pousada Chalés Vale do Catimbau": "https://www.google.com/search?kgmid=%2Fg%2F11vjx2p864",
+    "Pousada Bangalôs Vale do Catimbau": "https://www.google.com/search?kgmid=%2Fg%2F11vf0htlfh",
+    "Restaurante Sabor do Vale": "https://www.google.com/search?kgmid=%2Fg%2F11fsbgkv3t",
+    "Restaurante Toca do Vale": "https://www.google.com/search?kgmid=%2Fg%2F1q67jd4r8",
+    "Restaurante Nossa Senhora de Fátima": "https://www.google.com/search?kgmid=%2Fg%2F11ssg4wm9h",
+    "Restaurante Vista Pro Vale": "https://www.google.com/search?kgmid=%2Fg%2F11xz10p7n7",
+    "Parque Hotel Sete Cidades": "https://www.google.com/search?kgmid=%2Fg%2F11g0dtd625",
+    "Parque Nacional Serra da Capivara": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/caatinga/lista-de-ucs/parna-da-serra-da-capivara/informacoes-sobre-visitacao-2013-parna-da-serra-da-capivara",
+    "Museu do Homem Americano": "https://www.google.com/search?kgmid=%2Fg%2F1225wcnd",
+    "Hotel Serra da Capivara Resort e Convention": "https://www.google.com/search?kgmid=%2Fg%2F1ydnpx3rz",
+    "Pousada Zabelê": "https://www.google.com/search?kgmid=%2Fg%2F1tnjjsc7",
+    "Rupestre Eco Lodge": "https://www.google.com/search?kgmid=%2Fg%2F11p0fywkx3",
+    "Baixão do Ouro Park Hotel": "https://www.google.com/search?kgmid=%2Fg%2F11gsbflhzm",
+    "Pousada Trilha da Capivara": "https://www.google.com/search?kgmid=%2Fg%2F11f5q9tk3n",
+    "Restaurante Maria Docarmo": "https://www.google.com/search?kgmid=%2Fg%2F11f15cknrq",
+    "Caldeirão do Chapolin": "https://www.google.com/search?kgmid=%2Fg%2F11c0w8cs30",
+    "Restaurante Trilha da Capivara": "https://www.google.com/search?kgmid=%2Fg%2F11h1ygvxqt",
+    "Pousada da Cerâmica Serra da Capivara": "https://www.google.com/search?kgmid=%2Fg%2F11bysjpwl2"
+};
+
+function aplicarLinksEdicaoNordesteRaiz(elemento, paginaId) {
+    if (!elemento || paginaId < 46 || paginaId > 50) return;
+
+    const termos = Object.keys(linksEdicaoNordesteRaiz).sort((a, b) => b.length - a.length);
+    const escaparRegExp = termo => termo.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const expressao = new RegExp(`(${termos.map(escaparRegExp).join("|")})`, "g");
+    const walker = document.createTreeWalker(elemento, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+            if (!node.nodeValue.trim() || node.parentElement.closest("a, script, style")) {
+                return NodeFilter.FILTER_REJECT;
+            }
+            return NodeFilter.FILTER_ACCEPT;
+        }
+    });
+    const nos = [];
+    while (walker.nextNode()) nos.push(walker.currentNode);
+
+    nos.forEach(node => {
+        const partes = node.nodeValue.split(expressao);
+        if (partes.length === 1) return;
+
+        const fragmento = document.createDocumentFragment();
+        partes.forEach(parte => {
+            const url = linksEdicaoNordesteRaiz[parte];
+            if (!url) {
+                fragmento.appendChild(document.createTextNode(parte));
+                return;
+            }
+            const link = document.createElement("a");
+            link.className = "article-external-link";
+            link.href = url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = parte;
+            fragmento.appendChild(link);
+        });
+        node.replaceWith(fragmento);
+    });
+}
 
 function getPaginaId() {
     const params = new URLSearchParams(window.location.search);
@@ -7972,12 +9611,13 @@ function renderPagina() {
                 ${legendaHero}
             </div>`;
         }
-        if (pagina.autor) {
+        const idsSemAssinaturaNaCapa = [41, 42, 43, 44, 45, 46, 47, 48, 49, 50];
+        if (pagina.autor && !idsSemAssinaturaNaCapa.includes(pagina.id)) {
             html += `<span class="article-byline">Por ${pagina.autor}</span>`;
         }
 
 
-        const idsComTextoEmDuasColunas = [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40];
+        const idsComTextoEmDuasColunas = [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50];
         const classeDuasColunas = idsComTextoEmDuasColunas.includes(pagina.id) ? " texto-duas-colunas" : "";
 
         html += `<div class="article-container${classeDuasColunas}">`;
@@ -8038,7 +9678,12 @@ function renderPagina() {
             }
 
             if (sec.tipo === "lista-destaque") {
-                html += `<div class="service-grid">`;
+                const classeColunasServico = sec.colunas === 3
+                    ? " service-grid--3"
+                    : sec.colunas === 1
+                        ? " service-grid--1"
+                        : "";
+                html += `<div class="service-grid${classeColunasServico}">`;
 
                 sec.itens.forEach(item => {
                     const classeItem = item.destaque ? " service-card--featured" : "";
@@ -8092,7 +9737,13 @@ function renderPagina() {
 
             // imagem grande
             if (sec.tipo === "imagem") {
-                const estiloImagem = sec.height ? ` style="height:${sec.height};"` : "";
+                const estiloImagemPersonalizado = [
+                    sec.height ? `height:${sec.height}` : "",
+                    sec.objectFit ? `object-fit:${sec.objectFit}` : "",
+                    sec.objectPosition ? `object-position:${sec.objectPosition}` : "",
+                    sec.background ? `background:${sec.background}` : ""
+                ].filter(Boolean).join(";");
+                const estiloImagem = estiloImagemPersonalizado ? ` style="${estiloImagemPersonalizado};"` : "";
                 const estiloContainerImagem = sec.maxWidth ? ` style="max-width:${sec.maxWidth}; margin-left:auto; margin-right:auto;"` : "";
                 html += `
         <div class="img-full"${estiloContainerImagem}>
@@ -8242,6 +9893,48 @@ function renderPagina() {
         </div>`;
             }
 
+            // dica do Curiango dentro do fluxo da matéria
+            if (sec.tipo === "curiango-inline") {
+                const etiquetaCuriango = sec.etiqueta ? `<span class="curiango-inline-label">${sec.etiqueta}</span>` : "";
+                html += `
+        <section class="curiango-inline" aria-label="Dica do Curiango">
+            <div class="curiango-inline-card">
+                <div class="curiango-inline-header">
+                    <img src="images/WhatsApp Image 2024-02-14 at 21.04.28.jpg" alt="Curiango">
+                    <h3>Dica do Curiango</h3>
+                </div>
+                <div class="curiango-inline-content">
+                    ${etiquetaCuriango}
+                    <p>${sec.texto ?? sec.conteudo ?? ""}</p>
+                </div>
+            </div>
+        </section>`;
+            }
+
+            // lenda, mistério ou tradição local
+            if (sec.tipo === "lenda") {
+                const tituloLenda = sec.titulo ? `<h3>${sec.titulo}</h3>` : "";
+                html += `
+        <section class="legend-feature" aria-label="Diz a lenda">
+            <div class="legend-feature-heading">
+                <span class="legend-feature-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" role="img">
+                        <path d="M41.8 47.9A22 22 0 0 1 23.1 9.6 23.5 23.5 0 1 0 51.8 38a22 22 0 0 1-10 9.9Z" />
+                        <path class="legend-star legend-star--large" d="m47 10 1.8 4.2L53 16l-4.2 1.8L47 22l-1.8-4.2L41 16l4.2-1.8L47 10Z" />
+                        <path class="legend-star" d="m56 25 1.1 2.5 2.4 1-2.4 1.1L56 32l-1.1-2.4-2.4-1.1 2.4-1L56 25Z" />
+                    </svg>
+                </span>
+                <div>
+                    <span class="legend-feature-kicker">DIZ A LENDA...</span>
+                    ${tituloLenda}
+                </div>
+            </div>
+            <div class="legend-feature-content">
+                <p>${sec.texto ?? sec.conteudo ?? ""}</p>
+            </div>
+        </section>`;
+            }
+
             // box destaque
             if (sec.tipo === "box") {
                 const classeBox = sec.imagemFundo ? " box-highlight--imagem" : "";
@@ -8265,7 +9958,9 @@ function renderPagina() {
 
         html += `</div>`;
 
-        document.getElementById("pagina").innerHTML = html;
+        const paginaElemento = document.getElementById("pagina");
+        paginaElemento.innerHTML = html;
+        aplicarLinksEdicaoNordesteRaiz(paginaElemento, pagina.id);
     }
 
     // ===============================

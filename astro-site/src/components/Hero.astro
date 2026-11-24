@@ -1,0 +1,86 @@
+---
+import { currentEdition, featuredStories, monthlyPhrase } from '../data/home';
+---
+
+<section class="hero" aria-label="Destaques">
+  <div class="hero-track" data-hero-track>
+    {featuredStories.map((story, index) => (
+      <article class:list={['hero-slide', { active: index === 0 }]} data-slide aria-hidden={index !== 0}>
+        <img src={story.image} alt="" width="1600" height="900" fetchpriority={index === 0 ? 'high' : 'auto'} />
+        <div class="hero-shade"></div>
+        {index === 0 && (
+          <div class="container-vtn hero-topline">
+            <p class="monthly-phrase">{monthlyPhrase}</p>
+            <p class="edition-badge" aria-label={`Edição número ${currentEdition}`}>
+              <span>Edição</span> <strong>{currentEdition}</strong>
+            </p>
+          </div>
+        )}
+        <div class="container-vtn hero-content">
+          <div class="hero-title-wrap">
+            <h1>{story.title}</h1>
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+  <div class="hero-controls container-vtn">
+    <button type="button" data-previous aria-label="Destaque anterior">←</button>
+    <div class="hero-dots" aria-label="Selecionar destaque">
+      {featuredStories.map((story, index) => <button class:list={{ active: index === 0 }} type="button" data-dot={index} aria-label={`Mostrar ${story.title}`}></button>)}
+    </div>
+    <button type="button" data-next aria-label="Próximo destaque">→</button>
+  </div>
+</section>
+
+<script>
+  const slides = [...document.querySelectorAll<HTMLElement>('[data-slide]')];
+  const dots = [...document.querySelectorAll<HTMLButtonElement>('[data-dot]')];
+  let current = 0;
+  let timer: number;
+  const show = (next: number) => {
+    current = (next + slides.length) % slides.length;
+    slides.forEach((slide, index) => {
+      slide.classList.toggle('active', index === current);
+      slide.setAttribute('aria-hidden', String(index !== current));
+    });
+    dots.forEach((dot, index) => dot.classList.toggle('active', index === current));
+  };
+  const autoplay = () => { window.clearInterval(timer); timer = window.setInterval(() => show(current + 1), 6500); };
+  document.querySelector('[data-previous]')?.addEventListener('click', () => { show(current - 1); autoplay(); });
+  document.querySelector('[data-next]')?.addEventListener('click', () => { show(current + 1); autoplay(); });
+  dots.forEach((dot, index) => dot.addEventListener('click', () => { show(index); autoplay(); }));
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) autoplay();
+</script>
+
+<style>
+  .hero { position: relative; min-height: min(760px, calc(100vh - 86px)); background: #172026; color: white; }
+  .hero-track { position: absolute; inset: 0; }
+  .hero-slide { position: absolute; inset: 0; opacity: 0; visibility: hidden; transition: opacity .7s ease, visibility .7s; }
+  .hero-slide.active { opacity: 1; visibility: visible; }
+  .hero-slide > img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-shade { position: absolute; inset: 0; background: linear-gradient(0deg, #0d151db5 0%, #15202a25 62%, #0d151d35 100%); }
+  .hero-topline { position: absolute; top: clamp(2rem, 7vh, 4.5rem); right: 0; left: 0; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .hero-content { position: absolute; right: 0; bottom: clamp(7rem, 18vh, 11rem); left: 0; text-align: center; }
+  .monthly-phrase { max-width: min(460px, 62vw); width: fit-content; margin: 0; border-left: 2px solid var(--color-vtn-orange); padding: .25rem 0 .25rem 1rem; color: white; font-family: var(--font-display); font-size: clamp(1.25rem, 2.2vw, 1.85rem); font-style: italic; line-height: 1.15; text-shadow: 0 2px 18px #0008; }
+  .hero-title-wrap { display: flex; width: 100%; min-height: 2.35em; align-items: flex-end; justify-content: center; }
+  .hero-content h1 { width: min(1080px, 86vw); margin: 0 auto; font-family: var(--font-display); font-size: clamp(2rem, 3.65vw, 3.55rem); font-weight: 400; line-height: 1.08; letter-spacing: -.025em; text-wrap: balance; text-shadow: 0 3px 20px #0009; }
+  .hero-controls { position: absolute; right: 0; bottom: 2rem; left: 0; display: flex; align-items: center; justify-content: flex-end; gap: 1rem; }
+  .hero-controls > button { width: 42px; height: 42px; border: 1px solid #ffffff70; border-radius: 999px; background: #0002; color: white; cursor: pointer; }
+  .hero-dots { display: flex; gap: .55rem; }
+  .hero-dots button { width: 26px; height: 3px; border: 0; border-radius: 4px; background: #ffffff70; cursor: pointer; transition: width .2s, background .2s; }
+  .hero-dots button.active { width: 48px; background: var(--color-vtn-orange); }
+  .edition-badge { flex: none; margin: 0; border-bottom: 1px solid var(--color-vtn-orange); padding: 0 0 .4rem; color: white; font-family: var(--font-display); font-size: .9rem; letter-spacing: .08em; line-height: 1; text-shadow: 0 2px 12px #000; text-transform: uppercase; }
+  .edition-badge strong { margin-left: .25rem; font-size: 1.35rem; font-weight: 400; letter-spacing: 0; }
+  @media (max-width: 640px) {
+    .hero { min-height: 650px; }
+    .hero-content { bottom: 8rem; }
+    .hero-shade { background: linear-gradient(0deg, #0d151ded 0%, #15202a55 80%); }
+    .edition-badge { font-size: .72rem; }
+    .edition-badge strong { font-size: 1.1rem; }
+    .hero-topline { top: 2rem; align-items: flex-start; }
+    .monthly-phrase { max-width: calc(100% - 5.5rem); font-size: 1.2rem; }
+    .hero-title-wrap { min-height: 3.6em; }
+    .hero-content h1 { width: 92vw; font-size: clamp(1.8rem, 8vw, 2.55rem); }
+  }
+</style>

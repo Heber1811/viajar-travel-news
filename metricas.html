@@ -6,9 +6,9 @@
     <meta name="robots" content="noindex,nofollow">
     <title>Relatório de métricas | Viajar Travel News</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="css/metricas-admin.css">
+    <link rel="stylesheet" href="css/metricas-admin.css?v=20261029-6">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
-    <script type="module" src="js/metricas-admin.js?v=20261005-1"></script>
+    <script type="module" src="js/metricas-admin.js?v=20261029-6"></script>
 </head>
 <body>
     <main class="report-shell">
@@ -63,22 +63,24 @@
                 <div>
                     <label for="sourceSelect">Fonte dos dados</label>
                     <select id="sourceSelect">
-                        <option value="firebase">Métrica própria</option>
-                        <option value="google">Google Analytics</option>
+                        <!-- A métrica própria continua coletando; a opção fica oculta durante o período de comparação. -->
+                        <option value="google" selected>Google Analytics</option>
                     </select>
                 </div>
                 <button id="refreshButton" class="button" type="button">Atualizar</button>
+                <button id="internalDeviceButton" class="button secondary" type="button" aria-pressed="false">Não contabilizar este navegador</button>
                 <div class="spacer"></div>
                 <button id="csvButton" class="button secondary" type="button">Exportar CSV</button>
                 <button id="pdfButton" class="button secondary" type="button">Salvar em PDF</button>
             </div>
+            <p id="internalDeviceStatus" class="source-note no-print"></p>
 
-            <div id="firebaseReportContent">
+            <div id="firebaseReportContent" class="hidden">
                 <div class="metrics-grid">
-                    <article class="metric-card"><span>Visitantes únicos</span><strong id="visitorsValue">—</strong></article>
-                    <article class="metric-card"><span>Sessões</span><strong id="sessionsValue">—</strong></article>
-                    <article class="metric-card"><span>Páginas visualizadas</span><strong id="pageViewsValue">—</strong></article>
-                    <article class="metric-card"><span>Tempo ativo estimado por sessão</span><strong id="averageTimeValue">—</strong></article>
+                    <article class="metric-card"><span class="metric-label">Visitantes únicos<button class="metric-info no-print" type="button" aria-label="Informação sobre visitantes únicos" data-tooltip="UIDs distintos identificados no período. Um navegador ou dispositivo pode representar um visitante diferente.">i</button></span><strong id="visitorsValue">—</strong></article>
+                    <article class="metric-card"><span class="metric-label">Sessões<button class="metric-info no-print" type="button" aria-label="Informação sobre sessões" data-tooltip="Períodos de visita. Uma nova sessão começa após aproximadamente 30 minutos sem atividade.">i</button></span><strong id="sessionsValue">—</strong></article>
+                    <article class="metric-card"><span class="metric-label">Páginas visualizadas<button class="metric-info no-print" type="button" aria-label="Informação sobre páginas visualizadas" data-tooltip="Total de páginas abertas, incluindo visualizações repetidas pelo mesmo visitante.">i</button></span><strong id="pageViewsValue">—</strong></article>
+                    <article class="metric-card"><span class="metric-label">Tempo ativo estimado por sessão<button class="metric-info no-print" type="button" aria-label="Informação sobre tempo ativo" data-tooltip="Média do tempo em que a página permaneceu ativa, dividida pelo total de sessões.">i</button></span><strong id="averageTimeValue">—</strong></article>
                 </div>
                 <div class="charts-grid">
                     <article class="chart-card">

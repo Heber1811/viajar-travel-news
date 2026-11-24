@@ -71,6 +71,11 @@ button, input, select { font: inherit; }
 .metric-card { padding: 20px; border-top: 4px solid var(--accent); }
 .metric-card:nth-child(even) { border-top-color: var(--brand); }
 .metric-card span { display: block; color: var(--muted); }
+.metric-card .metric-label { display: flex; align-items: center; gap: 7px; }
+.metric-info { position: relative; width: 19px; height: 19px; padding: 0; border: 1px solid #a8a39c; border-radius: 50%; color: var(--muted); background: white; cursor: help; font: 700 12px/17px Arial, sans-serif; text-align: center; }
+.metric-info::after { position: absolute; z-index: 20; bottom: calc(100% + 9px); left: 50%; width: 240px; padding: 9px 11px; border-radius: 8px; color: white; background: #252525; box-shadow: 0 6px 20px rgba(0, 0, 0, .2); content: attr(data-tooltip); font: 13px/1.35 "Trebuchet MS", Arial, sans-serif; text-align: left; white-space: normal; opacity: 0; pointer-events: none; transform: translate(-50%, 4px); transition: opacity .15s, transform .15s; }
+.metric-info:hover::after, .metric-info:focus-visible::after { opacity: 1; transform: translate(-50%, 0); }
+.audience-note { margin: -8px 2px 20px; color: var(--muted); font-size: 13px; }
 .metric-card strong { display: block; margin-top: 8px; font-size: 30px; }
 .charts-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 16px; }
 .chart-card { min-height: 390px; padding: 20px; }
@@ -114,3 +119,37 @@ th:not(:first-child), td:not(:first-child) { text-align: right; white-space: now
 .data-grid { margin-top: 0; }
 .source-note { margin: 18px 2px -4px; color: var(--muted); font-size: 13px; }
 .source-note + .metrics-grid { margin-top: 12px; }
+.diagnostic-table-wrap { border: 1px solid var(--line); border-radius: 12px; background: white; }
+.diagnostic-table { width: 100%; min-width: 0; table-layout: fixed; }
+.diagnostic-table thead { background: #faf8f4; }
+.diagnostic-table th, .diagnostic-table td { padding-right: 10px; padding-left: 10px; text-align: left; vertical-align: middle; white-space: normal; overflow-wrap: anywhere; }
+.diagnostic-table th { padding-right: 6px; padding-left: 6px; font-size: 12px; white-space: nowrap; overflow-wrap: normal; }
+.diagnostic-table th:nth-child(1) { width: 13%; }
+.diagnostic-table th:nth-child(2) { width: 25%; }
+.diagnostic-table th:nth-child(3) { width: 12%; }
+.diagnostic-table th:nth-child(4) { width: 10%; }
+.diagnostic-table th:nth-child(5) { width: 8%; }
+.diagnostic-table th:nth-child(6) { width: 10%; }
+.diagnostic-table th:nth-child(7) { width: 8%; }
+.diagnostic-table th:nth-child(8) { width: 14%; }
+.diagnostic-page-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.diagnostic-table td:nth-child(n+5) { white-space: nowrap; overflow-wrap: normal; }
+.diagnostic-table th:nth-child(n+5), .diagnostic-table td:nth-child(n+5):not(:last-child) { text-align: center; }
+.diagnostic-table tbody tr { transition: background .18s ease; }
+.diagnostic-table tbody tr:hover { background: #fffaf4; }
+.diagnostic-table tbody tr:last-child td { border-bottom: 0; }
+.diagnostic-status { display: inline-flex; align-items: center; max-width: 100%; padding: 5px 8px; border-radius: 999px; font-size: 11px; font-weight: 800; justify-content: center; white-space: nowrap; }
+.diagnostic-status--provavel-humano { color: #356400; background: #eaf7d5; }
+.diagnostic-status--indeterminado { color: #73510a; background: #fff1c6; }
+.diagnostic-status--suspeito { color: #a12c23; background: #fee4e2; }
+.table-pagination { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 2px 0; }
+.pagination-count, .pagination-page { color: var(--muted); font-size: 13px; }
+.pagination-actions { display: flex; align-items: center; gap: 10px; }
+.pagination-button { padding: 8px 12px; border: 1px solid #cfd4dc; border-radius: 8px; color: var(--ink); background: white; cursor: pointer; font-weight: 700; }
+.pagination-button:hover:not(:disabled) { color: var(--brand-dark); border-color: var(--brand); background: #fffaf4; }
+.pagination-button:disabled { opacity: .45; cursor: not-allowed; }
+
+@media (max-width: 520px) {
+    .table-pagination { align-items: flex-start; flex-direction: column; }
+    .pagination-actions { width: 100%; justify-content: space-between; }
+}

@@ -31,6 +31,19 @@ dos demais sites do projeto. O Firebase Authentication cria um usuário anônimo
 persistente por navegador. O endereço IP é consultado diretamente pelo serviço
 de geolocalização, mas não é salvo no Firestore.
 
+O painel autenticado permite marcar um navegador como acesso interno. A marca é
+salva por um ano em cookie e no armazenamento local; enquanto estiver ativa, o
+navegador não inicializa a autenticação anônima, não grava a métrica própria e
+não carrega o Google Analytics. A ativação deve ser repetida em cada navegador
+usado nos computadores e celulares internos. Navegação anônima e limpeza dos
+dados do navegador removem essa identificação.
+
+A coleta própria também ignora identificadores evidentes de automação expostos
+pelo navegador, como WebDriver e user agents conhecidos de robôs, crawlers,
+pré-visualizadores e ferramentas de monitoramento. Localizações de datacenter
+não são bloqueadas isoladamente, pois a cidade não é evidência suficiente para
+classificar uma visita como robô.
+
 ## Configuração antes da publicação
 
 1. O app Web `Viajar Travel News` e o provedor de login anônimo já foram ativados.
@@ -54,6 +67,12 @@ no projeto `sites-estaticos`, e a conta de serviço
 `918522422846-compute@developer.gserviceaccount.com` deve ter acesso de Leitor à
 propriedade. A consulta exige login com um dos e-mails autorizados e nunca expõe
 credenciais do Google Analytics no navegador.
+
+O relatório do GA4 converte caminhos dinâmicos como `paginas.html?id=41` nos
+títulos editoriais cadastrados e inclui um diagnóstico por localização, página,
+origem, dispositivo, sessões e engajamento. Os rótulos `Provável humano`,
+`Indeterminado` e `Suspeito` são apenas indícios: localização estrangeira nunca
+é usada sozinha para classificar ou bloquear um acesso.
 permite escolher um dos últimos 24 meses, exibe indicadores e gráficos e exporta
 o resumo em CSV ou PDF. O relatório por página mostra visualizações, tempo total
 e tempo médio por acesso. A opção PDF usa a janela de impressão do navegador.

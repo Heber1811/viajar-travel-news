@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const foodGroups = [
+  { title: 'Grãos', image: '/assets/lifestyle/leguminosas.webp', examples: 'Feijão · grão-de-bico · ervilha · lentilha · soja', text: 'Resultados da colheita, são fontes de fibras, minerais e proteínas vegetais. Podem entrar em saladas, sopas, acompanhamentos e preparações variadas.' },
+  { title: 'Sementes', image: '/assets/lifestyle/sementes.jpeg', examples: 'Gergelim · linhaça · girassol · abóbora · chia', text: 'Concentram fibras e gorduras insaturadas. Podem complementar frutas, vitaminas, saladas, sopas, pães e bolos.' },
+  { title: 'Cereais', image: '/assets/lifestyle/cereais.jpeg', examples: 'Trigo · arroz · milho · aveia · cevada', text: 'São plantas cultivadas por seus frutos comestíveis. Integrais, preservam farelo e germe; refinados passam por processamento que altera sua composição.' },
+  { title: 'Quinoa', image: '/assets/lifestyle/quinoa.webp', examples: 'Branca · preta · vermelha', text: 'Cultivada nos Andes há milhares de anos, é um pseudocereal rico em proteínas, fibras, vitaminas e minerais e pode ser usado em pratos doces ou salgados.' },
+] as const;
+---
+
+<BaseLayout
+  title="Lifestyle | Viajar Travel News"
+  description="Bem-estar, equilíbrio e alimentação consciente na seleção Lifestyle da Viajar Travel News."
+  image="/assets/lifestyle/graos-sementes.jpeg"
+>
+  <section class="category-hero">
+    <div class="container-vtn hero-grid">
+      <div><p class="eyebrow">Vem com a gente</p><h1>Lifestyle</h1></div>
+      <p>Escolhas simples, informação e equilíbrio para uma vida com mais presença.</p>
+    </div>
+  </section>
+
+  <article class="balance container-vtn">
+    <header><p class="kicker">Vida em equilíbrio</p><h2>Bem-estar começa pela conexão.</h2></header>
+    <div class="balance-copy">
+      <p class="standfirst">O que está por trás do bem-estar físico, mental e social?</p>
+      <div class="text-columns">
+        <p>A conexão entre corpo, mente e espírito é parte importante da manutenção da saúde e do bem-estar. Emoções, espiritualidade, atividade física e alimentação não funcionam de forma completamente isolada: cada uma influencia a maneira como vivemos e percebemos o cotidiano.</p>
+        <p>No caminho do crescimento pessoal, diferentes práticas podem ajudar na busca por equilíbrio. Nossos hábitos alimentares dizem muito sobre estilo de vida e estados emocionais. Assim como o movimento tem papel fundamental, também merece atenção aquilo que levamos à mesa.</p>
+      </div>
+      <aside><strong>Dica do Curiango</strong><span>Equilíbrio não significa perfeição. Mudanças sustentáveis costumam nascer de escolhas possíveis, feitas com constância.</span></aside>
+    </div>
+  </article>
+
+  <section class="seeds-feature">
+    <div class="container-vtn seeds-grid">
+      <div class="seeds-image"><img src="/assets/lifestyle/graos-sementes.jpeg" alt="Seleção de grãos e sementes" loading="lazy" /><span>Nutrição e variedade</span></div>
+      <div class="seeds-copy">
+        <p class="kicker">Alimentação consciente</p>
+        <h2>O poder dos grãos e sementes</h2>
+        <p class="standfirst">Pequenos no tamanho, versáteis na cozinha e valiosos na composição de uma alimentação variada.</p>
+        <p>Grãos e sementes podem fornecer fibras, proteínas, vitaminas, minerais, antioxidantes e gorduras insaturadas. Eles combinam com diferentes refeições e ajudam a ampliar sabores, texturas e nutrientes no prato.</p>
+        <p>Sementes como linhaça, chia, quinoa e abóbora, além de castanhas e outras oleaginosas, podem ser usadas em porções adequadas e dentro de uma alimentação equilibrada.</p>
+        <blockquote>“Quanto maior a variedade de alimentos in natura e minimamente processados, mais diversa pode ser a composição da alimentação.”</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="diversity">
+    <div class="container-vtn diversity-grid">
+      <div class="diversity-copy"><p class="kicker">Variedade à mesa</p><h2>Diversifique o consumo de grãos</h2><p>Feijão, lentilha, grão-de-bico e outras leguminosas oferecem diferentes combinações de nutrientes. Alternar os tipos ao longo da semana amplia as possibilidades culinárias e evita que a alimentação caia na monotonia.</p><p>Por serem ricos em fibras, esses alimentos tendem a promover saciedade e podem compor refeições completas quando combinados com vegetais, cereais e outras fontes de nutrientes.</p></div>
+      <img src="/assets/lifestyle/quinoa-detalhe.jpeg" alt="Quinoa e outros grãos em detalhe" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="guide">
+    <div class="container-vtn">
+      <header class="guide-heading"><div><p class="kicker">Guia essencial</p><h2>Grãos, sementes e cereais: qual é a diferença?</h2></div><p>Termos próximos, origens diferentes e muitas possibilidades para cozinhar.</p></header>
+      <div class="guide-grid">
+        {foodGroups.map((item, index) => <article class:list={{ featured: index === 3 }}><img src={item.image} alt={item.title} loading="lazy" /><div><p>{item.examples}</p><h3>{item.title}</h3><span>{item.text}</span></div></article>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial-note"><div class="container-vtn"><p>Conteúdo de caráter informativo. Necessidades nutricionais variam de pessoa para pessoa; orientações individualizadas devem ser feitas por profissionais de saúde.</p></div></section>
+
+  <section class="author-note">
+    <div class="container-vtn">
+      <img src="/assets/people/fatima-vianna.jpg" alt="Fátima Vianna" loading="lazy" />
+      <div class="author-copy"><p class="eyebrow">Curadoria e texto</p><h2>Fátima Vianna</h2><p>Jornalista e Chief Communication Officer</p></div>
+      <div class="author-socials" aria-label="Redes sociais da Viajar Travel News">
+        <a href="https://www.facebook.com/viajartravelnews/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4.5c-.52-.07-2.3-.23-4.42-.23C8.17 4.27 5.15 6.9 5.15 11.72V16H0v3.91h5.15V30h6.31V19.91h5.27l.84-3.91h-6.11v-3.89C11.46 10.98 11.77 8 14 8Z" transform="scale(.75)"/></svg></a>
+        <a href="https://www.instagram.com/viajartravelnews/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.63 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.69 21.3.27 16.95.07 15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 12 8a4 4 0 0 1 0 8Zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/></svg></a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .category-hero{padding:clamp(2.5rem,4.5vw,4rem) 0;background:#182229;color:#fff}.hero-grid{display:grid;grid-template-columns:1fr minmax(280px,.6fr);align-items:end;gap:clamp(3rem,8vw,8rem)}.category-hero .eyebrow{color:#a8d744}.category-hero h1{margin:.4rem 0 0;font-family:var(--font-display);font-size:clamp(3.6rem,7vw,6.4rem);font-weight:400;letter-spacing:-.05em;line-height:.92}.hero-grid>p{max-width:430px;margin:0;border-left:2px solid var(--color-vtn-orange);padding-left:1.4rem;color:#d4dadd;font-family:var(--font-display);font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.65}.kicker{margin:0;color:var(--color-vtn-orange);font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.balance{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(3rem,8vw,8rem);padding-top:clamp(4rem,8vw,7rem);padding-bottom:clamp(4rem,8vw,7rem)}.balance h2,.seeds-copy h2,.diversity h2,.guide-heading h2{margin:.6rem 0 0;font-family:var(--font-display);font-size:clamp(2.7rem,5vw,4.8rem);font-weight:400;letter-spacing:-.04em;line-height:1}.standfirst{color:#3c464b;font-family:var(--font-display);font-size:clamp(1.1rem,1.7vw,1.35rem);line-height:1.6}.text-columns{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.text-columns p,.seeds-copy>p:not(.kicker):not(.standfirst),.diversity-copy>p:not(.kicker),.guide-grid span{color:#626b70;font-size:.93rem;line-height:1.8}.balance aside{display:grid;grid-template-columns:auto 1fr;gap:1rem;margin-top:2rem;border-top:1px solid #20282d20;padding-top:1.3rem}.balance aside strong{color:#739c20;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}.balance aside span{color:#667075;font-size:.82rem;line-height:1.6}.seeds-feature{padding:clamp(4rem,8vw,7rem) 0;background:#202a30;color:#fff}.seeds-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(3rem,7vw,7rem);align-items:center}.seeds-image{position:relative}.seeds-image img{display:block;width:100%;height:650px;object-fit:cover}.seeds-image span{position:absolute;right:1rem;bottom:1rem;padding:.6rem .8rem;background:#fff;color:#263138;font-size:.63rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.seeds-copy .kicker{color:#c8e965}.seeds-copy .standfirst{color:#fff}.seeds-copy>p:not(.kicker):not(.standfirst){color:#d2d8da}.seeds-copy blockquote{margin:2rem 0 0;border-left:2px solid var(--color-vtn-orange);padding:1rem 0 1rem 1.5rem;color:#fff;font-family:var(--font-display);font-size:1.05rem;line-height:1.6}.diversity{padding:clamp(4rem,8vw,7rem) 0;background:#f3efe6}.diversity-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(3rem,8vw,8rem);align-items:center}.diversity img{width:100%;height:500px;object-fit:cover}.guide{padding:clamp(4rem,8vw,7rem) 0;background:#fff}.guide-heading{display:grid;grid-template-columns:1.3fr .7fr;gap:3rem;align-items:end;margin-bottom:3rem}.guide-heading>p{margin:0;color:#657075;line-height:1.7}.guide-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.guide-grid article{display:grid;grid-template-columns:220px 1fr;min-height:290px;background:#f6f4ee}.guide-grid article.featured{background:#eaf0e1}.guide-grid img{width:100%;height:100%;object-fit:cover}.guide-grid article>div{padding:1.7rem}.guide-grid article p{margin:0;color:#7ba522;font-size:.62rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.guide-grid h3{margin:.55rem 0 .8rem;font-family:var(--font-display);font-size:2rem;font-weight:400}.guide-grid span{display:block;font-size:.84rem}.editorial-note{padding:1.5rem 0;background:#ece9e1}.editorial-note p{max-width:850px;margin:0;color:#6b7478;font-size:.75rem;line-height:1.6}.author-note{padding:3rem 0;background:#fff}.author-note .container-vtn{display:flex;align-items:center;gap:1.5rem}.author-note>div>img{width:82px;height:82px;border-radius:50%;object-fit:cover;object-position:top}.author-copy h2{margin:.25rem 0;font-family:var(--font-display);font-size:1.65rem;font-weight:400}.author-copy p:last-child{margin:0;color:#6a7377;font-size:.82rem}.author-socials{display:flex;gap:.65rem;margin-left:auto}.author-socials a{display:grid;width:40px;height:40px;border:1px solid #20282d26;color:#3f484d;place-items:center;transition:border-color .2s ease,color .2s ease,transform .2s ease}.author-socials a:hover{border-color:var(--color-vtn-orange);color:var(--color-vtn-orange);transform:translateY(-2px)}.author-socials svg{width:17px;height:17px;fill:currentColor}@media(max-width:900px){.balance,.seeds-grid,.diversity-grid{grid-template-columns:1fr}.seeds-image img{height:500px}.guide-grid article{grid-template-columns:180px 1fr}}@media(max-width:650px){.hero-grid,.text-columns,.guide-heading,.guide-grid{grid-template-columns:1fr}.category-hero h1{font-size:3.8rem}.seeds-image img,.diversity img{height:380px}.guide-grid article{grid-template-columns:1fr}.guide-grid img{height:230px}.author-note .container-vtn{align-items:flex-start;flex-wrap:wrap}.author-socials{width:100%;margin:0 0 0 97px}}
+</style>

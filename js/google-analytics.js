@@ -1,10 +1,11 @@
 import { metricsConfig } from './metrics-config.js';
+import { isInternalTraffic } from './traffic-classification.js';
 
 const measurementId = metricsConfig.googleAnalyticsMeasurementId;
 const isAllowedHost = metricsConfig.productionHosts.includes(window.location.hostname);
 const isAdminPage = /(^|\/)metricas\.html$/.test(window.location.pathname);
 
-if (measurementId && isAllowedHost && !isAdminPage) {
+if (measurementId && isAllowedHost && !isAdminPage && !isInternalTraffic()) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function gtag() {
         window.dataLayer.push(arguments);

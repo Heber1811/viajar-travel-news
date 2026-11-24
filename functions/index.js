@@ -178,13 +178,20 @@ exports.relatorioGoogleAnalytics = onCall({
         const requests = [
             reportRequest(dateRanges, [], ['activeUsers', 'sessions', 'screenPageViews', 'averageSessionDuration']),
             reportRequest(dateRanges, ['date'], ['activeUsers', 'sessions', 'screenPageViews'], { orderBys: [{ dimension: { dimensionName: 'date' } }] }),
-            reportRequest(dateRanges, ['pageTitle', 'pagePath'], ['activeUsers', 'screenPageViews', 'userEngagementDuration'], { limit: 50, orderBys: descending('screenPageViews') }),
+            reportRequest(dateRanges, ['pageTitle', 'pagePathPlusQueryString'], ['activeUsers', 'screenPageViews', 'userEngagementDuration'], { limit: 50, orderBys: descending('screenPageViews') }),
             reportRequest(dateRanges, ['sessionDefaultChannelGroup'], ['activeUsers', 'sessions'], { limit: 20, orderBys: descending('sessions') }),
             reportRequest(dateRanges, ['deviceCategory'], ['activeUsers', 'sessions'], { orderBys: descending('sessions') }),
-            reportRequest(dateRanges, ['city', 'region', 'country'], ['activeUsers'], { limit: 50, orderBys: descending('activeUsers') })
+            reportRequest(dateRanges, ['city', 'region', 'country'], ['activeUsers'], { limit: 50, orderBys: descending('activeUsers') }),
+            reportRequest(dateRanges, ['newVsReturning'], ['activeUsers']),
+            reportRequest(
+                dateRanges,
+                ['city', 'region', 'country', 'pagePathPlusQueryString', 'sessionDefaultChannelGroup', 'deviceCategory'],
+                ['activeUsers', 'sessions', 'engagedSessions', 'screenPageViews', 'userEngagementDuration'],
+                { limit: 100, orderBys: descending('sessions') }
+            )
         ];
         const responses = await Promise.all(requests.map((query) => analyticsData.runReport(query)));
-        const [summary, daily, pages, channels, devices, locations] = responses.map(([report]) => reportRows(report));
+        const [summary, daily, pages, channels, devices, locations, audience, locationDiagnostics] = responses.map(([report]) => reportRows(report));
         return {
             propertyId: GA_PROPERTY.replace('properties/', ''),
             month: request.data.month,
@@ -193,7 +200,9 @@ exports.relatorioGoogleAnalytics = onCall({
             pages,
             channels,
             devices,
-            locations
+            locations,
+            audience,
+            locationDiagnostics
         };
     } catch (error) {
         console.error('Google Analytics Data API:', error);

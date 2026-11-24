@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const classics = [
+  { name: 'Ludwig van Beethoven', years: '1770 — 1827', image: '/assets/cultura-arte/beethoven.jpeg', text: 'Compositor e pianista alemão, é uma das figuras mais reverenciadas da música ocidental. Sua obra atravessa a transição do período clássico para a era romântica e permanece entre as mais executadas do repertório mundial.' },
+  { name: 'Frédéric Chopin', years: '1810 — 1849', image: '/assets/cultura-arte/chopin.jpeg', text: 'Pianista e compositor polonês radicado na França, tornou-se uma das maiores referências da música para piano e uma das personalidades fundamentais do romantismo.' },
+  { name: 'Wolfgang Amadeus Mozart', years: '1756 — 1791', image: '/assets/cultura-arte/mozart.jpeg', text: 'Prolífico e influente, compôs mais de 800 obras em praticamente todos os gêneros de seu tempo. Sua música é celebrada pela beleza melódica, elegância formal e riqueza harmônica.' },
+] as const;
+---
+
+<BaseLayout
+  title="Cultura & Arte | Viajar Travel News"
+  description="Museus, centros culturais, música e grandes nomes da arte selecionados pela Viajar Travel News."
+  image="/assets/cultura-arte/louvre.webp"
+>
+  <section class="category-hero">
+    <div class="container-vtn hero-grid">
+      <div><p class="eyebrow">Vem com a gente</p><h1>Cultura <span>&amp;</span> Arte</h1></div>
+      <p>Lugares, movimentos e artistas que transformam a maneira como enxergamos o mundo.</p>
+    </div>
+  </section>
+
+  <article class="museum-lead container-vtn">
+    <div class="museum-image"><img src="/assets/cultura-arte/louvre.webp" alt="Pirâmide de vidro do Museu do Louvre, em Paris" /><span>Paris · França</span></div>
+    <div class="museum-copy">
+      <p class="kicker">Museus do mundo</p>
+      <h2>Louvre</h2>
+      <p class="standfirst">O maior museu de arte do mundo é também um monumento vivo da história de Paris.</p>
+      <p>Localizado na margem direita do rio Sena, o Museu do Louvre apresenta aproximadamente 38 mil objetos, da pré-história ao século XXI, distribuídos em mais de 72 mil metros quadrados de galerias.</p>
+      <p>O museu ocupa o antigo Palácio do Louvre, cuja origem remonta a uma fortaleza construída nos séculos XII e XIII. Transformado e ampliado ao longo de séculos, o edifício passou de residência real a um dos centros culturais mais visitados do planeta.</p>
+      <a href="https://www.louvre.fr/" target="_blank" rel="noopener">Conheça o Louvre <span aria-hidden="true">↗</span></a>
+    </div>
+  </article>
+
+  <section class="brazil-museums">
+    <div class="container-vtn">
+      <header class="section-heading"><div><p class="kicker">Arte no Brasil</p><h2>Entre natureza e cidade</h2></div><p>Do jardim-museu de Minas Gerais a um dos grandes polos culturais de Fortaleza.</p></header>
+      <div class="museum-pair">
+        <article>
+          <img src="/assets/cultura-arte/inhotim.jpeg" alt="Obra de arte e paisagem no Instituto Inhotim" loading="lazy" />
+          <div><p class="place">Brumadinho · Minas Gerais</p><h3>Instituto Inhotim</h3><p>Um dos mais importantes acervos de arte contemporânea do Brasil e um dos maiores museus a céu aberto do mundo. Em uma extensa paisagem de Mata Atlântica e cerrado, galerias, instalações e jardins botânicos formam uma experiência em que arte e natureza são inseparáveis.</p><a href="https://www.inhotim.org.br/" target="_blank" rel="noopener">Conheça mais <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article>
+          <img src="/assets/cultura-arte/dragao-do-mar.jpeg" alt="Centro Dragão do Mar de Arte e Cultura, em Fortaleza" loading="lazy" />
+          <div><p class="place">Fortaleza · Ceará</p><h3>Centro Dragão do Mar</h3><p>Instalado na Praia de Iracema, o Centro Dragão do Mar reúne museus, cinema, teatro, planetário e espaços para apresentações e exposições. A arquitetura conecta edifícios históricos e estruturas contemporâneas, transformando o conjunto em um ponto de encontro da cultura cearense.</p><a href="http://www.dragaodomar.org.br/" target="_blank" rel="noopener">Conheça mais <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contemporary">
+    <div class="container-vtn contemporary-grid">
+      <header><p class="kicker">Música contemporânea</p><h2>Sons que atravessam gerações</h2></header>
+      <article class="music-card light">
+        <img src="/assets/cultura-arte/american-music.png" alt="American Music Awards" loading="lazy" />
+        <div><p class="place">Premiação</p><h3>American Music Awards</h3><p>Criado em 1973, o American Music Awards celebra a música popular dos Estados Unidos. Desde 2006, seus vencedores são determinados pela votação do público e dos fãs.</p><a href="https://www.theamas.com/" target="_blank" rel="noopener">Site oficial <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="music-card dark">
+        <img src="/assets/cultura-arte/muse.webp" alt="Banda Muse" loading="lazy" />
+        <div><p class="place">Rock britânico</p><h3>Muse</h3><p>Formada em 1994, a banda reúne Matt Bellamy, Chris Wolstenholme e Dominic Howard. Seu repertório combina rock alternativo, eletrônica e influências clássicas, acompanhado por performances ao vivo de grande impacto.</p><a href="https://www.muse.mu/" target="_blank" rel="noopener">Site oficial <span aria-hidden="true">↗</span></a></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="classics">
+    <div class="container-vtn">
+      <header class="classics-heading"><p class="kicker">Grandes mestres</p><h2>Clássicos</h2><p>Três compositores que transformaram para sempre a história da música ocidental.</p></header>
+      <div class="classics-grid">
+        {classics.map(composer => <article><img src={composer.image} alt={composer.name} loading="lazy" /><div><p>{composer.years}</p><h3>{composer.name}</h3><span>{composer.text}</span></div></article>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="author-note">
+    <div class="container-vtn">
+      <img src="/assets/people/fatima-vianna.jpg" alt="Fátima Vianna" loading="lazy" />
+      <div class="author-copy"><p class="eyebrow">Curadoria e texto</p><h2>Fátima Vianna</h2><p>Jornalista e Chief Communication Officer</p></div>
+      <div class="author-socials" aria-label="Redes sociais da Viajar Travel News">
+        <a href="https://www.facebook.com/viajartravelnews/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4.5c-.52-.07-2.3-.23-4.42-.23C8.17 4.27 5.15 6.9 5.15 11.72V16H0v3.91h5.15V30h6.31V19.91h5.27l.84-3.91h-6.11v-3.89C11.46 10.98 11.77 8 14 8Z" transform="scale(.75)"/></svg></a>
+        <a href="https://www.instagram.com/viajartravelnews/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.63 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.69 21.3.27 16.95.07 15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 12 8a4 4 0 0 1 0 8Zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/></svg></a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .category-hero{padding:clamp(2.5rem,4.5vw,4rem) 0;background:#182229;color:#fff}.hero-grid{display:grid;grid-template-columns:1fr minmax(280px,.6fr);align-items:end;gap:clamp(3rem,8vw,8rem)}.category-hero .eyebrow{color:#a8d744}.category-hero h1{margin:.4rem 0 0;font-family:var(--font-display);font-size:clamp(3.5rem,7vw,6.3rem);font-weight:400;letter-spacing:-.05em;line-height:.92}.category-hero h1 span{color:var(--color-vtn-orange)}.hero-grid>p{max-width:430px;margin:0;border-left:2px solid var(--color-vtn-orange);padding-left:1.4rem;color:#d4dadd;font-family:var(--font-display);font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.65}.kicker{margin:0;color:var(--color-vtn-orange);font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.museum-lead{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(3rem,7vw,7rem);align-items:center;padding-top:clamp(4rem,8vw,7rem);padding-bottom:clamp(4rem,8vw,7rem)}.museum-image{position:relative}.museum-image img{display:block;width:100%;height:650px;object-fit:cover}.museum-image span{position:absolute;right:1.3rem;bottom:1.3rem;padding:.6rem .8rem;background:#182229;color:#fff;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.museum-copy h2,.section-heading h2,.contemporary h2,.classics-heading h2{margin:.6rem 0 1.25rem;font-family:var(--font-display);font-size:clamp(2.7rem,5vw,4.8rem);font-weight:400;letter-spacing:-.04em;line-height:1}.standfirst{color:#3e484d;font-family:var(--font-display);font-size:clamp(1.1rem,1.7vw,1.35rem);line-height:1.6}.museum-copy>p:not(.kicker):not(.standfirst),.museum-pair article p,.music-card p{color:#636c71;font-size:.93rem;line-height:1.8}.museum-copy a,.museum-pair a,.music-card a{display:inline-flex;gap:.7rem;margin-top:1rem;border-bottom:1px solid currentColor;padding-bottom:.25rem;color:var(--color-vtn-orange);font-size:.72rem;font-weight:800;letter-spacing:.09em;text-decoration:none;text-transform:uppercase}.brazil-museums{padding:clamp(4rem,8vw,7rem) 0;background:#f5f2eb}.section-heading{display:grid;grid-template-columns:1.2fr .8fr;align-items:end;gap:3rem;margin-bottom:3rem}.section-heading>p{margin:0;color:#667075;line-height:1.7}.museum-pair{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.museum-pair article{background:#fff}.museum-pair img{display:block;width:100%;height:390px;object-fit:cover}.museum-pair article>div{padding:clamp(1.5rem,4vw,3rem)}.place{margin:0!important;color:#7aa51f!important;font-size:.64rem!important;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.museum-pair h3,.music-card h3,.classics-grid h3{margin:.55rem 0 1rem;font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.7rem);font-weight:400;line-height:1.05}.contemporary{padding:clamp(4rem,8vw,7rem) 0;background:#fff}.contemporary-grid{display:grid;grid-template-columns:.72fr 1fr 1fr;gap:1rem;align-items:stretch}.contemporary header{display:flex;justify-content:center;flex-direction:column;padding-right:2rem}.music-card{display:flex;flex-direction:column}.music-card img{width:100%;height:270px;padding:2.5rem;object-fit:contain}.music-card>div{flex:1;padding:2rem}.music-card.light{background:#f4f0e8}.music-card.dark{background:#202a30;color:#fff}.music-card.dark p{color:#d2d8da}.music-card.dark .place{color:#c8e965!important}.classics{padding:clamp(4rem,8vw,7rem) 0;background:#202a30;color:#fff}.classics-heading{display:grid;grid-template-columns:.45fr .7fr 1fr;align-items:end;gap:2rem;margin-bottom:3rem}.classics-heading h2{margin:0}.classics-heading>p:last-child{margin:0;color:#ccd3d5;line-height:1.7}.classics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.classics-grid article{overflow:hidden;background:#fff;color:#273138}.classics-grid img{display:block;width:100%;height:260px;object-fit:cover;filter:grayscale(1);transition:filter .3s ease}.classics-grid article:hover img{filter:grayscale(0)}.classics-grid article>div{padding:1.6rem}.classics-grid article p{margin:0;color:var(--color-vtn-orange);font-size:.65rem;font-weight:800;letter-spacing:.12em}.classics-grid h3{font-size:1.75rem}.classics-grid span{display:block;color:#667075;font-size:.85rem;line-height:1.7}.author-note{padding:3rem 0;background:#fff}.author-note .container-vtn{display:flex;align-items:center;gap:1.5rem}.author-note>div>img{width:82px;height:82px;border-radius:50%;object-fit:cover;object-position:top}.author-copy h2{margin:.25rem 0;font-family:var(--font-display);font-size:1.65rem;font-weight:400}.author-copy p:last-child{margin:0;color:#6a7377;font-size:.82rem}.author-socials{display:flex;gap:.65rem;margin-left:auto}.author-socials a{display:grid;width:40px;height:40px;border:1px solid #20282d26;color:#3f484d;place-items:center;transition:border-color .2s ease,color .2s ease,transform .2s ease}.author-socials a:hover{border-color:var(--color-vtn-orange);color:var(--color-vtn-orange);transform:translateY(-2px)}.author-socials svg{width:17px;height:17px;fill:currentColor}@media(max-width:900px){.museum-lead,.contemporary-grid{grid-template-columns:1fr}.museum-image img{height:500px}.contemporary header{padding:0 0 2rem}.classics-heading{grid-template-columns:1fr}.classics-grid{grid-template-columns:1fr 1fr}}@media(max-width:650px){.hero-grid,.section-heading,.museum-pair,.classics-grid{grid-template-columns:1fr}.category-hero h1{font-size:3.5rem}.museum-image img{height:380px}.music-card img{height:220px}.author-note .container-vtn{align-items:flex-start;flex-wrap:wrap}.author-socials{width:100%;margin:0 0 0 97px}}
+</style>

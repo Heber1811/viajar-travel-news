@@ -12,9 +12,10 @@ import {
     getDocs,
     getFirestore
 } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
-import { setupGoogleAnalyticsDashboard } from './google-analytics-admin.js?v=20261005-1';
+import { setupGoogleAnalyticsDashboard } from './google-analytics-admin.js?v=20261029-6';
 import { metricsConfig } from './metrics-config.js';
 import { friendlyPageName } from './page-names.js';
+import { isInternalTraffic, setInternalTraffic } from './traffic-classification.js';
 
 const app = initializeApp(metricsConfig.firebase);
 const auth = getAuth(app);
@@ -40,6 +41,30 @@ let inactivityTimer;
 let inactivityLogout = false;
 const INACTIVITY_LIMIT = 30 * 60 * 1000;
 const ACTIVITY_EVENTS = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+const internalDeviceButton = document.querySelector('#internalDeviceButton');
+const internalDeviceStatus = document.querySelector('#internalDeviceStatus');
+
+function renderInternalDeviceStatus() {
+    const internal = isInternalTraffic();
+    internalDeviceButton.textContent = internal
+        ? 'Voltar a contabilizar este navegador'
+        : 'Não contabilizar este navegador';
+    internalDeviceButton.setAttribute('aria-pressed', String(internal));
+    internalDeviceStatus.textContent = internal
+        ? 'Este navegador está marcado como acesso interno e não entra nas novas métricas.'
+        : 'Este navegador ainda entra nas métricas do site.';
+}
+
+internalDeviceButton.addEventListener('click', () => {
+    const enabled = !isInternalTraffic();
+    if (!setInternalTraffic(enabled)) {
+        internalDeviceStatus.textContent = 'Não foi possível salvar a preferência neste navegador.';
+        return;
+    }
+    renderInternalDeviceStatus();
+});
+
+renderInternalDeviceStatus();
 
 togglePassword.addEventListener('click', () => {
     const showPassword = passwordInput.type === 'password';

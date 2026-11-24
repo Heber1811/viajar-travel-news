@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Curiango | Ave-símbolo da Viajar Travel News"
+  description="Conheça o curiango, Nyctidromus albicollis, ave noturna cercada de histórias e símbolo da Viajar Travel News."
+  image="/assets/curiango/curiango.jpg"
+>
+  <section class="bird-hero">
+    <img src="/assets/curiango/curiango.jpg" alt="Curiango pousado em um tronco" />
+    <div class="hero-shade"></div>
+    <div class="container-vtn hero-content">
+      <p class="eyebrow">Ave-símbolo da Viajar Travel News</p>
+      <h1>Curiango</h1>
+      <p class="scientific"><em>Nyctidromus albicollis</em></p>
+      <p class="hero-line">Mãe da Lua, guardião das horas em que o dia encontra a noite.</p>
+    </div>
+    <div class="sound-card">
+      <span class="sound-icon" aria-hidden="true">♪</span>
+      <div><strong>Ouça o canto</strong><small>Registro sonoro do curiango</small></div>
+      <audio controls preload="metadata"><source src="/assets/curiango/canto-curiango.mp3" type="audio/mpeg" />Seu navegador não suporta áudio.</audio>
+    </div>
+  </section>
+
+  <article class="introduction">
+    <div class="container-vtn intro-grid">
+      <header><p class="kicker">Entre a luz e a sombra</p><h2>Uma presença nas horas mais mágicas do dia.</h2></header>
+      <div class="intro-copy">
+        <p class="standfirst">Ele vive nas bordas das matas e costuma ser percebido ao amanhecer e ao anoitecer — momentos que ajudam a explicar sua figura mística.</p>
+        <div class="columns"><p>Conhecido também como Mãe da Lua, seu canto mistura a calmaria dos dias quentes de verão com uma misteriosa nostalgia das noites frias de inverno.</p><p>O curiango-comum habita capoeiras abertas, cerrados e capões. Ave de hábitos noturnos, passa despercebida durante o dia graças à plumagem que se confunde com folhas, galhos e o chão.</p></div>
+      </div>
+    </div>
+  </article>
+
+  <section class="symbolism">
+    <div class="container-vtn symbolism-grid">
+      <div class="moon-mark" aria-hidden="true"><span></span><b>Lua</b><small>intuição · mistério · liberdade</small></div>
+      <div class="symbolism-copy">
+        <p class="kicker">Sabedoria ancestral</p>
+        <h2>Mãe da Lua</h2>
+        <p>Símbolo de conexão com o divino e de sabedoria ancestral, o curiango aparece em narrativas ligadas à intuição, à renovação espiritual e à liberdade. Sua presença pode representar a importância de ouvir a própria percepção e de se libertar de crenças que limitam a jornada.</p>
+        <p>Por passar a noite junto aos caminhos, com olhos que refletem a luz, recebeu em alguns lugares o nome de <strong>mede-léguas</strong>. A expressão popular “é dizendo e bacurau escrevendo” é usada para indicar uma verdade sem sombra de dúvida.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="names">
+    <div class="container-vtn">
+      <header class="names-heading"><p class="kicker">Brasil afora</p><h2>Uma ave, muitos nomes.</h2><p>O curiango pode ser encontrado em diferentes regiões do Brasil e da América do Sul, especialmente em paisagens abertas e áreas rurais.</p></header>
+      <div class="name-cloud" aria-label="Nomes populares do curiango"><span>Mede-léguas</span><span>Ibijau</span><span>Acurana</span><span>A-ku-kú</span><span>Coriavo</span><span>Engole-vento</span><span>João-corta-pau</span><span>Mariangu</span><span>Amanhã-eu-vou</span><span>Ju-jau</span></div>
+    </div>
+  </section>
+
+  <section class="legend">
+    <div class="container-vtn legend-grid">
+      <div><p class="kicker">Histórias que atravessam gerações</p><h2>A lenda do “amanhã-eu-vou”</h2></div>
+      <div class="legend-story"><p>Conta uma narrativa popular de Minas Gerais que uma moça, assustada por abelhas, saiu correndo. Na confusão, o curiango teria arrancado seu véu. O que viu o deixou tão aterrorizado que passou a fugir.</p><p>A moça gritava: “Curiango!”. E ele respondia: “amanhã eu vou, amanhã eu vou!”. Dizem que continua correndo até hoje — e que seu canto ainda guarda essa resposta.</p><small>Relato de tradição oral, apresentado como patrimônio cultural e não como descrição científica.</small></div>
+    </div>
+  </section>
+
+  <section class="beliefs">
+    <div class="container-vtn beliefs-grid">
+      <div class="belief-number">01</div>
+      <div><p class="kicker">Crenças populares</p><h2>Camuflado nas folhas, presente no imaginário.</h2></div>
+      <p>Há histórias antigas que atribuem às penas do curiango poderes de proteção e cura. Essas crenças pertencem ao folclore e à memória oral de diferentes comunidades. Na natureza, a ave deve ser apenas observada e respeitada: não se deve capturá-la, persegui-la ou retirar suas penas.</p>
+    </div>
+  </section>
+
+  <section class="vtn-symbol"><div class="container-vtn"><p class="kicker">Viajar Travel News</p><h2>Um símbolo para quem viaja atento aos sinais do caminho.</h2><p>O curiango representa o mistério do desconhecido, a liberdade da jornada e a clareza que nasce quando aprendemos a observar.</p></div></section>
+</BaseLayout>
+
+<style>
+  .bird-hero{position:relative;min-height:calc(100vh - 86px);overflow:hidden;background:#10191f;color:#fff}.bird-hero>img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 42%}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,#0b141bd9 0%,#0b141b80 45%,#0b141b22 72%),linear-gradient(0deg,#0b141b99,transparent 45%)}.hero-content{position:relative;z-index:1;display:flex;min-height:calc(100vh - 86px);justify-content:center;flex-direction:column;padding-top:5rem;padding-bottom:8rem}.bird-hero .eyebrow{color:#c5e553}.bird-hero h1{max-width:760px;margin:.6rem 0 0;font-family:var(--font-display);font-size:clamp(4.5rem,10vw,9rem);font-weight:400;letter-spacing:-.06em;line-height:.85}.scientific{margin:1.2rem 0 0;font-family:var(--font-display);font-size:1.25rem}.hero-line{max-width:580px;margin:1.5rem 0 0;border-left:2px solid var(--color-vtn-orange);padding-left:1.2rem;color:#d5dcde;font-family:var(--font-display);font-size:clamp(1.1rem,2vw,1.45rem);line-height:1.6}.sound-card{position:absolute;z-index:2;right:max(2rem,calc((100% - 1180px)/2));bottom:2rem;display:grid;grid-template-columns:auto auto minmax(250px,360px);align-items:center;gap:1rem;padding:1rem 1.2rem;background:#fffffff0;color:#202b31;box-shadow:0 18px 45px #0004;backdrop-filter:blur(12px)}.sound-icon{display:grid;width:40px;height:40px;border-radius:50%;background:var(--color-vtn-orange);color:#fff;font-size:1.2rem;place-items:center}.sound-card strong,.sound-card small{display:block}.sound-card strong{font-family:var(--font-display);font-weight:400}.sound-card small{margin-top:.2rem;color:#70797d;font-size:.66rem}.sound-card audio{width:100%;height:36px}.kicker{margin:0;color:var(--color-vtn-orange);font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.introduction{padding:clamp(4rem,8vw,7rem) 0;background:#fff}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(3rem,8vw,8rem)}.intro-grid h2,.symbolism h2,.names h2,.legend h2,.beliefs h2,.vtn-symbol h2{margin:.6rem 0 0;font-family:var(--font-display);font-size:clamp(2.7rem,5vw,4.8rem);font-weight:400;letter-spacing:-.04em;line-height:1}.standfirst{margin-top:0;color:#384349;font-family:var(--font-display);font-size:clamp(1.1rem,1.7vw,1.35rem);line-height:1.6}.columns{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.columns p,.symbolism-copy>p,.legend-story p,.beliefs-grid>p,.vtn-symbol>div>p:last-child{color:#626c70;font-size:.94rem;line-height:1.8}.symbolism{padding:clamp(4rem,8vw,7rem) 0;background:#172229;color:#fff}.symbolism-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(3rem,8vw,8rem);align-items:center}.moon-mark{position:relative;display:grid;min-height:480px;align-content:center;justify-items:center;overflow:hidden;background:#0d171d;text-align:center}.moon-mark span{position:absolute;top:50%;left:50%;width:290px;height:290px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#dbe3ed 45%,#718198);box-shadow:0 0 70px #cbd8eb45;transform:translate(-50%,-58%)}.moon-mark b,.moon-mark small{position:relative;z-index:1}.moon-mark b{margin-top:12rem;font-family:var(--font-display);font-size:3.2rem;font-weight:400}.moon-mark small{color:#bdc8cd;letter-spacing:.09em}.symbolism .kicker{color:#c5e553}.symbolism-copy>p{color:#d1d8da}.names{padding:clamp(4rem,8vw,7rem) 0;background:#f3f0e8}.names-heading{display:grid;grid-template-columns:.35fr 1fr .75fr;gap:3rem;align-items:end;margin-bottom:3rem}.names-heading h2{margin:0}.names-heading>p:last-child{margin:0;color:#657075;line-height:1.7}.name-cloud{display:flex;flex-wrap:wrap;gap:.7rem}.name-cloud span{border:1px solid #26313825;padding:.8rem 1rem;background:#fff;color:#334047;font-family:var(--font-display);font-size:1rem}.legend{padding:clamp(4rem,8vw,7rem) 0;background:#fff}.legend-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(3rem,8vw,8rem)}.legend-story{border-left:2px solid var(--color-vtn-green);padding-left:2rem}.legend-story p:first-child{margin-top:0}.legend-story small{display:block;margin-top:1.5rem;color:#7a8386;font-size:.7rem;line-height:1.6}.beliefs{padding:clamp(3rem,6vw,5rem) 0;background:#e8ede3}.beliefs-grid{display:grid;grid-template-columns:.25fr .8fr 1fr;gap:3rem;align-items:start}.belief-number{color:#84a92d;font-family:var(--font-display);font-size:4rem;line-height:1}.beliefs h2{font-size:clamp(2.2rem,4vw,3.6rem)}.beliefs-grid>p{margin:0}.vtn-symbol{padding:clamp(5rem,10vw,9rem) 0;background:#111b21;color:#fff;text-align:center}.vtn-symbol>div{display:grid;justify-items:center}.vtn-symbol .kicker{color:#c5e553}.vtn-symbol h2{max-width:900px}.vtn-symbol>div>p:last-child{max-width:670px;margin:1.5rem 0 0;color:#cfd7da;font-family:var(--font-display);font-size:1.1rem}.author-note{padding:3rem 0;background:#fff}@media(max-width:900px){.sound-card{right:1rem;left:1rem;grid-template-columns:auto 1fr}.sound-card audio{grid-column:1/-1}.intro-grid,.symbolism-grid,.legend-grid,.beliefs-grid{grid-template-columns:1fr}.names-heading{grid-template-columns:1fr}.moon-mark{min-height:430px}}@media(max-width:650px){.bird-hero,.hero-content{min-height:720px}.bird-hero>img{object-position:62% center}.hero-shade{background:linear-gradient(0deg,#0b141be8 10%,#0b141b72 80%)}.hero-content{justify-content:flex-start;padding-top:5rem}.bird-hero h1{font-size:4.7rem}.columns{grid-template-columns:1fr}.sound-card{bottom:1rem}.belief-number{font-size:3rem}}
+  .intro-copy .columns{display:block;max-width:720px}
+  .intro-copy .columns p{margin:0}
+  .intro-copy .columns p+p{margin-top:1rem}
+</style>

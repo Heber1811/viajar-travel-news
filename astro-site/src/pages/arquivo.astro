@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { archiveEditions } from '../data/archive';
+---
+
+<BaseLayout
+  title="Arquivo de matérias | Viajar Travel News"
+  description="Todas as edições e matérias publicadas pela Viajar Travel News."
+>
+  <section class="archive-hero">
+    <div class="container-vtn hero-grid">
+      <div>
+        <p class="eyebrow">Arquivo VTN</p>
+        <h1>Todas as<br />matérias</h1>
+      </div>
+      <p>Histórias, destinos e experiências reunidos edição por edição.</p>
+    </div>
+  </section>
+
+  <nav class="edition-index" aria-label="Ir para uma edição">
+    <div class="container-vtn edition-index-inner">
+      <span>Edições</span>
+      <div>
+        {archiveEditions.map((edition) => <a href={`#edicao-${edition.number}`}>{edition.number}</a>)}
+      </div>
+    </div>
+  </nav>
+
+  <div class="archive-list">
+    {archiveEditions.map((edition, editionIndex) => (
+      <section class:list={['edition', { alternate: editionIndex % 2 === 1 }]} id={`edicao-${edition.number}`}>
+        <div class="container-vtn">
+          <header class="edition-heading">
+            <div>
+              <p class="edition-badge">Edição {edition.number}</p>
+              <h2>{edition.theme}</h2>
+            </div>
+            {edition.period && <p>{edition.period}</p>}
+          </header>
+
+          <div class="story-grid">
+            {edition.cards.map((card) => (
+              <article class="story-card">
+                <a href={card.href} aria-label={`${card.title} — Edição ${edition.number}`}>
+                  <img src={card.image} alt={card.alt} loading="lazy" width="900" height="1125" />
+                  <div class="card-copy">
+                    <h3>{card.title}</h3>
+                    <span class="read-more">Leia mais <b aria-hidden="true">→</b></span>
+                  </div>
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .archive-hero{padding:clamp(3.5rem,7vw,6rem) 0;background:#182229;color:#fff}.hero-grid{display:grid;grid-template-columns:1fr minmax(280px,.55fr);align-items:end;gap:clamp(3rem,8vw,8rem)}.archive-hero .eyebrow{color:#a8d744}.archive-hero h1{margin:.5rem 0 0;font-family:var(--font-display);font-size:clamp(3.8rem,8vw,7.2rem);font-weight:400;letter-spacing:-.055em;line-height:.88}.hero-grid>p{max-width:430px;margin:0;border-left:2px solid var(--color-vtn-orange);padding-left:1.4rem;color:#d4dadd;font-family:var(--font-display);font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.65}
+  .edition-index{position:sticky;top:86px;z-index:30;border-bottom:1px solid #20282d12;background:#fffffff4;backdrop-filter:blur(16px)}.edition-index-inner{display:flex;min-height:66px;align-items:center;gap:1.4rem}.edition-index span{flex:none;color:var(--color-vtn-orange);font-size:.67rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.edition-index-inner>div{display:flex;overflow-x:auto;gap:.28rem;padding:.65rem 0;scrollbar-width:thin}.edition-index a{display:grid;flex:0 0 32px;height:32px;place-items:center;border:1px solid #20282d18;color:#596267;font-size:.72rem;font-weight:700;text-decoration:none;transition:border-color .2s,background-color .2s,color .2s}.edition-index a:hover,.edition-index a:focus-visible{border-color:var(--color-vtn-orange);background:var(--color-vtn-orange);color:#fff}
+  .edition{scroll-margin-top:152px;padding:clamp(4rem,7vw,6.5rem) 0;background:#fff}.edition.alternate{background:#f7f5ef}.edition-heading{display:flex;align-items:end;justify-content:space-between;gap:2rem;margin-bottom:2.5rem}.edition-badge{display:inline-flex;margin:0 0 .8rem;padding:.45rem .65rem;background:var(--color-vtn-orange);color:#fff;font-size:.65rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.edition-heading h2{max-width:740px;margin:0;font-family:var(--font-display);font-size:clamp(1.9rem,3vw,2.85rem);font-weight:400;letter-spacing:-.025em;line-height:1.08}.edition-heading>p{max-width:230px;margin:0;color:#778085;font-size:.73rem;line-height:1.5;text-align:right;text-transform:uppercase}
+  .story-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.75rem}.story-card{min-width:0}.story-card>a{position:relative;display:block;height:380px;overflow:hidden;background:#222c32;color:#fff;text-decoration:none}.story-card>a:after{position:absolute;inset:0;background:linear-gradient(0deg,#111b22ed 0%,#111b2270 42%,transparent 72%);content:''}.story-card img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}.story-card:hover img{transform:scale(1.045)}.card-copy{position:absolute;z-index:2;right:1.1rem;bottom:1.2rem;left:1.1rem}.card-copy h3{display:-webkit-box;min-height:3.75em;margin:0 0 .85rem;overflow:hidden;font-family:var(--font-display);font-size:clamp(.92rem,1.05vw,1.05rem);font-weight:400;line-height:1.25;letter-spacing:.005em;-webkit-box-orient:vertical;-webkit-line-clamp:3}.read-more{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #ffffff45;padding-top:.75rem;font-size:.6rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.read-more b{color:#c8e965;font-size:1rem;transition:transform .2s}.story-card:hover .read-more b{transform:translateX(4px)}
+  @media(max-width:1100px){.story-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.story-card>a{height:400px}}
+  @media(max-width:760px){.hero-grid{grid-template-columns:1fr}.edition-index{top:86px}.edition-index-inner{align-items:flex-start;flex-direction:column;gap:.25rem;padding-top:.65rem}.edition-index-inner>div{width:100%}.edition-heading{align-items:flex-start;flex-direction:column}.edition-heading>p{text-align:left}.story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.story-card>a{height:360px}}
+  @media(max-width:500px){.archive-hero h1{font-size:3.9rem}.story-grid{grid-template-columns:1fr}.story-card>a{height:430px}.card-copy h3{min-height:0;font-size:1.16rem}}
+</style>

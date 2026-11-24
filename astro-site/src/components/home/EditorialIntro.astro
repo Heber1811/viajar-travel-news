@@ -1,0 +1,64 @@
+<section id="sobre-nos" class="editorial">
+  <div class="container-vtn intro-grid">
+    <article class="paper green">
+      <p class="eyebrow">Nossa essência</p><h2>O que é a <strong>VTN</strong></h2>
+      <p>A Viajar Travel News (VTN) não é agência nem operadora de turismo. Somos um portal especializado em curadoria de viagens, para quem busca experiências autênticas e fora do comum.</p>
+      <p>Aqui, nós não listamos tudo, mas o que realmente importa. Nosso foco é descobrir e compartilhar hotéis escolhidos a dedo, que se destacam pelo charme, bom gosto e exclusividade.</p>
+      <p>Privilegiamos a boa gastronomia, atrativos únicos e o contato genuíno com a natureza, defendendo o respeito profundo ao meio ambiente e à sustentabilidade.</p>
+      <p>Em um mundo saturado de conteúdos vazios, seguimos o caminho inverso, com um jornalismo humano e autoral. Se você procura o extraordinário e valoriza o turismo com propósito, seu lugar é com a gente.</p>
+    </article>
+    <article class="paper orange">
+      <p class="eyebrow">Clareza e descoberta</p><h2>A Lua Cheia e o Curiango</h2>
+      <p>A lua cheia transborda clareza — intelectual e interpretativa. Assim como ela surge no breu e revela a paisagem, nas palavras representa o momento da compreensão total e da preservação do conhecimento.</p>
+      <p>Ela clareia a tradição e os textos passados, para que possamos compreendê-los no presente. É quando as peças se encaixam e o leitor finalmente enxerga a intenção.</p>
+      <p>O Curiango, ave-símbolo da Viajar Travel News, representa o mistério do desconhecido e a liberdade da jornada. Diziam os antigos que seu canto, sob o brilho da Lua Cheia, abria caminhos e revelava o destino…</p>
+      <button class="audio" type="button" data-audio-button aria-label="Ouvir o canto do Curiango" aria-pressed="false">
+        <span class="audio-cover"><img src="/assets/about/curiango-bacurau-comum.webp" alt="" /></span>
+        <span class="audio-toggle" aria-hidden="true" data-audio-symbol>▶</span>
+        <span class="audio-copy"><small>Som da natureza</small><strong>Canto do Curiango</strong><span data-audio-label>Reproduzir áudio</span></span>
+        <span class="audio-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </button>
+      <p class="photo-credit">Foto: <a href="https://commons.wikimedia.org/wiki/File:Bacurau-comum.jpg" target="_blank" rel="noopener noreferrer">Jair Moreira / Wikimedia Commons</a> · CC BY-SA 4.0</p>
+      <audio data-curiango preload="metadata" src="/assets/about/curiango.mp3"></audio>
+    </article>
+  </div>
+
+  <article class="container-vtn edition">
+    <h2 class="edition-title">Nesta edição…</h2>
+    <span class="kicker">Mar ou montanha?</span>
+    <h3 class="edition-headline">Cinco hotéis para curtir o 12 de outubro em grande estilo</h3>
+    <div class="edition-grid">
+      <div class="edition-intro">
+        <p>O feriado nacional de 12 de outubro cai estrategicamente em uma segunda-feira, cenário perfeito para aquela escapada prolongada que todo apaixonado por viagens precisa. É a pausa ideal no segundo semestre para arrumar as malas, mudar de ares e quebrar a rotina, seja para renovar as energias sentindo a brisa e o som das ondas do mar, seja para buscar o aconchego e o clima fresco das altitudes.</p>
+        <p>Pensando nisso, selecionamos cinco hotéis incríveis, onde já me hospedei, e considero lugares perfeitos para você curtir esses dias de tranquilidade – sem abrir mão de segurança, bom gosto, conforto e beleza.</p>
+        <p class="edition-question"><strong>Capital, interior, praia, montanha, elegante ou rústico... qual desses estilos você prefere?</strong> <span aria-hidden="true">→</span></p>
+      </div>
+      <div class="edition-highlights">
+        <p><strong>Requinte cosmopolita (Gran Marquise Hotel):</strong> O belíssimo rooftop a céu aberto deste 5 Estrelas é perfeito para um drink ao entardecer, diante de um mar que se funde ao horizonte, onde as famosas velas do Mucuripe encontram as águas do Atlântico – Fortaleza, CE.</p>
+        <p><strong>Rústico-chique (Toca da Coruja):</strong> Uma reserva particular da Mata Atlântica, uma imersão romântica entre bangalôs rústicos, piscinas e jardins tropicais. Na beleza intocada da Praia das Minas, o restaurante Mar by Toca é um capítulo à parte – Pipa, RN.</p>
+        <p><strong>Charme austríaco (Villa Náutica Boutique Hotel):</strong> No luxo silencioso e intimista, o design ao ar livre permite mergulhar na piscina e curtir o visual de um céu indescritível, diretamente de dentro da água – Jericoacoara, CE.</p>
+        <p><strong>Leveza (Pousada Oasis):</strong> Este é o próprio oásis à beira-mar, que se debruça sobre as águas mansas da península, e onde corpo e mente se confundem com a placidez do cenário – Galinhos, RN.</p>
+        <p><strong>Elegância sutil (Pousada Rabo do Lagarto):</strong> Este refúgio nas montanhas capixabas tem um magnetismo indescritível, uma pintura viva, emoldurada pela imponente Pedra Azul – Domingos Martins, ES.</p>
+        <p class="edition-closing">E então?...</p>
+      </div>
+    </div>
+    <a class="signature" href="/pessoas-vtn.html">Fátima Vasconcelos Nunes · Jornalista</a>
+  </article>
+</section>
+
+<script>
+  const audioButton = document.querySelector<HTMLButtonElement>('[data-audio-button]');
+  const audio = document.querySelector<HTMLAudioElement>('[data-curiango]');
+  const updateAudio = (playing: boolean) => {
+    audioButton?.setAttribute('aria-pressed', String(playing));
+    audioButton?.setAttribute('aria-label', playing ? 'Pausar o canto do Curiango' : 'Ouvir o canto do Curiango');
+    const label = document.querySelector('[data-audio-label]'); const symbol = document.querySelector('[data-audio-symbol]');
+    if (label) label.textContent = playing ? 'Pausar áudio' : 'Reproduzir áudio'; if (symbol) symbol.textContent = playing ? 'Ⅱ' : '▶';
+  };
+  audioButton?.addEventListener('click', async () => { if (!audio) return; if (audio.paused) await audio.play(); else audio.pause(); });
+  audio?.addEventListener('play', () => updateAudio(true)); audio?.addEventListener('pause', () => updateAudio(false));
+</script>
+
+<style>
+  .editorial{padding:clamp(4rem,8vw,7rem) 0;background:#f8f6f0}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}.paper{position:relative;overflow:hidden;padding:clamp(1.8rem,4vw,3.5rem);border-top:4px solid;background:#fff;box-shadow:0 18px 60px #28323a0d}.paper>*{position:relative;z-index:1}.green{border-color:var(--color-vtn-green)}.green::after{position:absolute;z-index:0;right:-4rem;bottom:-5rem;width:min(68%,380px);aspect-ratio:1;background:url('/assets/brand/logo.png') center/contain no-repeat;content:'';opacity:.065;transform:rotate(-7deg);pointer-events:none}.orange{border-color:var(--color-vtn-orange)}h2{margin:.5rem 0 1.4rem;font-family:var(--font-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.05}h2 strong{color:var(--color-vtn-orange);font-weight:400}.paper>p:not(.eyebrow):not(.photo-credit),.edition p{color:#5d666c;line-height:1.78}.paper>p:not(.eyebrow){margin:0}.paper>p:not(.eyebrow):not(.photo-credit)+p:not(.eyebrow):not(.photo-credit){margin-top:1.05rem}.audio{display:grid;width:min(100%,390px);grid-template-columns:62px 44px minmax(0,1fr) auto;align-items:center;gap:.75rem;margin-top:2rem;border:1px solid #25313818;border-radius:18px;padding:.65rem .85rem .65rem .65rem;background:linear-gradient(135deg,#fff,#f5f2e9);box-shadow:0 12px 30px #25313814;color:var(--color-vtn-ink);cursor:pointer;text-align:left;transition:box-shadow .2s,transform .2s}.audio:hover{box-shadow:0 16px 34px #25313822;transform:translateY(-2px)}.audio-cover{width:62px;height:62px;overflow:hidden;border-radius:13px}.audio-cover img{width:100%;height:100%;object-fit:cover;object-position:35% center}.audio-toggle{display:grid;width:42px;height:42px;place-items:center;border-radius:50%;background:var(--color-vtn-orange);box-shadow:0 6px 16px #f27b2240;color:#fff;font-size:.85rem}.audio-copy{display:grid;min-width:0}.audio-copy small{color:#82898c;font-size:.61rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.audio-copy strong{margin:.18rem 0;color:var(--color-vtn-ink);font-family:var(--font-display);font-size:1rem;font-weight:400}.audio-copy>span{color:#6e767a;font-size:.72rem}.audio-wave{display:flex;height:28px;align-items:center;gap:3px}.audio-wave i{width:2px;height:8px;border-radius:2px;background:var(--color-vtn-green)}.audio-wave i:nth-child(2),.audio-wave i:nth-child(4){height:17px}.audio-wave i:nth-child(3){height:25px}.audio[aria-pressed="true"] .audio-wave i{animation:pulse-wave .65s ease-in-out infinite alternate}.audio[aria-pressed="true"] .audio-wave i:nth-child(2){animation-delay:.15s}.audio[aria-pressed="true"] .audio-wave i:nth-child(3){animation-delay:.3s}.photo-credit{width:min(100%,390px);margin:.55rem 0 0!important;color:#8a9092;font-size:.61rem;line-height:1.4;text-align:right}.photo-credit a{color:inherit;text-underline-offset:2px}@keyframes pulse-wave{to{height:5px}}.edition{margin-top:1.5rem;padding:clamp(2rem,5vw,4rem);background:#f1ece0}.edition-title{margin:0;color:var(--color-vtn-orange);font-size:clamp(2.5rem,5vw,4rem);letter-spacing:-.035em}.kicker{display:block;margin-top:.35rem;color:#806e46;font-family:var(--font-display);font-size:1.25rem}.edition-headline{max-width:920px;margin:.75rem 0 2.4rem;color:var(--color-vtn-ink);font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,3rem);font-weight:400;line-height:1.08;letter-spacing:-.025em}.edition-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(2rem,6vw,6rem)}.edition-intro p,.edition-highlights p{margin:0}.edition-intro p+p{margin-top:1.25rem}.edition-question{padding-top:.25rem}.edition-question span{margin-left:.4rem;color:var(--color-vtn-orange);font-size:1.25rem}.edition-highlights p{padding:0 0 1rem;border-bottom:1px solid #8b7a5425}.edition-highlights p+p{margin-top:1rem}.edition-highlights strong{color:var(--color-vtn-orange);text-transform:uppercase}.edition-highlights .edition-closing{margin-top:1.6rem;border:0;padding:0;color:#806e46;font-family:var(--font-display);font-size:1.6rem;line-height:1}.signature{display:block;margin-top:.8rem;color:#766441;font-family:var(--font-display);text-align:right;text-decoration:none}@media(prefers-reduced-motion:reduce){.audio[aria-pressed="true"] .audio-wave i{animation:none}}@media(max-width:800px){.intro-grid,.edition-grid{grid-template-columns:1fr}}@media(max-width:430px){.audio{grid-template-columns:56px 40px minmax(0,1fr)}.audio-cover{width:56px;height:56px}.audio-wave{display:none}}
+</style>

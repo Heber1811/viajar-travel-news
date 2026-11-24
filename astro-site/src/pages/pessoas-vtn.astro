@@ -1,0 +1,175 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const team = [
+  {
+    name: 'Ricardo Pinheiro',
+    role: 'Presidente Executivo e Diretor Financeiro',
+    image: '/assets/people/ricardo-pinheiro.jpg',
+    bio: [
+      'Formado em Ciências Econômicas pelo Centro Universitário de Brasília (UniCEUB), possui ampla experiência em análise de cenários econômicos, planejamento de metas e custos, organização, liderança de equipes, negociação e controle de recursos.',
+      'Foi Diretor Executivo do Jornal Rural do Sul e Coordenador de Projetos da Editora Mares do Sul, em Florianópolis. Também atuou junto ao Banco Mundial (BIRD) e ao Banco Interamericano de Desenvolvimento (BID), em Washington e Nova York, na obtenção de financiamento para projetos de irrigação no Nordeste brasileiro.',
+    ],
+    atVtn: 'Na VTN, responde pela direção financeira, administração e planejamento estratégico. Diagnostica situações complexas e desenvolve soluções baseadas em análises de cenário, traduzidas de forma acessível ao grande público.',
+  },
+  {
+    name: 'Fátima Vianna',
+    role: 'Diretora Editorial e de Conteúdo',
+    credential: 'Jornalista responsável · Reg. Prof. 2390/FENAJ',
+    image: '/assets/people/fatima-vianna.jpg',
+    bio: [
+      'Formada em Comunicação Social, com habilitação em Jornalismo pelo UniCEUB, reúne ampla experiência em reportagem, redação, edição e produção. Atuou em publicações de circulação nacional, como Globo Rural e Pequenas Empresas & Grandes Negócios, e participou de coberturas relevantes, entre elas a Festa do Quarup, no Xingu.',
+      'Foi responsável pela assessoria de imprensa da Associação Mineira de Empresas de Turismo Rural (AMETUR) e editora da publicação especial “Minas — Green & Gold”, voltada à divulgação do turismo mineiro na Europa. Produziu reportagem especial sobre a soja brasileira para a revista Manchete Exportação, prestou consultoria ao IICA e pesquisou o turismo cearense a convite do Governo do Ceará e da EMCETUR.',
+    ],
+  },
+  {
+    name: 'Maria Antonieta Fonseca',
+    role: 'Diretora Corporativa de Marketing',
+    image: '/assets/people/maria-antonieta-fonseca.jpg',
+    bio: [
+      'Formada em Comunicação Social, com habilitação em Publicidade e Propaganda, e pós-graduada em Gestão de Marketing pela Universidade Cândido Mendes, no Rio de Janeiro. Foi responsável pelos textos publicitários do Guia de Turismo Rural de Minas Gerais, o primeiro guia do gênero no Brasil, lançado em 2006.',
+    ],
+    atVtn: 'Na VTN, conduz projetos e planos de marketing, acompanha sua rentabilidade e avalia estratégias de comunicação, propaganda, merchandising, relações públicas e pesquisa de mercado. Também cuida da presença digital da marca, incluindo site, redes sociais e e-mail marketing.',
+  },
+  {
+    name: 'Gabriel Nunes',
+    role: 'Diretor Jurídico',
+    image: '/assets/people/gabriel-nunes.jpg',
+    bio: [
+      'Advogado formado pelo Instituto de Educação Superior Unyhana, em Salvador, com especializações nas áreas Cível e Consumerista. Atua na assessoria e no acompanhamento de contratos e é sócio-diretor da Monitorar, empresa dedicada ao monitoramento de energia elétrica e fotovoltaica via web.',
+    ],
+    atVtn: 'Na VTN, acompanha diretamente os projetos, representa os interesses da empresa em juízo e fora dele e trabalha na negociação e solução ágil de conflitos, sempre com ética, seriedade e respeito aos direitos humanos.',
+  },
+  {
+    name: 'Victor Nunes',
+    role: 'Executivo de Negócios',
+    image: '/assets/people/victor-nunes.jpg',
+    bio: [
+      'Engenheiro agrônomo formado pela Universidade Federal de Viçosa, mestre em Irrigação e especialista no desenvolvimento de projetos de sistemas de irrigação. É diretor da Monitorar, com atuação no monitoramento de energia elétrica e fotovoltaica via web.',
+    ],
+    atVtn: 'Na VTN, responde pelo relacionamento com clientes e pela busca de novos negócios. Analisa oportunidades, antecipa tendências e define estratégias de abordagem, manutenção e captação de parceiros para veiculação de mídia.',
+  },
+] as const;
+
+const collaborators = [
+  { name: 'Aline Viezzer', image: '/assets/people/aline-viezzer.jpg', description: 'Colaboração editorial VTN' },
+  { name: 'Cláudia Periard', image: '/assets/people/claudia-periard.jpg', description: 'Colaboração editorial VTN' },
+  { name: 'Heber Luiz', image: '/assets/people/heber-luiz.jpg', description: 'Web designer · Transformando ideias em realidade digital' },
+] as const;
+---
+
+<BaseLayout
+  title="Pessoas VTN | Viajar Travel News"
+  description="Conheça as pessoas e colaboradores que fazem a Viajar Travel News."
+  image="/assets/people/fatima-vianna.jpg"
+>
+  <section class="people-hero">
+    <div class="container-vtn people-hero-grid">
+      <div>
+        <p class="eyebrow">Quem faz a VTN</p>
+        <h1>Pessoas movidas por histórias, viagens e descobertas.</h1>
+      </div>
+      <p class="people-intro">A Viajar Travel News nasce do encontro entre diferentes experiências profissionais e uma paixão em comum: apresentar lugares com verdade, sensibilidade e propósito.</p>
+    </div>
+  </section>
+
+  <section class="team-section" aria-labelledby="team-title">
+    <div class="container-vtn">
+      <div class="section-heading">
+        <div><p class="eyebrow">Nossa equipe</p><h2 id="team-title">Pessoas que fazem a VTN</h2></div>
+        <p>Experiências diferentes, reunidas por uma forma humana e autoral de falar sobre turismo.</p>
+      </div>
+      <div class="team-mosaic">
+        {team.map((person, index) => (
+          <a class="mosaic-person" href={`#${person.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replaceAll(' ', '-')}`}>
+            <img src={person.image} alt="" loading={index > 2 ? 'lazy' : 'eager'} />
+            <span><small>{person.role}</small><strong>{person.name}</strong></span>
+          </a>
+        ))}
+      </div>
+      <div class="stories-heading"><p class="eyebrow">Trajetórias</p><h2>Experiência que dá forma ao conteúdo.</h2></div>
+      <div class="story-grid">
+        {team.map(person => (
+          <article class="person-story" id={person.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replaceAll(' ', '-')}>
+            <header><p>{person.role}</p><h3>{person.name}</h3>{'credential' in person && <span>{person.credential}</span>}</header>
+            <div class="story-body">{person.bio.map(paragraph => <p>{paragraph}</p>)}</div>
+            {'atVtn' in person && <div class="story-vtn"><strong>Na VTN</strong><p>{person.atVtn}</p></div>}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="collabs" aria-labelledby="collabs-title">
+    <div class="container-vtn">
+      <div class="collabs-heading">
+        <div><p class="eyebrow">Outros olhares</p><h2 id="collabs-title">Collabs</h2></div>
+        <p>Talentos que também deixaram sua marca na construção da Viajar Travel News.</p>
+      </div>
+      <div class="collabs-grid">
+        {collaborators.map(person => (
+          <article class="collab-card">
+            <img src={person.image} alt={person.name} loading="lazy" />
+            <div><h3>{person.name}</h3><p>{person.description}</p></div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .people-hero{padding:clamp(5rem,10vw,9rem) 0;background:#182229;color:#fff}.people-hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.6fr);gap:clamp(3rem,8vw,8rem);align-items:end}.people-hero .eyebrow{color:#a8d744}.people-hero h1{max-width:850px;margin:.8rem 0 0;font-family:var(--font-display);font-size:clamp(3rem,7vw,6.7rem);font-weight:400;letter-spacing:-.045em;line-height:.94}.people-intro{margin:0;border-left:2px solid var(--color-vtn-orange);padding-left:1.5rem;color:#d1d8da;font-family:var(--font-display);font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.7}.team-section{padding:clamp(5rem,9vw,8rem) 0;background:#faf8f3}.section-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:clamp(3.5rem,7vw,6rem);gap:2rem}.section-heading h2{margin:.5rem 0 0;font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4.6rem);font-weight:400;letter-spacing:-.035em}.profiles{display:grid;gap:clamp(5rem,10vw,9rem)}.profile{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr);gap:clamp(2.5rem,7vw,7rem);align-items:center}.profile.reverse .portrait-wrap{order:2}.profile.reverse .profile-copy{order:1}.portrait-wrap{position:relative}.portrait-wrap:after{position:absolute;right:-15px;bottom:-15px;width:58%;height:48%;border-right:2px solid var(--color-vtn-orange);border-bottom:2px solid var(--color-vtn-orange);content:'';pointer-events:none}.portrait-wrap img{display:block;width:100%;height:clamp(430px,58vw,640px);object-fit:cover;filter:saturate(.88)}.profile-number{position:absolute;z-index:1;top:-1.4rem;left:-.5rem;color:#fff;font-family:var(--font-display);font-size:clamp(4.5rem,9vw,8rem);line-height:1;text-shadow:0 3px 18px #0005}.profile-role{margin:0 0 .8rem;color:var(--color-vtn-orange);font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.profile-copy h3{margin:0;font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4.5rem);font-weight:400;letter-spacing:-.035em;line-height:1}.credential{margin:.8rem 0 0;color:#70787c;font-size:.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}.bio{margin-top:2rem}.bio p{margin:0 0 1.15rem;color:#596269;font-size:.98rem;line-height:1.8}.at-vtn{margin-top:1.8rem;border-left:3px solid var(--color-vtn-green);padding:1.1rem 0 1.1rem 1.4rem}.at-vtn span{color:#789e29;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.at-vtn p{margin:.5rem 0 0;color:#30393e;font-family:var(--font-display);font-size:1.03rem;line-height:1.65}.collabs{padding:clamp(5rem,9vw,8rem) 0;background:#fff}.collabs-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:2.8rem;gap:3rem}.collabs-heading h2{margin:.5rem 0 0;font-family:var(--font-display);font-size:clamp(3rem,6vw,5rem);font-weight:400}.collabs-heading>p{max-width:420px;margin:0;color:#697176;line-height:1.7}.collabs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.collab-card{position:relative;min-height:470px;overflow:hidden;background:#172128;color:#fff}.collab-card:after{position:absolute;inset:0;background:linear-gradient(0deg,#111a20e8 0%,transparent 65%);content:''}.collab-card img{width:100%;height:100%;position:absolute;object-fit:cover;transition:transform .5s ease}.collab-card:hover img{transform:scale(1.025)}.collab-card div{position:absolute;z-index:1;right:1.5rem;bottom:1.5rem;left:1.5rem}.collab-card h3{margin:0;font-family:var(--font-display);font-size:1.7rem;font-weight:400}.collab-card p{margin:.5rem 0 0;color:#d8dddf;font-size:.78rem;line-height:1.5}.people-cta{padding:clamp(4rem,8vw,7rem) 0;background:#f27b22;color:#fff}.cta-inner{display:flex;align-items:end;justify-content:space-between;gap:2rem}.people-cta .eyebrow{color:#fff}.people-cta h2{margin:.5rem 0 0;font-family:var(--font-display);font-size:clamp(2.4rem,5vw,4.5rem);font-weight:400}.people-cta a{display:inline-flex;flex:none;align-items:center;gap:1.2rem;border-bottom:1px solid #fff;padding:.7rem 0;color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-decoration:none;text-transform:uppercase}.people-footer{padding:1.7rem 0;background:#141d23;color:#aeb7bb}.people-footer div{display:flex;justify-content:space-between;gap:1rem;font-size:.78rem}.people-footer strong{color:#fff}@media(max-width:800px){.people-hero-grid,.profile{grid-template-columns:1fr}.people-hero-grid{align-items:start}.profile.reverse .portrait-wrap,.profile.reverse .profile-copy{order:initial}.portrait-wrap img{height:min(650px,115vw)}.collabs-grid{grid-template-columns:1fr 1fr}.collab-card{min-height:420px}.cta-inner,.collabs-heading{align-items:flex-start;flex-direction:column}}@media(max-width:540px){.people-hero{padding:4rem 0}.people-hero h1{font-size:clamp(2.8rem,14vw,4.4rem)}.profile-copy h3{font-size:2.7rem}.collabs-grid{grid-template-columns:1fr}.collab-card{min-height:440px}.people-footer div{align-items:flex-start;flex-direction:column}}
+  .section-heading>p{max-width:380px;margin:0;color:#6d757a;line-height:1.7}.team-mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:330px 280px;gap:.8rem}.mosaic-person{position:relative;overflow:hidden;background:#172128;color:#fff;text-decoration:none}.mosaic-person:nth-child(1){grid-column:span 5;grid-row:span 2}.mosaic-person:nth-child(2){grid-column:span 4}.mosaic-person:nth-child(3){grid-column:span 3}.mosaic-person:nth-child(4){grid-column:6/span 3}.mosaic-person:nth-child(5){grid-column:9/span 4}.mosaic-person:after{position:absolute;inset:0;background:linear-gradient(0deg,#10191fdb 0%,transparent 65%);content:''}.mosaic-person img{width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:transform .45s ease,filter .45s ease}.mosaic-person:hover img{filter:saturate(1);transform:scale(1.025)}.mosaic-person>span{position:absolute;z-index:1;right:1.25rem;bottom:1.2rem;left:1.25rem}.mosaic-person small,.mosaic-person strong{display:block}.mosaic-person small{margin-bottom:.4rem;color:#c8e965;font-size:.58rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.mosaic-person strong{font-family:var(--font-display);font-size:clamp(1.2rem,2vw,1.85rem);font-weight:400}.stories-heading{display:grid;grid-template-columns:.55fr 1.45fr;gap:2rem;margin:clamp(6rem,11vw,10rem) 0 3rem;border-top:1px solid #27313820;padding-top:2.5rem}.stories-heading h2{max-width:720px;margin:0;font-family:var(--font-display);font-size:clamp(2.6rem,5vw,4.5rem);font-weight:400;letter-spacing:-.035em;line-height:1.02}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:start}.person-story{scroll-margin-top:110px;padding:clamp(1.7rem,3.5vw,3rem);background:#fff;box-shadow:0 12px 35px #2530380b}.person-story:nth-child(2),.person-story:nth-child(5){background:#202a30;color:#fff}.person-story header{border-bottom:1px solid #2731381a;padding-bottom:1.4rem}.person-story:nth-child(2) header,.person-story:nth-child(5) header{border-color:#ffffff20}.person-story header>p{margin:0;color:var(--color-vtn-orange);font-size:.65rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.person-story header h3{margin:.55rem 0 0;font-family:var(--font-display);font-size:clamp(2rem,3.4vw,3.1rem);font-weight:400;line-height:1}.person-story header span{display:block;margin-top:.7rem;color:#778085;font-size:.7rem;letter-spacing:.04em;text-transform:uppercase}.person-story:nth-child(2) header span,.person-story:nth-child(5) header span{color:#aeb7bb}.story-body{padding-top:1.4rem}.story-body p,.story-vtn p{margin:0 0 1rem;color:#626b70;font-size:.9rem;line-height:1.8}.person-story:nth-child(2) .story-body p,.person-story:nth-child(5) .story-body p,.person-story:nth-child(2) .story-vtn p,.person-story:nth-child(5) .story-vtn p{color:#d2d8da}.story-vtn{margin-top:1.5rem;border-top:2px solid var(--color-vtn-green);padding-top:1.2rem}.story-vtn strong{display:block;margin-bottom:.55rem;color:#83ae2c;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase}.story-vtn p{margin-bottom:0;font-family:var(--font-display);font-size:.96rem}.person-story:last-child{grid-column:1/-1;display:grid;grid-template-columns:.65fr 1.35fr;gap:3rem}.person-story:last-child header{border:0}.person-story:last-child .story-body{padding-top:0}@media(max-width:900px){.team-mosaic{grid-template-rows:280px 240px}.mosaic-person:nth-child(1){grid-column:span 6}.mosaic-person:nth-child(2){grid-column:span 6}.mosaic-person:nth-child(3){grid-column:span 4}.mosaic-person:nth-child(4){grid-column:span 4}.mosaic-person:nth-child(5){grid-column:span 4}.story-grid{grid-template-columns:1fr}.person-story:last-child{grid-column:auto;display:block}.person-story:last-child .story-body{padding-top:1.4rem}}@media(max-width:650px){.section-heading,.stories-heading{display:block}.section-heading>p{margin-top:1rem}.team-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:380px 230px 230px}.mosaic-person:nth-child(1){grid-column:1/-1;grid-row:auto}.mosaic-person:nth-child(n+2){grid-column:auto;grid-row:auto}.story-grid{grid-template-columns:1fr}}
+  /* Escala mais contida para manter o ritmo visual do restante do site. */
+  .people-hero{padding:clamp(3.5rem,6vw,5.5rem) 0}
+  .people-hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:clamp(3rem,7vw,6.5rem)}
+  .people-hero h1{max-width:710px;font-size:clamp(2.8rem,5vw,4.8rem);line-height:1}
+  .people-intro{max-width:390px;padding-left:1.35rem;font-size:clamp(.95rem,1.35vw,1.1rem);line-height:1.65}
+  .team-section{padding:clamp(4rem,7vw,6rem) 0}
+  .section-heading{margin-bottom:clamp(2.5rem,5vw,4rem)}
+  .section-heading h2{font-size:clamp(2.25rem,4vw,3.6rem)}
+  .section-heading>p{max-width:360px;font-size:.92rem;line-height:1.65}
+  .team-mosaic{grid-template-rows:285px 235px;gap:.75rem}
+  .stories-heading{margin:clamp(4.5rem,8vw,7rem) 0 2.5rem;padding-top:2rem}
+  .stories-heading h2{max-width:650px;font-size:clamp(2.3rem,4vw,3.6rem);line-height:1.05}
+  .person-story{padding:clamp(1.5rem,2.7vw,2.4rem)}
+  .person-story header h3{font-size:clamp(1.85rem,2.8vw,2.6rem)}
+  .collabs{padding:clamp(4rem,7vw,6rem) 0}
+  .collabs-heading h2{font-size:clamp(2.6rem,5vw,4.2rem)}
+  .collab-card{min-height:390px}
+  .people-cta{padding:clamp(3.5rem,6vw,5rem) 0}
+  .people-cta h2{font-size:clamp(2.2rem,4vw,3.7rem)}
+  @media(max-width:900px){.team-mosaic{grid-template-rows:250px 215px}}
+  @media(max-width:650px){.people-hero{padding:3.5rem 0}.people-hero h1{font-size:clamp(2.65rem,12vw,4rem)}.team-mosaic{grid-template-rows:330px 210px 210px}}
+  /* Ricardo e Fátima lideram a composição; os demais têm o mesmo peso. */
+  .team-mosaic{grid-template-columns:repeat(12,1fr);grid-template-rows:440px 300px}
+  .mosaic-person:nth-child(1){grid-column:1/span 6;grid-row:1}
+  .mosaic-person:nth-child(2){grid-column:7/span 6;grid-row:1}
+  .mosaic-person:nth-child(3){grid-column:1/span 4;grid-row:2}
+  .mosaic-person:nth-child(4){grid-column:5/span 4;grid-row:2}
+  .mosaic-person:nth-child(5){grid-column:9/span 4;grid-row:2}
+  .mosaic-person:nth-child(1) img{object-position:center 18%}
+  .mosaic-person:nth-child(2) img{object-position:center 12%}
+  .mosaic-person:nth-child(3) img{object-position:center 12%}
+  .mosaic-person:nth-child(4) img{object-position:center 10%}
+  .mosaic-person:nth-child(5) img{object-position:center 18%}
+  @media(max-width:900px){.team-mosaic{grid-template-rows:360px 260px}}
+  @media(max-width:650px){
+    .team-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:360px 250px 250px}
+    .mosaic-person:nth-child(1),.mosaic-person:nth-child(2){grid-column:auto;grid-row:1}
+    .mosaic-person:nth-child(3),.mosaic-person:nth-child(4){grid-column:auto;grid-row:2}
+    .mosaic-person:nth-child(5){grid-column:1/-1;grid-row:3}
+  }
+  /* Biografias com a mesma estrutura e largura. */
+  .story-grid{align-items:stretch}
+  .person-story{display:flex;flex-direction:column;height:100%}
+  .person-story .story-vtn{margin-top:auto}
+  .person-story:last-child{grid-column:1/-1;display:flex;width:calc((100% - 1rem)/2);justify-self:center}
+  .person-story:last-child header{border-bottom:1px solid #ffffff20}
+  .person-story:last-child .story-body{padding-top:1.4rem}
+  @media(max-width:900px){
+    .person-story:last-child{grid-column:auto;width:100%;justify-self:stretch}
+  }
+</style>
