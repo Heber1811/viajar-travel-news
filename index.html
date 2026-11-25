@@ -1237,24 +1237,12 @@
 
 							<p><span class="text-indent"></span>Prepare-se para descobrir verdadeiras joias escondidas, partindo dos territórios alagoano e sergipano em direção a Pernambuco, ao Piauí e ao Maranhão.</p>
 								<div class="edicao-encerramento-visual">
-									<figure class="edicao-foto-final">
-										<img src="img/ed_novembro_2026/editorial-lencois-maranhenses-v2.png"
-											alt="Dunas e lagoas dos Lençóis Maranhenses iluminadas pelo fim de tarde">
-									</figure>
 									<div class="edicao-encerramento-conteudo">
 										<p><span class="text-indent"></span>Essa rota vai surpreender você com uma gastronomia sertaneja autêntica, hotelaria de charme e lendas ancestrais que provam que o maior tesouro da região está muito além do litoral que a gente conhece.</p>
 										<div class="edicao-fecho">
 											<p class="edicao-assinatura" style="font-family: 'Courgette', cursive !important;">
 												<a target="_blank" href="pessoas-vtn.html">Fátima Vasconcelos Nunes<br>
 													Jornalista</a>
-											</p>
-										</div>
-									</div>
-									<div class="edicao-encerramento-conteudo edicao-encerramento-conteudo--sobre-foto" aria-hidden="true">
-										<p><span class="text-indent"></span>Essa rota vai surpreender você com uma gastronomia sertaneja autêntica, hotelaria de charme e lendas ancestrais que provam que o maior tesouro da região está muito além do litoral que a gente conhece.</p>
-										<div class="edicao-fecho">
-											<p class="edicao-assinatura" style="font-family: 'Courgette', cursive !important;">
-												<span>Fátima Vasconcelos Nunes<br>Jornalista</span>
 											</p>
 										</div>
 									</div>
@@ -1425,10 +1413,6 @@
 				order: 1;
 			}
 
-			.edicao-encerramento-conteudo--sobre-foto {
-				display: none;
-			}
-
 			.edicao-encerramento-conteudo > p:first-child {
 				margin: 0 0 12px;
 				color: inherit !important;
@@ -1441,23 +1425,6 @@
 				margin-top: 18px;
 				color: #fff !important;
 				text-shadow: 0 2px 7px rgba(0, 0, 0, 0.78);
-			}
-
-			.edicao-foto-final {
-				order: 2;
-				height: 280px;
-				margin: 24px 0 0;
-				overflow: hidden;
-				border-radius: 12px;
-				box-shadow: 0 9px 22px rgba(36, 29, 18, 0.18);
-			}
-
-			.edicao-foto-final img {
-				display: block;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				object-position: center 58%;
 			}
 
 			.cards-editoriais .modern-card.card-mantiqueira:hover p {
@@ -1474,42 +1441,7 @@
 					min-height: 0;
 				}
 
-				.edicao-encerramento-visual {
-					position: relative;
-					isolation: isolate;
-					min-height: 280px;
-				}
-
-				.card-mantiqueira .edicao-foto-final {
-					position: absolute !important;
-					top: 0;
-					left: 0;
-					z-index: 1 !important;
-					width: 100%;
-					height: 300px;
-					margin: 0;
-					border-radius: 72% 12px 12px 12px / 30% 12px 12px 12px;
-					pointer-events: none;
-				}
-
-				.card-mantiqueira .edicao-foto-final::after {
-					content: "";
-					position: absolute;
-					top: 0;
-					right: 0;
-					left: 0;
-					z-index: 2;
-					height: 43%;
-					background: linear-gradient(to bottom,
-						rgba(8, 15, 12, 0.58) 0%,
-						rgba(8, 15, 12, 0.45) 55%,
-						rgba(8, 15, 12, 0) 100%);
-					pointer-events: none;
-				}
-
 				.card-mantiqueira .edicao-encerramento-conteudo {
-					position: relative !important;
-					z-index: 5 !important;
 					display: block;
 					height: auto;
 					padding: 0;
@@ -1539,27 +1471,7 @@
 				.edicao-assinatura a {
 					color: #171714 !important;
 					font-weight: 400;
-					-webkit-text-stroke: 0;
 					text-shadow: none;
-				}
-
-				.card-mantiqueira .edicao-encerramento-conteudo--sobre-foto {
-					position: absolute !important;
-					inset: 0;
-					z-index: 6 !important;
-					display: block;
-					height: 300px;
-					clip-path: inset(0 round 72% 12px 12px 12px / 30% 12px 12px 12px);
-					pointer-events: none;
-				}
-
-				.edicao-encerramento-conteudo--sobre-foto > p:first-child,
-				.edicao-encerramento-conteudo--sobre-foto .edicao-assinatura span {
-					color: #fff !important;
-					font-weight: 400;
-					text-shadow:
-						0 1px 2px rgba(0, 0, 0, 0.88),
-						0 2px 4px rgba(0, 0, 0, 0.55);
 				}
 
 				.cards-editoriais .stack-cards {
@@ -1634,10 +1546,6 @@
 				.edicao-encerramento-conteudo {
 					height: auto;
 					padding: 0;
-				}
-
-				.edicao-foto-final {
-					height: 260px;
 				}
 
 			}
